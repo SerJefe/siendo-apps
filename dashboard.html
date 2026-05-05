@@ -320,9 +320,11 @@ main > section.show{ display: block; }
 <nav>
 <span class="logo">Ser Siendo</span>
 <button class="primary on" data-tab="panorama" onclick="showTab('panorama',this)">Panorama</button>
+<button class="primary" data-tab="briefing" onclick="showTab('briefing',this)">Briefing</button>
 <button class="primary" data-tab="inbox" onclick="showTab('inbox',this)">Inbox <span id="pendientes-badge" style="background:var(--red);color:white;padding:1px 6px;border-radius:10px;font-size:10px;margin-left:4px"></span></button>
 <button class="primary" data-tab="agenda" onclick="showTab('agenda',this)">Agenda <span id="calendario-badge" style="background:var(--red);color:white;padding:1px 6px;border-radius:10px;font-size:10px;margin-left:4px"></span></button>
 <button class="primary" data-tab="equipo" onclick="showTab('equipo',this)">Equipo</button>
+<button class="primary" data-tab="personas" onclick="showTab('personas',this)">Personas</button>
 <button class="primary" data-tab="radar" onclick="showTab('radar',this)">Radar <span id="radar-badge" style="background:var(--red);color:white;padding:1px 6px;border-radius:10px;font-size:10px;margin-left:4px"></span></button>
 <span class="divider"></span>
 <button class="secondary" onclick="window.location.href='priorizador.html'">Priorizar</button>
@@ -505,15 +507,16 @@ main > section.show{ display: block; }
 <div id="equipo-drilldown" style="margin-top:16px"></div>
 </section>
 
-<!-- briefing section removido 2026-04-22 · reemplazado por panorama + dia-v2 -->
-<!-- stubs ocultos para que loadBriefing() del JS viejo no rompa -->
+<!-- briefing tab restaurado 2026-05-03 -->
+<section id="briefing">
+<h2 id="bf-date">Briefing</h2>
+<div id="bf-hoy-content"></div>
 <div style="display:none">
-  <div id="bf-date"></div>
-  <div id="bf-hoy-content"></div>
   <div id="bf-semana-content"></div>
   <div id="bf-historial-content"></div>
   <div id="tareas-hoy-briefing"></div>
 </div>
+</section>
 
 <!-- section "tareas" removida 2026-04-22 · integrado en panorama Top 3 urgentes -->
 
@@ -556,6 +559,32 @@ main > section.show{ display: block; }
 </div>
 <div id="calendario-content"><div style="text-align:center;padding:30px;color:var(--muted)">Cargando...</div></div>
 </section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TAB: PERSONAS (cerebro paralelo · capa 0)
+     Lee /data/personas.json (autogenerado desde vault/01-SISTEMA-VIVO/Equipo.md
+     vía hook post-receive del bare repo VPS)
+═══════════════════════════════════════════════════════ -->
+<section id="personas">
+<h2>Personas</h2>
+<p style="font-size:12px;color:var(--muted);margin:-10px 0 12px" id="personas-meta">cargando…</p>
+
+<div class="personas-stats" id="personas-stats" style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px"></div>
+
+<div class="personas-filters" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;align-items:center">
+  <input type="text" id="personas-search" placeholder="buscar por nombre, apodo, rol, notas…"
+    style="flex:1;min-width:220px;padding:8px 12px;font-size:13px;border:1px solid var(--border);border-radius:6px;background:var(--bg2);color:var(--text);font-family:inherit">
+  <span id="personas-org-filters" style="display:flex;flex-wrap:wrap;gap:4px"></span>
+  <span style="width:1px;height:18px;background:var(--border);margin:0 4px"></span>
+  <button class="fb on" data-status="all" onclick="filterPersonasStatus(this)" style="font-size:11px;padding:4px 10px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer">todos</button>
+  <button class="fb" data-status="activo" onclick="filterPersonasStatus(this)" style="font-size:11px;padding:4px 10px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer">activos</button>
+  <button class="fb" data-status="salio" onclick="filterPersonasStatus(this)" style="font-size:11px;padding:4px 10px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer">salieron</button>
+</div>
+
+<div id="personas-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px"></div>
+</section>
+
+
 </main>
 <footer>SER.SIENDO - Alletagia - Aleteagogia - Jefatura, nunca liderazgo — Dashboard v3 - 13 abr 2026</footer>
 
@@ -2920,6 +2949,43 @@ loadCalendario();
     return '<div class="pn-pulso"><div style="display:inline-flex;align-items:baseline;gap:4px;font-family:\'JetBrains Mono\',monospace;font-size:14px;font-weight:700;color:var(--navy);">'+(pulse.cerradas_esta_semana||0)+' <span style="color:var(--muted);font-size:11px;">esta sem</span><span style="font-size:13px;margin-left:8px;color:'+col+';">'+arrow+' '+Math.abs(delta)+'</span></div><span style="font-size:11px;">vs '+(pulse.cerradas_semana_anterior||0)+' anterior</span></div>';
   }
 
+  function renderPersonasVinculadas(rol){
+    var vinc = rol._personas_vinculadas || [];
+    var sinMatch = rol._responsables_sin_match || [];
+    if (!vinc.length && !sinMatch.length) return '';
+    var chips = vinc.map(function(p){
+      var nm = p.apodo ? p.nombre.split(' ')[0] + ' (' + p.apodo + ')' : p.nombre;
+      var bg, fg;
+      if (p.vencidas_count > 0) { bg = 'rgba(184,92,74,.12)'; fg = '#b85c4a'; }
+      else if (p.criticas_count > 0) { bg = 'rgba(201,160,82,.14)'; fg = '#9d7a25'; }
+      else { bg = 'rgba(74,107,124,.10)'; fg = '#4a6b7c'; }
+      var detail = p.abiertos_count + (p.vencidas_count>0 ? ' · '+p.vencidas_count+' venc' : '');
+      return '<span onclick="window.__abrirPersona && window.__abrirPersona(\''+p.id+'\')" style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:14px;background:'+bg+';color:'+fg+';font-size:11px;font-family:Inter,monospace;font-weight:600;cursor:pointer;border:1px solid transparent" title="'+esc(p.organizacion||'')+'">'+esc(nm)+' <span style="opacity:.7;font-weight:500">'+detail+'</span></span>';
+    }).join('');
+    var sinMatchChips = sinMatch.map(function(s){
+      return '<span style="display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:12px;background:rgba(138,138,134,.08);color:#8a8a86;font-size:10.5px;font-family:Inter,monospace;border:1px dashed rgba(138,138,134,.3)" title="No matchea ninguna ficha de Equipo.md">'+esc(s.nombre_responsable)+' <span style="opacity:.7">'+s.abiertos_count+'</span></span>';
+    }).join('');
+    return '<div class="pn-section"><div class="pn-section-title">👥 Personas vinculadas <span class="count">'+vinc.length+'</span></div>'+
+      '<div style="display:flex;flex-wrap:wrap;gap:6px">'+chips+sinMatchChips+'</div>'+
+      '</div>';
+  }
+
+  window.__abrirPersona = function(pid){
+    var btn = document.querySelector('button[data-tab="personas"]');
+    if (btn) btn.click();
+    setTimeout(function(){
+      var inp = document.getElementById('personas-search');
+      if (inp) {
+        var nameNode = document.querySelector('.persona-card[data-pid="'+pid+'"]');
+        if (nameNode) {
+          nameNode.scrollIntoView({behavior:'smooth', block:'center'});
+          nameNode.style.boxShadow = '0 0 0 2px var(--gold)';
+          setTimeout(function(){ nameNode.style.boxShadow=''; }, 2000);
+        }
+      }
+    }, 200);
+  };
+
   function renderRole(rolId, rol, roleDef){
     var emoji = rol.emoji || (roleDef&&roleDef.emoji) || '▫️';
     var nombre = rol.nombre || (roleDef&&roleDef.nombre) || rolId;
@@ -2955,6 +3021,8 @@ loadCalendario();
       '<div class="role-body">' +
         (desc?'<div class="role-desc">'+esc(desc)+'</div>':'') +
         (rolId==='rol-1-condugas' && ODOO_DATA ? renderOdoo(ODOO_DATA) : '') +
+        // __ROLES_PERSONAS_BLOCK__
+        renderPersonasVinculadas(rol) +
         '<div class="pn-section"><div class="pn-section-title">🆕 Novedades <span class="count">'+novedades.length+'</span></div>'+(novedades.length?novedades.map(renderNovedad).join(''):'<div class="pn-empty">Sin novedades desde Limitless.</div>')+'</div>' +
         '<div class="pn-section"><div class="pn-section-title">📋 Abiertos <span class="count">'+total+'</span></div>'+(abiertosTop.length?abiertosTop.map(renderTarea).join(''):'<div class="pn-empty">Nada abierto.</div>')+verMas+'</div>' +
         '<div class="pn-section"><div class="pn-section-title">📅 Próximo</div>'+renderProximoRol(rol.proximo)+'</div>' +
@@ -3029,5 +3097,213 @@ document.addEventListener('visibilitychange', function(){
 });
 
 </script>
+
+<!-- ═══════════════════════════════════════════════════════
+     PERSONAS — fetch /data/personas.json + render cards canon
+═══════════════════════════════════════════════════════ -->
+<script>
+(function personasModule(){
+  var DATA = null;
+  var ORG_FILTER = "all";
+  var STATUS_FILTER = "all";
+  var SEARCH_Q = "";
+
+  function esc(s){ return (s||"").toString().replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  var STATUS_STYLE = {
+    activo:    {color:"#5a8a5e", bg:"rgba(90,138,94,.12)",   lbl:"activo"},
+    salio:     {color:"#8a8a86", bg:"rgba(138,138,134,.10)", lbl:"salió"},
+    inactivo:  {color:"#c9a052", bg:"rgba(201,160,82,.12)",  lbl:"inactivo"},
+    confirmado:{color:"#4a6b7c", bg:"rgba(74,107,124,.12)",  lbl:"confirmado"},
+    contacto:  {color:"#8a8a86", bg:"rgba(138,138,134,.08)", lbl:"contacto"}
+  };
+
+  function shortOrg(org){
+    // ORDEN IMPORTA: las más específicas primero (Junta y EyC contienen Condugas o palabras compuestas)
+    if(/Junta/i.test(org))    return "Junta asesora";
+    if(/EyC/i.test(org))      return "EyC";
+    if(/EPM/i.test(org))      return "Clientes EPM";
+    if(/Condugas/i.test(org)) return "Condugas";
+    if(/Siendo/i.test(org))   return "Siendo";
+    if(/sector/i.test(org))   return "Sector";
+    if(/Ecosistema/i.test(org)) return "Ecosistema";
+    return org.slice(0,18);
+  }
+
+  function loadPersonas(){
+    return fetch("/data/personas.json?t="+Date.now(), {cache:"no-cache"})
+      .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+      .then(function(d){ DATA = d; renderAll(); })
+      .catch(function(err){
+        var grid = document.getElementById("personas-grid");
+        if(grid) grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:var(--muted);padding:40px">Error: ' + esc(err.message) + '</div>';
+        var meta = document.getElementById("personas-meta");
+        if(meta) meta.textContent = "no se pudo cargar /data/personas.json";
+      });
+  }
+
+  function renderAll(){
+    if(!DATA) return;
+    var meta = DATA._meta || {};
+    var stats = DATA.stats || {};
+    var metaEl = document.getElementById("personas-meta");
+    if(metaEl) metaEl.textContent = stats.total + " personas · fuente: vault/01-SISTEMA-VIVO/Equipo.md · actualizado " + (meta.generated||"").slice(0,16).replace("T"," ");
+
+    // Stats cards (una por organización)
+    var statsHtml = "";
+    Object.keys(stats.por_organizacion || {}).forEach(function(org){
+      var cnt = stats.por_organizacion[org];
+      statsHtml += '<div style="flex:1;min-width:130px;padding:8px 12px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;border-left:3px solid var(--gold)">' +
+                   '<div style="font-size:18px;font-weight:600;color:var(--navy);font-family:\'Cormorant Garamond\',serif">' + cnt + '</div>' +
+                   '<div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">' + esc(shortOrg(org)) + '</div>' +
+                   '</div>';
+    });
+    var statsEl = document.getElementById("personas-stats");
+    if(statsEl) statsEl.innerHTML = statsHtml;
+
+    // Org filter chips
+    var orgChips = '<button class="fb on" data-org="all" onclick="filterPersonasOrg(this)" style="font-size:11px;padding:4px 10px;border-radius:14px;border:1px solid var(--gold);background:transparent;color:var(--gold);cursor:pointer;font-family:inherit">todas</button>';
+    Object.keys(stats.por_organizacion || {}).forEach(function(org){
+      orgChips += '<button class="fb" data-org="' + esc(org) + '" onclick="filterPersonasOrg(this)" style="font-size:11px;padding:4px 10px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:inherit">' + esc(shortOrg(org)) + '</button>';
+    });
+    var ofEl = document.getElementById("personas-org-filters");
+    if(ofEl) ofEl.innerHTML = orgChips;
+
+    renderCards();
+  }
+
+  function renderCards(){
+    if(!DATA) return;
+    var personas = (DATA.personas || []).filter(function(p){
+      if(ORG_FILTER !== "all" && p.organizacion !== ORG_FILTER) return false;
+      if(STATUS_FILTER !== "all" && p.status !== STATUS_FILTER) return false;
+      if(SEARCH_Q){
+        var q = SEARCH_Q.toLowerCase();
+        var blob = (p.nombre + " " + (p.apodo || "") + " " + (p.rol || "") + " " + (p.notas || "") + " " + (p.subgrupo || "")).toLowerCase();
+        if(blob.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+
+    var grid = document.getElementById("personas-grid");
+    if(!grid) return;
+    if(!personas.length){
+      grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:var(--muted);padding:30px;font-style:italic">sin coincidencias</div>';
+      return;
+    }
+
+    grid.innerHTML = personas.map(function(p){
+      var st = STATUS_STYLE[p.status] || STATUS_STYLE.contacto;
+      var apodo = p.apodo ? '<span style="font-style:italic;color:var(--muted);font-size:13px;margin-left:6px">(' + esc(p.apodo) + ')</span>' : "";
+      var rol = p.rol ? '<div style="font-size:12px;color:var(--navy);margin-top:4px">' + esc(p.rol) + '</div>' : "";
+      var statusBadge = '<span style="font-size:10px;padding:2px 8px;border-radius:10px;background:' + st.bg + ';color:' + st.color + ';text-transform:uppercase;letter-spacing:.04em;font-weight:600;white-space:nowrap">' + st.lbl + '</span>';
+      var orgLine = '<div style="font-size:10px;color:var(--muted);margin-top:6px">' + esc(shortOrg(p.organizacion)) + ' · ' + esc(p.subgrupo || "") + '</div>';
+
+      // __PERSONAS_ENRICHED_BLOCK__
+      var enrichedBlock = "";
+      if (p._enriched) {
+        var e = p._enriched;
+        var tc = e.tareas_count || {};
+        var na = e.actividad_neural;
+        var pills = [];
+        if (tc.abiertas > 0) {
+          var pillStyle = tc.vencidas > 0 ? "background:rgba(184,92,74,.12);color:#b85c4a" : (tc.criticas > 0 ? "background:rgba(201,160,82,.14);color:#9d7a25" : "background:rgba(74,107,124,.10);color:#4a6b7c");
+          var pillTxt = tc.abiertas + " tarea" + (tc.abiertas===1?"":"s");
+          if (tc.vencidas > 0) pillTxt += " · " + tc.vencidas + " venc";
+          if (tc.criticas > 0) pillTxt += " · " + tc.criticas + " crit";
+          pills.push('<span style="font-size:10px;padding:2px 8px;border-radius:10px;'+pillStyle+';font-family:Inter,monospace;font-weight:600">'+pillTxt+'</span>');
+        }
+        if (na && na.last_seen) {
+          var d = new Date(na.last_seen);
+          var hoy = new Date();
+          var dias = Math.floor((hoy - d) / (1000*60*60*24));
+          var freshTxt, freshStyle;
+          if (dias <= 1) { freshTxt = "hablaron hoy"; freshStyle = "color:#5a8a5e;font-weight:600"; }
+          else if (dias <= 7) { freshTxt = "hace " + dias + "d"; freshStyle = "color:#5a8a5e"; }
+          else if (dias <= 30) { freshTxt = "hace " + dias + "d"; freshStyle = "color:#c9a052"; }
+          else { freshTxt = "hace " + dias + "d"; freshStyle = "color:var(--muted)"; }
+          pills.push('<span style="font-size:10px;'+freshStyle+';font-family:Inter,monospace">'+freshTxt+'</span>');
+        }
+        if (pills.length) {
+          enrichedBlock = '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;padding-top:8px;border-top:1px dashed var(--border)">'+pills.join("")+'</div>';
+        }
+        var tareas = (e.tareas_abiertas || []).slice(0, 3);
+        if (tareas.length) {
+          enrichedBlock += '<div style="margin-top:6px;font-size:11px">' + tareas.map(function(t){
+            var icon = t.vencida ? "⚠" : (t.prioridad==="critica" ? "●" : "·");
+            var clr = t.vencida ? "#b85c4a" : (t.prioridad==="critica" ? "#9d7a25" : "var(--muted)");
+            var txt = t.tarea.length>70 ? t.tarea.slice(0,70)+"…" : t.tarea;
+            return '<div style="color:'+clr+';line-height:1.4;padding:1px 0;display:flex;gap:4px"><span style="flex-shrink:0">'+icon+'</span><span>'+esc(txt)+'</span></div>';
+          }).join("") + '</div>';
+        }
+      }
+
+      var notas = p.notas ? '<div style="font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.45;font-style:italic;border-top:1px dashed var(--border);padding-top:8px">' + esc(p.notas) + '</div>' : "";
+
+      return '<div class="persona-card" data-pid="' + esc(p.id) + '" style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;border-left:3px solid ' + st.color + ';transition:box-shadow .2s">' +
+             '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">' +
+               '<div style="flex:1;min-width:0"><div style="font-family:\'Cormorant Garamond\',serif;font-size:17px;font-weight:600;color:var(--navy);line-height:1.2">' + esc(p.nombre) + apodo + '</div>' + rol + '</div>' +
+               statusBadge +
+             '</div>' +
+             orgLine +
+             enrichedBlock +
+             notas +
+             '</div>';
+    }).join("");
+  }
+
+  window.filterPersonasOrg = function(btn){
+    document.querySelectorAll("#personas-org-filters .fb").forEach(function(b){
+      b.classList.remove("on");
+      b.style.color = "var(--muted)";
+      b.style.borderColor = "var(--border)";
+    });
+    btn.classList.add("on");
+    btn.style.color = "var(--gold)";
+    btn.style.borderColor = "var(--gold)";
+    ORG_FILTER = btn.dataset.org;
+    renderCards();
+  };
+
+  window.filterPersonasStatus = function(btn){
+    document.querySelectorAll('[data-status]').forEach(function(b){
+      b.classList.remove("on");
+      b.style.color = "var(--muted)";
+      b.style.borderColor = "var(--border)";
+    });
+    btn.classList.add("on");
+    btn.style.color = "var(--gold)";
+    btn.style.borderColor = "var(--gold)";
+    STATUS_FILTER = btn.dataset.status;
+    renderCards();
+  };
+
+  // Search box
+  function bindSearch(){
+    var inp = document.getElementById("personas-search");
+    if(!inp) return;
+    var t;
+    inp.addEventListener("input", function(){
+      clearTimeout(t);
+      t = setTimeout(function(){ SEARCH_Q = inp.value.trim(); renderCards(); }, 200);
+    });
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", bindSearch);
+  } else {
+    bindSearch();
+  }
+
+  // Lazy load: solo cargar cuando se entra al tab personas
+  var navBtn = document.querySelector('button[data-tab="personas"]');
+  if(navBtn){
+    navBtn.addEventListener("click", function(){ if(!DATA) loadPersonas(); });
+  }
+  // Pre-load tras 2s para que esté listo
+  setTimeout(loadPersonas, 2000);
+})();
+</script>
+
 </body>
 </html>

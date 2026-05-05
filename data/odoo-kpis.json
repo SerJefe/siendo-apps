@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-05-03",
-  "generated_at": "2026-05-03T10:30:04.642243Z",
+  "fecha": "2026-05-05",
+  "generated_at": "2026-05-05T10:30:02.000104Z",
   "version": "v2-3decisiones",
   "facturacion_30d": {
-    "total": 4264619421.67,
-    "count": 48,
+    "total": 4296077080.4800005,
+    "count": 50,
     "moneda": "COP"
   },
   "cartera_pendiente": {
-    "total": 5691649965.940001,
-    "count": 80,
-    "vencidas": 40,
+    "total": 5723107624.75,
+    "count": 82,
+    "vencidas": 41,
     "moneda": "COP"
   },
   "top_cartera": [
@@ -20,7 +20,7 @@
     },
     {
       "partner": "GASES DE OCCIDENTE SA ESP",
-      "pendiente": 1129301460.86
+      "pendiente": 1157759119.6699998
     },
     {
       "partner": "GAS NATURAL CUNDIBOYACENSE S.A. E.S.P.",
@@ -77,7 +77,7 @@
   "empleados_activos": 640,
   "sobrevivir": {
     "caja": {
-      "bancos_total": 756544038.78,
+      "bancos_total": 620122276.6600001,
       "bancos_detalle": [
         {
           "cuenta": "11050505 CAJA GENERAL",
@@ -194,14 +194,14 @@
         },
         {
           "cuenta": "11100520 BANCOLOMBIA 4446  COMERCIAL",
-          "saldo": -89624121.52,
+          "saldo": -103607962.13,
           "flags": [
             "saldo_negativo_revisar"
           ]
         },
         {
           "cuenta": "11100525 BANCOLOMBIA  1016 ADMON CENTRAL",
-          "saldo": 108466909.85,
+          "saldo": 87468792.56,
           "flags": []
         },
         {
@@ -220,7 +220,7 @@
         },
         {
           "cuenta": "11100545 DAVIVIENDA CTA 4902 FLORIDABLANCA",
-          "saldo": -3104079.44,
+          "saldo": -7338016.94,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -239,7 +239,7 @@
         },
         {
           "cuenta": "11100560 BANCO AV VILLAS 4070",
-          "saldo": 1369534057.01,
+          "saldo": 1273066302.17,
           "flags": []
         },
         {
@@ -290,7 +290,7 @@
         },
         {
           "cuenta": "False CTA CTE BOGOTA 7323",
-          "saldo": -171053596.88,
+          "saldo": -171791708.76,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -403,8 +403,8 @@
           "warning": "saldo_negativo_revisar"
         }
       ],
-      "cartera_ejecutada": 5691649965.940001,
-      "total_disponible": 6448194004.72,
+      "cartera_ejecutada": 5723107624.75,
+      "total_disponible": 6343229901.41,
       "moneda": "COP",
       "nota_parametrizacion": "Plan de cuentas en proceso de parametrización · revisar warnings"
     },
@@ -415,79 +415,79 @@
           "total": 701370508.88,
           "facturas_vencidas": 11,
           "mas_vieja": "2026-04-19",
-          "dias_vencida": 14
+          "dias_vencida": 16
         },
         {
           "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
           "total": 357285096.28000003,
           "facturas_vencidas": 5,
           "mas_vieja": "2026-04-15",
-          "dias_vencida": 18
+          "dias_vencida": 20
         },
         {
           "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
           "total": 159188822.0,
           "facturas_vencidas": 4,
           "mas_vieja": "2026-02-23",
-          "dias_vencida": 69
+          "dias_vencida": 71
         },
         {
           "partner": "METROGAS DE COLOMBIA S.A E.S.P",
           "total": 93251269.39,
           "facturas_vencidas": 10,
           "mas_vieja": "2026-04-11",
-          "dias_vencida": 22
+          "dias_vencida": 24
         },
         {
           "partner": "CONSORCIO SILAR CONDUGAS",
           "total": 86588132.44,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-30",
-          "dias_vencida": 3
+          "dias_vencida": 5
         },
         {
           "partner": "Jhon Christopher Angulo",
           "total": 59368482.98,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-03-24",
-          "dias_vencida": 40
+          "dias_vencida": 42
         },
         {
           "partner": "GASES DE OCCIDENTE SA ESP",
           "total": 55554076.62,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-05-01",
-          "dias_vencida": 2
+          "dias_vencida": 4
         },
         {
           "partner": "UNION TEMPORAL HABILITACION INFRAESTRUCTURA HOSPITALARIA",
           "total": 24521525.67,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 19
+          "dias_vencida": 21
         },
         {
           "partner": "CONINSA  S.A.S",
           "total": 18868581.69,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-20",
-          "dias_vencida": 13
+          "dias_vencida": 15
         },
         {
           "partner": "CONSTRUTEM S A S",
           "total": 15598151.76,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 19
+          "dias_vencida": 21
         }
       ],
-      "total": 1581854604.83,
-      "facturas_count": 40
+      "total": 1584854604.83,
+      "facturas_count": 41
     },
     "deuda_proveedores": {
-      "total": 3364002072.78,
+      "total": 3331686252.92,
       "count": 1000,
-      "vencidas": 880,
+      "vencidas": 886,
       "top": [
         {
           "proveedor": "GASES DE OCCIDENTE SA ESP",
@@ -495,15 +495,15 @@
         },
         {
           "proveedor": "CONSTRUTEM S A S",
-          "pendiente": 320808495.5
+          "pendiente": 316483130.7
+        },
+        {
+          "proveedor": "LOGISLAND S A S",
+          "pendiente": 265823603.1
         },
         {
           "proveedor": "INVERSIONES BR DE COLOMBIA S.A.S",
           "pendiente": 263894039.64
-        },
-        {
-          "proveedor": "LOGISLAND S A S",
-          "pendiente": 260403224.4
         },
         {
           "proveedor": "BENAVIDES RUIZ CRISTIAN JEFERSON",
@@ -516,135 +516,135 @@
   "recuperar": {
     "facturas_recientes": [
       {
-        "name": "FEC89",
-        "tipo": "venta",
-        "partner": "CONSORCIO SILAR CONDUGAS",
-        "monto": 86588132.44,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 22:14:24"
-      },
-      {
-        "name": "FEC88",
-        "tipo": "venta",
-        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
-        "monto": 67696.66,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 21:16:58"
-      },
-      {
-        "name": "FEC87",
-        "tipo": "venta",
-        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
-        "monto": 9059464.0,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 21:06:53"
-      },
-      {
-        "name": "FEC86",
-        "tipo": "venta",
-        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
-        "monto": 601531565.0,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 20:49:00"
-      },
-      {
-        "name": "FEC85",
-        "tipo": "venta",
-        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
-        "monto": 14900624.27,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 20:38:06"
-      },
-      {
-        "name": "DEC511",
+        "name": "BILL/2026/04/0404",
         "tipo": "compra",
-        "partner": "MESA GRISALES CESAR RUBELIO",
-        "monto": 1287000.03,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 20:35:33"
-      },
-      {
-        "name": "FEC84",
-        "tipo": "venta",
-        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
-        "monto": 40634413.0,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 20:35:02"
-      },
-      {
-        "name": "DEC510",
-        "tipo": "compra",
-        "partner": "PALACIOS PALACIOS NICOLE",
-        "monto": 3326400.0,
-        "fecha": "2026-04-27",
-        "registrada": "2026-04-30 20:34:44"
-      },
-      {
-        "name": "BILL/2026/04/0287",
-        "tipo": "compra",
-        "partner": "MAYPRA  EXPRESS S.A.S.",
-        "monto": 2876230.5,
-        "fecha": "2026-04-28",
-        "registrada": "2026-04-30 20:33:46"
-      },
-      {
-        "name": "BILL/2026/04/0286",
-        "tipo": "compra",
-        "partner": "CELSIA COLOMBIA SA E S P",
-        "monto": 109970.0,
-        "fecha": "2026-04-30",
-        "registrada": "2026-04-30 20:24:35"
-      },
-      {
-        "name": "BILL/2026/04/0285",
-        "tipo": "compra",
-        "partner": "ACUAVALLE  S.A  E.S.P",
-        "monto": 109380.0,
-        "fecha": "2026-04-23",
-        "registrada": "2026-04-30 20:19:30"
-      },
-      {
-        "name": "BILL/2026/04/0284",
-        "tipo": "compra",
-        "partner": "ACUAVALLE  S.A  E.S.P",
-        "monto": 23000.0,
-        "fecha": "2026-04-23",
-        "registrada": "2026-04-30 20:18:19"
-      },
-      {
-        "name": "DEC509",
-        "tipo": "compra",
-        "partner": "PALACIOS MENA LODWIN",
-        "monto": 70000.0,
+        "partner": "DEVIMED S.A",
+        "monto": 25700.0,
         "fecha": "2026-04-29",
-        "registrada": "2026-04-30 19:40:13"
+        "registrada": "2026-05-04 21:13:38"
       },
       {
-        "name": "BILL/2026/04/0272",
+        "name": "BILL/2026/04/0403",
         "tipo": "compra",
-        "partner": "BANCOLOMBIA",
-        "monto": 9162.0,
+        "partner": "DEVIMED S.A",
+        "monto": 25700.0,
         "fecha": "2026-04-29",
-        "registrada": "2026-04-30 19:39:51"
+        "registrada": "2026-05-04 21:13:29"
       },
       {
-        "name": "DEC508",
+        "name": "BILL/2026/04/0402",
         "tipo": "compra",
-        "partner": "PALACIOS MENA LODWIN",
-        "monto": 36900.0,
+        "partner": "DEVIMED S.A",
+        "monto": 25700.0,
+        "fecha": "2026-04-29",
+        "registrada": "2026-05-04 21:13:24"
+      },
+      {
+        "name": "BILL/2026/04/0401",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 25700.0,
+        "fecha": "2026-04-29",
+        "registrada": "2026-05-04 21:13:17"
+      },
+      {
+        "name": "BILL/2026/04/0400",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 13500.0,
+        "fecha": "2026-04-29",
+        "registrada": "2026-05-04 21:12:58"
+      },
+      {
+        "name": "BILL/2026/04/0399",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 13500.0,
+        "fecha": "2026-04-29",
+        "registrada": "2026-05-04 21:12:53"
+      },
+      {
+        "name": "BILL/2026/04/0398",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 18500.0,
+        "fecha": "2026-04-29",
+        "registrada": "2026-05-04 21:12:48"
+      },
+      {
+        "name": "BILL/2026/04/0397",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 18500.0,
+        "fecha": "2026-04-29",
+        "registrada": "2026-05-04 21:12:43"
+      },
+      {
+        "name": "BILL/2026/04/0396",
+        "tipo": "compra",
+        "partner": "CONCESIONARIA VIAL DEL PACIFICO S A S",
+        "monto": 24400.0,
         "fecha": "2026-04-28",
-        "registrada": "2026-04-30 19:39:04"
+        "registrada": "2026-05-04 21:12:38"
+      },
+      {
+        "name": "BILL/2026/04/0395",
+        "tipo": "compra",
+        "partner": "CONCESIONARIA VIAL DEL PACIFICO S A S",
+        "monto": 24400.0,
+        "fecha": "2026-04-28",
+        "registrada": "2026-05-04 21:12:31"
+      },
+      {
+        "name": "BILL/2026/04/0394",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 13500.0,
+        "fecha": "2026-04-28",
+        "registrada": "2026-05-04 21:12:24"
+      },
+      {
+        "name": "BILL/2026/04/0393",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 18500.0,
+        "fecha": "2026-04-28",
+        "registrada": "2026-05-04 21:12:19"
+      },
+      {
+        "name": "BILL/2026/04/0392",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 16200.0,
+        "fecha": "2026-04-28",
+        "registrada": "2026-05-04 21:12:14"
+      },
+      {
+        "name": "BILL/2026/04/0391",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 16200.0,
+        "fecha": "2026-04-28",
+        "registrada": "2026-05-04 21:12:09"
+      },
+      {
+        "name": "BILL/2026/04/0390",
+        "tipo": "compra",
+        "partner": "DEVIMED S.A",
+        "monto": 25700.0,
+        "fecha": "2026-04-28",
+        "registrada": "2026-05-04 21:12:04"
       }
     ],
     "compras_mes": {
-      "total": 0,
-      "count": 0,
+      "total": 4659625.0,
+      "count": 14,
       "desde": "2026-05-01",
       "moneda": "COP"
     },
     "compras_acumulado_ano": {
-      "total": 4456045709.05,
-      "count": 2049,
+      "total": 4594014434.01,
+      "count": 2203,
       "por_mes": [
         {
           "mes": "2026-01",
@@ -656,11 +656,15 @@
         },
         {
           "mes": "2026-03",
-          "total": 1718583190.8899999
+          "total": 1718673290.8899999
         },
         {
           "mes": "2026-04",
-          "total": 1567922970.490001
+          "total": 1701141970.4500012
+        },
+        {
+          "mes": "2026-05",
+          "total": 4659625.0
         }
       ],
       "desde": "2026-01-01",
@@ -676,19 +680,19 @@
         },
         {
           "contrato": "VALLE",
-          "gasto_acumulado": 1112177755.33,
+          "gasto_acumulado": 1123082841.46,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "O&M Z2",
-          "gasto_acumulado": 660633643.57,
+          "gasto_acumulado": 584832188.11,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "BOYACÁ",
-          "gasto_acumulado": 408903132.24,
+          "gasto_acumulado": 381141156.08,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -700,7 +704,7 @@
         },
         {
           "contrato": "FLORIDABLANCA",
-          "gasto_acumulado": 158366331.31,
+          "gasto_acumulado": 139560671.31,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -726,7 +730,7 @@
       "nota_presupuesto": "Campos presupuesto/cumplimiento pendientes hasta carga de estructuración"
     },
     "inventario_transito": {
-      "count": 64,
+      "count": 76,
       "items": [
         {
           "name": "OM&Z2/IN/00076",
@@ -916,6 +920,10 @@
       {
         "mes": "2026-04",
         "total": 4320173498.290001
+      },
+      {
+        "mes": "2026-05",
+        "total": 31457658.81
       }
     ]
   }

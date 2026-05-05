@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-03T16:00:01",
+  "ultima_actualizacion": "2026-05-05T18:02:32",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -2155,7 +2155,7 @@
       "origen": "limitless_auto",
       "contexto": "120 comunidades, meta de producción 2030",
       "tipo": "seguimiento",
-      "vencida": true,
+      "vencida": false,
       "evaluada": false,
       "categoria": "condugas",
       "monto_cop": null,
@@ -4750,7 +4750,8 @@
       "categoria": "condugas",
       "monto_cop": 2340000000,
       "personas": [],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-04-30-c002",
@@ -4769,7 +4770,8 @@
       "categoria": "condugas",
       "monto_cop": 920000000,
       "personas": [],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-04-30-c003",
@@ -4790,7 +4792,8 @@
       "personas": [
         "William"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-04-30-c004",
@@ -4809,7 +4812,8 @@
       "categoria": "condugas",
       "monto_cop": null,
       "personas": [],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-04-30-c005",
@@ -4830,7 +4834,8 @@
       "personas": [
         "Sebastian"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-04-30-c006",
@@ -4851,6 +4856,359 @@
       "personas": [
         "Sebastian"
       ],
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r2-001",
+      "tarea": "Llamar a Juan Carlos Gómez para confirmar firmas pendientes",
+      "responsable": "Sebastian",
+      "prioridad": "media",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Trámites administrativos",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r4-002",
+      "tarea": "Completar implementación con persona asignada a social (lotes tres y cinco) para desarrollar operación liviana posterior",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Contrato EPM - optimización operativa",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r10-008",
+      "tarea": "Compartir carta escrita con William y equipo explicando situación completa de crisis contractual y visión de resolución",
+      "responsable": "Sebastian",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Comunicación interna - crisis operativa",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r10-009",
+      "tarea": "Analizar reubicación de personal en otros contratos si cierre de contrato actual es inminente",
+      "responsable": "William",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Gestión de personal - contingencia",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r17-013",
+      "tarea": "Implementar rutina de sueno a las 7pm con monitorizacion de senales de irritacion",
+      "responsable": "Sebastian",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Nino requiere rutina consistente de sueno para evitar ciclos fragmentados de 10 minutos",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r17-014",
+      "tarea": "Coordinar sesion con gestora de sueno para protocolo fijo",
+      "responsable": "Sebastian",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Gestora de sueno ya aviso que hara protocolo fijo",
+      "tipo": "seguimiento",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r19-015",
+      "tarea": "Preparar nino para dormir antes de partido",
+      "responsable": "Sebastian",
+      "prioridad": "media",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Sebastian necesita acostar al nino para poder asistir a partido",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r13-011",
+      "tarea": "Confirmar si desea reintegro en nivel 2",
+      "responsable": "Sebastian",
+      "prioridad": "media",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Propuesta de incorporacion a nivel 2 con opcion de reintegro",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r13-012",
+      "tarea": "Participar en nivelacion previa antes de iniciar nivel 2",
+      "responsable": "Sebastian",
+      "prioridad": "media",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Se requiere nivelacion antes de empezar contenido de segundo nivel",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-04-30-r11-010",
+      "tarea": "Confirmar ejecución de modificaciones bilaterales firmadas por vicepresidente y comunicar al equipo cadena de valor",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-04-30",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Contrato EPM - implementación de cambios",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-05-04-c001",
+      "tarea": "Coordinar reunión entre Diana y Carlos (Condugas) con Vinila para definir estrategia del contrato Zilar",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Previo a reunión Sebastian-Andrea para definir cobertura financiera y mensajes a socios",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Diana",
+        "Carlos",
+        "Vinila",
+        "Andrea"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c002",
+      "tarea": "Decidir y comunicar a socios sobre capital adicional para Zilar o ejecutar preacuerdo con abogados",
+      "responsable": "Sebastian",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Resolución financiera urgente del contrato Zilar",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "socios",
+        "abogados",
+        "Andrea"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c003",
+      "tarea": "Tomar tiempo para reunión importante con equipo sobre patrones de comunicación que se están enraizando",
+      "responsable": "Sebastian",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-07",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Si no corta ahora patrones de comunicación deficiente, el equipo los seguirá usando a futuro; es aprendizaje que se transmite",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Juan",
+        "Carlos"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c004",
+      "tarea": "Elaborar presentación visual (papel grande o iPad) con línea de tiempo completa de hitos del contrato Río Negro para defensa ante TGM",
+      "responsable": "Sebastian",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Reunión programada mañana (2026-05-05) para negociación. Sebastian requiere clarificar responsabilidades y eventuales errores propios vs contrapartes",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "TGM",
+        "Unerney"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c005",
+      "tarea": "Recopilar cronología de reuniones y comunicaciones con TGM: qué se dijo en cada una, cuándo fueron, qué promesas/compromisos fueron incumplidos",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Necesario para defensa de contrato. Incluir: primeras reuniones, reunión con Camilo y Mía, estructura de tiempos, cambios en reajustes",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "TGM",
+        "Camilo",
+        "Mía"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c006",
+      "tarea": "Documentar incremento de costos directos y extensión de tiempos del contrato desde propuesta original (250 millones costo directo)",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Para comparativa contrato original vs realidad ejecutada. Debe mostrar en iPad/papel para presentación",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": 250000000,
+      "personas": [],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c007",
+      "tarea": "Consolidar información sobre reajustes ambientales y cómo han cambiado en años pasados para presentar mañana",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Para reunión TGM 2026-05-05 10am",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "TGM"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c008",
+      "tarea": "Compilar datos específicos orientados a negociación (pagos adeudados, estado de contrato) para preparar reunión mañana a las 10",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Negociación con acreedor/contratante",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-04-c009",
+      "tarea": "Documentar por escrito objetivo claro de negociación antes de reunión mañana",
+      "responsable": "Sebastian",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-04",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-05",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Preparación negociación",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [],
       "rol_sugerido": "rol-1-condugas"
     }
   ]

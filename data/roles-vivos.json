@@ -201,7 +201,35 @@
         "cerradas_semana_anterior": 5,
         "tendencia": "subiendo",
         "delta": 5
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 12,
+          "vencidas_count": 12,
+          "criticas_count": 12
+        },
+        {
+          "id": "andrea-bernal",
+          "nombre": "Andrea Bernal",
+          "apodo": "Andre",
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 2,
+          "vencidas_count": 2,
+          "criticas_count": 2
+        }
+      ],
+      "_responsables_sin_match": [
+        {
+          "nombre_responsable": "Alberto",
+          "abiertos_count": 1,
+          "vencidas_count": 1,
+          "criticas_count": 1
+        }
+      ]
     },
     "rol-2-familia": {
       "nombre": "Asesor y estructurador familia",
@@ -345,7 +373,59 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 5,
+          "vencidas_count": 0,
+          "criticas_count": 1
+        },
+        {
+          "id": "juan-camilo-berrio",
+          "nombre": "Juan Camilo Berrio",
+          "apodo": "Cami",
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ],
+      "_responsables_sin_match": [
+        {
+          "nombre_responsable": "Unknown (asesor legal)",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Ingeniero desarrollo",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Asesores externos",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Unknown",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Andrés",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ]
     },
     "rol-3-junta-asesora": {
       "nombre": "Gerente en junta asesora",
@@ -408,7 +488,26 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 3,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ],
+      "_responsables_sin_match": [
+        {
+          "nombre_responsable": "Andrés",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ]
     },
     "rol-4-being-core": {
       "nombre": "Being CoRe (consultoría + desarrollo)",
@@ -592,7 +691,53 @@
         "cerradas_semana_anterior": 3,
         "tendencia": "bajando",
         "delta": -3
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 10,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "id": "camilo-marin",
+          "nombre": "Camilo Marín",
+          "apodo": "Doctor",
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ],
+      "_responsables_sin_match": [
+        {
+          "nombre_responsable": "Diseñador gráfico",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Unknown",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Equipo asesor corporativo",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Ingeniero desarrollo + 2 ingenieros",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ]
     },
     "rol-5-financiero-personal": {
       "nombre": "Financiero personal + patrimonio",
@@ -633,7 +778,19 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "andrea-bernal",
+          "nombre": "Andrea Bernal",
+          "apodo": "Andre",
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 2,
+          "vencidas_count": 1,
+          "criticas_count": 0
+        }
+      ],
+      "_responsables_sin_match": []
     },
     "rol-6-salud": {
       "nombre": "Salud · fisio · deporte",
@@ -683,7 +840,26 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ],
+      "_responsables_sin_match": [
+        {
+          "nombre_responsable": "quien facilita sesión",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ]
     },
     "rol-7-docencia": {
       "nombre": "Docencia independiente",
@@ -724,7 +900,19 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 2,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ],
+      "_responsables_sin_match": []
     },
     "rol-8-ser-siendo-dev": {
       "nombre": "Ser Siendo — desarrollo metodológico",
@@ -765,7 +953,23 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 1
-      }
+      },
+      "_personas_vinculadas": [
+        {
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 2,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        }
+      ],
+      "_responsables_sin_match": []
     }
+  },
+  "_enrichment_personas": {
+    "personas_total": 50,
+    "roles_con_vinculadas": 8
   }
 }

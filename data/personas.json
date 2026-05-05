@@ -1,0 +1,1459 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "generated": "2026-05-03T23:42:35+00:00",
+    "source": "vault/01-SISTEMA-VIVO/Equipo.md",
+    "parser": "parse-equipo.py"
+  },
+  "stats": {
+    "total": 50,
+    "por_organizacion": {
+      "Condugas S.A. BIC": 23,
+      "Ecosistema extendido (contexto)": 10,
+      "Clientes EPM (interlocutores clave)": 6,
+      "Siendo Consulting / Resulting": 5,
+      "Junta asesora constitutiva Condugas (20 abril 2026)": 3,
+      "Empresas sector (competencia / pares)": 2,
+      "EyC (empresa grupo familiar)": 1
+    },
+    "por_status": {
+      "activo": 24,
+      "contacto": 19,
+      "salio": 3,
+      "confirmado": 3,
+      "inactivo": 1
+    }
+  },
+  "personas": [
+    {
+      "id": "olga-acevedo",
+      "nombre": "Olga Acevedo",
+      "apodo": null,
+      "rol": "Fundadora, dueña",
+      "status": "activo",
+      "notas": "Madre de Sebas",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Dueña / fundación",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "ma",
+          "last_seen": "2026-04-30",
+          "mentions_total": 16,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "sebastian-sanchez",
+      "nombre": "Sebastián Sánchez",
+      "apodo": null,
+      "rol": "CEO",
+      "status": "activo",
+      "notas": "Jefatura del ecosistema",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Dueña / fundación",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "sebastian",
+          "last_seen": "2026-04-30",
+          "mentions_total": 123,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 147,
+          "criticas": 48,
+          "vencidas": 91,
+          "cerradas_30d": 41
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-13-m5960dc",
+            "tarea": "Situación de caja familiar , inversiones",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-13"
+          },
+          {
+            "id": "2026-04-13-m3137b0",
+            "tarea": "Clientes base, iniciar por propuestas claras",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-13"
+          },
+          {
+            "id": "2026-04-15-c002",
+            "tarea": "Estructurar defensa legal y documentación contra EPM por incumplimiento contractual",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-15"
+          },
+          {
+            "id": "2026-04-15-c003",
+            "tarea": "Preparar propuesta contundente de reajuste de contrato EPM Río Negro con alternativas viables",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-15"
+          },
+          {
+            "id": "2026-04-16-c003",
+            "tarea": "Resolver no conformidad del contrato 24 y responder formalmente",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-16"
+          }
+        ]
+      }
+    },
+    {
+      "id": "juan-camilo-berrio",
+      "nombre": "Juan Camilo Berrio",
+      "apodo": "Cami",
+      "rol": "Gerente Proyectos",
+      "status": "activo",
+      "notas": "(NO es Camilo Puerta el sobrino; es otra persona)",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Empleados directos",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "cami",
+          "last_seen": "2026-04-30",
+          "mentions_total": 24,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 7,
+          "criticas": 4,
+          "vencidas": 5,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-08-005",
+            "tarea": "Revisar rendimiento de contratos compartidos que se ven críticos",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-20",
+            "fecha_creacion": "2026-04-08"
+          },
+          {
+            "id": "2026-04-21-c008",
+            "tarea": "Revertir transferencia de 14M COP a papá de Sebastian para cubrir fly pass y mantener nómina operativa",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-24",
+            "fecha_creacion": "2026-04-21"
+          },
+          {
+            "id": "2026-04-23-c005",
+            "tarea": "Crear modelo de rentabilidad de contratos (no solo APU de costos) con actualización mensual",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-30",
+            "fecha_creacion": "2026-04-23"
+          },
+          {
+            "id": "2026-04-08-001",
+            "tarea": "Compartir informes diarios, actas de obra o correos de febrero a abril que mencionen lluvias, paradas o bajo rendimiento",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-08"
+          },
+          {
+            "id": "2026-04-17-r82-011",
+            "tarea": "Redactar y enviar carta estratégica (presentarse frágiles, defensiva)",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-17"
+          }
+        ]
+      }
+    },
+    {
+      "id": "juan-guillermo",
+      "nombre": "Juan Guillermo",
+      "apodo": "Juan",
+      "rol": "Gerente Estrategia",
+      "status": "activo",
+      "notas": "Pensamiento sistémico, planificación profunda",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Empleados directos",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "juang",
+          "last_seen": "2026-04-30",
+          "mentions_total": 26,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 1,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-21-r9-006",
+            "tarea": "Investigar plataforma de grabación de pantalla directo desde computadores hacia ruta centralizada",
+            "prioridad": "media",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-21"
+          }
+        ]
+      }
+    },
+    {
+      "id": "carlos-hernan-lopez",
+      "nombre": "Carlos Hernán López",
+      "apodo": "Carlos",
+      "rol": "Gerente Nuevos Negocios",
+      "status": "activo",
+      "notas": "-28% → +21% en 2025",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Empleados directos",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "carlosh",
+          "last_seen": "2026-04-27",
+          "mentions_total": 1,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 1,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 1
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-23-r19-016",
+            "tarea": "Solicitar reunión a Banti para renegociar términos de pago/contrato (mencionar posibilidad de tercerizar perforación y a",
+            "prioridad": "alta",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-23"
+          }
+        ]
+      }
+    },
+    {
+      "id": "andrea-bernal",
+      "nombre": "Andrea Bernal",
+      "apodo": "Andre",
+      "rol": "Director Financiero y Contable",
+      "status": "activo",
+      "notas": "Análisis complejo, crisis OYMA",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Empleados directos",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "andre",
+          "last_seen": "2026-04-30",
+          "mentions_total": 21,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 3,
+          "criticas": 2,
+          "vencidas": 3,
+          "cerradas_30d": 1
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-20-c007",
+            "tarea": "Compilar información financiera consolidada para junta de mañana",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-21",
+            "fecha_creacion": "2026-04-20"
+          },
+          {
+            "id": "2026-04-20-c009",
+            "tarea": "Obtener información consolidada de caja y proyecciones para presentación en junta",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-20",
+            "fecha_creacion": "2026-04-20"
+          },
+          {
+            "id": "2026-04-15-007",
+            "tarea": "Firmar declaración de renta con ayuda de Diana y Alejandro",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "william-lopez",
+      "nombre": "William López",
+      "apodo": "Willi",
+      "rol": "Director Administrativo",
+      "status": "activo",
+      "notas": "Backbone operacional, conversación profunda Aletagogia Mar-18",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Empleados directos",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "willi",
+          "last_seen": "2026-04-30",
+          "mentions_total": 10,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 6,
+          "criticas": 0,
+          "vencidas": 2,
+          "cerradas_30d": 1
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-06-002",
+            "tarea": "Recopilar información del proceso centro de operaciones",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-06"
+          },
+          {
+            "id": "2026-04-16-c002x",
+            "tarea": "Evaluar viabilidad de terminación contractual vs. renegociación de fórmula",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": "2026-04-20",
+            "fecha_creacion": "2026-04-16"
+          },
+          {
+            "id": "2026-04-21-r11-008",
+            "tarea": "Agregar visualización de cuadrillas al rastreador de rutas (actualmente solo muestra vehículos)",
+            "prioridad": "alta",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-21"
+          },
+          {
+            "id": "2026-04-21-r11-009",
+            "tarea": "Implementar IA para contrastar dirección/tiempo de cuadrilla vs datos liquidación obra (detectar divergencias)",
+            "prioridad": "alta",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-21"
+          },
+          {
+            "id": "2026-04-30-r10-009",
+            "tarea": "Analizar reubicación de personal en otros contratos si cierre de contrato actual es inminente",
+            "prioridad": "alta",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-30"
+          }
+        ]
+      }
+    },
+    {
+      "id": "luz-margoth-hernandez",
+      "nombre": "Luz Margoth Hernández",
+      "apodo": "Margo",
+      "rol": "Directora HSEQ",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Empleado indirecto",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "bibiana-castano",
+      "nombre": "Bibiana Castaño",
+      "apodo": "Bibi",
+      "rol": "Coordinadora Admin",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Coordinadores / operación",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "lorena-fajardo",
+      "nombre": "Lorena Fajardo",
+      "apodo": "Lore",
+      "rol": "Coordinadora Tesorería",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Coordinadores / operación",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "lucy-tamayo",
+      "nombre": "Lucy Tamayo",
+      "apodo": "Lucy",
+      "rol": "Auditor Logística",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Coordinadores / operación",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "camilo-marin",
+      "nombre": "Camilo Marín",
+      "apodo": "Doctor",
+      "rol": "Abogado",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Proveedores clave",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "doctor",
+          "last_seen": "2026-04-27",
+          "mentions_total": 10,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 5,
+          "criticas": 4,
+          "vencidas": 2,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-21-c008",
+            "tarea": "Revertir transferencia de 14M COP a papá de Sebastian para cubrir fly pass y mantener nómina operativa",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-24",
+            "fecha_creacion": "2026-04-21"
+          },
+          {
+            "id": "2026-04-23-c005",
+            "tarea": "Crear modelo de rentabilidad de contratos (no solo APU de costos) con actualización mensual",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-30",
+            "fecha_creacion": "2026-04-23"
+          },
+          {
+            "id": "2026-04-21-c003",
+            "tarea": "Parametrizar completamente Odu (cuentas, distribuciones, causales) antes de migración",
+            "prioridad": "critica",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-21"
+          },
+          {
+            "id": "2026-04-30-c004",
+            "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amar",
+            "prioridad": "critica",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-30"
+          },
+          {
+            "id": "2026-04-21-r3-001",
+            "tarea": "Hacer auditoría de causación histórica (operativo vs administrativo) en sistemas actuales",
+            "prioridad": "alta",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-21"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jose-daniel-gonzalez",
+      "nombre": "José Daniel González",
+      "apodo": "Dani",
+      "rol": "Rasher",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Proveedores clave",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "favio-nelson-escobar",
+      "nombre": "Favio Nelson Escobar",
+      "apodo": "Nelson",
+      "rol": "Director Logística",
+      "status": "salio",
+      "notas": "Nombre completo confirmado desde xlsx",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "🚪 Salieron (ex-empleados directos)",
+      "salio": "2026",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "nelson",
+          "last_seen": "2026-04-27",
+          "mentions_total": 14,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "natalia-rojas",
+      "nombre": "Natalia Rojas",
+      "apodo": "Naty",
+      "rol": "Directora RRHH",
+      "status": "salio",
+      "notas": "Estaba en transición coordinadora → directora",
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "🚪 Salieron (ex-empleados directos)",
+      "salio": "2026",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "naty",
+          "last_seen": null,
+          "mentions_total": 0,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "claudia-quintero",
+      "nombre": "Claudia Quintero",
+      "apodo": "Clau",
+      "rol": "Directora Contable",
+      "status": "salio",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "🚪 Salieron (ex-empleados directos)",
+      "salio": "2026",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "clau",
+          "last_seen": "2026-04-30",
+          "mentions_total": 9,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 1,
+          "criticas": 1,
+          "vencidas": 1,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-23-c004",
+            "tarea": "Urgente: actualizar contabilidad en paralelo con producción para tener contraste costo vs ingresos real",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-27",
+            "fecha_creacion": "2026-04-23"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jorge-varela",
+      "nombre": "Jorge Varela",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Colegas Condugas (no empleados, red sector)",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "marco-vieira",
+      "nombre": "Marco Vieira",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Colegas Condugas (no empleados, red sector)",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "jorge-mario-escobar",
+      "nombre": "Jorge Mario Escobar",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Colegas Condugas (no empleados, red sector)",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "alfonso-serrano",
+      "nombre": "Alfonso Serrano",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Colegas Condugas (no empleados, red sector)",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "jorge-jaramillo",
+      "nombre": "Jorge Jaramillo",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Colegas Condugas (no empleados, red sector)",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "gustavo-silva",
+      "nombre": "Gustavo Silva",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Colegas Condugas (no empleados, red sector)",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "carlos-arturo-diaz-referente",
+      "nombre": "Carlos Arturo Díaz (referente)",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Condugas S.A. BIC",
+      "subgrupo": "Colegas Condugas (no empleados, red sector)",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "lina-russi",
+      "nombre": "Lina Russi",
+      "apodo": "Lina",
+      "rol": "Gestora",
+      "status": "activo",
+      "notas": "Energía sostenida con autonomía",
+      "organizacion": "Siendo Consulting / Resulting",
+      "subgrupo": "Socios",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "lina",
+          "last_seen": "2026-04-30",
+          "mentions_total": 23,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 3,
+          "criticas": 0,
+          "vencidas": 3,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-12-003",
+            "tarea": "Conectar modelo de KPIs con el briefing para mayor claridad",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-12"
+          },
+          {
+            "id": "2026-04-14-001",
+            "tarea": "Reunirse con Andrea para resolver deuda Condugas",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-14"
+          },
+          {
+            "id": "2026-04-16-c001",
+            "tarea": "Cobrar pago pendiente de Hamilton según lo prometido",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": "2026-05-02",
+            "fecha_creacion": "2026-04-16"
+          }
+        ]
+      }
+    },
+    {
+      "id": "emanuel",
+      "nombre": "Emanuel",
+      "apodo": "Ema",
+      "rol": "Desarrollador Odoo/apps",
+      "status": "activo",
+      "notas": "Socio. `esqb03/Siendo-IA`",
+      "organizacion": "Siendo Consulting / Resulting",
+      "subgrupo": "Socios",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "ema",
+          "last_seen": "2026-04-30",
+          "mentions_total": 29,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 1,
+          "criticas": 0,
+          "vencidas": 1,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-09-004",
+            "tarea": "Desarrollar ERP basado en IA",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-09"
+          }
+        ]
+      }
+    },
+    {
+      "id": "marisol-musella",
+      "nombre": "Marisol Musella",
+      "apodo": "Mari",
+      "rol": "—",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Siendo Consulting / Resulting",
+      "subgrupo": "Socios",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "monica-gonzalez",
+      "nombre": "Mónica González",
+      "apodo": "Mona",
+      "rol": "Socia Comercial (Condugas)",
+      "status": "inactivo",
+      "notas": "Sebas la marcó \"Inactivo / Posible Comercial\" 2026-04-19",
+      "organizacion": "Siendo Consulting / Resulting",
+      "subgrupo": "Socia en Condugas también",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "mona",
+          "last_seen": "2026-04-24",
+          "mentions_total": 1,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "adolfo-delgado",
+      "nombre": "Adolfo Delgado",
+      "apodo": null,
+      "rol": "Mentor — raíz OSDAP y texto guía 2019",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Siendo Consulting / Resulting",
+      "subgrupo": "Mentor",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "adolfo",
+          "last_seen": "2026-04-24",
+          "mentions_total": 11,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "gilberto-rodriguez",
+      "nombre": "Gilberto Rodríguez",
+      "apodo": null,
+      "rol": "Gerente",
+      "status": "activo",
+      "notas": "Ex-par de Sebas en Condugas. Presenta EyC en junta 20-abr-2026",
+      "organizacion": "EyC (empresa grupo familiar)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "carlos-eduardo-isaza",
+      "nombre": "Carlos Eduardo Isaza",
+      "apodo": null,
+      "rol": "Miembro",
+      "status": "confirmado",
+      "notas": "Ex-presidente AIA, ex-Integral. Crisis complejas. No conoce a Sebas.",
+      "organizacion": "Junta asesora constitutiva Condugas (20 abril 2026)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "mario-naranjo",
+      "nombre": "Mario Naranjo",
+      "apodo": null,
+      "rol": "Miembro",
+      "status": "confirmado",
+      "notas": "Gerente filial EPM Guatemala. Lectura cliente. Único que conoce a Sebas.",
+      "organizacion": "Junta asesora constitutiva Condugas (20 abril 2026)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "alejandro-gutierrez",
+      "nombre": "Alejandro Gutiérrez",
+      "apodo": null,
+      "rol": "Miembro",
+      "status": "confirmado",
+      "notas": "Economista, socio firma que valorizó EyC. Lectura financiera. No conoce a Sebas.",
+      "organizacion": "Junta asesora constitutiva Condugas (20 abril 2026)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "juan-carlos-gomez",
+      "nombre": "Juan Carlos Gómez",
+      "apodo": null,
+      "rol": "Subgerente Gas",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Clientes EPM (interlocutores clave)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 1,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-21-r9-006",
+            "tarea": "Investigar plataforma de grabación de pantalla directo desde computadores hacia ruta centralizada",
+            "prioridad": "media",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-21"
+          }
+        ]
+      }
+    },
+    {
+      "id": "luis-guillermo-villada",
+      "nombre": "Luis Guillermo Villada",
+      "apodo": null,
+      "rol": "Sub Gerente Aguas",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Clientes EPM (interlocutores clave)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "humberto-iglesias",
+      "nombre": "Humberto Iglesias",
+      "apodo": null,
+      "rol": "Vicepresidente Negocios",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Clientes EPM (interlocutores clave)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "santiago-wilches",
+      "nombre": "Santiago Wilches",
+      "apodo": null,
+      "rol": "Gerente Aguas",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Clientes EPM (interlocutores clave)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "jhon-maya",
+      "nombre": "Jhon Maya",
+      "apodo": null,
+      "rol": "Gerente General",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Clientes EPM (interlocutores clave)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "luis-abril",
+      "nombre": "Luis Abril",
+      "apodo": null,
+      "rol": "Gerente Técnico",
+      "status": "activo",
+      "notas": null,
+      "organizacion": "Clientes EPM (interlocutores clave)",
+      "subgrupo": "Sin subgrupo",
+      "salio": null,
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "metrogas",
+      "nombre": "Metrogas",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Empresas sector (competencia / pares)",
+      "subgrupo": "Red sectorial",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "metrogas",
+          "last_seen": null,
+          "mentions_total": 0,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "vanti",
+      "nombre": "Vanti",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": null,
+      "organizacion": "Empresas sector (competencia / pares)",
+      "subgrupo": "Red sectorial",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "vanti",
+          "last_seen": "2026-04-17",
+          "mentions_total": 1,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "hugo-alejandro-gonzalez",
+      "nombre": "Hugo Alejandro González",
+      "apodo": "Jogger",
+      "rol": null,
+      "status": "contacto",
+      "notas": "amistad, consejero (PERSONAL)",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "alejandro-debedout-sebastian-lopez-juliana-gutierrez",
+      "nombre": "Alejandro Debedout · Sebastián López · Juliana Gutiérrez",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "política",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "mateo-castrillon-lucas-duque",
+      "nombre": "Mateo Castrillón · Lucas Duque",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "emprendedores",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "nelson-orozco",
+      "nombre": "Nelson Orozco",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "Constructora (es OTRO Nelson, no confundir con Nelson Escobar de Condugas)",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "nelson",
+          "last_seen": "2026-04-27",
+          "mentions_total": 14,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "camilo-vazquez-david-duque",
+      "nombre": "Camilo Vázquez · David Duque",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "Constructora",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 3,
+          "criticas": 3,
+          "vencidas": 2,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-21-c008",
+            "tarea": "Revertir transferencia de 14M COP a papá de Sebastian para cubrir fly pass y mantener nómina operativa",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-24",
+            "fecha_creacion": "2026-04-21"
+          },
+          {
+            "id": "2026-04-23-c005",
+            "tarea": "Crear modelo de rentabilidad de contratos (no solo APU de costos) con actualización mensual",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-04-30",
+            "fecha_creacion": "2026-04-23"
+          },
+          {
+            "id": "2026-04-30-c004",
+            "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amar",
+            "prioridad": "critica",
+            "vencida": false,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-30"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rafael-gallego",
+      "nombre": "Rafael Gallego",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "dueño (empresa sin especificar)",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "2026-04-19",
+      "nombre": "2026-04-19:",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "reescritura completa tras leer fuente maestra `asistente_personal.xlsx`. Correcciones críticas:",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "cami-sobrino",
+      "nombre": "Cami ≠ sobrino:",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "Juan Camilo Berrio es empleado Condugas, Camilo Puerta es sobrino familiar. No mezclar.",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "cami",
+          "last_seen": "2026-04-30",
+          "mentions_total": 24,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 1,
+          "criticas": 0,
+          "vencidas": 1,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": [
+          {
+            "id": "2026-04-17-r82-011",
+            "tarea": "Redactar y enviar carta estratégica (presentarse frágiles, defensiva)",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-17"
+          }
+        ]
+      }
+    },
+    {
+      "id": "monica-mona",
+      "nombre": "Mónica (Mona):",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "es socia Comercial de **CONDUGAS** (no Siendo). Estado inactivo.",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": null,
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    },
+    {
+      "id": "nelson",
+      "nombre": "Nelson:",
+      "apodo": null,
+      "rol": null,
+      "status": "contacto",
+      "notas": "nombre completo Favio Nelson Escobar (no Orozco — ese es otro Nelson de constructora).",
+      "organizacion": "Ecosistema extendido (contexto)",
+      "subgrupo": "Ecosistema extendido",
+      "_enriched": {
+        "actividad_neural": {
+          "neural_id": "nelson",
+          "last_seen": "2026-04-27",
+          "mentions_total": 14,
+          "mentions_7d": 0
+        },
+        "tareas_count": {
+          "abiertas": 0,
+          "criticas": 0,
+          "vencidas": 0,
+          "cerradas_30d": 0
+        },
+        "tareas_abiertas": []
+      }
+    }
+  ],
+  "_enriched_at": "2026-05-05T18:00:03+00:00",
+  "_enrichment_stats": {
+    "personas_con_actividad_neural": 20,
+    "personas_total": 50,
+    "tareas_abiertas_distribuidas": 180
+  }
+}

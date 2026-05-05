@@ -1,60 +1,64 @@
 {
-  "saludo": "Buenos días Sebastián — sábado 02 May",
+  "saludo": "Buenos días Sebastián — martes 05 May",
   "supervivencia": [
-    "Hamilton: cobro vencido HOY (deadline 2026-05-02) — Lina debe ejecutar",
-    "Caja familiar: revisar estado real y movimientos de inversiones — crítico para liquidez",
-    "Base de clientes Siendo: consolidar en un lugar con necesidades documentadas — sin esto no hay estrategia"
+    "Caja en crítico: 8 días de runway, EBITDA -800k. Cobro EPM (~180M) y Hamilton (vencido 02-May) son vitales",
+    "EPM: 3 tareas críticas vencidas (defensa legal, reajuste contractual, documentación debido proceso). Riesgo de litigio inminente",
+    "Base clientes: sin estructura clara = sin pipeline = sin ingresos previsibles"
   ],
   "top_3": [
     {
-      "tarea": "Confirmar pago Hamilton con Lina (ejecutar HOY)",
+      "tarea": "Llamar Andrea HOY: deudas Condugas + Hamilton vencido. Necesitas flujo inmediato",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Vence hoy, impacta flujo inmediato",
-      "tarea_id": "hamilton-cobro"
+      "porque": "Caja colapsa en 8 días sin cobros",
+      "tarea_id": "resolver-deudas-condugas"
     },
     {
-      "tarea": "Revisar caja y estado inversiones (1 hora, datos reales)",
-      "categoria": "SUPERVIVENCIA",
-      "porque": "Crisis acumulada 3040M — necesitas certeza hoy",
-      "tarea_id": "caja-familiar"
-    },
-    {
-      "tarea": "Reunión 30min Ema + Lina: estructura Siendo (roles, presupuesto, prohibiciones)",
+      "tarea": "Sesión 90min Ema+Lina: estructura Siendo (roles/plata/tareas/límites) + ERP visual",
       "categoria": "ESTRATEGIA",
-      "porque": "Sin claridad operativa, automatizaciones y ERP caen",
+      "porque": "Sin estructura clara no hay escalabilidad ni claridad operativa",
       "tarea_id": "estructura-siendo"
+    },
+    {
+      "tarea": "Base clientes única con propuestas definidas (etapa Odoo + necesidades específicas)",
+      "categoria": "ESTRATEGIA",
+      "porque": "Crítica score:47. Sin esto no sabes dónde viene dinero",
+      "tarea_id": "clientes-base"
     }
   ],
-  "mega_dia": "Cobro Hamilton + Caja clara = respira. El resto espera lunes.",
+  "mega_dia": "Habla con Andrea + cierra base clientes en hoja limpia. Dos cosas que mueven aguja.",
   "contactar_hoy": [
     {
-      "persona": "Lina Russi",
-      "motivo": "Ejecutar cobro Hamilton — vence HOY"
+      "persona": "Andrea Bernal",
+      "motivo": "Cobro Hamilton vencido + deudas Condugas pendientes"
     },
     {
-      "persona": "Andrea",
-      "motivo": "Cifras reales caja y estado deudas Condugas"
+      "persona": "Emanuel",
+      "motivo": "Agendar sesión estructura Siendo para esta semana"
     }
   ],
   "ojo_con": [
-    "104 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "59 tareas críticas abiertas: priorizas 3 o te ahogás",
-    "WHOOP: 23% recovery, 54% sleep — descanso es operativo, no lujo",
-    "EPM sigue congelando reclamos (600M ambientales > 180M reajuste tuyo)"
+    "110 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
+    "119 tareas vencidas + 184 sin evaluar = caos no visible",
+    "KPIs desactualizados (caja/facturación: 16 días sin data)",
+    "EPM: 3 críticas vencidas desde abril. Abogado debe estar moviéndose YA"
   ],
   "vencidas": [
-    "Hamilton: deadline HOY",
-    "Debido proceso ambiental: vencida 2026-04-18"
+    "Hamilton pago (02-May)",
+    "Defensa legal EPM (04-18)",
+    "Documentación debido proceso (04-18)",
+    "Evaluación viabilidad EPM (04-20)",
+    "Revisar rendimiento contratos (04-20)",
+    "Conversa Pilar/POT (05-05) ← HOY"
   ],
-  "frase_dia": "Hoy: cobro + claridad. Lunes: estrategia. No es pereza, es supervivencia.",
-  "generado_at": "2026-05-02T11:00:08",
-  "fecha": "2026-05-02",
+  "frase_dia": "8 días de caja, 65 críticas abiertas, 3 clientes en riesgo. Hoy decides: ¿focus o caos?",
+  "generado_at": "2026-05-05T11:00:11",
+  "fecha": "2026-05-05",
   "stats": {
-    "abiertas": 202,
+    "abiertas": 212,
     "criticas": 65,
-    "vencidas": 41,
-    "estancadas": 176,
-    "sin_evaluar": 174
+    "vencidas": 119,
+    "estancadas": 192,
+    "sin_evaluar": 184
   },
   "criticas_sin_fecha": [
     {
@@ -150,15 +154,9 @@
   ],
   "vence_pronto": [
     {
-      "id": "2026-04-16-c001",
-      "tarea": "Cobrar pago pendiente de Hamilton según lo prometido",
-      "dias": 0,
-      "fecha_limite": "2026-05-02"
-    },
-    {
       "id": "2026-04-13-mc8a7e3",
       "tarea": "Conversar con basa, pilar y averiguar que propuestas hay en el POT para casa de aguactala",
-      "dias": 3,
+      "dias": 0,
       "fecha_limite": "2026-05-05"
     }
   ]

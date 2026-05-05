@@ -1,4 +1,41 @@
 {
-  "rechazos": [],
-  "ultima_actualizacion": "2026-04-29T02:13:22"
+  "rechazos": [
+    {
+      "tarea": "Revisar y ajustar fórmulas de reajuste en transporte y mano de obra para alineación con realidad de costos (transporte medido por tabla Excel de EPM)",
+      "contexto": "Contrato EPM - análisis costo",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-05"
+    },
+    {
+      "tarea": "Enviar preguntas pendientes a Sebastian",
+      "contexto": "Seguimiento administrativo",
+      "responsable": "Alejandra",
+      "fecha_rechazo": "2026-05-05"
+    },
+    {
+      "tarea": "Escribir en WhatsApp para confirmar disponibilidad miércoles o viernes 9-12 para reunión/actividad no especificada",
+      "contexto": "Coordinación personal/familiar",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-05"
+    },
+    {
+      "tarea": "Corregir reporte de horarios en sistema para que refleje jornada real de trabajo (5:30am hasta 6/7/8pm) de todo el equipo incluyendo Sebastian",
+      "contexto": "Sistema de nómina y horas",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-05"
+    },
+    {
+      "tarea": "Escribir a Juan Guillermo por privado para que se conecte a reunión importante",
+      "contexto": "Coordinación de reunión",
+      "responsable": "William",
+      "fecha_rechazo": "2026-05-05"
+    },
+    {
+      "tarea": "Apagar objeto/tanque despues de uso para evitar danios",
+      "contexto": "Objeto no se seca si se deja encendido",
+      "responsable": "Sebastian",
+      "fecha_rechazo": "2026-05-05"
+    }
+  ],
+  "ultima_actualizacion": "2026-05-05T06:43:04"
 }
