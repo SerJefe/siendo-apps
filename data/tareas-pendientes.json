@@ -4851,7 +4851,7 @@
       "prioridad": "alta",
       "contexto": "Necesidad de validar información antes de entregarla a directores en formato correcto",
       "tipo": "pendiente",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -4883,7 +4883,7 @@
       "prioridad": "alta",
       "contexto": "Estrategia de penetración en Piosas desde tema de construcción y contactos existentes",
       "tipo": "compromiso",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -4918,7 +4918,7 @@
       "prioridad": "media",
       "contexto": "Validar viabilidad de inversión en máquina como hizo con 'parita' en Valle",
       "tipo": "pendiente",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "patrimonio",
@@ -4945,7 +4945,7 @@
       "prioridad": "media",
       "contexto": "Reportes de Susana y Manuel indican positivos y correcciones necesarias en forma de trabajo",
       "tipo": "pendiente",
-      "estado": "pendiente",
+      "estado": "rechazada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -4974,7 +4974,7 @@
       "prioridad": "media",
       "contexto": "Investigación rápida de máquinas versátiles más útiles para regiones, especialmente Boyacá",
       "tipo": "pendiente",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -4999,7 +4999,7 @@
       "prioridad": "media",
       "contexto": "Erika requiere informar cambios de actividades que haga con ella en Valle",
       "tipo": "pendiente",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": "2026-05-08",
       "categoria_sugerida": "condugas",
@@ -5029,7 +5029,7 @@
       "prioridad": "alta",
       "contexto": "Anticipar que Edward puede reaccionar defensivamente; explicitar que cambios responden a necesidades organizacionales, no castigo personal",
       "tipo": "decision",
-      "estado": "pendiente",
+      "estado": "rechazada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -5054,7 +5054,7 @@
       "prioridad": "alta",
       "contexto": "Reestructuración no se puede hacer solo; requiere alineamiento claro de roles y capacidad de contribución",
       "tipo": "decision",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -5078,12 +5078,12 @@
     },
     {
       "id": "2026-05-04-r9-009",
-      "tarea": "Meter a Diana en contrato de aguas como alternativa laboral y elemento estratégico para defensa de Zilar",
+      "tarea": "Meter a Diana en contrato de aguas como alternativa laboral y elemento estratégico para defensa de oymar1",
       "responsable": null,
       "prioridad": "alta",
       "contexto": "Diana está siendo entrenada en crisis y lenguaje; oportunidad en aguas para mantenerla en fold estratégico",
       "tipo": "decision",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -5104,7 +5104,8 @@
         "Guillermo",
         "Sebastián"
       ],
-      "segmento_impacto": "alto"
+      "segmento_impacto": "alto",
+      "editada": true
     },
     {
       "id": "2026-05-04-r11-010",
@@ -5113,7 +5114,7 @@
       "prioridad": "baja",
       "contexto": "Logística de envío de documentación",
       "tipo": "pendiente",
-      "estado": "pendiente",
+      "estado": "rechazada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -5138,7 +5139,7 @@
       "prioridad": "media",
       "contexto": "Persona responsable llega mañana, pedirá reposición formal de SIM por WhatsApp. No hacer hoy.",
       "tipo": "seguimiento",
-      "estado": "pendiente",
+      "estado": "rechazada",
       "fecha": "2026-05-04",
       "fecha_limite": "2026-05-05",
       "categoria_sugerida": "condugas",
@@ -5161,7 +5162,7 @@
       "prioridad": "media",
       "contexto": "Solicitado por Sebastian en reunión 22",
       "tipo": "pendiente",
-      "estado": "pendiente",
+      "estado": "rechazada",
       "fecha": "2026-05-04",
       "fecha_limite": "2026-05-05",
       "categoria_sugerida": "condugas",
@@ -5184,7 +5185,7 @@
       "prioridad": "alta",
       "contexto": "Diana fue informada de abono a facturas pendientes. Humberto Iglesias (junta asesora probable) fue reunido hoy. Mañana se presenta panorama claro al equipo.",
       "tipo": "compromiso",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": "2026-05-05",
       "categoria_sugerida": "condugas",
@@ -5210,7 +5211,7 @@
       "prioridad": "media",
       "contexto": "Tema: operación de mantenimiento quebrada. Estrategia: visibilidad en tiempo real reduce disfraz de problemas",
       "tipo": "decision",
-      "estado": "pendiente",
+      "estado": "aceptada",
       "fecha": "2026-05-04",
       "fecha_limite": null,
       "categoria_sugerida": "condugas",
@@ -5225,7 +5226,459 @@
         "Adolfo"
       ],
       "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r4-001",
+      "tarea": "Conectar con Juanes para ver meta de tarea y plan de trabajo en comunidad",
+      "responsable": "Sebastian",
+      "prioridad": "media",
+      "contexto": "Seguimiento comunidad/holding",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-4-being-core",
+      "monto_cop": null,
+      "personas": [
+        "Juanes"
+      ],
+      "segmento_idx": 4,
+      "segmento_titulo": "Conversación sobre la comunidad y el proyecto",
+      "segmento_inicio": "2026-05-06T16:39:36Z",
+      "segmento_fin": "2026-05-06T16:52:54Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Nico",
+        "Carlos Arturo Díaz",
+        "Don Antonio",
+        "Jorge",
+        "Juanes"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r5-002",
+      "tarea": "Implementar reportes semanales de equipo: sintesis de aprendizajes, errores cometidos, potenciacion al otro, razon del aprendizaje",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Dinamica de equipo",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": "2026-05-12",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": 250000,
+      "personas": [
+        "Jorge",
+        "Juan Esteban"
+      ],
+      "segmento_idx": 5,
+      "segmento_titulo": "Conversación sobre la dinámica del equipo y el comportamiento individual",
+      "segmento_inicio": "2026-05-06T16:52:55Z",
+      "segmento_fin": "2026-05-06T16:58:50Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Jorge",
+        "Juan Esteban"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r5-003",
+      "tarea": "Presentar sintesis de reportes semanales a Jorge y Juan Esteban viernes o miercoles",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Seguimiento equipo",
+      "tipo": "compromiso",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Jorge",
+        "Juan Esteban"
+      ],
+      "segmento_idx": 5,
+      "segmento_titulo": "Conversación sobre la dinámica del equipo y el comportamiento individual",
+      "segmento_inicio": "2026-05-06T16:52:55Z",
+      "segmento_fin": "2026-05-06T16:58:50Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Jorge",
+        "Juan Esteban"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r5-004",
+      "tarea": "Diseñar intervencion (renuncias, esquemas, actividades, frecuencia reunion) basada en divergencia/convergencia observada",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Fortalecimiento equipo",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Sebastian"
+      ],
+      "segmento_idx": 5,
+      "segmento_titulo": "Conversación sobre la dinámica del equipo y el comportamiento individual",
+      "segmento_inicio": "2026-05-06T16:52:55Z",
+      "segmento_fin": "2026-05-06T16:58:50Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Jorge",
+        "Juan Esteban"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r5-005",
+      "tarea": "Establecer indicadores ANTES de piloto para medir efectividad de intervenciones",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Medicion resultados",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Sebastian"
+      ],
+      "segmento_idx": 5,
+      "segmento_titulo": "Conversación sobre la dinámica del equipo y el comportamiento individual",
+      "segmento_inicio": "2026-05-06T16:52:55Z",
+      "segmento_fin": "2026-05-06T16:58:50Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Jorge",
+        "Juan Esteban"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r6-006",
+      "tarea": "Diseñar e implementar dashboard en Condugas que extraiga nodos/conexiones del sistema en tiempo real para inteligencia comercial",
+      "responsable": "Sebastian",
+      "prioridad": "alta",
+      "contexto": "Innovacion operativa Condugas",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Sebastian"
+      ],
+      "segmento_idx": 6,
+      "segmento_titulo": "Reflexiones sobre el desarrollo personal, el trabajo y la vida",
+      "segmento_inicio": "2026-05-06T16:58:50Z",
+      "segmento_fin": "2026-05-06T17:21:12Z",
+      "segmento_personas": [
+        "Sebastian"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r9-007",
+      "tarea": "Revisar parametrizacion de herramientas en sistema: definir umbral de relevancia (ej: <5000 COP = costo, >=200000 COP = activo/inventario) y reglas de depreciacion por tipo",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Control interno Condugas",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": "2026-05-13",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Andrés",
+        "Nelson"
+      ],
+      "segmento_idx": 9,
+      "segmento_titulo": "Conversación sobre la parametrización de herramientas y otros temas",
+      "segmento_inicio": "2026-05-06T17:37:37Z",
+      "segmento_fin": "2026-05-06T17:49:48Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Andrés",
+        "Nelson"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r9-008",
+      "tarea": "Diseñar protocolos de implementacion SAP/ERP que funcionen independientemente de claridad de cliente (cliente bueno/malo, orientado/desorientado)",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Robustez implementacion",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-4-being-core",
+      "monto_cop": null,
+      "personas": [
+        "Sebastian"
+      ],
+      "segmento_idx": 9,
+      "segmento_titulo": "Conversación sobre la parametrización de herramientas y otros temas",
+      "segmento_inicio": "2026-05-06T17:37:37Z",
+      "segmento_fin": "2026-05-06T17:49:48Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Andrés",
+        "Nelson"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-06-r12-009",
+      "tarea": "Estructurar demanda formal contra EPM y funcionarios específicos por negligencias en comunicación y datos de pagos ambientales",
+      "responsable": "Abogada",
+      "prioridad": "alta",
+      "contexto": "Contrato EPM - incumplimiento y errores en cálculo de ambientales",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Catalina",
+        "Humberto",
+        "EPM"
+      ],
+      "segmento_idx": 12,
+      "segmento_titulo": "Conversaciones sobre trabajo y asuntos personales",
+      "segmento_inicio": "2026-05-06T17:58:45Z",
+      "segmento_fin": "2026-05-06T18:20:40Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Humberto",
+        "Catalina",
+        "Abogada",
+        "EPM",
+        "funcionarios EPM"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-06-r12-010",
+      "tarea": "Establecer reuniones fijas lunes y jueves con Sebastian para seguimiento de gestión EPM",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Continuidad en negociación y comunicación",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": "2026-05-08",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Sebastian"
+      ],
+      "segmento_idx": 12,
+      "segmento_titulo": "Conversaciones sobre trabajo y asuntos personales",
+      "segmento_inicio": "2026-05-06T17:58:45Z",
+      "segmento_fin": "2026-05-06T18:20:40Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Humberto",
+        "Catalina",
+        "Abogada",
+        "EPM",
+        "funcionarios EPM"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-06-r13-011",
+      "tarea": "Verificar estado de compra de tubería 160 solicitada a Jorge Jiménez (JYS) y confirmar si se cerró o no",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Pedido operativo que se olvidó en el radar",
+      "tipo": "seguimiento",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Jorge Jiménez",
+        "Yurán"
+      ],
+      "segmento_idx": 13,
+      "segmento_titulo": "Conversación sobre varios temas",
+      "segmento_inicio": "2026-05-06T18:25:29Z",
+      "segmento_fin": "2026-05-06T18:33:06Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Jorge Jiménez",
+        "JYS",
+        "Yurán",
+        "Carlos López"
+      ],
+      "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-06-r14-012",
+      "tarea": "Diseñar arquitectura de centralización de datos similar a modelo DIAN: un repositorio seguro con acceso controlado por usuario/rol",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Seguridad informática y prevención de filtraciones de datos cliente",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Humberto",
+        "EPM"
+      ],
+      "segmento_idx": 14,
+      "segmento_titulo": "Discusión sobre sistemas técnicos, seguridad informática y gestión de datos.",
+      "segmento_inicio": "2026-05-06T19:14:15Z",
+      "segmento_fin": "2026-05-06T19:17:43Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Humberto",
+        "EPM",
+        "DIAN",
+        "Compañeros con acceso ad-hoc"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-06-r14-013",
+      "tarea": "Auditar sistemas activos en EPM (máximo, hidro, Microsoft, RP y aplicaciones freelance) e identificar riesgos de seguridad",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Múltiples fuentes de datos cliente generan riesgo de infiltración",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "EPM",
+        "Humberto"
+      ],
+      "segmento_idx": 14,
+      "segmento_titulo": "Discusión sobre sistemas técnicos, seguridad informática y gestión de datos.",
+      "segmento_inicio": "2026-05-06T19:14:15Z",
+      "segmento_fin": "2026-05-06T19:17:43Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Humberto",
+        "EPM",
+        "DIAN",
+        "Compañeros con acceso ad-hoc"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-06-r15-014",
+      "tarea": "Diseñar reingeniería operativa de Condugas para modelo de asignación variable (talent/proyectos mixto) vs modelo fijo anterior",
+      "responsable": "Sebastian",
+      "prioridad": "alta",
+      "contexto": "7 ciclos de rotación de directores y equipos por inconsistencia de EPM. Necesario cambio estratégico.",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Equipo Condugas"
+      ],
+      "segmento_idx": 15,
+      "segmento_titulo": "Gestión de contratos, acuerdos financieros y desafíos operativos.",
+      "segmento_inicio": "2026-05-06T19:17:45Z",
+      "segmento_fin": "2026-05-06T21:50:03Z",
+      "segmento_personas": [
+        "Sebastian",
+        "EPM",
+        "Equipo Condugas (directores, encargados, ayudantes, oficiales)",
+        "Occidental (cliente EPM)"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-06-r16-015",
+      "tarea": "Confirmar almuerzo lunes al mediodía con Nicolás",
+      "responsable": null,
+      "prioridad": "baja",
+      "contexto": "Encuentro social",
+      "tipo": "seguimiento",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": "2026-05-12",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-6-salud",
+      "monto_cop": null,
+      "personas": [
+        "Nicolás"
+      ],
+      "segmento_idx": 16,
+      "segmento_titulo": "Conversación sobre un viaje y un almuerzo",
+      "segmento_inicio": "2026-05-06T21:51:07Z",
+      "segmento_fin": "2026-05-06T21:52:40Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Nicolás",
+        "Persona con viaje fin de semana"
+      ],
+      "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-06-r16-016",
+      "tarea": "Recoger objeto en Sótano 3, da 37",
+      "responsable": null,
+      "prioridad": "baja",
+      "contexto": "Ubicación: Sótano 3, da 37",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-06",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": null,
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 16,
+      "segmento_titulo": "Conversación sobre un viaje y un almuerzo",
+      "segmento_inicio": "2026-05-06T21:51:07Z",
+      "segmento_fin": "2026-05-06T21:52:40Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Nicolás",
+        "Persona con viaje fin de semana"
+      ],
+      "segmento_impacto": "bajo"
     }
   ],
-  "ultima_actualizacion": "2026-05-05T18:02:32.408306"
+  "ultima_actualizacion": "2026-05-07T13:53:29.564223"
 }

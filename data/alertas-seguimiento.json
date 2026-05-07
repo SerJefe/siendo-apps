@@ -1,11 +1,11 @@
 {
-  "generado_at": "2026-05-05T16:00:02",
+  "generado_at": "2026-05-07T12:00:01",
   "resumen": {
-    "total_abiertas": 212,
-    "vencidas": 37,
+    "total_abiertas": 230,
+    "vencidas": 46,
     "por_vencer_48h": 1,
     "estancadas_5d": 184,
-    "sin_evaluar": 184,
+    "sin_evaluar": 202,
     "criticas_sin_accion": 1
   },
   "vencidas": [
@@ -13,230 +13,284 @@
       "id": "2026-04-08-005",
       "tarea": "Revisar rendimiento de contratos compartidos que se ven críticos",
       "deadline": "2026-04-20",
-      "dias_vencida": 15
+      "dias_vencida": 17
+    },
+    {
+      "id": "2026-04-13-mc8a7e3",
+      "tarea": "Conversar con basa, pilar y averiguar que propuestas hay en el POT para casa de aguactala",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
     },
     {
       "id": "2026-04-16-c001",
       "tarea": "Cobrar pago pendiente de Hamilton según lo prometido",
       "deadline": "2026-05-02",
-      "dias_vencida": 3
+      "dias_vencida": 5
     },
     {
       "id": "2026-04-16-c001x",
       "tarea": "Preparar documentación de debido proceso ejecutivo con focus en ambiental y reajustes",
       "deadline": "2026-04-18",
-      "dias_vencida": 17
+      "dias_vencida": 19
     },
     {
       "id": "2026-04-16-c002x",
       "tarea": "Evaluar viabilidad de terminación contractual vs. renegociación de fórmula",
       "deadline": "2026-04-20",
-      "dias_vencida": 15
+      "dias_vencida": 17
     },
     {
       "id": "2026-04-17-c001",
       "tarea": "Presentar propuesta de restructuración a don Darío",
       "deadline": "2026-04-21",
-      "dias_vencida": 14
+      "dias_vencida": 16
     },
     {
       "id": "2026-04-17-c002",
       "tarea": "Redefinir presentación corporativa eliminando foco exclusivo en EPM e incorporando Vanti, gas de occidente, infraestructura",
       "deadline": "2026-04-25",
-      "dias_vencida": 10
+      "dias_vencida": 12
     },
     {
       "id": "2026-04-17-c003",
       "tarea": "Auditar estructura de deuda y cuentas por cobrar entre Condugas, socios e IC (excisión no pagada)",
       "deadline": "2026-04-24",
-      "dias_vencida": 11
+      "dias_vencida": 13
     },
     {
       "id": "2026-04-17-c007",
       "tarea": "Preparar documento para Mario (entrega viernes para lunes, ajuste proporciones mano de obra ~15%)",
       "deadline": "2026-04-18",
-      "dias_vencida": 17
+      "dias_vencida": 19
     },
     {
       "id": "2026-04-20-c001",
       "tarea": "Armar plan de defensa y revisar números de caja con Andrea",
       "deadline": "2026-04-20",
-      "dias_vencida": 15
+      "dias_vencida": 17
     },
     {
       "id": "2026-04-20-c002",
       "tarea": "Contactar proveedores (3 llamadas pendientes)",
       "deadline": "2026-04-20",
-      "dias_vencida": 15
+      "dias_vencida": 17
     },
     {
       "id": "2026-04-20-c006",
       "tarea": "Preparar análisis de reducción de pasivos operativos (campamento/internet/personal)",
       "deadline": "2026-04-21",
-      "dias_vencida": 14
+      "dias_vencida": 16
     },
     {
       "id": "2026-04-20-c007",
       "tarea": "Compilar información financiera consolidada para junta de mañana",
       "deadline": "2026-04-21",
-      "dias_vencida": 14
+      "dias_vencida": 16
     },
     {
       "id": "2026-04-20-c008",
       "tarea": "Exigir a socios cumplimiento de aportes o separación",
       "deadline": "2026-04-21",
-      "dias_vencida": 14
+      "dias_vencida": 16
     },
     {
       "id": "2026-04-20-c003x",
       "tarea": "Analizar y discutir con Carlos López sobre situación financiera",
       "deadline": "2026-04-20",
-      "dias_vencida": 15
+      "dias_vencida": 17
     },
     {
       "id": "2026-04-20-c007x",
       "tarea": "Preparar comunicado para equipo: imposibilidad de pago a proveedores por falta de pago de PM",
       "deadline": "2026-04-21",
-      "dias_vencida": 14
+      "dias_vencida": 16
     },
     {
       "id": "2026-04-20-c008x",
       "tarea": "Revisar y reducir carga administrativa del contrato (objetivo: bajar de 130M a sostenible)",
       "deadline": "2026-04-21",
-      "dias_vencida": 14
+      "dias_vencida": 16
     },
     {
       "id": "2026-04-20-c009",
       "tarea": "Obtener información consolidada de caja y proyecciones para presentación en junta",
       "deadline": "2026-04-20",
-      "dias_vencida": 15
+      "dias_vencida": 17
     },
     {
       "id": "2026-04-21-c005",
       "tarea": "Establecer transición Odu como obligatoria (mañana y pasado mañana), sin negociación",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-21-c008",
       "tarea": "Revertir transferencia de 14M COP a papá de Sebastian para cubrir fly pass y mantener nómina operativa",
       "deadline": "2026-04-24",
-      "dias_vencida": 11
+      "dias_vencida": 13
     },
     {
       "id": "2026-04-22-c001",
       "tarea": "Evaluar y reparar/reemplazar equipo dañado por sobreamperaje",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-22-c002",
       "tarea": "Revisar protocolo de seguridad eléctrica en hogar/obra",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-22-c003",
       "tarea": "Definir cifra mínima de caja requerida en 5 días para salvar operación (nómina y proveedores críticos)",
       "deadline": "2026-04-27",
-      "dias_vencida": 8
+      "dias_vencida": 10
     },
     {
       "id": "2026-04-22-c004",
       "tarea": "Construir narrativa madre (5 bloques): qué pasó, qué está probado, cuánto falta, riesgo para EPM, decisión concreta",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-22-c005",
       "tarea": "Preparar mensaje ejecutivo de 20 minutos para pedir reunión con alto nivel EPM",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-22-c006",
       "tarea": "Ejecutar 4 rutas simultáneas: 1) Negocio (VP Negocios), 2) Jurídica/Reclamaciones, 3) Portal Pagos Proveedores, 4) Canal Ética/Transparencia",
       "deadline": "2026-04-25",
-      "dias_vencida": 10
+      "dias_vencida": 12
     },
     {
       "id": "2026-04-22-c007",
       "tarea": "Radicación formal paralela a llamada ejecutiva con bloques: hechos, impacto, riesgos, solicitud, plazo",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-22-c001x",
       "tarea": "Responder internamente 10 preguntas estratégicas sobre cifras mínimas, documentación, fecha crítica de caja y decisiones agresivas",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-22-c002x",
       "tarea": "Preparar mensaje ejecutivo de 5 bloques (qué pasó, prueba, cuánto falta, riesgo EPM, decisión solicitada)",
       "deadline": "2026-04-23",
-      "dias_vencida": 12
+      "dias_vencida": 14
     },
     {
       "id": "2026-04-22-c004x",
       "tarea": "Radicación formal paralela a llamada (correo, portal de pagos proveedores, canal de integridad EPM)",
       "deadline": "2026-04-24",
-      "dias_vencida": 11
+      "dias_vencida": 13
     },
     {
       "id": "2026-04-23-c001",
       "tarea": "Comunicar decisión de salida de Carlos de la empresa",
       "deadline": "2026-04-24",
-      "dias_vencida": 11
+      "dias_vencida": 13
     },
     {
       "id": "2026-04-23-c002",
       "tarea": "Finalizar y radicar comunicación formal a EPM con: reserva derechos + propuesta de ajuste económico + convocatoria a mesa técnica 10 días hábiles",
       "deadline": "2026-04-24",
-      "dias_vencida": 11
+      "dias_vencida": 13
     },
     {
       "id": "2026-04-23-c003",
       "tarea": "Incorporar aclaración de ítems ambientales (80% vs 100% condicionado) en comunicación a EPM antes de radicar",
       "deadline": "2026-04-24",
-      "dias_vencida": 11
+      "dias_vencida": 13
     },
     {
       "id": "2026-04-23-c004",
       "tarea": "Urgente: actualizar contabilidad en paralelo con producción para tener contraste costo vs ingresos real",
       "deadline": "2026-04-27",
-      "dias_vencida": 8
+      "dias_vencida": 10
     },
     {
       "id": "2026-04-23-c005",
       "tarea": "Crear modelo de rentabilidad de contratos (no solo APU de costos) con actualización mensual",
       "deadline": "2026-04-30",
-      "dias_vencida": 5
+      "dias_vencida": 7
     },
     {
       "id": "2026-04-23-c006",
       "tarea": "Análisis: Si crédito nuevo se usa para reducir gastos fijos operativos (arriendo, servicios) + comprar activos vs solo pagar crédito anterior, ¿qué % debería ser cada uno?",
       "deadline": "2026-04-26",
-      "dias_vencida": 9
+      "dias_vencida": 11
     },
     {
       "id": "2026-04-30-c005",
       "tarea": "Firmar documentacion de suspension de contrato de patrullaje",
       "deadline": "2026-04-30",
-      "dias_vencida": 5
+      "dias_vencida": 7
     },
     {
       "id": "2026-04-30-c006",
       "tarea": "Revisar documento de contrato (~120 paginas) en Word antes de firma",
       "deadline": "2026-04-30",
-      "dias_vencida": 5
+      "dias_vencida": 7
+    },
+    {
+      "id": "2026-05-04-c001",
+      "tarea": "Coordinar reunión entre Diana y Carlos (Condugas) con Vinila para definir estrategia del contrato Zilar",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
+    },
+    {
+      "id": "2026-05-04-c002",
+      "tarea": "Decidir y comunicar a socios sobre capital adicional para Zilar o ejecutar preacuerdo con abogados",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
+    },
+    {
+      "id": "2026-05-04-c004",
+      "tarea": "Elaborar presentación visual (papel grande o iPad) con línea de tiempo completa de hitos del contrato Río Negro para defensa ante TGM",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
+    },
+    {
+      "id": "2026-05-04-c005",
+      "tarea": "Recopilar cronología de reuniones y comunicaciones con TGM: qué se dijo en cada una, cuándo fueron, qué promesas/compromisos fueron incumplidos",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
+    },
+    {
+      "id": "2026-05-04-c006",
+      "tarea": "Documentar incremento de costos directos y extensión de tiempos del contrato desde propuesta original (250 millones costo directo)",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
+    },
+    {
+      "id": "2026-05-04-c007",
+      "tarea": "Consolidar información sobre reajustes ambientales y cómo han cambiado en años pasados para presentar mañana",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
+    },
+    {
+      "id": "2026-05-04-c008",
+      "tarea": "Compilar datos específicos orientados a negociación (pagos adeudados, estado de contrato) para preparar reunión mañana a las 10",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
+    },
+    {
+      "id": "2026-05-04-c009",
+      "tarea": "Documentar por escrito objetivo claro de negociación antes de reunión mañana",
+      "deadline": "2026-05-05",
+      "dias_vencida": 2
     }
   ],
   "por_vencer": [
     {
-      "id": "2026-04-13-mc8a7e3",
-      "tarea": "Conversar con basa, pilar y averiguar que propuestas hay en el POT para casa de aguactala",
-      "deadline": "2026-05-05",
+      "id": "2026-05-04-c003",
+      "tarea": "Tomar tiempo para reunión importante con equipo sobre patrones de comunicación que se están enraizando",
+      "deadline": "2026-05-07",
       "dias_restantes": 0
     }
   ],
@@ -244,922 +298,922 @@
     {
       "id": "2026-04-13-mc2abc0",
       "tarea": "Casa (Construcción)",
-      "dias_sin_evaluar": 22
+      "dias_sin_evaluar": 24
     },
     {
       "id": "2026-04-14-010",
       "tarea": "Crear información visual ERP con Emanuel y Lina para comprensión integral del proyecto",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-15-c002",
       "tarea": "Estructurar defensa legal y documentación contra EPM por incumplimiento contractual",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-c003",
       "tarea": "Preparar propuesta contundente de reajuste de contrato EPM Río Negro con alternativas viables",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-16-c003",
       "tarea": "Resolver no conformidad del contrato 24 y responder formalmente",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-17-m25f898",
       "tarea": "comprar vehiculos y maquinas para el proyecto de vanti,valle y vehiculos z2",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-15-001",
       "tarea": "Revisar informe de gestión para Supersociedades",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-003",
       "tarea": "Obtener respuesta contable de Manuel sobre configuración nómina UGP-DIAN",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-004",
       "tarea": "Cobrar ICA pendiente a municipios (~55 millones Medellín)",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-005",
       "tarea": "Responder requerimiento SENA pendiente",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-006",
       "tarea": "Escanear Acta 87 de Asamblea",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-008",
       "tarea": "Integrar informes inversión extranjera en sistema Odoo",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-009",
       "tarea": "Definir auditoría de balances en Odoo con revisor fiscal",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-010",
       "tarea": "Enviar certificados retención mensual a consorciados (Óscar, Zilar)",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-011",
       "tarea": "Ajustar débito deuda NC (retenciones no cobradas)",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-012",
       "tarea": "Aclarar uso y condiciones de contenedores charcutería",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-15-013",
       "tarea": "Cuadrar deuda empresa a Condugas y plan de pago",
-      "dias_sin_evaluar": 20
+      "dias_sin_evaluar": 22
     },
     {
       "id": "2026-04-16-r5-001",
       "tarea": "Llamar a Pilar en ~30 minutos para conversación pendiente",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-r6-002",
       "tarea": "Preparar documento con 3 pilares: Confiabilidad numérica, Relacionamiento, Adaptabilidad",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-r7-003",
       "tarea": "Aclarar con abogados que comunicaciones fueron por contrato, no acoso",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-r7-004",
       "tarea": "Documentar que 4 comunicaciones fueron coordinadas lunes-miércoles, enviadas jueves",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-r7-005",
       "tarea": "Reafirmar con PM y abogados compromiso con buenas relaciones pese a conflicto",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-r9-008",
       "tarea": "Coordinar con Humberto/Gobernación narrativa sobre trayectoria y valor de Condugas",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-r9-009",
       "tarea": "Formalizar carta de suspensión solo tras autorización de PM (no unilateral)",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-002",
       "tarea": "Revisar rendimiento de contratos y comportamiento de cada proyecto",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-003",
       "tarea": "Resolver conflicto contractual con Catalina por mala ejecución",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-004",
       "tarea": "Recuperar información de estructuración de naming del proyecto",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-006",
       "tarea": "Crear dashboard de tareas prioritarias (máxima, alta, media, baja, sin evaluar)",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-007",
       "tarea": "Contratar digital support/persona de negocio para automatización",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-008",
       "tarea": "Finalizar prototipo de herramienta de automatización de procesos empresariales",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r10-012",
       "tarea": "Empoderar Diana para alcance similar a Carlos Acevedo",
-      "dias_sin_evaluar": 21
+      "dias_sin_evaluar": 23
     },
     {
       "id": "2026-04-16-c001xx",
       "tarea": "Avanzar proceso de licenciamiento ambiental y social (ruta crítica)",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-c002xx",
       "tarea": "Dar seguimiento a caso legal Catalina y PM - obtener información de justificación de incumplimientos",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-17-c001",
       "tarea": "Presentar propuesta de restructuración a don Darío",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-c003",
       "tarea": "Auditar estructura de deuda y cuentas por cobrar entre Condugas, socios e IC (excisión no pagada)",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-c004",
       "tarea": "Definir arquitectura de datos (origen, flujo, seguridad) antes de implementar IA para registros",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-c005",
       "tarea": "Resolver deuda pendiente con Oscar (2 años de incumplimiento)",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-c006",
       "tarea": "Resolver crisis de tarjeta/caja (prioridad inmediata antes que empresa)",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-c007",
       "tarea": "Preparar documento para Mario (entrega viernes para lunes, ajuste proporciones mano de obra ~15%)",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-20-c001",
       "tarea": "Armar plan de defensa y revisar números de caja con Andrea",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c002",
       "tarea": "Contactar proveedores (3 llamadas pendientes)",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c003",
       "tarea": "Gestionar saldo a favor de 1,200M COP esperado en septiembre 2026 para recuperación",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c004",
       "tarea": "Resolver adición de contrato que genera perjuicio en valores con PM",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c006",
       "tarea": "Preparar análisis de reducción de pasivos operativos (campamento/internet/personal)",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c007",
       "tarea": "Compilar información financiera consolidada para junta de mañana",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c008",
       "tarea": "Exigir a socios cumplimiento de aportes o separación",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r9-006",
       "tarea": "Diseñar estructura de gobierno corporativo para grupo Sánchez Acevedo",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c003x",
       "tarea": "Analizar y discutir con Carlos López sobre situación financiera",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c004x",
       "tarea": "Separar socios y documentar cláusulas de responsabilidad por pérdidas",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c005x",
       "tarea": "Reclamar saldo a favor de 1200M COP en septiembre y 1400M COP actuales para cierre de contratos",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c006x",
       "tarea": "Renegociar reajustes de costo con PM para reducir carga administrativa",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c007x",
       "tarea": "Preparar comunicado para equipo: imposibilidad de pago a proveedores por falta de pago de PM",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c008x",
       "tarea": "Revisar y reducir carga administrativa del contrato (objetivo: bajar de 130M a sostenible)",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-c009",
       "tarea": "Obtener información consolidada de caja y proyecciones para presentación en junta",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r0-002",
       "tarea": "Entregar informes de normalización de contratos pendientes",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-21-c001",
       "tarea": "Revisar y reestructurar ecuaciones contractuales con EPM para evitar multas crecientes",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c002",
       "tarea": "Auditar causación contable y distribución entre operativo/administrativo en múltiples sistemas (Perseo, Malfi, Odu)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c003",
       "tarea": "Parametrizar completamente Odu (cuentas, distribuciones, causales) antes de migración",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c004",
       "tarea": "Parametrizar Odu completamente (eliminar cargos redundantes, mapear flujos de contabilidad/operaciones)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c005",
       "tarea": "Establecer transición Odu como obligatoria (mañana y pasado mañana), sin negociación",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c006",
       "tarea": "Desarrollar e implementar sistema integrado 'mapa neuronal' para agregación de información operativa",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c007",
       "tarea": "Diseñar e implementar sistema de automatización en Condugas para alcanzar operación 60-70% autónoma en <3 meses",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c008",
       "tarea": "Revertir transferencia de 14M COP a papá de Sebastian para cubrir fly pass y mantener nómina operativa",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c009",
       "tarea": "Estructurar transparencia de flujos Inversora y Construtem para decisión de supervivencia conjunta",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c010",
       "tarea": "Cumplir cronograma de construcción Fase 2 (concretos y máquinas)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-c011",
       "tarea": "Completar instalaciones para primeras dos máquinas",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-22-c001",
       "tarea": "Evaluar y reparar/reemplazar equipo dañado por sobreamperaje",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c002",
       "tarea": "Revisar protocolo de seguridad eléctrica en hogar/obra",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c003",
       "tarea": "Definir cifra mínima de caja requerida en 5 días para salvar operación (nómina y proveedores críticos)",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c004",
       "tarea": "Construir narrativa madre (5 bloques): qué pasó, qué está probado, cuánto falta, riesgo para EPM, decisión concreta",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c005",
       "tarea": "Preparar mensaje ejecutivo de 20 minutos para pedir reunión con alto nivel EPM",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c006",
       "tarea": "Ejecutar 4 rutas simultáneas: 1) Negocio (VP Negocios), 2) Jurídica/Reclamaciones, 3) Portal Pagos Proveedores, 4) Canal Ética/Transparencia",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c007",
       "tarea": "Radicación formal paralela a llamada ejecutiva con bloques: hechos, impacto, riesgos, solicitud, plazo",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-16-r7-004x",
       "tarea": "Explorar convenios con EPM para regasificadoras Antioquia/Urabá",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r14-008",
       "tarea": "Corregir estructura gráfica original (círculo/distancia/cuadrante) - revertir cambio a lineal",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-22-c001x",
       "tarea": "Responder internamente 10 preguntas estratégicas sobre cifras mínimas, documentación, fecha crítica de caja y decisiones agresivas",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c002x",
       "tarea": "Preparar mensaje ejecutivo de 5 bloques (qué pasó, prueba, cuánto falta, riesgo EPM, decisión solicitada)",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-c004x",
       "tarea": "Radicación formal paralela a llamada (correo, portal de pagos proveedores, canal de integridad EPM)",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-23-c001",
       "tarea": "Comunicar decisión de salida de Carlos de la empresa",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-c002",
       "tarea": "Finalizar y radicar comunicación formal a EPM con: reserva derechos + propuesta de ajuste económico + convocatoria a mesa técnica 10 días hábiles",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-c003",
       "tarea": "Incorporar aclaración de ítems ambientales (80% vs 100% condicionado) en comunicación a EPM antes de radicar",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-c004",
       "tarea": "Urgente: actualizar contabilidad en paralelo con producción para tener contraste costo vs ingresos real",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-c005",
       "tarea": "Crear modelo de rentabilidad de contratos (no solo APU de costos) con actualización mensual",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-c006",
       "tarea": "Análisis: Si crédito nuevo se usa para reducir gastos fijos operativos (arriendo, servicios) + comprar activos vs solo pagar crédito anterior, ¿qué % debería ser cada uno?",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-24-c001",
       "tarea": "Reclamar deuda de 600 millones COP a EPM por reajustes no pagados",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-c002",
       "tarea": "Resolver fórmula de reajustes con EPM para evitar tensión de 450M COP",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-c003",
       "tarea": "Resolver problema Burger Master - incidente con heridos en acera",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-27-r12-001",
       "tarea": "Revisar y validar carta de negociación con puntos de negociación y dos comunicados preparados por Melisa",
-      "dias_sin_evaluar": 8
+      "dias_sin_evaluar": 10
     },
     {
       "id": "2026-04-27-r12-002",
       "tarea": "Definir horario fijo de sueño del niño considerando actividades extracurriculares (partido 7pm) y recomendaciones profesionales",
-      "dias_sin_evaluar": 8
+      "dias_sin_evaluar": 10
     },
     {
       "id": "2026-04-24-r4-003",
       "tarea": "Seguimiento con cliente sobre entrega de consultoría de Being CoRe",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-r17-007",
       "tarea": "Revisar arquitectura actual de ERP y periféricos desarrollados internamente",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-r17-008",
       "tarea": "Documentar dependencias técnicas y puntos de fallo en sistema ERP+periféricos",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-r23-010",
       "tarea": "Evaluar implementación de Odoo como ERP/CRM centralizado para 560 empleados",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-r23-011",
       "tarea": "Diseñar automatizaciones para 7 modelos de pago diferentes en Odoo",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-r23-012",
       "tarea": "Definir modelo de 'trabajo por resultados' vs. transaccional para equipo",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-r29-015",
       "tarea": "Grupos escriben manifiesto de comportamientos de jefe para lograr que otros logren",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-23-r2-003",
       "tarea": "Documentar framework metodológico de Being CoRe (método inductivo + Ventana de Johari)",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r2-004",
       "tarea": "Diseñar modelo de intervención para expertos técnicos en PM/Condugas",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r11-007",
       "tarea": "Hacer conocer a Condugas/Being CoRe desde arriba ante John Maya y actores clave de EPM",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r11-008",
       "tarea": "Involucrar a Humberto y Mario en estrategia de junta/información",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r12-009",
       "tarea": "Enviar detalle de deuda EPM (reajustes + ambientales Río Negro) al correo S. Sánchez@condugas.com.co",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r15-012",
       "tarea": "Analizar opciones de reemplazo de Carlos: a) solo Catalina, b) traer persona mejor a menor costo con presupuesto de ambos",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r15-013",
       "tarea": "Evaluar uso de crédito de 1500 (1.5M?) para comprar vehículos como activos operativos vs gasto corriente",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r19-016",
       "tarea": "Solicitar reunión a Banti para renegociar términos de pago/contrato (mencionar posibilidad de tercerizar perforación y acero)",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r19-018",
       "tarea": "Solicitar a Manga estado/análisis de equipos (cuáles prestados, cuáles cobrados) para negociación",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-22-r22-007",
       "tarea": "Identificar 3 hechos probados de aviso anticipado antes del deterioro terminal",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r22-008",
       "tarea": "Definir frase de 12 palabras que resuma caso sin sonar llorón",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r22-005",
       "tarea": "Entrenar voz ejecutiva (nivel 1: decoración del caso; nivel 2: voz grave/precisa; nivel 3: cómo sostener presión)",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r26-010",
       "tarea": "Hablar con Manuel sobre apoyo en implementación de nómina y contabilidad",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r26-011",
       "tarea": "Revisar estrategia de implementación en producción con datos parametrizados",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r32-014",
       "tarea": "Formular preguntas específicas al entrenador sobre contextos de uso de 'sentido'",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r26-007",
       "tarea": "Revisar implementación de nómina en producción con datos reales",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-21-r3-001",
       "tarea": "Hacer auditoría de causación histórica (operativo vs administrativo) en sistemas actuales",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r5-002",
       "tarea": "Llamar a Proin para validar términos de reajuste en contrato de 8% de vida",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r8-004",
       "tarea": "Estructurar Being CoRe como metodología complementaria a Condugas",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r8-005",
       "tarea": "Promover persona de logística a rol de mayor responsabilidad con mentoring",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r11-008",
       "tarea": "Agregar visualización de cuadrillas al rastreador de rutas (actualmente solo muestra vehículos)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r11-009",
       "tarea": "Implementar IA para contrastar dirección/tiempo de cuadrilla vs datos liquidación obra (detectar divergencias)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r11-010",
       "tarea": "Generar alertas automáticas desde sistema sin intervención humana (recorrido 2h en dirección no mapeada)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r12-011",
       "tarea": "Evaluar acceso y costo de sistema Odu (60-70K COP por usuario) vs alternativas de eficiencia operativa",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r14-012",
       "tarea": "Validar con mesa directiva decisiones estratégicas que requieren alcance compartido (no decisiones unilaterales)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-20-r0-001",
       "tarea": "Negociar compra de 480 tapas metálicas directamente con proveedor",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r2-003",
       "tarea": "Estudiar estrategia de cesión de facturas a proveedores como garantía",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r2-001",
       "tarea": "Coordinar contacto del padre de Juan para futuras negociaciones",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r9-003",
       "tarea": "Diagnosticar diferencias organizacionales y financieras entre empresas del grupo",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r9-004",
       "tarea": "Proponer mecanismos de manejo de caja unificado (vs decisiones aisladas de gestores)",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r9-005",
       "tarea": "Crear consejo asesor con miembros clave para supervisión de transición generacional",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-17-r8-001",
       "tarea": "Educar al equipo en doctrina empresarial y administración financiera",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-20-r5-005",
       "tarea": "Solicitar separación de socios y que respondan por pérdidas hasta clausura",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-17-r75-009",
       "tarea": "Evaluar término de relación comercial con Oscar y Fabio o convertirlos mediante estrategia de inclusión",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r82-011",
       "tarea": "Redactar y enviar carta estratégica (presentarse frágiles, defensiva)",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r54-020",
       "tarea": "Implementar bot de auditoría automática para procesos",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r54-021",
       "tarea": "Configurar alertas y auditorías en sistema para seguimiento de entradas y actualizaciones",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r55-022",
       "tarea": "Refinar prototipo de herramienta IA para detectar reuniones y generar presentaciones automáticas",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-16-r2-001",
       "tarea": "Definir estrategia de comunicación interna sobre transición gas→agua",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r2-002",
       "tarea": "Resolver fricción familiar con doña Claudia y Paola sobre estructura de aportes",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r7-005x",
       "tarea": "Seguimiento obra civil ampliación Tasajera (infraestructura, no equipos)",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r14-012",
       "tarea": "Diseñar segundo cuadernillo considerando impresión digital y física, sofisticación visual",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r28-015",
       "tarea": "Estructurar guía de objetivos de módulos para Being CoRe",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r29-016",
       "tarea": "Crear guía de diseño para ser entregada a diseñadores externos",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r29-017",
       "tarea": "Organizar sesión de socialización grupal presencial (no virtual)",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-24-r2-002",
       "tarea": "Evaluar daño de coche y decidir entre taller o seguro",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-24-r21-009",
       "tarea": "Continuar exploración de dinámicas grupales y comportamientos en próximas sesiones",
-      "dias_sin_evaluar": 11
+      "dias_sin_evaluar": 13
     },
     {
       "id": "2026-04-23-r18-014",
       "tarea": "Implementar proceso de nómina centralizado en una persona para reduce fricción",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-23-r18-015",
       "tarea": "Revisar y rediseñar puntos de enlace (mandos medios) para evitar que tareas incompletas se acumulen en Sebastian",
-      "dias_sin_evaluar": 12
+      "dias_sin_evaluar": 14
     },
     {
       "id": "2026-04-22-r5-002",
       "tarea": "Revisar y corregir funcionalidad de nombres en aplicación (está retornando rojo)",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r6-003",
       "tarea": "Conseguir niñera para cuidado martes y jueves",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r18-005",
       "tarea": "Extraer información estructurada con Emmanuel (datos de jueves) en formato manual si es necesario",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r18-006",
       "tarea": "Llamar a equipos para conteo/recopilación de datos no estructurados",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r18-003",
       "tarea": "Sacar información estructurada o manual para análisis del jueves",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-22-r18-004",
       "tarea": "Organizar datos y hacer llamadas a falta información",
-      "dias_sin_evaluar": 13
+      "dias_sin_evaluar": 15
     },
     {
       "id": "2026-04-21-r9-006",
       "tarea": "Investigar plataforma de grabación de pantalla directo desde computadores hacia ruta centralizada",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r9-007",
       "tarea": "Autorizar y configurar pre-setup de grabación automática a YouTube y Cloud Code con Notebook LM",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r17-013",
       "tarea": "Confirmar y asistir reunión con Juan Soberón a las 5:00 PM",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r19-015",
       "tarea": "Ejecutar valorización separada de teca, ganado y tierra para estrategia de venta",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r19-016",
       "tarea": "Desarrollar proyecto de 'economía plateada' en Jericó (turismo de bienestar, orgánico, cuidado personal)",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-21-r21-019",
       "tarea": "Asegurar nutrición básica: Sebastian no ha comido desde ayer 7 PM",
-      "dias_sin_evaluar": 14
+      "dias_sin_evaluar": 16
     },
     {
       "id": "2026-04-20-r4-004",
       "tarea": "Preparar presentación de 140 diapositivas para junta asesora",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-20-r4-002",
       "tarea": "Verificar equipos técnicos (micrófono, cámara, videollamada) antes de junta",
-      "dias_sin_evaluar": 15
+      "dias_sin_evaluar": 17
     },
     {
       "id": "2026-04-17-r15-003",
       "tarea": "Validar sistema de 'orejas de levante' como mecanismo real de escucha a empleados vs percepción de artificio",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r18-004",
       "tarea": "Evaluar oportunidad de venta de propiedad ('coco') en contexto de nuevo POT sin restricción de 5 predios",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r28-005",
       "tarea": "Completar cursos de análisis fundamental con Sebastián Toro",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r50-017",
       "tarea": "Enviar documento conceptual a Mario",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r50-018",
       "tarea": "Enviar foto a Mario",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r56-023",
       "tarea": "Diseñar y lanzar sandbox de debate para entrenar reacción inmediata",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-17-r56-024",
       "tarea": "Preparar competencias/ejercicios de debate para equipo",
-      "dias_sin_evaluar": 18
+      "dias_sin_evaluar": 20
     },
     {
       "id": "2026-04-16-r10-007",
       "tarea": "Mejorar diagramación y diseño de documentación de proyecto (cuadernillo)",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-16-r31-018",
       "tarea": "Carla: llenar librito de fechas y eventos",
-      "dias_sin_evaluar": 19
+      "dias_sin_evaluar": 21
     },
     {
       "id": "2026-04-30-c001",
       "tarea": "Reclamar formalmente a EPM por reconocimiento de 257M COP acumulados y proyección 2340M por desactualización de fórmula de reajuste",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-c002",
       "tarea": "Analizar y presentar a EPM impacto real de incrementos (salario mínimo +23%, mano de obra +14%, transporte) vs índices Camacol desactualizados",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-c003",
       "tarea": "Implementar propuesta de Diana: operativo + estrategia táctica con Diana y William liderando estructura",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-c004",
       "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amarrado' y posible inyección de Condugas",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-c005",
       "tarea": "Firmar documentacion de suspension de contrato de patrullaje",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-c006",
       "tarea": "Revisar documento de contrato (~120 paginas) en Word antes de firma",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r2-001",
       "tarea": "Llamar a Juan Carlos Gómez para confirmar firmas pendientes",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r4-002",
       "tarea": "Completar implementación con persona asignada a social (lotes tres y cinco) para desarrollar operación liviana posterior",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r10-008",
       "tarea": "Compartir carta escrita con William y equipo explicando situación completa de crisis contractual y visión de resolución",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r10-009",
       "tarea": "Analizar reubicación de personal en otros contratos si cierre de contrato actual es inminente",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r17-013",
       "tarea": "Implementar rutina de sueno a las 7pm con monitorizacion de senales de irritacion",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r17-014",
       "tarea": "Coordinar sesion con gestora de sueno para protocolo fijo",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r19-015",
       "tarea": "Preparar nino para dormir antes de partido",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r13-011",
       "tarea": "Confirmar si desea reintegro en nivel 2",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r13-012",
       "tarea": "Participar en nivelacion previa antes de iniciar nivel 2",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     },
     {
       "id": "2026-04-30-r11-010",
       "tarea": "Confirmar ejecución de modificaciones bilaterales firmadas por vicepresidente y comunicar al equipo cadena de valor",
-      "dias_sin_evaluar": 5
+      "dias_sin_evaluar": 7
     }
   ],
   "criticas_sin_accion": [

@@ -1,81 +1,82 @@
 {
-  "fecha": "2026-05-05",
-  "ultima_actualizacion": "2026-05-05T11:45:07",
+  "fecha": "2026-05-07",
+  "ultima_actualizacion": "2026-05-07T11:45:08",
   "comite_sv": {
-    "caja_dias": 8,
+    "caja_dias": 10,
     "facturacion_pct": 45,
     "produccion_deficit_pct": 4.5,
     "ebitda": -800,
     "whoop_recovery": 14,
     "whoop_sleep": "27%",
-    "tareas_criticas": 65,
+    "tareas_criticas": 74,
     "proyectos_crisis": 2
   },
   "frescura": {
     "caja_dias": {
-      "valor": 8,
-      "fecha": "2026-04-18",
-      "dias_sin_actualizar": 17,
+      "valor": 10,
+      "fecha": "2026-05-07",
+      "dias_sin_actualizar": 0,
       "fuente": "limitless"
     },
     "facturacion_pct": {
       "valor": 45,
       "fecha": "2026-04-18",
-      "dias_sin_actualizar": 17,
+      "dias_sin_actualizar": 19,
       "fuente": "limitless"
     },
     "produccion_deficit_pct": {
       "valor": 4.5,
       "fecha": "2026-04-28",
-      "dias_sin_actualizar": 7,
+      "dias_sin_actualizar": 9,
       "fuente": "limitless"
     },
     "ebitda": {
       "valor": -800,
       "fecha": "2026-05-05",
-      "dias_sin_actualizar": 0,
+      "dias_sin_actualizar": 2,
       "fuente": "limitless"
     },
     "whoop_recovery": {
       "valor": 14,
       "fecha": "2026-05-03",
-      "dias_sin_actualizar": 2,
+      "dias_sin_actualizar": 4,
       "fuente": "whoop api"
     },
     "whoop_sleep": {
       "valor": "27%",
       "fecha": "2026-05-03",
-      "dias_sin_actualizar": 2,
+      "dias_sin_actualizar": 4,
       "fuente": "whoop api"
     },
     "tareas_criticas": {
-      "valor": 65,
-      "fecha": "2026-05-05",
+      "valor": 74,
+      "fecha": "2026-05-07",
       "dias_sin_actualizar": 0,
       "fuente": "auto"
     },
     "proyectos_crisis": {
       "valor": 2,
-      "fecha": "2026-05-05",
+      "fecha": "2026-05-07",
       "dias_sin_actualizar": 0,
       "fuente": "auto"
     }
   },
   "alertas": [
-    "Pérdida de 800 millones de pesos en contrato de San Javier por incumplimiento de metodología",
-    "EPM: 3 tareas críticas vencidas (defensa legal, reajuste contractual, documentación debido proceso). Riesgo de litigio inminente",
-    "Contrato de gas insostenible por reajuste de fórmula (65-35% en lugar de 85-15% solicitado)",
-    "Base clientes: sin estructura clara = sin pipeline = sin ingresos previsibles",
-    "Deuda de más de 200 millones en proveedores sin capacidad de pago inmediato",
-    "Riesgo de paralización de contrato por falta de flujo de caja y capacidad de pago a nómina",
-    "Caja en crítico: 8 días de runway, EBITDA -800k. Cobro EPM (~180M) y Hamilton (vencido 02-May) son vitales",
-    "2 meses y medio sin flujo de caja por migración de sistema PM"
+    "Caja en 10 días con EBITDA -800k: crisis real",
+    "Deuda de terceros (Nascoco/Valle) de 120 millones de pesos",
+    "Deuda con Zilar de 500 millones de pesos por contrato",
+    "Personal logístico dependiente del contrato Condugas (3-4 personas directas)",
+    "Contrato Condugas paralizado y sin ejecución clara",
+    "Deudas Condugas sin resolver mientras negocias 30% accionaria",
+    "Caja crítica - necesitan 10 días de operación",
+    "EPM Río Negro: ~180M pendientes + no conformidad sin respuesta legal"
   ],
   "oportunidades": [
-    "Reconocimiento de 800 millones por cambio metodológico en contrato de ayuda aún pendiente",
-    "Renegociación de fórmula de reajuste del contrato de gas con sustento técnico documentado",
-    "Automatización de procesos para reducir costos operacionales",
-    "Mesa de conciliación con EPM con capacidad real de decisión"
+    "Contrato de Multipetrol - transporte de gas licuado a Urabá en renegociación de tarifas",
+    "EPM invirtió 4.600 millones en 7 equipos de transporte de gas comprimido en Antioquia",
+    "Liberar caja mediante leasing de equipos (máquina pequeña para Boyacá)",
+    "Recuperación de 320 millones de pesos en deudas pendientes",
+    "Estructura de contrato Condugas tiene socios que deben empezar a responder"
   ],
   "whoop": {
     "recovery": 14,
@@ -87,49 +88,40 @@
   },
   "recordatorios_datos_faltantes": [
     {
-      "campo": "caja_dias",
-      "dias_sin_dato": 17,
-      "umbral": 2,
-      "severidad": "alta",
-      "ultimo_valor": 8,
-      "ultima_fecha": "2026-04-18",
-      "mensaje": "'caja_dias' lleva 17 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
-    },
-    {
       "campo": "facturacion_pct",
-      "dias_sin_dato": 17,
+      "dias_sin_dato": 19,
       "umbral": 7,
       "severidad": "alta",
       "ultimo_valor": 45,
       "ultima_fecha": "2026-04-18",
-      "mensaje": "'facturacion_pct' lleva 17 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'facturacion_pct' lleva 19 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     },
     {
       "campo": "produccion_deficit_pct",
-      "dias_sin_dato": 7,
+      "dias_sin_dato": 9,
       "umbral": 7,
       "severidad": "media",
       "ultimo_valor": 4.5,
       "ultima_fecha": "2026-04-28",
-      "mensaje": "'produccion_deficit_pct' lleva 7 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'produccion_deficit_pct' lleva 9 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     },
     {
       "campo": "whoop_recovery",
-      "dias_sin_dato": 2,
+      "dias_sin_dato": 4,
       "umbral": 1,
       "severidad": "alta",
       "ultimo_valor": 14,
       "ultima_fecha": "2026-05-03",
-      "mensaje": "'whoop_recovery' lleva 2 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'whoop_recovery' lleva 4 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     },
     {
       "campo": "whoop_sleep",
-      "dias_sin_dato": 2,
+      "dias_sin_dato": 4,
       "umbral": 1,
       "severidad": "alta",
       "ultimo_valor": "27%",
       "ultima_fecha": "2026-05-03",
-      "mensaje": "'whoop_sleep' lleva 2 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'whoop_sleep' lleva 4 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     }
   ]
 }

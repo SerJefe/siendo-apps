@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-05T18:00:02.853526Z",
+  "generated_at": "2026-05-07T13:30:01.223391Z",
   "total_controles_con_fuente": 12,
   "controles": {
     "comite-sv": {
-      "last_done": "2026-05-05T11:45:07",
+      "last_done": "2026-05-07T11:45:08",
       "source": "kpis.json.ultima_actualizacion"
     },
     "reclamaciones-epm": {
-      "last_done": "2026-04-30",
-      "source": "neural+tracker (3 tareas 14d)"
+      "last_done": "2026-05-04",
+      "source": "neural+tracker (2 tareas 14d)"
     },
     "contratos-activos": {
       "last_done": "2026-04-17",
@@ -16,7 +16,7 @@
     },
     "equipo-evaluacion": {
       "last_done": "2026-04-29",
-      "source": "tracker (2 tareas 14d)"
+      "source": "tracker (1 tareas 14d)"
     },
     "analisis-inversiones": {
       "last_done": "2026-04-21",
@@ -27,7 +27,7 @@
       "source": "calendario.ics (junta)"
     },
     "condugas-piloto": {
-      "last_done": "2026-04-30",
+      "last_done": "2026-05-04",
       "source": "neural-activity"
     },
     "vendemos-activo": {
@@ -35,19 +35,19 @@
       "source": "neural-activity (vendemos)"
     },
     "estructura-admin": {
-      "last_done": "2026-04-30",
+      "last_done": "2026-05-04",
       "source": "neural-activity (lina/emanuel)"
     },
     "whoop-recovery": {
-      "last_done": "2026-05-05T11:45:07",
+      "last_done": "2026-05-07T11:45:08",
       "source": "kpis.json.whoop"
     },
     "adolfo-quincenal": {
-      "last_done": "2026-04-24",
+      "last_done": "2026-05-04",
       "source": "neural+calendario"
     },
     "conceptos-vault": {
-      "last_done": "2026-04-30",
+      "last_done": "2026-05-04",
       "source": "neural-activity.last_updated"
     }
   }

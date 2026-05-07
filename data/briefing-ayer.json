@@ -1,155 +1,160 @@
 {
-  "fecha": "2026-04-30",
+  "fecha": "2026-05-04",
   "tareas_extraidas": [
     {
-      "tarea": "Llamar a Juan Carlos Gómez para confirmar firmas pendientes",
-      "responsable": "Sebastian",
+      "tarea": "Revisar y clasificar información solicitada la semana pasada a directores",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Contactar a Carlos López (gerente nuevos negocios Condugas) para acercamiento a Mauricio Gómez (Piosas) aprovechando conexión de Olga",
+      "responsable": "Carlos López",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Diseñar modelo financiero conservador para máquina específica (nueva adquisición) proyectando rendimiento esperado y comisión",
+      "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Completar implementación con persona asignada a social (lotes tres y cinco) para desarrollar operación liviana posterior",
+      "tarea": "Revisar y corregir nómina última: unificar criterios de reporte y formato de trabajo con directores de proyecto",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Pasar documento técnico listando tipos de brechas que hace Condugas (60cm, 25-30cm profundidad, reparaciones variables, acueducto, gas pequeña)",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Agendar reunión esta semana con Erika para revisar contratos y cambios de actividades en Valle",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Preparar conversación sana y precisa antes de reunión donde se informarán cambios que afecten a Edward",
+      "responsable": "Sebastian",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Revisar expectativas claras con equipo directo (Guillermo, Sebastián) sobre roles en reestructuración central",
+      "responsable": "Sebastian",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Meter a Diana en contrato de aguas como alternativa laboral y elemento estratégico para defensa de Zilar",
       "responsable": null,
       "prioridad": "alta"
     },
     {
-      "tarea": "Revisar y ajustar fórmulas de reajuste en transporte y mano de obra para alineación con realidad de costos (transporte medido por tabla Excel de EPM)",
+      "tarea": "Enviar documentos a Andre con orientación correcta (no al revés ni montados)",
       "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Enviar preguntas pendientes a Sebastian",
-      "responsable": "Alejandra",
       "prioridad": "baja"
     },
     {
-      "tarea": "Escribir en WhatsApp para confirmar disponibilidad miércoles o viernes 9-12 para reunión/actividad no especificada",
-      "responsable": null,
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Corregir reporte de horarios en sistema para que refleje jornada real de trabajo (5:30am hasta 6/7/8pm) de todo el equipo incluyendo Sebastian",
+      "tarea": "Aval de cambio de SIM debe tramitarse mañana con persona designada (sigue protocolo formal empresa)",
       "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Escribir a Juan Guillermo por privado para que se conecte a reunión importante",
-      "responsable": "William",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Compartir carta escrita con William y equipo explicando situación completa de crisis contractual y visión de resolución",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Analizar reubicación de personal en otros contratos si cierre de contrato actual es inminente",
-      "responsable": "William",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Confirmar ejecución de modificaciones bilaterales firmadas por vicepresidente y comunicar al equipo cadena de valor",
+      "tarea": "Coordinador/equipo: enviar WhatsApp a Sebastian con descripción de SIM perdida para gestionar reposición mañana",
       "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Confirmar si desea reintegro en nivel 2",
-      "responsable": "Sebastian",
       "prioridad": "media"
     },
     {
-      "tarea": "Participar en nivelacion previa antes de iniciar nivel 2",
-      "responsable": "Sebastian",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Implementar rutina de sueno a las 7pm con monitorizacion de senales de irritacion",
+      "tarea": "Reunión de equipo completo mañana para explicar situación de caja y próximos pasos",
       "responsable": "Sebastian",
       "prioridad": "alta"
     },
     {
-      "tarea": "Coordinar sesion con gestora de sueno para protocolo fijo",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Preparar nino para dormir antes de partido",
-      "responsable": "Sebastian",
+      "tarea": "Poner equipo en línea de tiempo clara: qué pasó, cuándo, cómo. Para confrontación real-time sobre operaciones",
+      "responsable": "Adolfo",
       "prioridad": "media"
     },
     {
-      "tarea": "Apagar objeto/tanque despues de uso para evitar danios",
-      "responsable": "Sebastian",
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Reclamar formalmente a EPM por reconocimiento de 257M COP acumulados y proyección 2340M por desactualización de fórmula de reajuste",
+      "tarea": "Coordinar reunión entre Diana y Carlos (Condugas) con Vinila para definir estrategia del contrato Zilar",
       "responsable": null,
       "prioridad": "critica"
     },
     {
-      "tarea": "Analizar y presentar a EPM impacto real de incrementos (salario mínimo +23%, mano de obra +14%, transporte) vs índices Camacol desactualizados",
-      "responsable": null,
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Implementar propuesta de Diana: operativo + estrategia táctica con Diana y William liderando estructura",
-      "responsable": "Diana",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amarrado' y posible inyección de Condugas",
-      "responsable": "Camilo",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Firmar documentacion de suspension de contrato de patrullaje",
+      "tarea": "Decidir y comunicar a socios sobre capital adicional para Zilar o ejecutar preacuerdo con abogados",
       "responsable": "Sebastian",
       "prioridad": "critica"
     },
     {
-      "tarea": "Revisar documento de contrato (~120 paginas) en Word antes de firma",
+      "tarea": "Tomar tiempo para reunión importante con equipo sobre patrones de comunicación que se están enraizando",
+      "responsable": "Sebastian",
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Elaborar presentación visual (papel grande o iPad) con línea de tiempo completa de hitos del contrato Río Negro para defensa ante TGM",
+      "responsable": "Sebastian",
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Recopilar cronología de reuniones y comunicaciones con TGM: qué se dijo en cada una, cuándo fueron, qué promesas/compromisos fueron incumplidos",
       "responsable": null,
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Documentar incremento de costos directos y extensión de tiempos del contrato desde propuesta original (250 millones costo directo)",
+      "responsable": null,
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Consolidar información sobre reajustes ambientales y cómo han cambiado en años pasados para presentar mañana",
+      "responsable": null,
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Compilar datos específicos orientados a negociación (pagos adeudados, estado de contrato) para preparar reunión mañana a las 10",
+      "responsable": null,
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Documentar por escrito objetivo claro de negociación antes de reunión mañana",
+      "responsable": "Sebastian",
       "prioridad": "critica"
     }
   ],
   "decisiones": [
-    "Aceptación de asignación condicionada a reconocimiento de 64M/mes en octubre 2025; hoy sin reconocimiento",
-    "Reflexión: EPM priorizará sus problemas ambientales (600M) sobre reclamos de Condugas",
-    "Exploración de oportunidades en perforación y reconversión de infraestructura (oleoductos → gasoductos)",
-    "Mantener contrato con EPM a pesar de compromisos incumplidos y desgaste operativo",
-    "Prioridad de no suspender servicio en pandemia: preservación de 120 empleos y continuidad contratual",
-    "Plan post-implementación: reducción drástica de estructura operativa ('empresa super liviana')",
-    "Horario de trabajo estándar del equipo: 5:30am hasta 6/7/8pm (jornada completa)",
-    "Mantener operación mínima de Diana (2 mínimos) con inyección posible de Condugas",
-    "Compromiso de Sebastian: responsabilidad total por decisiones tomadas; cierre contrato con su renuncia si es necesario",
-    "Nunca tomar decisiones solo; siempre acompañado en el equipo"
+    "Se debe mejorar la forma en que Condugas entrega información a directores (no es 100% culpa de ellos)",
+    "Prioridad: resolver estrategia Zilar antes de meter más temas",
+    "Acercamiento a Piosas debe ser desde construcción y con contacto de Carlos López + Olga",
+    "Prioridad en análisis financiero y retorno sobre máquinas, no solo en especificaciones técnicas",
+    "Enfoque de inversión en máquina versátil para Boyacá donde hay más obra externa",
+    "Considerar impacto en mantenimiento si se logra rescatar operación",
+    "Antes de informar cambios a Edward, entender que su resistencia viene de sentirse despojado de recursos que maneja, no del cambio per se",
+    "Sebastian no busca que empresa y personas funcionen como 'todos los humanos' sino con patrones mejorados",
+    "Reestructuración central requiere trabajo conjunto de Sebastian, Guillermo y directores",
+    "Usar a Diana como vector para llegar a Catalina en tema Zilar (son amigas, Diana convence desde análisis que ella misma hizo)"
   ],
   "ideas": [
-    "Progreso significativo en reducción de incumplimientos de AMS (de 109 a 51 centros)",
-    "Visión de independencia operativa: 'haga las cosas por usted, que cuando termine lo dejen tranquilo'",
-    "Conducta defensiva ante incertidumbre de EPM: prioridades externas imponen congelamiento de reclamos propios",
-    "Riesgo y suerte son factores no controlables que pueden desfavorecer o favorecer, independientemente de gestión perfecta",
-    "Importancia de 'dejar pelos en el alambrado': esfuerzo total sin garantía de éxito",
-    "Cambios en proporción de administración vs obra debido a no entrega de materiales por EPM",
-    "Fórmulas de reajuste desacopladas de realidad (transporte, mano de obra) generan erosión de márgenes",
-    "Discrepancia entre horario reportado en sistema y horario real trabajado genera cálculos incorrectos de horas extras",
-    "Post-crisis: transformación personal de Sebastian ('mujer que me voy a convertir después de esta huevonada')",
-    "Tensiones deben llevarse a instancias correctas con método"
+    "Necesidad urgente de acompañamiento administrativo a directores de proyecto para cerrar temas puntualmente",
+    "Deficiencia en inteligencia administrativa que afecta capacidad de los directores para resolver temas",
+    "Problema de comunicación: parte de la demora no es 100% responsabilidad de directores sino de cómo se entrega información desde Condugas",
+    "La demora en directores tiene responsabilidad compartida: falta de acompañamiento administrativo desde central + formato de información inadecuado",
+    "Carlos López (como gerente nuevos negocios) es el vector para penetrar en Piosas mediante Mauricio Gómez",
+    "Zilar requiere alineamiento previo Diana-Carlos-Vinila antes de que Sebastian hable con Andrea y socios",
+    "Capacidad de Condugas: modelado financiero conservador y cálculo de rendimiento esperado de máquinas",
+    "Nómina requiere unificación de criterios y menos carga administrativa a obra",
+    "Necesidad de máquina versátil que pueda hacer múltiples tipos de brecha (acueducto, gas, reparaciones variables)",
+    "Resistencia al cambio suele ser reacción emocional a percepción de pérdida, no desacuerdo racional"
   ],
   "frases": [
-    "Haga las cosas por usted, que cuando termine lo dejen tranquilo, porque para ellos hoy es muy posible que seamos lo que somos, un proveedor",
-    "257 millones acumulados de no reconocimiento solo por esos ítems",
-    "2340 millones sin contar la proporción de administración, que suma aproximadamente otros 700 millones",
-    "Dejó pelos en el alambrado, pero",
-    "Si no logramos fue por malos ejecutores o por escoger las formas que no acertaron, pero no por dejar de intentarlo o por una mala intención"
+    "tenemos ahí una necesidad urgente de acompañar a todos los directores administrativamente",
+    "la deficiencia que se tiene desde la inteligencia con el administrativo que ellos necesitan para poder cerrar estos temas puntual",
+    "parte de esa demora no es 100% de ellos, es parte que nosotros estamos entregando la información de una manera que no es la que ellos necesitan",
+    "la decisión con esta gente de Zilar está muy claro",
+    "hay que hoy hay que pedirle plata adicional a los socios y si no, efectuar ese contrato que tenemos como preacuerdo"
   ],
   "alertas_supervivencia": [
-    "Crisis financiera acumulada de 3040M COP (257M + 2340M + 700M) con impacto directo en continuidad operativa",
-    "Firma de documentación crítica de patrullaje requerida hoy para activar continuidad del mes siguiente, con ambiente confuso y múltiples stakeholders",
-    "Desgaste emocional y físico de Sebastian alcanzando niveles críticos por negociación sostenida con EPM desde octubre 2025",
-    "Sistema de horas extras mal configurado afectando nómina de empleados y generando datos incorrectos",
-    "Ciclos de sueño fragmentado de Benjamin sin solución clara, generando estrés en contexto de viaje inminente a las 2am"
+    "CRÍTICA: Proyecto Río Negro con EPM quebrado desde febrero con pérdidas graves - requiere resolución inmediata antes de reunión TGM mañana 10am",
+    "CRÍTICA: Crisis de liquidez actual declarada (hoy no tenemos con qué participar) mientras se negocia 30% participación accionaria",
+    "ALTA: Patrones deficientes de comunicación enraizándose en organización - Sebastian reconoce que si no corta ahora se perpetúan",
+    "ALTA: Resistencia emocional al cambio en dinámicas de poder afectando responsabilidades y recursos de equipo sin resolución clara",
+    "MEDIA: 28 reuniones en un día (audio fragmentado, múltiples personas desconocidas) indica saturación extrema que afecta calidad decisional en temas críticos"
   ],
-  "total_lifelogs": 21,
+  "total_lifelogs": 28,
   "procesado_con": "haiku_v3_structured"
 }

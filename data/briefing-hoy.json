@@ -1,64 +1,61 @@
 {
-  "saludo": "Buenos días Sebastián — martes 05 May",
+  "saludo": "Buenos días Sebastián — jueves 07 May",
   "supervivencia": [
-    "Caja en crítico: 8 días de runway, EBITDA -800k. Cobro EPM (~180M) y Hamilton (vencido 02-May) son vitales",
-    "EPM: 3 tareas críticas vencidas (defensa legal, reajuste contractual, documentación debido proceso). Riesgo de litigio inminente",
-    "Base clientes: sin estructura clara = sin pipeline = sin ingresos previsibles"
+    "Caja en 10 días con EBITDA -800k: crisis real",
+    "EPM Río Negro: ~180M pendientes + no conformidad sin respuesta legal",
+    "Deudas Condugas sin resolver mientras negocias 30% accionaria"
   ],
   "top_3": [
     {
-      "tarea": "Llamar Andrea HOY: deudas Condugas + Hamilton vencido. Necesitas flujo inmediato",
+      "tarea": "Reunión Andrea HOY: deudas Condugas + plan de pago claro",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Caja colapsa en 8 días sin cobros",
-      "tarea_id": "resolver-deudas-condugas"
+      "porque": "No puedes negociar participación con deudas internas pendientes",
+      "tarea_id": "resolver_deudas_condugas"
     },
     {
-      "tarea": "Sesión 90min Ema+Lina: estructura Siendo (roles/plata/tareas/límites) + ERP visual",
-      "categoria": "ESTRATEGIA",
-      "porque": "Sin estructura clara no hay escalabilidad ni claridad operativa",
-      "tarea_id": "estructura-siendo"
+      "tarea": "Estructurar defensa legal EPM: documentación de incumplimiento + reajuste contundente",
+      "categoria": "SUPERVIVENCIA",
+      "porque": "No conformidad sin respuesta formal + 180M en juego = riesgo legal grave",
+      "tarea_id": "defensa_epm_rio_negro"
     },
     {
-      "tarea": "Base clientes única con propuestas definidas (etapa Odoo + necesidades específicas)",
-      "categoria": "ESTRATEGIA",
-      "porque": "Crítica score:47. Sin esto no sabes dónde viene dinero",
-      "tarea_id": "clientes-base"
+      "tarea": "Cierre caja familiar + inversiones: estado real hoy",
+      "categoria": "SUPERVIVENCIA",
+      "porque": "No sabes posición real mientras tomas decisiones de inversión en máquinas",
+      "tarea_id": "situacion_caja_familiar"
     }
   ],
-  "mega_dia": "Habla con Andrea + cierra base clientes en hoja limpia. Dos cosas que mueven aguja.",
+  "mega_dia": "Llamada Andrea (deudas) + correo formal a EPM respondiendo no conformidad con cronograma de cobro",
   "contactar_hoy": [
     {
       "persona": "Andrea Bernal",
-      "motivo": "Cobro Hamilton vencido + deudas Condugas pendientes"
+      "motivo": "Deudas Condugas + refinanciamiento pendiente"
     },
     {
-      "persona": "Emanuel",
-      "motivo": "Agendar sesión estructura Siendo para esta semana"
+      "persona": "Equipo legal",
+      "motivo": "Respuesta formal no conformidad EPM antes del vencimiento"
     }
   ],
   "ojo_con": [
-    "110 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "119 tareas vencidas + 184 sin evaluar = caos no visible",
-    "KPIs desactualizados (caja/facturación: 16 días sin data)",
-    "EPM: 3 críticas vencidas desde abril. Abogado debe estar moviéndose YA"
+    "115 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
+    "Facturación 45% = insuficiente vs. gastos",
+    "74 críticas abiertas: gestión está colapsada",
+    "Recovery 14% + sueño 27% = decisiones comprometidas con TDAH no regulado"
   ],
   "vencidas": [
-    "Hamilton pago (02-May)",
-    "Defensa legal EPM (04-18)",
-    "Documentación debido proceso (04-18)",
-    "Evaluación viabilidad EPM (04-20)",
-    "Revisar rendimiento contratos (04-20)",
-    "Conversa Pilar/POT (05-05) ← HOY"
+    "Conversa Pilar POT Aguactala (vencía 2026-05-05)",
+    "Documentación debido proceso EPM (vencía 2026-04-18)",
+    "Revisar rendimiento contratos críticos (vencía 2026-04-20)"
   ],
-  "frase_dia": "8 días de caja, 65 críticas abiertas, 3 clientes en riesgo. Hoy decides: ¿focus o caos?",
-  "generado_at": "2026-05-05T11:00:11",
-  "fecha": "2026-05-05",
+  "frase_dia": "Hoy no resuelves EPM ni caja: es supervivencia. Deja el resto colgado.",
+  "generado_at": "2026-05-07T11:00:09",
+  "fecha": "2026-05-07",
   "stats": {
-    "abiertas": 212,
-    "criticas": 65,
-    "vencidas": 119,
+    "abiertas": 230,
+    "criticas": 74,
+    "vencidas": 127,
     "estancadas": 192,
-    "sin_evaluar": 184
+    "sin_evaluar": 202
   },
   "criticas_sin_fecha": [
     {
@@ -154,10 +151,10 @@
   ],
   "vence_pronto": [
     {
-      "id": "2026-04-13-mc8a7e3",
-      "tarea": "Conversar con basa, pilar y averiguar que propuestas hay en el POT para casa de aguactala",
+      "id": "2026-05-04-c003",
+      "tarea": "Tomar tiempo para reunión importante con equipo sobre patrones de comunicación que se están enraizan",
       "dias": 0,
-      "fecha_limite": "2026-05-05"
+      "fecha_limite": "2026-05-07"
     }
   ]
 }

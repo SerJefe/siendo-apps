@@ -35,7 +35,37 @@
       "contexto": "Objeto no se seca si se deja encendido",
       "responsable": "Sebastian",
       "fecha_rechazo": "2026-05-05"
+    },
+    {
+      "tarea": "Revisar y corregir nómina última: unificar criterios de reporte y formato de trabajo con directores de proyecto",
+      "contexto": "Reportes de Susana y Manuel indican positivos y correcciones necesarias en forma de trabajo",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-06"
+    },
+    {
+      "tarea": "Preparar conversación sana y precisa antes de reunión donde se informarán cambios que afecten a Edward",
+      "contexto": "Anticipar que Edward puede reaccionar defensivamente; explicitar que cambios responden a necesidades organizacionales, no castigo personal",
+      "responsable": "Sebastian",
+      "fecha_rechazo": "2026-05-06"
+    },
+    {
+      "tarea": "Enviar documentos a Andre con orientación correcta (no al revés ni montados)",
+      "contexto": "Logística de envío de documentación",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-06"
+    },
+    {
+      "tarea": "Aval de cambio de SIM debe tramitarse mañana con persona designada (sigue protocolo formal empresa)",
+      "contexto": "Persona responsable llega mañana, pedirá reposición formal de SIM por WhatsApp. No hacer hoy.",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-06"
+    },
+    {
+      "tarea": "Coordinador/equipo: enviar WhatsApp a Sebastian con descripción de SIM perdida para gestionar reposición mañana",
+      "contexto": "Solicitado por Sebastian en reunión 22",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-06"
     }
   ],
-  "ultima_actualizacion": "2026-05-05T06:43:04"
+  "ultima_actualizacion": "2026-05-06T13:02:24"
 }

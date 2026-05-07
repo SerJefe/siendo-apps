@@ -10,7 +10,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
 BEGIN:VEVENT
 UID:tarea-2026-04-08-005@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260421
 SUMMARY:[CRITICA] Revisar rendimiento de contratos compartidos que se ven críticos
@@ -22,7 +22,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-13-mc8a7e3@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260505
 DTEND;VALUE=DATE:20260506
 SUMMARY:[ALTA] Conversar con basa\, pilar y averiguar que propuestas hay en el POT para casa de aguactala
@@ -34,7 +34,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-16-c001@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260502
 DTEND;VALUE=DATE:20260503
 SUMMARY:[ALTA] Cobrar pago pendiente de Hamilton según lo prometido
@@ -46,7 +46,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-16-c001x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260418
 DTEND;VALUE=DATE:20260419
 SUMMARY:[CRITICA] Preparar documentación de debido proceso ejecutivo con focus en ambiental y reajustes
@@ -58,7 +58,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-16-c002x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260421
 SUMMARY:[ALTA] Evaluar viabilidad de terminación contractual vs. renegociación de fórmula
@@ -70,7 +70,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-16-c001xx@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20301231
 DTEND;VALUE=DATE:20310101
 SUMMARY:[CRITICA] Avanzar proceso de licenciamiento ambiental y social (ruta crítica)
@@ -82,7 +82,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-17-c001@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260421
 DTEND;VALUE=DATE:20260422
 SUMMARY:[CRITICA] Presentar propuesta de restructuración a don Darío
@@ -94,7 +94,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-17-c002@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260425
 DTEND;VALUE=DATE:20260426
 SUMMARY:Redefinir presentación corporativa eliminando foco exclusivo en EPM e incorporando Vanti\, gas de occidente\, infraestructura
@@ -106,7 +106,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-17-c003@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260424
 DTEND;VALUE=DATE:20260425
 SUMMARY:[CRITICA] Auditar estructura de deuda y cuentas por cobrar entre Condugas\, socios e IC (excisión no pagada)
@@ -118,7 +118,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-17-c007@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260418
 DTEND;VALUE=DATE:20260419
 SUMMARY:[CRITICA] Preparar documento para Mario (entrega viernes para lunes\, ajuste proporciones mano de obra ~15%)
@@ -130,7 +130,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c001@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260421
 SUMMARY:[CRITICA] Armar plan de defensa y revisar números de caja con Andrea
@@ -142,7 +142,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c002@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260421
 SUMMARY:[CRITICA] Contactar proveedores (3 llamadas pendientes)
@@ -154,7 +154,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c003@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:[CRITICA] Gestionar saldo a favor de 1\,200M COP esperado en septiembre 2026 para recuperación
@@ -166,7 +166,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c006@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260421
 DTEND;VALUE=DATE:20260422
 SUMMARY:[CRITICA] Preparar análisis de reducción de pasivos operativos (campamento/internet/personal)
@@ -178,7 +178,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c007@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260421
 DTEND;VALUE=DATE:20260422
 SUMMARY:[CRITICA] Compilar información financiera consolidada para junta de mañana
@@ -190,7 +190,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c008@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260421
 DTEND;VALUE=DATE:20260422
 SUMMARY:[CRITICA] Exigir a socios cumplimiento de aportes o separación
@@ -202,7 +202,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c003x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260421
 SUMMARY:[CRITICA] Analizar y discutir con Carlos López sobre situación financiera
@@ -214,7 +214,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c005x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:[CRITICA] Reclamar saldo a favor de 1200M COP en septiembre y 1400M COP actuales para cierre de contratos
@@ -226,7 +226,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c007x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260421
 DTEND;VALUE=DATE:20260422
 SUMMARY:[CRITICA] Preparar comunicado para equipo: imposibilidad de pago a proveedores por falta de pago de PM
@@ -238,7 +238,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c008x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260421
 DTEND;VALUE=DATE:20260422
 SUMMARY:[CRITICA] Revisar y reducir carga administrativa del contrato (objetivo: bajar de 130M a sostenible)
@@ -250,7 +250,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-20-c009@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260421
 SUMMARY:[CRITICA] Obtener información consolidada de caja y proyecciones para presentación en junta
@@ -262,7 +262,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-21-c005@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Establecer transición Odu como obligatoria (mañana y pasado mañana)\, sin negociación
@@ -274,7 +274,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-21-c007@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260721
 DTEND;VALUE=DATE:20260722
 SUMMARY:[CRITICA] Diseñar e implementar sistema de automatización en Condugas para alcanzar operación 60-70% autónoma en <3 meses
@@ -286,7 +286,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-21-c008@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260424
 DTEND;VALUE=DATE:20260425
 SUMMARY:[CRITICA] Revertir transferencia de 14M COP a papá de Sebastian para cubrir fly pass y mantener nómina operativa
@@ -298,7 +298,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-21-c010@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20271231
 DTEND;VALUE=DATE:20280101
 SUMMARY:[CRITICA] Cumplir cronograma de construcción Fase 2 (concretos y máquinas)
@@ -310,7 +310,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-21-c011@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20271231
 DTEND;VALUE=DATE:20280101
 SUMMARY:[CRITICA] Completar instalaciones para primeras dos máquinas
@@ -322,7 +322,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c001@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Evaluar y reparar/reemplazar equipo dañado por sobreamperaje
@@ -334,7 +334,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c002@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Revisar protocolo de seguridad eléctrica en hogar/obra
@@ -346,7 +346,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c003@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260427
 DTEND;VALUE=DATE:20260428
 SUMMARY:[CRITICA] Definir cifra mínima de caja requerida en 5 días para salvar operación (nómina y proveedores críticos)
@@ -358,7 +358,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c004@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Construir narrativa madre (5 bloques): qué pasó\, qué está probado\, cuánto falta\, riesgo para EPM\, decisión concreta
@@ -370,7 +370,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c005@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Preparar mensaje ejecutivo de 20 minutos para pedir reunión con alto nivel EPM
@@ -382,7 +382,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c006@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260425
 DTEND;VALUE=DATE:20260426
 SUMMARY:[CRITICA] Ejecutar 4 rutas simultáneas: 1) Negocio (VP Negocios)\, 2) Jurídica/Reclamaciones\, 3) Portal Pagos Proveedores\, 4) Canal Ética/Transparencia
@@ -394,7 +394,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c007@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Radicación formal paralela a llamada ejecutiva con bloques: hechos\, impacto\, riesgos\, solicitud\, plazo
@@ -406,7 +406,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c001x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Responder internamente 10 preguntas estratégicas sobre cifras mínimas\, documentación\, fecha crítica de caja y decisiones agresivas
@@ -418,7 +418,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c002x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260424
 SUMMARY:[CRITICA] Preparar mensaje ejecutivo de 5 bloques (qué pasó\, prueba\, cuánto falta\, riesgo EPM\, decisión solicitada)
@@ -430,7 +430,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-22-c004x@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260424
 DTEND;VALUE=DATE:20260425
 SUMMARY:[CRITICA] Radicación formal paralela a llamada (correo\, portal de pagos proveedores\, canal de integridad EPM)
@@ -442,7 +442,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-23-c001@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260424
 DTEND;VALUE=DATE:20260425
 SUMMARY:[CRITICA] Comunicar decisión de salida de Carlos de la empresa
@@ -454,7 +454,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-23-c002@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260424
 DTEND;VALUE=DATE:20260425
 SUMMARY:[CRITICA] Finalizar y radicar comunicación formal a EPM con: reserva derechos + propuesta de ajuste económico + convocatoria a mesa técnica 10 días hábiles
@@ -466,7 +466,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-23-c003@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260424
 DTEND;VALUE=DATE:20260425
 SUMMARY:[CRITICA] Incorporar aclaración de ítems ambientales (80% vs 100% condicionado) en comunicación a EPM antes de radicar
@@ -478,7 +478,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-23-c004@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260427
 DTEND;VALUE=DATE:20260428
 SUMMARY:[CRITICA] Urgente: actualizar contabilidad en paralelo con producción para tener contraste costo vs ingresos real
@@ -490,7 +490,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-23-c005@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260501
 SUMMARY:[CRITICA] Crear modelo de rentabilidad de contratos (no solo APU de costos) con actualización mensual
@@ -502,7 +502,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-23-c006@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260426
 DTEND;VALUE=DATE:20260427
 SUMMARY:[CRITICA] Análisis: Si crédito nuevo se usa para reducir gastos fijos operativos (arriendo\, servicios) + comprar activos vs solo pagar crédito anterior\, ¿qué % debería ser cada uno?
@@ -514,7 +514,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-30-c005@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260501
 SUMMARY:[CRITICA] Firmar documentacion de suspension de contrato de patrullaje
@@ -526,11 +526,119 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:tarea-2026-04-30-c006@serjefe
-DTSTAMP:20260505T180002Z
+DTSTAMP:20260507T134501Z
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260501
 SUMMARY:[CRITICA] Revisar documento de contrato (~120 paginas) en Word antes de firma
 DESCRIPTION:Contexto: Documento esta en Word\, requiere revision previa a firma\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c001@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Coordinar reunión entre Diana y Carlos (Condugas) con Vinila para definir estrategia del contrato Zilar
+DESCRIPTION:Contexto: Previo a reunión Sebastian-Andrea para definir cobertura financiera y mensajes a socios\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c002@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Decidir y comunicar a socios sobre capital adicional para Zilar o ejecutar preacuerdo con abogados
+DESCRIPTION:Contexto: Resolución financiera urgente del contrato Zilar\nResponsable: Sebastian\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c003@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260508
+SUMMARY:[CRITICA] Tomar tiempo para reunión importante con equipo sobre patrones de comunicación que se están enraizando
+DESCRIPTION:Contexto: Si no corta ahora patrones de comunicación deficiente\, el equipo los seguirá usando a futuro\; es aprendizaje que se transmite\nResponsable: Sebastian\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c004@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Elaborar presentación visual (papel grande o iPad) con línea de tiempo completa de hitos del contrato Río Negro para defensa ante TGM
+DESCRIPTION:Contexto: Reunión programada mañana (2026-05-05) para negociación. Sebastian requiere clarificar responsabilidades y eventuales errores propios vs contrapartes\nResponsable: Sebastian\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c005@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Recopilar cronología de reuniones y comunicaciones con TGM: qué se dijo en cada una\, cuándo fueron\, qué promesas/compromisos fueron incumplidos
+DESCRIPTION:Contexto: Necesario para defensa de contrato. Incluir: primeras reuniones\, reunión con Camilo y Mía\, estructura de tiempos\, cambios en reajustes\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c006@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Documentar incremento de costos directos y extensión de tiempos del contrato desde propuesta original (250 millones costo directo)
+DESCRIPTION:Contexto: Para comparativa contrato original vs realidad ejecutada. Debe mostrar en iPad/papel para presentación\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c007@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Consolidar información sobre reajustes ambientales y cómo han cambiado en años pasados para presentar mañana
+DESCRIPTION:Contexto: Para reunión TGM 2026-05-05 10am\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c008@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Compilar datos específicos orientados a negociación (pagos adeudados\, estado de contrato) para preparar reunión mañana a las 10
+DESCRIPTION:Contexto: Negociación con acreedor/contratante\n\nDashboard: https://72.60.28.156.nip.io/
+CATEGORIES:CONDUGAS
+PRIORITY:1
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:tarea-2026-05-04-c009@serjefe
+DTSTAMP:20260507T134501Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:[CRITICA] Documentar por escrito objetivo claro de negociación antes de reunión mañana
+DESCRIPTION:Contexto: Preparación negociación\nResponsable: Sebastian\n\nDashboard: https://72.60.28.156.nip.io/
 CATEGORIES:CONDUGAS
 PRIORITY:1
 STATUS:CONFIRMED
