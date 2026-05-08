@@ -65,7 +65,13 @@
       "contexto": "Solicitado por Sebastian en reunión 22",
       "responsable": null,
       "fecha_rechazo": "2026-05-06"
+    },
+    {
+      "tarea": "Recoger objeto en Sótano 3, da 37",
+      "contexto": "Ubicación: Sótano 3, da 37",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-07"
     }
   ],
-  "ultima_actualizacion": "2026-05-06T13:02:24"
+  "ultima_actualizacion": "2026-05-07T15:30:09"
 }

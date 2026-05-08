@@ -2855,20 +2855,115 @@ loadCalendario();
       MAIL_DISMISSED.add(mailId);
       // Esconder el item en el DOM sin re-render completo
       var row = btn && btn.closest('div[data-mail-id]');
-      if (row) { row.style.opacity = '0.3'; row.style.textDecoration='line-through'; setTimeout(function(){ row.remove(); }, 250); }
+      if (row) {
+        row.dataset.dismissed = '1';
+        row.style.opacity = '0.3';
+        row.style.textDecoration='line-through';
+        setTimeout(function(){
+          row.remove();
+          if (typeof window.__mailRecalc === 'function') window.__mailRecalc();
+        }, 250);
+      }
     } catch(e) {}
+  };
+
+  // Categoriza un correo según el dominio del remitente.
+  // 7 grupos visibles en el radar; el resto cae en 'otros'.
+  function mailCategoria(p){
+    var f = ((p && p.from) || '').toLowerCase();
+    var dom = f.indexOf('@')>=0 ? f.split('@').pop() : '';
+    if (!dom) return 'otros';
+    if (dom.indexOf('condugas.com.co') !== -1) return 'equipo';
+    if (/\.gov\.co$|\.gob\.co$|epm\.com\.co$|alcaldia|gobernacion|secretaria|minenergia|mineducacion|minhacienda|dian\.|supersociedades|sgc\.|presidencia/.test(dom)) return 'gobierno';
+    if (/(bancolombia|davivienda|bbva|bancodebogota|bancodeoccidente|colpatria|scotiabank|itau|av\-?villas|cajasocial|nequi|daviplata|^banco)/.test(dom)) return 'bancos';
+    if (/(compliance|abogad|juridic|notari|^legal|legal\.|cancha\.legal|firmalegal)/.test(dom)) return 'legal';
+    if (/(infraestructura\.org|cciantioquia|camaramedellin|camacol|asonaphse|fonconstruimos|asobancaria|^andi\.|^fenavi\.|^camara|gremio|asociacion)/.test(dom)) return 'gremios';
+    if (/\.edu\.co$|\.edu$|eafit|eia\.edu|^univ/.test(dom)) return 'educacion';
+    return 'otros';
+  }
+
+  // Etiqueta + color por categoría (mantiene paleta canon Ser Siendo).
+  var MAIL_CATS = [
+    {id:'equipo',     label:'Equipo',     color:'#0f2844'},
+    {id:'gobierno',   label:'Gobierno',   color:'#a62e2e'},
+    {id:'gremios',    label:'Gremios',    color:'#9d7a25'},
+    {id:'bancos',     label:'Bancos',     color:'#5a7a4a'},
+    {id:'legal',      label:'Legal',      color:'#4a6b7c'},
+    {id:'educacion',  label:'Educación',  color:'#7a5a92'},
+    {id:'otros',      label:'Otros',      color:'#6b7580'}
+  ];
+
+  // Recalcula contadores totales y por categoría desde los items vivos en el DOM.
+  // Se llama tras un dismiss para que no haya re-render completo.
+  window.__mailRecalc = function(){
+    var box = document.getElementById('pn-ms-mail');
+    if (!box) return;
+    var totalEl = box.querySelector('[data-mail-total]');
+    var live = box.querySelectorAll('div[data-mail-id]');
+    var n = 0;
+    var byCat = {};
+    live.forEach(function(row){
+      // Solo cuenta si no fue marcado como en-fade-out (style.opacity < 1).
+      if (row.dataset.dismissed === '1') return;
+      n++;
+      var c = row.dataset.mailCat || 'otros';
+      byCat[c] = (byCat[c]||0)+1;
+    });
+    if (totalEl) totalEl.textContent = n;
+    MAIL_CATS.forEach(function(c){
+      var chip = box.querySelector('[data-mail-cat-chip="'+c.id+'"] [data-mail-cat-count]');
+      if (chip) chip.textContent = byCat[c.id]||0;
+      var grupo = box.querySelector('[data-mail-cat-group="'+c.id+'"]');
+      if (grupo) grupo.style.display = (byCat[c.id]||0) === 0 ? 'none' : '';
+    });
+  };
+
+  // Filtra por categoría visible.
+  window.filterMailCat = function(cat, btn){
+    var box = document.getElementById('pn-ms-mail');
+    if (!box) return;
+    box.querySelectorAll('[data-mail-cat-chip]').forEach(function(b){
+      b.classList.toggle('active', b === btn);
+      b.style.background = (b === btn) ? 'rgba(15,40,68,.08)' : 'transparent';
+    });
+    MAIL_CATS.forEach(function(c){
+      var grupo = box.querySelector('[data-mail-cat-group="'+c.id+'"]');
+      if (!grupo) return;
+      if (cat === 'todas') {
+        // mostrar solo si tiene items vivos
+        var live = grupo.querySelectorAll('div[data-mail-id]:not([data-dismissed="1"])');
+        grupo.style.display = live.length === 0 ? 'none' : '';
+      } else {
+        grupo.style.display = (c.id === cat) ? '' : 'none';
+      }
+    });
   };
 
   function renderMSMail(mail){
     var box = document.getElementById('pn-ms-mail');
     if (!box) return;
     if (!mail || !mail.pendientes){ box.innerHTML = ''; return; }
-    // Filtrar correos descartados por el usuario.
-    var pendActivos = mail.pendientes.filter(function(p){ return !MAIL_DISMISSED.has(p.id); });
-    var top = pendActivos.filter(function(p){ return p.important_sender; }).slice(0, 8);
-    var rest = pendActivos.filter(function(p){ return !p.important_sender; }).slice(0, 10);
-    if (!top.length && !rest.length){ box.innerHTML = ''; return; }
-    function fmtMail(p){
+    var pendActivos = (mail.pendientes||[]).filter(function(p){ return !MAIL_DISMISSED.has(p.id); });
+    if (!pendActivos.length){ box.innerHTML = ''; return; }
+
+    // Agrupa por categoría preservando orden por importante_sender desc, luego fecha desc.
+    var grupos = {};
+    MAIL_CATS.forEach(function(c){ grupos[c.id] = []; });
+    pendActivos.forEach(function(p){
+      var c = mailCategoria(p);
+      (grupos[c] || grupos.otros).push(p);
+    });
+    function ordenar(a,b){
+      var ai = a.important_sender ? 1 : 0;
+      var bi = b.important_sender ? 1 : 0;
+      if (ai !== bi) return bi - ai;
+      var ad = a.received ? new Date(a.received).getTime() : 0;
+      var bd = b.received ? new Date(b.received).getTime() : 0;
+      return bd - ad;
+    }
+    Object.keys(grupos).forEach(function(k){ grupos[k].sort(ordenar); });
+
+    function fmtMail(p, catId){
       var razones = (p.razon||[]).map(function(r){
         var color = r==='importante'?'#a62e2e':r==='flagged'?'#d4a052':'var(--muted)';
         return '<span style="font-size:9px;font-weight:700;color:'+color+';font-family:\'JetBrains Mono\',monospace;text-transform:uppercase;letter-spacing:0.04em;margin-right:4px;">'+esc(r)+'</span>';
@@ -2876,9 +2971,10 @@ loadCalendario();
       var d = p.received ? new Date(p.received) : null;
       var fecha = d ? d.toLocaleDateString('es-CO',{day:'2-digit',month:'short'}) : '';
       var midEsc = (p.id||'').replace(/'/g,"\\'");
-      return '<div data-mail-id="'+esc(p.id||'')+'" style="padding:7px 0;border-bottom:1px dashed rgba(201,168,74,0.3);font-size:12.5px;transition:opacity .25s;">' +
+      var importante = p.important_sender ? '<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#a62e2e;margin-right:6px;vertical-align:middle;" title="Remitente importante"></span>' : '';
+      return '<div data-mail-id="'+esc(p.id||'')+'" data-mail-cat="'+esc(catId)+'" style="padding:7px 0;border-bottom:1px dashed rgba(201,168,74,0.3);font-size:12.5px;transition:opacity .25s;">' +
         '<div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:2px;align-items:center;">' +
-          '<span style="color:var(--navy);font-weight:600;">' + esc(p.from_name||p.from||'—') + '</span>' +
+          '<span style="color:var(--navy);font-weight:600;">' + importante + esc(p.from_name||p.from||'—') + '</span>' +
           '<div style="display:flex;gap:6px;align-items:center;flex-shrink:0;">' +
             '<span style="color:var(--muted);font-size:10px;font-family:\'JetBrains Mono\',monospace;">' + fecha + '</span>' +
             '<button onclick="dismissMail(\''+midEsc+'\', this)" title="Marcar resuelto" style="background:rgba(90,122,74,.1);color:#3e5a30;border:1px solid rgba(90,122,74,.25);padding:2px 7px;border-radius:4px;font-size:10px;cursor:pointer;line-height:1;">✓</button>' +
@@ -2888,21 +2984,34 @@ loadCalendario();
         (razones ? '<div style="margin-top:3px;">' + razones + '</div>' : '') +
       '</div>';
     }
-    var topHtml = top.length ? '<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;font-weight:600;margin-bottom:4px;">🔴 Importantes ('+top.length+')</div>' + top.map(fmtMail).join('') : '';
-    var restHtml = rest.length ? (
-      '<button onclick="var n=this.nextElementSibling;n.style.display=n.style.display===\'block\'?\'none\':\'block\';this.textContent=n.style.display===\'block\'?\'Ocultar otros\':\'Ver '+rest.length+' otros pendientes\';" style="background:none;border:none;color:#b89949;font-size:11px;padding:8px 0 0;cursor:pointer;font-weight:500;">Ver '+rest.length+' otros pendientes</button>' +
-      '<div style="display:none;margin-top:6px;">' + rest.map(fmtMail).join('') + '</div>'
-    ) : '';
+
+    // Chips de filtro (estilo radar de alertas).
+    var chips = '<button data-mail-cat-chip="todas" onclick="filterMailCat(\'todas\', this)" class="active" style="background:rgba(15,40,68,.08);border:1px solid rgba(15,40,68,.2);color:var(--navy);padding:3px 9px;border-radius:12px;font-size:11px;cursor:pointer;font-weight:600;">Todas (<span data-mail-total>'+pendActivos.length+'</span>)</button>';
+    chips += MAIL_CATS.map(function(c){
+      var n = grupos[c.id].length;
+      if (n === 0) return '';
+      return '<button data-mail-cat-chip="'+c.id+'" onclick="filterMailCat(\''+c.id+'\', this)" style="background:transparent;border:1px solid '+c.color+'33;color:'+c.color+';padding:3px 9px;border-radius:12px;font-size:11px;cursor:pointer;font-weight:600;">'+esc(c.label)+' (<span data-mail-cat-count>'+n+'</span>)</button>';
+    }).join('');
+
+    // Grupos en orden canónico.
+    var grupoHtml = MAIL_CATS.map(function(c){
+      var items = grupos[c.id];
+      if (!items.length) return '';
+      var header = '<div style="margin-top:14px;font-size:10.5px;color:'+c.color+';text-transform:uppercase;letter-spacing:0.06em;font-weight:700;border-bottom:1px solid '+c.color+'33;padding-bottom:4px;margin-bottom:4px;">'+esc(c.label)+' <span style="color:var(--muted);font-weight:500;">('+items.length+')</span></div>';
+      return '<div data-mail-cat-group="'+c.id+'">' + header + items.map(function(p){ return fmtMail(p, c.id); }).join('') + '</div>';
+    }).join('');
+
     box.innerHTML =
-      '<details style="background:#fff;border:1px solid rgba(201,168,74,0.3);border-left:4px solid #a62e2e;border-radius:10px;padding:12px 16px;box-shadow:0 2px 8px rgba(9,31,46,0.06);">' +
+      '<details open style="background:#fff;border:1px solid rgba(201,168,74,0.3);border-left:4px solid #a62e2e;border-radius:10px;padding:12px 16px;box-shadow:0 2px 8px rgba(9,31,46,0.06);">' +
         '<summary style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;user-select:none;">' +
           '<div>' +
-            '<div style="font-weight:700;font-size:14px;color:var(--navy);">📧 Mail radar <span style="color:var(--muted);font-weight:500;font-size:11px;font-family:\'JetBrains Mono\',monospace;">('+mail.total_pendientes+' pendientes)</span></div>' +
-            '<div style="font-size:10.5px;color:var(--muted);font-family:\'JetBrains Mono\',monospace;margin-top:2px;">de ' + (mail.total_recientes_30d||0) + ' mails últimos 30 días · filtrado auto</div>' +
+            '<div style="font-weight:700;font-size:14px;color:var(--navy);">📧 Mail radar <span style="color:var(--muted);font-weight:500;font-size:11px;font-family:\'JetBrains Mono\',monospace;">(<span data-mail-total>'+pendActivos.length+'</span> pendientes)</span></div>' +
+            '<div style="font-size:10.5px;color:var(--muted);font-family:\'JetBrains Mono\',monospace;margin-top:2px;">de ' + (mail.total_recientes_30d||0) + ' mails últimos 30 días · agrupado por categoría</div>' +
           '</div>' +
-          '<span style="font-size:11px;color:#b89949;font-weight:600;">expandir ▾</span>' +
+          '<span style="font-size:11px;color:#b89949;font-weight:600;">colapsar ▴</span>' +
         '</summary>' +
-        '<div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(201,168,74,0.3);">' + topHtml + restHtml + '</div>' +
+        '<div style="margin-top:10px;padding-top:8px;border-top:1px solid rgba(201,168,74,0.3);display:flex;flex-wrap:wrap;gap:6px;">' + chips + '</div>' +
+        '<div style="margin-top:6px;">' + grupoHtml + '</div>' +
       '</details>';
   }
 

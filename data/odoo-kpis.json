@@ -1,22 +1,22 @@
 {
-  "fecha": "2026-05-07",
-  "generated_at": "2026-05-07T10:30:02.175171Z",
+  "fecha": "2026-05-08",
+  "generated_at": "2026-05-08T10:30:04.921309Z",
   "version": "v2-3decisiones",
   "facturacion_30d": {
-    "total": 4544506022.4800005,
-    "count": 51,
+    "total": 4910688406.64,
+    "count": 58,
     "moneda": "COP"
   },
   "cartera_pendiente": {
-    "total": 7318643812.150001,
-    "count": 85,
-    "vencidas": 43,
+    "total": 7603136667.19,
+    "count": 92,
+    "vencidas": 45,
     "moneda": "COP"
   },
   "top_cartera": [
     {
       "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
-      "pendiente": 4663049502.220001
+      "pendiente": 4937257736.31
     },
     {
       "partner": "GASES DE OCCIDENTE SA ESP",
@@ -28,7 +28,7 @@
     },
     {
       "partner": "METROGAS DE COLOMBIA S.A E.S.P",
-      "pendiente": 220263630.84000003
+      "pendiente": 223800583.79000002
     },
     {
       "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
@@ -81,7 +81,7 @@
   "empleados_activos": 642,
   "sobrevivir": {
     "caja": {
-      "bancos_total": 598711528.6600001,
+      "bancos_total": 559900528.6600001,
       "bancos_detalle": [
         {
           "cuenta": "11050505 CAJA GENERAL",
@@ -198,7 +198,7 @@
         },
         {
           "cuenta": "11100520 BANCOLOMBIA 4446  COMERCIAL",
-          "saldo": -105071962.13,
+          "saldo": -102581479.63,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -224,7 +224,7 @@
         },
         {
           "cuenta": "11100545 DAVIVIENDA CTA 4902 FLORIDABLANCA",
-          "saldo": -7338016.94,
+          "saldo": -9828499.44,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -294,7 +294,7 @@
         },
         {
           "cuenta": "False CTA CTE BOGOTA 7323",
-          "saldo": -186903626.76,
+          "saldo": -225714626.76,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -407,8 +407,8 @@
           "warning": "saldo_negativo_revisar"
         }
       ],
-      "cartera_ejecutada": 7318643812.150001,
-      "total_disponible": 7917355340.81,
+      "cartera_ejecutada": 7603136667.19,
+      "total_disponible": 8163037195.849999,
       "moneda": "COP",
       "nota_parametrizacion": "Plan de cuentas en proceso de parametrización · revisar warnings"
     },
@@ -416,86 +416,86 @@
       "top": [
         {
           "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
-          "total": 1704392341.68,
+          "total": 1622702812.56,
           "facturas_vencidas": 7,
           "mas_vieja": "2026-04-15",
-          "dias_vencida": 22
+          "dias_vencida": 23
         },
         {
           "partner": "GAS NATURAL CUNDIBOYACENSE S.A. E.S.P.",
-          "total": 701370508.8800001,
+          "total": 701370508.88,
           "facturas_vencidas": 11,
           "mas_vieja": "2026-04-19",
-          "dias_vencida": 18
+          "dias_vencida": 19
         },
         {
           "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
           "total": 159188822.0,
           "facturas_vencidas": 4,
           "mas_vieja": "2026-02-23",
-          "dias_vencida": 73
+          "dias_vencida": 74
         },
         {
           "partner": "METROGAS DE COLOMBIA S.A E.S.P",
           "total": 93251269.39,
           "facturas_vencidas": 10,
           "mas_vieja": "2026-04-11",
-          "dias_vencida": 26
+          "dias_vencida": 27
         },
         {
           "partner": "CONSORCIO SILAR CONDUGAS",
           "total": 86588132.44,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-30",
-          "dias_vencida": 7
+          "dias_vencida": 8
         },
         {
           "partner": "Jhon Christopher Angulo",
           "total": 59368482.98,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-03-24",
-          "dias_vencida": 44
+          "dias_vencida": 45
         },
         {
           "partner": "GASES DE OCCIDENTE SA ESP",
           "total": 55554076.62,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-05-01",
-          "dias_vencida": 6
+          "dias_vencida": 7
         },
         {
           "partner": "UNION TEMPORAL HABILITACION INFRAESTRUCTURA HOSPITALARIA",
           "total": 24521525.67,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 23
+          "dias_vencida": 24
         },
         {
           "partner": "CONINSA  S.A.S",
           "total": 18868581.69,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-20",
-          "dias_vencida": 17
+          "dias_vencida": 18
         },
         {
           "partner": "CONSTRUTEM S A S",
           "total": 15598151.76,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 23
+          "dias_vencida": 24
         }
       ],
-      "total": 2931961850.23,
-      "facturas_count": 43
+      "total": 2857019989.11,
+      "facturas_count": 45
     },
     "deuda_proveedores": {
-      "total": 3856987915.81,
+      "total": 3853969779.0099998,
       "count": 1000,
-      "vencidas": 862,
+      "vencidas": 865,
       "top": [
         {
           "proveedor": "GASES DE OCCIDENTE SA ESP",
-          "pendiente": 578832026.76
+          "pendiente": 578758201.76
         },
         {
           "proveedor": "LOGISLAND S A S",
@@ -519,6 +519,70 @@
   },
   "recuperar": {
     "facturas_recientes": [
+      {
+        "name": "FEC99",
+        "tipo": "venta",
+        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
+        "monto": 96098239.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-07 20:03:34"
+      },
+      {
+        "name": "FEC98",
+        "tipo": "venta",
+        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
+        "monto": 102888628.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-07 19:29:04"
+      },
+      {
+        "name": "FEC96",
+        "tipo": "venta",
+        "partner": "TECNO-KIMA LTDA",
+        "monto": 147668.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-07 18:19:20"
+      },
+      {
+        "name": "FEC95",
+        "tipo": "venta",
+        "partner": "TECNO-KIMA LTDA",
+        "monto": 6600000.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-07 18:17:47"
+      },
+      {
+        "name": "FEC97",
+        "tipo": "venta",
+        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
+        "monto": 58481682.21,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-07 18:09:54"
+      },
+      {
+        "name": "FEC94",
+        "tipo": "venta",
+        "partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
+        "monto": 98429214.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-07 17:12:08"
+      },
+      {
+        "name": "FEC93",
+        "tipo": "venta",
+        "partner": "METROGAS DE COLOMBIA S.A E.S.P",
+        "monto": 3536952.95,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-07 16:57:06"
+      },
+      {
+        "name": "BILL/2026/05/0021",
+        "tipo": "compra",
+        "partner": "ESTACION DE SERVICI O EL CARARE SAS",
+        "monto": 116986.4,
+        "fecha": "2026-05-04",
+        "registrada": "2026-05-07 16:14:30"
+      },
       {
         "name": "FECC9",
         "tipo": "venta",
@@ -574,81 +638,17 @@
         "monto": 678030.0,
         "fecha": "2026-05-04",
         "registrada": "2026-05-06 15:53:34"
-      },
-      {
-        "name": "BILL/2026/05/0018",
-        "tipo": "compra",
-        "partner": "MAZO SALDARRIAGA SANTIAGO DE JESUS",
-        "monto": 79968.0,
-        "fecha": "2026-05-04",
-        "registrada": "2026-05-06 14:18:43"
-      },
-      {
-        "name": "BILL/2026/05/0019",
-        "tipo": "compra",
-        "partner": "E-SYSTEMS S A S",
-        "monto": 4806519.36,
-        "fecha": "2026-05-05",
-        "registrada": "2026-05-06 14:16:21"
-      },
-      {
-        "name": "BILL/2026/05/0005",
-        "tipo": "compra",
-        "partner": "EL PUNTO DE LA IMPRESION S A S",
-        "monto": 141610.0,
-        "fecha": "2026-05-04",
-        "registrada": "2026-05-06 14:14:59"
-      },
-      {
-        "name": "DEC544",
-        "tipo": "compra",
-        "partner": "ROBLES ALBA ANYI PAOLA",
-        "monto": 4330598.4,
-        "fecha": "2026-04-30",
-        "registrada": "2026-05-05 20:13:35"
-      },
-      {
-        "name": "DEC545",
-        "tipo": "compra",
-        "partner": "PETRO USUGA ROBERT ANDRES",
-        "monto": 2700000.0,
-        "fecha": "2026-04-30",
-        "registrada": "2026-05-05 16:27:33"
-      },
-      {
-        "name": "DEC547",
-        "tipo": "compra",
-        "partner": "ACERO NEIRA VALERY",
-        "monto": 2340125.0,
-        "fecha": "2026-05-06",
-        "registrada": "2026-05-05 16:26:49"
-      },
-      {
-        "name": "BILL/2026/05/0007",
-        "tipo": "compra",
-        "partner": "SANTOS ALDANA MARLEN",
-        "monto": 862903.0,
-        "fecha": "2026-05-01",
-        "registrada": "2026-05-05 16:25:30"
-      },
-      {
-        "name": "BILL/2026/04/0429",
-        "tipo": "compra",
-        "partner": "ELECTRIFICADORA DE SANTANDER S.A. ESP",
-        "monto": 153111.0,
-        "fecha": "2026-04-24",
-        "registrada": "2026-05-05 16:24:43"
       }
     ],
     "compras_mes": {
-      "total": 54141717.38,
-      "count": 39,
+      "total": 54258703.78,
+      "count": 40,
       "desde": "2026-05-01",
       "moneda": "COP"
     },
     "compras_acumulado_ano": {
-      "total": 5673421963.39,
-      "count": 2413,
+      "total": 5673538949.79,
+      "count": 2414,
       "por_mes": [
         {
           "mes": "2026-01",
@@ -668,7 +668,7 @@
         },
         {
           "mes": "2026-05",
-          "total": 54141717.379999995
+          "total": 54258703.78
         }
       ],
       "desde": "2026-01-01",
@@ -683,20 +683,20 @@
           "cumplimiento_pct": null
         },
         {
+          "contrato": "O&M Z2",
+          "gasto_acumulado": 1187051369.06,
+          "presupuesto": null,
+          "cumplimiento_pct": null
+        },
+        {
           "contrato": "VALLE",
           "gasto_acumulado": 1118637277.46,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
-          "contrato": "O&M Z2",
-          "gasto_acumulado": 831809830.11,
-          "presupuesto": null,
-          "cumplimiento_pct": null
-        },
-        {
           "contrato": "BOYACÁ",
-          "gasto_acumulado": 325592509.08,
+          "gasto_acumulado": 325475522.68,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -708,7 +708,7 @@
         },
         {
           "contrato": "FLORIDABLANCA",
-          "gasto_acumulado": 136414780.31,
+          "gasto_acumulado": 139923952.31,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -734,7 +734,7 @@
       "nota_presupuesto": "Campos presupuesto/cumplimiento pendientes hasta carga de estructuración"
     },
     "inventario_transito": {
-      "count": 92,
+      "count": 86,
       "items": [
         {
           "name": "OM&Z2/IN/00076",
@@ -935,7 +935,7 @@
       },
       {
         "mes": "2026-05",
-        "total": 279886600.81
+        "total": 646068984.97
       }
     ]
   }

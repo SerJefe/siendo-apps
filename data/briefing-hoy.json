@@ -1,61 +1,61 @@
 {
-  "saludo": "Buenos días Sebastián — jueves 07 May",
+  "saludo": "Buenos días Sebastián — viernes 08 May",
   "supervivencia": [
-    "Caja en 10 días con EBITDA -800k: crisis real",
-    "EPM Río Negro: ~180M pendientes + no conformidad sin respuesta legal",
-    "Deudas Condugas sin resolver mientras negocias 30% accionaria"
+    "Caja a 10 días: necesitas flujo urgente de EPM (~180M reajustes pendientes)",
+    "EBITDA negativo (-800): hemorragia en Río Negro + no conformidad contrato 24",
+    "Sueño 27% + recovery 14%: rendimiento cognitivo comprometido para decisiones críticas"
   ],
   "top_3": [
     {
-      "tarea": "Reunión Andrea HOY: deudas Condugas + plan de pago claro",
+      "tarea": "Llamar a Andrea HOY: deudas Condugas + plan de pago (es bloqueo sistémico)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "No puedes negociar participación con deudas internas pendientes",
-      "tarea_id": "resolver_deudas_condugas"
+      "porque": "Sin claridad no hay caja ni negociación con EPM",
+      "tarea_id": "alta-resolver-deudas"
     },
     {
-      "tarea": "Estructurar defensa legal EPM: documentación de incumplimiento + reajuste contundente",
+      "tarea": "Enviar comunicado a EPM: cobro directo reajustes Río Negro + fecha límite (72h respuesta)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "No conformidad sin respuesta formal + 180M en juego = riesgo legal grave",
-      "tarea_id": "defensa_epm_rio_negro"
+      "porque": "180M COP es diferencia entre operación normal y crisis",
+      "tarea_id": "critica-reajustes-epm"
     },
     {
-      "tarea": "Cierre caja familiar + inversiones: estado real hoy",
-      "categoria": "SUPERVIVENCIA",
-      "porque": "No sabes posición real mientras tomas decisiones de inversión en máquinas",
-      "tarea_id": "situacion_caja_familiar"
+      "tarea": "Reunión Ema + Lina (30min): definir ESTRUCTURA Siendo (roles, plata, qué hacer) — luego prospección",
+      "categoria": "ESTRATEGIA",
+      "porque": "Sin estructura clara el equipo no ejecuta, base de clientes sigue huérfana",
+      "tarea_id": "alta-estructura-siendo"
     }
   ],
-  "mega_dia": "Llamada Andrea (deudas) + correo formal a EPM respondiendo no conformidad con cronograma de cobro",
+  "mega_dia": "Deudas Condugas resueltas + comunicado EPM enviado = caja respirable",
   "contactar_hoy": [
     {
       "persona": "Andrea Bernal",
-      "motivo": "Deudas Condugas + refinanciamiento pendiente"
+      "motivo": "Cuadrar deuda empresa exacta + calendario pagos (es bloqueador)"
     },
     {
-      "persona": "Equipo legal",
-      "motivo": "Respuesta formal no conformidad EPM antes del vencimiento"
+      "persona": "Emanuel",
+      "motivo": "30min: definir roles/presupuesto Siendo Consulting antes de vender"
     }
   ],
   "ojo_con": [
-    "115 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "Facturación 45% = insuficiente vs. gastos",
-    "74 críticas abiertas: gestión está colapsada",
-    "Recovery 14% + sueño 27% = decisiones comprometidas con TDAH no regulado"
+    "110 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
+    "Tareas críticas: 74 (vencidas 106) — fragmentación es riesgo de no-delivery",
+    "Whoop data: recovery comprometida, decisiones hoy estarán sesgadas",
+    "No conformidad contrato 24: plazo legal para respuesta formal desconocido"
   ],
   "vencidas": [
-    "Conversa Pilar POT Aguactala (vencía 2026-05-05)",
-    "Documentación debido proceso EPM (vencía 2026-04-18)",
-    "Revisar rendimiento contratos críticos (vencía 2026-04-20)"
+    "Conversar con Pilar/Basa sobre POT Aguactala (vencía 05-May)",
+    "Revisar rendimiento contratos críticos (vencía 20-Abr)",
+    "Evaluación viabilidad contractual EPM (vencía 20-Abr)"
   ],
-  "frase_dia": "Hoy no resuelves EPM ni caja: es supervivencia. Deja el resto colgado.",
-  "generado_at": "2026-05-07T11:00:09",
-  "fecha": "2026-05-07",
+  "frase_dia": "La caja respira con acciones, no con análisis. Hoy: 2 llamadas = respirador del negocio.",
+  "generado_at": "2026-05-08T11:00:10",
+  "fecha": "2026-05-08",
   "stats": {
-    "abiertas": 230,
-    "criticas": 74,
-    "vencidas": 127,
-    "estancadas": 192,
-    "sin_evaluar": 202
+    "abiertas": 208,
+    "criticas": 62,
+    "vencidas": 106,
+    "estancadas": 155,
+    "sin_evaluar": 183
   },
   "criticas_sin_fecha": [
     {
@@ -80,7 +80,7 @@
       "id": "2026-04-12-004",
       "tarea": "Publicar documentación de KPIs en repositorio público",
       "prioridad": "alta",
-      "responsable": "Equipo Técnico"
+      "responsable": "William Lopez"
     },
     {
       "id": "2026-04-09-004",
@@ -119,18 +119,6 @@
       "responsable": "Sebastian"
     },
     {
-      "id": "2026-04-13-m5c9509",
-      "tarea": "Presentación empresa junta 20 de abril",
-      "prioridad": "alta",
-      "responsable": "Sebastian"
-    },
-    {
-      "id": "2026-04-13-mb61536",
-      "tarea": "Reunión Vendemos",
-      "prioridad": "alta",
-      "responsable": "Sebastian"
-    },
-    {
       "id": "2026-04-13-mc17d26",
       "tarea": "Unificar base de datos y fuentes Siendo Consulting",
       "prioridad": "alta",
@@ -147,14 +135,26 @@
       "tarea": "Coordinar reunión con leads/clientes para definición estratégica",
       "prioridad": "alta",
       "responsable": "Sebastian"
+    },
+    {
+      "id": "2026-04-14-m995aab",
+      "tarea": "Estructura siendo, roles, tareas, plata, que hacer y que no hacer",
+      "prioridad": "alta",
+      "responsable": "Sebastian"
+    },
+    {
+      "id": "2026-04-14-m734020",
+      "tarea": "Clientes actuales para Odoo",
+      "prioridad": "alta",
+      "responsable": "Sebastian"
     }
   ],
   "vence_pronto": [
     {
-      "id": "2026-05-04-c003",
-      "tarea": "Tomar tiempo para reunión importante con equipo sobre patrones de comunicación que se están enraizan",
+      "id": "2026-05-06-c003",
+      "tarea": "Validar con Cami escenarios operativos viables: con plata, sin plata, con Rio Negro, sin Rio Negro; ",
       "dias": 0,
-      "fecha_limite": "2026-05-07"
+      "fecha_limite": "2026-05-08"
     }
   ]
 }
