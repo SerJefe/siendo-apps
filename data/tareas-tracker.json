@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-08T11:32:44",
+  "ultima_actualizacion": "2026-05-09T00:00:02",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -5053,7 +5053,8 @@
         "Vinila",
         "Andrea"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-04-c002",
@@ -5076,7 +5077,8 @@
         "abogados",
         "Andrea"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-04-c003",
@@ -5098,7 +5100,8 @@
         "Juan",
         "Carlos"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-04-c004",
@@ -5120,7 +5123,8 @@
         "TGM",
         "Unerney"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-04-c005",
@@ -5143,7 +5147,8 @@
         "Camilo",
         "Mía"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-04-c006",
@@ -5162,7 +5167,8 @@
       "categoria": "condugas",
       "monto_cop": 250000000,
       "personas": [],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-04-c007",
@@ -5183,7 +5189,8 @@
       "personas": [
         "TGM"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-04-c008",
@@ -5236,7 +5243,8 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-04-r1-001",
@@ -5251,7 +5259,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-04-r2-003",
@@ -5266,7 +5275,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-04-r3-005",
@@ -5281,7 +5291,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-04-r6-006",
@@ -5296,7 +5307,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-04-r8-008",
@@ -5311,7 +5323,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-04-r9-009",
@@ -5326,7 +5339,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-04-r34-013",
@@ -5356,7 +5370,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-c001",
@@ -5413,7 +5428,7 @@
       "origen": "limitless_auto",
       "contexto": "Negocion EPM",
       "tipo": "pendiente",
-      "vencida": false,
+      "vencida": true,
       "evaluada": false,
       "categoria": "condugas",
       "monto_cop": null,

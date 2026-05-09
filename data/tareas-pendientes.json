@@ -6194,7 +6194,98 @@
         "estudiantes"
       ],
       "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-08-r3-001",
+      "tarea": "Hablar a primera hora con Camilo Marín sobre reactivación de personal de normalización y estructura de pago desde Condugas",
+      "responsable": "Sebastian",
+      "prioridad": "alta",
+      "contexto": "Propuesta subcontratación normalización / estrategia flujo caja",
+      "tipo": "compromiso",
+      "estado": "pendiente",
+      "fecha": "2026-05-08",
+      "fecha_limite": "2026-05-09",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Camilo Marín",
+        "Cami"
+      ],
+      "segmento_idx": 3,
+      "segmento_titulo": "Interacciones y Exclamaciones Diversas",
+      "segmento_inicio": "2026-05-08T00:34:07Z",
+      "segmento_fin": "2026-05-08T00:51:07Z",
+      "segmento_personas": [
+        "Cami",
+        "Álex",
+        "Diego",
+        "Raúl",
+        "Camilo Marín",
+        "conductores"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-08-r3-002",
+      "tarea": "Validar viabilidad legal y fiscal de pasar empleados a nómina Condugas como aporte en especie a contrato EPM",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Propuesta estructura pago normalización",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-08",
+      "fecha_limite": "2026-05-09",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Camilo Marín"
+      ],
+      "segmento_idx": 3,
+      "segmento_titulo": "Interacciones y Exclamaciones Diversas",
+      "segmento_inicio": "2026-05-08T00:34:07Z",
+      "segmento_fin": "2026-05-08T00:51:07Z",
+      "segmento_personas": [
+        "Cami",
+        "Álex",
+        "Diego",
+        "Raúl",
+        "Camilo Marín",
+        "conductores"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-08-r3-003",
+      "tarea": "Diseñar flujo de ConduCash para pago de conductores/personal en obra de normalización cobrada al consorcio",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Mecanismo financiero propuesta normalización",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-08",
+      "fecha_limite": "2026-05-10",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "conductores"
+      ],
+      "segmento_idx": 3,
+      "segmento_titulo": "Interacciones y Exclamaciones Diversas",
+      "segmento_inicio": "2026-05-08T00:34:07Z",
+      "segmento_fin": "2026-05-08T00:51:07Z",
+      "segmento_personas": [
+        "Cami",
+        "Álex",
+        "Diego",
+        "Raúl",
+        "Camilo Marín",
+        "conductores"
+      ],
+      "segmento_impacto": "alto"
     }
   ],
-  "ultima_actualizacion": "2026-05-08T11:32:44.926251"
+  "ultima_actualizacion": "2026-05-09T11:30:25.694272"
 }

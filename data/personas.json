@@ -38,8 +38,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "ma",
-          "last_seen": "2026-05-04",
-          "mentions_total": 17,
+          "last_seen": "2026-05-07",
+          "mentions_total": 18,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -64,15 +64,15 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "sebastian",
-          "last_seen": "2026-05-06",
+          "last_seen": "2026-05-07",
           "mentions_total": 125,
           "mentions_7d": 0
         },
         "tareas_count": {
-          "abiertas": 125,
-          "criticas": 41,
+          "abiertas": 126,
+          "criticas": 42,
           "vencidas": 76,
-          "cerradas_30d": 72
+          "cerradas_30d": 67
         },
         "tareas_abiertas": [
           {
@@ -138,7 +138,7 @@
         "tareas_count": {
           "abiertas": 8,
           "criticas": 5,
-          "vencidas": 5,
+          "vencidas": 6,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -167,20 +167,20 @@
             "fecha_creacion": "2026-04-23"
           },
           {
+            "id": "2026-05-06-c003",
+            "tarea": "Validar con Cami escenarios operativos viables: con plata, sin plata, con Rio Negro, sin Rio Negro; rendimiento actual y",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-05-08",
+            "fecha_creacion": "2026-05-06"
+          },
+          {
             "id": "2026-04-08-001",
             "tarea": "Compartir informes diarios, actas de obra o correos de febrero a abril que mencionen lluvias, paradas o bajo rendimiento",
             "prioridad": "alta",
             "vencida": true,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-08"
-          },
-          {
-            "id": "2026-04-17-r82-011",
-            "tarea": "Redactar y enviar carta estratégica (presentarse frágiles, defensiva)",
-            "prioridad": "alta",
-            "vencida": true,
-            "fecha_limite": null,
-            "fecha_creacion": "2026-04-17"
           }
         ]
       }
@@ -198,8 +198,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "juang",
-          "last_seen": "2026-05-06",
-          "mentions_total": 28,
+          "last_seen": "2026-05-07",
+          "mentions_total": 29,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -241,7 +241,7 @@
           "abiertas": 2,
           "criticas": 0,
           "vencidas": 0,
-          "cerradas_30d": 1
+          "cerradas_30d": 0
         },
         "tareas_abiertas": [
           {
@@ -276,8 +276,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "andre",
-          "last_seen": "2026-05-04",
-          "mentions_total": 22,
+          "last_seen": "2026-05-07",
+          "mentions_total": 23,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -327,8 +327,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "willi",
-          "last_seen": "2026-05-04",
-          "mentions_total": 11,
+          "last_seen": "2026-05-07",
+          "mentions_total": 12,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -558,8 +558,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "nelson",
-          "last_seen": "2026-05-06",
-          "mentions_total": 16,
+          "last_seen": "2026-05-07",
+          "mentions_total": 17,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -584,8 +584,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "naty",
-          "last_seen": null,
-          "mentions_total": 0,
+          "last_seen": "2026-05-07",
+          "mentions_total": 1,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -785,8 +785,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "lina",
-          "last_seen": "2026-05-06",
-          "mentions_total": 25,
+          "last_seen": "2026-05-07",
+          "mentions_total": 26,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -836,8 +836,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "ema",
-          "last_seen": "2026-05-06",
-          "mentions_total": 31,
+          "last_seen": "2026-05-07",
+          "mentions_total": 32,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -892,8 +892,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "mona",
-          "last_seen": "2026-05-04",
-          "mentions_total": 2,
+          "last_seen": "2026-05-07",
+          "mentions_total": 3,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1196,8 +1196,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "vanti",
-          "last_seen": "2026-04-17",
-          "mentions_total": 1,
+          "last_seen": "2026-05-07",
+          "mentions_total": 2,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1281,8 +1281,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "nelson",
-          "last_seen": "2026-05-06",
-          "mentions_total": 16,
+          "last_seen": "2026-05-07",
+          "mentions_total": 17,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1398,10 +1398,18 @@
         "tareas_count": {
           "abiertas": 2,
           "criticas": 1,
-          "vencidas": 1,
+          "vencidas": 2,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
+          {
+            "id": "2026-05-06-c003",
+            "tarea": "Validar con Cami escenarios operativos viables: con plata, sin plata, con Rio Negro, sin Rio Negro; rendimiento actual y",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-05-08",
+            "fecha_creacion": "2026-05-06"
+          },
           {
             "id": "2026-04-17-r82-011",
             "tarea": "Redactar y enviar carta estratégica (presentarse frágiles, defensiva)",
@@ -1409,14 +1417,6 @@
             "vencida": true,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-17"
-          },
-          {
-            "id": "2026-05-06-c003",
-            "tarea": "Validar con Cami escenarios operativos viables: con plata, sin plata, con Rio Negro, sin Rio Negro; rendimiento actual y",
-            "prioridad": "critica",
-            "vencida": false,
-            "fecha_limite": "2026-05-08",
-            "fecha_creacion": "2026-05-06"
           }
         ]
       }
@@ -1453,8 +1453,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "nelson",
-          "last_seen": "2026-05-06",
-          "mentions_total": 16,
+          "last_seen": "2026-05-07",
+          "mentions_total": 17,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1467,10 +1467,10 @@
       }
     }
   ],
-  "_enriched_at": "2026-05-08T11:30:01+00:00",
+  "_enriched_at": "2026-05-09T11:30:01+00:00",
   "_enrichment_stats": {
     "personas_con_actividad_neural": 20,
     "personas_total": 50,
-    "tareas_abiertas_distribuidas": 162
+    "tareas_abiertas_distribuidas": 163
   }
 }

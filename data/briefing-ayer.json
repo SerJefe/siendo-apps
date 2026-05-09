@@ -1,155 +1,150 @@
 {
-  "fecha": "2026-05-06",
+  "fecha": "2026-05-07",
   "tareas_extraidas": [
     {
-      "tarea": "Conectar con Juanes para ver meta de tarea y plan de trabajo en comunidad",
+      "tarea": "Preparar respuestas sobre posicionamiento de precio para junta de las 14:00",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Documentar diagnóstico de cliente ANTES de iniciar intervención (protocolo que ya se discutió con Nelson y Manuel pero no está socializado)",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Establecer manual de procedimientos para reducir actuaciones desde intención sin método",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Completar y estructurar redacción de mail que ya está en borrador",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Diseñar flujo en Odu: perfiles de director → solicitud de recursos → validación nuevos negocios → financiero → aprobación",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Definir criterio: cuándo una solicitud de recurso requiere revisión/aprobación estratégica vs solo administrativa",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Reportar el procedimiento de incapacidad a recursos humanos (5 días desde hoy hasta el lunes)",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Asignar persona o equipo responsable de estrategia de integración: cuáles APIs en Odoo, cuáles en otros sistemas, para EPM y Vanti",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Unificar reportes de nómina por contrato (no por área/ciudad/proyecto), consolidar datos de dos contratos en archivo único",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Buscar y ejecutar opción de filtrado de informe de nómina mensual con funcionalidad de búsqueda",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Comunicar al equipo: razón del crédito (solventar tensión de caja), protocolo requerido por acreedor, contexto de decisión",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Definir con claridad si la participación de Sebastian en cliente es consultoría, procedimiento o implementación",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Evaluar si es más económico que Sebastian vaya a obra/logística o que cliente viaje para consultoría remota",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Clarificar ante el cliente (empresa) cuál es la necesidad real: consultoría de procedimiento o algo más",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Revisar antes de presentar (si es necesario) el formato de solicitud de permiso PMT que Juan llenó",
+      "responsable": "Juan",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Implementar sistema de transcripción + extracción de decisiones en red neuronal de reuniones Condugas",
+      "responsable": "empleado de proyectos",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Desarrollar dashboard de nómina que muestre en tiempo real: periodo, número de empleados, ICA, impuestos, declaración renta, facturación, costos",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Completar análisis de reajustes en los 3 escenarios UVM/Catalina León",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Evaluar impacto financiero de cada escenario (especialmente variabilidad 650-700M + reajustes)",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Terminar de preparar ejercicio de bombitas/nodos/hilos para entregar a estudiantes (completar con papeles de roles/decisiones)",
       "responsable": "Sebastian",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Implementar reportes semanales de equipo: sintesis de aprendizajes, errores cometidos, potenciacion al otro, razon del aprendizaje",
-      "responsable": null,
       "prioridad": "alta"
     },
     {
-      "tarea": "Presentar sintesis de reportes semanales a Jorge y Juan Esteban viernes o miercoles",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Diseñar intervencion (renuncias, esquemas, actividades, frecuencia reunion) basada en divergencia/convergencia observada",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Establecer indicadores ANTES de piloto para medir efectividad de intervenciones",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Diseñar e implementar dashboard en Condugas que extraiga nodos/conexiones del sistema en tiempo real para inteligencia comercial",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Revisar parametrizacion de herramientas en sistema: definir umbral de relevancia (ej: <5000 COP = costo, >=200000 COP = activo/inventario) y reglas de depreciacion por tipo",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Diseñar protocolos de implementacion SAP/ERP que funcionen independientemente de claridad de cliente (cliente bueno/malo, orientado/desorientado)",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Estructurar demanda formal contra EPM y funcionarios específicos por negligencias en comunicación y datos de pagos ambientales",
-      "responsable": "Abogada",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Establecer reuniones fijas lunes y jueves con Sebastian para seguimiento de gestión EPM",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Verificar estado de compra de tubería 160 solicitada a Jorge Jiménez (JYS) y confirmar si se cerró o no",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Diseñar arquitectura de centralización de datos similar a modelo DIAN: un repositorio seguro con acceso controlado por usuario/rol",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Auditar sistemas activos en EPM (máximo, hidro, Microsoft, RP y aplicaciones freelance) e identificar riesgos de seguridad",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Diseñar reingeniería operativa de Condugas para modelo de asignación variable (talent/proyectos mixto) vs modelo fijo anterior",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Confirmar almuerzo lunes al mediodía con Nicolás",
-      "responsable": null,
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Recoger objeto en Sótano 3, da 37",
-      "responsable": null,
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Cuantificar precisamente la brecha de reajuste (13%) en transportes y mano de obra para sustentacion de demanda contra responsables",
-      "responsable": null,
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Iniciar proceso legal contra responsables individuales por daños y perjuicios (exclusion de licitaciones, deterioro financiero)",
-      "responsable": null,
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Validar con Cami escenarios operativos viables: con plata, sin plata, con Rio Negro, sin Rio Negro; rendimiento actual y tiempo para estabilizacion",
-      "responsable": "Cami",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Preparar escenario de conversacion con EPM: variables operativas, reajustes, tiempos de estabilizacion para proxima reunion",
-      "responsable": "Sebastian",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Negociar con EPM asignación mínima de 1.500 de obra mensual para Condugas en contrato Occidental (crítica para viabilidad)",
-      "responsable": null,
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Definir claramente con EPM: ¿es Occidental un contrato de 'proyectos' o 'talent' y qué implica en asignación consistente?",
-      "responsable": null,
+      "tarea": "Comunicar recorte de presupuesto 50% a partir del próximo mes en contratos especificados, solicitar alternativas",
+      "responsable": "Sebastian Sanchez Acevedo",
       "prioridad": "critica"
     }
   ],
   "decisiones": [
-    "Cambio de estrategia legal: demandar a responsables individuales, no a EPM",
-    "Cuantificar perdida anual en licitaciones (~30,000M COP) con utilidad 4-5% = 1,200M anuales x 2.5 años excluidos",
-    "Eliminar Instagram de pantalla principal del celular",
-    "Priorizar monitoreo de sueno/recuperacion via Whoop",
-    "Mantener visitas al mediodia para estar con Benjamin",
-    "El desafio central es que equipos desarrollen competencias grupales, no solo individuales",
-    "Un holding con proposito superior requiere que lideres (como Sebastian) renuncien a control operativo para delegacion real",
-    "La microbiota del cuerpo influye en personalidad y comportamiento (no lineal)",
-    "El proposito debe ser el holding, no Vendemos individualmente",
-    "Es viable sostener con dos personas mientras se renueva planta desde cero (prueba de concepto)"
+    "Se requiere claridad sobre datos para negociar precios sin exponerse",
+    "Hay tension entre demostrar que son los más baratos vs. proteger reputación con funcionarios públicos",
+    "Los problemas operativos son más de procesos/métodos que de personas",
+    "La falta de manual de procedimientos genera que la gente actúe con buena intención pero sin estructura",
+    "El empleado debe ser responsable de la herramienta que tiene (no devolver como chatarra sin intentar arreglarla)",
+    "Se debe diagnosticar al cliente ANTES de hacer cualquier intervención, no después",
+    "La comunicación debe ser clara cuando la misma tarea se explica a varias personas de formas diferentes",
+    "Toda requisición de recurso nuevo debe pasar primero por nuevos negocios (verificar si está en pliego), luego por financiero",
+    "Solicitudes de roles NUEVOS (creaciones) requieren aprobación estratégica adicional, no solo presupuestaria",
+    "Un analista nuevo debe tener justificación clara: costo vs inversión vs evitar riesgo"
   ],
   "ideas": [
-    "La brecha no esta en mano de obra solamente sino en estructura de costos de transporte (gasolina, vehiculo, conductor peso)",
-    "Usar iPad como hub centralizado de procesos visuales (muestras de color, templates)",
-    "Dashboard personal con prioridades: inversiones (Whoop data), metricas salud, tareas criticas",
-    "Felicidad no depende de tener/no tener sino de brechas de comparacion con otros",
-    "Exposicion directa al mercado genera mayor desarrollo de competencias que instrucciones de terceros",
-    "Las fortalezas individuales requieren menos energia que corregir debilidades; la educacion tradicional gasta energia en lo equivocado",
-    "Autonomia no es libertinaje sino propiciar que el otro sea, con responsabilidad parental en formacion temprana",
-    "Cuerpo se estabiliza desde relaciones (ej: problemas con esposa afecta desayuno que afecta metabolismo), no linealidad",
-    "La dinamica padre-proveedor vs padre que propicia autonomia define formacion de conciencia del hijo",
-    "Libertinaje (ejemplo: drogas) genera consecuencia extrema; autonomia requiere limites claros"
+    "La negociación funciona cuando hay datos públicos que lo respaldan",
+    "Hay riesgo de perder línea de mando completa si se cuestiona integridad de funcionarios",
+    "Si una herramienta falla, el flujo debe ser: empleado documenta/foto → envía al responsable de mantenimiento, no descartar de entrada",
+    "El control de costos de herramientas debe ir al individuo que las tiene, no disperso en el equipo",
+    "Hay conocimiento tácito (conversación Sebas-Nelson-Manuel) que no está documentado ni disponible para otros (Andrea, Diana)",
+    "Hay dificultad en parametrizar tareas cuando requieren explicación variable según interlocutor",
+    "La edición y revisión de tareas es parte importante para que queden bien estructuradas",
+    "Sebas reconoce que tiene química (síntomas químicos) que no puede pensar/racionalizar, solo sentir y luego procesar",
+    "Hay tres niveles distintos: lo que siente, lo que piensa, y qué conciencia tiene del proceso",
+    "La nostalgia es característica personal (muchas existencias, está en la última fase)"
   ],
   "frases": [
-    "30,000 millones de pesos anuales en licitaciones, 1,200M utilidades al año, estamos hablando de 5,000-6,000 millones de pesos",
-    "Los que se han equivocado son ustedes tres. Vamos a ir por ustedes, como personas, porque EPM no se ha equivocado",
-    "La gente no es feliz si tiene o no tiene. Es feliz solamente si no tiene tanta brecha con el otro",
-    "Cuando el niño esta en proceso de entrenamiento de dormir, le toca al papa ocuparse",
-    "Ustedes están buscando que desarrollen competencias individuales, no grupales, que son las que usted sí desarrolla"
+    "si no nos sacan los datos para negociar de que somos los más baratos, no somos los más baratos, es porque somos los más baratos",
+    "una cosa es que yo vaya a poner eso contra una prueba, pero otra cosa es que yo ponga eso contra la reputación de los funcionarios",
+    "no hay manual de procedimientos, entonces la gente no tiene método, entonces la gente no hace los requerimientos",
+    "yo soy responsable de esta herramienta, yo decido, lo llevo o no lo llevo",
+    "Tan consciente que yo sé que los síntomas son químicos, o sea, yo no puedo pensar sobre ellos, yo los siento y ya después pienso"
   ],
   "alertas_supervivencia": [
-    "CRÍTICA: Negociación fallida con EPM sobre ambientales + error de comunicación de Catalina podría escalar a demanda; requiere acción legal clara esta semana",
-    "CRÍTICA: Contrato EPM Occidental genera pérdidas del 11% mensual sin claridad sobre responsabilidad; riesgo de hemorragia financiera si no se resuelve",
-    "ALTA: Fragmentación extrema de sistemas tecnológicos (máximo, hidro, Microsoft, RP, apps freelance) sin gobernanza es riesgo de supervivencia operativa",
-    "MEDIA: Capacidad operativa comprometida si equipo sigue reducido; decisión sobre renovación de planta es urgente",
-    "MEDIA: Patrón de errores de comunicación (Catalina, EPM reconoce pero no negocia genuinamente) sugiere debilidad en cadena de información crítica"
+    "Sobrecarga cognitiva: 24 reuniones en un día con temas dispersos (salud personal, relaciones, reflexión introspectiva mezclada con decisiones de 650M+). Riesgo de fatiga decisoria.",
+    "Dependencia de Sebastian en múltiples dominios: procesos, familia, negocios nuevos, liderazgo. Falta de delegación clara podría colapsar si ausencia.",
+    "Modelos de negocio complejos sin documentación clara: 'cambalache' de Condugas, participaciones en Being CoRe, Sunboard. Riesgo legal/tributario si no está formalizado.",
+    "Comunicación fragmentada interno: múltiples conversaciones sobre cambios (crédito, roles, nuevos negocios) sin canal unificado. Posible desinformación en equipo.",
+    "Decisiones bajo presión emocional: reflexiones sobre miedo, relaciones, adaptación personal entremezcla con decisiones estratégicas de alto impacto financiero."
   ],
-  "total_lifelogs": 17,
+  "total_lifelogs": 24,
   "procesado_con": "haiku_v3_structured"
 }

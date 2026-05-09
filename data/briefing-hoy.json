@@ -1,61 +1,61 @@
 {
-  "saludo": "Buenos días Sebastián — viernes 08 May",
+  "saludo": "Buenos días Sebastián — sábado 09 May",
   "supervivencia": [
-    "Caja a 10 días: necesitas flujo urgente de EPM (~180M reajustes pendientes)",
-    "EBITDA negativo (-800): hemorragia en Río Negro + no conformidad contrato 24",
-    "Sueño 27% + recovery 14%: rendimiento cognitivo comprometido para decisiones críticas"
+    "Caja a 10 días: revisar movimiento e inversiones HOY",
+    "EPM Río Negro: ~180M en reajustes sin cobrar — enviar comunicado lunes",
+    "No conformidad contrato 24: respuesta formal pendiente (P1)"
   ],
   "top_3": [
     {
-      "tarea": "Llamar a Andrea HOY: deudas Condugas + plan de pago (es bloqueo sistémico)",
+      "tarea": "Revisar caja a hoy + estado inversiones + carros/créditos",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Sin claridad no hay caja ni negociación con EPM",
-      "tarea_id": "alta-resolver-deudas"
+      "porque": "10 días de runway, EBITDA -800K, necesitas foto real antes de lunes",
+      "tarea_id": "situacion_caja"
     },
     {
-      "tarea": "Enviar comunicado a EPM: cobro directo reajustes Río Negro + fecha límite (72h respuesta)",
+      "tarea": "Comunicado + plan de cobro EPM Río Negro (180M reajustes)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "180M COP es diferencia entre operación normal y crisis",
-      "tarea_id": "critica-reajustes-epm"
+      "porque": "Vencida, crítica, impacta caja directamente",
+      "tarea_id": "epm_rio_negro"
     },
     {
-      "tarea": "Reunión Ema + Lina (30min): definir ESTRUCTURA Siendo (roles, plata, qué hacer) — luego prospección",
-      "categoria": "ESTRATEGIA",
-      "porque": "Sin estructura clara el equipo no ejecuta, base de clientes sigue huérfana",
-      "tarea_id": "alta-estructura-siendo"
+      "tarea": "Reunión 30min con Andrea: deudas Condugas + ICA pendiente (55M Medellín)",
+      "categoria": "SUPERVIVENCIA",
+      "porque": "Dos flujos de caja bloqueados, ella lidera ambos",
+      "tarea_id": "reunion_andrea"
     }
   ],
-  "mega_dia": "Deudas Condugas resueltas + comunicado EPM enviado = caja respirable",
+  "mega_dia": "Sacar foto clara de caja + inversiones. Sin ella, todo lo demás es adivinanza.",
   "contactar_hoy": [
     {
       "persona": "Andrea Bernal",
-      "motivo": "Cuadrar deuda empresa exacta + calendario pagos (es bloqueador)"
+      "motivo": "Estado real deudas Condugas + plan cobro ICA 55M"
     },
     {
       "persona": "Emanuel",
-      "motivo": "30min: definir roles/presupuesto Siendo Consulting antes de vender"
+      "motivo": "Agendar 1h esta semana: ERP visual + automatizaciones app"
     }
   ],
   "ojo_con": [
     "110 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "Tareas críticas: 74 (vencidas 106) — fragmentación es riesgo de no-delivery",
-    "Whoop data: recovery comprometida, decisiones hoy estarán sesgadas",
-    "No conformidad contrato 24: plazo legal para respuesta formal desconocido"
+    "Sleep 27%, recovery 14 = fatiga decisoria alta. No tomar decisiones grandes hoy.",
+    "107 tareas vencidas + 63 críticas = deuda cognitiva. Prioriza cobros/caja.",
+    "Dependencia Sebastian en 15+ dominios sin delegación clara = riesgo colapso."
   ],
   "vencidas": [
-    "Conversar con Pilar/Basa sobre POT Aguactala (vencía 05-May)",
-    "Revisar rendimiento contratos críticos (vencía 20-Abr)",
-    "Evaluación viabilidad contractual EPM (vencía 20-Abr)"
+    "Reunión Pilar POT Aguactala (vencida 05-May)",
+    "No conformidad contrato 24 (crítica, sin fecha cierre)",
+    "Reajuste EPM propuesta contundente (crítica, sin fecha)"
   ],
-  "frase_dia": "La caja respira con acciones, no con análisis. Hoy: 2 llamadas = respirador del negocio.",
-  "generado_at": "2026-05-08T11:00:10",
-  "fecha": "2026-05-08",
+  "frase_dia": "Hoy: caja + cobros. El lunes tienes un panorama real para negociar.",
+  "generado_at": "2026-05-09T11:00:08",
+  "fecha": "2026-05-09",
   "stats": {
-    "abiertas": 208,
-    "criticas": 62,
-    "vencidas": 106,
-    "estancadas": 155,
-    "sin_evaluar": 183
+    "abiertas": 209,
+    "criticas": 63,
+    "vencidas": 107,
+    "estancadas": 170,
+    "sin_evaluar": 184
   },
   "criticas_sin_fecha": [
     {
@@ -149,12 +149,5 @@
       "responsable": "Sebastian"
     }
   ],
-  "vence_pronto": [
-    {
-      "id": "2026-05-06-c003",
-      "tarea": "Validar con Cami escenarios operativos viables: con plata, sin plata, con Rio Negro, sin Rio Negro; ",
-      "dias": 0,
-      "fecha_limite": "2026-05-08"
-    }
-  ]
+  "vence_pronto": []
 }
