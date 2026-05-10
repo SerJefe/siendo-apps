@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-05-09",
-  "generated_at": "2026-05-09T10:30:04.264158Z",
+  "fecha": "2026-05-10",
+  "generated_at": "2026-05-10T10:30:02.382350Z",
   "version": "v2-3decisiones",
   "facturacion_30d": {
-    "total": 4903940738.64,
-    "count": 56,
+    "total": 4899643505.09,
+    "count": 54,
     "moneda": "COP"
   },
   "cartera_pendiente": {
     "total": 7603136667.19,
     "count": 92,
-    "vencidas": 45,
+    "vencidas": 46,
     "moneda": "COP"
   },
   "top_cartera": [
@@ -414,79 +414,79 @@
           "total": 1622702812.56,
           "facturas_vencidas": 7,
           "mas_vieja": "2026-04-15",
-          "dias_vencida": 24
+          "dias_vencida": 25
         },
         {
           "partner": "GAS NATURAL CUNDIBOYACENSE S.A. E.S.P.",
           "total": 701370508.88,
           "facturas_vencidas": 11,
           "mas_vieja": "2026-04-19",
-          "dias_vencida": 20
+          "dias_vencida": 21
         },
         {
           "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
           "total": 159188822.0,
           "facturas_vencidas": 4,
           "mas_vieja": "2026-02-23",
-          "dias_vencida": 75
+          "dias_vencida": 76
         },
         {
           "partner": "METROGAS DE COLOMBIA S.A E.S.P",
-          "total": 93251269.39,
-          "facturas_vencidas": 10,
+          "total": 97548501.94,
+          "facturas_vencidas": 11,
           "mas_vieja": "2026-04-11",
-          "dias_vencida": 28
+          "dias_vencida": 29
         },
         {
           "partner": "CONSORCIO SILAR CONDUGAS",
           "total": 86588132.44,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-30",
-          "dias_vencida": 9
+          "dias_vencida": 10
         },
         {
           "partner": "Jhon Christopher Angulo",
           "total": 59368482.98,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-03-24",
-          "dias_vencida": 46
+          "dias_vencida": 47
         },
         {
           "partner": "GASES DE OCCIDENTE SA ESP",
           "total": 55554076.62,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-05-01",
-          "dias_vencida": 8
+          "dias_vencida": 9
         },
         {
           "partner": "UNION TEMPORAL HABILITACION INFRAESTRUCTURA HOSPITALARIA",
           "total": 24521525.67,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 25
+          "dias_vencida": 26
         },
         {
           "partner": "CONINSA  S.A.S",
           "total": 18868581.69,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-20",
-          "dias_vencida": 19
+          "dias_vencida": 20
         },
         {
           "partner": "CONSTRUTEM S A S",
           "total": 15598151.76,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 25
+          "dias_vencida": 26
         }
       ],
-      "total": 2857019989.11,
-      "facturas_count": 45
+      "total": 2861317221.66,
+      "facturas_count": 46
     },
     "deuda_proveedores": {
-      "total": 3725387010.55,
+      "total": 3725553051.25,
       "count": 1000,
-      "vencidas": 856,
+      "vencidas": 862,
       "top": [
         {
           "proveedor": "GASES DE OCCIDENTE SA ESP",
@@ -514,6 +514,14 @@
   },
   "recuperar": {
     "facturas_recientes": [
+      {
+        "name": "BILL/2026/05/0089",
+        "tipo": "compra",
+        "partner": "ALBERTO CADAVID R. & CIA. S.A",
+        "monto": 333200.0,
+        "fecha": "2026-05-04",
+        "registrada": "2026-05-09 14:28:37"
+      },
       {
         "name": "BILL/2026/05/0088",
         "tipo": "compra",
@@ -625,25 +633,17 @@
         "monto": 20000.0,
         "fecha": "2026-05-07",
         "registrada": "2026-05-08 22:27:43"
-      },
-      {
-        "name": "BILL/2026/05/0084",
-        "tipo": "compra",
-        "partner": "D1  S A S",
-        "monto": 16230.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:27:38"
       }
     ],
     "compras_mes": {
-      "total": 147290504.37,
-      "count": 152,
+      "total": 147623704.37,
+      "count": 153,
       "desde": "2026-05-01",
       "moneda": "COP"
     },
     "compras_acumulado_ano": {
-      "total": 5768946750.18,
-      "count": 2527,
+      "total": 5769279950.18,
+      "count": 2528,
       "por_mes": [
         {
           "mes": "2026-01",
@@ -663,7 +663,7 @@
         },
         {
           "mes": "2026-05",
-          "total": 147290504.37
+          "total": 147623704.37
         }
       ],
       "desde": "2026-01-01",
@@ -697,7 +697,7 @@
         },
         {
           "contrato": "PÉRDIDAS",
-          "gasto_acumulado": 296073447.06,
+          "gasto_acumulado": 295793447.06,
           "presupuesto": null,
           "cumplimiento_pct": null
         },

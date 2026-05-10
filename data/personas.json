@@ -64,7 +64,7 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "sebastian",
-          "last_seen": "2026-05-07",
+          "last_seen": "2026-05-08",
           "mentions_total": 125,
           "mentions_7d": 0
         },
@@ -131,8 +131,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "cami",
-          "last_seen": "2026-05-06",
-          "mentions_total": 26,
+          "last_seen": "2026-05-08",
+          "mentions_total": 27,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -198,8 +198,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "juang",
-          "last_seen": "2026-05-07",
-          "mentions_total": 29,
+          "last_seen": "2026-05-08",
+          "mentions_total": 30,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -478,8 +478,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "doctor",
-          "last_seen": "2026-05-04",
-          "mentions_total": 11,
+          "last_seen": "2026-05-08",
+          "mentions_total": 12,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -836,8 +836,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "ema",
-          "last_seen": "2026-05-07",
-          "mentions_total": 32,
+          "last_seen": "2026-05-08",
+          "mentions_total": 33,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1391,8 +1391,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "cami",
-          "last_seen": "2026-05-06",
-          "mentions_total": 26,
+          "last_seen": "2026-05-08",
+          "mentions_total": 27,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1467,7 +1467,7 @@
       }
     }
   ],
-  "_enriched_at": "2026-05-09T11:30:01+00:00",
+  "_enriched_at": "2026-05-10T12:30:02+00:00",
   "_enrichment_stats": {
     "personas_con_actividad_neural": 20,
     "personas_total": 50,
