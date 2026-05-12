@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin combustible · Condugas</title>
+<style>
+:root{
+  --bg:#faf7ee; --bg2:#f5eed5; --bg3:#091f2e;
+  --gold:#b89949; --orange:#c9a84a; --red:#a62e2e; --green:#5a7a4a;
+  --text:#091f2e; --muted:#6b7580; --border:#d8c98a;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:15px}
+header{position:sticky;top:0;z-index:10;background:var(--bg3);color:#faf7ee;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+header h1{margin:0;font-size:18px}
+nav.tabs{display:flex;gap:6px;background:var(--bg);border-bottom:1px solid var(--border);padding:8px 14px;overflow-x:auto;position:sticky;top:54px;z-index:9}
+nav.tabs button{background:transparent;border:1px solid var(--border);color:var(--muted);padding:8px 14px;border-radius:6px;font-size:13px;cursor:pointer;white-space:nowrap;font-family:inherit}
+nav.tabs button.on{border-color:var(--gold);color:var(--gold);background:rgba(184,153,73,.08)}
+main{padding:14px;max-width:960px;margin:0 auto;padding-bottom:60px}
+section{display:none}
+section.on{display:block}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:14px}
+.card h2{margin:0 0 12px;font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;font-weight:500}
+input,select,textarea{width:100%;padding:10px;font-size:14px;border:1px solid var(--border);border-radius:8px;background:#fff;font-family:inherit;color:var(--text)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:8px;border:1px solid var(--border);background:#fff;color:var(--text);font-size:14px;cursor:pointer;font-family:inherit;font-weight:500}
+.btn.primary{background:var(--gold);color:#fff;border-color:var(--gold)}
+.btn.danger{border-color:var(--red);color:var(--red)}
+.btn.small{padding:6px 10px;font-size:12px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--border)}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #eee2bb;font-size:13px}
+th{background:var(--bg);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;background:rgba(184,153,73,.15);color:var(--gold)}
+.tag.acpm{background:rgba(90,122,74,.18);color:var(--green)}
+.tag.gas{background:rgba(166,46,46,.15);color:var(--red)}
+.tag.off{background:#eee;color:var(--muted)}
+.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:var(--bg3);color:#faf7ee;padding:12px 18px;border-radius:10px;font-size:13px;z-index:100;display:none}
+.toast.show{display:block}
+.toast.err{border:2px solid var(--red)}
+.row-flex{display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap}
+.row-flex > *{flex:1;min-width:140px}
+.muted{color:var(--muted);font-size:13px}
+.bar-mini{height:6px;background:#eee2bb;border-radius:3px;overflow:hidden;margin-top:4px}
+.bar-mini > span{display:block;height:100%;background:var(--gold)}
+.bar-mini.low > span{background:var(--red)}
+.bar-mini.med > span{background:var(--orange)}
+</style>
+</head>
+<body>
+<header>
+  <h1>⚙ Admin combustible</h1>
+  <a href="fuel-despacho.html" style="color:var(--gold);text-decoration:none;font-size:14px">← Volver al despacho</a>
+</header>
+<nav class="tabs">
+  <button data-tab="equipos" class="on">Equipos</button>
+  <button data-tab="personas">Personas</button>
+  <button data-tab="tanques">Canecas</button>
+</nav>
+
+<main>
+  <!-- EQUIPOS -->
+  <section id="tab-equipos" class="on">
+    <div class="card">
+      <h2>Nuevo equipo</h2>
+      <div class="grid">
+        <div><label>Código/referencia</label><input id="eq-codigo" placeholder="ej. COMP-001"></div>
+        <div><label>Nombre</label><input id="eq-nombre" placeholder="ej. Compresor Sullair 185"></div>
+        <div><label>Tipo</label>
+          <select id="eq-tipo">
+            <option value="compresor">Compresor</option>
+            <option value="vehiculo">Vehículo</option>
+            <option value="planta">Planta eléctrica</option>
+            <option value="motobomba">Motobomba</option>
+            <option value="otro">Otro</option>
+          </select></div>
+        <div><label>Combustible</label>
+          <select id="eq-comb">
+            <option value="acpm">ACPM</option>
+            <option value="gasolina">Gasolina</option>
+          </select></div>
+        <div><label>Medición</label>
+          <select id="eq-medicion">
+            <option value="horas">Horas (horómetro)</option>
+            <option value="odometro">Kilometraje (odómetro)</option>
+            <option value="dia">Día (sin medición)</option>
+          </select></div>
+        <div><label>Rendimiento esperado <span id="eq-rend-unidad" class="muted"></span></label>
+          <input id="eq-rend" type="number" step="0.01" placeholder="ej. 1.2"></div>
+        <div><label>Umbral alerta (%)</label>
+          <input id="eq-umbral" type="number" step="1" value="20"></div>
+      </div>
+      <div style="margin-top:12px"><button class="btn primary" id="btn-eq-add">+ Agregar equipo</button></div>
+    </div>
+
+    <div class="card">
+      <h2>Catálogo de equipos</h2>
+      <table>
+        <thead><tr><th>Código</th><th>Nombre</th><th>Tipo</th><th>Comb.</th><th>Medición</th><th>Esperado</th><th>Estado</th><th></th></tr></thead>
+        <tbody id="tbl-equipos"><tr><td colspan="8" class="muted">Cargando…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PERSONAS -->
+  <section id="tab-personas">
+    <div class="card">
+      <h2>Nueva persona</h2>
+      <div class="grid">
+        <div><label>Nombre</label><input id="pe-nombre" placeholder="Nombre completo"></div>
+        <div><label>Cédula</label><input id="pe-cedula"></div>
+        <div><label>Área</label><input id="pe-area" placeholder="ej. Operación"></div>
+        <div><label>Rol</label>
+          <select id="pe-rol">
+            <option value="operador">Operador (recibe combustible)</option>
+            <option value="despachador">Despachador (entrega)</option>
+            <option value="ambos">Ambos</option>
+          </select></div>
+      </div>
+      <div style="margin-top:12px"><button class="btn primary" id="btn-pe-add">+ Agregar persona</button></div>
+    </div>
+    <div class="card">
+      <h2>Personas registradas</h2>
+      <table>
+        <thead><tr><th>Nombre</th><th>Cédula</th><th>Área</th><th>Rol</th><th>Estado</th><th></th></tr></thead>
+        <tbody id="tbl-personas"><tr><td colspan="6" class="muted">Cargando…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TANQUES -->
+  <section id="tab-tanques">
+    <div class="card">
+      <h2>Abrir nueva caneca</h2>
+      <div class="grid">
+        <div><label>Código</label><input id="tq-codigo" placeholder="auto si vacío"></div>
+        <div><label>Combustible</label>
+          <select id="tq-comb">
+            <option value="acpm">ACPM</option>
+            <option value="gasolina">Gasolina</option>
+          </select></div>
+        <div><label>Galones iniciales</label><input id="tq-gal" type="number" step="0.1" value="55"></div>
+        <div style="grid-column:1/-1"><label>Notas</label><input id="tq-notas" placeholder="proveedor, factura, etc."></div>
+      </div>
+      <div style="margin-top:12px"><button class="btn primary" id="btn-tq-add">+ Abrir caneca</button></div>
+    </div>
+    <div class="card">
+      <h2>Canecas</h2>
+      <table>
+        <thead><tr><th>Código</th><th>Comb.</th><th>Inicial</th><th>Restante</th><th>Estado</th><th>Apertura</th><th></th></tr></thead>
+        <tbody id="tbl-tanques"><tr><td colspan="7" class="muted">Cargando…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API='/fuel';
+function $(id){return document.getElementById(id)}
+function toast(msg, kind='ok'){const t=$('toast'); t.className='toast show '+kind; t.textContent=msg; setTimeout(()=>t.classList.remove('show'),3500)}
+async function api(path, opts={}){
+  const r = await fetch(API+path, {credentials:'same-origin', headers:{'Content-Type':'application/json'}, ...opts});
+  if(!r.ok){ const t=await r.text(); throw new Error('HTTP '+r.status+' '+t.slice(0,200)) }
+  return r.json();
+}
+
+// Tabs
+document.querySelectorAll('nav.tabs button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('nav.tabs button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    document.querySelectorAll('main section').forEach(s=>s.classList.remove('on'));
+    $('tab-'+b.dataset.tab).classList.add('on');
+  });
+});
+
+// Rendimiento unidad dinámica
+const UNIDAD = {horas:'(hora/gal · más alto = mejor)', odometro:'(km/gal · más alto = mejor)', dia:'(gal/día · más bajo = mejor)'};
+function refreshUnidad(){ $('eq-rend-unidad').textContent = UNIDAD[$('eq-medicion').value] }
+$('eq-medicion').addEventListener('change', refreshUnidad);
+refreshUnidad();
+
+function fmtFecha(d){ if(!d) return '—'; return new Date(d).toLocaleString('es-CO',{day:'2-digit',month:'short',year:'2-digit',hour:'2-digit',minute:'2-digit'}) }
+function tagComb(c){ return c==='acpm'? '<span class="tag acpm">ACPM</span>' : '<span class="tag gas">Gas</span>' }
+
+async function loadEquipos(){
+  const eqs = await api('/equipos');
+  const tb = $('tbl-equipos');
+  if(!eqs.length){ tb.innerHTML='<tr><td colspan="8" class="muted">Sin equipos. Agrega el primero arriba.</td></tr>'; return }
+  tb.innerHTML = eqs.map(e=>`
+    <tr>
+      <td><b>${e.codigo||'—'}</b></td>
+      <td>${e.nombre}</td>
+      <td>${e.tipo}</td>
+      <td>${tagComb(e.combustible)}</td>
+      <td>${e.medicion}</td>
+      <td>${e.rendimiento_esperado} <span class="muted">${e.unidad_rendimiento||''}</span></td>
+      <td>${e.activo!==false?'<span class="tag">Activo</span>':'<span class="tag off">Baja</span>'}</td>
+      <td>${e.activo!==false?`<button class="btn small danger" data-del="${e.id}">Dar de baja</button>`:''}</td>
+    </tr>
+  `).join('');
+  tb.querySelectorAll('[data-del]').forEach(b=>b.addEventListener('click', async ()=>{
+    if(!confirm('¿Dar de baja este equipo?')) return;
+    try{ await api('/equipos/'+b.dataset.del,{method:'DELETE'}); toast('Equipo dado de baja'); loadEquipos(); }
+    catch(e){ toast(e.message,'err') }
+  }));
+}
+
+$('btn-eq-add').addEventListener('click', async ()=>{
+  const payload = {
+    codigo: $('eq-codigo').value.trim(),
+    nombre: $('eq-nombre').value.trim(),
+    tipo: $('eq-tipo').value,
+    combustible: $('eq-comb').value,
+    medicion: $('eq-medicion').value,
+    rendimiento_esperado: parseFloat($('eq-rend').value)||0,
+    alerta_umbral_pct: parseFloat($('eq-umbral').value)||20,
+  };
+  if(!payload.nombre){ toast('Nombre requerido','err'); return }
+  try{
+    await api('/equipos',{method:'POST',body:JSON.stringify(payload)});
+    toast('Equipo agregado');
+    ['eq-codigo','eq-nombre','eq-rend'].forEach(i=>$(i).value='');
+    loadEquipos();
+  }catch(e){ toast(e.message,'err') }
+});
+
+async function loadPersonas(){
+  const ps = await api('/personas');
+  const tb = $('tbl-personas');
+  if(!ps.length){ tb.innerHTML='<tr><td colspan="6" class="muted">Sin personas.</td></tr>'; return }
+  tb.innerHTML = ps.map(p=>`
+    <tr>
+      <td><b>${p.nombre}</b></td>
+      <td>${p.cedula||'—'}</td>
+      <td>${p.area||'—'}</td>
+      <td>${p.rol}</td>
+      <td>${p.activo!==false?'<span class="tag">Activo</span>':'<span class="tag off">Inactivo</span>'}</td>
+      <td>${p.activo!==false?`<button class="btn small danger" data-pdel="${p.id}">Inactivar</button>`:''}</td>
+    </tr>
+  `).join('');
+  tb.querySelectorAll('[data-pdel]').forEach(b=>b.addEventListener('click', async ()=>{
+    try{ await api('/personas/'+b.dataset.pdel,{method:'PUT',body:JSON.stringify({activo:false})}); toast('Persona inactivada'); loadPersonas(); }
+    catch(e){ toast(e.message,'err') }
+  }));
+}
+
+$('btn-pe-add').addEventListener('click', async ()=>{
+  const payload={
+    nombre: $('pe-nombre').value.trim(),
+    cedula: $('pe-cedula').value.trim(),
+    area: $('pe-area').value.trim(),
+    rol: $('pe-rol').value,
+  };
+  if(!payload.nombre){ toast('Nombre requerido','err'); return }
+  try{
+    await api('/personas',{method:'POST',body:JSON.stringify(payload)});
+    toast('Persona agregada');
+    ['pe-nombre','pe-cedula','pe-area'].forEach(i=>$(i).value='');
+    loadPersonas();
+  }catch(e){ toast(e.message,'err') }
+});
+
+async function loadTanques(){
+  const ts = await api('/tanques');
+  const tb = $('tbl-tanques');
+  if(!ts.length){ tb.innerHTML='<tr><td colspan="7" class="muted">Sin canecas.</td></tr>'; return }
+  tb.innerHTML = ts.map(t=>{
+    const pct = t.galones_iniciales>0 ? (t.galones_actuales/t.galones_iniciales)*100 : 0;
+    const cls = pct<=10? 'low' : pct<=30? 'med' : '';
+    return `<tr>
+      <td><b>${t.codigo}</b></td>
+      <td>${tagComb(t.combustible)}</td>
+      <td>${t.galones_iniciales.toFixed(1)} gal</td>
+      <td>${t.galones_actuales.toFixed(1)} gal <div class="bar-mini ${cls}"><span style="width:${Math.max(0,Math.min(100,pct))}%"></span></div></td>
+      <td>${t.estado==='activo'?'<span class="tag">Activa</span>':'<span class="tag off">Cerrada</span>'}</td>
+      <td>${fmtFecha(t.fecha_apertura)}</td>
+      <td>${t.estado==='activo'?`<button class="btn small danger" data-cerrar="${t.id}">Cerrar</button>`:''}</td>
+    </tr>`;
+  }).join('');
+  tb.querySelectorAll('[data-cerrar]').forEach(b=>b.addEventListener('click', async ()=>{
+    if(!confirm('¿Cerrar esta caneca?')) return;
+    try{ await api('/tanques/'+b.dataset.cerrar+'/cerrar',{method:'PUT'}); toast('Caneca cerrada'); loadTanques(); }
+    catch(e){ toast(e.message,'err') }
+  }));
+}
+
+$('btn-tq-add').addEventListener('click', async ()=>{
+  const payload={
+    codigo: $('tq-codigo').value.trim(),
+    combustible: $('tq-comb').value,
+    galones_iniciales: parseFloat($('tq-gal').value)||55,
+    notas: $('tq-notas').value.trim(),
+  };
+  try{
+    await api('/tanques',{method:'POST',body:JSON.stringify(payload)});
+    toast('Caneca abierta');
+    ['tq-codigo','tq-notas'].forEach(i=>$(i).value='');
+    loadTanques();
+  }catch(e){ toast(e.message,'err') }
+});
+
+loadEquipos(); loadPersonas(); loadTanques();
+</script>
+</body>
+</html>

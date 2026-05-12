@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tablero combustible · Condugas</title>
+<style>
+:root{
+  --bg:#faf7ee; --bg2:#f5eed5; --bg3:#091f2e;
+  --gold:#b89949; --orange:#c9a84a; --red:#a62e2e; --green:#5a7a4a;
+  --text:#091f2e; --muted:#6b7580; --border:#d8c98a;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:15px}
+header{position:sticky;top:0;z-index:10;background:var(--bg3);color:#faf7ee;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+header h1{margin:0;font-size:18px}
+header .links a{color:var(--gold);text-decoration:none;font-size:13px;margin-left:14px}
+.periodo{display:flex;gap:6px}
+.periodo button{background:transparent;border:1px solid rgba(184,153,73,.4);color:var(--gold);padding:5px 12px;border-radius:6px;font-size:12px;cursor:pointer;font-family:inherit}
+.periodo button.on{background:var(--gold);color:var(--bg3);border-color:var(--gold)}
+main{padding:14px;max-width:1100px;margin:0 auto;padding-bottom:60px}
+.grid-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:18px}
+.kpi{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.kpi .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.kpi .val{font-size:28px;font-weight:700;margin-top:4px}
+.kpi .sub{font-size:12px;color:var(--muted);margin-top:2px}
+.kpi.acpm .val{color:var(--green)}
+.kpi.gas .val{color:var(--red)}
+.kpi.despachos .val{color:var(--gold)}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:14px}
+.card h2{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:13px}
+.bar-row .name{flex:0 0 30%;min-width:120px;font-weight:500}
+.bar-row .bar{flex:1;height:18px;background:#eee2bb;border-radius:9px;overflow:hidden;position:relative}
+.bar-row .bar > span{display:block;height:100%;background:var(--gold);border-radius:9px}
+.bar-row .bar.acpm > span{background:var(--green)}
+.bar-row .bar.gas > span{background:var(--red)}
+.bar-row .val{flex:0 0 90px;text-align:right;font-variant-numeric:tabular-nums;font-size:13px}
+.alert{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:#fff;margin-bottom:8px}
+.alert.alta{border-left:4px solid var(--red);background:rgba(166,46,46,.04)}
+.alert.media{border-left:4px solid var(--orange);background:rgba(201,168,74,.04)}
+.alert .icon{font-size:20px}
+.alert .body{flex:1}
+.alert .body .head{font-size:13px;font-weight:600}
+.alert .body .meta{font-size:12px;color:var(--muted);margin-top:2px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--border);font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #eee2bb}
+th{background:var(--bg);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;padding:2px 7px;border-radius:6px;font-size:11px;background:rgba(184,153,73,.15);color:var(--gold)}
+.tag.acpm{background:rgba(90,122,74,.18);color:var(--green)}
+.tag.gas{background:rgba(166,46,46,.15);color:var(--red)}
+.tag.ok{background:rgba(90,122,74,.15);color:var(--green)}
+.tag.warn{background:rgba(201,168,74,.18);color:#8a6f2e}
+.tag.bad{background:rgba(166,46,46,.15);color:var(--red)}
+.muted{color:var(--muted);font-size:12px}
+.spark{display:flex;align-items:flex-end;gap:3px;height:60px;padding:6px 0}
+.spark > div{flex:1;background:var(--gold);border-radius:2px;min-height:2px}
+.spark > div.acpm{background:var(--green)}
+.spark > div.gas{background:var(--red)}
+.cols-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:768px){.cols-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 Tablero combustible</h1>
+  <div class="periodo">
+    <button data-p="semana" class="on">Semana</button>
+    <button data-p="mes">Mes</button>
+  </div>
+  <div class="links">
+    <a href="fuel-despacho.html">⛽ Despacho</a>
+    <a href="fuel-admin.html">⚙ Admin</a>
+  </div>
+</header>
+
+<main>
+  <div class="grid-kpis">
+    <div class="kpi acpm"><div class="lbl">ACPM</div><div class="val" id="k-acpm">—</div><div class="sub">galones consumidos</div></div>
+    <div class="kpi gas"><div class="lbl">Gasolina</div><div class="val" id="k-gas">—</div><div class="sub">galones consumidos</div></div>
+    <div class="kpi despachos"><div class="lbl">Despachos</div><div class="val" id="k-desp">—</div><div class="sub">registros del periodo</div></div>
+    <div class="kpi"><div class="lbl">Canecas activas</div><div class="val" id="k-tanques">—</div><div class="sub" id="k-tanques-sub">—</div></div>
+  </div>
+
+  <div class="card" id="card-alertas">
+    <h2>Alertas activas</h2>
+    <div id="alertas-cont"><div class="muted">Cargando…</div></div>
+  </div>
+
+  <div class="cols-2">
+    <div class="card">
+      <h2>Consumo diario</h2>
+      <div class="spark" id="spark"></div>
+      <table id="tbl-dia"><thead><tr><th>Día</th><th>ACPM</th><th>Gasolina</th></tr></thead><tbody></tbody></table>
+    </div>
+    <div class="card">
+      <h2>Top equipos consumidores</h2>
+      <div id="bars-equipos"><div class="muted">Cargando…</div></div>
+    </div>
+  </div>
+
+  <div class="cols-2">
+    <div class="card">
+      <h2>Top operadores</h2>
+      <div id="bars-operadores"><div class="muted">Cargando…</div></div>
+    </div>
+    <div class="card">
+      <h2>Rendimientos por equipo</h2>
+      <table id="tbl-rendimientos">
+        <thead><tr><th>Equipo</th><th>Promedio</th><th>Esperado</th><th>Estado</th></tr></thead>
+        <tbody><tr><td colspan="4" class="muted">Cargando…</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script>
+const API='/fuel';
+let periodoActual='semana';
+
+async function api(p){const r=await fetch(API+p,{credentials:'same-origin'});if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
+
+document.querySelectorAll('.periodo button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.periodo button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    periodoActual = b.dataset.p;
+    cargar();
+  });
+});
+
+function tagComb(c){ return c==='acpm'? '<span class="tag acpm">ACPM</span>' : c==='gasolina'? '<span class="tag gas">Gas</span>' : ''}
+
+async function cargar(){
+  const [kpis, alertas, rends, tanques] = await Promise.all([
+    api('/kpis?periodo='+periodoActual),
+    api('/alertas'),
+    api('/rendimientos'),
+    api('/tanques?estado=activo')
+  ]);
+
+  // KPIs
+  document.getElementById('k-acpm').textContent = kpis.total_galones_acpm.toFixed(1);
+  document.getElementById('k-gas').textContent = kpis.total_galones_gasolina.toFixed(1);
+  document.getElementById('k-desp').textContent = kpis.total_despachos;
+  document.getElementById('k-tanques').textContent = tanques.length;
+  const galDisp = tanques.reduce((s,t)=>s+(t.galones_actuales||0),0);
+  document.getElementById('k-tanques-sub').textContent = galDisp.toFixed(1)+' gal disponibles';
+
+  // Alertas
+  const cont = document.getElementById('alertas-cont');
+  if(!alertas.length){
+    cont.innerHTML = '<div class="muted">Sin alertas. Todo en orden.</div>';
+  }else{
+    cont.innerHTML = alertas.map(a=>`
+      <div class="alert ${a.severidad}">
+        <div class="icon">${a.tipo==='rendimiento'?'⚙':a.tipo==='tanque_bajo'?'🛢':'📋'}</div>
+        <div class="body">
+          <div class="head">${a.mensaje}</div>
+          <div class="meta">${a.tipo} · ${a.severidad}${a.fecha?' · '+new Date(a.fecha).toLocaleString('es-CO'):''}</div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Spark + tabla días
+  const dias = kpis.por_dia;
+  const spark = document.getElementById('spark'); spark.innerHTML='';
+  const maxGal = Math.max(1, ...dias.map(d=>d.acpm+d.gasolina));
+  dias.forEach(d=>{
+    const total = d.acpm + d.gasolina;
+    const h = Math.max(2, (total/maxGal)*60);
+    const wrap = document.createElement('div');
+    wrap.style.flex='1'; wrap.style.display='flex'; wrap.style.flexDirection='column'; wrap.style.justifyContent='flex-end'; wrap.style.gap='1px';
+    const a = document.createElement('div'); a.className='acpm'; a.style.height=((d.acpm/maxGal)*60)+'px';
+    const g = document.createElement('div'); g.className='gas'; g.style.height=((d.gasolina/maxGal)*60)+'px';
+    wrap.title = d.dia+': ACPM '+d.acpm+' · Gas '+d.gasolina;
+    wrap.appendChild(a); wrap.appendChild(g);
+    spark.appendChild(wrap);
+  });
+  const tdia = document.querySelector('#tbl-dia tbody');
+  tdia.innerHTML = dias.slice(-10).reverse().map(d=>`<tr><td>${d.dia}</td><td>${d.acpm}</td><td>${d.gasolina}</td></tr>`).join('') || '<tr><td colspan="3" class="muted">Sin datos</td></tr>';
+
+  // Top equipos
+  const be = document.getElementById('bars-equipos');
+  if(!kpis.por_equipo.length){
+    be.innerHTML='<div class="muted">Sin despachos.</div>';
+  }else{
+    const max = Math.max(...kpis.por_equipo.map(e=>e.galones));
+    be.innerHTML = kpis.por_equipo.slice(0,10).map(e=>`
+      <div class="bar-row">
+        <div class="name">${e.nombre}</div>
+        <div class="bar ${e.combustible||''}"><span style="width:${(e.galones/max)*100}%"></span></div>
+        <div class="val">${e.galones.toFixed(1)} gal</div>
+      </div>
+    `).join('');
+  }
+
+  // Top operadores
+  const bo = document.getElementById('bars-operadores');
+  if(!kpis.por_operador.length){
+    bo.innerHTML='<div class="muted">Sin operadores.</div>';
+  }else{
+    const max = Math.max(...kpis.por_operador.map(o=>o.galones));
+    bo.innerHTML = kpis.por_operador.slice(0,10).map(o=>`
+      <div class="bar-row">
+        <div class="name">${o.nombre}</div>
+        <div class="bar"><span style="width:${(o.galones/max)*100}%"></span></div>
+        <div class="val">${o.galones.toFixed(1)} gal</div>
+      </div>
+    `).join('');
+  }
+
+  // Rendimientos
+  const tr = document.querySelector('#tbl-rendimientos tbody');
+  if(!rends.length){
+    tr.innerHTML = '<tr><td colspan="4" class="muted">Sin suficientes despachos para calcular rendimientos.</td></tr>';
+  }else{
+    tr.innerHTML = rends.map(r=>{
+      const desv = r.esperado>0 ? ((r.promedio - r.esperado)/r.esperado*100) : 0;
+      let estado, badge;
+      if(r.medicion==='dia'){
+        // menor consumo = mejor
+        if(desv > 20){ estado='Sobreconsumo'; badge='bad' }
+        else if(desv < -10){ estado='Eficiente'; badge='ok' }
+        else{ estado='En rango'; badge='warn' }
+      }else{
+        if(desv < -20){ estado='Bajo esperado'; badge='bad' }
+        else if(desv > 10){ estado='Mejor que esperado'; badge='ok' }
+        else{ estado='En rango'; badge='warn' }
+      }
+      return `<tr>
+        <td><b>${r.equipo}</b> ${tagComb(r.combustible)}<div class="muted">${r.n_periodos} periodos · ${r.medicion}</div></td>
+        <td>${r.promedio} <span class="muted">${r.unidad}</span></td>
+        <td>${r.esperado}</td>
+        <td><span class="tag ${badge}">${estado}</span><div class="muted">${desv>=0?'+':''}${desv.toFixed(1)}%</div></td>
+      </tr>`;
+    }).join('');
+  }
+}
+
+cargar();
+setInterval(cargar, 60000); // auto-refresh cada minuto
+</script>
+</body>
+</html>

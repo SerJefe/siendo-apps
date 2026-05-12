@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="theme-color" content="#091f2e">
+<title>Despacho combustible · Condugas</title>
+<style>
+:root{
+  --bg:#faf7ee; --bg2:#f5eed5; --bg3:#091f2e;
+  --gold:#b89949; --orange:#c9a84a; --red:#a62e2e; --green:#5a7a4a;
+  --text:#091f2e; --muted:#6b7580; --border:#d8c98a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:16px;-webkit-tap-highlight-color:transparent}
+header{position:sticky;top:0;z-index:10;background:var(--bg3);color:#faf7ee;padding:14px 16px;display:flex;align-items:center;justify-content:space-between}
+header h1{margin:0;font-size:18px;font-weight:600}
+header .pill{background:rgba(184,153,73,.15);color:var(--gold);border:1px solid rgba(184,153,73,.4);border-radius:999px;padding:4px 10px;font-size:12px}
+main{padding:14px 14px 100px;max-width:560px;margin:0 auto}
+.step{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:14px}
+.step h2{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:flex;align-items:center;justify-content:center;flex:1;min-height:56px;padding:14px 16px;border-radius:12px;border:2px solid var(--border);background:#fff;color:var(--text);font-size:16px;font-weight:500;cursor:pointer;font-family:inherit;transition:.15s;-webkit-appearance:none}
+.btn:active{transform:scale(.97)}
+.btn.on{border-color:var(--gold);background:rgba(184,153,73,.12);color:var(--bg3)}
+.btn.primary{background:var(--gold);color:#fff;border-color:var(--gold);font-weight:600;min-height:64px;font-size:18px}
+.btn.primary:disabled{opacity:.4;cursor:not-allowed}
+.btn.ghost{background:transparent}
+.btn.danger{border-color:rgba(166,46,46,.5);color:var(--red)}
+input[type=text],input[type=number],input[type=search],textarea,select{
+  width:100%;padding:14px;font-size:17px;border:2px solid var(--border);border-radius:10px;background:#fff;font-family:inherit;color:var(--text);-webkit-appearance:none
+}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--gold)}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px;font-weight:500}
+.list{display:flex;flex-direction:column;gap:8px;max-height:280px;overflow-y:auto}
+.item{display:flex;justify-content:space-between;align-items:center;padding:14px;border:1px solid var(--border);border-radius:10px;background:#fff;cursor:pointer}
+.item.on{border-color:var(--gold);background:rgba(184,153,73,.10)}
+.item .meta{font-size:12px;color:var(--muted);margin-top:2px}
+.search{margin-bottom:8px}
+.summary{background:var(--bg3);color:#faf7ee;padding:14px;border-radius:12px;margin-bottom:14px}
+.summary .line{display:flex;justify-content:space-between;padding:4px 0;font-size:14px}
+.summary .line b{color:var(--gold)}
+.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:var(--bg3);color:#faf7ee;padding:14px 20px;border-radius:12px;font-size:14px;z-index:100;display:none;box-shadow:0 8px 24px rgba(0,0,0,.2);max-width:90%;text-align:center}
+.toast.show{display:block}
+.toast.ok{border:2px solid var(--green)}
+.toast.err{border:2px solid var(--red)}
+.toast.warn{border:2px solid var(--orange)}
+.feedback{background:#fff;border:2px solid var(--green);border-radius:12px;padding:16px;margin-top:14px;display:none}
+.feedback.show{display:block}
+.feedback.warn{border-color:var(--orange)}
+.feedback h3{margin:0 0 10px;font-size:15px}
+.feedback .stat{display:flex;justify-content:space-between;padding:6px 0;font-size:14px;border-bottom:1px dashed var(--border)}
+.feedback .stat:last-child{border:none}
+.feedback .stat b{font-size:16px}
+.nav-bottom{position:fixed;bottom:0;left:0;right:0;background:var(--bg);border-top:1px solid var(--border);padding:10px 14px;display:flex;gap:10px;z-index:5}
+.nav-bottom a{flex:1;text-align:center;text-decoration:none;color:var(--muted);font-size:12px;padding:8px;border-radius:8px}
+.nav-bottom a.on{color:var(--gold);background:rgba(184,153,73,.10)}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;background:rgba(184,153,73,.15);color:var(--gold);margin-left:6px}
+.tag.acpm{background:rgba(90,122,74,.18);color:var(--green)}
+.tag.gas{background:rgba(166,46,46,.15);color:var(--red)}
+</style>
+</head>
+<body>
+<header>
+  <h1>⛽ Despacho combustible</h1>
+  <span class="pill" id="now"></span>
+</header>
+
+<main>
+  <div class="summary" id="summary" style="display:none">
+    <div class="line"><span>Caneca</span><b id="s-tanque">—</b></div>
+    <div class="line"><span>Equipo</span><b id="s-equipo">—</b></div>
+    <div class="line"><span>Operador</span><b id="s-operador">—</b></div>
+    <div class="line"><span>Galones</span><b id="s-gal">—</b></div>
+  </div>
+
+  <section class="step" id="step-comb">
+    <h2>1 · Combustible</h2>
+    <div class="row">
+      <button class="btn" data-comb="acpm">ACPM <span class="tag acpm">diésel</span></button>
+      <button class="btn" data-comb="gasolina">Gasolina <span class="tag gas">corriente</span></button>
+    </div>
+  </section>
+
+  <section class="step" id="step-tanque" hidden>
+    <h2>2 · Caneca activa</h2>
+    <div class="list" id="lista-tanques"></div>
+  </section>
+
+  <section class="step" id="step-equipo" hidden>
+    <h2>3 · Equipo</h2>
+    <input type="search" class="search" id="buscar-equipo" placeholder="Buscar equipo o referencia…" autocomplete="off">
+    <div class="list" id="lista-equipos"></div>
+  </section>
+
+  <section class="step" id="step-operador" hidden>
+    <h2>4 · Operador (quién lo usa)</h2>
+    <input type="search" class="search" id="buscar-operador" placeholder="Buscar operador…" autocomplete="off">
+    <div class="list" id="lista-operadores"></div>
+  </section>
+
+  <section class="step" id="step-datos" hidden>
+    <h2>5 · Galones y lectura</h2>
+    <label for="galones">Galones entregados</label>
+    <input type="number" id="galones" inputmode="decimal" step="0.1" min="0.1" placeholder="ej. 5.5">
+    <div id="lectura-wrap" style="margin-top:12px;display:none">
+      <label for="lectura"><span id="lectura-label">Lectura</span></label>
+      <input type="number" id="lectura" inputmode="decimal" step="1" min="0" placeholder="">
+      <div style="font-size:12px;color:var(--muted);margin-top:4px" id="lectura-help"></div>
+    </div>
+    <div style="margin-top:12px">
+      <label for="notas">Notas (opcional)</label>
+      <textarea id="notas" rows="2" placeholder=""></textarea>
+    </div>
+  </section>
+
+  <section class="step" id="step-confirm" hidden>
+    <h2>6 · Confirmar</h2>
+    <button class="btn primary" id="btn-confirmar">Registrar despacho</button>
+    <button class="btn ghost" id="btn-cancelar" style="margin-top:8px">Cancelar</button>
+  </section>
+
+  <div class="feedback" id="feedback">
+    <h3 id="fb-titulo">✓ Registrado</h3>
+    <div id="fb-content"></div>
+    <button class="btn primary" id="btn-otro" style="margin-top:14px">Registrar otro</button>
+  </div>
+</main>
+
+<nav class="nav-bottom">
+  <a href="fuel-despacho.html" class="on">⛽ Despacho</a>
+  <a href="fuel-dashboard.html">📊 Tablero</a>
+  <a href="fuel-admin.html">⚙ Admin</a>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API = '/fuel';
+const state = {comb:null, tanque:null, equipo:null, operador:null, galones:null, lectura:null, notas:''};
+let equipos=[], personas=[], tanques=[];
+let despachadorActual = localStorage.getItem('fuel:despachador') || null;
+
+function $(id){return document.getElementById(id)}
+function toast(msg, kind='ok'){
+  const t=$('toast'); t.className='toast show '+kind; t.textContent=msg;
+  setTimeout(()=>t.classList.remove('show'), 3500);
+}
+function fmtFecha(d){
+  const dt = new Date(d || Date.now());
+  return dt.toLocaleString('es-CO',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+}
+
+async function api(path, opts={}){
+  const r = await fetch(API+path, {credentials:'same-origin', headers:{'Content-Type':'application/json'}, ...opts});
+  if(!r.ok){ const t = await r.text(); throw new Error('HTTP '+r.status+' '+t.slice(0,160)) }
+  return r.json();
+}
+
+async function bootstrap(){
+  $('now').textContent = fmtFecha();
+  try{
+    [equipos, personas, tanques] = await Promise.all([
+      api('/equipos'), api('/personas'), api('/tanques?estado=activo')
+    ]);
+  }catch(e){ toast('Error cargando datos: '+e.message,'err'); return; }
+  if(!equipos.length || !personas.length){
+    toast('No hay equipos/personas. Primero ir a Admin.','warn');
+  }
+}
+
+// Step 1: combustible
+document.querySelectorAll('[data-comb]').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-comb]').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    state.comb = b.dataset.comb;
+    state.tanque=null; state.equipo=null;
+    renderTanques(); renderEquipos();
+    $('step-tanque').hidden = false;
+    $('step-equipo').hidden = true;
+    $('step-operador').hidden = true;
+    $('step-datos').hidden = true;
+    $('step-confirm').hidden = true;
+    updateSummary();
+  });
+});
+
+function renderTanques(){
+  const cont = $('lista-tanques'); cont.innerHTML='';
+  const opts = tanques.filter(t=>t.combustible===state.comb && t.estado==='activo');
+  if(!opts.length){
+    cont.innerHTML = '<div style="padding:14px;color:var(--muted);font-size:14px">No hay canecas activas de '+state.comb+'. Abre una en Admin.</div>';
+    return;
+  }
+  opts.forEach(t=>{
+    const it = document.createElement('div');
+    it.className='item'+(state.tanque===t.id?' on':'');
+    it.innerHTML = `<div><b>${t.codigo}</b><div class="meta">${(t.galones_actuales??t.galones_iniciales).toFixed(1)} gal · abierta ${fmtFecha(t.fecha_apertura)}</div></div><div>${state.tanque===t.id?'✓':''}</div>`;
+    it.addEventListener('click',()=>{
+      state.tanque = t.id;
+      renderTanques();
+      $('step-equipo').hidden=false;
+      updateSummary();
+    });
+    cont.appendChild(it);
+  });
+}
+
+function renderEquipos(){
+  const q = ($('buscar-equipo').value||'').toLowerCase().trim();
+  const cont = $('lista-equipos'); cont.innerHTML='';
+  const opts = equipos.filter(e=>e.activo!==false && e.combustible===state.comb && (
+    !q || (e.nombre||'').toLowerCase().includes(q) || (e.codigo||'').toLowerCase().includes(q)
+  ));
+  if(!opts.length){
+    cont.innerHTML='<div style="padding:14px;color:var(--muted);font-size:14px">Sin coincidencias.</div>';
+    return;
+  }
+  opts.forEach(e=>{
+    const it = document.createElement('div');
+    it.className='item'+(state.equipo===e.id?' on':'');
+    const tagComb = e.combustible==='acpm'?'<span class="tag acpm">ACPM</span>':'<span class="tag gas">Gas</span>';
+    it.innerHTML = `<div><b>${e.nombre}</b> ${tagComb}<div class="meta">${e.codigo||''} · ${e.tipo} · ${e.medicion}</div></div><div>${state.equipo===e.id?'✓':''}</div>`;
+    it.addEventListener('click',()=>{
+      state.equipo = e.id;
+      renderEquipos();
+      $('step-operador').hidden=false;
+      renderOperadores();
+      configurarLectura(e);
+      updateSummary();
+    });
+    cont.appendChild(it);
+  });
+}
+$('buscar-equipo').addEventListener('input', renderEquipos);
+
+function renderOperadores(){
+  const q = ($('buscar-operador').value||'').toLowerCase().trim();
+  const cont = $('lista-operadores'); cont.innerHTML='';
+  const opts = personas.filter(p=>p.activo!==false && (
+    !q || (p.nombre||'').toLowerCase().includes(q) || (p.cedula||'').toLowerCase().includes(q)
+  ));
+  opts.forEach(p=>{
+    const it = document.createElement('div');
+    it.className='item'+(state.operador===p.id?' on':'');
+    it.innerHTML = `<div><b>${p.nombre}</b><div class="meta">${p.cedula||''} ${p.area? '· '+p.area : ''}</div></div><div>${state.operador===p.id?'✓':''}</div>`;
+    it.addEventListener('click',()=>{
+      state.operador = p.id;
+      renderOperadores();
+      $('step-datos').hidden=false;
+      $('step-confirm').hidden=false;
+      updateSummary();
+    });
+    cont.appendChild(it);
+  });
+}
+$('buscar-operador').addEventListener('input', renderOperadores);
+
+function configurarLectura(eq){
+  const wrap = $('lectura-wrap');
+  if(eq.medicion==='horas'){
+    wrap.style.display='block';
+    $('lectura-label').textContent='Horómetro (horas)';
+    $('lectura-help').textContent='Lectura actual del horómetro del equipo';
+    $('lectura').required = true;
+  }else if(eq.medicion==='odometro'){
+    wrap.style.display='block';
+    $('lectura-label').textContent='Odómetro (km)';
+    $('lectura-help').textContent='Kilometraje actual del vehículo';
+    $('lectura').required = true;
+  }else{
+    wrap.style.display='none';
+    $('lectura').required = false;
+    $('lectura').value='';
+  }
+}
+
+function updateSummary(){
+  const t = tanques.find(x=>x.id===state.tanque);
+  const e = equipos.find(x=>x.id===state.equipo);
+  const o = personas.find(x=>x.id===state.operador);
+  if(state.comb){
+    $('summary').style.display='block';
+    $('s-tanque').textContent = t? t.codigo : '—';
+    $('s-equipo').textContent = e? e.nombre : '—';
+    $('s-operador').textContent = o? o.nombre : '—';
+    $('s-gal').textContent = state.galones? state.galones+' gal' : '—';
+  }
+}
+
+$('galones').addEventListener('input', e=>{
+  state.galones = parseFloat(e.target.value)||null;
+  updateSummary();
+});
+$('lectura').addEventListener('input', e=>{
+  state.lectura = e.target.value === ''? null : parseFloat(e.target.value);
+});
+$('notas').addEventListener('input', e=>{ state.notas = e.target.value });
+
+$('btn-cancelar').addEventListener('click',()=>{ if(confirm('¿Cancelar este despacho?')) resetForm() });
+
+$('btn-confirmar').addEventListener('click', async ()=>{
+  if(!state.comb || !state.tanque || !state.equipo || !state.operador){
+    toast('Faltan datos','err'); return;
+  }
+  if(!state.galones || state.galones<=0){ toast('Ingresa galones','err'); return; }
+  const eq = equipos.find(e=>e.id===state.equipo);
+  if((eq.medicion==='horas' || eq.medicion==='odometro') && (state.lectura===null || isNaN(state.lectura))){
+    toast('Lectura ('+eq.medicion+') requerida','err'); return;
+  }
+  $('btn-confirmar').disabled = true;
+  $('btn-confirmar').textContent = 'Guardando…';
+  try{
+    if(!despachadorActual){
+      const nombre = prompt('¿Quién está despachando? (se recuerda en este celular)');
+      if(nombre){
+        const p = personas.find(x=>x.nombre.toLowerCase()===nombre.toLowerCase()) || await api('/personas',{method:'POST',body:JSON.stringify({nombre,rol:'despachador'})});
+        despachadorActual = p.id;
+        if(!personas.find(x=>x.id===p.id)) personas.push(p);
+        localStorage.setItem('fuel:despachador', despachadorActual);
+      }
+    }
+    const resp = await api('/despachos',{method:'POST', body: JSON.stringify({
+      tanque_id: state.tanque,
+      equipo_id: state.equipo,
+      operador_id: state.operador,
+      despachador_id: despachadorActual || state.operador,
+      galones: state.galones,
+      lectura: state.lectura,
+      notas: state.notas
+    })});
+    mostrarFeedback(resp);
+    tanques = await api('/tanques?estado=activo');
+  }catch(e){
+    toast('Error: '+e.message,'err');
+  }finally{
+    $('btn-confirmar').disabled = false;
+    $('btn-confirmar').textContent = 'Registrar despacho';
+  }
+});
+
+function mostrarFeedback(resp){
+  ['step-comb','step-tanque','step-equipo','step-operador','step-datos','step-confirm'].forEach(s=>$(s).hidden=true);
+  const fb = $('feedback');
+  fb.classList.remove('warn');
+  let html = `<div class="stat"><span>Galones</span><b>${resp.despacho.galones.toFixed(2)} gal</b></div>`;
+  html += `<div class="stat"><span>Caneca restante</span><b>${resp.galones_restantes_tanque.toFixed(1)} gal</b></div>`;
+  if(resp.rendimiento){
+    const r = resp.rendimiento;
+    const arrow = r.desviacion_pct >= 0 ? '↑' : '↓';
+    html += `<div class="stat"><span>Rendimiento</span><b>${r.valor} ${r.unidad}</b></div>`;
+    html += `<div class="stat"><span>Esperado</span><b>${r.esperado} ${r.unidad}</b></div>`;
+    html += `<div class="stat"><span>Desviación</span><b style="color:${r.alerta?'var(--red)':'var(--green)'}">${arrow} ${r.desviacion_pct}%</b></div>`;
+    if(r.alerta){ fb.classList.add('warn'); $('fb-titulo').textContent='⚠ Registrado — rendimiento fuera de rango'; }
+    else { $('fb-titulo').textContent='✓ Registrado — rendimiento OK'; }
+  }else{
+    $('fb-titulo').textContent='✓ Registrado';
+    html += `<div class="stat" style="color:var(--muted)"><span colspan="2">Necesita despacho previo para calcular rendimiento</span></div>`;
+  }
+  $('fb-content').innerHTML = html;
+  fb.classList.add('show');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+$('btn-otro').addEventListener('click', resetForm);
+
+function resetForm(){
+  state.comb=null; state.tanque=null; state.equipo=null; state.operador=null; state.galones=null; state.lectura=null; state.notas='';
+  ['galones','lectura','notas','buscar-equipo','buscar-operador'].forEach(id=>$(id).value='');
+  document.querySelectorAll('[data-comb]').forEach(x=>x.classList.remove('on'));
+  $('summary').style.display='none';
+  $('feedback').classList.remove('show');
+  $('step-comb').hidden=false;
+  ['step-tanque','step-equipo','step-operador','step-datos','step-confirm'].forEach(s=>$(s).hidden=true);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+bootstrap();
+</script>
+</body>
+</html>
