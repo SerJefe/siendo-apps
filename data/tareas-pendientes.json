@@ -6285,7 +6285,487 @@
         "conductores"
       ],
       "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r1-001",
+      "tarea": "Revisar y mapear escenario financiero de Normalización (cloud agent impact, flujo de trabajo)",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Visibilidad de ingresos por región",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": "2026-05-15",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Alexander"
+      ],
+      "segmento_idx": 1,
+      "segmento_titulo": "Análisis de la situación financiera y operativa",
+      "segmento_inicio": "2026-05-11T14:12:01Z",
+      "segmento_fin": "2026-05-11T14:46:35Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Alexander"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r1-002",
+      "tarea": "Analizar dinámica de ingresos Z2, Boyacá, Valle y definir puntos de presión con proveedores",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Priorización de pagos",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": "2026-05-15",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 1,
+      "segmento_titulo": "Análisis de la situación financiera y operativa",
+      "segmento_inicio": "2026-05-11T14:12:01Z",
+      "segmento_fin": "2026-05-11T14:46:35Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Alexander"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r1-003",
+      "tarea": "Negociar tema de operación y mantenimiento (O&M) con EPM para determinar timing de impacto",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Negociación paralela O&M",
+      "tipo": "seguimiento",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 1,
+      "segmento_titulo": "Análisis de la situación financiera y operativa",
+      "segmento_inicio": "2026-05-11T14:12:01Z",
+      "segmento_fin": "2026-05-11T14:46:35Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Alexander"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r2-004",
+      "tarea": "Modelar ecuación de recuperación de contrato (1000M) diferenciada por promedio de producción progresivo",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Análisis contrato 1000M - facturación factorial",
+      "tipo": "compromiso",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": "2026-05-14",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": 1000000000,
+      "personas": [
+        "Camilo"
+      ],
+      "segmento_idx": 2,
+      "segmento_titulo": "Resumen de la reunión",
+      "segmento_inicio": "2026-05-11T14:47:01Z",
+      "segmento_fin": "2026-05-11T15:32:44Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Camilo"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r2-005",
+      "tarea": "Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Reunión para definir estrategia contrato",
+      "tipo": "compromiso",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": "2026-05-14",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Camilo"
+      ],
+      "segmento_idx": 2,
+      "segmento_titulo": "Resumen de la reunión",
+      "segmento_inicio": "2026-05-11T14:47:01Z",
+      "segmento_fin": "2026-05-11T15:32:44Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Camilo"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r3-006",
+      "tarea": "Evaluar inventario de 1500M de pesos: plan de venta/distribución para generar caja alternativa",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Generación de flujo sin aumentar presión del contrato",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": 1500000000,
+      "personas": [
+        "Camilo"
+      ],
+      "segmento_idx": 3,
+      "segmento_titulo": "Análisis de la situación crítica de la empresa, gestión de conflictos y estrategias de supervivencia",
+      "segmento_inicio": "2026-05-11T15:32:44Z",
+      "segmento_fin": "2026-05-11T18:40:23Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Camilo"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r5-007",
+      "tarea": "Programar reunión con madre, Sebastian y miembro del equipo para analizar necesidades de flujo de caja",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Comunicación con stakeholder familia sobre crisis de caja",
+      "tipo": "compromiso",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "casa-ozzio",
+      "rol_sugerido": "rol-2-familia",
+      "monto_cop": null,
+      "personas": [
+        "madre de Sebastian"
+      ],
+      "segmento_idx": 5,
+      "segmento_titulo": "Conversación sobre la situación financiera de la empresa y una reunión",
+      "segmento_inicio": "2026-05-11T18:50:07Z",
+      "segmento_fin": "2026-05-11T18:52:43Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "madre de Sebastian",
+        "Unknown"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-11-r5-008",
+      "tarea": "Terminar carga de producción en Odoo para tener visibilidad confiable de costos y márgenes",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Implementación Odoo, datos confiables",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 5,
+      "segmento_titulo": "Conversación sobre la situación financiera de la empresa y una reunión",
+      "segmento_inicio": "2026-05-11T18:50:07Z",
+      "segmento_fin": "2026-05-11T18:52:43Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "madre de Sebastian",
+        "Unknown"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-11-r6-009",
+      "tarea": "Calcular escenario de cierre acelerado del contrato si no hay reajuste (comparar vs arrastre deficitario)",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Viabilidad terminal del contrato",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 6,
+      "segmento_titulo": "Discusión sobre política y asuntos personales",
+      "segmento_inicio": "2026-05-11T18:52:45Z",
+      "segmento_fin": "2026-05-11T19:21:12Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Camilo",
+        "EPM"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r6-010",
+      "tarea": "Validar benchmarking de costos de equipos: comparar contra mercado Bucaramanga (400-500K/día) para Condugas",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Estructura de costos del contrato",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 6,
+      "segmento_titulo": "Discusión sobre política y asuntos personales",
+      "segmento_inicio": "2026-05-11T18:52:45Z",
+      "segmento_fin": "2026-05-11T19:21:12Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Camilo",
+        "EPM"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r7-011",
+      "tarea": "Crear cronograma de eventos/cursos disponible para el equipo",
+      "responsable": "Viviana",
+      "prioridad": "media",
+      "contexto": "Comunicación interna / Being CoRe",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "siendo-consulting",
+      "rol_sugerido": "rol-4-being-core",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 7,
+      "segmento_titulo": "Conversación sobre varios temas",
+      "segmento_inicio": "2026-05-11T19:21:17Z",
+      "segmento_fin": "2026-05-11T19:45:15Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "Viviana"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-11-r9-012",
+      "tarea": "Completar configuración de Odoo: mapear producción a estructura de contratos para reconciliar causado vs real",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Implementación Odoo",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 9,
+      "segmento_titulo": "Revisión de datos financieros y contables",
+      "segmento_inicio": "2026-05-11T20:12:22Z",
+      "segmento_fin": "2026-05-11T20:16:17Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-11-r9-013",
+      "tarea": "Investigar por qué nómina/sueldos no se asocian correctamente a contratos en Odoo (estructura de reportes)",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Debugging Odoo",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 9,
+      "segmento_titulo": "Revisión de datos financieros y contables",
+      "segmento_inicio": "2026-05-11T20:12:22Z",
+      "segmento_fin": "2026-05-11T20:16:17Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-11-r10-014",
+      "tarea": "Reconciliar 27M de inventario material en Odoo (qué entró en abril, dónde está)",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Auditoria Odoo",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": 27000000,
+      "personas": [],
+      "segmento_idx": 10,
+      "segmento_titulo": "Conversación sobre contabilidad y reportes",
+      "segmento_inicio": "2026-05-11T20:16:27Z",
+      "segmento_fin": "2026-05-11T20:26:25Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo"
+      ],
+      "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-11-r12-015",
+      "tarea": "Coordinar con hermana para reservar finca familiar durante puente (fechas: 4-5 días más de mayo)",
+      "responsable": "hermana de Sebastian",
+      "prioridad": "baja",
+      "contexto": "Evento familiar",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": "2026-05-18",
+      "categoria_sugerida": "casa-ozzio",
+      "rol_sugerido": "rol-6-salud",
+      "monto_cop": 0,
+      "personas": [
+        "Tania",
+        "Pony"
+      ],
+      "segmento_idx": 12,
+      "segmento_titulo": "Conversación con Andre sobre datos financieros y otros temas",
+      "segmento_inicio": "2026-05-11T20:33:25Z",
+      "segmento_fin": "2026-05-11T20:55:43Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "hermana de Sebastian",
+        "Tania",
+        "Pony"
+      ],
+      "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-11-r12-016",
+      "tarea": "Confirmar con Tania/Pony disponibilidad para ir a finca (decisión final para separar)",
+      "responsable": null,
+      "prioridad": "baja",
+      "contexto": "Evento familiar",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "casa-ozzio",
+      "rol_sugerido": "rol-6-salud",
+      "monto_cop": null,
+      "personas": [
+        "Tania",
+        "Pony"
+      ],
+      "segmento_idx": 12,
+      "segmento_titulo": "Conversación con Andre sobre datos financieros y otros temas",
+      "segmento_inicio": "2026-05-11T20:33:25Z",
+      "segmento_fin": "2026-05-11T20:55:43Z",
+      "segmento_personas": [
+        "Sebastian Sanchez Acevedo",
+        "hermana de Sebastian",
+        "Tania",
+        "Pony"
+      ],
+      "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-11-r12-017",
+      "tarea": "Revisar conciliaciones de meses pendientes y validar datos faltantes en facturación (6%, 8%)",
+      "responsable": "Angelita",
+      "prioridad": "alta",
+      "contexto": "Análisis financiero Condugas",
+      "tipo": "seguimiento",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Angelita"
+      ],
+      "segmento_idx": 12,
+      "segmento_titulo": "Conversación con Andre sobre datos financieros y otros temas",
+      "segmento_inicio": "2026-05-11T20:33:25Z",
+      "segmento_fin": "2026-05-11T20:55:43Z",
+      "segmento_personas": [
+        "Andre",
+        "Angelita"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-11-r17-018",
+      "tarea": "Revisar y negociar reducciones administrativas con administración central (posible ahorro 5-9M mensuales)",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "Optimización costos administrativos",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": "2026-05-16",
+      "categoria_sugerida": "patrimonio",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": 9000000,
+      "personas": [],
+      "segmento_idx": 17,
+      "segmento_titulo": "Conversación sobre un contrato y ajustes financieros",
+      "segmento_inicio": "2026-05-11T21:26:46Z",
+      "segmento_fin": "2026-05-11T21:32:00Z",
+      "segmento_personas": [
+        "You"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-11-r20-019",
+      "tarea": "Coordinar y realizar visitas a campo (que alguien pueda hacer en lugar de Emmanuel)",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Being CoRe - implementación con cliente",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-11",
+      "fecha_limite": null,
+      "categoria_sugerida": "siendo-consulting",
+      "rol_sugerido": "rol-4-being-core",
+      "monto_cop": null,
+      "personas": [
+        "Emmanuel"
+      ],
+      "segmento_idx": 20,
+      "segmento_titulo": "Discusión sobre un proyecto de negocio y anécdotas personales",
+      "segmento_inicio": "2026-05-11T21:54:30Z",
+      "segmento_fin": "2026-05-11T21:58:14Z",
+      "segmento_personas": [
+        "Emmanuel",
+        "Olga"
+      ],
+      "segmento_impacto": "medio"
     }
   ],
-  "ultima_actualizacion": "2026-05-09T11:30:25.694272"
+  "ultima_actualizacion": "2026-05-12T11:33:07.242646"
 }

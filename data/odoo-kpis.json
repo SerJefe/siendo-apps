@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-05-10",
-  "generated_at": "2026-05-10T10:30:02.382350Z",
+  "fecha": "2026-05-12",
+  "generated_at": "2026-05-12T10:30:02.529864Z",
   "version": "v2-3decisiones",
   "facturacion_30d": {
-    "total": 4899643505.09,
-    "count": 54,
+    "total": 4905517639.02,
+    "count": 55,
     "moneda": "COP"
   },
   "cartera_pendiente": {
-    "total": 7603136667.19,
-    "count": 92,
-    "vencidas": 46,
+    "total": 7611510801.12,
+    "count": 94,
+    "vencidas": 47,
     "moneda": "COP"
   },
   "top_cartera": [
@@ -28,7 +28,7 @@
     },
     {
       "partner": "METROGAS DE COLOMBIA S.A E.S.P",
-      "pendiente": 223800583.79000002
+      "pendiente": 227010367.40000004
     },
     {
       "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
@@ -78,7 +78,7 @@
     }
   ],
   "tareas_proyectos_abiertas": 408,
-  "empleados_activos": 644,
+  "empleados_activos": 645,
   "sobrevivir": {
     "caja": {
       "bancos_total": 548707276.6600001,
@@ -402,8 +402,8 @@
           "warning": "saldo_negativo_revisar"
         }
       ],
-      "cartera_ejecutada": 7603136667.19,
-      "total_disponible": 8151843943.849999,
+      "cartera_ejecutada": 7611510801.12,
+      "total_disponible": 8160218077.78,
       "moneda": "COP",
       "nota_parametrizacion": "Plan de cuentas en proceso de parametrización · revisar warnings"
     },
@@ -414,79 +414,79 @@
           "total": 1622702812.56,
           "facturas_vencidas": 7,
           "mas_vieja": "2026-04-15",
-          "dias_vencida": 25
+          "dias_vencida": 27
         },
         {
           "partner": "GAS NATURAL CUNDIBOYACENSE S.A. E.S.P.",
           "total": 701370508.88,
           "facturas_vencidas": 11,
           "mas_vieja": "2026-04-19",
-          "dias_vencida": 21
+          "dias_vencida": 23
         },
         {
           "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
           "total": 159188822.0,
           "facturas_vencidas": 4,
           "mas_vieja": "2026-02-23",
-          "dias_vencida": 76
+          "dias_vencida": 78
         },
         {
           "partner": "METROGAS DE COLOMBIA S.A E.S.P",
           "total": 97548501.94,
           "facturas_vencidas": 11,
           "mas_vieja": "2026-04-11",
-          "dias_vencida": 29
+          "dias_vencida": 31
         },
         {
           "partner": "CONSORCIO SILAR CONDUGAS",
           "total": 86588132.44,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-30",
-          "dias_vencida": 10
+          "dias_vencida": 12
         },
         {
           "partner": "Jhon Christopher Angulo",
           "total": 59368482.98,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-03-24",
-          "dias_vencida": 47
+          "dias_vencida": 49
         },
         {
           "partner": "GASES DE OCCIDENTE SA ESP",
           "total": 55554076.62,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-05-01",
-          "dias_vencida": 9
+          "dias_vencida": 11
         },
         {
           "partner": "UNION TEMPORAL HABILITACION INFRAESTRUCTURA HOSPITALARIA",
           "total": 24521525.67,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 26
+          "dias_vencida": 28
         },
         {
           "partner": "CONINSA  S.A.S",
           "total": 18868581.69,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-20",
-          "dias_vencida": 20
+          "dias_vencida": 22
         },
         {
           "partner": "CONSTRUTEM S A S",
           "total": 15598151.76,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 26
+          "dias_vencida": 28
         }
       ],
-      "total": 2861317221.66,
-      "facturas_count": 46
+      "total": 2866481571.98,
+      "facturas_count": 47
     },
     "deuda_proveedores": {
-      "total": 3725553051.25,
+      "total": 3676821224.89,
       "count": 1000,
-      "vencidas": 862,
+      "vencidas": 873,
       "top": [
         {
           "proveedor": "GASES DE OCCIDENTE SA ESP",
@@ -515,135 +515,135 @@
   "recuperar": {
     "facturas_recientes": [
       {
-        "name": "BILL/2026/05/0089",
+        "name": "DEC620",
         "tipo": "compra",
-        "partner": "ALBERTO CADAVID R. & CIA. S.A",
-        "monto": 333200.0,
-        "fecha": "2026-05-04",
-        "registrada": "2026-05-09 14:28:37"
+        "partner": "MOSQUERA RODRIGUEZ KIMBERLY AL",
+        "monto": 50000.0,
+        "fecha": "2026-05-06",
+        "registrada": "2026-05-11 22:09:17"
       },
       {
-        "name": "BILL/2026/05/0088",
+        "name": "DEC619",
         "tipo": "compra",
-        "partner": "D1  S A S",
-        "monto": 26400.0,
-        "fecha": "2026-05-08",
-        "registrada": "2026-05-08 22:43:00"
+        "partner": "VILLANOVA CALDERON LEYDI VANESSA",
+        "monto": 50000.0,
+        "fecha": "2026-05-06",
+        "registrada": "2026-05-11 22:08:13"
       },
       {
-        "name": "DEC583",
+        "name": "DEC618",
         "tipo": "compra",
-        "partner": "MIGUEL ANGEL PATIÑODE RIO",
-        "monto": 60000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:41:05"
+        "partner": "CASTAÑEDA URREGO DANIELA",
+        "monto": 11500.0,
+        "fecha": "2026-05-06",
+        "registrada": "2026-05-11 22:07:11"
       },
       {
-        "name": "DEC582",
+        "name": "DEC617",
         "tipo": "compra",
-        "partner": "RAMIREZ HURTADO RICARDO",
-        "monto": 54000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:36:47"
-      },
-      {
-        "name": "BILL/2026/05/0087",
-        "tipo": "compra",
-        "partner": "MANDAR Y SERVIR S.A.S",
-        "monto": 25300.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:36:16"
-      },
-      {
-        "name": "BILL/2026/05/0086",
-        "tipo": "compra",
-        "partner": "MANDAR Y SERVIR S.A.S",
-        "monto": 22000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:36:10"
-      },
-      {
-        "name": "DEC581",
-        "tipo": "compra",
-        "partner": "CEBALLOS LUIS ALBERTO",
-        "monto": 29000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:33:59"
-      },
-      {
-        "name": "DEC580",
-        "tipo": "compra",
-        "partner": "GALEANO OSPINA ASTRID LORENA",
-        "monto": 49000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:33:29"
-      },
-      {
-        "name": "DEC579",
-        "tipo": "compra",
-        "partner": "HURTADO MONTOYA MARLENY",
-        "monto": 4600.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:33:14"
-      },
-      {
-        "name": "BILL/2026/05/0085",
-        "tipo": "compra",
-        "partner": "H L COMBUSTIBLES S.A.S",
-        "monto": 40000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:31:24"
-      },
-      {
-        "name": "DEC578",
-        "tipo": "compra",
-        "partner": "OSORNO TOBON HECTOR ALBERTO",
+        "partner": "MOSQUERA RODRIGUEZ KIMBERLY AL",
         "monto": 30000.0,
         "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:30:56"
+        "registrada": "2026-05-11 22:05:35"
       },
       {
-        "name": "DEC577",
+        "name": "DEC616",
         "tipo": "compra",
-        "partner": "LOPEZ HINCAPIE LUIS GUILLERMO",
-        "monto": 20000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:30:25"
-      },
-      {
-        "name": "DEC576",
-        "tipo": "compra",
-        "partner": "FUENTES VEGA JAIDER MANUEL",
-        "monto": 30500.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:30:10"
-      },
-      {
-        "name": "DEC575",
-        "tipo": "compra",
-        "partner": "OSORNO TOBON HECTOR ALBERTO",
+        "partner": "VILLANOVA CALDERON LEYDI VANESSA",
         "monto": 50000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:28:16"
+        "fecha": "2026-05-09",
+        "registrada": "2026-05-11 22:02:38"
       },
       {
-        "name": "DEC574",
+        "name": "BILL/2026/05/0113",
         "tipo": "compra",
-        "partner": "LOPEZ HINCAPIE LUIS GUILLERMO",
+        "partner": "INVERSIONES LA ROCA DEL ORIENTE SAS",
+        "monto": 96000.0,
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 22:01:27"
+      },
+      {
+        "name": "BILL/2026/05/0112",
+        "tipo": "compra",
+        "partner": "INVERSIONES LA ROCA DEL ORIENTE SAS",
+        "monto": 57000.0,
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 22:00:41"
+      },
+      {
+        "name": "BILL/2026/05/0111",
+        "tipo": "compra",
+        "partner": "DIAZ RODRIGUEZ JULIAN ADRES",
+        "monto": 63500.0,
+        "fecha": "2026-05-03",
+        "registrada": "2026-05-11 21:58:35"
+      },
+      {
+        "name": "BILL/2026/05/0110",
+        "tipo": "compra",
+        "partner": "DIAZ RODRIGUEZ JULIAN ADRES",
+        "monto": 63500.0,
+        "fecha": "2026-05-02",
+        "registrada": "2026-05-11 21:55:30"
+      },
+      {
+        "name": "BILL/2026/05/0109",
+        "tipo": "compra",
+        "partner": "DIAZ RODRIGUEZ JULIAN ADRES",
+        "monto": 63500.0,
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 21:54:53"
+      },
+      {
+        "name": "BILL/2026/05/0108",
+        "tipo": "compra",
+        "partner": "COOPERATIVA MULTIACTIVA DE TRANSPORTADORES DE SANTANDER",
+        "monto": 100000.0,
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 21:53:14"
+      },
+      {
+        "name": "BILL/2026/05/0107",
+        "tipo": "compra",
+        "partner": "COOPERATIVA MULTIACTIVA DE TRANSPORTADORES DE SANTANDER",
         "monto": 20000.0,
-        "fecha": "2026-05-07",
-        "registrada": "2026-05-08 22:27:43"
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 21:52:51"
+      },
+      {
+        "name": "BILL/2026/05/0106",
+        "tipo": "compra",
+        "partner": "COOPERATIVA MULTIACTIVA DE TRANSPORTADORES DE SANTANDER",
+        "monto": 30180.0,
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 21:51:24"
+      },
+      {
+        "name": "BILL/2026/05/0105",
+        "tipo": "compra",
+        "partner": "DIAZ RODRIGUEZ JULIAN ADRES",
+        "monto": 18000.0,
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 21:51:00"
+      },
+      {
+        "name": "BILL/2026/05/0104",
+        "tipo": "compra",
+        "partner": "PEREZ REYES & CIA LTDA",
+        "monto": 20000.0,
+        "fecha": "2026-05-01",
+        "registrada": "2026-05-11 21:48:10"
       }
     ],
     "compras_mes": {
-      "total": 147623704.37,
-      "count": 153,
+      "total": 172788438.82,
+      "count": 218,
       "desde": "2026-05-01",
       "moneda": "COP"
     },
     "compras_acumulado_ano": {
-      "total": 5769279950.18,
-      "count": 2528,
+      "total": 5794863614.92,
+      "count": 2594,
       "por_mes": [
         {
           "mes": "2026-01",
@@ -659,11 +659,11 @@
         },
         {
           "mes": "2026-04",
-          "total": 1990477644.8700013
+          "total": 1990896575.1600013
         },
         {
           "mes": "2026-05",
-          "total": 147623704.37
+          "total": 172788438.82
         }
       ],
       "desde": "2026-01-01",
@@ -673,37 +673,37 @@
       "items": [
         {
           "contrato": "R1",
-          "gasto_acumulado": 1532483927.24,
+          "gasto_acumulado": 1520138927.24,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "O&M Z2",
-          "gasto_acumulado": 1179415709.06,
+          "gasto_acumulado": 1184522560.06,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "VALLE",
-          "gasto_acumulado": 1117350775.46,
+          "gasto_acumulado": 1115738775.46,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "BOYACÁ",
-          "gasto_acumulado": 321214562.68,
+          "gasto_acumulado": 314683497.11,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "PÉRDIDAS",
-          "gasto_acumulado": 295793447.06,
+          "gasto_acumulado": 293735247.06,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "FLORIDABLANCA",
-          "gasto_acumulado": 139703952.31,
+          "gasto_acumulado": 141436506.72,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -729,7 +729,7 @@
       "nota_presupuesto": "Campos presupuesto/cumplimiento pendientes hasta carga de estructuración"
     },
     "inventario_transito": {
-      "count": 86,
+      "count": 92,
       "items": [
         {
           "name": "OM&Z2/IN/00076",
@@ -930,7 +930,7 @@
       },
       {
         "mes": "2026-05",
-        "total": 646068984.97
+        "total": 654443118.8999999
       }
     ]
   }

@@ -1,150 +1,41 @@
 {
-  "fecha": "2026-05-07",
+  "fecha": "2026-05-08",
   "tareas_extraidas": [
     {
-      "tarea": "Preparar respuestas sobre posicionamiento de precio para junta de las 14:00",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Documentar diagnóstico de cliente ANTES de iniciar intervención (protocolo que ya se discutió con Nelson y Manuel pero no está socializado)",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Establecer manual de procedimientos para reducir actuaciones desde intención sin método",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Completar y estructurar redacción de mail que ya está en borrador",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Diseñar flujo en Odu: perfiles de director → solicitud de recursos → validación nuevos negocios → financiero → aprobación",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Definir criterio: cuándo una solicitud de recurso requiere revisión/aprobación estratégica vs solo administrativa",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Reportar el procedimiento de incapacidad a recursos humanos (5 días desde hoy hasta el lunes)",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Asignar persona o equipo responsable de estrategia de integración: cuáles APIs en Odoo, cuáles en otros sistemas, para EPM y Vanti",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Unificar reportes de nómina por contrato (no por área/ciudad/proyecto), consolidar datos de dos contratos en archivo único",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Buscar y ejecutar opción de filtrado de informe de nómina mensual con funcionalidad de búsqueda",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Comunicar al equipo: razón del crédito (solventar tensión de caja), protocolo requerido por acreedor, contexto de decisión",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Definir con claridad si la participación de Sebastian en cliente es consultoría, procedimiento o implementación",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Evaluar si es más económico que Sebastian vaya a obra/logística o que cliente viaje para consultoría remota",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Clarificar ante el cliente (empresa) cuál es la necesidad real: consultoría de procedimiento o algo más",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Revisar antes de presentar (si es necesario) el formato de solicitud de permiso PMT que Juan llenó",
-      "responsable": "Juan",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Implementar sistema de transcripción + extracción de decisiones en red neuronal de reuniones Condugas",
-      "responsable": "empleado de proyectos",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Desarrollar dashboard de nómina que muestre en tiempo real: periodo, número de empleados, ICA, impuestos, declaración renta, facturación, costos",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Completar análisis de reajustes en los 3 escenarios UVM/Catalina León",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Evaluar impacto financiero de cada escenario (especialmente variabilidad 650-700M + reajustes)",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Terminar de preparar ejercicio de bombitas/nodos/hilos para entregar a estudiantes (completar con papeles de roles/decisiones)",
+      "tarea": "Hablar a primera hora con Camilo Marín sobre reactivación de personal de normalización y estructura de pago desde Condugas",
       "responsable": "Sebastian",
       "prioridad": "alta"
     },
     {
-      "tarea": "Comunicar recorte de presupuesto 50% a partir del próximo mes en contratos especificados, solicitar alternativas",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "critica"
+      "tarea": "Validar viabilidad legal y fiscal de pasar empleados a nómina Condugas como aporte en especie a contrato EPM",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Diseñar flujo de ConduCash para pago de conductores/personal en obra de normalización cobrada al consorcio",
+      "responsable": null,
+      "prioridad": "media"
     }
   ],
   "decisiones": [
-    "Se requiere claridad sobre datos para negociar precios sin exponerse",
-    "Hay tension entre demostrar que son los más baratos vs. proteger reputación con funcionarios públicos",
-    "Los problemas operativos son más de procesos/métodos que de personas",
-    "La falta de manual de procedimientos genera que la gente actúe con buena intención pero sin estructura",
-    "El empleado debe ser responsable de la herramienta que tiene (no devolver como chatarra sin intentar arreglarla)",
-    "Se debe diagnosticar al cliente ANTES de hacer cualquier intervención, no después",
-    "La comunicación debe ser clara cuando la misma tarea se explica a varias personas de formas diferentes",
-    "Toda requisición de recurso nuevo debe pasar primero por nuevos negocios (verificar si está en pliego), luego por financiero",
-    "Solicitudes de roles NUEVOS (creaciones) requieren aprobación estratégica adicional, no solo presupuestaria",
-    "Un analista nuevo debe tener justificación clara: costo vs inversión vs evitar riesgo"
+    "Explorar contratación de personal de normalización directamente desde Condugas como aporte en especie al contrato EPM",
+    "Usar ConduCash como vehículo de pago a personal con cobro posterior al consorcio",
+    "Contactar Camilo Marín mañana para validar estrategia y reactivar equipo"
   ],
   "ideas": [
-    "La negociación funciona cuando hay datos públicos que lo respaldan",
-    "Hay riesgo de perder línea de mando completa si se cuestiona integridad de funcionarios",
-    "Si una herramienta falla, el flujo debe ser: empleado documenta/foto → envía al responsable de mantenimiento, no descartar de entrada",
-    "El control de costos de herramientas debe ir al individuo que las tiene, no disperso en el equipo",
-    "Hay conocimiento tácito (conversación Sebas-Nelson-Manuel) que no está documentado ni disponible para otros (Andrea, Diana)",
-    "Hay dificultad en parametrizar tareas cuando requieren explicación variable según interlocutor",
-    "La edición y revisión de tareas es parte importante para que queden bien estructuradas",
-    "Sebas reconoce que tiene química (síntomas químicos) que no puede pensar/racionalizar, solo sentir y luego procesar",
-    "Hay tres niveles distintos: lo que siente, lo que piensa, y qué conciencia tiene del proceso",
-    "La nostalgia es característica personal (muchas existencias, está en la última fase)"
+    "Álex propone subcontratación de normalización como alternativa a estructura tradicional",
+    "Pasar empleados a nómina Condugas como aporte en especie (modelo alternativo sin subcontrato formal)",
+    "Usar anticipos de ConduCash para reactivar personal sin esperar confirmación de pago del consorcio"
   ],
   "frases": [
-    "si no nos sacan los datos para negociar de que somos los más baratos, no somos los más baratos, es porque somos los más baratos",
-    "una cosa es que yo vaya a poner eso contra una prueba, pero otra cosa es que yo ponga eso contra la reputación de los funcionarios",
-    "no hay manual de procedimientos, entonces la gente no tiene método, entonces la gente no hace los requerimientos",
-    "yo soy responsable de esta herramienta, yo decido, lo llevo o no lo llevo",
-    "Tan consciente que yo sé que los síntomas son químicos, o sea, yo no puedo pensar sobre ellos, yo los siento y ya después pienso"
+    "¿Por qué no nos dejan un subcontrato trabajar con la gente de normalización?",
+    "Contratemos a esa gente, si hay obra de normalización, desde Condugas",
+    "No se necesita subcontrato, porque es que pasemos los empleados todos a Condugas, y los aportamos en especie al contrato"
   ],
   "alertas_supervivencia": [
-    "Sobrecarga cognitiva: 24 reuniones en un día con temas dispersos (salud personal, relaciones, reflexión introspectiva mezclada con decisiones de 650M+). Riesgo de fatiga decisoria.",
-    "Dependencia de Sebastian en múltiples dominios: procesos, familia, negocios nuevos, liderazgo. Falta de delegación clara podría colapsar si ausencia.",
-    "Modelos de negocio complejos sin documentación clara: 'cambalache' de Condugas, participaciones en Being CoRe, Sunboard. Riesgo legal/tributario si no está formalizado.",
-    "Comunicación fragmentada interno: múltiples conversaciones sobre cambios (crédito, roles, nuevos negocios) sin canal unificado. Posible desinformación en equipo.",
-    "Decisiones bajo presión emocional: reflexiones sobre miedo, relaciones, adaptación personal entremezcla con decisiones estratégicas de alto impacto financiero."
+    "REUNION 3: Renuncia a representación legal por Raúl reportada como 'protesta' — revisar implicaciones contractuales y comunicar a junta asesora (Isaza/Naranjo/Gutierrez) si es material",
+    "REUNION 3: Propuesta normalización ('aporte en especie' + ConduCash) requiere validación fiscal URGENTE antes de ejecución — riesgo de contingencia tributaria"
   ],
-  "total_lifelogs": 24,
+  "total_lifelogs": 6,
   "procesado_con": "haiku_v3_structured"
 }

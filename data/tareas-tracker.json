@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-09T00:00:02",
+  "ultima_actualizacion": "2026-05-12T11:33:07",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -1410,7 +1410,7 @@
       "origen": "limitless_auto",
       "contexto": "Condugas - pagos operacionales",
       "tipo": "seguimiento",
-      "vencida": true,
+      "vencida": false,
       "evaluada": true,
       "categoria": "condugas",
       "monto_cop": null,
@@ -2167,7 +2167,7 @@
       "origen": "limitless_auto",
       "contexto": "120 comunidades, meta de producción 2030",
       "tipo": "seguimiento",
-      "vencida": true,
+      "vencida": false,
       "evaluada": false,
       "categoria": "condugas",
       "monto_cop": null,
@@ -2407,7 +2407,7 @@
       "origen": "limitless_auto",
       "contexto": "Única ruta de viabilidad si empresa no quiebra antes",
       "tipo": "seguimiento",
-      "vencida": true,
+      "vencida": false,
       "evaluada": false,
       "categoria": "condugas",
       "monto_cop": 1200000000,
@@ -2890,7 +2890,7 @@
       "origen": "limitless_auto",
       "contexto": "Transformación operativa Condugas",
       "tipo": "decision",
-      "vencida": true,
+      "vencida": false,
       "evaluada": false,
       "categoria": "condugas",
       "monto_cop": null,
@@ -5393,7 +5393,8 @@
         "Sebastian",
         "Humberto"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-06-c002",
@@ -5414,7 +5415,8 @@
       "personas": [
         "Sebastian"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-06-c003",
@@ -5436,7 +5438,8 @@
         "Cami",
         "EPM"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-06-c004",
@@ -5457,7 +5460,8 @@
       "personas": [
         "EPM"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-06-c005",
@@ -5479,7 +5483,8 @@
         "EPM",
         "Occidental"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-06-c006",
@@ -5501,7 +5506,8 @@
         "EPM",
         "Occidental"
       ],
-      "rol_sugerido": "rol-1-condugas"
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r5-002",
@@ -5516,7 +5522,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r5-003",
@@ -5531,7 +5538,8 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r5-004",
@@ -5546,7 +5554,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r5-005",
@@ -5561,7 +5570,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r4-001",
@@ -5576,7 +5586,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r6-006",
@@ -5591,7 +5602,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r9-008",
@@ -5606,7 +5618,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r9-007",
@@ -5621,7 +5634,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r12-010",
@@ -5636,7 +5650,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r12-009",
@@ -5651,7 +5666,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r14-013",
@@ -5666,7 +5682,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r14-012",
@@ -5681,7 +5698,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r15-014",
@@ -5696,7 +5714,8 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r16-015",
@@ -5711,7 +5730,8 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-06-r13-011",
@@ -5726,7 +5746,8 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "trabajo",
+      "estancada": true
     },
     {
       "id": "2026-05-07-c001",
@@ -5747,6 +5768,108 @@
       "personas": [
         "William"
       ],
+      "rol_sugerido": "rol-1-condugas",
+      "estancada": true
+    },
+    {
+      "id": "2026-05-11-c001",
+      "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
+      "responsable": "Camilo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-14",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Supervivencia contrato OYM",
+      "tipo": "seguimiento",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "EPM"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-11-c002",
+      "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de tarifa interna",
+      "responsable": "Camilo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-14",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Restructura contrato para viabilidad",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Sebastian Sanchez Acevedo"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-11-c003",
+      "tarea": "Verificar que Condugas no asuma riesgo de caja personal si contrato no genera utilidad",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-14",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Protección de caja corporativa",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-11-c004",
+      "tarea": "Explorar negociación alternativa a EPM (no la anterior que falló) para reajuste de contrato",
+      "responsable": "Camilo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-14",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Renegociación EPM",
+      "tipo": "seguimiento",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": 700000000,
+      "personas": [
+        "EPM"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-11-c005",
+      "tarea": "Implementar ajustes al contrato (1.400M + reajuste 7-8%) y validar viabilidad antes del viernes",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-16",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Contrato de producción - crisis de supervivencia",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": 1400000000,
+      "personas": [],
       "rol_sugerido": "rol-1-condugas"
     }
   ]

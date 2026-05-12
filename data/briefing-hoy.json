@@ -1,60 +1,59 @@
 {
-  "saludo": "Buenos días Sebastián — sábado 09 May",
+  "saludo": "Buenos días Sebastián — martes 12 May",
   "supervivencia": [
-    "Caja a 10 días: revisar movimiento e inversiones HOY",
-    "EPM Río Negro: ~180M en reajustes sin cobrar — enviar comunicado lunes",
-    "No conformidad contrato 24: respuesta formal pendiente (P1)"
+    "CAJA: 10 días críticos. EBITDA -800k. Revisar movimientos hoy",
+    "EPM Río Negro: ~180M pendientes + no conformidad contrato 24 sin respuesta formal",
+    "Hamilton: cobro vence hoy (deadline 2026-05-15)"
   ],
   "top_3": [
     {
-      "tarea": "Revisar caja a hoy + estado inversiones + carros/créditos",
+      "tarea": "Revisar caja real a hoy + movimiento inversiones + plan pago Condugas",
       "categoria": "SUPERVIVENCIA",
-      "porque": "10 días de runway, EBITDA -800K, necesitas foto real antes de lunes",
-      "tarea_id": "situacion_caja"
+      "porque": "10 días de caja, EBITDA negativo, necesitas visión completa",
+      "tarea_id": "critica_caja_familiar"
     },
     {
-      "tarea": "Comunicado + plan de cobro EPM Río Negro (180M reajustes)",
+      "tarea": "Enviar comunicado + programar cobro directo EPM reajustes (~180M)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Vencida, crítica, impacta caja directamente",
-      "tarea_id": "epm_rio_negro"
+      "porque": "Dinero comprometido, contrato crítico, no puede esperar",
+      "tarea_id": "cobrar_reajustes_epm"
     },
     {
-      "tarea": "Reunión 30min con Andrea: deudas Condugas + ICA pendiente (55M Medellín)",
-      "categoria": "SUPERVIVENCIA",
-      "porque": "Dos flujos de caja bloqueados, ella lidera ambos",
-      "tarea_id": "reunion_andrea"
+      "tarea": "Base datos clientes única con necesidades + propuestas claras",
+      "categoria": "ESTRATEGIA",
+      "porque": "Score 47. Sin esto no sabes dónde va tu energía",
+      "tarea_id": "clientes_base"
     }
   ],
-  "mega_dia": "Sacar foto clara de caja + inversiones. Sin ella, todo lo demás es adivinanza.",
+  "mega_dia": "Obtener visión real de caja + iniciar cobro EPM. Si haces esto, respiras",
   "contactar_hoy": [
     {
-      "persona": "Andrea Bernal",
-      "motivo": "Estado real deudas Condugas + plan cobro ICA 55M"
+      "persona": "Andrea",
+      "motivo": "Deudas Condugas pendientes + plan pago claro"
     },
     {
       "persona": "Emanuel",
-      "motivo": "Agendar 1h esta semana: ERP visual + automatizaciones app"
+      "motivo": "Reunión rápida: estructura Siendo, roles, presupuesto"
     }
   ],
   "ojo_con": [
     "110 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "Sleep 27%, recovery 14 = fatiga decisoria alta. No tomar decisiones grandes hoy.",
-    "107 tareas vencidas + 63 críticas = deuda cognitiva. Prioriza cobros/caja.",
-    "Dependencia Sebastian en 15+ dominios sin delegación clara = riesgo colapso."
+    "163 tareas vencidas — urgente priorizar",
+    "Facturación sin actualizar 23 días (45% = rojo)",
+    "Hamilton deadline hoy — Lina debe confirmar"
   ],
   "vencidas": [
-    "Reunión Pilar POT Aguactala (vencida 05-May)",
-    "No conformidad contrato 24 (crítica, sin fecha cierre)",
-    "Reajuste EPM propuesta contundente (crítica, sin fecha)"
+    "Contrato 24: no conformidad sin respuesta formal",
+    "Casa Aguacatala: deadline 2026-05-05 pasó"
   ],
-  "frase_dia": "Hoy: caja + cobros. El lunes tienes un panorama real para negociar.",
-  "generado_at": "2026-05-09T11:00:08",
-  "fecha": "2026-05-09",
+  "frase_dia": "Hoy: caja clara + dinero en movimiento. Eso es respirar.",
+  "generado_at": "2026-05-12T11:00:09",
+  "fecha": "2026-05-12",
   "stats": {
     "abiertas": 209,
     "criticas": 63,
-    "vencidas": 107,
-    "estancadas": 170,
+    "vencidas": 163,
+    "estancadas": 192,
     "sin_evaluar": 184
   },
   "criticas_sin_fecha": [
@@ -149,5 +148,18 @@
       "responsable": "Sebastian"
     }
   ],
-  "vence_pronto": []
+  "vence_pronto": [
+    {
+      "id": "2026-05-06-c001",
+      "tarea": "Cuantificar precisamente la brecha de reajuste (13%) en transportes y mano de obra para sustentacion",
+      "dias": 1,
+      "fecha_limite": "2026-05-13"
+    },
+    {
+      "id": "2026-04-16-c001",
+      "tarea": "Cobrar pago pendiente de Hamilton según lo prometido",
+      "dias": 3,
+      "fecha_limite": "2026-05-15"
+    }
+  ]
 }

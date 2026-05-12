@@ -71,7 +71,7 @@
         "tareas_count": {
           "abiertas": 126,
           "criticas": 42,
-          "vencidas": 76,
+          "vencidas": 112,
           "cerradas_30d": 67
         },
         "tareas_abiertas": [
@@ -138,7 +138,7 @@
         "tareas_count": {
           "abiertas": 8,
           "criticas": 5,
-          "vencidas": 6,
+          "vencidas": 7,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -205,7 +205,7 @@
         "tareas_count": {
           "abiertas": 1,
           "criticas": 0,
-          "vencidas": 0,
+          "vencidas": 1,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -213,7 +213,7 @@
             "id": "2026-04-21-r9-006",
             "tarea": "Investigar plataforma de grabación de pantalla directo desde computadores hacia ruta centralizada",
             "prioridad": "media",
-            "vencida": false,
+            "vencida": true,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-21"
           }
@@ -240,7 +240,7 @@
         "tareas_count": {
           "abiertas": 2,
           "criticas": 0,
-          "vencidas": 0,
+          "vencidas": 1,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -248,7 +248,7 @@
             "id": "2026-04-23-r19-016",
             "tarea": "Solicitar reunión a Banti para renegociar términos de pago/contrato (mencionar posibilidad de tercerizar perforación y a",
             "prioridad": "alta",
-            "vencida": false,
+            "vencida": true,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-23"
           },
@@ -334,7 +334,7 @@
         "tareas_count": {
           "abiertas": 7,
           "criticas": 0,
-          "vencidas": 3,
+          "vencidas": 6,
           "cerradas_30d": 1
         },
         "tareas_abiertas": [
@@ -366,7 +366,7 @@
             "id": "2026-04-21-r11-008",
             "tarea": "Agregar visualización de cuadrillas al rastreador de rutas (actualmente solo muestra vehículos)",
             "prioridad": "alta",
-            "vencida": false,
+            "vencida": true,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-21"
           },
@@ -374,7 +374,7 @@
             "id": "2026-04-21-r11-009",
             "tarea": "Implementar IA para contrastar dirección/tiempo de cuadrilla vs datos liquidación obra (detectar divergencias)",
             "prioridad": "alta",
-            "vencida": false,
+            "vencida": true,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-21"
           }
@@ -485,7 +485,7 @@
         "tareas_count": {
           "abiertas": 4,
           "criticas": 3,
-          "vencidas": 2,
+          "vencidas": 3,
           "cerradas_30d": 1
         },
         "tareas_abiertas": [
@@ -506,20 +506,20 @@
             "fecha_creacion": "2026-04-23"
           },
           {
+            "id": "2026-04-21-r3-001",
+            "tarea": "Hacer auditoría de causación histórica (operativo vs administrativo) en sistemas actuales",
+            "prioridad": "alta",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-21"
+          },
+          {
             "id": "2026-04-30-c004",
             "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amar",
             "prioridad": "critica",
             "vencida": false,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-30"
-          },
-          {
-            "id": "2026-04-21-r3-001",
-            "tarea": "Hacer auditoría de causación histórica (operativo vs administrativo) en sistemas actuales",
-            "prioridad": "alta",
-            "vencida": false,
-            "fecha_limite": null,
-            "fecha_creacion": "2026-04-21"
           }
         ]
       }
@@ -1039,7 +1039,7 @@
         "tareas_count": {
           "abiertas": 1,
           "criticas": 0,
-          "vencidas": 0,
+          "vencidas": 1,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -1047,7 +1047,7 @@
             "id": "2026-04-21-r9-006",
             "tarea": "Investigar plataforma de grabación de pantalla directo desde computadores hacia ruta centralizada",
             "prioridad": "media",
-            "vencida": false,
+            "vencida": true,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-21"
           }
@@ -1467,7 +1467,7 @@
       }
     }
   ],
-  "_enriched_at": "2026-05-10T12:30:02+00:00",
+  "_enriched_at": "2026-05-12T11:30:01+00:00",
   "_enrichment_stats": {
     "personas_con_actividad_neural": 20,
     "personas_total": 50,
