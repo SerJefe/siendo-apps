@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Documentación técnica · Combustible Condugas</title>
+<style>
+:root{ --bg:#faf7ee; --bg2:#f5eed5; --bg3:#091f2e; --gold:#b89949; --red:#a62e2e; --green:#5a7a4a; --text:#091f2e; --muted:#6b7580; --border:#d8c98a;}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:30px 22px 60px}
+h1{font-size:30px;margin:0 0 6px;color:var(--bg3)}
+.sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+.brand{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px}
+nav.toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:28px}
+nav.toc h3{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+nav.toc ol{margin:0;padding-left:20px;font-size:14px}
+nav.toc a{color:var(--bg3);text-decoration:none}
+nav.toc a:hover{color:var(--gold)}
+h2{font-size:22px;margin:36px 0 10px;color:var(--bg3);border-bottom:2px solid var(--gold);padding-bottom:6px}
+h3{font-size:17px;margin:22px 0 8px;color:var(--bg3)}
+h4{font-size:15px;margin:16px 0 6px;color:var(--bg3)}
+p,li{font-size:14.5px}
+ul,ol{padding-left:22px}
+code{background:rgba(9,31,46,.06);padding:1px 6px;border-radius:4px;font-family:'JetBrains Mono','Consolas',monospace;font-size:13px;color:#7a2424}
+pre{background:var(--bg3);color:#faf7ee;padding:14px 16px;border-radius:8px;overflow-x:auto;font-family:'JetBrains Mono','Consolas',monospace;font-size:12.5px;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:#fff;border-radius:6px;overflow:hidden;border:1px solid var(--border)}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid #eee2bb;vertical-align:top}
+th{background:var(--bg2);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+tr:last-child td{border-bottom:none}
+.note{padding:12px 16px;border-left:4px solid var(--gold);background:rgba(184,153,73,.08);margin:14px 0;border-radius:0 6px 6px 0}
+.note.warn{border-color:var(--red);background:rgba(166,46,46,.05)}
+.note.tip{border-color:var(--green);background:rgba(90,122,74,.06)}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;background:rgba(184,153,73,.18);color:#7a6326;margin-right:4px}
+.tag.req{background:rgba(166,46,46,.12);color:var(--red)}
+.tag.opt{background:rgba(107,117,128,.12);color:var(--muted)}
+.tag.method{background:rgba(90,122,74,.15);color:var(--green);font-family:monospace}
+.tag.method.post{background:rgba(184,153,73,.18);color:#7a6326}
+.tag.method.put{background:rgba(110,95,153,.15);color:#5a4d88}
+.tag.method.del{background:rgba(166,46,46,.15);color:var(--red)}
+footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);text-align:center}
+.back{display:inline-block;color:var(--gold);text-decoration:none;font-size:13px;margin-bottom:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a href="fuel-index.html" class="back">← Volver al inicio</a>
+<div class="brand">Condugas · Combustible</div>
+<h1>Documentación técnica</h1>
+<div class="sub">Arquitectura actual y guía de integración con Odoo · v1 · 2026-05-12</div>
+
+<nav class="toc">
+  <h3>Contenido</h3>
+  <ol>
+    <li><a href="#contexto">Contexto y propósito</a></li>
+    <li><a href="#arquitectura">Arquitectura actual (provisional)</a></li>
+    <li><a href="#modelo">Modelo de datos</a></li>
+    <li><a href="#api">API REST</a></li>
+    <li><a href="#odoo-mapping">Mapping a Odoo</a></li>
+    <li><a href="#migracion">Estrategia de migración</a></li>
+    <li><a href="#operacion">Operación día a día</a></li>
+    <li><a href="#seguridad">Seguridad y accesos</a></li>
+    <li><a href="#siguiente">Siguiente paso para el implementador</a></li>
+  </ol>
+</nav>
+
+<h2 id="contexto">1. Contexto y propósito</h2>
+<p>
+Condugas opera con equipos que consumen <strong>gasolina</strong> y <strong>ACPM</strong> (diésel). El combustible se compra en <strong>canecas de 55 galones</strong> y se despacha en campo, equipo por equipo, persona por persona. Hasta ahora no había forma sistemática de medir rendimientos ni detectar consumos anormales.
+</p>
+<p>Esta aplicación provisional resuelve, sin esperar a Odoo:</p>
+<ul>
+  <li>Registro digital del despacho diario por un operario en celular.</li>
+  <li>Cálculo automático de rendimiento por equipo (hora/galón, km/galón o galones/día según corresponda).</li>
+  <li>Alertas de desviación frente al rendimiento esperado.</li>
+  <li>Tableros semanales/mensuales: top consumidores, equipos críticos, alertas activas.</li>
+</ul>
+<div class="note tip">
+<strong>Para el implementador Odoo:</strong> esta app está pensada para <em>vivir hasta que el módulo Odoo esté listo</em>. El modelo de datos ya prevé los puntos de enlace (<code>odoo_*_id</code> en cada entidad) para que la transición sea por reemplazo de fuente, sin perder histórico.
+</div>
+
+<h2 id="arquitectura">2. Arquitectura actual (provisional)</h2>
+
+<h3>2.1 Componentes</h3>
+<table>
+  <thead><tr><th>Componente</th><th>Tecnología</th><th>Ubicación</th></tr></thead>
+  <tbody>
+    <tr><td>Backend HTTP</td><td>Python 3 stdlib (<code>http.server</code>, sin frameworks)</td><td>VPS · puerto 8096 interno · <code>/root/agent-fuel-api.py</code></td></tr>
+    <tr><td>Almacenamiento</td><td>JSON files atómicos (rename-on-write)</td><td>VPS · <code>/root/siendo-apps/data/fuel-*.json</code></td></tr>
+    <tr><td>UI Despacho (móvil)</td><td>HTML/JS/CSS vanilla, sin build</td><td><code>fuel-despacho.html</code></td></tr>
+    <tr><td>UI Admin</td><td>HTML/JS/CSS vanilla</td><td><code>fuel-admin.html</code></td></tr>
+    <tr><td>Tablero</td><td>HTML/JS/CSS vanilla, auto-refresh 60 s</td><td><code>fuel-dashboard.html</code></td></tr>
+    <tr><td>Reverse proxy + Auth</td><td>nginx + htpasswd (bcrypt)</td><td><code>/etc/nginx/.htpasswd-fuel</code> dedicado, independiente del dashboard Ser Siendo</td></tr>
+    <tr><td>Servicio</td><td>systemd unit <code>agent-fuel-api.service</code></td><td>Log: <code>/var/log/agent-fuel-api.log</code></td></tr>
+  </tbody>
+</table>
+
+<h3>2.2 Flujo de datos</h3>
+<pre><code>[Celular del despachador] ─HTTPS+BasicAuth→ [nginx :443]
+                                              │
+                                              ├→ /fuel-*.html       (static)
+                                              └→ /fuel/*            (proxy_pass 127.0.0.1:8096)
+                                                                      │
+                                                                      ↓
+                                                          [agent-fuel-api.py]
+                                                                      │
+                                                                      ↓
+                                                          [/root/siendo-apps/data/*.json]</code></pre>
+
+<h2 id="modelo">3. Modelo de datos</h2>
+<p>Cuatro entidades en JSON. Cada una con un <code>id</code> UUIDv4 y campos auditables (<code>creado_en</code>). Los campos <code>odoo_*_id</code> son nullables y se llenarán durante la migración.</p>
+
+<h3>3.1 <code>fuel-equipos.json</code></h3>
+<table>
+  <thead><tr><th>Campo</th><th>Tipo</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>uuid</td><td>PK interna</td></tr>
+    <tr><td><code>codigo</code></td><td>string</td><td>Referencia/placa visible (ej. <code>COMP-001</code>)</td></tr>
+    <tr><td><code>nombre</code></td><td>string</td><td>Etiqueta humana (ej. <em>Compresor Sullair 185</em>)</td></tr>
+    <tr><td><code>tipo</code></td><td>enum</td><td><code>compresor</code> · <code>vehiculo</code> · <code>planta</code> · <code>motobomba</code> · <code>otro</code></td></tr>
+    <tr><td><code>combustible</code></td><td>enum</td><td><code>gasolina</code> · <code>acpm</code></td></tr>
+    <tr><td><code>medicion</code></td><td>enum</td><td><code>horas</code> (horómetro) · <code>odometro</code> (km) · <code>dia</code> (sin medición)</td></tr>
+    <tr><td><code>rendimiento_esperado</code></td><td>float</td><td>Unidad depende de medición</td></tr>
+    <tr><td><code>unidad_rendimiento</code></td><td>string</td><td>Derivado: <code>hora/gal</code> · <code>km/gal</code> · <code>gal/dia</code></td></tr>
+    <tr><td><code>alerta_umbral_pct</code></td><td>float</td><td>Default 20. Desviación tolerada antes de alertar</td></tr>
+    <tr><td><code>activo</code></td><td>bool</td><td>Soft-delete</td></tr>
+    <tr><td><code>odoo_equipo_id</code></td><td>int | null</td><td>FK a Odoo (<code>fleet.vehicle</code> o <code>maintenance.equipment</code>)</td></tr>
+  </tbody>
+</table>
+
+<h3>3.2 <code>fuel-personas.json</code></h3>
+<table>
+  <thead><tr><th>Campo</th><th>Tipo</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>uuid</td><td>PK interna</td></tr>
+    <tr><td><code>nombre</code></td><td>string</td><td>Nombre completo</td></tr>
+    <tr><td><code>cedula</code></td><td>string</td><td>Documento identificación</td></tr>
+    <tr><td><code>area</code></td><td>string</td><td>Texto libre (obra, taller, etc.)</td></tr>
+    <tr><td><code>rol</code></td><td>enum</td><td><code>operador</code> (recibe) · <code>despachador</code> (entrega) · <code>ambos</code></td></tr>
+    <tr><td><code>activo</code></td><td>bool</td><td>Soft-delete</td></tr>
+    <tr><td><code>odoo_employee_id</code></td><td>int | null</td><td>FK a <code>hr.employee</code></td></tr>
+  </tbody>
+</table>
+
+<h3>3.3 <code>fuel-tanques.json</code> (canecas)</h3>
+<table>
+  <thead><tr><th>Campo</th><th>Tipo</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>uuid</td><td></td></tr>
+    <tr><td><code>codigo</code></td><td>string</td><td>Identificador físico (ej. <code>TQ-20260512-001</code>)</td></tr>
+    <tr><td><code>combustible</code></td><td>enum</td><td><code>gasolina</code> · <code>acpm</code></td></tr>
+    <tr><td><code>galones_iniciales</code></td><td>float</td><td>Default 55</td></tr>
+    <tr><td><code>galones_actuales</code></td><td>float</td><td>Calculado en tiempo de lectura: inicial − suma despachos</td></tr>
+    <tr><td><code>fecha_apertura</code></td><td>iso datetime</td><td></td></tr>
+    <tr><td><code>fecha_cierre</code></td><td>iso datetime · null</td><td></td></tr>
+    <tr><td><code>estado</code></td><td>enum</td><td><code>activo</code> · <code>cerrado</code></td></tr>
+    <tr><td><code>notas</code></td><td>string</td><td>Proveedor, factura, lote</td></tr>
+  </tbody>
+</table>
+
+<h3>3.4 <code>fuel-despachos.json</code> (registro principal)</h3>
+<table>
+  <thead><tr><th>Campo</th><th>Tipo</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>uuid</td><td></td></tr>
+    <tr><td><code>fecha</code></td><td>iso datetime</td><td>TZ Colombia (-05:00). Asignada por el backend si no viene en POST</td></tr>
+    <tr><td><code>tanque_id</code></td><td>uuid (FK)</td><td>De qué caneca sale el combustible</td></tr>
+    <tr><td><code>equipo_id</code></td><td>uuid (FK)</td><td>Equipo receptor</td></tr>
+    <tr><td><code>operador_id</code></td><td>uuid (FK)</td><td>Persona que va a usar el equipo</td></tr>
+    <tr><td><code>despachador_id</code></td><td>uuid (FK)</td><td>Quien entrega físicamente. Puede coincidir con operador</td></tr>
+    <tr><td><code>galones</code></td><td>float</td><td>Validado: &gt; 0 y ≤ saldo de caneca</td></tr>
+    <tr><td><code>lectura</code></td><td>float | null</td><td>Horómetro o odómetro. Obligatorio si equipo.medicion ∈ {horas, odometro}</td></tr>
+    <tr><td><code>notas</code></td><td>string</td><td>Texto libre</td></tr>
+  </tbody>
+</table>
+
+<h3>3.5 Cálculo de rendimiento</h3>
+<p>El rendimiento se calcula entre <strong>dos despachos consecutivos del mismo equipo</strong>:</p>
+<table>
+  <thead><tr><th>Medición</th><th>Fórmula</th><th>Unidad</th><th>Mejor cuando…</th></tr></thead>
+  <tbody>
+    <tr><td><code>horas</code></td><td>(horas<sub>n</sub> − horas<sub>n−1</sub>) / galones<sub>n</sub></td><td>hora/gal</td><td>Más alto</td></tr>
+    <tr><td><code>odometro</code></td><td>(km<sub>n</sub> − km<sub>n−1</sub>) / galones<sub>n</sub></td><td>km/gal</td><td>Más alto</td></tr>
+    <tr><td><code>dia</code></td><td>galones<sub>n</sub> / días entre n y n−1</td><td>gal/día</td><td>Más bajo</td></tr>
+  </tbody>
+</table>
+<p>Alerta cuando <code>|desviación pct| &gt; alerta_umbral_pct</code> (default 20 %).</p>
+
+<h2 id="api">4. API REST</h2>
+<p>Endpoints expuestos en <code>https://&lt;host&gt;/fuel/</code>. Autenticación: HTTP Basic con htpasswd dedicado.</p>
+
+<h3>4.1 Equipos</h3>
+<ul>
+  <li><span class="tag method">GET</span> <code>/fuel/equipos</code> — lista</li>
+  <li><span class="tag method post">POST</span> <code>/fuel/equipos</code> — alta · body: <code>{codigo, nombre, tipo, combustible, medicion, rendimiento_esperado, alerta_umbral_pct?}</code></li>
+  <li><span class="tag method put">PUT</span> <code>/fuel/equipos/&lt;id&gt;</code> — update parcial</li>
+  <li><span class="tag method del">DELETE</span> <code>/fuel/equipos/&lt;id&gt;</code> — soft-delete (<code>activo=false</code>)</li>
+</ul>
+
+<h3>4.2 Personas</h3>
+<ul>
+  <li><span class="tag method">GET</span> <code>/fuel/personas</code></li>
+  <li><span class="tag method post">POST</span> <code>/fuel/personas</code></li>
+  <li><span class="tag method put">PUT</span> <code>/fuel/personas/&lt;id&gt;</code></li>
+</ul>
+
+<h3>4.3 Canecas (tanques)</h3>
+<ul>
+  <li><span class="tag method">GET</span> <code>/fuel/tanques?estado=activo|cerrado|all</code></li>
+  <li><span class="tag method post">POST</span> <code>/fuel/tanques</code> — abre nueva</li>
+  <li><span class="tag method put">PUT</span> <code>/fuel/tanques/&lt;id&gt;/cerrar</code> — cierra</li>
+  <li><span class="tag method put">PUT</span> <code>/fuel/tanques/&lt;id&gt;</code> — edita notas / código</li>
+</ul>
+
+<h3>4.4 Despachos</h3>
+<ul>
+  <li><span class="tag method">GET</span> <code>/fuel/despachos?desde=&amp;hasta=&amp;equipo=&amp;persona=&amp;tanque=</code></li>
+  <li><span class="tag method post">POST</span> <code>/fuel/despachos</code> — devuelve <code>{despacho, rendimiento, galones_restantes_tanque}</code></li>
+  <li><span class="tag method del">DELETE</span> <code>/fuel/despachos/&lt;id&gt;</code> — revierte</li>
+</ul>
+
+<h3>4.5 Reportes</h3>
+<ul>
+  <li><span class="tag method">GET</span> <code>/fuel/rendimientos?equipo=&amp;desde=&amp;hasta=</code></li>
+  <li><span class="tag method">GET</span> <code>/fuel/kpis?periodo=semana|mes</code></li>
+  <li><span class="tag method">GET</span> <code>/fuel/alertas</code></li>
+  <li><span class="tag method">GET</span> <code>/fuel/health</code> — liveness</li>
+</ul>
+
+<h3>4.6 Ejemplo de POST despacho</h3>
+<pre><code>POST /fuel/despachos
+Authorization: Basic &lt;base64(user:pass)&gt;
+Content-Type: application/json
+
+{
+  "tanque_id": "d836d56a-d8d8-4901-98f2-02fd0307df18",
+  "equipo_id": "639fde1a-8189-4ee6-8f33-e5c97ab3d0e3",
+  "operador_id": "a1a59205-338a-4ddc-ae64-7e9c80c135a4",
+  "galones": 5.0,
+  "lectura": 1006
+}
+
+→ 201 Created
+{
+  "despacho": { ... },
+  "rendimiento": {
+    "valor": 1.2,
+    "unidad": "hora/gal",
+    "esperado": 1.2,
+    "desviacion_pct": 0.0,
+    "alerta": false
+  },
+  "galones_restantes_tanque": 45.0
+}</code></pre>
+
+<h2 id="odoo-mapping">5. Mapping a Odoo</h2>
+<p>Se proponen los siguientes modelos Odoo para alojar los datos cuando se integre. Se asumen los módulos estándar <strong>Fleet</strong> y <strong>HR</strong>; las entidades específicas (canecas y despachos) requieren un módulo custom <code>condugas_fuel</code>.</p>
+
+<h3>5.1 Equipos → <code>fleet.vehicle</code> + extensión</h3>
+<table>
+  <thead><tr><th>Campo provisional</th><th>Odoo · <code>fleet.vehicle</code></th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td><code>nombre</code></td><td><code>name</code></td><td></td></tr>
+    <tr><td><code>codigo</code></td><td><code>license_plate</code> o campo custom <code>x_codigo_interno</code></td><td>Para equipos sin placa (compresor) usar campo custom</td></tr>
+    <tr><td><code>tipo</code></td><td>Categoría / <code>vehicle_type_id</code></td><td>Crear categorías: compresor, planta, motobomba</td></tr>
+    <tr><td><code>combustible</code></td><td><code>fuel_type</code></td><td>Mapear: <code>gasoline</code>/<code>diesel</code></td></tr>
+    <tr><td><code>medicion</code></td><td>Campo custom <code>x_unidad_medicion</code></td><td>Selection: horas/odometro/dia</td></tr>
+    <tr><td><code>rendimiento_esperado</code></td><td>Campo custom <code>x_rendimiento_esperado</code> (float)</td><td>Acompañar de un campo Selection con la unidad</td></tr>
+    <tr><td><code>alerta_umbral_pct</code></td><td>Campo custom <code>x_alerta_umbral_pct</code></td><td>Default 20</td></tr>
+    <tr><td><code>activo</code></td><td><code>active</code></td><td>Odoo lo trae standard</td></tr>
+  </tbody>
+</table>
+<div class="note">
+<strong>Alternativa:</strong> si Condugas no tiene módulo Fleet activado y solo necesita inventario, se puede usar <code>maintenance.equipment</code> (módulo Maintenance) que ya tiene campos genéricos.
+</div>
+
+<h3>5.2 Personas → <code>hr.employee</code></h3>
+<table>
+  <thead><tr><th>Campo</th><th>Odoo</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td><code>nombre</code></td><td><code>name</code></td><td></td></tr>
+    <tr><td><code>cedula</code></td><td><code>identification_id</code></td><td></td></tr>
+    <tr><td><code>area</code></td><td><code>department_id</code> o <code>job_id</code></td><td>Si ya existe estructura organizacional</td></tr>
+    <tr><td><code>rol</code></td><td>Campo custom <code>x_fuel_rol</code> Selection</td><td>operador/despachador/ambos</td></tr>
+    <tr><td><code>activo</code></td><td><code>active</code></td><td></td></tr>
+  </tbody>
+</table>
+
+<h3>5.3 Canecas → modelo custom <code>condugas.fuel.tank</code></h3>
+<p>No hay equivalente nativo en Odoo. Crear modelo nuevo:</p>
+<pre><code>class FuelTank(models.Model):
+    _name = 'condugas.fuel.tank'
+    _description = 'Caneca de combustible'
+
+    name = fields.Char(string='Código', required=True)
+    fuel_type = fields.Selection([('gasoline','Gasolina'),('diesel','ACPM')], required=True)
+    gallons_initial = fields.Float(string='Galones iniciales', default=55.0)
+    gallons_used = fields.Float(compute='_compute_gallons_used', store=True)
+    gallons_remaining = fields.Float(compute='_compute_remaining', store=True)
+    open_date = fields.Datetime(default=fields.Datetime.now)
+    close_date = fields.Datetime()
+    state = fields.Selection([('active','Activa'),('closed','Cerrada')], default='active')
+    note = fields.Text()
+    dispatch_ids = fields.One2many('condugas.fuel.dispatch','tank_id')</code></pre>
+
+<h3>5.4 Despachos → modelo custom <code>condugas.fuel.dispatch</code></h3>
+<pre><code>class FuelDispatch(models.Model):
+    _name = 'condugas.fuel.dispatch'
+    _description = 'Despacho de combustible'
+    _order = 'dispatch_date desc'
+
+    dispatch_date = fields.Datetime(required=True, default=fields.Datetime.now)
+    tank_id        = fields.Many2one('condugas.fuel.tank', required=True, ondelete='restrict')
+    vehicle_id     = fields.Many2one('fleet.vehicle', required=True)  # o maintenance.equipment
+    operator_id    = fields.Many2one('hr.employee', required=True, string='Operador')
+    dispatcher_id  = fields.Many2one('hr.employee', required=True, string='Despachador')
+    gallons        = fields.Float(required=True)
+    reading        = fields.Float(string='Lectura horómetro/odómetro')
+    notes          = fields.Text()
+    # Calculados
+    yield_value    = fields.Float(compute='_compute_yield', store=True)
+    yield_unit     = fields.Char(compute='_compute_yield', store=True)
+    deviation_pct  = fields.Float(compute='_compute_yield', store=True)
+    alert          = fields.Boolean(compute='_compute_yield', store=True)</code></pre>
+<p>El <code>_compute_yield</code> replica la lógica del backend actual: busca el despacho previo del mismo <code>vehicle_id</code> ordenado por <code>dispatch_date</code> y aplica la fórmula según la medición.</p>
+
+<h3>5.5 Vista resumen</h3>
+<table>
+  <thead><tr><th>Provisional</th><th>Odoo</th><th>Estrategia</th></tr></thead>
+  <tbody>
+    <tr><td><code>fuel-equipos.json</code></td><td><code>fleet.vehicle</code> + custom fields</td><td>Migrar 1-N, mapear por <code>odoo_equipo_id</code></td></tr>
+    <tr><td><code>fuel-personas.json</code></td><td><code>hr.employee</code> + custom field rol</td><td>Usar registros existentes si los hay; sólo crear faltantes</td></tr>
+    <tr><td><code>fuel-tanques.json</code></td><td><code>condugas.fuel.tank</code> (nuevo)</td><td>Migración directa, sin contraparte previa en Odoo</td></tr>
+    <tr><td><code>fuel-despachos.json</code></td><td><code>condugas.fuel.dispatch</code> (nuevo)</td><td>Importar histórico con referencia a FKs migradas</td></tr>
+  </tbody>
+</table>
+
+<h2 id="migracion">6. Estrategia de migración</h2>
+
+<h3>Fase A — Sincronización dual (recomendada)</h3>
+<p>Mientras se construye el módulo Odoo, la app sigue siendo la fuente operativa. Se implementa un job (cron o webhook) que:</p>
+<ol>
+  <li>Lee periódicamente <code>fuel-*.json</code> (o consume <code>/fuel/despachos?desde=</code>).</li>
+  <li>Crea/actualiza en Odoo los registros faltantes vía XML-RPC.</li>
+  <li>Actualiza <code>odoo_*_id</code> de vuelta en los JSON para que la app conozca el id Odoo.</li>
+</ol>
+<p>Ejemplo de conexión XML-RPC (Python):</p>
+<pre><code>import xmlrpc.client
+url, db, user, pwd = "https://odoo.condugas.co", "condugas", "api@condugas.co", "******"
+common = xmlrpc.client.ServerProxy(f"{url}/xmlrpc/2/common")
+uid    = common.authenticate(db, user, pwd, {})
+models = xmlrpc.client.ServerProxy(f"{url}/xmlrpc/2/object")
+
+# Crear despacho
+new_id = models.execute_kw(db, uid, pwd, 'condugas.fuel.dispatch', 'create', [{
+    'dispatch_date': '2026-05-12 14:30:00',
+    'tank_id':       42,
+    'vehicle_id':    17,
+    'operator_id':   88,
+    'dispatcher_id': 88,
+    'gallons':       5.0,
+    'reading':       1006,
+}])</code></pre>
+<div class="note tip">Ya existen scripts XML-RPC funcionando en el VPS bajo <code>/root/.openclaw/workspace/scripts/</code> (test-odoo-connection.py, analisis-gerencial-odoo.py). Pueden usarse como plantilla. Credenciales en <code>/root/.env-odoo</code>.</div>
+
+<h3>Fase B — Cambio de fuente</h3>
+<p>Cuando el módulo Odoo esté validado en producción:</p>
+<ol>
+  <li>Backup completo de <code>fuel-*.json</code> (snapshot histórico).</li>
+  <li>Apuntar la UI a la API de Odoo (mismos endpoints, distinto base URL). El backend Python pasa a modo proxy o se reemplaza por las vistas Odoo nativas.</li>
+  <li>Mantener la URL <code>/fuel/</code> (al menos en read-only) durante 30 días por si hay reconciliaciones.</li>
+</ol>
+
+<h3>Fase C — Decomisionado</h3>
+<p>Apagar <code>agent-fuel-api.service</code>. Conservar JSON como respaldo frío. Redirigir <code>fuel-*.html</code> al módulo Odoo o eliminar.</p>
+
+<h2 id="operacion">7. Operación día a día</h2>
+<table>
+  <thead><tr><th>Tarea</th><th>Quién</th><th>Frecuencia</th><th>Dónde</th></tr></thead>
+  <tbody>
+    <tr><td>Cargar equipos nuevos</td><td>Admin Condugas</td><td>Al adquirir/dar de baja</td><td>Admin</td></tr>
+    <tr><td>Abrir caneca al recibir compra</td><td>Bodega</td><td>Cada compra</td><td>Admin → Canecas</td></tr>
+    <tr><td>Registrar despacho</td><td>Bodega / despachador</td><td>Por evento</td><td>Despacho (celular)</td></tr>
+    <tr><td>Cerrar caneca al agotarse</td><td>Bodega</td><td>Cuando llega a 0</td><td>Admin → Canecas</td></tr>
+    <tr><td>Revisar alertas</td><td>Supervisión</td><td>Diario</td><td>Tablero</td></tr>
+    <tr><td>Reporte mensual</td><td>Gerencia</td><td>Mensual</td><td>Tablero → periodo Mes</td></tr>
+  </tbody>
+</table>
+
+<h3>7.1 Reglas de validación que aplica el backend</h3>
+<ul>
+  <li>Galones &gt; 0 y &le; saldo de la caneca seleccionada.</li>
+  <li>Tipo de combustible del equipo debe coincidir con el de la caneca.</li>
+  <li>Si <code>equipo.medicion</code> es <code>horas</code> o <code>odometro</code>, la lectura es obligatoria.</li>
+  <li>Tanque debe estar en estado <code>activo</code>.</li>
+  <li>Operador debe existir y estar activo.</li>
+</ul>
+
+<h2 id="seguridad">8. Seguridad y accesos</h2>
+<ul>
+  <li><strong>HTTPS</strong> obligatorio (Let's Encrypt).</li>
+  <li><strong>HTTP Basic Auth</strong> con htpasswd bcrypt: <code>/etc/nginx/.htpasswd-fuel</code>. Independiente del htpasswd general del VPS.</li>
+  <li>Para agregar usuarios: <code>sudo htpasswd -B /etc/nginx/.htpasswd-fuel &lt;usuario&gt;</code></li>
+  <li><strong>noindex</strong> + <code>X-Robots-Tag</code> en headers para que buscadores no indexen.</li>
+  <li>Rate limit nginx (<code>limit_req zone=write_zone burst=20</code>) sobre escrituras.</li>
+  <li>El despachador queda registrado en cada despacho (campo <code>despachador_id</code>), permitiendo auditoría.</li>
+</ul>
+<div class="note warn">
+<strong>Pendiente para producción:</strong> migrar de Basic Auth a un login proper (sesión + cookies) y, si Odoo será proveedor de identidad, usar OAuth2/SSO contra el Odoo de Condugas.
+</div>
+
+<h2 id="siguiente">9. Siguiente paso para el implementador</h2>
+<ol>
+  <li>Revisar este documento y validar mapeo a modelos Odoo con la realidad de Condugas (versión de Odoo, módulos instalados, estructura organizacional existente).</li>
+  <li>Crear módulo <code>condugas_fuel</code>:
+    <ul>
+      <li>Definir <code>condugas.fuel.tank</code> y <code>condugas.fuel.dispatch</code>.</li>
+      <li>Agregar campos custom a <code>fleet.vehicle</code> y <code>hr.employee</code> (medición, rendimiento esperado, rol).</li>
+      <li>Vistas: list/form para cada modelo + kanban para canecas activas.</li>
+      <li>Reportes: pivot/graph con galones por equipo, rendimiento promedio, alertas.</li>
+    </ul>
+  </li>
+  <li>Diseñar el endpoint XML-RPC o REST para que la app provisional pueda hacer push/pull durante Fase A.</li>
+  <li>Plan de carga inicial:
+    <ul>
+      <li>Si hay catálogo de vehículos en Odoo, exportar y poblar primero los <code>odoo_equipo_id</code>.</li>
+      <li>Igual con empleados.</li>
+      <li>Canecas y despachos: importar desde JSON una vez los modelos custom existan.</li>
+    </ul>
+  </li>
+  <li>Definir si la app provisional se conservará como UI móvil para campo (más rápida que Odoo) o si se reemplaza por la app móvil de Odoo.</li>
+</ol>
+
+<footer>
+  Documentación generada el 2026-05-12. Mantener actualizada en <code>/root/siendo-apps/fuel-doc.html</code> (canon).
+</footer>
+</div>
+</body>
+</html>

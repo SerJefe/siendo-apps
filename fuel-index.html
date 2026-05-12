@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#091f2e">
+<title>Combustible · Condugas</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:linear-gradient(160deg,#091f2e 0%,#0f2e44 100%);color:#faf7ee;min-height:100vh;display:flex;flex-direction:column}
+header{padding:28px 20px 20px;text-align:center}
+.brand{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#b89949;font-weight:600;margin-bottom:10px}
+h1{font-size:32px;font-weight:700;margin-bottom:8px}
+.subtitle{font-size:15px;opacity:.7;max-width:520px;margin:0 auto}
+main{flex:1;padding:20px;max-width:600px;margin:0 auto;width:100%;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.card{display:flex;align-items:center;gap:18px;padding:22px 24px;background:rgba(255,255,255,.04);border:1px solid rgba(184,153,73,.25);border-radius:16px;text-decoration:none;color:inherit;transition:.2s;cursor:pointer}
+.card:hover{background:rgba(184,153,73,.10);border-color:rgba(184,153,73,.6);transform:translateY(-2px)}
+.card:active{transform:translateY(0)}
+.icon{font-size:36px;flex-shrink:0;width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:rgba(184,153,73,.15);border-radius:12px}
+.body h2{font-size:18px;font-weight:600;margin-bottom:4px}
+.body p{font-size:13px;opacity:.65;line-height:1.4}
+.card.primary{background:rgba(184,153,73,.15);border-color:#b89949}
+.card.primary .icon{background:rgba(184,153,73,.3);color:#faf7ee}
+footer{padding:24px 20px;text-align:center;font-size:11px;opacity:.4;letter-spacing:.05em}
+footer a{color:#b89949;text-decoration:none}
+.alert-pill{position:fixed;top:14px;right:14px;background:rgba(166,46,46,.9);color:#fff;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:600;display:none}
+.alert-pill.show{display:block}
+@media(min-width:700px){
+  main{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:stretch}
+  .card{flex:1;min-width:240px;flex-direction:column;text-align:center;gap:14px}
+  .card .icon{margin:0 auto}
+}
+</style>
+</head>
+<body>
+<div class="alert-pill" id="alert-pill">⚠ alertas activas</div>
+<header>
+  <div class="brand">Condugas</div>
+  <h1>⛽ Control de combustible</h1>
+  <p class="subtitle">Despacho diario, rendimientos por equipo, alertas de consumo. Gasolina y ACPM.</p>
+</header>
+<main>
+  <a class="card primary" href="fuel-despacho.html">
+    <div class="icon">📱</div>
+    <div class="body">
+      <h2>Despacho</h2>
+      <p>Registrar entrega de combustible (despachador en campo).</p>
+    </div>
+  </a>
+  <a class="card" href="fuel-dashboard.html">
+    <div class="icon">📊</div>
+    <div class="body">
+      <h2>Tablero</h2>
+      <p>KPIs semana/mes, top consumidores, rendimientos y alertas.</p>
+    </div>
+  </a>
+  <a class="card" href="fuel-admin.html">
+    <div class="icon">⚙</div>
+    <div class="body">
+      <h2>Administración</h2>
+      <p>Equipos, personas, canecas y rendimientos esperados.</p>
+    </div>
+  </a>
+</main>
+<footer>
+  Tablero provisional · Diseñado para conexión futura con Odoo · <a href="fuel-doc.html">documentación técnica</a>
+</footer>
+<script>
+fetch('/fuel/alertas',{credentials:'same-origin'}).then(r=>r.json()).then(a=>{
+  if(a && a.length){
+    const p = document.getElementById('alert-pill');
+    p.textContent = '⚠ '+a.length+' alerta'+(a.length>1?'s':'')+' activa'+(a.length>1?'s':'');
+    p.classList.add('show');
+    p.style.cursor='pointer';
+    p.onclick = ()=> location.href='fuel-dashboard.html';
+  }
+}).catch(()=>{});
+</script>
+</body>
+</html>
