@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "4aa32299-6763-41be-8691-23e244a615cf",
+    "codigo": "asdad",
+    "combustible": "acpm",
+    "galones_iniciales": 55.0,
+    "fecha_apertura": "2026-05-12T15:17:17-05:00",
+    "fecha_cierre": null,
+    "estado": "activo",
+    "notas": "Terpel la 30"
+  }
+]

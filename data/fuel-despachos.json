@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "7fc2d968-5986-4354-8103-33d0d2e71246",
+    "fecha": "2026-05-12T15:17:40-05:00",
+    "tanque_id": "4aa32299-6763-41be-8691-23e244a615cf",
+    "equipo_id": "36c8b224-688b-45cf-8272-dce420f284cb",
+    "operador_id": "66432087-b537-44c2-b786-b67bb59a5b22",
+    "despachador_id": "55ae1897-794c-4a8e-a5a9-b920735facb0",
+    "galones": 2.0,
+    "lectura": null,
+    "notas": "",
+    "creado_en": "2026-05-12T15:17:40-05:00"
+  }
+]

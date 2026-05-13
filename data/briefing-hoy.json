@@ -1,60 +1,60 @@
 {
-  "saludo": "Buenos días Sebastián — martes 12 May",
+  "saludo": "Buenos días Sebastián — miércoles 13 May",
   "supervivencia": [
-    "CAJA: 10 días críticos. EBITDA -800k. Revisar movimientos hoy",
-    "EPM Río Negro: ~180M pendientes + no conformidad contrato 24 sin respuesta formal",
-    "Hamilton: cobro vence hoy (deadline 2026-05-15)"
+    "EPM Río Negro: reajuste de 180M vence hoy/mañana. Sin este dinero, contrato OYM se colapsa.",
+    "Caja a 10 días: EBITDA -800M. Revisar movimientos e inversiones YA.",
+    "No conformidad contrato 24: respuesta formal pendiente desde abril."
   ],
   "top_3": [
     {
-      "tarea": "Revisar caja real a hoy + movimiento inversiones + plan pago Condugas",
+      "tarea": "Enviar comunicado + programar cobro directo reajuste EPM Río Negro (~180M)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "10 días de caja, EBITDA negativo, necesitas visión completa",
-      "tarea_id": "critica_caja_familiar"
-    },
-    {
-      "tarea": "Enviar comunicado + programar cobro directo EPM reajustes (~180M)",
-      "categoria": "SUPERVIVENCIA",
-      "porque": "Dinero comprometido, contrato crítico, no puede esperar",
+      "porque": "Sin esto, OYM cae. Contrato depende de este dinero.",
       "tarea_id": "cobrar_reajustes_epm"
     },
     {
-      "tarea": "Base datos clientes única con necesidades + propuestas claras",
-      "categoria": "ESTRATEGIA",
-      "porque": "Score 47. Sin esto no sabes dónde va tu energía",
-      "tarea_id": "clientes_base"
-    }
-  ],
-  "mega_dia": "Obtener visión real de caja + iniciar cobro EPM. Si haces esto, respiras",
-  "contactar_hoy": [
-    {
-      "persona": "Andrea",
-      "motivo": "Deudas Condugas pendientes + plan pago claro"
+      "tarea": "Revisar caja real hoy: saldo, inversiones, movimientos últimas 72h",
+      "categoria": "SUPERVIVENCIA",
+      "porque": "10 días de caja. Necesitas visibilidad completa para decisiones de presión/espera.",
+      "tarea_id": "situacion_caja_familiar"
     },
     {
-      "persona": "Emanuel",
-      "motivo": "Reunión rápida: estructura Siendo, roles, presupuesto"
+      "tarea": "Responder formalmente no conformidad contrato 24 + Plan B si EPM rechaza reajuste",
+      "categoria": "SUPERVIVENCIA",
+      "porque": "Riesgo legal + operativo. Define si terminas o renegocías.",
+      "tarea_id": "no_conformidad_contrato24"
+    }
+  ],
+  "mega_dia": "Cobro EPM + visibilidad de caja = claridad para negociar/terminar OYM",
+  "contactar_hoy": [
+    {
+      "persona": "William Lopez",
+      "motivo": "Estado actual del reajuste EPM. ¿Ya se envió comunicado formal?"
+    },
+    {
+      "persona": "Andrea Bernal",
+      "motivo": "Reconciliación de caja real vs Odoo. Necesitas cifra 100% confiable."
     }
   ],
   "ojo_con": [
-    "110 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "163 tareas vencidas — urgente priorizar",
-    "Facturación sin actualizar 23 días (45% = rojo)",
-    "Hamilton deadline hoy — Lina debe confirmar"
+    "121 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
+    "Hackeo reportado sin detalles de impacto en sistemas de caja",
+    "Gaps contables en Odoo (27M, sueldos, anticipos) siguen sin resolver",
+    "68 tareas críticas abiertas: prioridad brutal hoy"
   ],
   "vencidas": [
-    "Contrato 24: no conformidad sin respuesta formal",
-    "Casa Aguacatala: deadline 2026-05-05 pasó"
+    "Reunión con Pilar/Basa POT Aguactala (deadline 2026-05-05)",
+    "Revisar rendimiento contratos compartidos (deadline 2026-04-20)"
   ],
-  "frase_dia": "Hoy: caja clara + dinero en movimiento. Eso es respirar.",
-  "generado_at": "2026-05-12T11:00:09",
-  "fecha": "2026-05-12",
+  "frase_dia": "Hoy cobras EPM o defines Plan B. Todo lo demás espera.",
+  "generado_at": "2026-05-13T11:00:14",
+  "fecha": "2026-05-13",
   "stats": {
-    "abiertas": 209,
-    "criticas": 63,
-    "vencidas": 163,
-    "estancadas": 192,
-    "sin_evaluar": 184
+    "abiertas": 232,
+    "criticas": 68,
+    "vencidas": 162,
+    "estancadas": 196,
+    "sin_evaluar": 207
   },
   "criticas_sin_fecha": [
     {
@@ -91,7 +91,7 @@
       "id": "2026-04-13-m20be25",
       "tarea": "Resolver deudas con Condugas",
       "prioridad": "alta",
-      "responsable": "Sebastian"
+      "responsable": "Andrea Bernal"
     },
     {
       "id": "2026-04-13-m5960dc",
@@ -152,14 +152,44 @@
     {
       "id": "2026-05-06-c001",
       "tarea": "Cuantificar precisamente la brecha de reajuste (13%) en transportes y mano de obra para sustentacion",
-      "dias": 1,
+      "dias": 0,
       "fecha_limite": "2026-05-13"
     },
     {
-      "id": "2026-04-16-c001",
-      "tarea": "Cobrar pago pendiente de Hamilton según lo prometido",
+      "id": "2026-05-11-c001",
+      "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
+      "dias": 1,
+      "fecha_limite": "2026-05-14"
+    },
+    {
+      "id": "2026-05-11-c002",
+      "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de ",
+      "dias": 1,
+      "fecha_limite": "2026-05-14"
+    },
+    {
+      "id": "2026-05-11-c003",
+      "tarea": "Verificar que Condugas no asuma riesgo de caja personal si contrato no genera utilidad",
+      "dias": 1,
+      "fecha_limite": "2026-05-14"
+    },
+    {
+      "id": "2026-05-11-c004",
+      "tarea": "Explorar negociación alternativa a EPM (no la anterior que falló) para reajuste de contrato",
+      "dias": 1,
+      "fecha_limite": "2026-05-14"
+    },
+    {
+      "id": "2026-05-06-c005",
+      "tarea": "Negociar con EPM asignación mínima de 1.500 de obra mensual para Condugas en contrato Occidental (cr",
       "dias": 3,
-      "fecha_limite": "2026-05-15"
+      "fecha_limite": "2026-05-16"
+    },
+    {
+      "id": "2026-05-11-c005",
+      "tarea": "Implementar ajustes al contrato (1.400M + reajuste 7-8%) y validar viabilidad antes del viernes",
+      "dias": 3,
+      "fecha_limite": "2026-05-16"
     }
   ]
 }

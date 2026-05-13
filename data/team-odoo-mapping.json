@@ -1,0 +1,18 @@
+{
+  "_doc": "Mapeo TEAM_MEMBERS (alias dashboard) -> res.users.id de Odoo Condugas. Si odoo_user_id es null, no se asigna en Odoo (queda en descripcion). Generado 2026-05-12 via /tmp/odoo_inspect.py.",
+  "generated_at": "2026-05-12",
+  "members": [
+    {"alias": "Cami",     "full": "Juan Camilo Berrio",    "rol": "Proyectos",                  "empresa": "Condugas",   "odoo_user_id": 36, "odoo_user_name": "BERRIO TIRADO JUAN CAMILO"},
+    {"alias": "Andre",    "full": "Andrea Bernal",         "rol": "Finanzas y Contable",        "empresa": "Condugas",   "odoo_user_id": 20, "odoo_user_name": "BERNAL VELEZ NATALIA ANDREA"},
+    {"alias": "Willi",    "full": "William Lopez",         "rol": "Admin",                      "empresa": "Condugas",   "odoo_user_id": 12, "odoo_user_name": "LOPEZ GARCIA WILLIAM ALCIDES"},
+    {"alias": "Juan G",   "full": "Juan Guillermo",        "rol": "Estrategia y RRHH",          "empresa": "Condugas",   "odoo_user_id": 13, "odoo_user_name": "PEREZ SOBERON JUAN GUILLERMO"},
+    {"alias": "Carlos H", "full": "Carlos Hernan Lopez",   "rol": "Nuevos Negocios y Logistica","empresa": "Condugas",   "odoo_user_id": 33, "odoo_user_name": "LOPEZ RESTREPO CARLOS HERNAN"},
+    {"alias": "JuanPa",   "full": "Ex-dir Ayura",          "rol": "Productividad",              "empresa": "Condugas",   "odoo_user_id": null, "odoo_user_name": null},
+    {"alias": "Adolfo",   "full": "Adolfo",                "rol": "Mentor Junta",               "empresa": "Junta",      "odoo_user_id": null, "odoo_user_name": null},
+    {"alias": "Lina",     "full": "Lina Russi",            "rol": "Gestora",                    "empresa": "Being CoRe", "odoo_user_id": null, "odoo_user_name": null},
+    {"alias": "Mona",     "full": "Monica Gonzalez",       "rol": "Comercial",                  "empresa": "Being CoRe", "odoo_user_id": null, "odoo_user_name": null},
+    {"alias": "Ema",      "full": "Emanuel",               "rol": "Dev (Odoo)",                 "empresa": "Being CoRe", "odoo_user_id": null, "odoo_user_name": null},
+    {"alias": "Doctor",   "full": "Camilo Marin",          "rol": "Abogado",                    "empresa": "Condugas",   "odoo_user_id": null, "odoo_user_name": null},
+    {"alias": "Sebastian","full": "Sebastian Sanchez",     "rol": "Gerente",                    "empresa": "Condugas",   "odoo_user_id": 19, "odoo_user_name": "SANCHEZ ACEVEDO SEBASTIAN"}
+  ]
+}

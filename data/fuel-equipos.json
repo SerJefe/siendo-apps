@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "36c8b224-688b-45cf-8272-dce420f284cb",
+    "codigo": "2513",
+    "nombre": "compresor",
+    "tipo": "compresor",
+    "combustible": "acpm",
+    "medicion": "dia",
+    "rendimiento_esperado": 0.5,
+    "unidad_rendimiento": "gal/dia",
+    "alerta_umbral_pct": 20.0,
+    "activo": true,
+    "odoo_equipo_id": null,
+    "notas": "",
+    "creado_en": "2026-05-12T15:16:31-05:00"
+  }
+]

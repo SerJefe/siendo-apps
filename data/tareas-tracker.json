@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-12T11:33:07",
+  "ultima_actualizacion": "2026-05-13T11:33:16",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -42,7 +42,8 @@
       "fusiono": [
         "2026-04-06-004"
       ],
-      "eje": "condugas"
+      "eje": "condugas",
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-06-003",
@@ -124,7 +125,8 @@
       "descripcion": "",
       "categoria": "patrimonio",
       "proxima_accion": "Crear informe para EPM",
-      "eje": "patrimonio"
+      "eje": "patrimonio",
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-08-004",
@@ -170,7 +172,11 @@
         "2026-04-14-002"
       ],
       "fecha_limite": "2026-04-20",
-      "eje": "condugas"
+      "eje": "condugas",
+      "delegated_at": "2026-05-12T22:34:40",
+      "odoo_task_id": 582,
+      "odoo_project_id": 11,
+      "odoo_pushed_at": "2026-05-12T22:36:01"
     },
     {
       "id": "2026-04-08-006",
@@ -319,7 +325,8 @@
       "recomendacion": "Dividir",
       "descripcion": "",
       "proxima_accion": "pedir a william fuente de datos",
-      "eje": "condugas"
+      "eje": "condugas",
+      "rol_manual": "rol-8-ser-siendo-dev"
     },
     {
       "id": "2026-04-12-004",
@@ -346,7 +353,8 @@
       "nivel": "alta",
       "recomendacion": "Dividir",
       "descripcion": "",
-      "proxima_accion": "Realizar fuentes de datos disponibles actuales y levantamiento esencial, visual base de l levantado y agrupado. "
+      "proxima_accion": "Realizar fuentes de datos disponibles actuales y levantamiento esencial, visual base de l levantado y agrupado. ",
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-11-001",
@@ -557,7 +565,8 @@
       "recomendacion": "Dividir",
       "descripcion": "",
       "proxima_accion": "Hacer una informacion visual con Ema y Lina para comprender el proyecto completo",
-      "eje": "condugas"
+      "eje": "condugas",
+      "rol_manual": "rol-8-ser-siendo-dev"
     },
     {
       "id": "2026-04-13-mc8a7e3",
@@ -664,7 +673,7 @@
     {
       "id": "2026-04-13-m20be25",
       "tarea": "Resolver deudas con Condugas",
-      "responsable": "Sebastian",
+      "responsable": "Andrea Bernal",
       "prioridad": "alta",
       "fecha_creacion": "2026-04-13",
       "fecha_cierre": null,
@@ -685,7 +694,11 @@
       "puntaje": 42,
       "nivel": "alta",
       "recomendacion": "Programar pronto",
-      "eje": "condugas"
+      "eje": "condugas",
+      "delegated_at": "2026-05-12T21:02:12",
+      "odoo_task_id": 579,
+      "odoo_project_id": 11,
+      "odoo_pushed_at": "2026-05-12T21:02:14"
     },
     {
       "id": "2026-04-13-m5b3b40",
@@ -816,7 +829,8 @@
       "puntaje": 42,
       "nivel": "alta",
       "recomendacion": "Programar pronto",
-      "eje": "condugas"
+      "eje": "condugas",
+      "rol_manual": "rol-8-ser-siendo-dev"
     },
     {
       "id": "2026-04-13-me871ed",
@@ -842,7 +856,8 @@
       "puntaje": 43,
       "nivel": "alta",
       "recomendacion": "Programar pronto",
-      "eje": "condugas"
+      "eje": "condugas",
+      "rol_manual": "rol-5-financiero-personal"
     },
     {
       "id": "2026-04-13-m3137b0",
@@ -953,7 +968,8 @@
       "puntaje": 43,
       "nivel": "alta",
       "recomendacion": "Programar pronto",
-      "eje": "siendo-consulting"
+      "eje": "siendo-consulting",
+      "rol_manual": "rol-8-ser-siendo-dev"
     },
     {
       "id": "2026-04-13-m3515e9",
@@ -1094,7 +1110,8 @@
       "nivel": "alta",
       "recomendacion": "Programar pronto",
       "descripcion": "",
-      "proxima_accion": ""
+      "proxima_accion": "",
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-14-002",
@@ -1236,7 +1253,8 @@
       "puntaje": 39,
       "nivel": "alta",
       "recomendacion": "Programar pronto",
-      "eje": "condugas"
+      "eje": "condugas",
+      "rol_manual": "rol-8-ser-siendo-dev"
     },
     {
       "id": "2026-04-14-m734020",
@@ -1262,7 +1280,8 @@
       "puntaje": 42,
       "nivel": "alta",
       "recomendacion": "Programar pronto",
-      "eje": "condugas"
+      "eje": "condugas",
+      "rol_manual": "rol-8-ser-siendo-dev"
     },
     {
       "id": "2026-04-14-ma26b0c",
@@ -1346,7 +1365,8 @@
       "nivel": "alta",
       "recomendacion": "Programar pronto",
       "descripcion": "",
-      "proxima_accion": "Enviar comunicado y programar cobro directo"
+      "proxima_accion": "Enviar comunicado y programar cobro directo",
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-15-c002",
@@ -1405,7 +1425,7 @@
       "prioridad": "alta",
       "fecha_creacion": "2026-04-16",
       "fecha_cierre": null,
-      "fecha_limite": "2026-05-15",
+      "fecha_limite": "2026-05-30",
       "estado": "abierta",
       "origen": "limitless_auto",
       "contexto": "Condugas - pagos operacionales",
@@ -1552,7 +1572,8 @@
       "nivel": "alta",
       "recomendacion": "Programar pronto",
       "descripcion": "",
-      "proxima_accion": ""
+      "proxima_accion": "",
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-16-c003x",
@@ -1675,7 +1696,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-2-familia"
     },
     {
       "id": "2026-04-15-002",
@@ -1707,7 +1729,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-15-004",
@@ -1723,7 +1746,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-15-005",
@@ -1739,7 +1763,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-15-006",
@@ -1781,7 +1806,8 @@
       "nivel": "alta",
       "recomendacion": "Programar pronto",
       "descripcion": "",
-      "proxima_accion": ""
+      "proxima_accion": "",
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-15-008",
@@ -1869,15 +1895,16 @@
       "responsable": "Sebastian",
       "prioridad": "alta",
       "fecha_creacion": "2026-04-15",
-      "fecha_cierre": null,
-      "estado": "abierta",
+      "fecha_cierre": "2026-05-12",
+      "estado": "cerrada",
       "origen": "limitless",
       "contexto": "Caja - empresa debe dinero a Condugas, debe documentarse cuánto",
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-15-014",
@@ -2039,7 +2066,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-16-003",
@@ -2055,7 +2083,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-16-004",
@@ -2103,7 +2132,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-16-008",
@@ -2135,7 +2165,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-16-r10-014",
@@ -2747,7 +2778,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-21-c001",
@@ -3136,7 +3168,8 @@
       "vencida": true,
       "evaluada": false,
       "categoria": "trabajo",
-      "estancada": true
+      "estancada": true,
+      "rol_manual": "rol-1-condugas"
     },
     {
       "id": "2026-04-16-r14-008",
@@ -5870,6 +5903,345 @@
       "categoria": "condugas",
       "monto_cop": 1400000000,
       "personas": [],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-11-r1-001",
+      "tarea": "Revisar y mapear escenario financiero de Normalización (cloud agent impact, flujo de trabajo)",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Visibilidad de ingresos por región",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r1-002",
+      "tarea": "Analizar dinámica de ingresos Z2, Boyacá, Valle y definir puntos de presión con proveedores",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Priorización de pagos",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r1-003",
+      "tarea": "Negociar tema de operación y mantenimiento (O&M) con EPM para determinar timing de impacto",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Negociación paralela O&M",
+      "tipo": "seguimiento",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r2-005",
+      "tarea": "Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Reunión para definir estrategia contrato",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "rol_manual": "rol-1-condugas",
+      "fecha_limite": "2026-05-24"
+    },
+    {
+      "id": "2026-05-11-r3-006",
+      "tarea": "Evaluar inventario de 1500M OYMAR1 de pesos: plan de venta/distribución para generar caja alternativa",
+      "responsable": "Juan Camilo Berrio",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Generación de flujo sin aumentar presión del contrato",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "rol_manual": "rol-1-condugas",
+      "delegated_at": "2026-05-12T21:20:37",
+      "odoo_task_id": 580,
+      "odoo_project_id": 11,
+      "odoo_pushed_at": "2026-05-12T21:20:38"
+    },
+    {
+      "id": "2026-05-11-r5-007",
+      "tarea": "Programar reunión con madre, Sebastian y miembro del equipo para analizar necesidades de flujo de caja",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Comunicación con stakeholder familia sobre crisis de caja",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r5-008",
+      "tarea": "Terminar carga de producción en Odoo para tener visibilidad confiable de costos y márgenes",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Implementación Odoo, datos confiables",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r6-009",
+      "tarea": "Calcular escenario de cierre acelerado del contrato si no hay reajuste (comparar vs arrastre deficitario)",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Viabilidad terminal del contrato",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r6-010",
+      "tarea": "Validar benchmarking de costos de equipos: comparar contra mercado Bucaramanga (400-500K/día) para Condugas",
+      "responsable": null,
+      "prioridad": "media",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Estructura de costos del contrato",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r7-011",
+      "tarea": "Crear cronograma de eventos/cursos disponible para el equipo",
+      "responsable": "Viviana",
+      "prioridad": "media",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Comunicación interna / Being CoRe",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r9-013",
+      "tarea": "Investigar por qué nómina/sueldos no se asocian correctamente a contratos en Odoo (estructura de reportes)",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Debugging Odoo",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r12-015",
+      "tarea": "Coordinar con hermana para reservar finca familiar durante puente (fechas: 4-5 días más de mayo)",
+      "responsable": "hermana de Sebastian",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Evento familiar",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r17-018",
+      "tarea": "Revisar y negociar reducciones administrativas con administración central (posible ahorro 5-9M mensuales)",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Optimización costos administrativos",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-11-r20-019",
+      "tarea": "Coordinar y realizar visitas a campo (que alguien pueda hacer en lugar de Emmanuel)",
+      "responsable": null,
+      "prioridad": "media",
+      "fecha_creacion": "2026-05-11",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Being CoRe - implementación con cliente",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-08-r3-001",
+      "tarea": "Hablar a primera hora con Camilo Marín sobre reactivación de personal de normalización y estructura de pago desde Condugas",
+      "responsable": "Sebastian",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-08",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Propuesta subcontratación normalización / estrategia flujo caja",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-05-08-r3-002",
+      "tarea": "Validar viabilidad legal y fiscal de pasar empleados a nómina Condugas como aporte en especie a contrato EPM",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-08",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Propuesta estructura pago normalización",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-05-08-r3-003",
+      "tarea": "Diseñar flujo de ConduCash para pago de conductores/personal en obra de normalización cobrada al consorcio",
+      "responsable": null,
+      "prioridad": "media",
+      "fecha_creacion": "2026-05-08",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Mecanismo financiero propuesta normalización",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-05-07-r1-001",
+      "tarea": "Preparar respuestas sobre posicionamiento de precio para junta de las 14:00",
+      "responsable": null,
+      "prioridad": "alta",
+      "fecha_creacion": "2026-05-07",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Negociación / posicionamiento competitivo",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-05-07-r2-003",
+      "tarea": "Establecer manual de procedimientos para reducir actuaciones desde intención sin método",
+      "responsable": null,
+      "prioridad": "media",
+      "fecha_creacion": "2026-05-07",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Procesos operativos",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "trabajo",
+      "estancada": true
+    },
+    {
+      "id": "2026-05-12-c001",
+      "tarea": "Llamar a abogados para definir estrategia de presión/cobranza a contratantes que retuvieron comunidad",
+      "responsable": "Camilo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-12",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-13",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Condugas - crisis de caja",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "abogados"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-12-c002",
+      "tarea": "Estructurar pago a proveedores en dos tranches: 350M ahora (urgente) + 850M después, comunicando que hay visibilidad de siguiente pago en abril",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-12",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-13",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Condugas - gestión flujo de caja",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": 1200000000,
+      "personas": [
+        "proveedores"
+      ],
       "rol_sugerido": "rol-1-condugas"
     }
   ]

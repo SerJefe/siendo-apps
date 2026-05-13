@@ -71,7 +71,37 @@
       "contexto": "Ubicación: Sótano 3, da 37",
       "responsable": null,
       "fecha_rechazo": "2026-05-07"
+    },
+    {
+      "tarea": "Completar configuración de Odoo: mapear producción a estructura de contratos para reconciliar causado vs real",
+      "contexto": "Implementación Odoo",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-12"
+    },
+    {
+      "tarea": "Reconciliar 27M de inventario material en Odoo (qué entró en abril, dónde está)",
+      "contexto": "Auditoria Odoo",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-12"
+    },
+    {
+      "tarea": "Confirmar con Tania/Pony disponibilidad para ir a finca (decisión final para separar)",
+      "contexto": "Evento familiar",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-12"
+    },
+    {
+      "tarea": "Revisar conciliaciones de meses pendientes y validar datos faltantes en facturación (6%, 8%)",
+      "contexto": "Análisis financiero Condugas",
+      "responsable": "Angelita",
+      "fecha_rechazo": "2026-05-12"
+    },
+    {
+      "tarea": "Documentar diagnóstico de cliente ANTES de iniciar intervención (protocolo que ya se discutió con Nelson y Manuel pero no está socializado)",
+      "contexto": "Procesos internos Condugas",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-12"
     }
   ],
-  "ultima_actualizacion": "2026-05-07T15:30:09"
+  "ultima_actualizacion": "2026-05-12T15:32:35"
 }

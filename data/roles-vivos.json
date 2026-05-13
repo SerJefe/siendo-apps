@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-30T14:45:04.832830Z",
+  "generated_at": "2026-05-12T21:31:42.132329Z",
   "fuente_novedades": "dia-v2",
   "dia_v2_fecha": "2026-04-22",
-  "total_abiertos": 196,
+  "total_abiertos": 232,
   "total_novedades": 2,
   "clasificador": "heuristico-keywords-v1",
   "roles": {
@@ -11,9 +11,9 @@
       "emoji": "🏭",
       "color": "#091f2e",
       "ancla_3_decisiones": "sobrevivir_y_recuperar",
-      "abiertos_total": 145,
-      "abiertos_vencidos": 33,
-      "abiertos_criticos": 58,
+      "abiertos_total": 169,
+      "abiertos_vencidos": 38,
+      "abiertos_criticos": 67,
       "abiertos": [
         {
           "id": "2026-04-08-005",
@@ -21,20 +21,9 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 10,
-          "responsable": "Sebastian",
+          "dias_vencida": 22,
+          "responsable": "Juan Camilo Berrio",
           "fecha_creacion": "2026-04-08",
-          "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-16-c001x",
-          "texto": "Preparar documentación de debido proceso ejecutivo con focus en ambiental y reajustes",
-          "prioridad": "critica",
-          "deadline": "2026-04-18",
-          "vencida": true,
-          "dias_vencida": 12,
-          "responsable": "Sebastian Sanchez",
-          "fecha_creacion": "2026-04-16",
           "categoria": "condugas"
         },
         {
@@ -43,7 +32,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 9,
+          "dias_vencida": 21,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -54,31 +43,9 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 6,
+          "dias_vencida": 18,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
-          "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-17-c007",
-          "texto": "Preparar documento para Mario (entrega viernes para lunes, ajuste proporciones mano de obra ~15%)",
-          "prioridad": "critica",
-          "deadline": "2026-04-18",
-          "vencida": true,
-          "dias_vencida": 12,
-          "responsable": "Alberto",
-          "fecha_creacion": "2026-04-17",
-          "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-20-c001",
-          "texto": "Armar plan de defensa y revisar números de caja con Andrea",
-          "prioridad": "critica",
-          "deadline": "2026-04-20",
-          "vencida": true,
-          "dias_vencida": 10,
-          "responsable": "Sebastian Sanchez",
-          "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
         },
         {
@@ -87,7 +54,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 10,
+          "dias_vencida": 22,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -98,29 +65,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 9,
-          "responsable": "Sebastian Sanchez",
-          "fecha_creacion": "2026-04-20",
-          "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-20-c007",
-          "texto": "Compilar información financiera consolidada para junta de mañana",
-          "prioridad": "critica",
-          "deadline": "2026-04-21",
-          "vencida": true,
-          "dias_vencida": 9,
-          "responsable": "Andrea",
-          "fecha_creacion": "2026-04-20",
-          "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-20-c008",
-          "texto": "Exigir a socios cumplimiento de aportes o separación",
-          "prioridad": "critica",
-          "deadline": "2026-04-21",
-          "vencida": true,
-          "dias_vencida": 9,
+          "dias_vencida": 21,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -131,7 +76,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 10,
+          "dias_vencida": 22,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -142,7 +87,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 9,
+          "dias_vencida": 21,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -153,7 +98,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 9,
+          "dias_vencida": 21,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -164,20 +109,75 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 10,
+          "dias_vencida": 22,
           "responsable": "Andrea",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
         },
         {
-          "id": "2026-04-21-c005",
-          "texto": "Establecer transición Odu como obligatoria (mañana y pasado mañana), sin negociación",
+          "id": "2026-04-21-c008",
+          "texto": "Revertir transferencia de 14M COP a papá de Sebastian para cubrir fly pass y mantener nómina operativa",
+          "prioridad": "critica",
+          "deadline": "2026-04-24",
+          "vencida": true,
+          "dias_vencida": 18,
+          "responsable": "Camilo",
+          "fecha_creacion": "2026-04-21",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-22-c001",
+          "texto": "Evaluar y reparar/reemplazar equipo dañado por sobreamperaje",
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 7,
+          "dias_vencida": 19,
+          "responsable": "Unknown",
+          "fecha_creacion": "2026-04-22",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-22-c002",
+          "texto": "Revisar protocolo de seguridad eléctrica en hogar/obra",
+          "prioridad": "critica",
+          "deadline": "2026-04-23",
+          "vencida": true,
+          "dias_vencida": 19,
           "responsable": "Sebastian Sanchez Acevedo",
-          "fecha_creacion": "2026-04-21",
+          "fecha_creacion": "2026-04-22",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-22-c003",
+          "texto": "Definir cifra mínima de caja requerida en 5 días para salvar operación (nómina y proveedores críticos)",
+          "prioridad": "critica",
+          "deadline": "2026-04-27",
+          "vencida": true,
+          "dias_vencida": 15,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-22",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-22-c004",
+          "texto": "Construir narrativa madre (5 bloques): qué pasó, qué está probado, cuánto falta, riesgo para EPM, decisión concreta",
+          "prioridad": "critica",
+          "deadline": "2026-04-23",
+          "vencida": true,
+          "dias_vencida": 19,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-22",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-22-c006",
+          "texto": "Ejecutar 4 rutas simultáneas: 1) Negocio (VP Negocios), 2) Jurídica/Reclamaciones, 3) Portal Pagos Proveedores, 4) Canal Ética/Transparencia",
+          "prioridad": "critica",
+          "deadline": "2026-04-25",
+          "vencida": true,
+          "dias_vencida": 17,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
         }
       ],
@@ -192,15 +192,15 @@
         }
       ],
       "proximo": {
-        "dtstart": "2026-07-21T00:00:00Z",
-        "summary": "[CRITICA] Diseñar e implementar sistema de automatización en Condugas para alcanzar operación 60-70% autónoma en <3 meses",
-        "dias_restantes": 81
+        "dtstart": "2026-05-13T00:00:00Z",
+        "summary": "[CRITICA] Cuantificar precisamente la brecha de reajuste (13%) en transportes y mano de obra para sustentacion de demanda contra responsables",
+        "dias_restantes": 0
       },
       "pulso": {
-        "cerradas_esta_semana": 10,
-        "cerradas_semana_anterior": 5,
+        "cerradas_esta_semana": 33,
+        "cerradas_semana_anterior": 8,
         "tendencia": "subiendo",
-        "delta": 5
+        "delta": 25
       },
       "_personas_vinculadas": [
         {
@@ -208,23 +208,32 @@
           "nombre": "Sebastián Sánchez",
           "apodo": null,
           "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 12,
-          "vencidas_count": 12,
-          "criticas_count": 12
+          "abiertos_count": 11,
+          "vencidas_count": 11,
+          "criticas_count": 11
+        },
+        {
+          "id": "juan-camilo-berrio",
+          "nombre": "Juan Camilo Berrio",
+          "apodo": "Cami",
+          "organizacion": "Condugas S.A. BIC",
+          "abiertos_count": 2,
+          "vencidas_count": 2,
+          "criticas_count": 2
         },
         {
           "id": "andrea-bernal",
           "nombre": "Andrea Bernal",
           "apodo": "Andre",
           "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 2,
-          "vencidas_count": 2,
-          "criticas_count": 2
+          "abiertos_count": 1,
+          "vencidas_count": 1,
+          "criticas_count": 1
         }
       ],
       "_responsables_sin_match": [
         {
-          "nombre_responsable": "Alberto",
+          "nombre_responsable": "Unknown",
           "abiertos_count": 1,
           "vencidas_count": 1,
           "criticas_count": 1
@@ -236,7 +245,7 @@
       "emoji": "🏛️",
       "color": "#8a6f2e",
       "ancla_3_decisiones": "recuperar_control",
-      "abiertos_total": 11,
+      "abiertos_total": 15,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 1,
       "abiertos": [
@@ -296,17 +305,6 @@
           "categoria": "trabajo"
         },
         {
-          "id": "2026-04-22-r22-008",
-          "texto": "Definir frase de 12 palabras que resuma caso sin sonar llorón",
-          "prioridad": "alta",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian",
-          "fecha_creacion": "2026-04-22",
-          "categoria": "trabajo"
-        },
-        {
           "id": "2026-04-24-r17-007",
           "texto": "Revisar arquitectura actual de ERP y periféricos desarrollados internamente",
           "prioridad": "alta",
@@ -315,6 +313,50 @@
           "dias_vencida": null,
           "responsable": "Ingeniero desarrollo",
           "fecha_creacion": "2026-04-24",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-04-r1-001",
+          "texto": "Revisar y clasificar información solicitada la semana pasada a directores",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-04",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-04-r8-008",
+          "texto": "Revisar expectativas claras con equipo directo (Guillermo, Sebastián) sobre roles en reestructuración central",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-05-04",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-11-r1-001",
+          "texto": "Revisar y mapear escenario financiero de Normalización (cloud agent impact, flujo de trabajo)",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-11",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-11-r17-018",
+          "texto": "Revisar y negociar reducciones administrativas con administración central (posible ahorro 5-9M mensuales)",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-11",
           "categoria": "trabajo"
         },
         {
@@ -360,19 +402,30 @@
           "responsable": "Andrés",
           "fecha_creacion": "2026-04-23",
           "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-04-r6-006",
+          "texto": "Agendar reunión esta semana con Erika para revisar contratos y cambios de actividades en Valle",
+          "prioridad": "media",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-04",
+          "categoria": "trabajo"
         }
       ],
       "novedades": [],
       "proximo": {
-        "dtstart": "2026-09-30T00:00:00Z",
-        "summary": "[CRITICA] Reclamar saldo a favor de 1200M COP en septiembre y 1400M COP actuales para cierre de contratos",
-        "dias_restantes": 152
+        "dtstart": "2026-05-14T00:00:00Z",
+        "summary": "[CRITICA] Verificar que Condugas no asuma riesgo de caja personal si contrato no genera utilidad",
+        "dias_restantes": 1
       },
       "pulso": {
-        "cerradas_esta_semana": 0,
+        "cerradas_esta_semana": 1,
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
-        "delta": 0
+        "delta": 1
       },
       "_personas_vinculadas": [
         {
@@ -432,103 +485,42 @@
       "emoji": "🎯",
       "color": "#0f2844",
       "ancla_3_decisiones": "recuperar_y_desarrollar",
-      "abiertos_total": 4,
+      "abiertos_total": 1,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
         {
-          "id": "2026-04-13-m5c9509",
-          "texto": "Presentación empresa junta 20 de abril",
+          "id": "2026-05-07-r1-001",
+          "texto": "Preparar respuestas sobre posicionamiento de precio para junta de las 14:00",
           "prioridad": "alta",
           "deadline": null,
           "vencida": false,
           "dias_vencida": null,
-          "responsable": "Sebastian",
-          "fecha_creacion": "2026-04-13",
-          "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-20-r4-004",
-          "texto": "Preparar presentación de 140 diapositivas para junta asesora",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian Sanchez",
-          "fecha_creacion": "2026-04-20",
-          "categoria": "trabajo"
-        },
-        {
-          "id": "2026-04-20-r4-002",
-          "texto": "Verificar equipos técnicos (micrófono, cámara, videollamada) antes de junta",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Andrés",
-          "fecha_creacion": "2026-04-20",
-          "categoria": "trabajo"
-        },
-        {
-          "id": "2026-04-23-r11-008",
-          "texto": "Involucrar a Humberto y Mario en estrategia de junta/información",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian Sanchez Acevedo",
-          "fecha_creacion": "2026-04-23",
+          "responsable": null,
+          "fecha_creacion": "2026-05-07",
           "categoria": "trabajo"
         }
       ],
       "novedades": [],
       "proximo": null,
       "pulso": {
-        "cerradas_esta_semana": 0,
+        "cerradas_esta_semana": 6,
         "cerradas_semana_anterior": 0,
-        "tendencia": "estable",
-        "delta": 0
+        "tendencia": "subiendo",
+        "delta": 6
       },
-      "_personas_vinculadas": [
-        {
-          "id": "sebastian-sanchez",
-          "nombre": "Sebastián Sánchez",
-          "apodo": null,
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 3,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ],
-      "_responsables_sin_match": [
-        {
-          "nombre_responsable": "Andrés",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ]
+      "_personas_vinculadas": [],
+      "_responsables_sin_match": []
     },
     "rol-4-being-core": {
       "nombre": "Being CoRe (consultoría + desarrollo)",
       "emoji": "🧠",
       "color": "#b89949",
       "ancla_3_decisiones": "desarrollar",
-      "abiertos_total": 28,
+      "abiertos_total": 32,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
-        {
-          "id": "2026-04-13-mc17d26",
-          "texto": "Unificar base de datos y fuentes Siendo Consulting",
-          "prioridad": "alta",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian",
-          "fecha_creacion": "2026-04-13",
-          "categoria": "siendo-consulting"
-        },
         {
           "id": "2026-04-14-006",
           "texto": "Coordinar reunión con leads/clientes para definición estratégica",
@@ -539,39 +531,6 @@
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-14",
           "categoria": "siendo-consulting"
-        },
-        {
-          "id": "2026-04-16-r7-003",
-          "texto": "Aclarar con abogados que comunicaciones fueron por contrato, no acoso",
-          "prioridad": "alta",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian Sanchez",
-          "fecha_creacion": "2026-04-14",
-          "categoria": "trabajo"
-        },
-        {
-          "id": "2026-04-16-003",
-          "texto": "Resolver conflicto contractual con Catalina por mala ejecución",
-          "prioridad": "alta",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian",
-          "fecha_creacion": "2026-04-16",
-          "categoria": "trabajo"
-        },
-        {
-          "id": "2026-04-16-007",
-          "texto": "Contratar digital support/persona de negocio para automatización",
-          "prioridad": "alta",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian",
-          "fecha_creacion": "2026-04-16",
-          "categoria": "trabajo"
         },
         {
           "id": "2026-04-16-r14-008",
@@ -682,15 +641,63 @@
           "responsable": "Ingeniero desarrollo + 2 ingenieros",
           "fecha_creacion": "2026-04-24",
           "categoria": "trabajo"
+        },
+        {
+          "id": "2026-04-24-r23-011",
+          "texto": "Diseñar automatizaciones para 7 modelos de pago diferentes en Odoo",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Ingeniero desarrollo",
+          "fecha_creacion": "2026-04-24",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-04-24-r29-015",
+          "texto": "Grupos escriben manifiesto de comportamientos de jefe para lograr que otros logren",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Participantes (5 grupos de 4)",
+          "fecha_creacion": "2026-04-24",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-06-r5-002",
+          "texto": "Implementar reportes semanales de equipo: sintesis de aprendizajes, errores cometidos, potenciacion al otro, razon del aprendizaje",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-06",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-06-r5-004",
+          "texto": "Diseñar intervencion (renuncias, esquemas, actividades, frecuencia reunion) basada en divergencia/convergencia observada",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-06",
+          "categoria": "trabajo"
         }
       ],
       "novedades": [],
-      "proximo": null,
+      "proximo": {
+        "dtstart": "2026-05-30T00:00:00Z",
+        "summary": "[ALTA] Cobrar pago pendiente de Hamilton según lo prometido",
+        "dias_restantes": 17
+      },
       "pulso": {
-        "cerradas_esta_semana": 0,
-        "cerradas_semana_anterior": 3,
-        "tendencia": "bajando",
-        "delta": -3
+        "cerradas_esta_semana": 2,
+        "cerradas_semana_anterior": 0,
+        "tendencia": "subiendo",
+        "delta": 2
       },
       "_personas_vinculadas": [
         {
@@ -698,7 +705,7 @@
           "nombre": "Sebastián Sánchez",
           "apodo": null,
           "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 10,
+          "abiertos_count": 6,
           "vencidas_count": 0,
           "criticas_count": 0
         },
@@ -736,6 +743,12 @@
           "abiertos_count": 1,
           "vencidas_count": 0,
           "criticas_count": 0
+        },
+        {
+          "nombre_responsable": "Ingeniero desarrollo",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
         }
       ]
     },
@@ -745,30 +758,30 @@
       "color": "#5a7a4a",
       "ancla_3_decisiones": "sobrevivir_y_desarrollar",
       "abiertos_total": 2,
-      "abiertos_vencidos": 1,
+      "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
         {
-          "id": "2026-04-16-c001",
-          "texto": "Cobrar pago pendiente de Hamilton según lo prometido",
-          "prioridad": "alta",
-          "deadline": "2026-04-17",
-          "vencida": true,
-          "dias_vencida": 13,
-          "responsable": "Andrea Bernal",
-          "fecha_creacion": "2026-04-16",
-          "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-15-007",
-          "texto": "Firmar declaración de renta con ayuda de Diana y Alejandro",
+          "id": "2026-04-13-me871ed",
+          "texto": "Carros, créditos, proyecciones",
           "prioridad": "alta",
           "deadline": null,
           "vencida": false,
           "dias_vencida": null,
-          "responsable": "Andrea Bernal",
-          "fecha_creacion": "2026-04-15",
-          "categoria": "trabajo"
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-13",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-16-c001",
+          "texto": "Cobrar pago pendiente de Hamilton según lo prometido",
+          "prioridad": "alta",
+          "deadline": "2026-05-30",
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Lina Russi",
+          "fecha_creacion": "2026-04-16",
+          "categoria": "condugas"
         }
       ],
       "novedades": [],
@@ -781,12 +794,21 @@
       },
       "_personas_vinculadas": [
         {
-          "id": "andrea-bernal",
-          "nombre": "Andrea Bernal",
-          "apodo": "Andre",
+          "id": "sebastian-sanchez",
+          "nombre": "Sebastián Sánchez",
+          "apodo": null,
           "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 2,
-          "vencidas_count": 1,
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "id": "lina-russi",
+          "nombre": "Lina Russi",
+          "apodo": "Lina",
+          "organizacion": "Siendo Consulting / Resulting",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
           "criticas_count": 0
         }
       ],
@@ -797,7 +819,7 @@
       "emoji": "💪",
       "color": "#123b58",
       "ancla_3_decisiones": "sobrevivir",
-      "abiertos_total": 2,
+      "abiertos_total": 3,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
@@ -810,6 +832,17 @@
           "dias_vencida": null,
           "responsable": "quien facilita sesión",
           "fecha_creacion": "2026-04-22",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-04-30-r17-013",
+          "texto": "Implementar rutina de sueno a las 7pm con monitorizacion de senales de irritacion",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-30",
           "categoria": "trabajo"
         },
         {
@@ -836,10 +869,10 @@
       ],
       "proximo": null,
       "pulso": {
-        "cerradas_esta_semana": 0,
+        "cerradas_esta_semana": 2,
         "cerradas_semana_anterior": 0,
-        "tendencia": "estable",
-        "delta": 0
+        "tendencia": "subiendo",
+        "delta": 2
       },
       "_personas_vinculadas": [
         {
@@ -847,7 +880,7 @@
           "nombre": "Sebastián Sánchez",
           "apodo": null,
           "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 1,
+          "abiertos_count": 2,
           "vencidas_count": 0,
           "criticas_count": 0
         }
@@ -919,10 +952,76 @@
       "emoji": "🌱",
       "color": "#003f5c",
       "ancla_3_decisiones": "desarrollar",
-      "abiertos_total": 2,
+      "abiertos_total": 8,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
+        {
+          "id": "2026-04-09-004",
+          "texto": "Desarrollar ERP basado en IA",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Emanuel",
+          "fecha_creacion": "2026-04-09",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-12-003",
+          "texto": "Conectar modelo de KPIs con el briefing para mayor claridad",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Lina Russi",
+          "fecha_creacion": "2026-04-12",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-13-m35598a",
+          "texto": "Proyecto automatizaciones (App para cobra, diagnostico actual, Aleteagogia)",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-13",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-13-mc17d26",
+          "texto": "Unificar base de datos y fuentes Siendo Consulting",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-13",
+          "categoria": "siendo-consulting"
+        },
+        {
+          "id": "2026-04-14-m995aab",
+          "texto": "Estructura siendo, roles, tareas, plata, que hacer y que no hacer",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-14",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-04-14-m734020",
+          "texto": "Clientes actuales para Odoo",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-04-14",
+          "categoria": "condugas"
+        },
         {
           "id": "2026-04-17-r55-022",
           "texto": "Refinar prototipo de herramienta IA para detectar reuniones y generar presentaciones automáticas",
@@ -949,10 +1048,10 @@
       "novedades": [],
       "proximo": null,
       "pulso": {
-        "cerradas_esta_semana": 1,
-        "cerradas_semana_anterior": 0,
+        "cerradas_esta_semana": 0,
+        "cerradas_semana_anterior": 1,
         "tendencia": "estable",
-        "delta": 1
+        "delta": -1
       },
       "_personas_vinculadas": [
         {
@@ -960,7 +1059,25 @@
           "nombre": "Sebastián Sánchez",
           "apodo": null,
           "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 2,
+          "abiertos_count": 6,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "id": "emanuel",
+          "nombre": "Emanuel",
+          "apodo": "Ema",
+          "organizacion": "Siendo Consulting / Resulting",
+          "abiertos_count": 1,
+          "vencidas_count": 0,
+          "criticas_count": 0
+        },
+        {
+          "id": "lina-russi",
+          "nombre": "Lina Russi",
+          "apodo": "Lina",
+          "organizacion": "Siendo Consulting / Resulting",
+          "abiertos_count": 1,
           "vencidas_count": 0,
           "criticas_count": 0
         }
@@ -970,6 +1087,6 @@
   },
   "_enrichment_personas": {
     "personas_total": 50,
-    "roles_con_vinculadas": 8
+    "roles_con_vinculadas": 7
   }
 }

@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "66432087-b537-44c2-b786-b67bb59a5b22",
+    "nombre": "Raul giraldo",
+    "cedula": "254616432",
+    "area": "Daños",
+    "rol": "operador",
+    "activo": true,
+    "odoo_employee_id": null,
+    "creado_en": "2026-05-12T15:16:59-05:00"
+  },
+  {
+    "id": "55ae1897-794c-4a8e-a5a9-b920735facb0",
+    "nombre": "sebastian",
+    "cedula": "",
+    "area": "",
+    "rol": "despachador",
+    "activo": true,
+    "odoo_employee_id": null,
+    "creado_en": "2026-05-12T15:17:40-05:00"
+  }
+]

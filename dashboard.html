@@ -434,8 +434,20 @@ main > section.show{ display: block; }
 </h3>
 <div id="tareas-cerradas" style="display:none"></div>
 
+<h3 style="margin-top:24px;color:#9d7a25">💡 Sugerencias de delegación <span id="deleg-sug-count" style="font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:13px"></span></h3>
+<p style="font-size:11px;color:var(--muted);margin:-6px 0 10px">Tareas de tu pila que se proponen delegar (heurística por rol). <strong>Aceptar</strong> = cambia responsable + crea task en Odoo proyecto <em>Tareas y Proyectos Gerencia General</em>. <strong>Rechazar</strong> = no vuelve a aparecer.</p>
+<div id="deleg-sug-toolbar" style="display:none;margin-bottom:10px;align-items:center;gap:8px;flex-wrap:wrap">
+  <label style="font-size:11px;color:var(--muted);display:flex;align-items:center;gap:5px;cursor:pointer">
+    <input type="checkbox" id="deleg-sug-toggle-all" onchange="toggleAllSuggestions(this.checked)"> seleccionar todas
+  </label>
+  <button onclick="acceptSelectedSuggestions()" style="padding:5px 12px;background:#9d7a25;color:#fff;border:none;border-radius:5px;font-size:11px;font-weight:600;cursor:pointer">Aceptar seleccionadas</button>
+  <button onclick="dismissSelectedSuggestions()" style="padding:5px 12px;background:#fff;color:#7a3d3d;border:1px solid #c8a8a8;border-radius:5px;font-size:11px;cursor:pointer">Rechazar seleccionadas</button>
+  <span id="deleg-sug-selcount" style="font-size:11px;color:var(--muted)"></span>
+</div>
+<div id="deleg-sug-list"></div>
+
 <h3 style="margin-top:24px;color:var(--cyan)">🤝 Delegadas en seguimiento <span id="delegadas-count" style="font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:13px"></span></h3>
-<p style="font-size:11px;color:var(--muted);margin:-6px 0 10px">Agrupadas por miembro del equipo. Click <strong style="color:var(--cyan)">→ delegar</strong> para reasignar, <strong style="color:#9d7a25">→ Odoo</strong> para crearla en project.task con todo el detalle.</p>
+<p style="font-size:11px;color:var(--muted);margin:-6px 0 10px">Agrupadas por miembro del equipo. Click <strong style="color:var(--cyan)">→ delegar</strong> para reasignar (auto-crea en Odoo), <strong style="color:#9d7a25">→ Odoo</strong> para elegir otro proyecto manualmente.</p>
 <div id="delegadas-grouped"></div>
 </section>
 
@@ -627,7 +639,7 @@ function showTab(tab, btn){
   // Re-fire loaders al cambiar de tab · mantiene data fresca
   try {
     if (tab==='panorama' && window.__panoramaReload) window.__panoramaReload();
-    if (tab==='inbox')    { loadPendientes(); loadMisTareas(); loadDelegadasInbox(); }
+    if (tab==='inbox')    { loadPendientes(); loadMisTareas(); loadDelegadasInbox(); loadDelegationSuggestions(); try { loadOdooMetadata(); } catch(e){} }
     if (tab==='agenda')   loadCalendario();
     if (tab==='equipo')   { if (typeof loadEquipo === 'function') loadEquipo(); }
     if (tab==='radar')    loadRadar();
@@ -1752,6 +1764,7 @@ function filterTareas(f) {
 loadPendientes();
 loadMisTareas();
 loadDelegadasInbox();
+loadDelegationSuggestions();
 
 
 // ==========================================
@@ -1902,15 +1915,423 @@ function renderEquipoDrilldown() {
   el.innerHTML = html;
 }
 
-// Delegar: cambiar responsable de una tarea
-async function delegarTarea(taskId, nuevoResponsable) {
+// Delegar (entrada principal): abre modal pre-envio con todos los campos de Odoo.
+// nuevoResponsable = alias O full del miembro a pre-seleccionar.
+function delegarTarea(taskId, nuevoResponsable, motivo) {
+  openDelegationModal(taskId, nuevoResponsable, motivo || '');
+}
+
+// Variante rapida (sin modal): usada para bulk "aceptar seleccionadas".
+async function delegarTareaQuick(taskId, nuevoResponsable, motivo, odooExtra) {
   try {
-    await fetch(API+'/update', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({id:taskId, responsable:nuevoResponsable})});
-    toast('Delegado a ' + nuevoResponsable, 'ok');
+    var r = await fetch(API+'/delegar-y-odoo', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({id:taskId, responsable_full:nuevoResponsable, motivo:motivo||'', odoo: odooExtra||{}})});
+    var d = {}; try { d = await r.json(); } catch(e) {}
+    if (r.ok) {
+      var sufijo = d.odoo_task_id ? ' · Odoo #'+d.odoo_task_id : '';
+      toast('Delegado a ' + nuevoResponsable + sufijo, 'ok');
+    } else if (r.status === 502 && d.delegated_local) {
+      toast('Delegado a ' + nuevoResponsable + ' · Odoo falló: ' + (d.odoo_error||'desconocido'), 'err');
+    } else {
+      toast('Error: ' + (d.error || ('HTTP '+r.status)), 'err');
+    }
     try { loadPendientes(); } catch(e){}
     try { loadMisTareas(); } catch(e){}
     try { loadEquipo(); } catch(e){}
-  } catch(e) { toast('Error al delegar', 'err'); }
+    try { loadDelegationSuggestions(); } catch(e){}
+    return r.ok;
+  } catch(e) { toast('Error al delegar: '+e.message, 'err'); return false; }
+}
+
+// === MODAL DE DELEGACION CON CAMPOS DE ODOO ===
+var _odooMetaCache = null;
+
+async function loadOdooMetadata(force) {
+  if (_odooMetaCache && !force) return _odooMetaCache;
+  try {
+    var r = await fetch(API+'/odoo-task-metadata'+(force?'?t='+Date.now():''));
+    if (!r.ok) throw new Error('HTTP '+r.status);
+    _odooMetaCache = await r.json();
+    return _odooMetaCache;
+  } catch(e) {
+    toast('No se pudo cargar metadata Odoo: '+e.message, 'err');
+    return null;
+  }
+}
+
+function findTeamMember(needle) {
+  if (!needle) return null;
+  var n = String(needle).toLowerCase();
+  for (var i=0; i<TEAM_MEMBERS.length; i++) {
+    var m = TEAM_MEMBERS[i];
+    if (m.alias.toLowerCase() === n || m.full.toLowerCase() === n) return m;
+  }
+  return matchMember(needle);
+}
+
+function findOdooMappingFor(memberFull) {
+  if (!_odooMetaCache || !memberFull) return null;
+  var n = String(memberFull).toLowerCase();
+  var tm = (_odooMetaCache.team_mapping||[]);
+  for (var i=0; i<tm.length; i++) {
+    if ((tm[i].full||'').toLowerCase() === n || (tm[i].alias||'').toLowerCase() === n) return tm[i];
+  }
+  return null;
+}
+
+async function openDelegationModal(taskId, suggestedResponsable, motivo) {
+  // 1) Cargar tarea local
+  var tracker;
+  try {
+    var rt = await fetch(API+'/tareas');
+    tracker = await rt.json();
+  } catch(e) { toast('No se pudo leer tracker','err'); return; }
+  var task = (tracker.tareas||[]).find(function(x){return x.id===taskId});
+  if (!task) { toast('Tarea no encontrada','err'); return; }
+  if (task.odoo_task_id) {
+    if (!confirm('Esta tarea ya esta en Odoo (#'+task.odoo_task_id+'). ¿Crear otra copia?')) return;
+  }
+
+  // 2) Cargar metadata Odoo
+  var meta = await loadOdooMetadata();
+  if (!meta) return;
+
+  // 3) Resolver delegado sugerido
+  var member = findTeamMember(suggestedResponsable);
+  var mapping = member ? findOdooMappingFor(member.full) : null;
+
+  // 4) Pre-llenar descripcion en formato "mensaje al delegado"
+  var primerNombre = member ? member.full.split(' ')[0] : (suggestedResponsable || 'equipo').split(' ')[0];
+  var descParts = [];
+  descParts.push('Hola ' + primerNombre + ',');
+  descParts.push('');
+  descParts.push('Te delego esta tarea:');
+  descParts.push('');
+  if (task.contexto) { descParts.push('Contexto: ' + task.contexto); descParts.push(''); }
+  if (task.proxima_accion) { descParts.push('Lo que necesito: ' + task.proxima_accion); descParts.push(''); }
+  if (task.fecha_limite) { descParts.push('Fecha esperada: ' + task.fecha_limite); descParts.push(''); }
+  descParts.push('Cualquier duda me escribís.');
+  descParts.push('Gracias,');
+  descParts.push('Sebastián');
+  descParts.push('');
+  descParts.push('---');
+  if (motivo) descParts.push('Por qué a vos: ' + motivo);
+  descParts.push('ref: dashboard ' + task.id);
+
+  // 5) Render modal
+  var existing = document.getElementById('deleg-modal'); if (existing) existing.remove();
+  var modal = document.createElement('div');
+  modal.id = 'deleg-modal';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(9,31,46,.6);z-index:9999;display:flex;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto';
+
+  var teamOpts = '<option value="">— elige delegado —</option>';
+  (meta.team_mapping||[]).forEach(function(tm){
+    if (tm.alias === 'Sebastian') return;
+    var tag = tm.odoo_user_id ? '✓ Odoo' : '○ sin user Odoo';
+    var sel = (member && tm.full === member.full) ? ' selected' : '';
+    teamOpts += '<option value="team:'+tm.alias+'"'+sel+'>'+tm.alias+' · '+tm.full+' ('+tm.rol+') — '+tag+'</option>';
+  });
+  teamOpts += '<option disabled>──────────</option>';
+  (meta.users||[]).forEach(function(u){
+    teamOpts += '<option value="user:'+u.id+'">Otro · '+u.name+'</option>';
+  });
+
+  var tagsHtml = (meta.tags||[]).map(function(t){
+    return '<label style="display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:3px 8px;border:1px solid var(--border);border-radius:14px;cursor:pointer;background:#fff"><input type="checkbox" class="dm-tag" value="'+t.id+'" style="margin:0"> '+escapeHtml(t.name)+'</label>';
+  }).join(' ');
+
+  var accountsOpts = '<option value="">— ninguna —</option>' + (meta.accounts||[]).map(function(a){
+    return '<option value="'+a.id+'|'+escapeHtml(a.name)+'">'+escapeHtml(a.name)+'</option>';
+  }).join('');
+
+  var contractsOpts = '<option value="">— ninguno —</option>' + (meta.contracts||[]).map(function(c){
+    var sub = c.partner ? ' · ' + c.partner : '';
+    return '<option value="'+c.id+'">'+escapeHtml(c.name)+escapeHtml(sub)+'</option>';
+  }).join('');
+
+  // Default stage = "Por hacer" (la primera por sequence). Si no hay, vacio (Odoo asigna).
+  var defaultStageId = '';
+  if (meta.stages && meta.stages.length) {
+    var porHacer = meta.stages.find(function(s){ return s.name.toLowerCase().indexOf('hacer') >= 0; });
+    defaultStageId = porHacer ? porHacer.id : meta.stages[0].id;
+  }
+  var stagesOpts = '<option value="">— default Odoo —</option>' + (meta.stages||[]).map(function(s){
+    var sel = (s.id === defaultStageId) ? ' selected' : '';
+    return '<option value="'+s.id+'"'+sel+'>'+escapeHtml(s.name)+'</option>';
+  }).join('');
+
+  // priority pre-pick desde la tarea local
+  var prioMap = {alta:'2', urgente:'3', media:'1', baja:'0'};
+  var prioPre = prioMap[(task.prioridad||'media').toLowerCase()] || '1';
+
+  modal.innerHTML =
+    '<div style="background:#fff;border-radius:12px;max-width:680px;width:100%;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,.3);margin-top:30px">'+
+      '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">'+
+        '<div>'+
+          '<div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Delegar · crear en Odoo · proyecto <em>Tareas y Proyectos Gerencia General</em></div>'+
+          '<h3 style="margin:4px 0 0;color:var(--navy);font-size:16px">'+escapeHtml(task.tarea||'(sin titulo)')+'</h3>'+
+        '</div>'+
+        '<button onclick="document.getElementById(\'deleg-modal\').remove()" style="background:none;border:none;font-size:22px;color:var(--muted);cursor:pointer;line-height:1">×</button>'+
+      '</div>'+
+
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">'+
+        '<div style="grid-column:1/-1">'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Título *</label>'+
+          '<input id="dm-name" value="'+escapeHtml(task.tarea||'').replace(/"/g,'&quot;')+'" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px"/>'+
+        '</div>'+
+        '<div style="grid-column:1/-1">'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Asignado en Odoo *</label>'+
+          '<select id="dm-assignee" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px">'+teamOpts+'</select>'+
+          '<div style="font-size:10px;color:var(--muted);margin-top:3px">Sin user Odoo = queda en descripción; tú quedas como dueño en Odoo.</div>'+
+        '</div>'+
+        '<div>'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Fecha límite</label>'+
+          '<input id="dm-deadline" type="date" value="'+(task.fecha_limite||'')+'" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px"/>'+
+        '</div>'+
+        '<div>'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Prioridad Odoo</label>'+
+          '<select id="dm-priority" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px">'+
+            (meta.priorities||[]).map(function(p){return '<option value="'+p.value+'"'+(p.value===prioPre?' selected':'')+'>'+p.label+'</option>'}).join('')+
+          '</select>'+
+        '</div>'+
+        '<div>'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Etapa (stage)</label>'+
+          '<select id="dm-stage" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px">'+stagesOpts+'</select>'+
+        '</div>'+
+        '<div>'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Horas estimadas</label>'+
+          '<input id="dm-hours" type="number" step="0.5" min="0" placeholder="0" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px"/>'+
+        '</div>'+
+        '<div>'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Contrato (campo Odoo)</label>'+
+          '<select id="dm-contract" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px">'+contractsOpts+'</select>'+
+        '</div>'+
+        '<div>'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Cuenta analítica (en descripción)</label>'+
+          '<select id="dm-account" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;margin-top:2px">'+accountsOpts+'</select>'+
+        '</div>'+
+        '<div style="grid-column:1/-1">'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Etiquetas</label>'+
+          '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">'+tagsHtml+'</div>'+
+        '</div>'+
+        '<div style="grid-column:1/-1">'+
+          '<label style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Mensaje al delegado (se va a Odoo tal cual lo escribas)</label>'+
+          '<div style="font-size:10px;color:var(--muted);margin:2px 0 4px">Redactado para que la persona pueda actuar sin tener que entrar a Odoo a entender nada.</div>'+
+          '<textarea id="dm-desc" rows="10" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:6px;font-size:12.5px;font-family:inherit;margin-top:2px;resize:vertical;line-height:1.5">'+escapeHtml(descParts.join('\n'))+'</textarea>'+
+        '</div>'+
+      '</div>'+
+
+      '<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:18px;padding-top:12px;border-top:1px solid var(--border)">'+
+        '<button onclick="document.getElementById(\'deleg-modal\').remove()" style="padding:8px 14px;border:1px solid var(--border);background:#fff;color:var(--muted);border-radius:6px;font-size:12px;cursor:pointer">Cancelar</button>'+
+        '<button id="dm-submit" onclick="submitDelegationModal(\''+taskId+'\', \''+(motivo||'').replace(/[\'"]/g,'')+'\')" style="padding:8px 18px;background:#9d7a25;color:#fff;border:none;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer">Enviar a Odoo</button>'+
+      '</div>'+
+    '</div>';
+  document.body.appendChild(modal);
+}
+
+async function submitDelegationModal(taskId, motivo) {
+  var btn = document.getElementById('dm-submit');
+  var assigneeVal = (document.getElementById('dm-assignee')||{}).value || '';
+  var name = (document.getElementById('dm-name')||{}).value.trim();
+  var deadline = (document.getElementById('dm-deadline')||{}).value || null;
+  var priority = (document.getElementById('dm-priority')||{}).value || '1';
+  var stageVal = (document.getElementById('dm-stage')||{}).value || '';
+  var hours = (document.getElementById('dm-hours')||{}).value || '';
+  var account = (document.getElementById('dm-account')||{}).value || '';
+  var contract = (document.getElementById('dm-contract')||{}).value || '';
+  var desc = (document.getElementById('dm-desc')||{}).value || '';
+  var tagIds = Array.prototype.slice.call(document.querySelectorAll('.dm-tag:checked')).map(function(cb){return parseInt(cb.value,10)});
+
+  if (!name) { toast('Falta título','err'); return; }
+  if (!assigneeVal) { toast('Elige delegado','err'); return; }
+
+  // Resolver responsable_full + user_ids
+  var responsable_full = '';
+  var user_ids = [];
+  if (assigneeVal.indexOf('team:') === 0) {
+    var alias = assigneeVal.slice(5);
+    var tm = (_odooMetaCache.team_mapping||[]).find(function(x){return x.alias===alias});
+    if (tm) {
+      responsable_full = tm.full;
+      if (tm.odoo_user_id) user_ids.push(tm.odoo_user_id);
+    }
+  } else if (assigneeVal.indexOf('user:') === 0) {
+    var uid = parseInt(assigneeVal.slice(5),10);
+    var u = (_odooMetaCache.users||[]).find(function(x){return x.id===uid});
+    if (u) {
+      responsable_full = u.name;
+      user_ids.push(u.id);
+    }
+  }
+  if (!responsable_full) { toast('No se resolvió delegado','err'); return; }
+
+  // Cuenta analitica → label para anexar a descripcion
+  var cuentaLabel = '';
+  if (account) {
+    var parts = account.split('|');
+    cuentaLabel = parts.length > 1 ? parts[1] : '';
+    if (cuentaLabel && desc.indexOf('Cuenta analítica:') < 0) {
+      desc += '\nCuenta analítica: ' + cuentaLabel;
+    }
+  }
+
+  var odooExtra = {
+    name: name,
+    description: desc,
+    priority: priority,
+  };
+  if (deadline) odooExtra.date_deadline = deadline;
+  if (user_ids.length) odooExtra.user_ids = user_ids;
+  if (tagIds.length) odooExtra.tag_ids = tagIds;
+  if (stageVal) odooExtra.stage_id = parseInt(stageVal, 10);
+  if (hours) odooExtra.allocated_hours = parseFloat(hours);
+  if (cuentaLabel) odooExtra.cuenta_analitica_label = cuentaLabel;
+  if (contract) odooExtra.contract_id = parseInt(contract, 10);
+
+  if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
+  try {
+    var r = await fetch(API+'/delegar-y-odoo', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({id:taskId, responsable_full:responsable_full, motivo:motivo||'', odoo: odooExtra})});
+    var d = {}; try { d = await r.json(); } catch(e) {}
+    if (r.ok) {
+      toast('Creada en Odoo #'+d.odoo_task_id+' · delegada a '+responsable_full, 'ok');
+      document.getElementById('deleg-modal').remove();
+      try { loadMisTareas(); } catch(e){}
+      try { loadEquipo(); } catch(e){}
+      try { loadDelegadasInbox(); } catch(e){}
+      try { loadDelegationSuggestions(); } catch(e){}
+    } else if (r.status === 502 && d.delegated_local) {
+      toast('Delegado local · Odoo falló: ' + (d.odoo_error||''), 'err');
+      if (btn) { btn.disabled = false; btn.textContent = 'Enviar a Odoo'; }
+    } else {
+      toast('Error: ' + (d.error || ('HTTP '+r.status)), 'err');
+      if (btn) { btn.disabled = false; btn.textContent = 'Enviar a Odoo'; }
+    }
+  } catch(e) {
+    toast('Error: '+e.message,'err');
+    if (btn) { btn.disabled = false; btn.textContent = 'Enviar a Odoo'; }
+  }
+}
+
+// === SUGERENCIAS DE DELEGACION ===
+var _delegSuggestions = [];
+
+async function loadDelegationSuggestions() {
+  var box = document.getElementById('deleg-sug-list');
+  var counter = document.getElementById('deleg-sug-count');
+  var toolbar = document.getElementById('deleg-sug-toolbar');
+  if (!box) return;
+  try {
+    var r = await fetch(API+'/delegation-suggestions?t='+Date.now());
+    var d = await r.json();
+    _delegSuggestions = d.suggestions || [];
+  } catch(e) {
+    box.innerHTML = '<div style="font-size:11px;color:var(--muted);padding:8px">No se pudo cargar sugerencias.</div>';
+    return;
+  }
+  if (counter) counter.textContent = _delegSuggestions.length ? '· ' + _delegSuggestions.length + ' pendientes' : '';
+  if (toolbar) toolbar.style.display = _delegSuggestions.length ? 'flex' : 'none';
+  if (!_delegSuggestions.length) {
+    box.innerHTML = '<div style="font-size:11px;color:var(--muted);padding:12px;border:1px dashed var(--border);border-radius:8px;text-align:center">Sin sugerencias pendientes. El agente vuelve a correr cada hora.</div>';
+    updateSuggestionsSelCount();
+    return;
+  }
+  var html = '';
+  _delegSuggestions.forEach(function(s) {
+    var fechaTxt = s.fecha_limite ? 'plazo: '+s.fecha_limite : 'sin plazo';
+    var ptsTxt = s.puntaje ? '· '+s.puntaje+' pts' : '';
+    html +=
+      '<div class="deleg-sug-item" data-task-id="'+s.task_id+'" data-responsable="'+(s.sugerencia_full||'').replace(/"/g,'&quot;')+'" style="display:flex;gap:10px;padding:10px 12px;border:1px solid #e7d9b8;border-radius:8px;margin-bottom:6px;background:rgba(201,168,74,.04);align-items:flex-start">'+
+        '<input type="checkbox" class="deleg-sug-check" onchange="updateSuggestionsSelCount()" style="margin-top:3px;cursor:pointer">'+
+        '<div style="flex:1;min-width:0">'+
+          '<div style="font-size:12.5px;font-weight:500;color:var(--navy);line-height:1.35">'+escapeHtml(s.task_text)+'</div>'+
+          '<div style="font-size:10.5px;color:var(--muted);margin-top:3px">'+
+            '<strong style="color:#9d7a25">→ '+escapeHtml(s.sugerencia_alias)+'</strong> ('+escapeHtml(s.sugerencia_rol)+') · '+
+            escapeHtml(s.motivo)+' · '+fechaTxt+' '+ptsTxt+
+          '</div>'+
+          (s.proxima_accion ? '<div style="font-size:10.5px;color:var(--muted);margin-top:2px;font-style:italic">Próxima: '+escapeHtml(s.proxima_accion)+'</div>' : '')+
+        '</div>'+
+        '<div style="display:flex;gap:5px;flex-shrink:0">'+
+          '<button onclick="acceptSuggestion(\''+s.task_id+'\')" title="Delegar y crear en Odoo" style="background:#9d7a25;color:#fff;border:none;padding:4px 9px;border-radius:4px;font-size:10px;font-weight:600;cursor:pointer">Aceptar</button>'+
+          '<button onclick="dismissSuggestion(\''+s.task_id+'\')" title="Rechazar (no vuelve a aparecer)" style="background:#fff;color:#7a3d3d;border:1px solid #c8a8a8;padding:4px 9px;border-radius:4px;font-size:10px;cursor:pointer">×</button>'+
+        '</div>'+
+      '</div>';
+  });
+  box.innerHTML = html;
+  var allChk = document.getElementById('deleg-sug-toggle-all');
+  if (allChk) allChk.checked = false;
+  updateSuggestionsSelCount();
+}
+
+function escapeHtml(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function toggleAllSuggestions(checked) {
+  document.querySelectorAll('.deleg-sug-check').forEach(function(cb){ cb.checked = checked; });
+  updateSuggestionsSelCount();
+}
+
+function updateSuggestionsSelCount() {
+  var checked = document.querySelectorAll('.deleg-sug-check:checked').length;
+  var lbl = document.getElementById('deleg-sug-selcount');
+  if (lbl) lbl.textContent = checked ? '· '+checked+' marcadas' : '';
+}
+
+async function acceptSuggestion(taskId) {
+  var s = _delegSuggestions.find(function(x){return x.task_id===taskId});
+  if (!s) return;
+  await delegarTarea(taskId, s.sugerencia_full, s.motivo);
+}
+
+async function dismissSuggestion(taskId) {
+  try {
+    var r = await fetch(API+'/dismiss-suggestion', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({id:taskId})});
+    if (r.ok) { toast('Sugerencia rechazada', 'ok'); loadDelegationSuggestions(); }
+    else { toast('No se pudo rechazar', 'err'); }
+  } catch(e) { toast('Error: '+e.message, 'err'); }
+}
+
+async function acceptSelectedSuggestions() {
+  var items = document.querySelectorAll('.deleg-sug-item');
+  var seleccionados = [];
+  items.forEach(function(it) {
+    var cb = it.querySelector('.deleg-sug-check');
+    if (cb && cb.checked) seleccionados.push(it.getAttribute('data-task-id'));
+  });
+  if (!seleccionados.length) { toast('Nada seleccionado', 'err'); return; }
+  if (!confirm('Aceptar '+seleccionados.length+' delegación(es) con defaults (sin abrir modal por cada una)? Asignará el user de Odoo cuando exista mapping.')) return;
+  await loadOdooMetadata();
+  var ok=0, fail=0;
+  for (var i=0; i<seleccionados.length; i++) {
+    var s = _delegSuggestions.find(function(x){return x.task_id===seleccionados[i]});
+    if (!s) continue;
+    var mapping = findOdooMappingFor(s.sugerencia_full);
+    var odooExtra = {};
+    if (mapping && mapping.odoo_user_id) odooExtra.user_ids = [mapping.odoo_user_id];
+    try {
+      var r = await fetch(API+'/delegar-y-odoo', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({id:s.task_id, responsable_full:s.sugerencia_full, motivo:s.motivo, odoo: odooExtra})});
+      if (r.ok) ok++; else fail++;
+    } catch(e) { fail++; }
+  }
+  toast('Aceptadas: '+ok+(fail?(' · fallaron: '+fail):''), fail?'err':'ok');
+  loadDelegationSuggestions();
+  try { loadMisTareas(); } catch(e){}
+  try { loadEquipo(); } catch(e){}
+  try { loadDelegadasInbox(); } catch(e){}
+}
+
+async function dismissSelectedSuggestions() {
+  var items = document.querySelectorAll('.deleg-sug-item');
+  var ids = [];
+  items.forEach(function(it) {
+    var cb = it.querySelector('.deleg-sug-check');
+    if (cb && cb.checked) ids.push(it.getAttribute('data-task-id'));
+  });
+  if (!ids.length) { toast('Nada seleccionado', 'err'); return; }
+  for (var i=0; i<ids.length; i++) {
+    try { await fetch(API+'/dismiss-suggestion', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({id:ids[i]})}); } catch(e){}
+  }
+  toast('Rechazadas: '+ids.length, 'ok');
+  loadDelegationSuggestions();
 }
 
 // Menú popup de delegación (reutilizable)
