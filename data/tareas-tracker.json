@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-13T11:33:16",
+  "ultima_actualizacion": "2026-05-13T23:03:04",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -1695,9 +1695,10 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-2-familia"
+      "rol_manual": "rol-2-familia",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-002",
@@ -1712,8 +1713,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-003",
@@ -1728,9 +1730,10 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-004",
@@ -1745,9 +1748,10 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-005",
@@ -1762,9 +1766,10 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-006",
@@ -1779,8 +1784,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-007",
@@ -1795,7 +1801,7 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": true,
-      "categoria": "trabajo",
+      "categoria": "patrimonio",
       "estancada": true,
       "impacto": 4,
       "urgencia": 4,
@@ -1807,7 +1813,8 @@
       "recomendacion": "Programar pronto",
       "descripcion": "",
       "proxima_accion": "",
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "patrimonio"
     },
     {
       "id": "2026-04-15-008",
@@ -1822,8 +1829,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-009",
@@ -1838,8 +1846,9 @@
       "tipo": "decisión",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-010",
@@ -1854,8 +1863,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-011",
@@ -1870,8 +1880,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-012",
@@ -1886,8 +1897,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-013",
@@ -1902,9 +1914,10 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-15-014",
@@ -1919,10 +1932,11 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
       "motivo_cierre": "fusionada en 2026-04-15-c003",
-      "fusionada_en": "2026-04-15-c003"
+      "fusionada_en": "2026-04-15-c003",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r5-001",
@@ -1937,8 +1951,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r6-002",
@@ -1953,8 +1968,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r7-003",
@@ -1969,8 +1985,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r7-004",
@@ -1985,8 +2002,9 @@
       "tipo": "evidencia",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r7-005",
@@ -2001,8 +2019,9 @@
       "tipo": "comunicacion",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r9-008",
@@ -2017,8 +2036,9 @@
       "tipo": "comunicacion",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r9-009",
@@ -2033,8 +2053,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-001",
@@ -2049,8 +2070,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-002",
@@ -2065,9 +2087,10 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-003",
@@ -2082,9 +2105,10 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-004",
@@ -2099,8 +2123,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-16-006",
@@ -2115,8 +2140,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-007",
@@ -2131,9 +2157,10 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "siendo-consulting",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-16-008",
@@ -2148,8 +2175,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-16-r10-012",
@@ -2164,9 +2192,10 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r10-014",
@@ -2181,10 +2210,11 @@
       "tipo": "organizacion",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
       "motivo_cierre": "fusionada en 2026-04-20-c002",
-      "fusionada_en": "2026-04-20-c002"
+      "fusionada_en": "2026-04-20-c002",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-c001xx",
@@ -2575,8 +2605,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-c002x",
@@ -2724,7 +2755,7 @@
     {
       "id": "2026-04-20-c009",
       "tarea": "Obtener información consolidada de caja y proyecciones para presentación en junta",
-      "responsable": "Andrea",
+      "responsable": "Andrea Bernal",
       "prioridad": "critica",
       "fecha_creacion": "2026-04-20",
       "fecha_cierre": null,
@@ -2740,7 +2771,11 @@
       "personas": [
         "Sebastian Sanchez Acevedo"
       ],
-      "estancada": true
+      "estancada": true,
+      "delegated_at": "2026-05-13T13:40:42",
+      "odoo_task_id": 584,
+      "odoo_project_id": 11,
+      "odoo_pushed_at": "2026-05-13T13:40:59"
     },
     {
       "id": "2026-04-20-c010",
@@ -2777,9 +2812,10 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-c001",
@@ -3167,9 +3203,10 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
-      "rol_manual": "rol-1-condugas"
+      "rol_manual": "rol-1-condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r14-008",
@@ -3184,8 +3221,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-22-c001x",
@@ -3380,7 +3418,10 @@
       "personas": [
         "Camilo"
       ],
-      "estancada": true
+      "estancada": true,
+      "odoo_task_id": 585,
+      "odoo_project_id": 11,
+      "odoo_pushed_at": "2026-05-13T23:03:04"
     },
     {
       "id": "2026-04-23-c006",
@@ -3477,8 +3518,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-27-r12-002",
@@ -3493,8 +3535,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "casa-ozzio",
+      "estancada": true,
+      "eje": "casa-ozzio"
     },
     {
       "id": "2026-04-24-r4-003",
@@ -3509,8 +3552,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-24-r17-007",
@@ -3525,8 +3569,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-24-r17-008",
@@ -3541,8 +3586,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-24-r23-010",
@@ -3557,8 +3603,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-24-r23-011",
@@ -3573,8 +3620,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-24-r23-012",
@@ -3589,8 +3637,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-24-r29-015",
@@ -3605,8 +3654,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-23-r2-003",
@@ -3621,8 +3671,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-23-r2-004",
@@ -3637,8 +3688,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r11-007",
@@ -3653,8 +3705,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r11-008",
@@ -3669,8 +3722,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r12-009",
@@ -3685,8 +3739,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r15-012",
@@ -3701,8 +3756,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r15-013",
@@ -3717,8 +3773,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r19-016",
@@ -3733,8 +3790,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r19-018",
@@ -3749,8 +3807,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r22-007",
@@ -3765,8 +3824,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r22-008",
@@ -3781,8 +3841,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r22-005",
@@ -3797,8 +3858,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r26-010",
@@ -3813,8 +3875,9 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r26-011",
@@ -3829,8 +3892,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r32-014",
@@ -3845,8 +3909,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-22-r26-007",
@@ -3861,8 +3926,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r3-001",
@@ -3877,8 +3943,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r5-002",
@@ -3893,8 +3960,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r7-003",
@@ -3909,10 +3977,11 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "estancada": true,
       "motivo_cierre": "fusionada en 2026-04-21-c004",
-      "fusionada_en": "2026-04-21-c004"
+      "fusionada_en": "2026-04-21-c004",
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r8-004",
@@ -3927,8 +3996,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-21-r8-005",
@@ -3943,8 +4013,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r11-008",
@@ -3959,8 +4030,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r11-009",
@@ -3975,8 +4047,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r11-010",
@@ -3991,8 +4064,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r12-011",
@@ -4007,8 +4081,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r14-012",
@@ -4023,8 +4098,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r0-001",
@@ -4039,8 +4115,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r2-003",
@@ -4055,8 +4132,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r2-001",
@@ -4071,8 +4149,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r9-003",
@@ -4087,8 +4166,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r9-004",
@@ -4103,8 +4183,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r9-005",
@@ -4119,8 +4200,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r8-001",
@@ -4135,8 +4217,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r5-005",
@@ -4151,8 +4234,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r75-009",
@@ -4167,8 +4251,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r82-011",
@@ -4183,8 +4268,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r54-020",
@@ -4199,8 +4285,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r54-021",
@@ -4215,8 +4302,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r55-022",
@@ -4231,8 +4319,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "ser-siendo",
+      "estancada": true,
+      "eje": "ser-siendo"
     },
     {
       "id": "2026-04-16-r2-001",
@@ -4247,8 +4336,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r2-002",
@@ -4263,8 +4353,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r7-005x",
@@ -4279,8 +4370,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r14-012",
@@ -4295,8 +4387,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-16-r28-015",
@@ -4311,8 +4404,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-16-r29-016",
@@ -4327,8 +4421,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-16-r29-017",
@@ -4343,8 +4438,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-24-r2-002",
@@ -4359,8 +4455,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-24-r21-009",
@@ -4375,8 +4472,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-23-r18-014",
@@ -4391,8 +4489,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-23-r18-015",
@@ -4407,8 +4506,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r5-002",
@@ -4423,8 +4523,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r6-003",
@@ -4439,8 +4540,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r18-005",
@@ -4455,8 +4557,9 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r18-006",
@@ -4471,8 +4574,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r18-003",
@@ -4487,8 +4591,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-22-r18-004",
@@ -4503,8 +4608,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r9-006",
@@ -4519,8 +4625,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r9-007",
@@ -4535,8 +4642,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r17-013",
@@ -4551,8 +4659,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r19-015",
@@ -4567,8 +4676,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r19-016",
@@ -4583,8 +4693,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-21-r21-019",
@@ -4599,8 +4710,9 @@
       "tipo": "logistica",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "salud",
+      "estancada": true,
+      "eje": "salud"
     },
     {
       "id": "2026-04-20-r4-004",
@@ -4615,8 +4727,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-20-r4-002",
@@ -4631,8 +4744,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r15-003",
@@ -4647,8 +4761,9 @@
       "tipo": "seguimiento",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r18-004",
@@ -4663,8 +4778,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r28-005",
@@ -4679,8 +4795,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r50-017",
@@ -4695,8 +4812,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r50-018",
@@ -4711,8 +4829,9 @@
       "tipo": "pendiente",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r56-023",
@@ -4727,8 +4846,9 @@
       "tipo": "decision",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-17-r56-024",
@@ -4743,8 +4863,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r10-007",
@@ -4759,8 +4880,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-16-r31-018",
@@ -4775,8 +4897,9 @@
       "tipo": "compromiso",
       "vencida": true,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "siendo-consulting",
+      "estancada": true,
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-04-30-c001",
@@ -4917,8 +5040,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-30-r4-002",
@@ -4933,8 +5057,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-30-r10-008",
@@ -4949,8 +5074,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-30-r10-009",
@@ -4965,8 +5091,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-30-r17-013",
@@ -4981,8 +5108,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "casa-ozzio",
+      "estancada": true,
+      "eje": "casa-ozzio"
     },
     {
       "id": "2026-04-30-r17-014",
@@ -4997,8 +5125,9 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "casa-ozzio",
+      "estancada": true,
+      "eje": "casa-ozzio"
     },
     {
       "id": "2026-04-30-r19-015",
@@ -5013,8 +5142,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "casa-ozzio",
+      "estancada": true,
+      "eje": "casa-ozzio"
     },
     {
       "id": "2026-04-30-r13-011",
@@ -5029,8 +5159,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-30-r13-012",
@@ -5045,8 +5176,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-04-30-r11-010",
@@ -5061,8 +5193,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-c001",
@@ -5276,8 +5409,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r1-001",
@@ -5292,8 +5426,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r2-003",
@@ -5308,8 +5443,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r3-005",
@@ -5324,8 +5460,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r6-006",
@@ -5340,8 +5477,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r8-008",
@@ -5356,8 +5494,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r9-009",
@@ -5372,8 +5511,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r34-013",
@@ -5388,7 +5528,8 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-04-r36-014",
@@ -5403,8 +5544,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-c001",
@@ -5555,8 +5697,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r5-003",
@@ -5571,8 +5714,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r5-004",
@@ -5587,8 +5731,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r5-005",
@@ -5603,8 +5748,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r4-001",
@@ -5619,8 +5765,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r6-006",
@@ -5635,8 +5782,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r9-008",
@@ -5651,8 +5799,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r9-007",
@@ -5667,8 +5816,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r12-010",
@@ -5683,8 +5833,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r12-009",
@@ -5699,8 +5850,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r14-013",
@@ -5715,8 +5867,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r14-012",
@@ -5731,8 +5884,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r15-014",
@@ -5747,8 +5901,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r16-015",
@@ -5763,8 +5918,9 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-06-r13-011",
@@ -5779,8 +5935,9 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-07-c001",
@@ -5918,7 +6075,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r1-002",
@@ -5933,7 +6091,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r1-003",
@@ -5948,7 +6107,8 @@
       "tipo": "seguimiento",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r2-005",
@@ -5963,9 +6123,10 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "rol_manual": "rol-1-condugas",
-      "fecha_limite": "2026-05-24"
+      "fecha_limite": "2026-05-24",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r3-006",
@@ -5980,12 +6141,13 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
+      "categoria": "condugas",
       "rol_manual": "rol-1-condugas",
       "delegated_at": "2026-05-12T21:20:37",
       "odoo_task_id": 580,
       "odoo_project_id": 11,
-      "odoo_pushed_at": "2026-05-12T21:20:38"
+      "odoo_pushed_at": "2026-05-12T21:20:38",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r5-007",
@@ -6000,7 +6162,8 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r5-008",
@@ -6015,7 +6178,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r6-009",
@@ -6030,7 +6194,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r6-010",
@@ -6045,7 +6210,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r7-011",
@@ -6060,7 +6226,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "siendo-consulting",
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-05-11-r9-013",
@@ -6075,7 +6242,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r12-015",
@@ -6090,7 +6258,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r17-018",
@@ -6105,7 +6274,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "condugas",
+      "eje": "condugas"
     },
     {
       "id": "2026-05-11-r20-019",
@@ -6120,7 +6290,8 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo"
+      "categoria": "siendo-consulting",
+      "eje": "siendo-consulting"
     },
     {
       "id": "2026-05-08-r3-001",
@@ -6135,8 +6306,9 @@
       "tipo": "compromiso",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-08-r3-002",
@@ -6151,8 +6323,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-08-r3-003",
@@ -6167,8 +6340,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-07-r1-001",
@@ -6183,8 +6357,9 @@
       "tipo": "pendiente",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-07-r2-003",
@@ -6199,8 +6374,9 @@
       "tipo": "decision",
       "vencida": false,
       "evaluada": false,
-      "categoria": "trabajo",
-      "estancada": true
+      "categoria": "condugas",
+      "estancada": true,
+      "eje": "condugas"
     },
     {
       "id": "2026-05-12-c001",
@@ -6243,6 +6419,38 @@
         "proveedores"
       ],
       "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-12-r3-002",
+      "tarea": "Explorar con Rafa arrendamiento de espacio para centro de yoga/pilates/wellness en lote disponible",
+      "responsable": "Sebastian",
+      "prioridad": "media",
+      "fecha_creacion": "2026-05-12",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Diversificación de ingresos en parcelación",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "eje": "condugas"
+    },
+    {
+      "id": "2026-05-12-r8-005",
+      "tarea": "Conversar en privado en casa sobre situación con Camilo (declaración, cómo proceder en Dojo)",
+      "responsable": "Sebastian",
+      "prioridad": "media",
+      "fecha_creacion": "2026-05-12",
+      "fecha_cierre": null,
+      "estado": "abierta",
+      "origen": "limitless",
+      "contexto": "Asunto personal y laboral (Dojo)",
+      "tipo": "pendiente",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "siendo-consulting",
+      "eje": "siendo-consulting"
     }
   ]
 }
