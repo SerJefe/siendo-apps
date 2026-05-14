@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard CxP — Condugas</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f172a;color:#e2e8f0;padding:20px}
+.header{text-align:center;margin-bottom:24px}
+.header h1{font-size:24px;color:#38bdf8}
+.header .date{color:#94a3b8;font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.kpi{background:#1e293b;border-radius:12px;padding:20px;text-align:center;border-left:4px solid}
+.kpi .label{color:#94a3b8;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.kpi .value{font-size:28px;font-weight:700;margin-top:4px}
+.kpi .sub{color:#64748b;font-size:12px;margin-top:4px}
+.kpi.total{border-color:#38bdf8}.kpi.total .value{color:#38bdf8}
+.kpi.overdue{border-color:#f43f5e}.kpi.overdue .value{color:#f43f5e}
+.kpi.current{border-color:#22c55e}.kpi.current .value{color:#22c55e}
+.kpi.count{border-color:#f59e0b}.kpi.count .value{color:#f59e0b}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.card{background:#1e293b;border-radius:12px;padding:20px}
+.card h3{color:#38bdf8;font-size:14px;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #334155;padding-bottom:8px}
+.full{grid-column:1/-1}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:#94a3b8;font-weight:600;padding:8px 12px;border-bottom:1px solid #334155}
+td{padding:8px 12px;border-bottom:1px solid #1e293b}
+tr:hover td{background:#334155}
+.amount{text-align:right;font-variant-numeric:tabular-nums}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}
+.badge.danger{background:#7f1d1d;color:#fca5a5}
+.badge.warning{background:#78350f;color:#fcd34d}
+.badge.ok{background:#14532d;color:#86efac}
+.bar-row{display:flex;align-items:center;margin-bottom:8px;font-size:13px}
+.bar-row .name{width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-row .bar-bg{flex:1;height:24px;background:#334155;border-radius:4px;margin:0 12px;position:relative;overflow:hidden}
+.bar-row .bar-fill{height:100%;border-radius:4px;position:absolute;left:0;top:0}
+.bar-row .bar-overdue{background:#f43f5e}
+.bar-row .bar-current{background:#22c55e}
+.bar-row .val{width:120px;text-align:right;font-variant-numeric:tabular-nums;color:#94a3b8}
+.health-indicator{display:flex;align-items:center;gap:8px;margin-top:12px;padding:12px;background:#334155;border-radius:8px}
+.health-dot{width:12px;height:12px;border-radius:50%}
+.health-dot.red{background:#f43f5e}
+.health-dot.yellow{background:#f59e0b}
+.health-dot.green{background:#22c55e}
+@media(max-width:768px){.kpis,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>📊 Dashboard Cuentas por Pagar — Condugas</h1>
+<div class="date" id="genDate"></div>
+</div>
+
+<div class="kpis">
+<div class="kpi total"><div class="label">Total CxP</div><div class="value" id="kpiTotal"></div><div class="sub" id="kpiTotalCount"></div></div>
+<div class="kpi overdue"><div class="label">Vencidas</div><div class="value" id="kpiOverdue"></div><div class="sub" id="kpiOverdueCount"></div></div>
+<div class="kpi current"><div class="label">Al día</div><div class="value" id="kpiCurrent"></div><div class="sub" id="kpiCurrentPct"></div></div>
+<div class="kpi count"><div class="label">% Sanidad</div><div class="value" id="kpiHealth"></div><div class="sub">Meta: > 50%</div></div>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>🎯 Aging — Antigüedad de Vencimientos</h3>
+<canvas id="agingChart" height="260"></canvas>
+</div>
+<div class="card">
+<h3>📋 Por Contrato</h3>
+<canvas id="contractChart" height="260"></canvas>
+</div>
+</div>
+
+<div class="grid">
+<div class="card full">
+<h3>🏢 Top 15 Proveedores — Saldo Pendiente</h3>
+<div id="partnerBars"></div>
+</div>
+</div>
+
+<div class="grid">
+<div class="card full">
+<h3>📑 Detalle — Facturas más vencidas (Top 50)</h3>
+<div style="overflow-x:auto">
+<table id="detailTable">
+<thead><tr><th>Proveedor</th><th>Factura</th><th>Ref</th><th>Contrato</th><th>Vencimiento</th><th>Días</th><th class="amount">Monto</th><th>Estado</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="health-indicator" id="healthBar">
+<div class="health-dot" id="healthDot"></div>
+<div id="healthText"></div>
+</div>
+
+<script>
+const DATA = {"generated": "2026-03-19", "summary": {"total_cxp": 1705843564.56, "total_overdue": 1346867490.32, "count_total": 622, "count_overdue": 504}, "aging": {"> 90 d\u00edas": 2091098.73, "61-90 d\u00edas": 0, "31-60 d\u00edas": 300346364.14000005, "1-30 d\u00edas": 1044430027.4499998, "Al d\u00eda": 358976074.24000007}, "top_partners": [{"name": "GASES DE OCCIDENTE SA ESP", "total": 210679178.07999995, "overdue": 183629123.85999995, "items": 16}, {"name": "BENAVIDES RUIZ CRISTIAN JEFERSON", "total": 176837939.06, "overdue": 176837939.06, "items": 2}, {"name": "CONSTRUTEM S A S", "total": 126428727.1, "overdue": 112688170.6, "items": 34}, {"name": "EDEMCO S.A.S", "total": 67844634.62, "overdue": 4664419.2, "items": 9}, {"name": "JAIRO CASTANEDA D & ASOCIADOS LTDA", "total": 55920000.0, "overdue": 0, "items": 1}, {"name": "COLOMBIANA DE COMERCIO  S A", "total": 46980600.0, "overdue": 46980600.0, "items": 1}, {"name": "COLOMBIANA DE EXTRUSION S.A. EXTRUCOL", "total": 44205987.19, "overdue": 31420737.39, "items": 4}, {"name": "REPRESENTACIONES COMERCIALES NOHRA GRANADOS RAMIREZ Y CIA SAS", "total": 42895111.53, "overdue": 34363071.82, "items": 7}, {"name": "LOGISLAND S A S", "total": 42851823.3, "overdue": 42851823.3, "items": 5}, {"name": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.", "total": 30772254.36, "overdue": 30772254.36, "items": 11}, {"name": "DISTRIBUCIONES CARMONA Y CIA \"DISCAR\" S.A.S.", "total": 27526112.52, "overdue": 7473335.38, "items": 40}, {"name": "SOCIEDAD CARGO S A S", "total": 24421061.61, "overdue": 24421061.61, "items": 8}, {"name": "HABITAMOS PROPIEDAD RAIZ S A S", "total": 24104850.0, "overdue": 24104850.0, "items": 2}, {"name": "417 EXPRESS TRANSPORTE ESPECIAL S.A.S.", "total": 22316916.6, "overdue": 22316916.6, "items": 3}, {"name": "PETRO USUGA ROBERT ANDRES", "total": 22050000.0, "overdue": 22050000.0, "items": 8}, {"name": "ARIZA & MARIN S A S", "total": 21528825.84, "overdue": 21528825.84, "items": 3}, {"name": "SAAVEDRA BAUTISTA SERGIO EDUARDO", "total": 19783069.02, "overdue": 19783069.02, "items": 1}, {"name": "RIOS Y CIA S A S", "total": 19326658.0, "overdue": 19326658.0, "items": 2}, {"name": "E-SYSTEMS S A S", "total": 18925383.84, "overdue": 18925383.84, "items": 6}, {"name": "TIENDAS S.A", "total": 18571120.6, "overdue": 0, "items": 6}], "contracts": [{"name": "Sin asignar", "total": 367487367.88999987, "overdue": 317646802.09999996, "items": 183}, {"name": "P\u00e9rdidas", "total": 340343105.7400002, "overdue": 243559392.54000005, "items": 106}, {"name": "O&M Z2", "total": 308232599.02, "overdue": 159336429.62, "items": 98}, {"name": "Boyac\u00e1", "total": 242997307.47000003, "overdue": 239782307.47000003, "items": 36}, {"name": "Valle", "total": 160284661.13, "overdue": 160284661.13, "items": 50}, {"name": "Admin Central", "total": 129928337.95, "overdue": 127071415.42, "items": 60}, {"name": "Nuevos Negocios", "total": 72236862.92, "overdue": 14881362.6, "items": 23}, {"name": "Jeric\u00f3", "total": 41764418.120000005, "overdue": 41736215.120000005, "items": 21}, {"name": "Bucaramanga", "total": 28996054.22, "overdue": 28996054.22, "items": 11}, {"name": "Floridablanca", "total": 13572850.1, "overdue": 13572850.1, "items": 34}], "detail": [{"partner": "SOLIS VALENCIA YULI MAGALI", "ref": "DSVR01876", "move": "BILL/2026/02/0057", "date": "2026-02-20", "due": "2018-11-30", "days": 2666, "amount": 400000.0, "bucket": "> 90 d\u00edas", "contract": "Sin asignar"}, {"partner": "ACOSTA CARLOS FELIPE", "ref": "DSVR02024", "move": "BILL/2026/03/0019", "date": "2026-03-10", "due": "2023-08-05", "days": 957, "amount": 400000.0, "bucket": "> 90 d\u00edas", "contract": "Valle"}, {"partner": "VEGAS SUMINISTROS EMPRESARIALES S A S", "ref": "001CT116489", "move": "BILL/2026/02/0117", "date": "2026-02-20", "due": "2025-05-02", "days": 321, "amount": 1207798.73, "bucket": "> 90 d\u00edas", "contract": "Sin asignar"}, {"partner": "PAPELERIA EL CID S.A.S", "ref": "PCE89171", "move": "BILL/2026/02/0305", "date": "2026-02-04", "due": "2025-09-15", "days": 185, "amount": 83300.0, "bucket": "> 90 d\u00edas", "contract": "Sin asignar"}, {"partner": "VALLEJO CARDONA JULIO CESAR", "ref": "DSVR01918", "move": "BILL/2026/02/0069", "date": "2026-02-20", "due": "2026-01-26", "days": 52, "amount": 3326400.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "PALACIOS PALACIOS NICOLE", "ref": "DSVR01917", "move": "BILL/2026/02/0071", "date": "2026-02-11", "due": "2026-01-26", "days": 52, "amount": 3603600.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "LEAL MARTINEZ CARLOS ALBERTO", "ref": "CC", "move": "BILL/2026/02/0221", "date": "2026-02-26", "due": "2026-02-01", "days": 46, "amount": 300000.0, "bucket": "31-60 d\u00edas", "contract": "Admin Central"}, {"partner": "LOPEZ MANCERA LILIA INES", "ref": "DSVR01875", "move": "BILL/2026/02/0060", "date": "2026-02-20", "due": "2026-02-02", "days": 45, "amount": 300000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "RIVERA BLANDON JUAN CAMILO", "ref": "1022", "move": "BILL/2026/02/0238", "date": "2026-02-26", "due": "2026-02-02", "days": 45, "amount": 1440000.0, "bucket": "31-60 d\u00edas", "contract": "Nuevos Negocios"}, {"partner": "ESTACION DE SERVICI O EL CARAR", "ref": "COMB222834", "move": "BILL/2026/03/002-5", "date": "2026-02-28", "due": "2026-02-02", "days": 45, "amount": 150000.07, "bucket": "31-60 d\u00edas", "contract": "Boyac\u00e1"}, {"partner": "SEGUROS DE VIDA SURAMERICANA S.A.", "ref": "20833402540", "move": "BILL/2026/02/0313", "date": "2026-02-28", "due": "2026-02-03", "days": 44, "amount": 271078.0, "bucket": "31-60 d\u00edas", "contract": "Admin Central"}, {"partner": "SIGA OIL SA", "ref": "FE43797", "move": "BILL/2026/02/0354", "date": "2026-02-28", "due": "2026-02-03", "days": 44, "amount": 132855.95, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "SEGUROS DE VIDA SURAMERICANA S.A.", "ref": "20833402550", "move": "BILL/2026/02/0324", "date": "2026-02-28", "due": "2026-02-03", "days": 44, "amount": 2274480.0, "bucket": "31-60 d\u00edas", "contract": "Admin Central"}, {"partner": "MORA LOZANO LORENA", "ref": "DSVR01877", "move": "BILL/2026/02/0072", "date": "2026-02-12", "due": "2026-02-04", "days": 43, "amount": 500000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "CAMARGO LUISA FERNANDA", "ref": "288", "move": "BILL/2026/02/0026", "date": "2026-02-13", "due": "2026-02-04", "days": 43, "amount": 980000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110170", "move": "BILL/2026/02/0005", "date": "2026-02-16", "due": "2026-02-04", "days": 43, "amount": 26000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110182", "move": "BILL/2026/02/0004", "date": "2026-02-16", "due": "2026-02-04", "days": 43, "amount": 45000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110181", "move": "BILL/2026/02/0003", "date": "2026-02-16", "due": "2026-02-04", "days": 43, "amount": 45000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110183", "move": "BILL/2026/02/0002", "date": "2026-02-16", "due": "2026-02-04", "days": 43, "amount": 30000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "SANTOS ALDANA MARLEN", "ref": "AE46228", "move": "BILL/2026/02/0333", "date": "2026-02-28", "due": "2026-02-04", "days": 43, "amount": 862903.0, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "ELECTRIFICADORA DE SANTANDER S.A. ESP", "ref": "FACT244040486", "move": "BILL/2026/02/0363", "date": "2026-02-28", "due": "2026-02-04", "days": 43, "amount": 211561.0, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "PAPELERIA EL CID S.A.S", "ref": "PCE89173", "move": "BILL/2026/02/0031", "date": "2026-02-05", "due": "2026-02-04", "days": 43, "amount": 83300.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "PAPELERIA EL CID S.A.S", "ref": "89172", "move": "BILL/2026/02/0133", "date": "2026-02-25", "due": "2026-02-04", "days": 43, "amount": 83300.0, "bucket": "31-60 d\u00edas", "contract": "O&M Z2"}, {"partner": "COLOMBIA MAS  TV SAS", "ref": "E0316214", "move": "BILL/2026/02/0127", "date": "2026-02-17", "due": "2026-02-04", "days": 43, "amount": 1831692.03, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.", "ref": "DEE41039665", "move": "BILL/2026/02/0212", "date": "2026-02-04", "due": "2026-02-04", "days": 43, "amount": 1987178.31, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "FUNDACION ACCIONES CON INGENIERIA COLOMBIANA", "ref": "ACIC483", "move": "BILL/2026/02/0030", "date": "2026-02-04", "due": "2026-02-05", "days": 42, "amount": 711750.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "PAPELERIA EL CID S.A.S", "ref": "PCE89147", "move": "BILL/2026/02/0306", "date": "2026-02-28", "due": "2026-02-05", "days": 42, "amount": 574294.0, "bucket": "31-60 d\u00edas", "contract": "P\u00e9rdidas"}, {"partner": "PAPELERIA EL CID S.A.S", "ref": "PCE89144", "move": "BILL/2026/02/0079", "date": "2026-02-03", "due": "2026-02-05", "days": 42, "amount": 1485372.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "COMUNICACI\u00d3N CELULAR  SA COMCEL SA", "ref": "3292516046", "move": "BILL/2026/02/0050", "date": "2026-02-05", "due": "2026-02-05", "days": 42, "amount": 384560.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "SIGA OIL SA", "ref": "FE43842", "move": "BILL/2026/02/0353", "date": "2026-02-28", "due": "2026-02-05", "days": 42, "amount": 95331.95, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "METROGAS DE COLOMBIA S.A E.S.P", "ref": "FEMT324", "move": "BILL/2026/02/0126", "date": "2026-02-04", "due": "2026-02-06", "days": 41, "amount": 31420.76, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ARIZA & MARIN S A S", "ref": "FE3125", "move": "BILL/2026/02/0028", "date": "2026-02-19", "due": "2026-02-06", "days": 41, "amount": 8873435.52, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110818", "move": "BILL/2026/02/0008", "date": "2026-02-16", "due": "2026-02-06", "days": 41, "amount": 45000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110817", "move": "BILL/2026/02/0007", "date": "2026-02-16", "due": "2026-02-06", "days": 41, "amount": 45000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110819", "move": "BILL/2026/02/0011", "date": "2026-02-16", "due": "2026-02-06", "days": 41, "amount": 32000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110816", "move": "BILL/2026/02/0010", "date": "2026-02-16", "due": "2026-02-06", "days": 41, "amount": 50000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC110815", "move": "BILL/2026/02/0009", "date": "2026-02-16", "due": "2026-02-06", "days": 41, "amount": 45000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "DISTRITO E S.A.S", "ref": "1786", "move": "BILL/2026/02/0037", "date": "2026-02-20", "due": "2026-02-06", "days": 41, "amount": 132918.24, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "CASTILLO SABOGAL LUZ STELLA", "ref": "1475", "move": "BILL/2026/02/0055", "date": "2026-02-20", "due": "2026-02-06", "days": 41, "amount": 470000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MENA MADRID DIANA CRISTINA (INMOBILARIA BUENO MADRID", "ref": "DSVR01878", "move": "BILL/2026/02/0056", "date": "2026-02-20", "due": "2026-02-06", "days": 41, "amount": 864640.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "IMPORGAS JJ SAS", "ref": "1484", "move": "BILL/2026/02/0038", "date": "2026-02-19", "due": "2026-02-06", "days": 41, "amount": 158849.53, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "IMPORGAS JJ SAS", "ref": "2774", "move": "BILL/2026/03/0001", "date": "2026-03-03", "due": "2026-02-06", "days": 41, "amount": 62999.79, "bucket": "31-60 d\u00edas", "contract": "Valle"}, {"partner": "GONGORA QUINTERO FIDEL ANTONIO", "ref": "19", "move": "BILL/2026/02/0304", "date": "2026-02-28", "due": "2026-02-06", "days": 41, "amount": 263200.0, "bucket": "31-60 d\u00edas", "contract": "P\u00e9rdidas"}, {"partner": "HABITAMOS PROPIEDAD RAIZ S A S", "ref": "HAB1075044", "move": "BILL/2026/02/0025", "date": "2026-02-01", "due": "2026-02-06", "days": 41, "amount": 12052425.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "E-SYSTEMS S A S", "ref": "FE13090", "move": "BILL/2026/02/0032", "date": "2026-02-09", "due": "2026-02-06", "days": 41, "amount": 4981703.04, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MORALES RCHEVERRI MARIA PAULA", "ref": "999", "move": "BILL/2026/02/0035", "date": "2026-02-19", "due": "2026-02-06", "days": 41, "amount": 2334720.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "OSSA MORALES MARIA ISABEL", "ref": "998", "move": "BILL/2026/02/0034", "date": "2026-02-19", "due": "2026-02-06", "days": 41, "amount": 5435845.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "GALLEGO PEREZ LINA MILENA", "ref": "DSZO00033", "move": "BILL/2026/02/0160", "date": "2026-02-19", "due": "2026-02-07", "days": 40, "amount": 104000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "INVERSIONES REY ORTIZ E HIJOS & CIA S EN C", "ref": "FE81538", "move": "BILL/2026/02/0351", "date": "2026-02-28", "due": "2026-02-07", "days": 40, "amount": 79500.0, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "ARIZA & MARIN S A S", "ref": "FE3141", "move": "BILL/2026/02/0027", "date": "2026-02-06", "due": "2026-02-09", "days": 38, "amount": 3781954.8, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "SEGURIDAD ATLAS LTDA", "ref": "NACL581706", "move": "BILL/2026/02/0033", "date": "2026-02-03", "due": "2026-02-09", "days": 38, "amount": 147668.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "PAYFLOW DIGITAL S A S", "ref": "FE6089", "move": "BILL/2026/02/0029", "date": "2026-02-05", "due": "2026-02-09", "days": 38, "amount": 4158000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "AEROVIAS DE INTEGRACION REGIONAL SA", "ref": "EFCC3338262", "move": "BILL/2026/02/0001", "date": "2026-02-13", "due": "2026-02-09", "days": 38, "amount": 564900.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ACOSTA CARLOS FELIPE", "ref": "16.448.522", "move": "BILL/2026/02/0058", "date": "2026-02-20", "due": "2026-02-09", "days": 38, "amount": 200000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "Milenio PC S.A.", "ref": false, "move": "BILL/2026/02/0085", "date": "2026-02-06", "due": "2026-02-09", "days": 38, "amount": 4388400.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "COMUNICACI\u00d3N CELULAR  SA COMCEL SA", "ref": "E6023888932", "move": "BILL/2026/02/0124", "date": "2026-02-24", "due": "2026-02-09", "days": 38, "amount": 243820.22, "bucket": "31-60 d\u00edas", "contract": "Bucaramanga"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC111120", "move": "BILL/2026/02/0012", "date": "2026-02-16", "due": "2026-02-09", "days": 38, "amount": 23900.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC111118", "move": "BILL/2026/02/0013", "date": "2026-02-16", "due": "2026-02-09", "days": 38, "amount": 92800.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ESTUDIOS, DISE\u00d1OS Y CONSTRUCCIONES INCORVEL S.A.S", "ref": "FEI10", "move": "BILL/2026/03/002-3", "date": "2026-02-28", "due": "2026-02-09", "days": 38, "amount": 3128479.2, "bucket": "31-60 d\u00edas", "contract": "Boyac\u00e1"}, {"partner": "MEDIA COMMERCE PARTNERS S A S", "ref": "3592", "move": "BILL/2026/02/0063", "date": "2026-02-20", "due": "2026-02-09", "days": 38, "amount": 1543430.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MARIA EUGENIA VELASCO DE ACEVEDO & CIA SAS", "ref": "330", "move": "BILL/2026/02/0059", "date": "2026-02-20", "due": "2026-02-09", "days": 38, "amount": 8018703.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ANA JOAQUINA CA\u00d1ARTE", "ref": "DSVR01874", "move": "BILL/2026/02/0061", "date": "2026-02-20", "due": "2026-02-09", "days": 38, "amount": 230000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "CAMARA COLOMBIANA DE LA INFRAESTRUCTURA SECCIONAL ANTIOQUIA", "ref": "FEA10200", "move": "BILL/2026/02/0077", "date": "2026-02-04", "due": "2026-02-09", "days": 38, "amount": 1114586.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "SIGA OIL SA", "ref": "FE43895", "move": "BILL/2026/02/0350", "date": "2026-02-28", "due": "2026-02-09", "days": 38, "amount": 106985.86, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "INVERSIONES ALTOVERO S A", "ref": "FE39492", "move": "BILL/2026/02/0396", "date": "2026-02-28", "due": "2026-02-09", "days": 38, "amount": 1006393.4, "bucket": "31-60 d\u00edas", "contract": "O&M Z2"}, {"partner": "SINISTERRA ROMERO EDWIN JAVIER", "ref": "DSVR01931", "move": "BILL/2026/02/0119", "date": "2026-02-24", "due": "2026-02-10", "days": 37, "amount": 185600.0, "bucket": "31-60 d\u00edas", "contract": "Valle"}, {"partner": "MAYOR PRADO FABIO ARTURO", "ref": "565", "move": "BILL/2026/02/0065", "date": "2026-02-20", "due": "2026-02-10", "days": 37, "amount": 690690.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MAYOR PRADO FABIO ARTURO", "ref": "563", "move": "BILL/2026/02/0068", "date": "2026-02-20", "due": "2026-02-10", "days": 37, "amount": 690690.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "RIOS Y CIA S A S", "ref": "RC70", "move": "BILL/2026/02/0036", "date": "2026-02-19", "due": "2026-02-10", "days": 37, "amount": 9524367.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "CAMARA COLOMBIANA DE LA INFRAESTRUCTURA SECCIONAL ANTIOQUIA", "ref": "FECC2414", "move": "BILL/2026/02/0086", "date": "2026-02-09", "due": "2026-02-10", "days": 37, "amount": 14500.15, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ELECTRIFICADORA DE SANTANDER S.A. ESP", "ref": "FACT244051849", "move": "BILL/2026/02/0362", "date": "2026-02-28", "due": "2026-02-10", "days": 37, "amount": 110188.0, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "ACUEDUCTO METROPOLITANO DE BUCARAMANGA SA E.S.P", "ref": "1127536", "move": "BILL/2026/02/0361", "date": "2026-02-28", "due": "2026-02-10", "days": 37, "amount": 105140.0, "bucket": "31-60 d\u00edas", "contract": "Floridablanca"}, {"partner": "PROYECTOS Y SOLUCIONES INDUSTRIALES SAS", "ref": "PR057533", "move": "BILL/2026/02/0376", "date": "2026-02-28", "due": "2026-02-10", "days": 37, "amount": 264500.0, "bucket": "31-60 d\u00edas", "contract": "Boyac\u00e1"}, {"partner": "Federaci\u00f3n Nacional de Comerciantes, Seccional Antioquia Fenalco Antioquia", "ref": false, "move": "BILL/2026/02/0076", "date": "2026-02-17", "due": "2026-02-10", "days": 37, "amount": 509574.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "REPRESENTACIONES COMERCIALES NOHRA GRANADOS RAMIREZ Y CIA SAS", "ref": "FE7090", "move": "BILL/2026/02/0303", "date": "2026-02-28", "due": "2026-02-10", "days": 37, "amount": 9868878.1, "bucket": "31-60 d\u00edas", "contract": "P\u00e9rdidas"}, {"partner": "NAVIA FLOR LUZ EDYS", "ref": "4232", "move": "BILL/2026/02/0052", "date": "2026-02-20", "due": "2026-02-10", "days": 37, "amount": 349146.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MILENIO PC S A", "ref": "G84022", "move": "BILL/2026/02/0074", "date": "2026-02-20", "due": "2026-02-10", "days": 37, "amount": 4115850.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ALARMAR LTDA", "ref": "4765", "move": "BILL/2026/02/0053", "date": "2026-02-20", "due": "2026-02-10", "days": 37, "amount": 95200.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "PREMAC S A S", "ref": "40296", "move": "BILL/2026/02/0075", "date": "2026-02-20", "due": "2026-02-10", "days": 37, "amount": 315350.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "EDEMCO S.A.S", "ref": "A 684538", "move": "BILL/2026/02/0134", "date": "2026-02-25", "due": "2026-02-10", "days": 37, "amount": 3853505.6, "bucket": "31-60 d\u00edas", "contract": "O&M Z2"}, {"partner": "SEGUROS GENERALES SURAMERICANA S A", "ref": "3039", "move": "BILL/2026/02/0078", "date": "2026-02-11", "due": "2026-02-10", "days": 37, "amount": 153105.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "REPRESENTACIONES COMERCIALES NOHRA GRANADOS RAMIREZ Y CIA SAS", "ref": "FE7096", "move": "BILL/2026/02/0302", "date": "2026-02-28", "due": "2026-02-10", "days": 37, "amount": 9229895.4, "bucket": "31-60 d\u00edas", "contract": "P\u00e9rdidas"}, {"partner": "ACERO NEIRA VALERY", "ref": "7174881", "move": "BILL/2026/02/0019", "date": "2026-02-11", "due": "2026-02-10", "days": 37, "amount": 2340125.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "INMOBILIARIA DE OCCIDENTE LIMITADA", "ref": "FECM10980", "move": "BILL/2026/02/0024", "date": "2026-02-03", "due": "2026-02-10", "days": 37, "amount": 4951369.5, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "INVERSIONISTAS CARGA SAS", "ref": "BG11820", "move": "BILL/2026/02/0409", "date": "2026-02-11", "due": "2026-02-10", "days": 37, "amount": 1485000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ACUEDUCTO METROPOLITANO DE BUCARAMANGA SA E.S.P", "ref": "1118540", "move": "BILL/2026/02/0360", "date": "2026-02-11", "due": "2026-02-10", "days": 37, "amount": 109060.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "COLVANES SAS", "ref": "OE0227006300270", "move": "BILL/2026/01/0001", "date": "2026-01-31", "due": "2026-02-10", "days": 37, "amount": 207875.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "INDUSTRIAS IMPERIO RIA\u00d1OS SAS", "ref": "395", "move": "BILL/2026/02/0041", "date": "2026-02-11", "due": "2026-02-10", "days": 37, "amount": 2256735.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC109859", "move": "BILL/2026/02/0006", "date": "2026-02-16", "due": "2026-02-11", "days": 36, "amount": 24000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "QUEVEDO BENAVIDES EMANUEL SEBASTIAN", "ref": "1000", "move": "BILL/2026/02/0083", "date": "2026-02-11", "due": "2026-02-11", "days": 36, "amount": 2000000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "VICTORIA JIMENEZ SEBASTIAN", "ref": "DSVR01932", "move": "BILL/2026/02/0120", "date": "2026-02-11", "due": "2026-02-11", "days": 36, "amount": 1692000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ACOSTA CARLOS FELIPE", "ref": "DSVR01873", "move": "BILL/2026/02/0070", "date": "2026-02-16", "due": "2026-02-11", "days": 36, "amount": 200000.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "CDEM & CDEB S.A.S.", "ref": "9085", "move": "BILL/2026/02/0080", "date": "2026-02-11", "due": "2026-02-11", "days": 36, "amount": 162189.86, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "PORTILLA SALAMANCA MIGUEL ANGEL", "ref": "3118", "move": "BILL/2026/02/0081", "date": "2026-02-11", "due": "2026-02-11", "days": 36, "amount": 1407738.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "ESTACION DE SERVICI O EL CARAR", "ref": "COMB225919", "move": "BILL/2026/02/0414", "date": "2026-02-27", "due": "2026-02-11", "days": 36, "amount": 50000.02, "bucket": "31-60 d\u00edas", "contract": "Boyac\u00e1"}, {"partner": "ESTACION DE SERVICI O EL CARAR", "ref": "COMB225858", "move": "BILL/2026/02/0413", "date": "2026-02-27", "due": "2026-02-11", "days": 36, "amount": 60000.02, "bucket": "31-60 d\u00edas", "contract": "Boyac\u00e1"}, {"partner": "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.", "ref": "DEE41911452", "move": "BILL/2026/02/0211", "date": "2026-02-11", "due": "2026-02-11", "days": 36, "amount": 1470714.52, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "COLOMBIANA DE COMERCIO  S A", "ref": "X8122520228", "move": "BILL/2026/03/002-13", "date": "2026-02-28", "due": "2026-02-11", "days": 36, "amount": 46980600.0, "bucket": "31-60 d\u00edas", "contract": "P\u00e9rdidas"}, {"partner": "INDUSTRIAS IMPERIO RIA\u00d1OS SAS", "ref": "391", "move": "BILL/2026/02/0042", "date": "2026-02-20", "due": "2026-02-12", "days": 35, "amount": 871420.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}, {"partner": "MANDAR Y SERVIR S.A.S", "ref": "FC111410", "move": "BILL/2026/02/0018", "date": "2026-02-16", "due": "2026-02-12", "days": 35, "amount": 26276.0, "bucket": "31-60 d\u00edas", "contract": "Sin asignar"}]};
+
+const fmt = n => '$' + Math.round(n).toLocaleString('es-CO');
+const fmtM = n => '$' + (n/1e6).toFixed(0) + 'M';
+
+// KPIs
+document.getElementById('genDate').textContent = 'Generado: ' + DATA.generated + ' | Datos en tiempo real desde Odoo';
+document.getElementById('kpiTotal').textContent = fmtM(DATA.summary.total_cxp);
+document.getElementById('kpiTotalCount').textContent = DATA.summary.count_total + ' facturas';
+document.getElementById('kpiOverdue').textContent = fmtM(DATA.summary.total_overdue);
+document.getElementById('kpiOverdueCount').textContent = DATA.summary.count_overdue + ' facturas vencidas';
+const currentAmt = DATA.summary.total_cxp - DATA.summary.total_overdue;
+document.getElementById('kpiCurrent').textContent = fmtM(currentAmt);
+const pct = ((currentAmt / DATA.summary.total_cxp) * 100).toFixed(1);
+document.getElementById('kpiCurrentPct').textContent = pct + '% del total';
+document.getElementById('kpiHealth').textContent = pct + '%';
+
+// Health
+const dot = document.getElementById('healthDot');
+const htxt = document.getElementById('healthText');
+if (pct < 30) { dot.className='health-dot red'; htxt.textContent='⚠️ Estado crítico: '+pct+'% al día. Más del 70% de las CxP están vencidas.'; }
+else if (pct < 50) { dot.className='health-dot yellow'; htxt.textContent='⚡ Atención: '+pct+'% al día. Hay presión significativa en vencimientos.'; }
+else { dot.className='health-dot green'; htxt.textContent='✅ Saludable: '+pct+'% al día.'; }
+
+// Aging Chart
+const agingLabels = Object.keys(DATA.aging);
+const agingValues = Object.values(DATA.aging);
+const agingColors = ['#dc2626','#f97316','#eab308','#3b82f6','#22c55e'];
+new Chart(document.getElementById('agingChart'), {
+  type: 'doughnut',
+  data: { labels: agingLabels, datasets: [{ data: agingValues, backgroundColor: agingColors, borderWidth: 0 }] },
+  options: { responsive: true, plugins: { legend: { position: 'right', labels: { color: '#94a3b8', font:{size:12}, generateLabels: function(chart) {
+    return chart.data.labels.map((l,i) => ({text: l+': '+fmtM(chart.data.datasets[0].data[i]), fillStyle: agingColors[i], strokeStyle: agingColors[i], index:i}));
+  }}}}
+  }
+});
+
+// Contract Chart
+const cLabels = DATA.contracts.map(c=>c.name);
+const cTotals = DATA.contracts.map(c=>c.total);
+const cOverdue = DATA.contracts.map(c=>c.overdue);
+new Chart(document.getElementById('contractChart'), {
+  type: 'bar',
+  data: {
+    labels: cLabels,
+    datasets: [
+      { label: 'Vencido', data: cOverdue, backgroundColor: '#f43f5e', borderRadius: 4 },
+      { label: 'Al día', data: cTotals.map((t,i)=>t-cOverdue[i]), backgroundColor: '#22c55e', borderRadius: 4 }
+    ]
+  },
+  options: { responsive: true, indexAxis: 'y', scales: { x: { stacked: true, ticks:{color:'#64748b',callback:v=>fmtM(v)}, grid:{color:'#334155'} }, y: { stacked: true, ticks:{color:'#94a3b8',font:{size:11}}, grid:{display:false} } }, plugins: { legend:{labels:{color:'#94a3b8'}} } }
+});
+
+// Partner Bars
+const container = document.getElementById('partnerBars');
+const maxVal = DATA.top_partners[0]?.total || 1;
+DATA.top_partners.slice(0,15).forEach(p => {
+  const pctTotal = (p.total/maxVal)*100;
+  const pctOverdue = (p.overdue/p.total)*100;
+  const row = document.createElement('div');
+  row.className = 'bar-row';
+  row.innerHTML = '<div class="name" title="'+p.name+'">'+p.name.substring(0,28)+'</div>'
+    +'<div class="bar-bg"><div class="bar-fill bar-overdue" style="width:'+pctTotal+'%;opacity:0.7"></div><div class="bar-fill bar-current" style="width:'+(pctTotal*(1-pctOverdue/100))+'%"></div></div>'
+    +'<div class="val">'+fmtM(p.total)+' ('+p.items+')</div>';
+  container.appendChild(row);
+});
+
+// Detail Table
+const tbody = document.querySelector('#detailTable tbody');
+DATA.detail.slice(0,50).forEach(d => {
+  const tr = document.createElement('tr');
+  let badge = '';
+  if(d.days > 60) badge='<span class="badge danger">'+d.days+'d</span>';
+  else if(d.days > 0) badge='<span class="badge warning">'+d.days+'d</span>';
+  else badge='<span class="badge ok">Al día</span>';
+  tr.innerHTML = '<td>'+d.partner.substring(0,30)+'</td><td>'+d.move+'</td><td>'+d.ref+'</td><td>'+d.contract+'</td><td>'+d.due+'</td><td>'+d.days+'</td><td class="amount">'+fmt(d.amount)+'</td><td>'+badge+'</td>';
+  tbody.appendChild(tr);
+});
+</script>
+</body>
+</html>

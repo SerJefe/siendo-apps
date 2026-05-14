@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-14T00:00:01",
+  "ultima_actualizacion": "2026-05-14T11:32:47",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -6451,6 +6451,90 @@
       "evaluada": false,
       "categoria": "siendo-consulting",
       "eje": "siendo-consulting"
+    },
+    {
+      "id": "2026-05-13-c001",
+      "tarea": "Revisar documentos de cómo Contraloría negoció con EPM para evaluar si negociación de Condugas fue desfavorable (detrimento patrimonial)",
+      "responsable": "Sebastian",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-13",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-17",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "conflicto Contraloría",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Camilo"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-13-c002",
+      "tarea": "Camilo: estructurar respuesta escrita a Contraloría con pruebas de error aceptado (correo de Catalina, comunicados del ante-gerente) y enviarla en paralelo a visita presencial",
+      "responsable": "Camilo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-13",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-17",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "defensa ante Contraloría",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Catalina"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-13-c003",
+      "tarea": "Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos; (b) llevar a mínima expresión rentable justificando incumplimiento ANS por falta de pago de EPM",
+      "responsable": "Sebastian",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-13",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-20",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "estrategia contractual supervivencia",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Camilo",
+        "Nazly",
+        "Guillermo"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-13-c004",
+      "tarea": "Resolver riesgo técnico: credenciales expuestas en JSONs planos; migrar a vault o variables de entorno",
+      "responsable": "Tiago",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-13",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-20",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "seguridad infraestructura",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [],
+      "rol_sugerido": "rol-8-ser-siendo-dev"
     }
   ]
 }

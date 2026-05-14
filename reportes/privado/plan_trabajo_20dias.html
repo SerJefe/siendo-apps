@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de Trabajo 20 días — Sebastián Sánchez | Condugas</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: linear-gradient(135deg, #0A2240 0%, #292D63 100%); color: #ffffff; font-size: 14px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.header { text-align: center; margin-bottom: 32px; }
+.header h1 { font-size: 32px; color: #F8B133; margin-bottom: 8px; }
+.header .subtitle { font-size: 16px; color: #B8D4EB; }
+.header .date { font-size: 12px; color: #91B0CB; margin-top: 8px; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+
+.card { background: rgba(255,255,255,0.05); border: 1px solid #1D70B7; border-radius: 12px; padding: 20px; backdrop-filter: blur(10px); }
+.card h3 { color: #F8B133; font-size: 16px; margin-bottom: 12px; border-bottom: 1px solid #1D70B7; padding-bottom: 6px; }
+.card.urgent { border-color: #dc3545; }
+.card.urgent h3 { color: #dc3545; }
+.card.medium { border-color: #ffc107; }
+.card.medium h3 { color: #ffc107; }
+.card.low { border-color: #28a745; }
+.card.low h3 { color: #28a745; }
+
+.task { margin: 8px 0; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.task:last-child { border-bottom: none; }
+.task .title { font-weight: 600; color: #FFFFFF; margin-bottom: 4px; }
+.task .desc { color: #B8D4EB; font-size: 13px; line-height: 1.4; }
+.task .meta { color: #91B0CB; font-size: 11px; margin-top: 4px; }
+
+.priority-tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; margin-left: 8px; }
+.urgent-tag { background: rgba(220, 53, 69, 0.2); color: #dc3545; }
+.medium-tag { background: rgba(255, 193, 7, 0.2); color: #ffc107; }
+.low-tag { background: rgba(40, 167, 69, 0.2); color: #28a745; }
+
+.jan-analysis { background: rgba(248, 177, 51, 0.1); border: 2px solid #F8B133; margin: 20px 0; }
+.jan-analysis h3 { color: #F8B133; }
+
+.calendar-overview { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin: 16px 0; }
+.calendar-day { background: rgba(255,255,255,0.05); border: 1px solid #1D70B7; border-radius: 6px; padding: 8px 4px; text-align: center; font-size: 11px; }
+.calendar-day.today { background: #F8B133; color: #292D63; }
+.calendar-day.deadline { background: rgba(220, 53, 69, 0.3); }
+.calendar-day .date { font-weight: 600; }
+.calendar-day .tasks { margin-top: 4px; font-size: 9px; color: #B8D4EB; }
+
+.summary-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0; }
+.stat { background: rgba(255,255,255,0.05); border-radius: 8px; padding: 12px; text-align: center; }
+.stat .number { font-size: 20px; font-weight: 700; color: #F8B133; }
+.stat .label { font-size: 10px; color: #91B0CB; text-transform: uppercase; letter-spacing: 1px; }
+
+.footer { text-align: center; margin-top: 32px; padding-top: 16px; border-top: 1px solid #1D70B7; color: #91B0CB; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>🎯 Plan de Trabajo — 20 días</h1>
+<div class="subtitle">Sebastián Sánchez Acevedo — Gerente General Condugas S.A.</div>
+<div class="date">20 marzo — 8 abril 2026 | Basado en análisis enero + tareas activas</div>
+</div>
+
+<div class="summary-stats">
+<div class="stat"><div class="number">12</div><div class="label">Tareas activas</div></div>
+<div class="stat"><div class="number">4</div><div class="label">Alta prioridad</div></div>
+<div class="stat"><div class="number">-$746M</div><div class="label">UAI enero 2026</div></div>
+<div class="stat"><div class="number">-22,2%</div><div class="label">Margen consolidado ene</div></div>
+</div>
+
+<div class="card jan-analysis">
+<h3>🔴 Hallazgo crítico: Enero 2026</h3>
+<div class="task">
+<div class="title">TODOS los contratos fueron negativos en enero</div>
+<div class="desc">$3.362M producción vs $4.109M costos = -$746M UAI (-22,2% margen). Los peores: Floridablanca (-79%), Nuevos Negocios (-77%), Normalizaciones (-62%). Incluso OYM Z2 que venía bien (-4,9%). OYMA R1 sigue sangrando: -$280M en un mes.</div>
+<div class="meta">Análisis completo: 466.603 registros contables procesados</div>
+</div>
+</div>
+
+<div class="grid">
+
+<div class="card urgent">
+<h3>🔴 Semana 1 (20-26 marzo) — CRÍTICO</h3>
+
+<div class="task">
+<div class="title">1. Contrato OYMA R1: decisión final <span class="priority-tag urgent-tag">URGENTE</span></div>
+<div class="desc">Verificar carta del abogado. Definir: ¿suspensión, renegociación o terminación? Ya está en evaluación legal. Contexto: -$280M en enero (-22,2% margen), el gigante enfermo.</div>
+<div class="meta">🎯 Deadline: 21 marzo | Owner: Sebastián + Abogado</div>
+</div>
+
+<div class="task">
+<div class="title">2. Datos equipo: Andrea, Camilo, Natalia <span class="priority-tag urgent-tag">OBLIGATORIO</span></div>
+<div class="desc">Entregar presentación + recibir datos obligatorios: costos fijos/variables, headcount por contrato, presupuesto vs real 2025, nómina por contrato.</div>
+<div class="meta">🎯 Deadline: 21 marzo | Output: Decisiones informadas</div>
+</div>
+
+<div class="task">
+<div class="title">3. William: 3 puntos concretos</div>
+<div class="desc">Mensaje con: (a) qué sigue con Lina (sponsorship), (b) Siendo Consulting, (c) gastos IA en Condugas. A Lina se patrocina, a William se pone a trabajar.</div>
+<div class="meta">🎯 Deadline: 22 marzo | Context: Conversación profunda Limitless 18 mar</div>
+</div>
+
+</div>
+
+<div class="card medium">
+<h3>🟡 Semana 2 (27 mar - 2 abr) — ESTRUCTURAL</h3>
+
+<div class="task">
+<div class="title">4. Análisis completo datos equipos <span class="priority-tag medium-tag">ANÁLISIS</span></div>
+<div class="desc">Con datos recibidos el 21, hacer análisis profundo: ¿a qué se debe enero negativo? ¿Es estacionalidad, contable, o deterioro real? Definir plan de acción por contrato.</div>
+<div class="meta">🎯 Deadline: 28 marzo | Insumo: Datos equipos</div>
+</div>
+
+<div class="task">
+<div class="title">5. Natalia RRHH → Juan Guillermo</div>
+<div class="desc">Hablar con Juan Guillermo para que responsabilice a Natalia en rol directora. Transición coordinadora→directora sin entrenamiento.</div>
+<div class="meta">🎯 Deadline: 28 marzo | Impact: Estructura organizacional</div>
+</div>
+
+<div class="task">
+<div class="title">6. Info contractual → Ema (Odoo)</div>
+<div class="desc">Pasarle data actualizada para montar contabilidad y nómina en Odoo. Andre/Clau pueden preparar. Urgente por suscripción salvada (~$5.400).</div>
+<div class="meta">🎯 Deadline: 30 marzo | Delegable: Andre/Clau → Ema</div>
+</div>
+
+</div>
+
+<div class="card medium">
+<h3>🟡 Semana 3 (3-9 abril) — OPERACIONAL</h3>
+
+<div class="task">
+<div class="title">7. Decisiones por contrato</div>
+<div class="desc">Con análisis completo: decidir qué hacer con Floridablanca (-79%), evaluar OYM Z2 (¿por qué bajó a -4,9%?), estrategia Boyacá, revisión Valle.</div>
+<div class="meta">🎯 Output: Plan de acción específico por contrato</div>
+</div>
+
+<div class="task">
+<div class="title">8. Gastos IA → formalizar Condugas</div>
+<div class="desc">Definir con Andre qué porción puede asumir Condugas (~1,5-2M COP/mes). Cloud, GPT, HeyGen, traductor, Hostinger. 80% uso es Condugas.</div>
+<div class="meta">🎯 Deadline: 5 abril | Impact: Sostenibilidad financiera</div>
+</div>
+
+<div class="task">
+<div class="title">9. Setup OpenClaw + skills agentes</div>
+<div class="desc">Ema instala Hostinger + OpenClaw + crea skills por agente. Plan definido Limitless 18 mar. Lina reunión viernes confirmada.</div>
+<div class="meta">🎯 Owner: Ema | Delegado completamente</div>
+</div>
+
+</div>
+
+<div class="card low">
+<h3>🟢 Semana 4 (10-16 abril) — OPTIMIZACIÓN</h3>
+
+<div class="task">
+<div class="title">10. Replicar modelo Nuevos Negocios</div>
+<div class="desc">Documentar qué cambió para pasar de -28% a +21% en 2025. Aplicar lecciones a contratos rojos. Carlos debe documentar.</div>
+<div class="meta">🎯 Output: Playbook replicable</div>
+</div>
+
+<div class="task">
+<div class="title">11. Calendarios 2026 + Whoop fix</div>
+<div class="desc">Solicitar calendarios actualizados 2026 (ICS solo muestra 2025). Resolver token Whoop para recovery/sleep. Integración completa briefings.</div>
+<div class="meta">🎯 Impact: Briefings automatizados completos</div>
+</div>
+
+<div class="task">
+<div class="title">12. Auditoría intercompany</div>
+<div class="desc">Revisar $72.690 mm en cruces entre CIAs. ¿Son costos reales? ¿Gente moviéndose de OYMA a Valle explica las tendencias opuestas?</div>
+<div class="meta">🎯 Output: Comprensión real de P&L por contrato</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="calendar-overview">
+<div class="calendar-day"><div class="date">20</div><div class="tasks">Presentación equipo</div></div>
+<div class="calendar-day deadline"><div class="date">21</div><div class="tasks">Datos obligatorios</div></div>
+<div class="calendar-day"><div class="date">22</div><div class="tasks">William</div></div>
+<div class="calendar-day"><div class="date">23</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">24</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">25</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">26</div><div class="tasks">Datos completos</div></div>
+<div class="calendar-day"><div class="date">27</div><div class="tasks">-</div></div>
+<div class="calendar-day deadline"><div class="date">28</div><div class="tasks">Análisis + Natalia</div></div>
+<div class="calendar-day"><div class="date">29</div><div class="tasks">-</div></div>
+<div class="calendar-day deadline"><div class="date">30</div><div class="tasks">Info Odoo</div></div>
+<div class="calendar-day"><div class="date">31</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">1</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">2</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">3</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">4</div><div class="tasks">-</div></div>
+<div class="calendar-day deadline"><div class="date">5</div><div class="tasks">Gastos IA</div></div>
+<div class="calendar-day"><div class="date">6</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">7</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">8</div><div class="tasks">-</div></div>
+<div class="calendar-day"><div class="date">9</div><div class="tasks">-</div></div>
+</div>
+
+<div class="footer">
+Condugas S.A. BIC | Confidencial | Plan generado por Siendo 🎯<br>
+<small>Paleta de marca: Primario #292D63 | Acento #F8B133 | Secundario #1D70B7</small>
+</div>
+
+</div>
+</body>
+</html>

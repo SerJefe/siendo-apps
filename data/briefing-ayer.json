@@ -1,165 +1,150 @@
 {
-  "fecha": "2026-05-11",
+  "fecha": "2026-05-12",
   "tareas_extraidas": [
     {
-      "tarea": "Revisar y mapear escenario financiero de Normalización (cloud agent impact, flujo de trabajo)",
+      "tarea": "Documentar y comunicar hito: acueducto conectó 40 usuarios adicionales como socios (mejora de deficiencias de agua)",
+      "responsable": "Sebastian",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Explorar con Rafa arrendamiento de espacio para centro de yoga/pilates/wellness en lote disponible",
+      "responsable": "Sebastian",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Gestionar avalúo comercial del metro cuadrado con evaluador de lonja para reducir obligación urbanística de 80M a cifra menor",
+      "responsable": "Sebastian",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Solicitar a diseñador/arquitecto claridad sobre inclusión de diseño hidráulico, eléctrico, estructural en planos entregados",
+      "responsable": "Sebastian",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Conversar en privado en casa sobre situación con Camilo (declaración, cómo proceder en Dojo)",
+      "responsable": "Sebastian",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Pasar a Sebastian resumen de correos importantes (lunes) para priorización",
+      "responsable": "Andrea",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Desarrollar sistema de sugerencias de delegación en dashboard: proponer tareas por tipo, allowing bulk accept/reject",
+      "responsable": "null",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Validar si Odu Condugas tiene API accesible desde XML para auto-creación de tareas en proyecto 'tareas y proyectos gerencia general'",
+      "responsable": "null",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Crear proyecto 'tareas y proyectos gerencia general' (ID 11) con estructura de delegaciones en Odu root",
+      "responsable": "null",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Configurar agente sugeridor con regla de ejecución cada 30 min; cruzar tareas abiertas vs score >4 para evitar falsos positivos",
+      "responsable": "null",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Crear nombre formal y dominio para consulting business; publicar página web profesional",
+      "responsable": "Lina",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Negociar exclusividad de documentación/IP con Bencor como partner; validar no hay restricción de empresa",
+      "responsable": "Sebastian",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Producir contenido (videos automatizados, casos de éxito, storytelling) para atraer leads desde página web",
+      "responsable": "null",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Parametrizar procesos operativos clave en Being CoRe (especialmente nómina y contabilidad) para poder cotizar implementaciones con precisión",
       "responsable": null,
       "prioridad": "alta"
     },
     {
-      "tarea": "Analizar dinámica de ingresos Z2, Boyacá, Valle y definir puntos de presión con proveedores",
+      "tarea": "Definir con Lina y Emanuel el alcance exacto de intervenciones en clientes para evitar conflictos de interés y clarificar costos por expertos adicionales",
+      "responsable": "Lina",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Revisar y validar con Lina la paleta de colores actual de Being CoRe (azul creatividad, dorado high-ticket) y definir si hace ajustes o mantiene",
+      "responsable": "Lina",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Documentar con precisión el alcance y costo del trabajo de branding para Being CoRe (diseño, retoques, revisión de identidad) para evitar conflicto de intereses",
+      "responsable": "Lina",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Comunicar a proveedores que con producción de abril y reconocimiento de pagos se tendrá mayor maniobra para siguiente pago (llevarlos hasta siguiente nómina sin quedar muerto)",
       "responsable": null,
       "prioridad": "alta"
     },
     {
-      "tarea": "Negociar tema de operación y mantenimiento (O&M) con EPM para determinar timing de impacto",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Modelar ecuación de recuperación de contrato (1000M) diferenciada por promedio de producción progresivo",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Evaluar inventario de 1500M de pesos: plan de venta/distribución para generar caja alternativa",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Programar reunión con madre, Sebastian y miembro del equipo para analizar necesidades de flujo de caja",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Terminar carga de producción en Odoo para tener visibilidad confiable de costos y márgenes",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Calcular escenario de cierre acelerado del contrato si no hay reajuste (comparar vs arrastre deficitario)",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Validar benchmarking de costos de equipos: comparar contra mercado Bucaramanga (400-500K/día) para Condugas",
+      "tarea": "Mejorar proceso de onboarding de empleados nuevos: no dejarlos atendiendo público sin capacitación previa",
       "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Crear cronograma de eventos/cursos disponible para el equipo",
-      "responsable": "Viviana",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Completar configuración de Odoo: mapear producción a estructura de contratos para reconciliar causado vs real",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Investigar por qué nómina/sueldos no se asocian correctamente a contratos en Odoo (estructura de reportes)",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Reconciliar 27M de inventario material en Odoo (qué entró en abril, dónde está)",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Coordinar con hermana para reservar finca familiar durante puente (fechas: 4-5 días más de mayo)",
-      "responsable": "hermana de Sebastian",
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Confirmar con Tania/Pony disponibilidad para ir a finca (decisión final para separar)",
-      "responsable": null,
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Revisar conciliaciones de meses pendientes y validar datos faltantes en facturación (6%, 8%)",
-      "responsable": "Angelita",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Revisar y negociar reducciones administrativas con administración central (posible ahorro 5-9M mensuales)",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Coordinar y realizar visitas a campo (que alguien pueda hacer en lugar de Emmanuel)",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
+      "tarea": "Llamar a abogados para definir estrategia de presión/cobranza a contratantes que retuvieron comunidad",
       "responsable": "Camilo",
       "prioridad": "critica"
     },
     {
-      "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de tarifa interna",
-      "responsable": "Camilo",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Verificar que Condugas no asuma riesgo de caja personal si contrato no genera utilidad",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Explorar negociación alternativa a EPM (no la anterior que falló) para reajuste de contrato",
-      "responsable": "Camilo",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Implementar ajustes al contrato (1.400M + reajuste 7-8%) y validar viabilidad antes del viernes",
+      "tarea": "Estructurar pago a proveedores en dos tranches: 350M ahora (urgente) + 850M después, comunicando que hay visibilidad de siguiente pago en abril",
       "responsable": null,
       "prioridad": "critica"
     }
   ],
   "decisiones": [
-    "Necesario mapear ingresos vs compromisos de proveedores antes de tomar decisiones de presión/espera",
-    "Contrato no ha sido analizado a profundidad; está siendo visto de forma plana",
-    "Hay oportunidad de presionar más a Camilo en análisis detallado",
-    "NO se trabajará sin seguridad social; es línea no negociable como representante legal",
-    "Contrato depende del reajuste EPM: si no hay dinero, se termina lo más rápido posible",
-    "Inventario de 1500M es buffer; se debe activar venta para generar caja (menor rentabilidad pero flujo)",
-    "Es responsabilidad de Sebastian llevar crisis de caja a familia de forma transparente",
-    "Negociación EPM anterior fracasó; debe buscarse alternativa",
-    "700M de reajuste es clave; sin él se acelera cierre",
-    "Inventario de 1500M es escudo temporal pero activo a mover"
+    "La Zapa es una resolución (no ley), por lo que un próximo gobierno puede revocarla",
+    "Si Zapa se revoca, pivotar hacia licencia de remodelación de casas existentes",
+    "Modelo comercial: 3-4 cabañas internas + 4-5 externas bajo RNT; liquidar ventas en hotel para operar como experiencia",
+    "Enfoque temático: zona azul (tranquilidad, comunidad, senderos ecológicos, granja orgánica, café)",
+    "Reducción de conducción de 740M a 395M es viable con optimización (brecha, distribución)",
+    "No entrar en negociación con alcalde si conecta más usuarios (riesgo reputacional desligado)",
+    "Modelo granja circular: animales orgánicos + educación sobre consumo + empatía con fauna",
+    "Invitar Carlos Arturo Díaz para aportar arte y talleres de pintura en retiro",
+    "Cambio normativo (esquema ordenamiento territorial) añadió obligaciones retroactivas",
+    "Diferir conversación a espacio privado (casa) para claridad"
   ],
   "ideas": [
-    "Diferenciación entre proyectos que demandan necesidades inmediatas vs proyectos que pueden esperar",
-    "Metrización real es clave para entender capacidad actual de operación",
-    "Facturación debe ser dinámica: 600M inicial → 800M → 900M mes a mes (no residuales lineales de 100M)",
-    "Residuales sumados a lo largo de 3 años generan flujo significativo aunque no sean 100M mensuales",
-    "Estructura alternativa: personal en Condugas + transporte comprado = tarifa interna controlada = mitigación de riesgo",
-    "Si no hay reajuste, aceleración de cierre más rentable que arrastrar contrato deficitario",
-    "Diferencia entre 'corrección procesal' y 'viabilidad financiera' del contrato",
-    "Evitar inversión en IA directamente o en sectores disruptados: volatilidad inherente",
-    "Consumo defensivo (bebidas, deportes) más resiliente en ciclos inciertos",
-    "Duolingo: empresa de idiomas puede quebrar pero tardaría; es apuesta de supervivencia no fracaso rápido"
+    "La infraestructura existente es salvavidas: permite remodelaciones sin depender de permisos de nueva construcción",
+    "Diferencia clave: hotel requiere trámites complejos; casa campesina tiene licencia diferente",
+    "RNT es vía más ágil que licencia hotelera completa",
+    "Turismo experiencial (café, yoga, naturaleza) permite monetizar sin construcción masiva",
+    "Si Zapa se bloquea, la experiencia y brand pueden moverse a zonas liberadas",
+    "Dinero invertido en infraestructura valida el proyecto; no necesita venta urgente",
+    "Modelo colectivo (juntos, conectados) vs transaccional (solo participación monetaria) genera otra realidad",
+    "Wellness center (yoga, pilates, infrarrojo, alimentación desde granja) es extensión natural de zona azul",
+    "Acueducto liberado por parcelación; futuro alcalde no puede meterse",
+    "Turismo experiencial integrado (10 actividades conectadas) vs turismo pasivo (paisaje + vino)"
   ],
   "frases": [
-    "nosotros tenemos que tocar un poquito el tema de operación y mantenimiento, a ver cómo esa negociación pues surtirá efecto",
-    "ese contrato al principio debe facturar normal normal y después esos consumos que se están recuperando deberían ser exponenciales",
-    "ese contrato tiene hasta el 14, tiene tres días de trabajo ese contrato, si nos llega la plata",
-    "Yo como representante legal no me atrevería a trabajar sin seguridad social",
-    "si llegase a dar utilidad, entonces ese contrato no gana. Yo no tengo, yo tengo todos los mecanismos para que el contrato no dé plata"
+    "Es una resolución, entonces el próximo siguiente saca otra resolución diciendo que esa queda inhabilitada y ya",
+    "La temática de este ecosistema ligado a la hotelería es tratar de construir o replicar al menos una zona azul",
+    "Yo quiero aportarle al proyecto. Así sean cosas que sean muy brutas o que no sea lo que usted quiere, pero que le hagan mover el pensamiento",
+    "No sea ambicioso. Usted ya la acueducto lo libera con la parcelación",
+    "Yo quiero vivir así, yo quiero alimentarme de este ecosistema"
   ],
   "alertas_supervivencia": [
-    "CRÍTICA: Contrato OYM en crisis existencial, negocia ajuste de 1.4B para mañana, sin claridad de Plan B si EPM sigue rechazando.",
-    "CRÍTICA: Gaps contables en Odoo sin resolver (27M, sueldos, anticipos) impiden visibilidad real de caja por región.",
-    "ALTA: Hackeo reportado el fin de semana sin detalles de impacto en sistemas de caja o datos sensibles.",
-    "ALTA: Dependencia de transporte y single-thread en negociaciones (EPM) limita flexibilidad de respuesta.",
-    "MEDIA: Implementación Odoo en progreso pero equipo fragmentado en comprensión; riesgo de fallo en automatizaciones críticas."
+    "CRITICA: Condugas enfrenta presión de deudas inmediatas, retención de comunidad como estrategia de presión, y necesidad de pagos a proveedores. Viabilidad en riesgo si no hay resolución en semanas.",
+    "Obligaciones urbanísticas de 8M+ en Jericó pueden paralizar proyecto si no se gestionan con especialistas ambientales y abogados",
+    "Being CoRe requiere identidad formal (dominio, página web, crédito) para escalar pero está acoplado financieramente a Condugas",
+    "Oportunidad El Retiro (carnicería) está sin operar hace 6 meses: requiere decisión de cierre o reactivación inmediata",
+    "Equipo Dojo con conflicto emocional sin resolución clara (Camilo) puede afectar performance en delegación de tareas críticas"
   ],
-  "total_lifelogs": 21,
+  "total_lifelogs": 18,
   "procesado_con": "haiku_v3_structured"
 }

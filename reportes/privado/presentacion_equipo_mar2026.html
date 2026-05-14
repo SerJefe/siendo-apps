@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentación Gerencia — Condugas S.A. | Marzo 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a0a0a;color:#e0e0e0;font-size:15px}
+.slide{width:100%;min-height:100vh;padding:48px 64px;page-break-after:always;position:relative}
+.slide::after{content:attr(data-num);position:absolute;bottom:20px;right:40px;color:#475569;font-size:12px}
+.cover{background:linear-gradient(135deg,#0f172a,#1e3a5f);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.cover h1{font-size:44px;color:#fff;margin-bottom:8px}
+.cover .subtitle{font-size:22px;color:#38bdf8;margin-bottom:24px}
+.cover .author{font-size:16px;color:#94a3b8;margin-top:16px}
+.cover .date{font-size:14px;color:#64748b;margin-top:8px}
+h2{font-size:28px;color:#38bdf8;margin-bottom:24px;padding-bottom:8px;border-bottom:2px solid #1e3a5f}
+h3{font-size:18px;color:#f59e0b;margin:16px 0 8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:16px 0}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0}
+.card{background:#1e293b;border-radius:12px;padding:20px}
+.card.red{border-left:4px solid #f43f5e}
+.card.green{border-left:4px solid #22c55e}
+.card.yellow{border-left:4px solid #f59e0b}
+.card.blue{border-left:4px solid #38bdf8}
+.kpi{text-align:center;padding:20px}
+.kpi .number{font-size:32px;font-weight:700}
+.kpi .label{font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.red .number{color:#f43f5e} .green .number{color:#22c55e} .blue .number{color:#38bdf8} .yellow .number{color:#f59e0b}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0}
+th{background:#334155;color:#94a3b8;padding:6px 10px;text-align:left;font-weight:600;font-size:11px;text-transform:uppercase}
+td{padding:6px 10px;border-bottom:1px solid #1e293b}
+.amt{text-align:right;font-variant-numeric:tabular-nums}
+.pos{color:#22c55e} .neg{color:#f43f5e}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700}
+.bg{background:#14532d;color:#86efac} .br{background:#7f1d1d;color:#fca5a5} .by{background:#78350f;color:#fcd34d}
+ul{margin:8px 0 8px 20px} li{margin:4px 0;line-height:1.5}
+.task{background:#1e293b;border-radius:8px;padding:12px 16px;margin:6px 0;border-left:3px solid #f59e0b;font-size:14px}
+.task.mandatory{border-left-color:#f43f5e;background:#1a1520}
+.task .owner{font-weight:700;color:#f59e0b}
+.task.mandatory .owner{color:#f43f5e}
+.task .desc{color:#e0e0e0;margin-top:4px}
+.task .deadline{color:#94a3b8;font-size:12px;margin-top:2px}
+.mandatory-tag{background:#7f1d1d;color:#fca5a5;font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;margin-left:8px}
+.focus-box{background:#1a2332;border:2px solid #f43f5e;border-radius:12px;padding:24px;margin:16px 0;text-align:center}
+.focus-box h3{color:#f43f5e;font-size:22px;margin-bottom:12px}
+.separator{border:none;border-top:1px solid #334155;margin:16px 0}
+small{color:#64748b}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: PORTADA -->
+<div class="slide cover" data-num="">
+<h1>Estado Financiero por Contrato</h1>
+<div class="subtitle">Análisis de Resultados y Plan de Acción</div>
+<div class="author">Sebastián Sánchez Acevedo<br>Gerente General — Condugas S.A. BIC</div>
+<div class="date">Marzo 2026 | Datos al cierre de enero 2026</div>
+</div>
+
+<!-- SLIDE 2: DÓNDE ESTAMOS -->
+<div class="slide" data-num="2/10">
+<h2>Dónde estamos hoy</h2>
+<div class="grid3">
+<div class="card kpi red"><div class="number">-$2.465 mm</div><div class="label">Pérdida acumulada (UAI)</div></div>
+<div class="card kpi blue"><div class="number">$104.862 mm</div><div class="label">Producción total</div></div>
+<div class="card kpi red"><div class="number">-2,4%</div><div class="label">Margen consolidado</div></div>
+</div>
+<div class="focus-box">
+<h3>Los costos superan la producción en $2.465 mil millones</h3>
+<p>Esto no es sostenible. Los contratos de gas son rentables. Los de acueducto destruyen valor.</p>
+</div>
+<p style="margin-top:16px;color:#94a3b8"><small>Periodo analizado: Ene 2024 — Ene 2026 | 466.603 registros contables | 11 contratos activos</small></p>
+</div>
+
+<!-- SLIDE 3: SEMÁFORO -->
+<div class="slide" data-num="3/10">
+<h2>Semáforo por Contrato</h2>
+<table>
+<tr><th>Contrato</th><th>Producción</th><th>Costos</th><th>UAI</th><th>Margen</th><th>Tendencia 2025</th><th>Estado</th></tr>
+<tr style="opacity:0.5"><td>OYM Z3 <small>(cerrado dic-25)</small></td><td class="amt">$6.481 mm</td><td class="amt">$5.687 mm</td><td class="amt pos">+$758 mm</td><td class="pos">+11,7%</td><td>Cerrado</td><td><span class="badge bg">CERRADO</span></td></tr>
+<tr><td>Bucaramanga</td><td class="amt">$1.338 mm</td><td class="amt">$1.159 mm</td><td class="amt pos">+$180 mm</td><td class="pos">+13,4%</td><td>Bueno</td><td><span class="badge bg">SANO</span></td></tr>
+<tr><td>Nuevos Negocios</td><td class="amt">$1.769 mm</td><td class="amt">$1.624 mm</td><td class="amt pos">+$144 mm</td><td class="pos">+8,2%</td><td>De -28% a +21%</td><td><span class="badge bg">MEJORÓ</span></td></tr>
+<tr><td>Boyacá</td><td class="amt">$4.493 mm</td><td class="amt">$4.252 mm</td><td class="amt pos">+$241 mm</td><td class="pos">+5,4%</td><td>Dic malo</td><td><span class="badge by">ATENCIÓN</span></td></tr>
+<tr><td>Valle</td><td class="amt">$35.683 mm</td><td class="amt">$35.947 mm</td><td class="amt neg">-$400 mm</td><td class="neg">-1,1%</td><td>De -5% a +5,1%</td><td><span class="badge by">MEJORÓ</span></td></tr>
+<tr style="background:#1a1520"><td><strong>OYMA R1</strong></td><td class="amt">$43.423 mm</td><td class="amt">$44.644 mm</td><td class="amt neg"><strong>-$1.219 mm</strong></td><td class="neg"><strong>-2,8%</strong></td><td><strong>De +2,8% a -8,9%</strong></td><td><span class="badge br">CRÍTICO</span></td></tr>
+<tr style="opacity:0.5"><td>Consorcio Ayura <small>(cerrado dic-25)</small></td><td class="amt">$9.009 mm</td><td class="amt">$10.018 mm</td><td class="amt neg">-$1.006 mm</td><td class="neg">-11,2%</td><td>Cerrado</td><td><span class="badge bg">CERRADO</span></td></tr>
+<tr style="background:#1a1520"><td><strong>Floridablanca</strong></td><td class="amt">$1.794 mm</td><td class="amt">$2.282 mm</td><td class="amt neg"><strong>-$488 mm</strong></td><td class="neg"><strong>-27,2%</strong></td><td>Cada mes peor</td><td><span class="badge br">CRÍTICO</span></td></tr>
+<tr><td>OYM Z2</td><td class="amt">$721 mm</td><td class="amt">$1.131 mm</td><td class="amt neg">-$410 mm</td><td class="neg">-56,9%</td><td>Montaje</td><td><span class="badge by">MONTAJE</span></td></tr>
+</table>
+</div>
+
+<!-- SLIDE 4: FOCO EN ENERO 2026 -->
+<div class="slide" data-num="4/10">
+<h2>🔴 Foco: Enero 2026 — Todos los contratos en rojo</h2>
+<table>
+<tr><th>Contrato</th><th>Producción Ene</th><th>UAI Ene</th><th>Margen Ene</th><th>vs Dic</th><th>Señal</th></tr>
+<tr><td>OYMA R1</td><td class="amt">$1.263 mm</td><td class="amt neg">-$280 mm</td><td class="neg">-22,2%</td><td>+3% prod</td><td>Sigue sangrando</td></tr>
+<tr><td>Valle</td><td class="amt">$756 mm</td><td class="amt neg">-$192 mm</td><td class="neg">-25,4%</td><td>-27% prod</td><td>⚠️ Caída fuerte</td></tr>
+<tr><td>Boyacá</td><td class="amt">$334 mm</td><td class="amt neg">-$50 mm</td><td class="neg">-15,1%</td><td>+118% prod</td><td>Mejoró pero negativo</td></tr>
+<tr><td>OYM Z2</td><td class="amt">$676 mm</td><td class="amt neg">-$33 mm</td><td class="neg">-4,9%</td><td>Arrancó</td><td>Casi en punto equilibrio</td></tr>
+<tr><td>Bucaramanga</td><td class="amt">$103 mm</td><td class="amt neg">-$30 mm</td><td class="neg">-29,2%</td><td>-14% prod</td><td>Cayó de +17% a -29%</td></tr>
+<tr><td>Floridablanca</td><td class="amt">$77 mm</td><td class="amt neg">-$61 mm</td><td class="neg">-79,3%</td><td>+4% prod</td><td>Producción ínfima</td></tr>
+<tr><td>Normalizaciones</td><td class="amt">$128 mm</td><td class="amt neg">-$79 mm</td><td class="neg">-62,0%</td><td>+484% prod</td><td>Arrancando</td></tr>
+<tr><td>Nuevos Negocios</td><td class="amt">$26 mm</td><td class="amt neg">-$20 mm</td><td class="neg">-77,1%</td><td>-86% prod</td><td>Caída atípica</td></tr>
+</table>
+<div class="focus-box">
+<h3>Enero 2026: NINGÚN contrato fue rentable</h3>
+<p>Necesito entender si es efecto contable de cierre, estacionalidad, o deterioro real. Cada director debe traer su explicación.</p>
+</div>
+</div>
+
+<!-- SLIDE 5: OYMA R1 -->
+<div class="slide" data-num="5/10">
+<h2>OYMA R1 — La prioridad #1</h2>
+<div class="grid2">
+<div class="card red">
+<h3>Los números</h3>
+<table>
+<tr><th>Año</th><th>Producción</th><th>Costos</th><th>UAI</th><th>Margen</th></tr>
+<tr><td>2024</td><td class="amt">$24.200 mm</td><td class="amt">$23.504 mm</td><td class="amt pos">+$667 mm</td><td class="pos">+2,8%</td></tr>
+<tr><td>2025</td><td class="amt">$17.960 mm</td><td class="amt">$19.597 mm</td><td class="amt neg">-$1.606 mm</td><td class="neg">-8,9%</td></tr>
+<tr><td>Ene-26</td><td class="amt">$1.263 mm</td><td class="amt">$1.543 mm</td><td class="amt neg">-$280 mm</td><td class="neg">-22,2%</td></tr>
+</table>
+</div>
+<div class="card red">
+<h3>El problema</h3>
+<ul>
+<li>Producción cayó <strong>26%</strong> de 2024 a 2025</li>
+<li>Costos solo bajaron <strong>17%</strong></li>
+<li><strong>$1.600 mil millones en costos no se ajustaron</strong></li>
+<li>Últimos 6 meses: <strong>todos negativos</strong></li>
+</ul>
+<h3>Lo que necesito saber</h3>
+<ul>
+<li>¿La producción cayó por volumen de EPM, por precio, o por alcance?</li>
+<li>¿Cuánto del costo es fijo y cuánto es variable?</li>
+<li>¿Cuánta gente tenemos en OYMA hoy vs hace un año?</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 6: CUENTAS QUE NOS PREOCUPAN -->
+<div class="slide" data-num="6/10">
+<h2>Cuentas que nos deben preocupar</h2>
+<div class="grid2">
+<div class="card yellow">
+<h3>📈 Sueldos operativos: +28%</h3>
+<p>De $493 a $630 millones/mes. La producción cayó 26% pero la nómina subió 28%. <strong>Esto es el centro del problema de margen.</strong></p>
+</div>
+<div class="card red">
+<h3>📈 Administración: +142%</h3>
+<p>De $238 a $577 millones/mes. Se duplicó. Enero 2026 fue el pico más alto de la historia. ¿Estamos cargando costos de contratos nuevos a la estructura general?</p>
+</div>
+<div class="card yellow">
+<h3>📈 Horas extras: +39%</h3>
+<p>De $84 a $117 millones/mes. Si la producción cae, ¿a qué se debe el incremento de horas extras? ¿Nos falta gente base y compensamos con horas extras que salen más caras?</p>
+</div>
+<div class="card green">
+<h3>📉 Materiales: -61% en valor absoluto</h3>
+<p>De $903 a $352 millones/mes. <strong>¿A qué se debe?</strong> ¿Menor producción? ¿Falta por digitar? ¿Bajaron precios reales de insumos? Necesito la proporción materiales/producción, no solo el número absoluto.</p>
+</div>
+</div>
+<p style="margin-top:12px;color:#94a3b8"><small>Contexto: IPC Colombia feb-2026 = 5,3% (bajando). BanRep en ciclo de recorte de tasas. Las condiciones macro son favorables para mejorar, pero no lo estamos aprovechando.</small></p>
+</div>
+
+<!-- SLIDE 7: HALLAZGOS -->
+<div class="slide" data-num="7/10">
+<h2>Lo que no es obvio pero importa</h2>
+<div class="grid2">
+<div class="card blue">
+<h3>Valle mejoró mientras OYMA empeoraba</h3>
+<p>Valle pasó de -5% a +5,1% en 2025. OYMA pasó de +2,8% a -8,9%. ¿Se movieron recursos de uno al otro? Los cruces intercompany ($72 mil millones) sugieren que sí. Necesito confirmación.</p>
+</div>
+<div class="card green">
+<h3>Nuevos Negocios es el caso de éxito</h3>
+<p>De -28,2% a +21,4%. ¿Qué hicieron diferente? Lo que funcionó ahí necesitamos replicarlo en los contratos rojos.</p>
+</div>
+<div class="card red">
+<h3>Diciembre 2024: $8.644 mil millones en reintegros</h3>
+<p>En un solo mes. El promedio es $400 millones. Ese pico necesita explicación. ¿Fue ajuste contable? ¿Cruce masivo?</p>
+</div>
+<div class="card blue">
+<h3>Ayura y Z3: cerrados en diciembre 2025</h3>
+<p>Ambos contratos terminaron. Costos finales de cierre son normales. Resultado histórico: Ayura cerró con -11,2%, Z3 con +11,7%. Referencia para futuros contratos similares.</p>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 8: TAREAS OBLIGATORIAS -->
+<div class="slide" data-num="8/10">
+<h2>🔴 Tareas obligatorias — Lo que necesito de cada uno</h2>
+
+<div class="task mandatory">
+<div class="owner">Andrea (Dir. Financiero) <span class="mandatory-tag">OBLIGATORIO</span></div>
+<div class="desc">1. Desglose de costos fijos vs variables por contrato (OYMA, Valle, Floridablanca, Boyacá como mínimo)</div>
+<div class="deadline">📅 Entrega: viernes 21 de marzo</div>
+</div>
+<div class="task mandatory">
+<div class="owner">Andrea (Dir. Financiero) <span class="mandatory-tag">OBLIGATORIO</span></div>
+<div class="desc">2. Presupuesto vs real de 2025 por contrato. ¿Dónde nos desviamos y por cuánto?</div>
+<div class="deadline">📅 Entrega: viernes 21 de marzo</div>
+</div>
+<div class="task mandatory">
+<div class="owner">Andrea (Dir. Financiero)</div>
+<div class="desc">3. Explicar el pico de reintegros de diciembre 2024 ($8.644 mil millones en un mes). ¿Qué fue?</div>
+<div class="deadline">📅 Entrega: miércoles 26 de marzo</div>
+</div>
+
+<div class="task mandatory">
+<div class="owner">Camilo (Ger. Proyectos) <span class="mandatory-tag">OBLIGATORIO</span></div>
+<div class="desc">4. ¿a qué se debe que OYMA cayó de $24 mil millones a $18 mil millones? ¿Fue volumen de EPM, precio, o reducción de alcance?</div>
+<div class="deadline">📅 Entrega: viernes 21 de marzo</div>
+</div>
+<div class="task mandatory">
+<div class="owner">Camilo (Ger. Proyectos) <span class="mandatory-tag">OBLIGATORIO</span></div>
+<div class="desc">5. Headcount actual por contrato. Cuántas personas tenemos en cada uno hoy vs enero 2025.</div>
+<div class="deadline">📅 Entrega: viernes 21 de marzo</div>
+</div>
+<div class="task">
+<div class="owner">Camilo (Ger. Proyectos)</div>
+<div class="desc">6. ¿Qué pasó en abril 2025? Materiales subieron a $1.142 mm y sueldos a $857 mm. Necesito la explicación.</div>
+<div class="deadline">📅 Entrega: miércoles 26 de marzo</div>
+</div>
+</div>
+
+<!-- SLIDE 9: MÁS TAREAS -->
+<div class="slide" data-num="9/10">
+<h2>Tareas del equipo (continuación)</h2>
+
+<div class="task mandatory">
+<div class="owner">Natalia (Dir. RRHH) <span class="mandatory-tag">OBLIGATORIO</span></div>
+<div class="desc">7. Nómina mensual por contrato: cuántas personas hay en cada uno hoy.</div>
+<div class="deadline">📅 Entrega: viernes 21 de marzo</div>
+</div>
+<div class="task mandatory">
+<div class="owner">Natalia (Dir. RRHH) <span class="mandatory-tag">OBLIGATORIO</span></div>
+<div class="desc">8. Horas extras por contrato: subieron 39% con producción cayendo. ¿a qué se debe que? ¿Traslados de personal entre contratos en 2025?</div>
+<div class="deadline">📅 Entrega: viernes 21 de marzo</div>
+</div>
+
+<div class="task">
+<div class="owner">Nelson (Dir. Logística)</div>
+<div class="desc">9. Detalle de transporte de material obra ($27.800 mm acumulado): cuántos vehículos por contrato, propios vs alquilados, costo por modalidad.</div>
+<div class="deadline">📅 Entrega: miércoles 26 de marzo</div>
+</div>
+
+<div class="task">
+<div class="owner">Juan Guillermo (Ger. Estrategia)</div>
+<div class="desc">10. Reajustes contractuales vigentes con EPM y GDO. ¿Cuánto del reajuste cubre el incremento real de costos?</div>
+<div class="deadline">📅 Entrega: miércoles 26 de marzo</div>
+</div>
+
+<div class="task">
+<div class="owner">Carlos (Ger. Nuevos Negocios)</div>
+<div class="desc">11. Documentar qué cambió en Nuevos Negocios para pasar de -28% a +21%. Lecciones para replicar.</div>
+<div class="deadline">📅 Entrega: miércoles 26 de marzo</div>
+</div>
+
+<hr class="separator">
+<p><strong>Formato de entrega:</strong> Excel o documento estructurado. Lo que necesito son datos, no narrativa. Si algo no se puede conseguir, díganlo con la razón.</p>
+</div>
+
+<!-- SLIDE 10: DECISIONES PENDIENTES -->
+<div class="slide" data-num="10/10">
+<h2>Decisiones que debemos tomar</h2>
+<div class="grid2">
+<div class="card red">
+<h3>1. OYMA R1: ¿qué hacemos?</h3>
+<p>41% del revenue con margen -8,9%. No podemos seguir así. Opciones: renegociar con EPM, reducir costos fijos drásticamente, o replantear el alcance. <strong>Necesito los datos de Andrea y Camilo para decidir.</strong></p>
+</div>
+<div class="card red">
+<h3>2. Floridablanca: ¿cerramos?</h3>
+<p>$77 millones de producción mensual con -79% de margen. El costo de mantenerlo abierto puede ser mayor que el de cerrarlo. <strong>Evaluación para la próxima reunión.</strong></p>
+</div>
+<div class="card yellow">
+<h3>3. OYMA R1: ¿suspendemos?</h3>
+<p>El contrato más grande, con margen -8,9% y empeorando. Ya está en evaluación con abogados. <strong>¿Cuál es la ruta que más nos conviene: renegociar, suspender, o terminar? Necesitamos los números para decidir.</strong></p>
+</div>
+<div class="card yellow">
+<h3>4. Administración central: ¿cómo la controlamos?</h3>
+<p>Se duplicó en 18 meses. ¿Estamos cargando costos de nuevos contratos sin que esos contratos los absorban? <strong>Andrea: necesito la distribución.</strong></p>
+</div>
+</div>
+<hr class="separator">
+<p style="text-align:center;color:#94a3b8;margin-top:16px">
+<strong>Próxima revisión:</strong> Viernes 21 de marzo — con datos de Andrea, Camilo y Natalia<br>
+<strong>Revisión completa:</strong> Miércoles 26 de marzo — todos los pendientes<br><br>
+<small>Condugas S.A. BIC | Confidencial | Marzo 2026</small>
+</p>
+</div>
+
+</body>
+</html>

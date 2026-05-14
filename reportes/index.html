@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reportes - Ser Siendo</title>
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#faf7ee;color:#091f2e;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:32px;font-weight:500;margin-bottom:6px;color:#091f2e}
+.sub{color:#6b7580;font-size:13px;margin-bottom:28px}
+h2{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;margin-top:32px;margin-bottom:14px;color:#091f2e;letter-spacing:.01em}
+.list{display:grid;gap:8px}
+.list a{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#f5eed5;border:1px solid #c9a84a;border-radius:8px;text-decoration:none;color:#091f2e;transition:.15s;font-size:14px}
+.list a:hover{background:#ede1ba;border-color:#b89949}
+.list .meta{font-family:'JetBrains Mono',monospace;font-size:11px;color:#6b7580;letter-spacing:.02em}
+.tag{display:inline-block;font-size:10px;background:#a62e2e;color:#faf7ee;padding:2px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:.08em;font-weight:500;margin-left:8px}
+.note{margin-top:24px;padding:14px;background:rgba(184,153,73,.08);border-left:3px solid #b89949;border-radius:0 6px 6px 0;font-size:13px;color:#091f2e}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="/dashboard.html" style="display:inline-flex;align-items:center;gap:6px;color:#6b7580;text-decoration:none;font-size:12px;margin-bottom:18px;transition:.15s" onmouseover="this.style.color=&apos;#091f2e&apos;" onmouseout="this.style.color=&apos;#6b7580&apos;">&larr; Dashboard</a>
+  <h1>Reportes</h1>
+  <p class="sub">Documentos ejecutivos y de operacion - Condugas.</p>
+
+  <h2>Reportes publicos</h2>
+  <div class="list">
+    <a href="informe-visual-odoo-equipo.html"><span>Informe visual Odoo equipo</span><span class="meta">mar 2026</span></a>
+    <a href="analisis-oyma-q1-2026.html"><span>Analisis OYMA Q1 2026</span><span class="meta">mar 2026</span></a>
+    <a href="Condugas_Roadmap_Etapa3.html"><span>Condugas - Roadmap Etapa 3</span><span class="meta">abr 2026</span></a>
+    <a href="Condugas_Habilitadores_Final.html"><span>Condugas - Habilitadores final</span><span class="meta">abr 2026</span></a>
+  </div>
+
+  <h2>Reportes financieros<span class="tag">privado</span></h2>
+  <div class="list">
+    <a href="privado/cxp_dashboard.html"><span>Dashboard cuentas por pagar</span><span class="meta">abr 2026</span></a>
+    <a href="privado/informe_condugas_mar2026.html"><span>Informe Condugas marzo 2026</span><span class="meta">mar 2026</span></a>
+    <a href="privado/presentacion_equipo_mar2026.html"><span>Presentacion equipo</span><span class="meta">mar 2026</span></a>
+    <a href="privado/analisis_enero_2026.html"><span>Analisis enero 2026</span><span class="meta">ene 2026</span></a>
+    <a href="privado/analisis_potencial_siendo.html"><span>Analisis potencial Siendo</span><span class="meta">2026</span></a>
+    <a href="privado/plan_trabajo_20dias.html"><span>Plan trabajo 20 dias</span><span class="meta">2026</span></a>
+  </div>
+
+  <div class="note">
+    Carpeta <code>/reportes/privado/</code> pide credencial extra (htpasswd-reportes) sobre el basic auth global. Solo cifras de documentos firmados o radicados.
+  </div>
+</div>
+</body>
+</html>

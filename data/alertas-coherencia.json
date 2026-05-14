@@ -1,24 +1,17 @@
 {
-  "generado_at": "2026-05-01T11:30:03",
+  "generado_at": "2026-05-14T11:30:05",
   "resumen": {
     "grupos_fusion": 0,
     "tareas_en_grupos": 0,
-    "alta_prioridad_sin_accion": 7,
-    "sobrecarga": 3,
+    "alta_prioridad_sin_accion": 6,
+    "sobrecarga": 4,
     "sin_categoria": 0,
-    "estancadas": 174,
-    "sin_evaluar": 168,
-    "total_abiertas": 196
+    "estancadas": 196,
+    "sin_evaluar": 211,
+    "total_abiertas": 236
   },
   "grupos_fusion": [],
   "alta_prioridad_sin_accion": [
-    {
-      "id": "2026-04-16-c001x",
-      "tarea": "Preparar documentación de debido proceso ejecutivo con focus en ambiental y reajustes",
-      "puntaje": 45,
-      "recomendacion": "Hacer hoy",
-      "responsable": "Sebastian Sanchez"
-    },
     {
       "id": "2026-04-16-c002x",
       "tarea": "Evaluar viabilidad de terminación contractual vs. renegociación de fórmula",
@@ -65,21 +58,27 @@
   "sobrecarga": [
     {
       "responsable": "Sebastian Sanchez Acevedo",
-      "abiertas": 66,
-      "criticas": 26,
-      "sugerencia": "Sebastian Sanchez Acevedo tiene 66 tareas abiertas (26 criticas). Delegar o repriorizar."
+      "abiertas": 58,
+      "criticas": 22,
+      "sugerencia": "Sebastian Sanchez Acevedo tiene 58 tareas abiertas (22 criticas). Delegar o repriorizar."
     },
     {
       "responsable": "Sebastian",
-      "abiertas": 47,
-      "criticas": 10,
-      "sugerencia": "Sebastian tiene 47 tareas abiertas (10 criticas). Delegar o repriorizar."
+      "abiertas": 53,
+      "criticas": 13,
+      "sugerencia": "Sebastian tiene 53 tareas abiertas (13 criticas). Delegar o repriorizar."
+    },
+    {
+      "responsable": "Sin asignar",
+      "abiertas": 45,
+      "criticas": 13,
+      "sugerencia": "Sin asignar tiene 45 tareas abiertas (13 criticas). Delegar o repriorizar."
     },
     {
       "responsable": "Sebastian Sanchez",
-      "abiertas": 19,
-      "criticas": 7,
-      "sugerencia": "Sebastian Sanchez tiene 19 tareas abiertas (7 criticas). Delegar o repriorizar."
+      "abiertas": 11,
+      "criticas": 4,
+      "sugerencia": "Sebastian Sanchez tiene 11 tareas abiertas (4 criticas). Delegar o repriorizar."
     }
   ],
   "sin_categoria": [],
@@ -88,140 +87,140 @@
       "id": "2026-04-06-002",
       "tarea": "Recopilar información del proceso centro de operaciones",
       "responsable": "William Lopez",
-      "dias": 25,
+      "dias": 38,
       "puntaje": 44
     },
     {
       "id": "2026-04-12-004",
       "tarea": "Publicar documentación de KPIs en repositorio público",
-      "responsable": "Equipo Técnico",
-      "dias": 19,
+      "responsable": "William Lopez",
+      "dias": 32,
       "puntaje": 37
     },
     {
       "id": "2026-04-13-mc2abc0",
       "tarea": "Casa (Construcción)",
       "responsable": "Sebastian",
-      "dias": 18,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-14-001",
       "tarea": "Reunirse con Andrea para resolver deuda Condugas",
       "responsable": "Lina Russi",
-      "dias": 17,
+      "dias": 30,
       "puntaje": 40
     },
     {
       "id": "2026-04-14-006",
       "tarea": "Coordinar reunión con leads/clientes para definición estratégica",
       "responsable": "Sebastian",
-      "dias": 17,
+      "dias": 30,
       "puntaje": 39
     },
     {
       "id": "2026-04-14-010",
       "tarea": "Crear información visual ERP con Emanuel y Lina para comprensión integral del proyecto",
       "responsable": "Sebastian",
-      "dias": 17,
-      "puntaje": null
-    },
-    {
-      "id": "2026-04-16-r5-001",
-      "tarea": "Llamar a Pilar en ~30 minutos para conversación pendiente",
-      "responsable": "Sebastian Sanchez",
-      "dias": 17,
-      "puntaje": null
+      "dias": 30,
+      "puntaje": 33
     },
     {
       "id": "2026-04-16-r6-002",
       "tarea": "Preparar documento con 3 pilares: Confiabilidad numérica, Relacionamiento, Adaptabilidad",
       "responsable": "Sebastian Sanchez",
-      "dias": 17,
-      "puntaje": null
-    },
-    {
-      "id": "2026-04-16-r7-003",
-      "tarea": "Aclarar con abogados que comunicaciones fueron por contrato, no acoso",
-      "responsable": "Sebastian Sanchez",
-      "dias": 17,
+      "dias": 30,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r7-004",
       "tarea": "Documentar que 4 comunicaciones fueron coordinadas lunes-miércoles, enviadas jueves",
       "responsable": "Sebastian Sanchez",
-      "dias": 17,
+      "dias": 30,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r7-005",
       "tarea": "Reafirmar con PM y abogados compromiso con buenas relaciones pese a conflicto",
       "responsable": "Sebastian Sanchez",
-      "dias": 17,
-      "puntaje": null
-    },
-    {
-      "id": "2026-04-16-r9-008",
-      "tarea": "Coordinar con Humberto/Gobernación narrativa sobre trayectoria y valor de Condugas",
-      "responsable": "Sebastian Sanchez",
-      "dias": 17,
-      "puntaje": null
-    },
-    {
-      "id": "2026-04-16-r9-009",
-      "tarea": "Formalizar carta de suspensión solo tras autorización de PM (no unilateral)",
-      "responsable": "Sebastian Sanchez",
-      "dias": 17,
+      "dias": 30,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r10-012",
       "tarea": "Empoderar Diana para alcance similar a Carlos Acevedo",
       "responsable": "Sebastian Sanchez",
-      "dias": 17,
-      "puntaje": null
-    },
-    {
-      "id": "2026-04-15-c002",
-      "tarea": "Estructurar defensa legal y documentación contra EPM por incumplimiento contractual",
-      "responsable": "Sebastian",
-      "dias": 16,
+      "dias": 30,
       "puntaje": null
     },
     {
       "id": "2026-04-15-c003",
       "tarea": "Preparar propuesta contundente de reajuste de contrato EPM Río Negro con alternativas viables",
       "responsable": "Sebastian",
-      "dias": 16,
+      "dias": 29,
       "puntaje": null
     },
     {
       "id": "2026-04-15-001",
       "tarea": "Revisar informe de gestión para Supersociedades",
       "responsable": "Sebastian",
-      "dias": 16,
+      "dias": 29,
       "puntaje": null
     },
     {
       "id": "2026-04-15-003",
       "tarea": "Obtener respuesta contable de Manuel sobre configuración nómina UGP-DIAN",
       "responsable": "Sebastian",
-      "dias": 16,
+      "dias": 29,
       "puntaje": null
     },
     {
       "id": "2026-04-15-004",
       "tarea": "Cobrar ICA pendiente a municipios (~55 millones Medellín)",
-      "responsable": "Sebastian",
-      "dias": 16,
+      "responsable": "Andrea Bernal",
+      "dias": 29,
       "puntaje": null
     },
     {
       "id": "2026-04-15-005",
       "tarea": "Responder requerimiento SENA pendiente",
       "responsable": "Sebastian",
-      "dias": 16,
+      "dias": 29,
+      "puntaje": null
+    },
+    {
+      "id": "2026-04-15-007",
+      "tarea": "Firmar declaración de renta con ayuda de Diana y Alejandro",
+      "responsable": "Andrea Bernal",
+      "dias": 29,
+      "puntaje": 43
+    },
+    {
+      "id": "2026-04-15-008",
+      "tarea": "Integrar informes inversión extranjera en sistema Odoo",
+      "responsable": "Sebastian",
+      "dias": 29,
+      "puntaje": null
+    },
+    {
+      "id": "2026-04-15-009",
+      "tarea": "Definir auditoría de balances en Odoo con revisor fiscal",
+      "responsable": "Sebastian",
+      "dias": 29,
+      "puntaje": null
+    },
+    {
+      "id": "2026-04-15-010",
+      "tarea": "Enviar certificados retención mensual a consorciados (Óscar, Zilar)",
+      "responsable": "Sebastian",
+      "dias": 29,
+      "puntaje": null
+    },
+    {
+      "id": "2026-04-15-011",
+      "tarea": "Ajustar débito deuda NC (retenciones no cobradas)",
+      "responsable": "Sebastian",
+      "dias": 29,
       "puntaje": null
     }
   ],
@@ -231,18 +230,6 @@
       "tarea": "Casa (Construcción)",
       "responsable": "Sebastian",
       "fecha_creacion": "2026-04-13"
-    },
-    {
-      "id": "2026-04-14-010",
-      "tarea": "Crear información visual ERP con Emanuel y Lina para comprensión integral del proyecto",
-      "responsable": "Sebastian",
-      "fecha_creacion": "2026-04-14"
-    },
-    {
-      "id": "2026-04-15-c002",
-      "tarea": "Estructurar defensa legal y documentación contra EPM por incumplimiento contractual",
-      "responsable": "Sebastian",
-      "fecha_creacion": "2026-04-15"
     },
     {
       "id": "2026-04-15-c003",
@@ -277,18 +264,12 @@
     {
       "id": "2026-04-15-004",
       "tarea": "Cobrar ICA pendiente a municipios (~55 millones Medellín)",
-      "responsable": "Sebastian",
+      "responsable": "Andrea Bernal",
       "fecha_creacion": "2026-04-15"
     },
     {
       "id": "2026-04-15-005",
       "tarea": "Responder requerimiento SENA pendiente",
-      "responsable": "Sebastian",
-      "fecha_creacion": "2026-04-15"
-    },
-    {
-      "id": "2026-04-15-006",
-      "tarea": "Escanear Acta 87 de Asamblea",
       "responsable": "Sebastian",
       "fecha_creacion": "2026-04-15"
     },
@@ -323,26 +304,8 @@
       "fecha_creacion": "2026-04-15"
     },
     {
-      "id": "2026-04-15-013",
-      "tarea": "Cuadrar deuda empresa a Condugas y plan de pago",
-      "responsable": "Sebastian",
-      "fecha_creacion": "2026-04-15"
-    },
-    {
-      "id": "2026-04-16-r5-001",
-      "tarea": "Llamar a Pilar en ~30 minutos para conversación pendiente",
-      "responsable": "Sebastian Sanchez",
-      "fecha_creacion": "2026-04-14"
-    },
-    {
       "id": "2026-04-16-r6-002",
       "tarea": "Preparar documento con 3 pilares: Confiabilidad numérica, Relacionamiento, Adaptabilidad",
-      "responsable": "Sebastian Sanchez",
-      "fecha_creacion": "2026-04-14"
-    },
-    {
-      "id": "2026-04-16-r7-003",
-      "tarea": "Aclarar con abogados que comunicaciones fueron por contrato, no acoso",
       "responsable": "Sebastian Sanchez",
       "fecha_creacion": "2026-04-14"
     },
@@ -355,18 +318,6 @@
     {
       "id": "2026-04-16-r7-005",
       "tarea": "Reafirmar con PM y abogados compromiso con buenas relaciones pese a conflicto",
-      "responsable": "Sebastian Sanchez",
-      "fecha_creacion": "2026-04-14"
-    },
-    {
-      "id": "2026-04-16-r9-008",
-      "tarea": "Coordinar con Humberto/Gobernación narrativa sobre trayectoria y valor de Condugas",
-      "responsable": "Sebastian Sanchez",
-      "fecha_creacion": "2026-04-14"
-    },
-    {
-      "id": "2026-04-16-r9-009",
-      "tarea": "Formalizar carta de suspensión solo tras autorización de PM (no unilateral)",
       "responsable": "Sebastian Sanchez",
       "fecha_creacion": "2026-04-14"
     },
@@ -389,12 +340,6 @@
       "fecha_creacion": "2026-04-16"
     },
     {
-      "id": "2026-04-16-006",
-      "tarea": "Crear dashboard de tareas prioritarias (máxima, alta, media, baja, sin evaluar)",
-      "responsable": "Sebastian",
-      "fecha_creacion": "2026-04-16"
-    },
-    {
       "id": "2026-04-16-007",
       "tarea": "Contratar digital support/persona de negocio para automatización",
       "responsable": "Sebastian",
@@ -405,6 +350,60 @@
       "tarea": "Finalizar prototipo de herramienta de automatización de procesos empresariales",
       "responsable": "Sebastian",
       "fecha_creacion": "2026-04-16"
+    },
+    {
+      "id": "2026-04-16-r10-012",
+      "tarea": "Empoderar Diana para alcance similar a Carlos Acevedo",
+      "responsable": "Sebastian Sanchez",
+      "fecha_creacion": "2026-04-14"
+    },
+    {
+      "id": "2026-04-16-c001xx",
+      "tarea": "Avanzar proceso de licenciamiento ambiental y social (ruta crítica)",
+      "responsable": "Speaker proyecto",
+      "fecha_creacion": "2026-04-16"
+    },
+    {
+      "id": "2026-04-17-c001",
+      "tarea": "Presentar propuesta de restructuración a don Darío",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "fecha_creacion": "2026-04-17"
+    },
+    {
+      "id": "2026-04-17-c003",
+      "tarea": "Auditar estructura de deuda y cuentas por cobrar entre Condugas, socios e IC (excisión no pagada)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "fecha_creacion": "2026-04-17"
+    },
+    {
+      "id": "2026-04-17-c004",
+      "tarea": "Definir arquitectura de datos (origen, flujo, seguridad) antes de implementar IA para registros",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "fecha_creacion": "2026-04-17"
+    },
+    {
+      "id": "2026-04-17-c005",
+      "tarea": "Resolver deuda pendiente con Oscar (2 años de incumplimiento)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "fecha_creacion": "2026-04-17"
+    },
+    {
+      "id": "2026-04-17-c006",
+      "tarea": "Resolver crisis de tarjeta/caja (prioridad inmediata antes que empresa)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "fecha_creacion": "2026-04-17"
+    },
+    {
+      "id": "2026-04-20-c002",
+      "tarea": "Contactar proveedores (3 llamadas pendientes)",
+      "responsable": "Sebastian Sanchez",
+      "fecha_creacion": "2026-04-20"
+    },
+    {
+      "id": "2026-04-20-c003",
+      "tarea": "Gestionar saldo a favor de 1,200M COP esperado en septiembre 2026 para recuperación",
+      "responsable": "Sebastian Sanchez",
+      "fecha_creacion": "2026-04-20"
     }
   ]
 }

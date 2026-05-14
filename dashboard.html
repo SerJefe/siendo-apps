@@ -441,9 +441,10 @@ main > section.show{ display: block; }
   </div>
   <div class="hero-links">
     <a class="hero-link" href="mapa-neuronal.html">Mapa neuronal</a>
-    <a class="hero-link" href="panorama.html">Panorama 8 roles</a>
-    <a class="hero-link" href="briefing-hub.html">Briefing diario</a>
+    <a class="hero-link" href="#panorama" onclick="showTab(&quot;panorama&quot;)">Panorama 8 roles</a>
+    <a class="hero-link" href="#briefing" onclick="showTab(&quot;briefing&quot;)">Briefing diario</a>
     <a class="hero-link" href="rigor.html">Rigor semanal</a>
+    <a class="hero-link" href="/reportes/">Reportes</a>
   </div>
 </div>
 <p style="font-size:12px;color:var(--muted);margin:-2px 0 6px" id="fdate"></p>
@@ -466,6 +467,9 @@ main > section.show{ display: block; }
 <div id="pn-ms-agenda" style="margin:12px 0 14px;"></div>
 <div id="pn-ms-mail" style="margin:12px 0 14px;"></div>
 
+<div style="display:flex;justify-content:flex-end;margin:6px 0 8px">
+  <button onclick="(function(){var roles=document.querySelectorAll('#pn-roles-grid .role');var anyOpen=Array.from(roles).some(function(r){return r.classList.contains('open')});roles.forEach(function(r){r.classList[anyOpen?'remove':'add']('open')});this.textContent=anyOpen?'Expandir todos':'Colapsar todos';}).call(this)" style="background:transparent;border:1px solid var(--gold,#c9a84a);color:var(--muted,#6b7580);padding:4px 10px;border-radius:5px;font-size:11px;cursor:pointer;font-family:inherit;letter-spacing:.02em">Expandir todos</button>
+</div>
 <div id="pn-roles-grid" class="roles-grid">
   <div style="grid-column: 1 / -1; color: var(--muted); text-align: center; padding: 40px 20px;">cargando roles…</div>
 </div>
@@ -1851,8 +1855,34 @@ async function loadMisTareas() {
       return fa.localeCompare(fb);
     });
 
-    document.getElementById('tareas-abiertas').innerHTML = abiertas.length ? abiertas.map(function(t){return renderTask(t,false)}).join('') : '<div style="text-align:center;padding:20px;color:var(--muted)">Sin tareas abiertas</div>';
-    document.getElementById('tareas-cerradas').innerHTML = cerradas.length ? cerradas.map(function(t){return renderTask(t,true)}).join('') : '<div style="text-align:center;padding:20px;color:var(--muted)">Sin tareas cerradas</div>';
+    // Agrupar abiertas por eje/categoria; usar <details> nativo (colapsable)
+    var renderGrouped = function(items, isCerrada){
+      if (!items.length) return '<div style="text-align:center;padding:20px;color:var(--muted)">Sin tareas '+(isCerrada?'cerradas':'abiertas')+'</div>';
+      var byEje = {};
+      items.forEach(function(t){
+        var key = t.eje || t.categoria || 'sin clasificar';
+        if (!byEje[key]) byEje[key] = [];
+        byEje[key].push(t);
+      });
+      var order = Object.keys(byEje).sort(function(a,b){return byEje[b].length - byEje[a].length;});
+      return order.map(function(eje){
+        var its = byEje[eje];
+        var venc = its.filter(function(t){return t.vencida;}).length;
+        var crit = its.filter(function(t){return t.prioridad==='critica';}).length;
+        var badges = '';
+        if (venc) badges += '<span style="font-size:10px;padding:1px 6px;border-radius:3px;background:rgba(166,46,46,.15);color:var(--red);margin-left:6px">'+venc+' venc</span>';
+        if (crit) badges += '<span style="font-size:10px;padding:1px 6px;border-radius:3px;background:rgba(166,46,46,.2);color:var(--red);margin-left:6px">'+crit+' crit</span>';
+        return '<details '+(isCerrada?'':'open')+' style="margin-bottom:10px;border:1px solid var(--border,#c9a84a);border-radius:8px;overflow:hidden;background:var(--bg,#faf7ee)">' +
+          '<summary style="padding:9px 14px;background:var(--bg2,#f5eed5);cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:600;list-style:none;user-select:none">' +
+            '<span style="text-transform:uppercase;letter-spacing:.04em;font-size:11.5px;color:var(--text,#091f2e)">'+eje+badges+'</span>' +
+            '<span style="font-family:'JetBrains Mono',monospace;color:var(--cyan,#b89949);font-size:12px">'+its.length+'</span>' +
+          '</summary>' +
+          '<div style="padding:8px 10px 4px">'+its.map(function(t){return renderTask(t,isCerrada)}).join('')+'</div>' +
+        '</details>';
+      }).join('');
+    };
+    document.getElementById('tareas-abiertas').innerHTML = renderGrouped(abiertas, false);
+    document.getElementById('tareas-cerradas').innerHTML = renderGrouped(cerradas, true);
   } catch(e) {
     document.getElementById('tareas-abiertas').innerHTML='<div style="text-align:center;padding:20px;color:var(--muted)">API no disponible</div>';
   }
@@ -3649,7 +3679,7 @@ loadCalendario();
     if (novedades.length>0) badges.push('<span class="pn-badge novedad">'+novedades.length+' nuevas</span>');
     if (delta>0) badges.push('<span class="pn-badge pulse-up">↑'+delta+'</span>');
     else if (delta<0) badges.push('<span class="pn-badge pulse-down">↓'+Math.abs(delta)+'</span>');
-    var shouldOpen = vencidos>0 || criticos>0 || novedades.length>0;
+    var shouldOpen = false; // antes auto-open por urgencia; los badges del header ya alertan
     var abiertosTop = abiertos.slice(0,5);
     var abiertosRest = abiertos.slice(5);
     var verMas = abiertosRest.length
@@ -3945,6 +3975,25 @@ document.addEventListener('visibilitychange', function(){
   }
   // Pre-load tras 2s para que esté listo
   setTimeout(loadPersonas, 2000);
+})();
+</script>
+
+<script>
+// Hash routing: /dashboard.html#panorama o #briefing -> showTab correspondiente
+(function(){
+  var validTabs = ['panorama','briefing','inbox','agenda','equipo','personas','radar'];
+  function applyHash(){
+    var h = (location.hash || '').replace(/^#/,'');
+    if (validTabs.indexOf(h) !== -1) {
+      try { showTab(h); } catch(e){}
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyHash);
+  } else {
+    applyHash();
+  }
+  window.addEventListener('hashchange', applyHash);
 })();
 </script>
 

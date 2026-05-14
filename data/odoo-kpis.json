@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-05-13",
-  "generated_at": "2026-05-13T10:30:04.642955Z",
+  "fecha": "2026-05-14",
+  "generated_at": "2026-05-14T10:30:02.041535Z",
   "version": "v2-3decisiones",
   "facturacion_30d": {
-    "total": 4906173619.09,
-    "count": 56,
+    "total": 4884108720.04,
+    "count": 59,
     "moneda": "COP"
   },
   "cartera_pendiente": {
-    "total": 7612166781.19,
-    "count": 95,
-    "vencidas": 47,
+    "total": 7693449382.93,
+    "count": 100,
+    "vencidas": 49,
     "moneda": "COP"
   },
   "top_cartera": [
@@ -28,7 +28,7 @@
     },
     {
       "partner": "METROGAS DE COLOMBIA S.A E.S.P",
-      "pendiente": 227666347.47000003
+      "pendiente": 308948949.21000004
     },
     {
       "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
@@ -78,14 +78,14 @@
     },
     {
       "name": "Tareas y Proyectos Gerencia General",
-      "tareas": 4
+      "tareas": 7
     }
   ],
-  "tareas_proyectos_abiertas": 412,
-  "empleados_activos": 645,
+  "tareas_proyectos_abiertas": 415,
+  "empleados_activos": 649,
   "sobrevivir": {
     "caja": {
-      "bancos_total": 540316276.6600001,
+      "bancos_total": 300443192.91999996,
       "bancos_detalle": [
         {
           "cuenta": "11050505 CAJA GENERAL",
@@ -191,7 +191,7 @@
         },
         {
           "cuenta": "11100510 BANCOLOMBIA 9169 OYMZ3",
-          "saldo": 3307152.54,
+          "saldo": 9307152.54,
           "flags": []
         },
         {
@@ -201,29 +201,25 @@
         },
         {
           "cuenta": "11100520 BANCOLOMBIA 4446  COMERCIAL",
-          "saldo": -102581479.63,
+          "saldo": -113182027.63,
           "flags": [
             "saldo_negativo_revisar"
           ]
         },
         {
           "cuenta": "11100525 BANCOLOMBIA  1016 ADMON CENTRAL",
-          "saldo": 87468792.56,
+          "saldo": 85906703.82,
           "flags": []
         },
         {
           "cuenta": "11100530 BANCOLOMBIA  8721 GERENCIA",
-          "saldo": -22479452.41,
-          "flags": [
-            "saldo_negativo_revisar"
-          ]
+          "saldo": 197520547.59,
+          "flags": []
         },
         {
           "cuenta": "11100535 BANCOLOMBIA 0235 VALLE",
-          "saldo": -1270446.0,
-          "flags": [
-            "saldo_negativo_revisar"
-          ]
+          "saldo": 23729554.0,
+          "flags": []
         },
         {
           "cuenta": "11100545 DAVIVIENDA CTA 4902 FLORIDABLANCA",
@@ -234,7 +230,7 @@
         },
         {
           "cuenta": "11100550 DAVIVIENDA BUCARAMANGA 033569993497",
-          "saldo": -499022.03,
+          "saldo": -472370.03,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -246,7 +242,7 @@
         },
         {
           "cuenta": "11100560 BANCO AV VILLAS 4070",
-          "saldo": 1251378677.17,
+          "saldo": 979102901.17,
           "flags": []
         },
         {
@@ -297,7 +293,7 @@
         },
         {
           "cuenta": "False CTA CTE BOGOTA 7323",
-          "saldo": -234105626.76,
+          "saldo": -440566949.76,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -374,14 +370,6 @@
           "warning": "saldo_negativo_revisar"
         },
         {
-          "cuenta": "11100530 BANCOLOMBIA  8721 GERENCIA",
-          "warning": "saldo_negativo_revisar"
-        },
-        {
-          "cuenta": "11100535 BANCOLOMBIA 0235 VALLE",
-          "warning": "saldo_negativo_revisar"
-        },
-        {
           "cuenta": "11100545 DAVIVIENDA CTA 4902 FLORIDABLANCA",
           "warning": "saldo_negativo_revisar"
         },
@@ -406,8 +394,8 @@
           "warning": "saldo_negativo_revisar"
         }
       ],
-      "cartera_ejecutada": 7612166781.19,
-      "total_disponible": 8152483057.849999,
+      "cartera_ejecutada": 7693449382.93,
+      "total_disponible": 7993892575.85,
       "moneda": "COP",
       "nota_parametrizacion": "Plan de cuentas en proceso de parametrización · revisar warnings"
     },
@@ -418,87 +406,87 @@
           "total": 1622702812.56,
           "facturas_vencidas": 7,
           "mas_vieja": "2026-04-15",
-          "dias_vencida": 28
+          "dias_vencida": 29
         },
         {
           "partner": "GAS NATURAL CUNDIBOYACENSE S.A. E.S.P.",
-          "total": 701370508.88,
+          "total": 701370508.8800001,
           "facturas_vencidas": 11,
           "mas_vieja": "2026-04-19",
-          "dias_vencida": 24
+          "dias_vencida": 25
+        },
+        {
+          "partner": "METROGAS DE COLOMBIA S.A E.S.P",
+          "total": 200896002.73000002,
+          "facturas_vencidas": 13,
+          "mas_vieja": "2026-04-11",
+          "dias_vencida": 33
         },
         {
           "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
           "total": 159188822.0,
           "facturas_vencidas": 4,
           "mas_vieja": "2026-02-23",
-          "dias_vencida": 79
-        },
-        {
-          "partner": "METROGAS DE COLOMBIA S.A E.S.P",
-          "total": 97548501.94,
-          "facturas_vencidas": 11,
-          "mas_vieja": "2026-04-11",
-          "dias_vencida": 32
+          "dias_vencida": 80
         },
         {
           "partner": "CONSORCIO SILAR CONDUGAS",
           "total": 86588132.44,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-30",
-          "dias_vencida": 13
+          "dias_vencida": 14
         },
         {
           "partner": "Jhon Christopher Angulo",
           "total": 59368482.98,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-03-24",
-          "dias_vencida": 50
+          "dias_vencida": 51
         },
         {
           "partner": "GASES DE OCCIDENTE SA ESP",
           "total": 55554076.62,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-05-01",
-          "dias_vencida": 12
+          "dias_vencida": 13
         },
         {
           "partner": "UNION TEMPORAL HABILITACION INFRAESTRUCTURA HOSPITALARIA",
           "total": 24521525.67,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 29
+          "dias_vencida": 30
         },
         {
           "partner": "CONINSA  S.A.S",
           "total": 18868581.69,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-20",
-          "dias_vencida": 23
+          "dias_vencida": 24
         },
         {
           "partner": "CONSTRUTEM S A S",
           "total": 15598151.76,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 29
+          "dias_vencida": 30
         }
       ],
-      "total": 2866481571.98,
-      "facturas_count": 47
+      "total": 2969829072.77,
+      "facturas_count": 49
     },
     "deuda_proveedores": {
-      "total": 3392409878.0,
+      "total": 3276889216.47,
       "count": 1000,
-      "vencidas": 857,
+      "vencidas": 862,
       "top": [
         {
           "proveedor": "LOGISLAND S A S",
-          "pendiente": 541843651.8
+          "pendiente": 434273043.59999996
         },
         {
           "proveedor": "CONSTRUTEM S A S",
-          "pendiente": 424019603.7
+          "pendiente": 430051861.8
         },
         {
           "proveedor": "GASES DE OCCIDENTE SA ESP",
@@ -519,135 +507,135 @@
   "recuperar": {
     "facturas_recientes": [
       {
-        "name": "FEC102",
+        "name": "FEC107",
         "tipo": "venta",
         "partner": "METROGAS DE COLOMBIA S.A E.S.P",
-        "monto": 655980.07,
+        "monto": 25409754.52,
+        "fecha": "2026-05-13",
+        "registrada": "2026-05-13 21:01:52"
+      },
+      {
+        "name": "BILL/2026/05/0156",
+        "tipo": "compra",
+        "partner": "CONSTRUTEM S A S",
+        "monto": 4373721.0,
         "fecha": "2026-05-12",
-        "registrada": "2026-05-12 19:39:13"
+        "registrada": "2026-05-13 20:59:58"
       },
       {
-        "name": "BILL/2026/05/0125",
+        "name": "BILL/2026/05/0157",
         "tipo": "compra",
-        "partner": "HSEQ DEL GOLFO S.A.S.",
-        "monto": 119000.0,
-        "fecha": "2026-05-09",
-        "registrada": "2026-05-12 18:41:25"
-      },
-      {
-        "name": "BILL/2026/05/0132",
-        "tipo": "compra",
-        "partner": "ESTACION DE SERVICI O EL CARARE SAS",
-        "monto": 49999.99,
-        "fecha": "2026-05-06",
-        "registrada": "2026-05-12 16:35:47"
-      },
-      {
-        "name": "DEC621",
-        "tipo": "compra",
-        "partner": "GUZMAN SALAZAR EDISON ALEJANDRO",
-        "monto": 2500000.0,
+        "partner": "CONSTRUTEM S A S",
+        "monto": 3113490.6,
         "fecha": "2026-05-12",
-        "registrada": "2026-05-12 16:35:40"
+        "registrada": "2026-05-13 20:59:45"
       },
       {
-        "name": "BILL/2026/05/0128",
+        "name": "BILL/2026/05/0025",
         "tipo": "compra",
-        "partner": "GRICOL S A",
-        "monto": 6204883.2,
+        "partner": "CONSTRUTEM S A S",
+        "monto": 4190521.5,
+        "fecha": "2026-05-12",
+        "registrada": "2026-05-13 20:59:28"
+      },
+      {
+        "name": "BILL/2026/05/0154",
+        "tipo": "compra",
+        "partner": "CONSTRUTEM S A S",
+        "monto": 1658250.0,
+        "fecha": "2026-05-12",
+        "registrada": "2026-05-13 20:58:57"
+      },
+      {
+        "name": "FEC106",
+        "tipo": "venta",
+        "partner": "METROGAS DE COLOMBIA S.A E.S.P",
+        "monto": 20321715.13,
+        "fecha": "2026-05-13",
+        "registrada": "2026-05-13 20:46:31"
+      },
+      {
+        "name": "FEC105",
+        "tipo": "venta",
+        "partner": "METROGAS DE COLOMBIA S.A E.S.P",
+        "monto": 23723617.52,
+        "fecha": "2026-05-13",
+        "registrada": "2026-05-13 20:42:08"
+      },
+      {
+        "name": "FEC104",
+        "tipo": "venta",
+        "partner": "METROGAS DE COLOMBIA S.A E.S.P",
+        "monto": 3072657.67,
+        "fecha": "2026-05-13",
+        "registrada": "2026-05-13 20:39:39"
+      },
+      {
+        "name": "BILL/2026/05/0158",
+        "tipo": "compra",
+        "partner": "CONSTRUTEM S A S",
+        "monto": 2059200.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-13 19:40:25"
+      },
+      {
+        "name": "BILL/2026/05/0155",
+        "tipo": "compra",
+        "partner": "CONSTRUTEM S A S",
+        "monto": 1326600.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-13 19:39:57"
+      },
+      {
+        "name": "BILL/2026/05/0153",
+        "tipo": "compra",
+        "partner": "CONSTRUTEM S A S",
+        "monto": 2527668.0,
+        "fecha": "2026-05-07",
+        "registrada": "2026-05-13 19:39:42"
+      },
+      {
+        "name": "BILL/2026/05/0152",
+        "tipo": "compra",
+        "partner": "COLOMBIA MAS  TV SAS",
+        "monto": 1831692.03,
         "fecha": "2026-05-05",
-        "registrada": "2026-05-12 14:31:38"
+        "registrada": "2026-05-13 19:26:36"
       },
       {
-        "name": "BILL/2026/05/0118",
+        "name": "BILL/2026/05/0151",
         "tipo": "compra",
-        "partner": "TAVERA RODRIGUEZ MARTIN ALONSO",
-        "monto": 18000.0,
-        "fecha": "2026-05-01",
-        "registrada": "2026-05-12 14:03:55"
+        "partner": "EL PUNTO DE LA IMPRESION S A S",
+        "monto": 254660.0,
+        "fecha": "2026-05-12",
+        "registrada": "2026-05-13 15:29:14"
       },
       {
-        "name": "BILL/2026/05/0117",
+        "name": "BILL/2026/05/0150",
         "tipo": "compra",
-        "partner": "TAVERA RODRIGUEZ MARTIN ALONSO",
-        "monto": 100000.0,
-        "fecha": "2026-05-02",
-        "registrada": "2026-05-12 14:03:26"
+        "partner": "FORERO RUBIO MARIA BEATRIZ",
+        "monto": 66500.0,
+        "fecha": "2026-05-12",
+        "registrada": "2026-05-13 14:11:52"
       },
       {
-        "name": "BILL/2026/05/0116",
-        "tipo": "compra",
-        "partner": "TAVERA RODRIGUEZ MARTIN ALONSO",
-        "monto": 42000.0,
-        "fecha": "2026-05-01",
-        "registrada": "2026-05-12 14:02:56"
-      },
-      {
-        "name": "BILL/2026/05/0115",
-        "tipo": "compra",
-        "partner": "INVERSIONES REY ORTIZ E HIJOS & CIA S EN C",
-        "monto": 95400.0,
-        "fecha": "2026-05-01",
-        "registrada": "2026-05-12 14:02:17"
-      },
-      {
-        "name": "BILL/2026/05/0114",
-        "tipo": "compra",
-        "partner": "TAVERA RODRIGUEZ MARTIN ALONSO",
-        "monto": 80000.0,
-        "fecha": "2026-05-01",
-        "registrada": "2026-05-12 14:01:40"
-      },
-      {
-        "name": "BILL/2026/04/0435",
-        "tipo": "compra",
-        "partner": "TAVERA RODRIGUEZ MARTIN ALONSO",
-        "monto": 100000.0,
-        "fecha": "2026-04-24",
-        "registrada": "2026-05-12 14:01:00"
-      },
-      {
-        "name": "BILL/2026/04/0436",
-        "tipo": "compra",
-        "partner": "ELECTRIFICADORA DE SANTANDER S.A. ESP",
-        "monto": 71977.15,
-        "fecha": "2026-04-27",
-        "registrada": "2026-05-12 13:47:02"
-      },
-      {
-        "name": "BILL/2026/04/0438",
-        "tipo": "compra",
-        "partner": "EFISIS SAS",
-        "monto": 1357540.5,
-        "fecha": "2026-04-18",
-        "registrada": "2026-05-12 13:46:07"
-      },
-      {
-        "name": "BILL/2026/05/0140",
-        "tipo": "compra",
-        "partner": "ALQUIEQUIPOS BERU SAS",
-        "monto": 3737500.0,
-        "fecha": "2026-05-08",
-        "registrada": "2026-05-12 13:44:46"
-      },
-      {
-        "name": "BILL/2026/05/0142",
-        "tipo": "compra",
-        "partner": "MARIA EUGENIA VELASCO DE ACEVEDO & CIA SAS",
-        "monto": 8018703.0,
-        "fecha": "2026-05-08",
-        "registrada": "2026-05-12 13:43:51"
+        "name": "FEC103",
+        "tipo": "venta",
+        "partner": "METROGAS DE COLOMBIA S.A E.S.P",
+        "monto": 8754856.9,
+        "fecha": "2026-05-13",
+        "registrada": "2026-05-13 13:08:54"
       }
     ],
     "compras_mes": {
-      "total": 231605351.06,
-      "count": 265,
+      "total": 270806567.19,
+      "count": 276,
       "desde": "2026-05-01",
       "moneda": "COP"
     },
     "compras_acumulado_ano": {
-      "total": 5864050688.76,
-      "count": 2646,
+      "total": 5879686378.43,
+      "count": 2655,
       "por_mes": [
         {
           "mes": "2026-01",
@@ -663,11 +651,11 @@
         },
         {
           "mes": "2026-04",
-          "total": 2001266736.7600014
+          "total": 1977701210.3000014
         },
         {
           "mes": "2026-05",
-          "total": 231605351.05999994
+          "total": 270806567.19000006
         }
       ],
       "desde": "2026-01-01",
@@ -677,49 +665,49 @@
       "items": [
         {
           "contrato": "R1",
-          "gasto_acumulado": 1511725256.58,
+          "gasto_acumulado": 1503915206.58,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "O&M Z2",
-          "gasto_acumulado": 1184348060.06,
+          "gasto_acumulado": 1178117186.81,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "VALLE",
-          "gasto_acumulado": 1092988635.71,
+          "gasto_acumulado": 1123494135.71,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "BOYACÁ",
-          "gasto_acumulado": 314633497.12,
+          "gasto_acumulado": 313038377.77,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "PÉRDIDAS",
-          "gasto_acumulado": 287579103.06,
+          "gasto_acumulado": 280608003.06,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "FLORIDABLANCA",
-          "gasto_acumulado": 140996999.4,
+          "gasto_acumulado": 221641168.14,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "JERICÓ",
-          "gasto_acumulado": 64974096.8,
+          "gasto_acumulado": 67989096.8,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "BUCARAMANGA",
-          "gasto_acumulado": 13796913.27,
+          "gasto_acumulado": 8571973.27,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -733,7 +721,7 @@
       "nota_presupuesto": "Campos presupuesto/cumplimiento pendientes hasta carga de estructuración"
     },
     "inventario_transito": {
-      "count": 96,
+      "count": 98,
       "items": [
         {
           "name": "OM&Z2/IN/00076",
@@ -796,12 +784,6 @@
           "orden_origen": "P00283"
         },
         {
-          "name": "NORM/IN/00136",
-          "proveedor": "TIENDAS S.A",
-          "fecha_programada": "2026-02-26 12:18:05",
-          "orden_origen": "P00354"
-        },
-        {
           "name": "OM&Z2/IN/00080",
           "proveedor": "EDEMCO S.A.S",
           "fecha_programada": "2026-02-27 17:21:43",
@@ -824,6 +806,12 @@
           "proveedor": "REPRESENTACIONES COMERCIALES NOHRA GRANADOS RAMIREZ Y CIA SAS",
           "fecha_programada": "2026-03-11 19:42:03",
           "orden_origen": "P00658"
+        },
+        {
+          "name": "OM&Z2/IN/00090",
+          "proveedor": "IPX S A S",
+          "fecha_programada": "2026-03-12 13:27:45",
+          "orden_origen": "P00667"
         }
       ]
     }
@@ -912,7 +900,7 @@
       },
       {
         "name": "Tareas y Proyectos Gerencia General",
-        "tareas": 4,
+        "tareas": 7,
         "responsable": "SANCHEZ ACEVEDO SEBASTIAN",
         "cliente": null,
         "inicio": false,
@@ -942,7 +930,7 @@
       },
       {
         "mes": "2026-05",
-        "total": 655099098.97
+        "total": 736381700.7099999
       }
     ]
   }

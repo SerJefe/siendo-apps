@@ -92,13 +92,13 @@
     },
     {
       "semana": "W20",
-      "periodo": "2026-05-07 a 2026-05-13",
+      "periodo": "2026-05-08 a 2026-05-14",
       "metricas": {
-        "creadas_semana": 46,
+        "creadas_semana": 29,
         "cerradas_semana": 44,
         "evaluadas_semana": 0,
-        "abiertas_total": 232,
-        "ratio_cierre": 96
+        "abiertas_total": 236,
+        "ratio_cierre": 152
       },
       "totales": {
         "tareas_detectadas": 48,
@@ -106,7 +106,7 @@
         "ideas": 23,
         "alertas": 12
       },
-      "generado_at": "2026-05-13T11:00:14"
+      "generado_at": "2026-05-14T11:00:09"
     }
   ]
 }

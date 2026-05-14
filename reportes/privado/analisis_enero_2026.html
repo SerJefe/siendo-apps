@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisis Focalizado Enero 2026 — Condugas S.A.</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: linear-gradient(135deg, #0A2240 0%, #292D63 100%); color: #ffffff; font-size: 14px; line-height: 1.6; }
+.container { max-width: 1400px; margin: 0 auto; padding: 32px; }
+
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 36px; color: #F8B133; margin-bottom: 12px; }
+.header .subtitle { font-size: 18px; color: #B8D4EB; margin-bottom: 8px; }
+.header .alert { font-size: 16px; color: #dc3545; font-weight: 600; background: rgba(220, 53, 69, 0.1); padding: 12px 24px; border-radius: 8px; display: inline-block; border: 1px solid #dc3545; }
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin: 20px 0; }
+@media (max-width: 1000px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+
+.card { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 24px; backdrop-filter: blur(10px); margin: 16px 0; }
+.card h3 { font-size: 18px; margin-bottom: 16px; border-bottom: 2px solid #1D70B7; padding-bottom: 8px; color: #F8B133; }
+.card.critical { border: 2px solid #dc3545; }
+.card.critical h3 { color: #dc3545; }
+.card.warning { border: 2px solid #ffc107; }
+.card.warning h3 { color: #ffc107; }
+.card.info { border: 2px solid #1D70B7; }
+
+.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0; }
+.kpi { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; text-align: center; }
+.kpi .number { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+.kpi .label { font-size: 12px; color: #91B0CB; text-transform: uppercase; letter-spacing: 1px; }
+.kpi.negative .number { color: #dc3545; }
+.kpi.positive .number { color: #28a745; }
+.kpi.warning .number { color: #ffc107; }
+
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+th { background: rgba(29, 112, 183, 0.3); color: #F8B133; padding: 12px 8px; text-align: left; font-weight: 600; }
+td { padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+tr:hover { background: rgba(255,255,255,0.02); }
+.amount { text-align: right; font-variant-numeric: tabular-nums; }
+.negative { color: #dc3545; font-weight: 600; }
+.positive { color: #28a745; font-weight: 600; }
+
+.insight-box { background: rgba(248, 177, 51, 0.1); border: 2px solid #F8B133; border-radius: 12px; padding: 20px; margin: 20px 0; }
+.insight-box h4 { color: #F8B133; font-size: 16px; margin-bottom: 12px; }
+.insight-box .question { font-style: italic; color: #FFCD04; margin: 8px 0; font-weight: 600; }
+
+.timeline { position: relative; padding-left: 20px; margin: 20px 0; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: #1D70B7; }
+.timeline-item { position: relative; margin-bottom: 16px; padding-left: 24px; }
+.timeline-item::before { content: ''; position: absolute; left: -7px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: #F8B133; }
+.timeline-item.critical::before { background: #dc3545; }
+.timeline-item h5 { color: #F8B133; font-size: 14px; margin-bottom: 4px; }
+.timeline-item .desc { color: #B8D4EB; font-size: 13px; }
+
+.footer { text-align: center; margin-top: 40px; padding-top: 24px; border-top: 2px solid #1D70B7; color: #91B0CB; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>🔴 Análisis Crítico: Enero 2026</h1>
+<div class="subtitle">Diagnóstico del colapso universal de margen</div>
+<div class="alert">⚠️ TODOS los contratos activos registraron pérdidas en enero 2026</div>
+</div>
+
+<div class="kpi-row">
+<div class="kpi negative"><div class="number">-$746M</div><div class="label">UAI consolidado ene</div></div>
+<div class="kpi negative"><div class="number">-22,2%</div><div class="label">Margen consolidado</div></div>
+<div class="kpi warning"><div class="number">8/8</div><div class="label">Contratos negativos</div></div>
+<div class="kpi negative"><div class="number">$747M</div><div class="label">Brecha costo-producción</div></div>
+</div>
+
+<div class="grid2">
+
+<div class="card critical">
+<h3>Ranking de destrucción de valor enero 2026</h3>
+<table>
+<tr><th>Contrato</th><th>Producción</th><th>UAI</th><th>Margen</th><th>Impacto</th></tr>
+<tr><td>OYMA R1</td><td class="amount">$1.263M</td><td class="amount negative">-$280M</td><td class="negative">-22,2%</td><td>El gigante enfermo continúa</td></tr>
+<tr><td>Valle</td><td class="amount">$756M</td><td class="amount negative">-$192M</td><td class="negative">-25,4%</td><td>Cayó de +5,1% a -25%</td></tr>
+<tr><td>Normalizaciones</td><td class="amount">$128M</td><td class="amount negative">-$79M</td><td class="negative">-62,0%</td><td>Arrancando con problemas</td></tr>
+<tr><td>Floridablanca</td><td class="amount">$77M</td><td class="amount negative">-$61M</td><td class="negative">-79,3%</td><td>Crítico — evaluar cierre</td></tr>
+<tr><td>Boyacá</td><td class="amount">$334M</td><td class="amount negative">-$50M</td><td class="negative">-15,1%</td><td>Recuperó producción, no margen</td></tr>
+<tr><td>OYM Z2</td><td class="amount">$676M</td><td class="amount negative">-$33M</td><td class="negative">-4,9%</td><td>Montaje inicial costoso</td></tr>
+<tr><td>Bucaramanga</td><td class="amount">$103M</td><td class="amount negative">-$30M</td><td class="negative">-29,2%</td><td>De +17% a -29% — ¿qué pasó?</td></tr>
+<tr><td>Nuevos Negocios</td><td class="amount">$26M</td><td class="amount negative">-$20M</td><td class="negative">-77,1%</td><td>Caída atípica del éxito 2025</td></tr>
+</table>
+</div>
+
+<div class="card warning">
+<h3>Señales de alerta estructural</h3>
+<div class="timeline">
+<div class="timeline-item critical">
+<h5>Diciembre → Enero: deterioro universal</h5>
+<div class="desc">Contratos que eran rentables en diciembre (varios) cayeron a negativo en enero. No es un contrato aislado, es sistémico.</div>
+</div>
+<div class="timeline-item critical">
+<h5>Producción: $3.362M vs Costos: $4.109M</h5>
+<div class="desc">Brecha de $747M. Los costos NO se ajustaron a la baja de producción. Estructura fija muy pesada.</div>
+</div>
+<div class="timeline-item">
+<h5>Patrón: producción baja, costos fijos</h5>
+<div class="desc">Bucaramanga: -14% producción pero costos no bajaron. Valle: -27% producción, margen se desplomó.</div>
+</div>
+<div class="timeline-item">
+<h5>Excepciones reveladoras</h5>
+<div class="desc">OYM Z2 casi en equilibrio (-4,9%) arrancando. Boyacá recuperó producción (+118% vs dic) pero sigue negativo.</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="card info">
+<h3>Hipótesis: ¿qué puede estar pasando?</h3>
+<div class="grid3">
+<div class="insight-box">
+<h4>1. Efecto contable de cierre</h4>
+<p>Enero tradicionalmente carga costos de cierre del año anterior. Provisiones, ajustes, gastos diferidos.</p>
+<div class="question">🤔 ¿Andrea puede confirmar si hay efecto de cierre 2025 cargado en enero 2026?</div>
+</div>
+<div class="insight-box">
+<h4>2. Estacionalidad operativa</h4>
+<p>Enero = mes de arranque lento. Vacaciones, re-arranque de obra, menos días efectivos.</p>
+<div class="question">🤔 ¿El patrón se repitió en enero 2025? ¿Camilo tiene comparativo de producción mensual?</div>
+</div>
+<div class="insight-box">
+<h4>3. Deterioro estructural real</h4>
+<p>Los costos fijos (nómina, admin, equipos) no se ajustaron al nivel de producción real.</p>
+<div class="question">🤔 ¿Cuánto del costo es fijo vs variable? Si producción baja 25%, ¿costos deberían bajar cuánto?</div>
+</div>
+</div>
+</div>
+
+<div class="grid2">
+
+<div class="card critical">
+<h3>OYMA R1: seguimiento del colapso</h3>
+<table>
+<tr><th>Período</th><th>Producción</th><th>Costos</th><th>UAI</th><th>Margen</th></tr>
+<tr><td>2024 anual</td><td class="amount">$24.200M</td><td class="amount">$23.504M</td><td class="amount positive">+$667M</td><td class="positive">+2,8%</td></tr>
+<tr><td>2025 anual</td><td class="amount">$17.960M</td><td class="amount">$19.597M</td><td class="amount negative">-$1.606M</td><td class="negative">-8,9%</td></tr>
+<tr><td>Ene 2026</td><td class="amount">$1.263M</td><td class="amount">$1.543M</td><td class="amount negative">-$280M</td><td class="negative">-22,2%</td></tr>
+</table>
+<div class="insight-box">
+<h4>La tendencia es clara: empeoramiento acelerado</h4>
+<p>De 2024 a 2025: producción -26%, costos solo -17%. En enero 2026: margen se desplomó de -8,9% anual a -22,2% mensual.</p>
+<div class="question">🔴 ¿Qué específicamente cambió en enero? ¿Es volumen EPM, precios, alcance, o estructura de costos?</div>
+</div>
+</div>
+
+<div class="card warning">
+<h3>Casos atípicos que dan pistas</h3>
+
+<div style="margin:12px 0; padding:12px; background:rgba(40,167,69,0.1); border-radius:8px;">
+<h5 style="color:#28a745;">OYM Z2: casi equilibrio arrancando</h5>
+<p>$676M producción, -$33M UAI (-4,9%). Es un contrato nuevo en montaje y casi está en punto de equilibrio.</p>
+<div class="question">🤔 ¿Qué hace diferente OYM Z2 que podríamos replicar?</div>
+</div>
+
+<div style="margin:12px 0; padding:12px; background:rgba(220,53,69,0.1); border-radius:8px;">
+<h5 style="color:#dc3545;">Nuevos Negocios: del éxito al colapso</h5>
+<p>En 2025 fue el caso de éxito: de -28% a +21%. En enero 2026: -77% margen.</p>
+<div class="question">🔴 ¿Qué cambió radicalmente? ¿Se movió el equipo a otro contrato?</div>
+</div>
+
+<div style="margin:12px 0; padding:12px; background:rgba(255,193,7,0.1); border-radius:8px;">
+<h5 style="color:#ffc107;">Valle: de héroe a problema</h5>
+<p>2025: de -5% a +5,1%. Enero 2026: -25,4%. Caída de producción (-27%) pero ¿por qué costos no bajaron?</p>
+<div class="question">🤔 ¿Se trasladaron recursos de Valle a otro contrato?</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="card info">
+<h3>Plan de investigación urgente</h3>
+<div class="grid2">
+
+<div style="background:rgba(220,53,69,0.1); padding:16px; border-radius:8px;">
+<h4 style="color:#dc3545;">Para el 21 de marzo (viernes)</h4>
+<ul style="list-style:none; padding:0;">
+<li style="margin:8px 0;">✅ <strong>Andrea:</strong> ¿Hay efectos contables de cierre 2025 en enero 2026?</li>
+<li style="margin:8px 0;">✅ <strong>Andrea:</strong> Costos fijos vs variables por contrato</li>
+<li style="margin:8px 0;">✅ <strong>Camilo:</strong> Comparativo enero 2025 vs enero 2026</li>
+<li style="margin:8px 0;">✅ <strong>Natalia:</strong> Headcount enero 2025 vs enero 2026 por contrato</li>
+<li style="margin:8px 0;">✅ <strong>Camilo:</strong> ¿Por qué OYMA bajó en enero específicamente?</li>
+</ul>
+</div>
+
+<div style="background:rgba(248,177,51,0.1); padding:16px; border-radius:8px;">
+<h4 style="color:#F8B133;">Para el 26 de marzo (miércoles)</h4>
+<ul style="list-style:none; padding:0;">
+<li style="margin:8px 0;">📊 <strong>Carlos:</strong> ¿Qué pasó con el equipo de Nuevos Negocios?</li>
+<li style="margin:8px 0;">📊 <strong>Nelson:</strong> Transporte/logística enero: ¿costos fijos que no bajan?</li>
+<li style="margin:8px 0;">📊 <strong>Juan Guillermo:</strong> Reajustes contractuales: ¿cubren el incremento real?</li>
+<li style="margin:8px 0;">🔍 <strong>Análisis cruzado:</strong> Intercompany transfers enero 2026</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+<p><strong>Conclusión:</strong> Enero 2026 es una señal de alarma que requiere respuesta inmediata.</p>
+<p>Si es efecto contable/estacionalidad → ajustar procesos. Si es deterioro real → acciones correctivas urgentes.</p>
+<p style="margin-top:16px; color:#91B0CB; font-size:12px;">
+Condugas S.A. BIC | Análisis generado por Siendo 🎯 | 466.603 registros procesados<br>
+Paleta Condugas: #292D63 • #F8B133 • #1D70B7
+</p>
+</div>
+
+</div>
+</body>
+</html>

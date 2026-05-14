@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-14T00:00:01.815754Z",
-  "total_controles_con_fuente": 12,
+  "generated_at": "2026-05-14T11:30:02.495690Z",
+  "total_controles_con_fuente": 13,
   "controles": {
     "comite-sv": {
       "last_done": "2026-05-13T11:45:10",
@@ -25,6 +25,10 @@
     "analisis-deuda": {
       "last_done": "2026-05-12",
       "source": "tracker (2 tareas 30d)"
+    },
+    "junta-mensual": {
+      "last_done": "2026-04-20T00:00:00+00:00",
+      "source": "calendario.ics (junta)"
     },
     "condugas-piloto": {
       "last_done": "2026-05-12",

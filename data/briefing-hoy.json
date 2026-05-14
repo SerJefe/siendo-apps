@@ -1,60 +1,61 @@
 {
-  "saludo": "Buenos días Sebastián — miércoles 13 May",
+  "saludo": "Buenos días Sebastián — jueves 14 May",
   "supervivencia": [
-    "EPM Río Negro: reajuste de 180M vence hoy/mañana. Sin este dinero, contrato OYM se colapsa.",
-    "Caja a 10 días: EBITDA -800M. Revisar movimientos e inversiones YA.",
-    "No conformidad contrato 24: respuesta formal pendiente desde abril."
+    "Caja a 10 días: revisar movimiento de inversiones hoy",
+    "EPM Río Negro: ~180M en reajustes pendientes + no conformidad contrato 24 sin respuesta formal",
+    "Deudas Condugas: presión inmediata de proveedores, Andrea necesita reunión urgente"
   ],
   "top_3": [
     {
-      "tarea": "Enviar comunicado + programar cobro directo reajuste EPM Río Negro (~180M)",
+      "tarea": "Revisar caja familiar e inversiones (estado real a hoy, movimientos, proyección 30 días)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Sin esto, OYM cae. Contrato depende de este dinero.",
-      "tarea_id": "cobrar_reajustes_epm"
+      "porque": "10 días de runway, decisiones financieras colgadas",
+      "tarea_id": "situacion_caja"
     },
     {
-      "tarea": "Revisar caja real hoy: saldo, inversiones, movimientos últimas 72h",
+      "tarea": "Responder formalmente no conformidad contrato 24 + propuesta reajuste EPM con 3 alternativas viables",
       "categoria": "SUPERVIVENCIA",
-      "porque": "10 días de caja. Necesitas visibilidad completa para decisiones de presión/espera.",
-      "tarea_id": "situacion_caja_familiar"
+      "porque": "180M en riesgo, cliente crítico requiere solución documentada",
+      "tarea_id": "epm_no_conformidad"
     },
     {
-      "tarea": "Responder formalmente no conformidad contrato 24 + Plan B si EPM rechaza reajuste",
+      "tarea": "Reunión Andrea (30min): deudas Condugas, plan de pago, proveedores pendientes",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Riesgo legal + operativo. Define si terminas o renegocías.",
-      "tarea_id": "no_conformidad_contrato24"
+      "porque": "Retención de comunidad como presión, viabilidad en riesgo",
+      "tarea_id": "deudas_condugas"
     }
   ],
-  "mega_dia": "Cobro EPM + visibilidad de caja = claridad para negociar/terminar OYM",
+  "mega_dia": "Documento caja + respuesta formal EPM = respiras",
   "contactar_hoy": [
     {
-      "persona": "William Lopez",
-      "motivo": "Estado actual del reajuste EPM. ¿Ya se envió comunicado formal?"
+      "persona": "Andrea Bernal",
+      "motivo": "Plan de pagos Condugas y gestión de proveedores"
     },
     {
-      "persona": "Andrea Bernal",
-      "motivo": "Reconciliación de caja real vs Odoo. Necesitas cifra 100% confiable."
+      "persona": "Emanuel",
+      "motivo": "Visualización ERP + estructura Siendo (roles, presupuesto)"
     }
   ],
   "ojo_con": [
     "121 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "Hackeo reportado sin detalles de impacto en sistemas de caja",
-    "Gaps contables en Odoo (27M, sueldos, anticipos) siguen sin resolver",
-    "68 tareas críticas abiertas: prioridad brutal hoy"
+    "Whoop en rojo (14% recovery, 27% sleep): TDAH + carga = decisiones sesgadas",
+    "165 tareas vencidas acumuladas = parálisis por sobrecarga",
+    "POT Aguactala: deadline 05-05 pasado, Pilar requiere citación urgente"
   ],
   "vencidas": [
-    "Reunión con Pilar/Basa POT Aguactala (deadline 2026-05-05)",
-    "Revisar rendimiento contratos compartidos (deadline 2026-04-20)"
+    "Conversación Pilar/Basa POT casa Aguactala (05-05 pasado)",
+    "Revisar contratos críticos (04-20 pasado)",
+    "No conformidad contrato 24 (sin fecha pero crítica)"
   ],
-  "frase_dia": "Hoy cobras EPM o defines Plan B. Todo lo demás espera.",
-  "generado_at": "2026-05-13T11:00:14",
-  "fecha": "2026-05-13",
+  "frase_dia": "Hoy: caja clara + EPM respondida = control recuperado. El resto espera.",
+  "generado_at": "2026-05-14T11:00:09",
+  "fecha": "2026-05-14",
   "stats": {
-    "abiertas": 232,
-    "criticas": 68,
-    "vencidas": 162,
+    "abiertas": 236,
+    "criticas": 70,
+    "vencidas": 165,
     "estancadas": 196,
-    "sin_evaluar": 207
+    "sin_evaluar": 211
   },
   "criticas_sin_fecha": [
     {
@@ -150,45 +151,39 @@
   ],
   "vence_pronto": [
     {
-      "id": "2026-05-06-c001",
-      "tarea": "Cuantificar precisamente la brecha de reajuste (13%) en transportes y mano de obra para sustentacion",
-      "dias": 0,
-      "fecha_limite": "2026-05-13"
-    },
-    {
       "id": "2026-05-11-c001",
       "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
-      "dias": 1,
+      "dias": 0,
       "fecha_limite": "2026-05-14"
     },
     {
       "id": "2026-05-11-c002",
       "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de ",
-      "dias": 1,
+      "dias": 0,
       "fecha_limite": "2026-05-14"
     },
     {
       "id": "2026-05-11-c003",
       "tarea": "Verificar que Condugas no asuma riesgo de caja personal si contrato no genera utilidad",
-      "dias": 1,
+      "dias": 0,
       "fecha_limite": "2026-05-14"
     },
     {
       "id": "2026-05-11-c004",
       "tarea": "Explorar negociación alternativa a EPM (no la anterior que falló) para reajuste de contrato",
-      "dias": 1,
+      "dias": 0,
       "fecha_limite": "2026-05-14"
     },
     {
       "id": "2026-05-06-c005",
       "tarea": "Negociar con EPM asignación mínima de 1.500 de obra mensual para Condugas en contrato Occidental (cr",
-      "dias": 3,
+      "dias": 2,
       "fecha_limite": "2026-05-16"
     },
     {
       "id": "2026-05-11-c005",
       "tarea": "Implementar ajustes al contrato (1.400M + reajuste 7-8%) y validar viabilidad antes del viernes",
-      "dias": 3,
+      "dias": 2,
       "fecha_limite": "2026-05-16"
     }
   ]

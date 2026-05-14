@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Condugas · Control Flota</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<style>
+:root{
+  --bg:#F5F7FA; --panel:#FFFFFF; --border:#E5E9F0;
+  --turquesa:#1AA89A; --grafito:#1F2A37; --muted:#64748B;
+  --ok:#16A34A; --warn:#F59E0B; --crit:#DC2626; --off:#94A3B8;
+  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 12px rgba(0,0,0,.05);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,sans-serif;
+  background:var(--bg);color:var(--grafito);font-size:14px;height:100vh;overflow:hidden}
+.app{display:grid;grid-template-rows:56px 1fr;height:100vh}
+header{background:var(--panel);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;padding:0 20px;gap:16px;box-shadow:var(--shadow)}
+header h1{margin:0;font-size:16px;font-weight:600;letter-spacing:-.01em}
+header h1 .badge{background:var(--turquesa);color:#fff;padding:2px 8px;border-radius:4px;
+  font-size:11px;margin-left:8px;font-weight:500}
+header nav{display:flex;gap:6px;margin-left:24px}
+header nav a{color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500;transition:all .15s}
+header nav a:hover{background:#F1F5F9;color:var(--grafito)}
+header nav a.active{background:#F1F5F9;color:var(--grafito)}
+header .right{margin-left:auto;display:flex;align-items:center;gap:12px;color:var(--muted);font-size:12px}
+header .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block;margin-right:6px}
+
+main{display:grid;grid-template-columns:340px 1fr 360px;overflow:hidden}
+.sidebar{background:var(--panel);border-right:1px solid var(--border);overflow-y:auto;padding:16px}
+.right-panel{background:var(--panel);border-left:1px solid var(--border);overflow-y:auto;padding:16px}
+
+.section-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--muted);font-weight:600;margin:0 0 10px}
+
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}
+.kpi{background:#F8FAFC;border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.kpi .v{font-size:22px;font-weight:600;color:var(--grafito);line-height:1.1}
+.kpi .l{font-size:11px;color:var(--muted);margin-top:4px}
+.kpi.full{grid-column:1/-1}
+
+.veh-card{background:#F8FAFC;border:1px solid var(--border);border-radius:8px;padding:12px;
+  margin-bottom:8px;cursor:pointer;transition:all .15s;display:block;text-decoration:none;color:inherit}
+.veh-card:hover{border-color:var(--turquesa);box-shadow:0 2px 8px rgba(26,168,154,.15)}
+.veh-card .placa{font-family:'SF Mono',Consolas,monospace;font-weight:700;font-size:14px;color:var(--grafito)}
+.veh-card .meta{display:flex;gap:10px;margin-top:6px;font-size:11px;color:var(--muted)}
+.veh-card .meta b{color:var(--grafito);font-weight:600}
+
+.zone-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px;cursor:pointer}
+.zone-row:hover{background:#F8FAFC}
+.zone-row .n{font-size:11px;color:var(--muted);width:24px}
+.zone-row .name{flex:1;padding:0 8px}
+.zone-row .visits{color:var(--turquesa);font-weight:600;font-size:11px}
+
+.alert{background:#FEF3C7;border-left:3px solid var(--warn);padding:8px 10px;margin-bottom:6px;border-radius:4px;font-size:12px}
+.alert.baja{background:#F1F5F9;border-left-color:var(--off)}
+.alert .tipo{font-weight:600;text-transform:capitalize}
+.alert .placa{font-family:'SF Mono',Consolas,monospace;background:rgba(0,0,0,.08);padding:1px 6px;border-radius:3px;font-size:10px;margin-right:6px}
+.alert .meta{font-size:10px;color:var(--muted);margin-top:2px}
+
+#map{height:100%;width:100%}
+.leaflet-container{background:#0F172A}
+.marker-zone{background:var(--turquesa);color:#fff;border-radius:50%;
+  width:32px!important;height:32px!important;line-height:32px;text-align:center;font-weight:700;
+  border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);font-size:11px}
+
+.legend{position:absolute;bottom:20px;right:20px;background:rgba(255,255,255,.95);
+  padding:10px 12px;border-radius:8px;font-size:11px;box-shadow:var(--shadow);z-index:1000}
+.legend .item{display:flex;align-items:center;gap:6px;margin:3px 0}
+.legend .sw{width:12px;height:12px;border-radius:50%}
+
+.empty{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px}
+.empty h3{font-size:14px;color:var(--grafito);margin:0 0 8px}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <h1>Condugas <span class="badge">Control Flota</span></h1>
+  <nav>
+    <a href="./" class="active">Vista flota</a>
+    <a href="./v/?placa=JYW531">Por vehículo</a>
+  </nav>
+  <div class="right">
+    <span><span class="dot"></span><span id="status">Cargando...</span></span>
+    <span id="gen-time">—</span>
+  </div>
+</header>
+<main>
+
+  <aside class="sidebar">
+    <h2 class="section-title">Resumen de la flota</h2>
+    <div class="kpi-grid" id="kpi-grid"></div>
+
+    <h2 class="section-title">Vehículos</h2>
+    <div id="vehicles-list"></div>
+  </aside>
+
+  <section style="position:relative">
+    <div id="map"></div>
+    <div class="legend">
+      <div class="item"><span class="sw" style="background:var(--turquesa)"></span>Zona detectada</div>
+      <div class="item" style="color:var(--muted);font-size:10px;margin-top:4px">Tamaño = horas totales paradas</div>
+    </div>
+  </section>
+
+  <aside class="right-panel">
+    <h2 class="section-title">Top zonas de la flota</h2>
+    <div id="zones-list"></div>
+
+    <h2 class="section-title" style="margin-top:20px">Alertas recientes</h2>
+    <div id="alerts-list"></div>
+  </aside>
+
+</main>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+let DATA = null, map = null;
+
+async function load(){
+  try {
+    const res = await fetch('data/flota.json');
+    if (!res.ok) throw new Error('No se pudo cargar data/flota.json');
+    DATA = await res.json();
+    document.getElementById('gen-time').textContent = 'Gen: ' + DATA.generated_at;
+    document.getElementById('status').textContent = `${DATA.kpis.vehiculos_total} veh · ${DATA.kpis.vehiculos_activos} activos`;
+    renderKpis();
+    renderVehicles();
+    renderZones();
+    renderAlerts();
+    initMap();
+  } catch(e) {
+    document.getElementById('status').textContent = 'Error';
+    document.querySelector('#kpi-grid').innerHTML = `<div class="empty"><h3>Sin datos</h3>${e.message}</div>`;
+  }
+}
+
+function renderKpis(){
+  const k = DATA.kpis;
+  document.getElementById('kpi-grid').innerHTML = `
+    <div class="kpi"><div class="v">${k.vehiculos_total}</div><div class="l">Vehículos</div></div>
+    <div class="kpi"><div class="v">${k.vehiculos_activos}</div><div class="l">Activos</div></div>
+    <div class="kpi"><div class="v">${k.km_totales_flota}</div><div class="l">Km totales</div></div>
+    <div class="kpi"><div class="v">${k.horas_obra_flota}h</div><div class="l">Horas en obra</div></div>
+    <div class="kpi"><div class="v">${k.zonas_recurrentes_unicas}</div><div class="l">Zonas detectadas</div></div>
+    <div class="kpi"><div class="v">${k.alertas_totales}</div><div class="l">Alertas</div></div>
+  `;
+}
+
+function renderVehicles(){
+  const cont = document.getElementById('vehicles-list');
+  if (!DATA.vehiculos.length) {
+    cont.innerHTML = '<div class="empty">Aún no hay vehículos cargados.</div>';
+    return;
+  }
+  cont.innerHTML = DATA.vehiculos.map(v => `
+    <a class="veh-card" href="./v/?placa=${v.placa}">
+      <div class="placa">${v.placa}</div>
+      <div class="meta">
+        <span><b>${v.km}</b> km</span>
+        <span><b>${v.dias_op}</b> días op.</span>
+        <span><b>${v.horas_obra}h</b> obra</span>
+        <span><b>${v.alertas}</b> alertas</span>
+      </div>
+    </a>
+  `).join('');
+}
+
+function renderZones(){
+  const cont = document.getElementById('zones-list');
+  if (!DATA.top_zonas_flota.length) { cont.innerHTML = '<div class="empty">Sin zonas detectadas aún.</div>'; return; }
+  cont.innerHTML = DATA.top_zonas_flota.slice(0,12).map((z,i) => `
+    <div class="zone-row" data-lat="${z.lat}" data-lon="${z.lon}">
+      <div class="n">${i+1}</div>
+      <div class="name">
+        <div style="font-weight:600">${z.direccion}</div>
+        <div style="font-size:10px;color:var(--muted)">${z.placa} · ${z.horas_totales}h</div>
+      </div>
+      <div class="visits">${z.visitas}×</div>
+    </div>
+  `).join('');
+  cont.querySelectorAll('.zone-row').forEach(el => {
+    el.addEventListener('click', () => map.setView([+el.dataset.lat, +el.dataset.lon], 17));
+  });
+}
+
+function renderAlerts(){
+  const cont = document.getElementById('alerts-list');
+  if (!DATA.alertas_recientes.length) { cont.innerHTML = '<div class="empty">Sin alertas.</div>'; return; }
+  cont.innerHTML = DATA.alertas_recientes.slice(0,15).map(a => `
+    <div class="alert ${a.severidad}">
+      <div class="tipo"><span class="placa">${a.placa}</span>${a.tipo.replace('_',' ')}</div>
+      <div>${a.detalle}</div>
+      <div class="meta">${a.fecha} · ${a.hora}</div>
+    </div>
+  `).join('');
+}
+
+function initMap(){
+  map = L.map('map').setView([6.27, -75.58], 12);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19
+  }).addTo(map);
+  // Tamaño del marker proporcional a horas
+  const maxH = Math.max(1, ...DATA.top_zonas_flota.map(z => z.horas_totales));
+  DATA.top_zonas_flota.forEach((z,i) => {
+    const size = 24 + Math.round((z.horas_totales/maxH) * 24);
+    const m = L.marker([z.lat, z.lon], {
+      icon: L.divIcon({
+        className: 'marker-zone',
+        html: (i+1),
+        iconSize: [size, size]
+      })
+    }).addTo(map);
+    m.bindPopup(`<b>${z.direccion}</b><br>${z.placa} · ${z.visitas} visitas · ${z.horas_totales}h totales`);
+  });
+}
+
+load();
+</script>
+</body>
+</html>

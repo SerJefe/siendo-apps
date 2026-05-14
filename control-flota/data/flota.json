@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-05-14T00:09:33",
+  "rango": {
+    "desde": "2026-04-27",
+    "hasta": "2026-05-02"
+  },
+  "kpis": {
+    "vehiculos_total": 1,
+    "vehiculos_activos": 1,
+    "km_totales_flota": 144.3,
+    "horas_obra_flota": 30.3,
+    "alertas_totales": 13,
+    "zonas_recurrentes_unicas": 7
+  },
+  "vehiculos": [
+    {
+      "placa": "JYW531",
+      "km": 144.3,
+      "dias_op": 5,
+      "horas_obra": 30.3,
+      "zonas": 7,
+      "alertas": 13,
+      "rango": {
+        "desde": "2026-04-27",
+        "hasta": "2026-05-02"
+      }
+    }
+  ],
+  "top_zonas_flota": [
+    {
+      "lat": 6.2509333,
+      "lon": -75.5894116,
+      "direccion": "Calle 45E, Florida Nueva, Comuna 11 - Laureles-Estadio",
+      "visitas": 2,
+      "minutos_totales": 168,
+      "horas_totales": 2.8,
+      "placa": "JYW531"
+    },
+    {
+      "lat": 6.2599366,
+      "lon": -75.6162149,
+      "direccion": "Calle 48A, El Socorro, Comuna 13 - San Javier",
+      "visitas": 3,
+      "minutos_totales": 150,
+      "horas_totales": 2.5,
+      "placa": "JYW531"
+    },
+    {
+      "lat": 6.2581683,
+      "lon": -75.5828933,
+      "direccion": "Calle 67A, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio",
+      "visitas": 2,
+      "minutos_totales": 137,
+      "horas_totales": 2.3,
+      "placa": "JYW531"
+    },
+    {
+      "lat": 6.2805216,
+      "lon": -75.5891683,
+      "direccion": "Calle 77AC, Bello Horizonte, Comuna 7 - Robledo",
+      "visitas": 2,
+      "minutos_totales": 125,
+      "horas_totales": 2.1,
+      "placa": "JYW531"
+    },
+    {
+      "lat": 6.261305,
+      "lon": -75.6043616,
+      "direccion": "Calle 49A, Los Alcázares, Comuna 13 - San Javier",
+      "visitas": 2,
+      "minutos_totales": 119,
+      "horas_totales": 2.0,
+      "placa": "JYW531"
+    },
+    {
+      "lat": 6.2744616,
+      "lon": -75.5819366,
+      "direccion": "Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+      "visitas": 2,
+      "minutos_totales": 96,
+      "horas_totales": 1.6,
+      "placa": "JYW531"
+    },
+    {
+      "lat": 6.2608066,
+      "lon": -75.6100466,
+      "direccion": "La Pradera, Comuna 13 - San Javier",
+      "visitas": 2,
+      "minutos_totales": 59,
+      "horas_totales": 1.0,
+      "placa": "JYW531"
+    }
+  ],
+  "alertas_recientes": [
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-05-02",
+      "hora": "14:09",
+      "lat": 6.32812,
+      "lon": -75.5699183,
+      "detalle": "Parada 116min en Bello, Carrera 58B, Urbanización Palmar de Serramonte",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-05-02",
+      "hora": "11:27",
+      "lat": 6.2779299,
+      "lon": -75.5777783,
+      "detalle": "Parada 112min en Calle 79D, El Progreso, Comuna 5 - Castilla",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-05-02",
+      "hora": "07:51",
+      "lat": 6.3566266,
+      "lon": -75.5723066,
+      "detalle": "Parada 152min en Bello, San Pedro",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-05-01",
+      "hora": "13:28",
+      "lat": 6.2581616,
+      "lon": -75.5828583,
+      "detalle": "Parada 110min en Calle 67A, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-05-01",
+      "hora": "09:57",
+      "lat": 6.2744833,
+      "lon": -75.5790116,
+      "detalle": "Parada 152min en Carrera 69, El Progreso, Comuna 5 - Castilla",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-30",
+      "hora": "13:59",
+      "lat": 6.26111,
+      "lon": -75.6048266,
+      "detalle": "Parada 94min en Calle 49A, Los Alcázares, Comuna 13 - San Javier",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-30",
+      "hora": "12:29",
+      "lat": 6.2657183,
+      "lon": -75.5961483,
+      "detalle": "Parada 74min en Carrera 80, Los Colores, Comuna 11 - Laureles-Estadio",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-30",
+      "hora": "06:24",
+      "lat": 6.2744616,
+      "lon": -75.5819366,
+      "detalle": "Parada 62min en Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-29",
+      "hora": "15:24",
+      "lat": 6.2804783,
+      "lon": -75.5891,
+      "detalle": "Parada 91min en Calle 77AC, Bello Horizonte, Comuna 7 - Robledo",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-29",
+      "hora": "08:44",
+      "lat": 6.2509333,
+      "lon": -75.5894116,
+      "detalle": "Parada 110min en Calle 45E, Florida Nueva, Comuna 11 - Laureles-Estadio",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-28",
+      "hora": "14:48",
+      "lat": 6.2889733,
+      "lon": -75.5728149,
+      "detalle": "Parada 125min en Carrera 68, Francisco Antonio Zea, Comuna 5 - Castilla",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-28",
+      "hora": "13:00",
+      "lat": 6.2779833,
+      "lon": -75.5887949,
+      "detalle": "Parada 88min en Diagonal 80, Villa Flora, Comuna 7 - Robledo",
+      "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-28",
+      "hora": "09:14",
+      "lat": 6.2599466,
+      "lon": -75.6161166,
+      "detalle": "Parada 69min en Calle 48A, El Socorro, Comuna 13 - San Javier",
+      "placa": "JYW531"
+    }
+  ]
+}
