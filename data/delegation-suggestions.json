@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T11:30:02",
-  "total": 43,
+  "generated_at": "2026-05-14T00:00:02",
+  "total": 44,
   "suggestions": [
     {
       "task_id": "2026-04-13-mc17d26",
@@ -639,6 +639,21 @@
       "proxima_accion": "",
       "responsable_actual": "Sebastian",
       "fecha_creacion": "2026-05-08",
+      "fecha_limite": null,
+      "prioridad": "media",
+      "puntaje": 0,
+      "sugerencia_alias": "Juan G",
+      "sugerencia_full": "Juan Guillermo",
+      "sugerencia_rol": "Estrategia y RRHH",
+      "motivo": "Coincide con rol Estrategia y RRHH: personal"
+    },
+    {
+      "task_id": "2026-05-12-r8-005",
+      "task_text": "Conversar en privado en casa sobre situación con Camilo (declaración, cómo proceder en Dojo)",
+      "contexto": "Asunto personal y laboral (Dojo)",
+      "proxima_accion": "",
+      "responsable_actual": "Sebastian",
+      "fecha_creacion": "2026-05-12",
       "fecha_limite": null,
       "prioridad": "media",
       "puntaje": 0,

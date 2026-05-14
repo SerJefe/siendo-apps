@@ -101,7 +101,25 @@
       "contexto": "Procesos internos Condugas",
       "responsable": null,
       "fecha_rechazo": "2026-05-12"
+    },
+    {
+      "tarea": "Documentar y comunicar hito: acueducto conectó 40 usuarios adicionales como socios (mejora de deficiencias de agua)",
+      "contexto": "Promoción y publicación de proyecto",
+      "responsable": "Sebastian",
+      "fecha_rechazo": "2026-05-13"
+    },
+    {
+      "tarea": "Gestionar avalúo comercial del metro cuadrado con evaluador de lonja para reducir obligación urbanística de 80M a cifra menor",
+      "contexto": "Subdivisión de lote; cambio normativo generó obligación de 5% área (8M base, 80M si aplica tarifa comercial 100k/m²)",
+      "responsable": "Sebastian",
+      "fecha_rechazo": "2026-05-13"
+    },
+    {
+      "tarea": "Solicitar a diseñador/arquitecto claridad sobre inclusión de diseño hidráulico, eléctrico, estructural en planos entregados",
+      "contexto": "Remodelación/proyecto; costó 16-17M sin mobiliario pero con estructural",
+      "responsable": "Sebastian",
+      "fecha_rechazo": "2026-05-13"
     }
   ],
-  "ultima_actualizacion": "2026-05-12T15:32:35"
+  "ultima_actualizacion": "2026-05-13T22:58:39"
 }

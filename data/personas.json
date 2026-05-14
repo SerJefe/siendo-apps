@@ -64,15 +64,15 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "sebastian",
-          "last_seen": "2026-05-11",
+          "last_seen": "2026-05-12",
           "mentions_total": 126,
           "mentions_7d": 0
         },
         "tareas_count": {
-          "abiertas": 127,
+          "abiertas": 129,
           "criticas": 43,
           "vencidas": 110,
-          "cerradas_30d": 67
+          "cerradas_30d": 62
         },
         "tareas_abiertas": [
           {
@@ -131,14 +131,14 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "cami",
-          "last_seen": "2026-05-11",
-          "mentions_total": 28,
+          "last_seen": "2026-05-12",
+          "mentions_total": 29,
           "mentions_7d": 0
         },
         "tareas_count": {
-          "abiertas": 12,
-          "criticas": 8,
-          "vencidas": 7,
+          "abiertas": 13,
+          "criticas": 9,
+          "vencidas": 8,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -175,12 +175,12 @@
             "fecha_creacion": "2026-05-06"
           },
           {
-            "id": "2026-04-08-001",
-            "tarea": "Compartir informes diarios, actas de obra o correos de febrero a abril que mencionen lluvias, paradas o bajo rendimiento",
-            "prioridad": "alta",
+            "id": "2026-05-12-c001",
+            "tarea": "Llamar a abogados para definir estrategia de presión/cobranza a contratantes que retuvieron comunidad",
+            "prioridad": "critica",
             "vencida": true,
-            "fecha_limite": null,
-            "fecha_creacion": "2026-04-08"
+            "fecha_limite": "2026-05-13",
+            "fecha_creacion": "2026-05-12"
           }
         ]
       }
@@ -198,8 +198,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "juang",
-          "last_seen": "2026-05-11",
-          "mentions_total": 31,
+          "last_seen": "2026-05-12",
+          "mentions_total": 32,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -276,8 +276,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "andre",
-          "last_seen": "2026-05-11",
-          "mentions_total": 24,
+          "last_seen": "2026-05-12",
+          "mentions_total": 25,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -486,14 +486,14 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "doctor",
-          "last_seen": "2026-05-08",
-          "mentions_total": 12,
+          "last_seen": "2026-05-12",
+          "mentions_total": 13,
           "mentions_7d": 0
         },
         "tareas_count": {
-          "abiertas": 7,
-          "criticas": 6,
-          "vencidas": 3,
+          "abiertas": 8,
+          "criticas": 7,
+          "vencidas": 4,
           "cerradas_30d": 1
         },
         "tareas_abiertas": [
@@ -514,6 +514,14 @@
             "fecha_creacion": "2026-04-23"
           },
           {
+            "id": "2026-05-12-c001",
+            "tarea": "Llamar a abogados para definir estrategia de presión/cobranza a contratantes que retuvieron comunidad",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-05-13",
+            "fecha_creacion": "2026-05-12"
+          },
+          {
             "id": "2026-04-21-r3-001",
             "tarea": "Hacer auditoría de causación histórica (operativo vs administrativo) en sistemas actuales",
             "prioridad": "alta",
@@ -528,14 +536,6 @@
             "vencida": false,
             "fecha_limite": null,
             "fecha_creacion": "2026-04-30"
-          },
-          {
-            "id": "2026-05-11-c001",
-            "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
-            "prioridad": "critica",
-            "vencida": false,
-            "fecha_limite": "2026-05-14",
-            "fecha_creacion": "2026-05-11"
           }
         ]
       }
@@ -801,8 +801,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "lina",
-          "last_seen": "2026-05-07",
-          "mentions_total": 26,
+          "last_seen": "2026-05-12",
+          "mentions_total": 27,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -852,8 +852,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "ema",
-          "last_seen": "2026-05-11",
-          "mentions_total": 34,
+          "last_seen": "2026-05-12",
+          "mentions_total": 35,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -908,8 +908,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "mona",
-          "last_seen": "2026-05-07",
-          "mentions_total": 3,
+          "last_seen": "2026-05-12",
+          "mentions_total": 4,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1322,9 +1322,9 @@
       "_enriched": {
         "actividad_neural": null,
         "tareas_count": {
-          "abiertas": 6,
-          "criticas": 6,
-          "vencidas": 2,
+          "abiertas": 7,
+          "criticas": 7,
+          "vencidas": 3,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -1345,6 +1345,14 @@
             "fecha_creacion": "2026-04-23"
           },
           {
+            "id": "2026-05-12-c001",
+            "tarea": "Llamar a abogados para definir estrategia de presión/cobranza a contratantes que retuvieron comunidad",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": "2026-05-13",
+            "fecha_creacion": "2026-05-12"
+          },
+          {
             "id": "2026-04-30-c004",
             "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amar",
             "prioridad": "critica",
@@ -1355,14 +1363,6 @@
           {
             "id": "2026-05-11-c001",
             "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
-            "prioridad": "critica",
-            "vencida": false,
-            "fecha_limite": "2026-05-14",
-            "fecha_creacion": "2026-05-11"
-          },
-          {
-            "id": "2026-05-11-c002",
-            "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de tarifa interna",
             "prioridad": "critica",
             "vencida": false,
             "fecha_limite": "2026-05-14",
@@ -1423,8 +1423,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "cami",
-          "last_seen": "2026-05-11",
-          "mentions_total": 28,
+          "last_seen": "2026-05-12",
+          "mentions_total": 29,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1499,10 +1499,10 @@
       }
     }
   ],
-  "_enriched_at": "2026-05-13T11:30:02+00:00",
+  "_enriched_at": "2026-05-14T00:00:02+00:00",
   "_enrichment_stats": {
     "personas_con_actividad_neural": 20,
     "personas_total": 50,
-    "tareas_abiertas_distribuidas": 175
+    "tareas_abiertas_distribuidas": 180
   }
 }

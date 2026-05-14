@@ -1,0 +1,622 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "generated": "2026-05-13T23:55:33+00:00",
+    "agent": "agent-personas-detector.py",
+    "source": [
+      "personas.json",
+      "neural-activity.json",
+      "tareas-tracker.json"
+    ]
+  },
+  "stats": {
+    "candidatos_total": 26,
+    "con_tareas_abiertas": 7,
+    "con_neural": 16,
+    "personas_canonicas": 50
+  },
+  "candidatos": [
+    {
+      "nombre_detectado": "Sebastian",
+      "slug_propuesto": "sebastian",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-04-13-m5960dc",
+          "tarea": "Situación de caja familiar , inversiones",
+          "prioridad": "critica",
+          "vencida": true,
+          "fecha_creacion": "2026-04-13",
+          "fecha_limite": null,
+          "proxima_accion": "Revisar caja a hoy y movimiento y estado de inversiones"
+        },
+        {
+          "id": "2026-04-13-m3137b0",
+          "tarea": "Clientes base, iniciar por propuestas claras",
+          "prioridad": "critica",
+          "vencida": true,
+          "fecha_creacion": "2026-04-13",
+          "fecha_limite": null,
+          "proxima_accion": "Tener base de datos de clientes en un solo lugar con necesidades vs propuestas por cliente"
+        },
+        {
+          "id": "2026-04-15-c003",
+          "tarea": "Preparar propuesta contundente de reajuste de contrato EPM Río Negro con alternativas viables",
+          "prioridad": "critica",
+          "vencida": true,
+          "fecha_creacion": "2026-04-15",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        },
+        {
+          "id": "2026-04-16-c003",
+          "tarea": "Resolver no conformidad del contrato 24 y responder formalmente",
+          "prioridad": "critica",
+          "vencida": true,
+          "fecha_creacion": "2026-04-16",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        },
+        {
+          "id": "2026-04-22-c003",
+          "tarea": "Definir cifra mínima de caja requerida en 5 días para salvar operación (nómina y proveedores críticos)",
+          "prioridad": "critica",
+          "vencida": true,
+          "fecha_creacion": "2026-04-22",
+          "fecha_limite": "2026-04-27",
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 53,
+        "criticas": 13,
+        "vencidas": 41,
+        "cerradas_30d": 31
+      },
+      "neural": null,
+      "razon": "53 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "Diana",
+      "slug_propuesto": "diana",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-04-30-c003",
+          "tarea": "Implementar propuesta de Diana: operativo + estrategia táctica con Diana y William liderando estructura",
+          "prioridad": "critica",
+          "vencida": false,
+          "fecha_creacion": "2026-04-30",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 1,
+        "criticas": 1,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": null,
+      "razon": "1 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "María Fernanda",
+      "slug_propuesto": "maria-fernanda",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-04-23-r12-009",
+          "tarea": "Enviar detalle de deuda EPM (reajustes + ambientales Río Negro) al correo S. Sánchez@condugas.com.co",
+          "prioridad": "alta",
+          "vencida": true,
+          "fecha_creacion": "2026-04-23",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 1,
+        "criticas": 0,
+        "vencidas": 1,
+        "cerradas_30d": 0
+      },
+      "neural": null,
+      "razon": "1 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "Andrés",
+      "slug_propuesto": "andres",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-04-23-r18-015",
+          "tarea": "Revisar y rediseñar puntos de enlace (mandos medios) para evitar que tareas incompletas se acumulen en Sebastian",
+          "prioridad": "media",
+          "vencida": true,
+          "fecha_creacion": "2026-04-23",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 1,
+        "criticas": 0,
+        "vencidas": 1,
+        "cerradas_30d": 1
+      },
+      "neural": null,
+      "razon": "1 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "Carla",
+      "slug_propuesto": "carla",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-04-16-r31-018",
+          "tarea": "Carla: llenar librito de fechas y eventos",
+          "prioridad": "media",
+          "vencida": true,
+          "fecha_creacion": "2026-04-16",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 1,
+        "criticas": 0,
+        "vencidas": 1,
+        "cerradas_30d": 0
+      },
+      "neural": null,
+      "razon": "1 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "Viviana",
+      "slug_propuesto": "viviana",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-05-11-r7-011",
+          "tarea": "Crear cronograma de eventos/cursos disponible para el equipo",
+          "prioridad": "media",
+          "vencida": false,
+          "fecha_creacion": "2026-05-11",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 1,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": null,
+      "razon": "1 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "hermana de Sebastian",
+      "slug_propuesto": "hermana-de-sebastian",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-05-11-r12-015",
+          "tarea": "Coordinar con hermana para reservar finca familiar durante puente (fechas: 4-5 días más de mayo)",
+          "prioridad": "baja",
+          "vencida": false,
+          "fecha_creacion": "2026-05-11",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 1,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": null,
+      "razon": "1 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "inv",
+      "slug_propuesto": "inv",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "inv",
+        "mentions_total": 9,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-11"
+      },
+      "razon": "9 menciones en lifelogs (último: 2026-05-11)"
+    },
+    {
+      "nombre_detectado": "jp",
+      "slug_propuesto": "jp",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "jp",
+        "mentions_total": 8,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-06"
+      },
+      "razon": "8 menciones en lifelogs (último: 2026-05-06)"
+    },
+    {
+      "nombre_detectado": "redes",
+      "slug_propuesto": "redes",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "redes",
+        "mentions_total": 7,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-07"
+      },
+      "razon": "7 menciones en lifelogs (último: 2026-05-07)"
+    },
+    {
+      "nombre_detectado": "rut",
+      "slug_propuesto": "rut",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "rut",
+        "mentions_total": 7,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-12"
+      },
+      "razon": "7 menciones en lifelogs (último: 2026-05-12)"
+    },
+    {
+      "nombre_detectado": "stgo",
+      "slug_propuesto": "stgo",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "stgo",
+        "mentions_total": 6,
+        "mentions_7d": 0,
+        "last_seen": "2026-04-16"
+      },
+      "razon": "6 menciones en lifelogs (último: 2026-04-16)"
+    },
+    {
+      "nombre_detectado": "ccaja",
+      "slug_propuesto": "ccaja",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "ccaja",
+        "mentions_total": 5,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-11"
+      },
+      "razon": "5 menciones en lifelogs (último: 2026-05-11)"
+    },
+    {
+      "nombre_detectado": "viaje",
+      "slug_propuesto": "viaje",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "viaje",
+        "mentions_total": 5,
+        "mentions_7d": 0,
+        "last_seen": "2026-04-16"
+      },
+      "razon": "5 menciones en lifelogs (último: 2026-04-16)"
+    },
+    {
+      "nombre_detectado": "p4merito",
+      "slug_propuesto": "p4merito",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "p4merito",
+        "mentions_total": 5,
+        "mentions_7d": 0,
+        "last_seen": "2026-04-24"
+      },
+      "razon": "5 menciones en lifelogs (último: 2026-04-24)"
+    },
+    {
+      "nombre_detectado": "boyaca",
+      "slug_propuesto": "boyaca",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "boyaca",
+        "mentions_total": 4,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-11"
+      },
+      "razon": "4 menciones en lifelogs (último: 2026-05-11)"
+    },
+    {
+      "nombre_detectado": "nneg",
+      "slug_propuesto": "nneg",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "nneg",
+        "mentions_total": 4,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-11"
+      },
+      "razon": "4 menciones en lifelogs (último: 2026-05-11)"
+    },
+    {
+      "nombre_detectado": "serjefe",
+      "slug_propuesto": "serjefe",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "serjefe",
+        "mentions_total": 4,
+        "mentions_7d": 0,
+        "last_seen": "2026-04-24"
+      },
+      "razon": "4 menciones en lifelogs (último: 2026-04-24)"
+    },
+    {
+      "nombre_detectado": "gobcorp",
+      "slug_propuesto": "gobcorp",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "gobcorp",
+        "mentions_total": 4,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-07"
+      },
+      "razon": "4 menciones en lifelogs (último: 2026-05-07)"
+    },
+    {
+      "nombre_detectado": "efdigital",
+      "slug_propuesto": "efdigital",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "efdigital",
+        "mentions_total": 4,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-04"
+      },
+      "razon": "4 menciones en lifelogs (último: 2026-05-04)"
+    },
+    {
+      "nombre_detectado": "ayura",
+      "slug_propuesto": "ayura",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "ayura",
+        "mentions_total": 3,
+        "mentions_7d": 0,
+        "last_seen": "2026-04-23"
+      },
+      "razon": "3 menciones en lifelogs (último: 2026-04-23)"
+    },
+    {
+      "nombre_detectado": "buca",
+      "slug_propuesto": "buca",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "buca",
+        "mentions_total": 3,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-11"
+      },
+      "razon": "3 menciones en lifelogs (último: 2026-05-11)"
+    },
+    {
+      "nombre_detectado": "gdo",
+      "slug_propuesto": "gdo",
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "gdo",
+        "mentions_total": 3,
+        "mentions_7d": 0,
+        "last_seen": "2026-04-30"
+      },
+      "razon": "3 menciones en lifelogs (último: 2026-04-30)"
+    },
+    {
+      "nombre_detectado": "Alberto",
+      "slug_propuesto": "alberto",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 1
+      },
+      "neural": null,
+      "razon": "0 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "EPM",
+      "slug_propuesto": "epm",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 2
+      },
+      "neural": null,
+      "razon": "0 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "Manga",
+      "slug_propuesto": "manga",
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 1
+      },
+      "neural": null,
+      "razon": "0 tarea(s) abierta(s) como responsable"
+    }
+  ]
+}
