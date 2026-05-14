@@ -314,6 +314,74 @@ main > section.show{ display: block; }
 .panorama-host .drill-btn{ background: #fdfbf2; border: 1px solid rgba(201,168,74,0.4); color: var(--navy); padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; font-family: inherit; }
 .panorama-host .drill-btn:hover{ background: rgba(184,153,73,0.08); border-color: #b89949; }
 
+/* ═══════════════════════════════════════════════════════
+   EDITORIAL HERO + MANTRA (Stitch Editorial integration · 2026-05-14)
+   Fase 2-4 · CSS-only re-skin, no toca lógica JS
+═══════════════════════════════════════════════════════ */
+.editorial-hero{ margin: 4px 0 18px; padding: 0; }
+.editorial-hero .hero-label{
+  font-family:'JetBrains Mono', monospace;
+  font-size: 10px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  color: var(--gold); margin-bottom: 12px;
+}
+.editorial-hero .hero-title{
+  font-family:'Cormorant Garamond', serif !important;
+  font-size: 34px !important; font-weight: 500 !important;
+  line-height: 1.08; letter-spacing: -0.01em;
+  color: var(--navy) !important;
+  margin: 0 0 4px !important;
+  max-width: 720px;
+}
+.editorial-hero .hero-title em{ font-style: italic; font-weight: 400; color: var(--navy); }
+.editorial-hero .hero-title span{ color: var(--gold); font-style: normal; }
+@media (min-width: 768px){
+  .editorial-hero .hero-title{ font-size: 52px !important; }
+}
+
+/* Cifras gigantes en panorama totals (#pn-totals) */
+#pn-totals .card .val,
+.panorama-host .totals .card .val{
+  font-family:'Cormorant Garamond', serif !important;
+  font-size: 44px !important; font-weight: 500 !important;
+  line-height: 1; letter-spacing: -0.02em;
+}
+@media (min-width: 640px){
+  #pn-totals .card .val,
+  .panorama-host .totals .card .val{ font-size: 56px !important; }
+}
+
+/* Mantra footer */
+.editorial-mantra{
+  margin: 24px 0 8px;
+  padding: 28px 24px; text-align: center;
+  background: rgba(9,31,46,0.04);
+  border-top: 1px solid var(--gold-line);
+  border-bottom: 1px solid var(--gold-line);
+}
+.editorial-mantra .mantra-label{
+  font-family:'JetBrains Mono', monospace;
+  font-size: 10px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--gold); margin-bottom: 16px;
+}
+.editorial-mantra .mantra-quote{
+  font-family:'Cormorant Garamond', serif;
+  font-size: 22px; font-style: italic; font-weight: 400;
+  line-height: 1.35; color: var(--navy);
+  max-width: 640px; margin: 0 auto 14px;
+}
+@media (min-width: 768px){
+  .editorial-mantra{ padding: 40px 32px; }
+  .editorial-mantra .mantra-quote{ font-size: 30px; }
+}
+.editorial-mantra .mantra-source{
+  font-family:'JetBrains Mono', monospace;
+  font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  color: var(--muted);
+}
+
 </style>
 </head>
 <body>
@@ -339,8 +407,11 @@ main > section.show{ display: block; }
      Drilldowns a Comité SV · Contratos · Proyectos · Equipo · KPIs
 ═══════════════════════════════════════════════════════ -->
 <section id="panorama" class="show panorama-host">
-<h2>Panorama</h2>
-<p style="font-size:12px;color:var(--muted);margin:-10px 0 8px" id="fdate">Si no lo veo, no lo hago.</p>
+<div class="editorial-hero">
+  <div class="hero-label">Manual de Operaciones · v4.0</div>
+  <h2 class="hero-title">La maestría del <em>Ser</em> a través del <span>Hacer</span> disciplinado.</h2>
+</div>
+<p style="font-size:12px;color:var(--muted);margin:-2px 0 6px" id="fdate"></p>
 <div class="ts" id="pn-ts">cargando…</div>
 
 <div class="totals" id="pn-totals"></div>
@@ -374,6 +445,12 @@ main > section.show{ display: block; }
     <button class="drill-btn" onclick="showDrill('kpis-salud')">KPIs · WHOOP</button>
     <a class="drill-btn" href="reportes/analisis-oyma-q1-2026.html" target="_blank" style="text-decoration:none">Informe OYMA Q1</a>
   </div>
+</div>
+
+<div class="editorial-mantra">
+  <div class="mantra-label">El Mantra de la Operación</div>
+  <blockquote class="mantra-quote">"Si no lo veo, no lo hago."</blockquote>
+  <div class="mantra-source">— Sebastián Sánchez · operación personal</div>
 </div>
 </section>
 
