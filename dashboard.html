@@ -413,8 +413,6 @@ main > section.show{ display: block; }
 <button class="primary on" data-tab="panorama" onclick="showTab('panorama',this)">Panorama</button>
 <button class="primary" data-tab="briefing" onclick="showTab('briefing',this)">Briefing</button>
 <button class="primary" data-tab="inbox" onclick="showTab('inbox',this)">Inbox <span id="pendientes-badge" style="background:var(--red);color:white;padding:1px 6px;border-radius:10px;font-size:10px;margin-left:4px"></span></button>
-<button class="primary" data-tab="agenda" onclick="showTab('agenda',this)">Agenda <span id="calendario-badge" style="background:var(--red);color:white;padding:1px 6px;border-radius:10px;font-size:10px;margin-left:4px"></span></button>
-<button class="primary" data-tab="equipo" onclick="showTab('equipo',this)">Equipo</button>
 <button class="primary" data-tab="personas" onclick="showTab('personas',this)">Personas</button>
 <button class="primary" data-tab="radar" onclick="showTab('radar',this)">Radar <span id="radar-badge" style="background:var(--red);color:white;padding:1px 6px;border-radius:10px;font-size:10px;margin-left:4px"></span></button>
 <span class="divider"></span>
@@ -698,6 +696,21 @@ main > section.show{ display: block; }
 <h2>Personas</h2>
 <p style="font-size:12px;color:var(--muted);margin:-10px 0 12px" id="personas-meta">cargando…</p>
 
+<!-- CANDIDATOS — detectados por agent-personas-detector.py (cron diario 07 COL).
+     Personas mencionadas en lifelogs o como responsables de tareas pero que
+     aún no están en vault/01-SISTEMA-VIVO/Equipo.md. Bloque colapsable: cerrado por defecto. -->
+<details id="candidatos-block" style="margin-bottom:16px;border:1px solid rgba(201,160,82,.5);border-left:3px solid var(--gold);border-radius:8px;background:rgba(201,160,82,.04);padding:0">
+  <summary style="cursor:pointer;font-size:13px;font-weight:600;color:var(--navy);font-family:'Cormorant Garamond',serif;padding:10px 14px;list-style:none">
+    <span style="color:var(--gold);margin-right:6px">✦</span><span id="candidatos-count">cargando candidatos…</span>
+    <span style="float:right;font-size:11px;color:var(--muted);font-family:Inter,sans-serif;font-weight:400">click para expandir</span>
+  </summary>
+  <div style="padding:0 14px 12px 14px">
+    <p style="font-size:11px;color:var(--muted);margin:0 0 10px;line-height:1.5">Detectados en lifelogs o tareas, pero <strong>no están en <code style="background:var(--bg2);padding:1px 5px;border-radius:3px">Equipo.md</code></strong>. Revísalos y, si corresponde, agrégalos al vault para que entren al canon y se vinculen sus compromisos.</p>
+    <div id="candidatos-list"></div>
+    <p style="font-size:10px;color:var(--muted);margin:10px 0 0;font-style:italic">Última detección: <span id="candidatos-meta">—</span></p>
+  </div>
+</details>
+
 <div class="personas-stats" id="personas-stats" style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px"></div>
 
 <div class="personas-filters" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;align-items:center">
@@ -733,8 +746,8 @@ main > section.show{ display: block; }
 // queda como drilldown desde Radar para no saturar la nav.
 var TAB_SECTIONS = {
   panorama: ['panorama'],
-  inbox:    ['revisar', 'mistareas'],
-  agenda:   ['calendario'],
+  inbox:    ['revisar', 'mistareas', 'calendario'],
+  // agenda y equipo unificados en inbox y personas respectivamente (2026-05-14)
   equipo:   ['equipo'],
   radar:    ['radar']
   // mapa-neuronal.html y priorizador.html son paginas aparte (botones secondary).
@@ -1875,7 +1888,7 @@ async function loadMisTareas() {
         return '<details '+(isCerrada?'':'open')+' style="margin-bottom:10px;border:1px solid var(--border,#c9a84a);border-radius:8px;overflow:hidden;background:var(--bg,#faf7ee)">' +
           '<summary style="padding:9px 14px;background:var(--bg2,#f5eed5);cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:600;list-style:none;user-select:none">' +
             '<span style="text-transform:uppercase;letter-spacing:.04em;font-size:11.5px;color:var(--text,#091f2e)">'+eje+badges+'</span>' +
-            '<span style="font-family:'JetBrains Mono',monospace;color:var(--cyan,#b89949);font-size:12px">'+its.length+'</span>' +
+            '<span style="font-family:monospace;color:var(--cyan,#b89949);font-size:12px">'+its.length+'</span>' +
           '</summary>' +
           '<div style="padding:8px 10px 4px">'+its.map(function(t){return renderTask(t,isCerrada)}).join('')+'</div>' +
         '</details>';
@@ -3975,6 +3988,96 @@ document.addEventListener('visibilitychange', function(){
   }
   // Pre-load tras 2s para que esté listo
   setTimeout(loadPersonas, 2000);
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════
+     CANDIDATOS — fetch /data/personas-candidatas.json
+     Bloque colapsable dentro de Personas (no es un tab nuevo)
+═══════════════════════════════════════════════════════ -->
+<script>
+(function candidatosModule(){
+  function esc(s){ return (s||"").toString().replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  function load(){
+    return fetch("/data/personas-candidatas.json?t="+Date.now(), {cache:"no-cache"})
+      .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+      .then(render)
+      .catch(function(err){
+        var c = document.getElementById("candidatos-count");
+        if(c) c.textContent = "sin datos de candidatos (" + err.message + ")";
+      });
+  }
+
+  function render(d){
+    var lst  = d.candidatos || [];
+    var cnt  = document.getElementById("candidatos-count");
+    var meta = document.getElementById("candidatos-meta");
+    var box  = document.getElementById("candidatos-list");
+    if(meta) meta.textContent = ((d._meta||{}).generated || "").slice(0,16).replace("T"," ");
+
+    if(!lst.length){
+      if(cnt) cnt.textContent = "0 candidatos pendientes — todo está en Equipo.md";
+      if(box) box.innerHTML = '<div style="font-size:12px;color:var(--muted);font-style:italic">No hay personas nuevas detectadas.</div>';
+      return;
+    }
+    var conTareas = (d.stats||{}).con_tareas_abiertas || 0;
+    if(cnt) cnt.textContent = lst.length + " personas mencionadas sin ficha en Equipo.md" + (conTareas ? " · " + conTareas + " con compromisos pendientes" : "");
+
+    if(!box) return;
+    box.innerHTML = lst.map(function(c){
+      var tc = c.tareas_count || {};
+      var n  = c.neural || null;
+      var pills = [];
+      if(c.descriptivo){
+        pills.push('<span style="font-size:10px;padding:2px 8px;border-radius:10px;background:rgba(138,138,134,.12);color:var(--muted);font-style:italic">descriptivo</span>');
+      }
+      if(tc.criticas > 0){
+        pills.push('<span style="font-size:10px;padding:2px 8px;border-radius:10px;background:rgba(184,92,74,.12);color:#b85c4a;font-weight:600">'+tc.criticas+' crítica'+(tc.criticas===1?"":"s")+'</span>');
+      }
+      if(tc.vencidas > 0){
+        pills.push('<span style="font-size:10px;padding:2px 8px;border-radius:10px;background:rgba(201,160,82,.14);color:#9d7a25;font-weight:600">'+tc.vencidas+' vencida'+(tc.vencidas===1?"":"s")+'</span>');
+      }
+      if(tc.abiertas > 0){
+        pills.push('<span style="font-size:10px;padding:2px 8px;border-radius:10px;background:rgba(74,107,124,.10);color:#4a6b7c">'+tc.abiertas+' abierta'+(tc.abiertas===1?"":"s")+'</span>');
+      }
+      if(n && n.mentions_total){
+        pills.push('<span style="font-size:10px;padding:2px 8px;border-radius:10px;background:rgba(90,138,94,.10);color:#5a8a5e">'+n.mentions_total+' menc · '+esc((n.last_seen||"").slice(0,10))+'</span>');
+      }
+      var tareasHTML = "";
+      if((c.tareas_abiertas||[]).length){
+        tareasHTML = '<ul style="margin:6px 0 0 14px;padding:0;font-size:11px;color:var(--text)">' +
+          c.tareas_abiertas.slice(0,3).map(function(t){
+            var prio = t.prioridad === "critica" ? '<span style="color:#b85c4a;font-weight:600">[crit] </span>' : (t.prioridad === "alta" ? '<span style="color:#9d7a25">[alta] </span>' : "");
+            var venc = t.vencida ? ' <span style="color:#b85c4a;font-size:10px">⚠ vencida</span>' : "";
+            return '<li style="margin-bottom:2px">'+prio+esc(t.tarea)+venc+'</li>';
+          }).join("") +
+        '</ul>';
+      }
+      // Snippet MD para que Sebas copie a Equipo.md
+      var mdRow = '| ' + esc(c.nombre_detectado) + ' |  |  | contacto |  |';
+      var copyBtn = '<button onclick="(function(b){navigator.clipboard.writeText('+JSON.stringify(mdRow)+').then(function(){b.textContent=\'✓ copiado\';setTimeout(function(){b.textContent=\'copiar fila MD\';},2000);});})(this)" style="font-size:10px;padding:3px 8px;border:1px solid var(--border);background:transparent;color:var(--muted);border-radius:4px;cursor:pointer;font-family:inherit;margin-top:6px">copiar fila MD</button>';
+
+      return '<div style="padding:10px 12px;margin-bottom:8px;background:var(--bg2);border:1px solid var(--border);border-radius:6px">' +
+               '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap">' +
+                 '<div style="flex:1;min-width:200px">' +
+                   '<div style="font-size:13px;font-weight:600;color:var(--navy);font-family:\'Cormorant Garamond\',serif">' + esc(c.nombre_detectado) + '</div>' +
+                   '<div style="font-size:10px;color:var(--muted);margin-top:2px">slug: <code>'+esc(c.slug_propuesto)+'</code> · fuentes: '+(c.fuentes||[]).join(", ")+'</div>' +
+                 '</div>' +
+                 '<div style="display:flex;flex-wrap:wrap;gap:4px">'+pills.join("")+'</div>' +
+               '</div>' +
+               tareasHTML +
+               copyBtn +
+             '</div>';
+    }).join("");
+  }
+
+  // Cargar cuando se entre a la tab Personas (mismo trigger que personasModule)
+  var navBtn = document.querySelector('button[data-tab="personas"]');
+  if(navBtn){
+    navBtn.addEventListener("click", function(){ load(); });
+  }
+  setTimeout(load, 2500);
 })();
 </script>
 
