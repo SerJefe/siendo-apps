@@ -1,0 +1,2544 @@
+{
+  "placa": "JYW505",
+  "generated_at": "2026-05-14T22:54:05",
+  "rango": {
+    "desde": "2026-04-26",
+    "hasta": "2026-04-28"
+  },
+  "resumen_semana": {
+    "km_totales": 48.1,
+    "dias_operativos": 3,
+    "horas_efectivas_obra": 14.3,
+    "zonas_recurrentes": 2,
+    "alertas_totales": 12
+  },
+  "zonas_frecuentes": [
+    {
+      "lat": 6.259615,
+      "lon": -75.6198216,
+      "direccion": "Carrera 103B, Antonio Nariño, Comuna 13 - San Javier",
+      "visitas": 2,
+      "minutos_totales": 312,
+      "horas_totales": 5.2
+    },
+    {
+      "lat": 6.2743783,
+      "lon": -75.5818999,
+      "direccion": "Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+      "visitas": 4,
+      "minutos_totales": 132,
+      "horas_totales": 2.2
+    }
+  ],
+  "alertas": [
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "07:50",
+      "lat": 6.2983983,
+      "lon": -75.5663,
+      "detalle": "50 km/h en Carrera 64C, Belalcázar, Comuna 5 - Castilla"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "07:52",
+      "lat": 6.3134433,
+      "lon": -75.5573033,
+      "detalle": "51 km/h en Bello, Carrera 50, La Florida"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:38",
+      "lat": 6.2927,
+      "lon": -75.5681999,
+      "detalle": "51 km/h en Carrera 64C, Belalcázar, Comuna 5 - Castilla"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:39",
+      "lat": 6.2883766,
+      "lon": -75.5695883,
+      "detalle": "52 km/h en Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:40",
+      "lat": 6.2796666,
+      "lon": -75.5719999,
+      "detalle": "52 km/h en Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:56",
+      "lat": 6.2628366,
+      "lon": -75.5951149,
+      "detalle": "51 km/h en Estadio, Comuna 11 - Laureles-Estadio"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "08:22",
+      "lat": 6.337745,
+      "lon": -75.5517866,
+      "detalle": "Parada 146min en Bello, Carrera 44, Niquía"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "12:13",
+      "lat": 6.261625,
+      "lon": -75.6193933,
+      "detalle": "Parada 285min en El Socorro, Comuna 13 - San Javier"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-27",
+      "hora": "07:46",
+      "lat": 6.2893366,
+      "lon": -75.5718816,
+      "detalle": "Parada 172min en Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-27",
+      "hora": "10:44",
+      "lat": 6.2883983,
+      "lon": -75.5791883,
+      "detalle": "Parada 199min en Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-28",
+      "hora": "08:55",
+      "lat": 6.259615,
+      "lon": -75.6198216,
+      "detalle": "Parada 110min en Carrera 103B, Antonio Nariño, Comuna 13 - San Javier"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-28",
+      "hora": "10:48",
+      "lat": 6.2585433,
+      "lon": -75.6193616,
+      "detalle": "Parada 202min en Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+    }
+  ],
+  "dias": [
+    {
+      "fecha": "2026-04-26",
+      "kpis": {
+        "km": 34.6,
+        "hora_arranque": "07:05",
+        "hora_fin": "17:52",
+        "duracion_jornada_min": 647,
+        "tiempo_encendido_min": 382,
+        "tiempo_efectivo_min": 265,
+        "vel_max_kmh": 52,
+        "puntos": 160
+      },
+      "stops": [
+        {
+          "lat": 6.2743783,
+          "lon": -75.5818999,
+          "direccion": "Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+          "inicio": "07:05",
+          "fin": "07:40",
+          "duracion_min": 35,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.337915,
+          "lon": -75.5520233,
+          "direccion": "Bello, Carrera 44, Niquía",
+          "inicio": "08:02",
+          "fin": "08:17",
+          "duracion_min": 15,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.337745,
+          "lon": -75.5517866,
+          "direccion": "Bello, Carrera 44, Niquía",
+          "inicio": "08:22",
+          "fin": "10:48",
+          "duracion_min": 146,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.3447383,
+          "lon": -75.555635,
+          "direccion": "Bello, Diagonal 61, Altos de Niquía",
+          "inicio": "10:53",
+          "fin": "11:21",
+          "duracion_min": 28,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.261625,
+          "lon": -75.6193933,
+          "direccion": "El Socorro, Comuna 13 - San Javier",
+          "inicio": "12:13",
+          "fin": "16:58",
+          "duracion_min": 285,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.274425,
+          "lon": -75.5819749,
+          "direccion": "Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+          "inicio": "17:28",
+          "fin": "17:52",
+          "duracion_min": 24,
+          "ignicion": "Encendido"
+        }
+      ],
+      "track": [
+        {
+          "lat": 6.2743783,
+          "lon": -75.5818999,
+          "ts": "07:05",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2742733,
+          "lon": -75.5819366,
+          "ts": "07:08",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2741766,
+          "lon": -75.5818816,
+          "ts": "07:38",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Transversal 74, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2742716,
+          "lon": -75.5811883,
+          "ts": "07:39",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Calle 76C, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2747566,
+          "lon": -75.5815816,
+          "ts": "07:40",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Calle 76C, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.274925,
+          "lon": -75.58121,
+          "ts": "07:40",
+          "vel": 17,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2748333,
+          "lon": -75.5787366,
+          "ts": "07:41",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Carrera 69, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2757483,
+          "lon": -75.5779099,
+          "ts": "07:41",
+          "vel": 26,
+          "ign": "Encendido",
+          "dir": "Carrera 68A, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2764533,
+          "lon": -75.5772433,
+          "ts": "07:41",
+          "vel": 17,
+          "ign": "Encendido",
+          "dir": "Calle 79B, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.27628,
+          "lon": -75.5763349,
+          "ts": "07:42",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Carrera 67, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2772583,
+          "lon": -75.5750816,
+          "ts": "07:42",
+          "vel": 21,
+          "ign": "Encendido",
+          "dir": "Calle 80, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2764049,
+          "lon": -75.5733733,
+          "ts": "07:43",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Carrera 65, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2764483,
+          "lon": -75.5733216,
+          "ts": "07:43",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Carrera 65, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2779583,
+          "lon": -75.5727466,
+          "ts": "07:44",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Carrera 65, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2776599,
+          "lon": -75.5725099,
+          "ts": "07:44",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2769333,
+          "lon": -75.57268,
+          "ts": "07:45",
+          "vel": 18,
+          "ign": "Encendido",
+          "dir": "El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2758833,
+          "lon": -75.57255,
+          "ts": "07:46",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Caribe, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2765216,
+          "lon": -75.5719933,
+          "ts": "07:46",
+          "vel": 20,
+          "ign": "Encendido",
+          "dir": "El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.28103,
+          "lon": -75.5717566,
+          "ts": "07:47",
+          "vel": 44,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2854199,
+          "lon": -75.5704483,
+          "ts": "07:48",
+          "vel": 47,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.289725,
+          "lon": -75.5691016,
+          "ts": "07:48",
+          "vel": 46,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2940216,
+          "lon": -75.5677349,
+          "ts": "07:49",
+          "vel": 48,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2983983,
+          "lon": -75.5663,
+          "ts": "07:50",
+          "vel": 50,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Belalcázar, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.302935,
+          "lon": -75.5625983,
+          "ts": "07:50",
+          "vel": 48,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Boyacá, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.3041466,
+          "lon": -75.5606016,
+          "ts": "07:51",
+          "vel": 49,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tosacana, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.3096016,
+          "lon": -75.5597083,
+          "ts": "07:51",
+          "vel": 43,
+          "ign": "Encendido",
+          "dir": "Carrera 64AA, Tosacana, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.3134433,
+          "lon": -75.5573033,
+          "ts": "07:52",
+          "vel": 51,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, La Florida"
+        },
+        {
+          "lat": 6.3175216,
+          "lon": -75.557005,
+          "ts": "07:53",
+          "vel": 23,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Barrio Obrero"
+        },
+        {
+          "lat": 6.3221199,
+          "lon": -75.5573949,
+          "ts": "07:54",
+          "vel": 45,
+          "ign": "Encendido",
+          "dir": "Parada de Autobus Postobon/Comfama, Carrera 50, Barrio Obrero"
+        },
+        {
+          "lat": 6.3266633,
+          "lon": -75.5578249,
+          "ts": "07:55",
+          "vel": 36,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Barrio Obrero"
+        },
+        {
+          "lat": 6.3311616,
+          "lon": -75.5581466,
+          "ts": "07:55",
+          "vel": 36,
+          "ign": "Encendido",
+          "dir": "Hospital Marco Fidel Suarez, Carrera 50, Manchester"
+        },
+        {
+          "lat": 6.3317483,
+          "lon": -75.5575933,
+          "ts": "07:56",
+          "vel": 34,
+          "ign": "Encendido",
+          "dir": "Banco W, Calle 46, Manchester"
+        },
+        {
+          "lat": 6.332315,
+          "lon": -75.5559016,
+          "ts": "07:57",
+          "vel": 34,
+          "ign": "Encendido",
+          "dir": "Bello, Calle 46, Manchester"
+        },
+        {
+          "lat": 6.3327849,
+          "lon": -75.5550266,
+          "ts": "07:58",
+          "vel": 20,
+          "ign": "Encendido",
+          "dir": "Bello, Autopista Norte, Manchester"
+        },
+        {
+          "lat": 6.3347449,
+          "lon": -75.5529466,
+          "ts": "07:59",
+          "vel": 15,
+          "ign": "Encendido",
+          "dir": "Bello, Autopista Norte, Manchester"
+        },
+        {
+          "lat": 6.3360083,
+          "lon": -75.5530966,
+          "ts": "07:59",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Bello, Calle 51, Manchester"
+        },
+        {
+          "lat": 6.33632,
+          "lon": -75.5510066,
+          "ts": "08:00",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "43-71, Calle 51, Niquía"
+        },
+        {
+          "lat": 6.3364316,
+          "lon": -75.5509883,
+          "ts": "08:00",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.337915,
+          "lon": -75.5520233,
+          "ts": "08:02",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.3382033,
+          "lon": -75.5521433,
+          "ts": "08:10",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.3383916,
+          "lon": -75.5521233,
+          "ts": "08:11",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.3387033,
+          "lon": -75.55197,
+          "ts": "08:11",
+          "vel": 8,
+          "ign": "Encendido",
+          "dir": "Bello, Diagonal 54, Niquía"
+        },
+        {
+          "lat": 6.3379966,
+          "lon": -75.5515583,
+          "ts": "08:13",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Bello, Diagonal 53, Niquía"
+        },
+        {
+          "lat": 6.33796,
+          "lon": -75.5512083,
+          "ts": "08:17",
+          "vel": 4,
+          "ign": "Encendido",
+          "dir": "Bello, Diagonal 53, Niquía"
+        },
+        {
+          "lat": 6.3378049,
+          "lon": -75.5502299,
+          "ts": "08:18",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Bello, Diagonal 53, Niquía"
+        },
+        {
+          "lat": 6.3368716,
+          "lon": -75.551335,
+          "ts": "08:20",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.337745,
+          "lon": -75.5517866,
+          "ts": "08:22",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.337745,
+          "lon": -75.5517866,
+          "ts": "10:44",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.3382733,
+          "lon": -75.5521766,
+          "ts": "10:48",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.3405783,
+          "lon": -75.5515066,
+          "ts": "10:49",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Bello, Diagonal 57, Niquía"
+        },
+        {
+          "lat": 6.34277,
+          "lon": -75.5509266,
+          "ts": "10:50",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 44, Niquía"
+        },
+        {
+          "lat": 6.3434433,
+          "lon": -75.5508083,
+          "ts": "10:50",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Bello, Diagonal 61, Altos de Niquía"
+        },
+        {
+          "lat": 6.3442166,
+          "lon": -75.5536983,
+          "ts": "10:51",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 46A, Altos de Niquía"
+        },
+        {
+          "lat": 6.3446799,
+          "lon": -75.5553533,
+          "ts": "10:52",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 47B, Altos de Niquía"
+        },
+        {
+          "lat": 6.3447383,
+          "lon": -75.555635,
+          "ts": "10:53",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Bello, Diagonal 61, Altos de Niquía"
+        },
+        {
+          "lat": 6.3447933,
+          "lon": -75.55571,
+          "ts": "11:04",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Bello, Carrera 48, Altos de Niquía"
+        },
+        {
+          "lat": 6.3447933,
+          "lon": -75.55571,
+          "ts": "11:20",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 48, Altos de Niquía"
+        },
+        {
+          "lat": 6.344885,
+          "lon": -75.5561283,
+          "ts": "11:21",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Bello, Diagonal 61, Altos de Niquía"
+        },
+        {
+          "lat": 6.3454983,
+          "lon": -75.55803,
+          "ts": "11:22",
+          "vel": 21,
+          "ign": "Encendido",
+          "dir": "Bello, Calle 66, Altos de Niquía"
+        },
+        {
+          "lat": 6.3462683,
+          "lon": -75.55908,
+          "ts": "11:22",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Altos de Niquía"
+        },
+        {
+          "lat": 6.34424,
+          "lon": -75.5595866,
+          "ts": "11:23",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Altos de Niquía"
+        },
+        {
+          "lat": 6.3419383,
+          "lon": -75.55934,
+          "ts": "11:24",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Droguería J.N., Carrera 50, Santa Ana"
+        },
+        {
+          "lat": 6.3411,
+          "lon": -75.5592883,
+          "ts": "11:25",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Bello, Calle 59, Santa Ana"
+        },
+        {
+          "lat": 6.339205,
+          "lon": -75.559085,
+          "ts": "11:26",
+          "vel": 20,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Santa Ana"
+        },
+        {
+          "lat": 6.3372916,
+          "lon": -75.5588816,
+          "ts": "11:27",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Santa Ana"
+        },
+        {
+          "lat": 6.3369066,
+          "lon": -75.5588433,
+          "ts": "11:27",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Bello, Calle 53, Santa Ana"
+        },
+        {
+          "lat": 6.336645,
+          "lon": -75.56039,
+          "ts": "11:28",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Institución Educativa Marco Fidel Suárez, Calle 53, Santa Ana"
+        },
+        {
+          "lat": 6.33658,
+          "lon": -75.560395,
+          "ts": "11:28",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 52, Santa Ana"
+        },
+        {
+          "lat": 6.3345883,
+          "lon": -75.56011,
+          "ts": "11:29",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Eje Optico, Carrera 52, Santa Ana"
+        },
+        {
+          "lat": 6.3321866,
+          "lon": -75.55976,
+          "ts": "11:30",
+          "vel": 21,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 52, Santa Ana"
+        },
+        {
+          "lat": 6.32979,
+          "lon": -75.5595083,
+          "ts": "11:31",
+          "vel": 27,
+          "ign": "Encendido",
+          "dir": "Bello, Calle 43, Manchester"
+        },
+        {
+          "lat": 6.3284449,
+          "lon": -75.5580183,
+          "ts": "11:31",
+          "vel": 20,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Manchester"
+        },
+        {
+          "lat": 6.3238633,
+          "lon": -75.55761,
+          "ts": "11:32",
+          "vel": 44,
+          "ign": "Encendido",
+          "dir": "38, Carrera 50, Barrio Obrero"
+        },
+        {
+          "lat": 6.3193249,
+          "lon": -75.5572033,
+          "ts": "11:33",
+          "vel": 33,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, Barrio Obrero"
+        },
+        {
+          "lat": 6.3148166,
+          "lon": -75.5570949,
+          "ts": "11:34",
+          "vel": 39,
+          "ign": "Encendido",
+          "dir": "Bello, Carrera 50, La Florida"
+        },
+        {
+          "lat": 6.3121316,
+          "lon": -75.5580999,
+          "ts": "11:34",
+          "vel": 31,
+          "ign": "Encendido",
+          "dir": "Carrera 64AA, Cabañitas, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.3081116,
+          "lon": -75.56029,
+          "ts": "11:35",
+          "vel": 34,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tosacana, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.3038299,
+          "lon": -75.560905,
+          "ts": "11:36",
+          "vel": 45,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tosacana, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.3007766,
+          "lon": -75.5643116,
+          "ts": "11:37",
+          "vel": 44,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Belalcázar, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2970516,
+          "lon": -75.5668599,
+          "ts": "11:37",
+          "vel": 47,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Belalcázar, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2927,
+          "lon": -75.5681999,
+          "ts": "11:38",
+          "vel": 51,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Belalcázar, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2883766,
+          "lon": -75.5695883,
+          "ts": "11:39",
+          "vel": 52,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2796666,
+          "lon": -75.5719999,
+          "ts": "11:40",
+          "vel": 52,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2752183,
+          "lon": -75.5727833,
+          "ts": "11:40",
+          "vel": 48,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Tricentenario, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.27077,
+          "lon": -75.573865,
+          "ts": "11:41",
+          "vel": 49,
+          "ign": "Encendido",
+          "dir": "Carrera 64C, Caribe, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.261775,
+          "lon": -75.5751549,
+          "ts": "11:42",
+          "vel": 41,
+          "ign": "Encendido",
+          "dir": "Carrera 63, Carlos E. Restrepo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2597283,
+          "lon": -75.5753383,
+          "ts": "11:43",
+          "vel": 28,
+          "ign": "Encendido",
+          "dir": "Calle 59A, Nueva Villa de La Iguaná, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2591016,
+          "lon": -75.5786766,
+          "ts": "11:46",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 59A, Nueva Villa de La Iguaná, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2587666,
+          "lon": -75.5796266,
+          "ts": "11:48",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Calle 57, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2588316,
+          "lon": -75.5800666,
+          "ts": "11:49",
+          "vel": 18,
+          "ign": "Encendido",
+          "dir": "Carrera 65, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2567466,
+          "lon": -75.5809283,
+          "ts": "11:50",
+          "vel": 20,
+          "ign": "Encendido",
+          "dir": "Carrera 65, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2573816,
+          "lon": -75.5824366,
+          "ts": "11:50",
+          "vel": 31,
+          "ign": "Encendido",
+          "dir": "Calle 51, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2593683,
+          "lon": -75.5865616,
+          "ts": "11:51",
+          "vel": 33,
+          "ign": "Encendido",
+          "dir": "Calle 51, Cuarta Brigada, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2603749,
+          "lon": -75.5886833,
+          "ts": "11:52",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 51, Cuarta Brigada, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2604199,
+          "lon": -75.588835,
+          "ts": "11:53",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Carrera 73, Cuarta Brigada, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2600233,
+          "lon": -75.5891166,
+          "ts": "11:55",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Calle 50, Cuarta Brigada, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.26087,
+          "lon": -75.5909633,
+          "ts": "11:56",
+          "vel": 32,
+          "ign": "Encendido",
+          "dir": "Calle 50, Cuarta Brigada, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2628366,
+          "lon": -75.5951149,
+          "ts": "11:56",
+          "vel": 51,
+          "ign": "Encendido",
+          "dir": "Estadio, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2643133,
+          "lon": -75.5999066,
+          "ts": "11:58",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 50, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2643266,
+          "lon": -75.6001699,
+          "ts": "11:59",
+          "vel": 15,
+          "ign": "Encendido",
+          "dir": "Carrera 82B, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2618716,
+          "lon": -75.6025033,
+          "ts": "12:00",
+          "vel": 29,
+          "ign": "Encendido",
+          "dir": "Carrera 83A, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2606333,
+          "lon": -75.602205,
+          "ts": "12:00",
+          "vel": 15,
+          "ign": "Encendido",
+          "dir": "Calle 48A, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2589483,
+          "lon": -75.6067216,
+          "ts": "12:01",
+          "vel": 24,
+          "ign": "Encendido",
+          "dir": "Calle 48B, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2584883,
+          "lon": -75.6087233,
+          "ts": "12:02",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Carrera 92, La Pradera, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2582433,
+          "lon": -75.6087566,
+          "ts": "12:02",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Calle 48, Santa Lucía, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.258075,
+          "lon": -75.610835,
+          "ts": "12:03",
+          "vel": 20,
+          "ign": "Encendido",
+          "dir": "Calle 48, Santa Lucía, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.25904,
+          "lon": -75.6134249,
+          "ts": "12:04",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Calle 48, Santa Lucía, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2597416,
+          "lon": -75.6132333,
+          "ts": "12:04",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Carrera 99, San Javier No. 2, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.259795,
+          "lon": -75.61326,
+          "ts": "12:04",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Calle 48A, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2599466,
+          "lon": -75.6161333,
+          "ts": "12:06",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Calle 48A, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.25994,
+          "lon": -75.617195,
+          "ts": "12:07",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Carrera 102, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2603933,
+          "lon": -75.6177033,
+          "ts": "12:08",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 48D, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.260385,
+          "lon": -75.6179816,
+          "ts": "12:09",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Carrera 102B, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2607583,
+          "lon": -75.61896,
+          "ts": "12:11",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Carrera 102B, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.261625,
+          "lon": -75.6193933,
+          "ts": "12:13",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2616333,
+          "lon": -75.6194066,
+          "ts": "13:10",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2615616,
+          "lon": -75.6193516,
+          "ts": "13:50",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2610116,
+          "lon": -75.6188716,
+          "ts": "14:32",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2615433,
+          "lon": -75.6188466,
+          "ts": "14:50",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2615433,
+          "lon": -75.6188466,
+          "ts": "14:59",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2615433,
+          "lon": -75.6188466,
+          "ts": "15:01",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2615433,
+          "lon": -75.6188466,
+          "ts": "15:28",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2614983,
+          "lon": -75.6187666,
+          "ts": "15:57",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2614983,
+          "lon": -75.6187666,
+          "ts": "16:24",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2614916,
+          "lon": -75.6188566,
+          "ts": "16:51",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2608666,
+          "lon": -75.6189166,
+          "ts": "16:58",
+          "vel": 3,
+          "ign": "Encendido",
+          "dir": "Carrera 102C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2606016,
+          "lon": -75.6184966,
+          "ts": "16:58",
+          "vel": 8,
+          "ign": "Encendido",
+          "dir": "Calle 48C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2607566,
+          "lon": -75.6186899,
+          "ts": "17:00",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 48C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.25997,
+          "lon": -75.6182333,
+          "ts": "17:02",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Carrera 102B, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2602283,
+          "lon": -75.617955,
+          "ts": "17:03",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 48C, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2597033,
+          "lon": -75.6172783,
+          "ts": "17:03",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Calle 48A, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2599583,
+          "lon": -75.6165683,
+          "ts": "17:04",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Calle 48A, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2598616,
+          "lon": -75.614155,
+          "ts": "17:05",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Calle 48A, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2597066,
+          "lon": -75.61322,
+          "ts": "17:05",
+          "vel": 8,
+          "ign": "Encendido",
+          "dir": "Carrera 99, San Javier No. 2, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2589533,
+          "lon": -75.6133416,
+          "ts": "17:06",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Calle 48, Santa Lucía, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2580399,
+          "lon": -75.6103849,
+          "ts": "17:07",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Calle 48, Santa Lucía, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2584133,
+          "lon": -75.6070966,
+          "ts": "17:08",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Calle 48, Santa Lucía, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2594983,
+          "lon": -75.60449,
+          "ts": "17:10",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 87, La Floresta, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2593316,
+          "lon": -75.604155,
+          "ts": "17:10",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Calle 47F, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2603,
+          "lon": -75.6020333,
+          "ts": "17:11",
+          "vel": 21,
+          "ign": "Encendido",
+          "dir": "Calle 47F, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.262035,
+          "lon": -75.6022633,
+          "ts": "17:11",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Carrera 83A, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2642566,
+          "lon": -75.60012,
+          "ts": "17:12",
+          "vel": 18,
+          "ign": "Encendido",
+          "dir": "Carrera 82B, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.26392,
+          "lon": -75.5984849,
+          "ts": "17:13",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Calle 50, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2634983,
+          "lon": -75.5963883,
+          "ts": "17:14",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2675033,
+          "lon": -75.5957233,
+          "ts": "17:15",
+          "vel": 31,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Los Colores, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2694916,
+          "lon": -75.595275,
+          "ts": "17:16",
+          "vel": 30,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Los Colores, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2711366,
+          "lon": -75.5946833,
+          "ts": "17:16",
+          "vel": 21,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Los Colores, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2714566,
+          "lon": -75.5941616,
+          "ts": "17:17",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Conexión vial Guillermo Gaviria Correa, Los Colores, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2711749,
+          "lon": -75.59396,
+          "ts": "17:17",
+          "vel": 24,
+          "ign": "Encendido",
+          "dir": "Calle 59, Los Colores, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2695299,
+          "lon": -75.5929533,
+          "ts": "17:18",
+          "vel": 15,
+          "ign": "Encendido",
+          "dir": "Calle 59, Los Colores, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2689166,
+          "lon": -75.592055,
+          "ts": "17:19",
+          "vel": 18,
+          "ign": "Encendido",
+          "dir": "Calle 57, Los Colores, Comuna 11 - Laureles-Estadio"
+        },
+        {
+          "lat": 6.2693233,
+          "lon": -75.5917716,
+          "ts": "17:20",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Calle 60, San Germán, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2720616,
+          "lon": -75.5937416,
+          "ts": "17:21",
+          "vel": 21,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Robledo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.273295,
+          "lon": -75.5928683,
+          "ts": "17:22",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Calle 65, Robledo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.27262,
+          "lon": -75.5913783,
+          "ts": "17:23",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 65, San Germán, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2730183,
+          "lon": -75.5888066,
+          "ts": "17:25",
+          "vel": 20,
+          "ign": "Encendido",
+          "dir": "Carrera 75, San Germán, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2726433,
+          "lon": -75.5857583,
+          "ts": "17:26",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Transversal 73, La Pilarica, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2736849,
+          "lon": -75.581755,
+          "ts": "17:27",
+          "vel": 5,
+          "ign": "Encendido",
+          "dir": "Calle 73, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.274425,
+          "lon": -75.5819749,
+          "ts": "17:28",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2743499,
+          "lon": -75.5819216,
+          "ts": "17:52",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-04-27",
+      "kpis": {
+        "km": 6.6,
+        "hora_arranque": "06:59",
+        "hora_fin": "15:00",
+        "duracion_jornada_min": 481,
+        "tiempo_encendido_min": 131,
+        "tiempo_efectivo_min": 350,
+        "vel_max_kmh": 27,
+        "puntos": 66
+      },
+      "stops": [
+        {
+          "lat": 6.274355,
+          "lon": -75.5819183,
+          "direccion": "Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+          "inicio": "06:59",
+          "fin": "07:30",
+          "duracion_min": 31,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.2893366,
+          "lon": -75.5718816,
+          "direccion": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla",
+          "inicio": "07:46",
+          "fin": "10:38",
+          "duracion_min": 172,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.2883983,
+          "lon": -75.5791883,
+          "direccion": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre",
+          "inicio": "10:44",
+          "fin": "14:03",
+          "duracion_min": 199,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.27438,
+          "lon": -75.581955,
+          "direccion": "Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+          "inicio": "14:18",
+          "fin": "15:00",
+          "duracion_min": 42,
+          "ignicion": "Encendido"
+        }
+      ],
+      "track": [
+        {
+          "lat": 6.274355,
+          "lon": -75.5819183,
+          "ts": "06:59",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2742383,
+          "lon": -75.5811716,
+          "ts": "07:16",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 76C, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2747466,
+          "lon": -75.5815949,
+          "ts": "07:17",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Calle 76C, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2747966,
+          "lon": -75.58125,
+          "ts": "07:30",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2748366,
+          "lon": -75.5789499,
+          "ts": "07:31",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2759433,
+          "lon": -75.5787116,
+          "ts": "07:32",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Carrera 69, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2767383,
+          "lon": -75.578185,
+          "ts": "07:33",
+          "vel": 15,
+          "ign": "Encendido",
+          "dir": "Calle 79, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.278135,
+          "lon": -75.5798466,
+          "ts": "07:34",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Calle 78B, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.27856,
+          "lon": -75.5802016,
+          "ts": "07:34",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2802683,
+          "lon": -75.5789466,
+          "ts": "07:35",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Calle 80, Córdoba, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2808783,
+          "lon": -75.5796183,
+          "ts": "07:35",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2810433,
+          "lon": -75.5793816,
+          "ts": "07:35",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 80A, Córdoba, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2809666,
+          "lon": -75.5788316,
+          "ts": "07:36",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Carrera 72C, Córdoba, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2829966,
+          "lon": -75.5783916,
+          "ts": "07:37",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Calle 84, Córdoba, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2845616,
+          "lon": -75.578035,
+          "ts": "07:37",
+          "vel": 8,
+          "ign": "Encendido",
+          "dir": "Calle 89B, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2847266,
+          "lon": -75.577705,
+          "ts": "07:38",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Carrera 71B, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.284945,
+          "lon": -75.5771966,
+          "ts": "07:38",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 91A, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2865116,
+          "lon": -75.5776849,
+          "ts": "07:40",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2873266,
+          "lon": -75.576865,
+          "ts": "07:41",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, La Esperanza, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2896616,
+          "lon": -75.5760549,
+          "ts": "07:42",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Calle 94, La Esperanza, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.28916,
+          "lon": -75.5744749,
+          "ts": "07:43",
+          "vel": 15,
+          "ign": "Encendido",
+          "dir": "Calle 94, La Esperanza, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2885433,
+          "lon": -75.5726983,
+          "ts": "07:44",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Calle 94, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2884616,
+          "lon": -75.57217,
+          "ts": "07:45",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2893366,
+          "lon": -75.5718816,
+          "ts": "07:46",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2893366,
+          "lon": -75.5718816,
+          "ts": "07:49",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2893366,
+          "lon": -75.5718816,
+          "ts": "08:27",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.28943,
+          "lon": -75.5718516,
+          "ts": "08:30",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2895466,
+          "lon": -75.57184,
+          "ts": "10:23",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2896849,
+          "lon": -75.5718183,
+          "ts": "10:38",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.28995,
+          "lon": -75.5727066,
+          "ts": "10:39",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Calle 95, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2905516,
+          "lon": -75.574485,
+          "ts": "10:40",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Calle 95, Francisco Antonio Zea, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2910716,
+          "lon": -75.5760983,
+          "ts": "10:41",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Carrera 72B, La Esperanza, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2911683,
+          "lon": -75.576575,
+          "ts": "10:41",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Carrera 73, La Esperanza, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2889733,
+          "lon": -75.5773583,
+          "ts": "10:42",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Carrera 73, La Esperanza, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2880316,
+          "lon": -75.5781049,
+          "ts": "10:43",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.288315,
+          "lon": -75.5789383,
+          "ts": "10:43",
+          "vel": 8,
+          "ign": "Encendido",
+          "dir": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2883983,
+          "lon": -75.5791883,
+          "ts": "10:44",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2883983,
+          "lon": -75.5791883,
+          "ts": "10:50",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2883983,
+          "lon": -75.5791883,
+          "ts": "11:29",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2883983,
+          "lon": -75.5791883,
+          "ts": "11:32",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2883983,
+          "lon": -75.5791883,
+          "ts": "13:59",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 92, Kennedy, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2884916,
+          "lon": -75.5794633,
+          "ts": "14:03",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Carrera 74A, La Esperanza, Comuna 6 - Doce de Octubre"
+        },
+        {
+          "lat": 6.2879566,
+          "lon": -75.578065,
+          "ts": "14:04",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Calle 92, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2874349,
+          "lon": -75.5781916,
+          "ts": "14:05",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Calle 91A, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.28518,
+          "lon": -75.5772766,
+          "ts": "14:06",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Calle 91A, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2849183,
+          "lon": -75.5771999,
+          "ts": "14:06",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Carrera 71B, Alfonso López, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.2819716,
+          "lon": -75.578655,
+          "ts": "14:07",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Carrera 72C, Córdoba, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2808466,
+          "lon": -75.5787716,
+          "ts": "14:08",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 80A, Córdoba, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.28079,
+          "lon": -75.5787716,
+          "ts": "14:08",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, Córdoba, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2802083,
+          "lon": -75.5791416,
+          "ts": "14:09",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.27988,
+          "lon": -75.579325,
+          "ts": "14:09",
+          "vel": 23,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2775999,
+          "lon": -75.5810433,
+          "ts": "14:10",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2772783,
+          "lon": -75.5812966,
+          "ts": "14:11",
+          "vel": 17,
+          "ign": "Encendido",
+          "dir": "Carrera 72A, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2760333,
+          "lon": -75.5800766,
+          "ts": "14:12",
+          "vel": 26,
+          "ign": "Encendido",
+          "dir": "Calle 78B, Altamira, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2757083,
+          "lon": -75.5787716,
+          "ts": "14:12",
+          "vel": 25,
+          "ign": "Encendido",
+          "dir": "Carrera 69, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2754516,
+          "lon": -75.57872,
+          "ts": "14:12",
+          "vel": 27,
+          "ign": "Encendido",
+          "dir": "Carrera 69, El Progreso, Comuna 5 - Castilla"
+        },
+        {
+          "lat": 6.27471,
+          "lon": -75.57897,
+          "ts": "14:13",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Carrera 69, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2736883,
+          "lon": -75.5797866,
+          "ts": "14:14",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Carrera 69, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2735933,
+          "lon": -75.5800283,
+          "ts": "14:15",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Calle 73, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2737549,
+          "lon": -75.58163,
+          "ts": "14:16",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Calle 73, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2738183,
+          "lon": -75.5816633,
+          "ts": "14:16",
+          "vel": 15,
+          "ign": "Encendido",
+          "dir": "Transversal 74, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.27438,
+          "lon": -75.581955,
+          "ts": "14:18",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.27438,
+          "lon": -75.581955,
+          "ts": "14:27",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2743016,
+          "lon": -75.5819016,
+          "ts": "14:40",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.274305,
+          "lon": -75.581865,
+          "ts": "14:50",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.274305,
+          "lon": -75.581865,
+          "ts": "15:00",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-04-28",
+      "kpis": {
+        "km": 6.9,
+        "hora_arranque": "08:10",
+        "hora_fin": "14:10",
+        "duracion_jornada_min": 360,
+        "tiempo_encendido_min": 114,
+        "tiempo_efectivo_min": 246,
+        "vel_max_kmh": 28,
+        "puntos": 54
+      },
+      "stops": [
+        {
+          "lat": 6.259615,
+          "lon": -75.6198216,
+          "direccion": "Carrera 103B, Antonio Nariño, Comuna 13 - San Javier",
+          "inicio": "08:55",
+          "fin": "10:45",
+          "duracion_min": 110,
+          "ignicion": "Encendido"
+        },
+        {
+          "lat": 6.2585433,
+          "lon": -75.6193616,
+          "direccion": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier",
+          "inicio": "10:48",
+          "fin": "14:10",
+          "duracion_min": 202,
+          "ignicion": "Encendido"
+        }
+      ],
+      "track": [
+        {
+          "lat": 6.2742816,
+          "lon": -75.5818466,
+          "ts": "08:10",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Calle 75, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2740683,
+          "lon": -75.5815949,
+          "ts": "08:19",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Transversal 74, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2737566,
+          "lon": -75.5802933,
+          "ts": "08:20",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Calle 73, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.27363,
+          "lon": -75.5825566,
+          "ts": "08:21",
+          "vel": 28,
+          "ign": "Encendido",
+          "dir": "Transversal 73, Cerro El Volador, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2726716,
+          "lon": -75.585675,
+          "ts": "08:22",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Transversal 73, La Pilarica, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2731299,
+          "lon": -75.5886583,
+          "ts": "08:24",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Carrera 75, San Germán, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2722099,
+          "lon": -75.5912283,
+          "ts": "08:25",
+          "vel": 21,
+          "ign": "Encendido",
+          "dir": "Carrera 77A, San Germán, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2704866,
+          "lon": -75.5926633,
+          "ts": "08:26",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Calle 60, San Germán, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2728933,
+          "lon": -75.5944599,
+          "ts": "08:27",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Calle 60, Robledo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2734599,
+          "lon": -75.5940099,
+          "ts": "08:27",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Calle 63, Robledo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2730166,
+          "lon": -75.5933049,
+          "ts": "08:32",
+          "vel": 18,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Robledo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2722333,
+          "lon": -75.5939033,
+          "ts": "08:32",
+          "vel": 27,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Robledo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.272945,
+          "lon": -75.59478,
+          "ts": "08:33",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Calle 60, Robledo, Comuna 7 - Robledo"
+        },
+        {
+          "lat": 6.2724866,
+          "lon": -75.5951633,
+          "ts": "08:34",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Conexión vial Guillermo Gaviria Correa, El Pesebre, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2716266,
+          "lon": -75.5947883,
+          "ts": "08:35",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Calle 59A, El Pesebre, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2698849,
+          "lon": -75.5953183,
+          "ts": "08:37",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Ferrini, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2662533,
+          "lon": -75.5961066,
+          "ts": "08:38",
+          "vel": 26,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Ferrini, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2651466,
+          "lon": -75.5963466,
+          "ts": "08:39",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Ferrini, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2636383,
+          "lon": -75.5969733,
+          "ts": "08:40",
+          "vel": 17,
+          "ign": "Encendido",
+          "dir": "Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2629766,
+          "lon": -75.596845,
+          "ts": "08:40",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Carrera 80, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2600533,
+          "lon": -75.5975783,
+          "ts": "08:41",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Calle 48B, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2603716,
+          "lon": -75.599125,
+          "ts": "08:42",
+          "vel": 13,
+          "ign": "Encendido",
+          "dir": "Calle 48B, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.2598066,
+          "lon": -75.6004799,
+          "ts": "08:42",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Calle 48A, Calasanz, Comuna 12 - La América"
+        },
+        {
+          "lat": 6.25957,
+          "lon": -75.6005266,
+          "ts": "08:42",
+          "vel": 16,
+          "ign": "Encendido",
+          "dir": "Carrera 82, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2606816,
+          "lon": -75.60198,
+          "ts": "08:43",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Calle 48, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2606616,
+          "lon": -75.602025,
+          "ts": "08:43",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Calle 48A, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.25892,
+          "lon": -75.6066416,
+          "ts": "08:45",
+          "vel": 22,
+          "ign": "Encendido",
+          "dir": "Calle 48B, Los Alcázares, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.258885,
+          "lon": -75.6077066,
+          "ts": "08:46",
+          "vel": 14,
+          "ign": "Encendido",
+          "dir": "Calle 48B, La Pradera, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.258575,
+          "lon": -75.6087216,
+          "ts": "08:46",
+          "vel": 10,
+          "ign": "Encendido",
+          "dir": "Carrera 92, La Pradera, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2595133,
+          "lon": -75.6095083,
+          "ts": "08:47",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Calle 48D, La Pradera, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.25825,
+          "lon": -75.6105566,
+          "ts": "08:48",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Calle 48, La Pradera, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.25871,
+          "lon": -75.6117199,
+          "ts": "08:49",
+          "vel": 11,
+          "ign": "Encendido",
+          "dir": "Calle 48, La Pradera, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2598233,
+          "lon": -75.6145483,
+          "ts": "08:51",
+          "vel": 19,
+          "ign": "Encendido",
+          "dir": "Calle 48A, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2599,
+          "lon": -75.6160716,
+          "ts": "08:52",
+          "vel": 9,
+          "ign": "Encendido",
+          "dir": "Calle 48A, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2597766,
+          "lon": -75.61711,
+          "ts": "08:53",
+          "vel": 12,
+          "ign": "Encendido",
+          "dir": "Carrera 102, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.259405,
+          "lon": -75.6182216,
+          "ts": "08:53",
+          "vel": 7,
+          "ign": "Encendido",
+          "dir": "Carrera 102B, El Socorro, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.25935,
+          "lon": -75.6195,
+          "ts": "08:54",
+          "vel": 6,
+          "ign": "Encendido",
+          "dir": "Calle 48A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.259615,
+          "lon": -75.6198216,
+          "ts": "08:55",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103B, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.259615,
+          "lon": -75.6198216,
+          "ts": "09:20",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 103B, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2596316,
+          "lon": -75.6198133,
+          "ts": "10:31",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103B, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2594233,
+          "lon": -75.6196133,
+          "ts": "10:43",
+          "vel": 3,
+          "ign": "Encendido",
+          "dir": "Calle 48A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2592799,
+          "lon": -75.61951,
+          "ts": "10:45",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2585433,
+          "lon": -75.6193616,
+          "ts": "10:48",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2583699,
+          "lon": -75.6194633,
+          "ts": "10:55",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2583699,
+          "lon": -75.6194633,
+          "ts": "11:28",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2583699,
+          "lon": -75.6194633,
+          "ts": "11:28",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2583699,
+          "lon": -75.6194633,
+          "ts": "12:19",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2583699,
+          "lon": -75.6194633,
+          "ts": "12:23",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2583049,
+          "lon": -75.6193983,
+          "ts": "13:02",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2582933,
+          "lon": -75.6194216,
+          "ts": "13:12",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2582183,
+          "lon": -75.61947,
+          "ts": "13:45",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2582183,
+          "lon": -75.61947,
+          "ts": "13:48",
+          "vel": 0,
+          "ign": "Apagado",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2582183,
+          "lon": -75.61947,
+          "ts": "14:07",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        },
+        {
+          "lat": 6.2582183,
+          "lon": -75.61947,
+          "ts": "14:10",
+          "vel": 0,
+          "ign": "Encendido",
+          "dir": "Carrera 103A, Antonio Nariño, Comuna 13 - San Javier"
+        }
+      ]
+    }
+  ]
+}

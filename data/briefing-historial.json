@@ -92,21 +92,21 @@
     },
     {
       "semana": "W20",
-      "periodo": "2026-05-08 a 2026-05-14",
+      "periodo": "2026-05-09 a 2026-05-15",
       "metricas": {
-        "creadas_semana": 29,
-        "cerradas_semana": 44,
+        "creadas_semana": 30,
+        "cerradas_semana": 1,
         "evaluadas_semana": 0,
-        "abiertas_total": 236,
-        "ratio_cierre": 152
+        "abiertas_total": 240,
+        "ratio_cierre": 3
       },
       "totales": {
-        "tareas_detectadas": 48,
-        "decisiones": 23,
-        "ideas": 23,
-        "alertas": 12
+        "tareas_detectadas": 74,
+        "decisiones": 30,
+        "ideas": 30,
+        "alertas": 15
       },
-      "generado_at": "2026-05-14T11:00:09"
+      "generado_at": "2026-05-15T11:00:11"
     }
   ]
 }

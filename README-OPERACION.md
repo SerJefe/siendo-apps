@@ -117,3 +117,23 @@ Sin CI/CD. Sin tests. Sin backups automaticos.
 - **Hash routing en dashboard.html**: `location.hash` activa el tab correspondiente al cargar (`#panorama`, `#briefing`, `#inbox`, `#agenda`, `#equipo`, `#personas`, `#radar`).
 - **Hero-links del dashboard** actualizados: Panorama y Briefing apuntan a hash interno (no round-trip), Mapa y Rigor mantienen link a HTML standalone.
 
+
+## 11. Cambios Fase 4 (2026-05-14)
+
+### Cross-app eficiencia
+- Hero-link **Reportes** agregado en dashboard.html (junto a Mapa neuronal/Panorama/Briefing/Rigor).
+- Back-link **Dashboard** agregado en /reportes/index.html.
+
+### Roles (panorama)
+- Default: roles **colapsados** (antes auto-open por urgencia). Los badges del header (N venc, N crit, N nuevas) muestran el estado.
+- Boton **Expandir/Colapsar todos** arriba del grid #pn-roles-grid.
+
+### Tareas (Mis Tareas)
+- Lista plana de 236 abiertas reemplazada por **agrupacion por eje/categoria**.
+- Cada grupo es details open colapsable con conteo + badges de vencidas/criticas.
+- Analisis previo: solo 4 pares con jaccard >= 0.30 - la duplicacion percibida era lista plana + tareas del mismo proyecto, no duplicados estrictos. La agrupacion resuelve la percepcion.
+
+### Unificacion de tabs (de 7 a 5)
+- **Agenda removido del nav** - la seccion #calendario (calendario .ics + tareas por fecha) ahora carga junto con #mistareas dentro del tab **Inbox**. Misma funcionalidad, una pestana menos.
+- **Equipo removido del nav** - la seccion Personas ya tiene filtros por organizacion/subgrupo. La seccion #equipo sigue accesible via drilldown desde Panorama.
+- Nav final: Panorama / Briefing / Inbox / Personas / Radar.

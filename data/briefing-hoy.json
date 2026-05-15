@@ -1,61 +1,66 @@
 {
-  "saludo": "Buenos días Sebastián — jueves 14 May",
+  "saludo": "Buenos días Sebastián — viernes 15 May. Caja: 10 días. 74 críticas abiertas.",
   "supervivencia": [
-    "Caja a 10 días: revisar movimiento de inversiones hoy",
-    "EPM Río Negro: ~180M en reajustes pendientes + no conformidad contrato 24 sin respuesta formal",
-    "Deudas Condugas: presión inmediata de proveedores, Andrea necesita reunión urgente"
+    "EPM no pagó reajustes Río Negro (~180M). Sin cobro = colapso en 72h",
+    "Contraloría espera respuesta sobre no conformidad contrato 24. Silencio = cierre operativo",
+    "Inversiones personales sin revisar desde crisis de hackeo. Estado desconocido = riesgo mayor"
   ],
   "top_3": [
     {
-      "tarea": "Revisar caja familiar e inversiones (estado real a hoy, movimientos, proyección 30 días)",
+      "tarea": "Llamar EPM HOY: exigir cronograma de pago reajustes Río Negro + enviar comunicado formal de cobranza",
       "categoria": "SUPERVIVENCIA",
-      "porque": "10 días de runway, decisiones financieras colgadas",
-      "tarea_id": "situacion_caja"
+      "porque": "180M en 10 días de caja = cierre garantizado sin pago",
+      "tarea_id": "rio-negro-cobro"
     },
     {
-      "tarea": "Responder formalmente no conformidad contrato 24 + propuesta reajuste EPM con 3 alternativas viables",
+      "tarea": "Coordinar con Camilo: respuesta formal a Contraloría (evidencia errores, plan de enmienda, no excusas)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "180M en riesgo, cliente crítico requiere solución documentada",
-      "tarea_id": "epm_no_conformidad"
+      "porque": "Demora = contrato bloqueado. Redacción pobre = negociación cerrada",
+      "tarea_id": "contraloría-respuesta"
     },
     {
-      "tarea": "Reunión Andrea (30min): deudas Condugas, plan de pago, proveedores pendientes",
+      "tarea": "Revisar caja y estado inversiones (30min). Validar si hay fondos comprometidos en hackeo",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Retención de comunidad como presión, viabilidad en riesgo",
-      "tarea_id": "deudas_condugas"
+      "porque": "No sabes tu liquidez real en crisis. Decisiones sin datos = error fatal",
+      "tarea_id": "caja-inversiones-hoy"
     }
   ],
-  "mega_dia": "Documento caja + respuesta formal EPM = respiras",
+  "mega_dia": "Si logra: cobro EPM + respuesta Contraloría enviada + caja revisada, el fin de semana negocia desde posición clara, no pánico",
   "contactar_hoy": [
     {
-      "persona": "Andrea Bernal",
-      "motivo": "Plan de pagos Condugas y gestión de proveedores"
+      "persona": "EPM (director comercial + interventor)",
+      "motivo": "Exigir fecha pago reajustes. Plantear: contrato a mínima operación si no pagan"
     },
     {
-      "persona": "Emanuel",
-      "motivo": "Visualización ERP + estructura Siendo (roles, presupuesto)"
+      "persona": "Camilo Berrio",
+      "motivo": "Validar draft respuesta Contraloría. Envía hoy o pierde acreditación"
+    },
+    {
+      "persona": "Andrea Bernal",
+      "motivo": "Estado real de caja + movimientos. No estimaciones"
     }
   ],
   "ojo_con": [
     "121 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "Whoop en rojo (14% recovery, 27% sleep): TDAH + carga = decisiones sesgadas",
-    "165 tareas vencidas acumuladas = parálisis por sobrecarga",
-    "POT Aguactala: deadline 05-05 pasado, Pilar requiere citación urgente"
+    "Hamilton (pago vence 30-May): ya 45 días de retraso. Insistencia + consecuencias",
+    "ICA municipios (55M): Andrea debe hacer gestión de cobranza intensiva",
+    "Whoop: sleep 27%, recovery 14% → dormir o decides mal en crisis",
+    "169 tareas vencidas: parálisis operativa visible"
   ],
-  "vencidas": [
-    "Conversación Pilar/Basa POT casa Aguactala (05-05 pasado)",
-    "Revisar contratos críticos (04-20 pasado)",
-    "No conformidad contrato 24 (sin fecha pero crítica)"
+  "vencidas_críticas": [
+    "Contrato 24 no conformidad (respuesta pendiente)",
+    "Deuda Condugas (reunion Andrea + claridad pendiente)",
+    "POT casa Aguacatala (Pilar no citada aún)"
   ],
-  "frase_dia": "Hoy: caja clara + EPM respondida = control recuperado. El resto espera.",
-  "generado_at": "2026-05-14T11:00:09",
-  "fecha": "2026-05-14",
+  "frase_dia": "Hoy es ejecutar 3 cosas o nada. Elegir bien. El ruido calla cuando hay dinero en caja.",
+  "generado_at": "2026-05-15T11:00:11",
+  "fecha": "2026-05-15",
   "stats": {
-    "abiertas": 236,
-    "criticas": 70,
-    "vencidas": 165,
+    "abiertas": 240,
+    "criticas": 74,
+    "vencidas": 169,
     "estancadas": 196,
-    "sin_evaluar": 211
+    "sin_evaluar": 215
   },
   "criticas_sin_fecha": [
     {
@@ -151,40 +156,28 @@
   ],
   "vence_pronto": [
     {
-      "id": "2026-05-11-c001",
-      "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
-      "dias": 0,
-      "fecha_limite": "2026-05-14"
-    },
-    {
-      "id": "2026-05-11-c002",
-      "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de ",
-      "dias": 0,
-      "fecha_limite": "2026-05-14"
-    },
-    {
-      "id": "2026-05-11-c003",
-      "tarea": "Verificar que Condugas no asuma riesgo de caja personal si contrato no genera utilidad",
-      "dias": 0,
-      "fecha_limite": "2026-05-14"
-    },
-    {
-      "id": "2026-05-11-c004",
-      "tarea": "Explorar negociación alternativa a EPM (no la anterior que falló) para reajuste de contrato",
-      "dias": 0,
-      "fecha_limite": "2026-05-14"
-    },
-    {
       "id": "2026-05-06-c005",
       "tarea": "Negociar con EPM asignación mínima de 1.500 de obra mensual para Condugas en contrato Occidental (cr",
-      "dias": 2,
+      "dias": 1,
       "fecha_limite": "2026-05-16"
     },
     {
       "id": "2026-05-11-c005",
       "tarea": "Implementar ajustes al contrato (1.400M + reajuste 7-8%) y validar viabilidad antes del viernes",
-      "dias": 2,
+      "dias": 1,
       "fecha_limite": "2026-05-16"
+    },
+    {
+      "id": "2026-05-13-c001",
+      "tarea": "Revisar documentos de cómo Contraloría negoció con EPM para evaluar si negociación de Condugas fue d",
+      "dias": 2,
+      "fecha_limite": "2026-05-17"
+    },
+    {
+      "id": "2026-05-13-c002",
+      "tarea": "Camilo: estructurar respuesta escrita a Contraloría con pruebas de error aceptado (correo de Catalin",
+      "dias": 2,
+      "fecha_limite": "2026-05-17"
     }
   ]
 }

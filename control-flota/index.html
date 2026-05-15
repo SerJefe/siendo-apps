@@ -31,6 +31,37 @@ header .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);display:
 main{display:grid;grid-template-columns:340px 1fr 360px;overflow:hidden}
 .sidebar{background:var(--panel);border-right:1px solid var(--border);overflow-y:auto;padding:16px}
 .right-panel{background:var(--panel);border-left:1px solid var(--border);overflow-y:auto;padding:16px}
+.tab-bar{display:none}
+
+/* Mobile / tablet */
+@media (max-width: 900px){
+  body{font-size:13px}
+  .app{grid-template-rows:auto auto 1fr}
+  header{padding:10px 14px;flex-wrap:wrap;gap:8px;min-height:0}
+  header h1{font-size:14px}
+  header nav{margin-left:0;flex:1;justify-content:flex-end}
+  header nav a{padding:4px 8px;font-size:12px}
+  header .right{width:100%;font-size:11px;margin-left:0}
+  main{grid-template-columns:1fr;position:relative}
+  .sidebar,.right-panel,main > section{display:none;border:0;height:100%;overflow-y:auto}
+  .sidebar.show,.right-panel.show,main > section.show{display:block}
+  main > section.show{position:relative;height:100%}
+  .tab-bar{display:flex;background:var(--panel);border-bottom:1px solid var(--border);
+    box-shadow:var(--shadow);position:sticky;top:0;z-index:500}
+  .tab-bar button{flex:1;background:none;border:0;padding:12px 8px;font-size:13px;font-weight:500;
+    color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+  .tab-bar button.active{color:var(--turquesa);border-bottom-color:var(--turquesa);font-weight:600}
+  .tab-bar button .count{background:var(--turquesa);color:#fff;border-radius:10px;padding:1px 6px;
+    font-size:10px;margin-left:4px;vertical-align:middle}
+  .kpi-grid{grid-template-columns:1fr 1fr 1fr}
+  .kpi .v{font-size:18px}
+  .legend{bottom:10px;right:10px;padding:6px 8px;font-size:10px}
+  .legend .item{margin:2px 0}
+}
+@media (max-width: 480px){
+  .kpi-grid{grid-template-columns:1fr 1fr}
+  header nav a:not(.active){display:none}
+}
 
 .section-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;
   color:var(--muted);font-weight:600;margin:0 0 10px}
@@ -62,9 +93,9 @@ main{display:grid;grid-template-columns:340px 1fr 360px;overflow:hidden}
 
 #map{height:100%;width:100%}
 .leaflet-container{background:#0F172A}
-.marker-zone{background:var(--turquesa);color:#fff;border-radius:50%;
-  width:32px!important;height:32px!important;line-height:32px;text-align:center;font-weight:700;
-  border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);font-size:11px}
+.zone-label{background:var(--turquesa);color:#fff;border-radius:4px;
+  padding:2px 6px;text-align:center;font-weight:700;font-size:11px;
+  border:1px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4);white-space:nowrap;width:auto!important}
 
 .legend{position:absolute;bottom:20px;right:20px;background:rgba(255,255,255,.95);
   padding:10px 12px;border-radius:8px;font-size:11px;box-shadow:var(--shadow);z-index:1000}
@@ -88,9 +119,14 @@ main{display:grid;grid-template-columns:340px 1fr 360px;overflow:hidden}
     <span id="gen-time">—</span>
   </div>
 </header>
+<div class="tab-bar">
+  <button data-tab="sidebar" class="active">Resumen</button>
+  <button data-tab="map">Mapa</button>
+  <button data-tab="right">Alertas</button>
+</div>
 <main>
 
-  <aside class="sidebar">
+  <aside class="sidebar show">
     <h2 class="section-title">Resumen de la flota</h2>
     <div class="kpi-grid" id="kpi-grid"></div>
 
@@ -101,8 +137,8 @@ main{display:grid;grid-template-columns:340px 1fr 360px;overflow:hidden}
   <section style="position:relative">
     <div id="map"></div>
     <div class="legend">
-      <div class="item"><span class="sw" style="background:var(--turquesa)"></span>Zona detectada</div>
-      <div class="item" style="color:var(--muted);font-size:10px;margin-top:4px">Tamaño = horas totales paradas</div>
+      <div class="item"><span class="sw" style="background:rgba(26,168,154,.25);border:1px solid var(--turquesa);border-radius:50%"></span>Zona detectada (área)</div>
+      <div class="item" style="color:var(--muted);font-size:10px;margin-top:4px">Tamaño = horas totales de paradas</div>
     </div>
   </section>
 
@@ -205,22 +241,39 @@ function initMap(){
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19
   }).addTo(map);
-  // Tamaño del marker proporcional a horas
+  // Zonas como áreas circulares — radio proporcional a horas totales
   const maxH = Math.max(1, ...DATA.top_zonas_flota.map(z => z.horas_totales));
   DATA.top_zonas_flota.forEach((z,i) => {
-    const size = 24 + Math.round((z.horas_totales/maxH) * 24);
-    const m = L.marker([z.lat, z.lon], {
-      icon: L.divIcon({
-        className: 'marker-zone',
-        html: (i+1),
-        iconSize: [size, size]
-      })
-    }).addTo(map);
-    m.bindPopup(`<b>${z.direccion}</b><br>${z.placa} · ${z.visitas} visitas · ${z.horas_totales}h totales`);
+    const radio = 60 + Math.round((z.horas_totales/maxH) * 140);
+    const popup = `<b>Zona Z${i+1}</b><br>${z.direccion}<br>${z.placa} · ${z.visitas} visitas · ${z.horas_totales}h totales<br><i>Radio: ${radio}m</i>`;
+    L.circle([z.lat, z.lon], {
+      radius: radio,
+      color: '#1AA89A',
+      weight: 2,
+      fillColor: '#1AA89A',
+      fillOpacity: 0.18
+    }).bindPopup(popup).addTo(map);
+    L.marker([z.lat, z.lon], {
+      icon: L.divIcon({className:'zone-label', html:'Z'+(i+1), iconSize:null})
+    }).bindPopup(popup).addTo(map);
   });
 }
 
 load();
+
+// Tabs mobile
+document.querySelectorAll('.tab-bar button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const t = btn.dataset.tab;
+    document.querySelector('.sidebar').classList.toggle('show', t === 'sidebar');
+    document.querySelector('main > section').classList.toggle('show', t === 'map');
+    document.querySelector('.right-panel').classList.toggle('show', t === 'right');
+    // Forzar reflow del mapa al mostrarlo
+    if (t === 'map' && map) setTimeout(() => map.invalidateSize(), 50);
+  });
+});
 </script>
 </body>
 </html>

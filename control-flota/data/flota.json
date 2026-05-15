@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-14T00:09:33",
+  "generated_at": "2026-05-14T22:54:05",
   "rango": {
-    "desde": "2026-04-27",
+    "desde": "2026-04-26",
     "hasta": "2026-05-02"
   },
   "kpis": {
-    "vehiculos_total": 1,
-    "vehiculos_activos": 1,
-    "km_totales_flota": 144.3,
-    "horas_obra_flota": 30.3,
-    "alertas_totales": 13,
-    "zonas_recurrentes_unicas": 7
+    "vehiculos_total": 2,
+    "vehiculos_activos": 2,
+    "km_totales_flota": 192.4,
+    "horas_obra_flota": 44.6,
+    "alertas_totales": 25,
+    "zonas_recurrentes_unicas": 9
   },
   "vehiculos": [
     {
@@ -24,13 +24,34 @@
         "desde": "2026-04-27",
         "hasta": "2026-05-02"
       }
+    },
+    {
+      "placa": "JYW505",
+      "km": 48.1,
+      "dias_op": 3,
+      "horas_obra": 14.3,
+      "zonas": 2,
+      "alertas": 12,
+      "rango": {
+        "desde": "2026-04-26",
+        "hasta": "2026-04-28"
+      }
     }
   ],
   "top_zonas_flota": [
     {
+      "lat": 6.259615,
+      "lon": -75.6198216,
+      "direccion": "Carrera 103B, Antonio Nariño, Comuna 13 - San Javier",
+      "visitas": 2,
+      "minutos_totales": 312,
+      "horas_totales": 5.2,
+      "placa": "JYW505"
+    },
+    {
       "lat": 6.2509333,
       "lon": -75.5894116,
-      "direccion": "Calle 45E, Florida Nueva, Comuna 11 - Laureles-Estadio",
+      "direccion": "Carrera 70B, Florida Nueva, Comuna 11 - Laureles-Estadio",
       "visitas": 2,
       "minutos_totales": 168,
       "horas_totales": 2.8,
@@ -53,6 +74,15 @@
       "minutos_totales": 137,
       "horas_totales": 2.3,
       "placa": "JYW531"
+    },
+    {
+      "lat": 6.2743783,
+      "lon": -75.5818999,
+      "direccion": "Calle 75, Cerro El Volador, Comuna 7 - Robledo",
+      "visitas": 4,
+      "minutos_totales": 132,
+      "horas_totales": 2.2,
+      "placa": "JYW505"
     },
     {
       "lat": 6.2805216,
@@ -216,11 +246,131 @@
       "tipo": "parada_larga",
       "severidad": "media",
       "fecha": "2026-04-28",
+      "hora": "10:48",
+      "lat": 6.2585433,
+      "lon": -75.6193616,
+      "detalle": "Parada 202min en Carrera 103A, Antonio Nariño, Comuna 13 - San Javier",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-28",
       "hora": "09:14",
       "lat": 6.2599466,
       "lon": -75.6161166,
       "detalle": "Parada 69min en Calle 48A, El Socorro, Comuna 13 - San Javier",
       "placa": "JYW531"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-28",
+      "hora": "08:55",
+      "lat": 6.259615,
+      "lon": -75.6198216,
+      "detalle": "Parada 110min en Carrera 103B, Antonio Nariño, Comuna 13 - San Javier",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-27",
+      "hora": "10:44",
+      "lat": 6.2883983,
+      "lon": -75.5791883,
+      "detalle": "Parada 199min en Calle 92, Kennedy, Comuna 6 - Doce de Octubre",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-27",
+      "hora": "07:46",
+      "lat": 6.2893366,
+      "lon": -75.5718816,
+      "detalle": "Parada 172min en Carrera 67, Francisco Antonio Zea, Comuna 5 - Castilla",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "12:13",
+      "lat": 6.261625,
+      "lon": -75.6193933,
+      "detalle": "Parada 285min en El Socorro, Comuna 13 - San Javier",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:56",
+      "lat": 6.2628366,
+      "lon": -75.5951149,
+      "detalle": "51 km/h en Estadio, Comuna 11 - Laureles-Estadio",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:40",
+      "lat": 6.2796666,
+      "lon": -75.5719999,
+      "detalle": "52 km/h en Carrera 64C, Tricentenario, Comuna 5 - Castilla",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:39",
+      "lat": 6.2883766,
+      "lon": -75.5695883,
+      "detalle": "52 km/h en Carrera 64C, Tricentenario, Comuna 5 - Castilla",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "11:38",
+      "lat": 6.2927,
+      "lon": -75.5681999,
+      "detalle": "51 km/h en Carrera 64C, Belalcázar, Comuna 5 - Castilla",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "parada_larga",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "08:22",
+      "lat": 6.337745,
+      "lon": -75.5517866,
+      "detalle": "Parada 146min en Bello, Carrera 44, Niquía",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "07:52",
+      "lat": 6.3134433,
+      "lon": -75.5573033,
+      "detalle": "51 km/h en Bello, Carrera 50, La Florida",
+      "placa": "JYW505"
+    },
+    {
+      "tipo": "exceso_velocidad",
+      "severidad": "media",
+      "fecha": "2026-04-26",
+      "hora": "07:50",
+      "lat": 6.2983983,
+      "lon": -75.5663,
+      "detalle": "50 km/h en Carrera 64C, Belalcázar, Comuna 5 - Castilla",
+      "placa": "JYW505"
     }
   ]
 }

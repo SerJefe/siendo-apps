@@ -1,6 +1,6 @@
 {
   "placa": "JYW531",
-  "generated_at": "2026-05-14T00:09:33",
+  "generated_at": "2026-05-14T22:54:05",
   "rango": {
     "desde": "2026-04-27",
     "hasta": "2026-05-02"
@@ -16,7 +16,7 @@
     {
       "lat": 6.2509333,
       "lon": -75.5894116,
-      "direccion": "Calle 45E, Florida Nueva, Comuna 11 - Laureles-Estadio",
+      "direccion": "Carrera 70B, Florida Nueva, Comuna 11 - Laureles-Estadio",
       "visitas": 2,
       "minutos_totales": 168,
       "horas_totales": 2.8
