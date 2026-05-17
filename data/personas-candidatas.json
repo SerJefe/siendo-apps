@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.0",
-    "generated": "2026-05-15T03:48:10+00:00",
+    "generated": "2026-05-16T12:00:01+00:00",
     "agent": "agent-personas-detector.py",
     "source": [
       "personas.json",
@@ -167,11 +167,11 @@
       },
       "neural": {
         "neural_id": "jp",
-        "mentions_total": 9,
+        "mentions_total": 10,
         "mentions_7d": 0,
-        "last_seen": "2026-05-13"
+        "last_seen": "2026-05-14"
       },
-      "razon": "9 menciones en lifelogs (último: 2026-05-13)"
+      "razon": "10 menciones en lifelogs (último: 2026-05-14)"
     },
     {
       "nombre_detectado": "Alberto",

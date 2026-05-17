@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-15T11:31:09",
+  "ultima_actualizacion": "2026-05-17T11:30:55",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -6616,6 +6616,27 @@
         "Gustavo"
       ],
       "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-16-c001",
+      "tarea": "Preparar y estructurar agenda para junta directiva con nuevos miembros — lunes o martes próximo",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-16",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-19",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "rol-3-junta-asesora — Sebastian indica que tiene junta y no sabe qué va a hacer, debe haber preparación previa",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Andrés"
+      ],
+      "rol_sugerido": "rol-3-junta-asesora"
     }
   ]
 }

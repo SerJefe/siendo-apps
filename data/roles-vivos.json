@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-15T11:30:01.398381Z",
+  "generated_at": "2026-05-17T11:30:02.524181Z",
   "fuente_novedades": "dia-v2",
   "dia_v2_fecha": "2026-04-22",
-  "total_abiertos": 240,
+  "total_abiertos": 244,
   "total_novedades": 2,
   "clasificador": "heuristico-keywords-v1",
   "roles": {
@@ -11,9 +11,9 @@
       "emoji": "🏭",
       "color": "#091f2e",
       "ancla_3_decisiones": "sobrevivir_y_recuperar",
-      "abiertos_total": 204,
-      "abiertos_vencidos": 45,
-      "abiertos_criticos": 72,
+      "abiertos_total": 207,
+      "abiertos_vencidos": 50,
+      "abiertos_criticos": 75,
       "abiertos": [
         {
           "id": "2026-04-08-005",
@@ -21,7 +21,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 27,
           "responsable": "Juan Camilo Berrio",
           "fecha_creacion": "2026-04-08",
           "categoria": "condugas"
@@ -32,7 +32,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 26,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -43,7 +43,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 21,
+          "dias_vencida": 23,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -54,7 +54,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 27,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -65,7 +65,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 26,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -76,7 +76,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 27,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -87,7 +87,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 26,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -98,7 +98,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 26,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -109,7 +109,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 27,
           "responsable": "Andrea Bernal",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -120,7 +120,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 21,
+          "dias_vencida": 23,
           "responsable": "Camilo",
           "fecha_creacion": "2026-04-21",
           "categoria": "condugas"
@@ -131,7 +131,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 22,
+          "dias_vencida": 24,
           "responsable": "Unknown",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -142,7 +142,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 22,
+          "dias_vencida": 24,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -153,7 +153,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-27",
           "vencida": true,
-          "dias_vencida": 18,
+          "dias_vencida": 20,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -164,7 +164,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 22,
+          "dias_vencida": 24,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -175,7 +175,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-25",
           "vencida": true,
-          "dias_vencida": 20,
+          "dias_vencida": 22,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -192,53 +192,16 @@
         }
       ],
       "proximo": {
-        "dtstart": "2026-05-16T00:00:00Z",
-        "summary": "[CRITICA] Negociar con EPM asignación mínima de 1.500 de obra mensual para Condugas en contrato Occidental (crítica para viabilidad)",
-        "dias_restantes": 0
+        "dtstart": "2026-05-20T00:00:00Z",
+        "summary": "[CRITICA] Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos\\; (b) llevar a mínima expresión rentable justificando incumplimiento ANS por falta de pago de EPM",
+        "dias_restantes": 2
       },
       "pulso": {
         "cerradas_esta_semana": 1,
         "cerradas_semana_anterior": 32,
         "tendencia": "bajando",
         "delta": -31
-      },
-      "_personas_vinculadas": [
-        {
-          "id": "sebastian-sanchez",
-          "nombre": "Sebastián Sánchez",
-          "apodo": null,
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 11,
-          "vencidas_count": 11,
-          "criticas_count": 11
-        },
-        {
-          "id": "juan-camilo-berrio",
-          "nombre": "Juan Camilo Berrio",
-          "apodo": "Cami",
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 2,
-          "vencidas_count": 2,
-          "criticas_count": 2
-        },
-        {
-          "id": "andrea-bernal",
-          "nombre": "Andrea Bernal",
-          "apodo": "Andre",
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 1,
-          "vencidas_count": 1,
-          "criticas_count": 1
-        }
-      ],
-      "_responsables_sin_match": [
-        {
-          "nombre_responsable": "Unknown",
-          "abiertos_count": 1,
-          "vencidas_count": 1,
-          "criticas_count": 1
-        }
-      ]
+      }
     },
     "rol-2-familia": {
       "nombre": "Asesor y estructurador familia",
@@ -287,43 +250,36 @@
       "proximo": {
         "dtstart": "2026-05-24T00:00:00Z",
         "summary": "[ALTA] Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
-        "dias_restantes": 8
+        "dias_restantes": 6
       },
       "pulso": {
         "cerradas_esta_semana": 0,
         "cerradas_semana_anterior": 1,
         "tendencia": "estable",
         "delta": -1
-      },
-      "_personas_vinculadas": [
-        {
-          "id": "sebastian-sanchez",
-          "nombre": "Sebastián Sánchez",
-          "apodo": null,
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 2,
-          "vencidas_count": 0,
-          "criticas_count": 1
-        }
-      ],
-      "_responsables_sin_match": [
-        {
-          "nombre_responsable": "Asesores externos",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ]
+      }
     },
     "rol-3-junta-asesora": {
       "nombre": "Gerente en junta asesora",
       "emoji": "🎯",
       "color": "#0f2844",
       "ancla_3_decisiones": "recuperar_y_desarrollar",
-      "abiertos_total": 0,
-      "abiertos_vencidos": 0,
-      "abiertos_criticos": 0,
-      "abiertos": [],
+      "abiertos_total": 1,
+      "abiertos_vencidos": 1,
+      "abiertos_criticos": 1,
+      "abiertos": [
+        {
+          "id": "2026-05-14-c002",
+          "texto": "Preparar/revisar presentaciones antes de junta de las 2pm",
+          "prioridad": "critica",
+          "deadline": "2026-05-14T14:00:00Z",
+          "vencida": true,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-05-14",
+          "categoria": "condugas"
+        }
+      ],
       "novedades": [],
       "proximo": null,
       "pulso": {
@@ -331,9 +287,7 @@
         "cerradas_semana_anterior": 6,
         "tendencia": "bajando",
         "delta": -6
-      },
-      "_personas_vinculadas": [],
-      "_responsables_sin_match": []
+      }
     },
     "rol-4-being-core": {
       "nombre": "Being CoRe (consultoría + desarrollo)",
@@ -514,45 +468,14 @@
       "proximo": {
         "dtstart": "2026-05-30T00:00:00Z",
         "summary": "[ALTA] Cobrar pago pendiente de Hamilton según lo prometido",
-        "dias_restantes": 14
+        "dias_restantes": 12
       },
       "pulso": {
         "cerradas_esta_semana": 0,
         "cerradas_semana_anterior": 2,
         "tendencia": "bajando",
         "delta": -2
-      },
-      "_personas_vinculadas": [
-        {
-          "id": "sebastian-sanchez",
-          "nombre": "Sebastián Sánchez",
-          "apodo": null,
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 11,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ],
-      "_responsables_sin_match": [
-        {
-          "nombre_responsable": "Diseñador gráfico",
-          "abiertos_count": 2,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        },
-        {
-          "nombre_responsable": "Participantes (5 grupos de 4)",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        },
-        {
-          "nombre_responsable": "Carla",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ]
+      }
     },
     "rol-5-financiero-personal": {
       "nombre": "Financiero personal + patrimonio",
@@ -604,28 +527,7 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      },
-      "_personas_vinculadas": [
-        {
-          "id": "sebastian-sanchez",
-          "nombre": "Sebastián Sánchez",
-          "apodo": null,
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 2,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        },
-        {
-          "id": "lina-russi",
-          "nombre": "Lina Russi",
-          "apodo": "Lina",
-          "organizacion": "Siendo Consulting / Resulting",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ],
-      "_responsables_sin_match": []
+      }
     },
     "rol-6-salud": {
       "nombre": "Salud · fisio · deporte",
@@ -686,26 +588,7 @@
         "cerradas_semana_anterior": 2,
         "tendencia": "bajando",
         "delta": -2
-      },
-      "_personas_vinculadas": [
-        {
-          "id": "sebastian-sanchez",
-          "nombre": "Sebastián Sánchez",
-          "apodo": null,
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 2,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ],
-      "_responsables_sin_match": [
-        {
-          "nombre_responsable": "quien facilita sesión",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ]
+      }
     },
     "rol-7-docencia": {
       "nombre": "Docencia independiente",
@@ -723,9 +606,7 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      },
-      "_personas_vinculadas": [],
-      "_responsables_sin_match": []
+      }
     },
     "rol-8-ser-siendo-dev": {
       "nombre": "Ser Siendo — desarrollo metodológico",
@@ -832,48 +713,7 @@
         "cerradas_semana_anterior": 0,
         "tendencia": "estable",
         "delta": 0
-      },
-      "_personas_vinculadas": [
-        {
-          "id": "sebastian-sanchez",
-          "nombre": "Sebastián Sánchez",
-          "apodo": null,
-          "organizacion": "Condugas S.A. BIC",
-          "abiertos_count": 5,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        },
-        {
-          "id": "emanuel",
-          "nombre": "Emanuel",
-          "apodo": "Ema",
-          "organizacion": "Siendo Consulting / Resulting",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        },
-        {
-          "id": "lina-russi",
-          "nombre": "Lina Russi",
-          "apodo": "Lina",
-          "organizacion": "Siendo Consulting / Resulting",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 0
-        }
-      ],
-      "_responsables_sin_match": [
-        {
-          "nombre_responsable": "Tiago",
-          "abiertos_count": 1,
-          "vencidas_count": 0,
-          "criticas_count": 1
-        }
-      ]
+      }
     }
-  },
-  "_enrichment_personas": {
-    "personas_total": 50,
-    "roles_con_vinculadas": 6
   }
 }

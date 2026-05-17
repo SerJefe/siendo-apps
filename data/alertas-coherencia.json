@@ -1,14 +1,14 @@
 {
-  "generado_at": "2026-05-15T11:30:05",
+  "generado_at": "2026-05-16T11:30:05",
   "resumen": {
     "grupos_fusion": 1,
-    "tareas_en_grupos": 2,
+    "tareas_en_grupos": 3,
     "alta_prioridad_sin_accion": 6,
     "sobrecarga": 4,
     "sin_categoria": 0,
     "estancadas": 196,
-    "sin_evaluar": 215,
-    "total_abiertas": 240
+    "sin_evaluar": 219,
+    "total_abiertas": 244
   },
   "grupos_fusion": [
     {
@@ -22,7 +22,7 @@
           "evaluada": false,
           "estado": "abierta",
           "fecha_creacion": "2026-05-13",
-          "is_keeper": true
+          "is_keeper": false
         },
         {
           "id": "2026-05-13-c003",
@@ -33,13 +33,24 @@
           "estado": "abierta",
           "fecha_creacion": "2026-05-13",
           "is_keeper": false
+        },
+        {
+          "id": "2026-05-14-c003",
+          "tarea": "Preparar escenarios financieros claros (PIG) para presentar pérdida total del contrato y aportes realizados a don Gustav",
+          "responsable": null,
+          "puntaje": null,
+          "evaluada": false,
+          "estado": "abierta",
+          "fecha_creacion": "2026-05-14",
+          "is_keeper": true
         }
       ],
-      "keep_id": "2026-05-13-c001",
+      "keep_id": "2026-05-14-c003",
       "merge_ids": [
+        "2026-05-13-c001",
         "2026-05-13-c003"
       ],
-      "sugerencia": "Fusionar en: Revisar documentos de cómo Contraloría negoció con EPM para evaluar si negociaci"
+      "sugerencia": "Fusionar en: Preparar escenarios financieros claros (PIG) para presentar pérdida total del co"
     }
   ],
   "alta_prioridad_sin_accion": [
@@ -95,15 +106,15 @@
     },
     {
       "responsable": "Sebastian",
-      "abiertas": 55,
-      "criticas": 15,
-      "sugerencia": "Sebastian tiene 55 tareas abiertas (15 criticas). Delegar o repriorizar."
+      "abiertas": 56,
+      "criticas": 16,
+      "sugerencia": "Sebastian tiene 56 tareas abiertas (16 criticas). Delegar o repriorizar."
     },
     {
       "responsable": "Sin asignar",
-      "abiertas": 45,
-      "criticas": 13,
-      "sugerencia": "Sin asignar tiene 45 tareas abiertas (13 criticas). Delegar o repriorizar."
+      "abiertas": 48,
+      "criticas": 16,
+      "sugerencia": "Sin asignar tiene 48 tareas abiertas (16 criticas). Delegar o repriorizar."
     },
     {
       "responsable": "Sebastian Sanchez",
@@ -118,140 +129,140 @@
       "id": "2026-04-06-002",
       "tarea": "Recopilar información del proceso centro de operaciones",
       "responsable": "William Lopez",
-      "dias": 39,
+      "dias": 40,
       "puntaje": 44
     },
     {
       "id": "2026-04-12-004",
       "tarea": "Publicar documentación de KPIs en repositorio público",
       "responsable": "William Lopez",
-      "dias": 33,
+      "dias": 34,
       "puntaje": 37
     },
     {
       "id": "2026-04-13-mc2abc0",
       "tarea": "Casa (Construcción)",
       "responsable": "Sebastian",
-      "dias": 32,
+      "dias": 33,
       "puntaje": null
     },
     {
       "id": "2026-04-14-001",
       "tarea": "Reunirse con Andrea para resolver deuda Condugas",
       "responsable": "Lina Russi",
-      "dias": 31,
+      "dias": 32,
       "puntaje": 40
     },
     {
       "id": "2026-04-14-006",
       "tarea": "Coordinar reunión con leads/clientes para definición estratégica",
       "responsable": "Sebastian",
-      "dias": 31,
+      "dias": 32,
       "puntaje": 39
     },
     {
       "id": "2026-04-14-010",
       "tarea": "Crear información visual ERP con Emanuel y Lina para comprensión integral del proyecto",
       "responsable": "Sebastian",
-      "dias": 31,
+      "dias": 32,
       "puntaje": 33
     },
     {
       "id": "2026-04-16-r6-002",
       "tarea": "Preparar documento con 3 pilares: Confiabilidad numérica, Relacionamiento, Adaptabilidad",
       "responsable": "Sebastian Sanchez",
-      "dias": 31,
+      "dias": 32,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r7-004",
       "tarea": "Documentar que 4 comunicaciones fueron coordinadas lunes-miércoles, enviadas jueves",
       "responsable": "Sebastian Sanchez",
-      "dias": 31,
+      "dias": 32,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r7-005",
       "tarea": "Reafirmar con PM y abogados compromiso con buenas relaciones pese a conflicto",
       "responsable": "Sebastian Sanchez",
-      "dias": 31,
+      "dias": 32,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r10-012",
       "tarea": "Empoderar Diana para alcance similar a Carlos Acevedo",
       "responsable": "Sebastian Sanchez",
-      "dias": 31,
+      "dias": 32,
       "puntaje": null
     },
     {
       "id": "2026-04-15-c003",
       "tarea": "Preparar propuesta contundente de reajuste de contrato EPM Río Negro con alternativas viables",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-001",
       "tarea": "Revisar informe de gestión para Supersociedades",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-003",
       "tarea": "Obtener respuesta contable de Manuel sobre configuración nómina UGP-DIAN",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-004",
       "tarea": "Cobrar ICA pendiente a municipios (~55 millones Medellín)",
       "responsable": "Andrea Bernal",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-005",
       "tarea": "Responder requerimiento SENA pendiente",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-007",
       "tarea": "Firmar declaración de renta con ayuda de Diana y Alejandro",
       "responsable": "Andrea Bernal",
-      "dias": 30,
+      "dias": 31,
       "puntaje": 43
     },
     {
       "id": "2026-04-15-008",
       "tarea": "Integrar informes inversión extranjera en sistema Odoo",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-009",
       "tarea": "Definir auditoría de balances en Odoo con revisor fiscal",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-010",
       "tarea": "Enviar certificados retención mensual a consorciados (Óscar, Zilar)",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     },
     {
       "id": "2026-04-15-011",
       "tarea": "Ajustar débito deuda NC (retenciones no cobradas)",
       "responsable": "Sebastian",
-      "dias": 30,
+      "dias": 31,
       "puntaje": null
     }
   ],

@@ -1,190 +1,120 @@
 {
-  "fecha": "2026-05-13",
+  "fecha": "2026-05-14",
   "tareas_extraidas": [
     {
-      "tarea": "Consolidar diarios duplicados y revisar facturas de 2020 en contabilidad para identificar intencionalidad",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Auditar anomalía de febrero en facturación y verificar variaciones con comentario P1",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Investigar concepto 'Licencia Remunerada' vs calamidades e incapacidades en nómina para clarificar política de bienestar",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Automatizar alertas en Odu: cuando costo esté causado pero no facturado en el mes, generar notificación para validar antes de cierre",
-      "responsable": null,
+      "tarea": "Generar prompt para Stitch para refactorizar y crear nuevo design system del dashboard principal",
+      "responsable": "Sebastian",
       "prioridad": "alta"
     },
     {
-      "tarea": "Obtener certificado de contador firmado; Alejandro a tramitar con representante legal y retornar copia",
-      "responsable": "Alejandro",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Cuantificar impacto real de reducción de personal: calcular costo fijo retenido en 10 días al 50%, proyectar ahorro mensual vs pérdida de productividad",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Diseñar proceso de trabajo noctarno: registrar en sistema zona de trabajo del día siguiente (asfalto vs no asfalto) para pre-optimizar ruta de equipos",
+      "tarea": "Borrar archivos temporales en PC y confirmar backends funcionales antes de ejecutar arquitectura de decisiones",
       "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Validar con Camilo: tiempo real de desplazamiento compresor (6am) vs equipos de corte vs cuadrillas adicionales para confirmar timeline 6am->7:10->7:50->8:30",
-      "responsable": "Camilo",
+      "tarea": "Definir dashboard.html como vista de entrada y resolver panorama vs roles en diseño",
+      "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Cotizar adquisición de cortadora adicional: evaluar costo vs beneficio de reducir tiempo de arranque de segunda cuadrilla",
+      "tarea": "Ensayar edición automática de clips para Instagram Reels: seleccionar 20 segundos de máxima acción, aplicar color y efectos",
+      "responsable": null,
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Explorar renderizado 3D en SketchUp con IA para generar recorridos virtuales de propiedades",
       "responsable": null,
       "prioridad": "baja"
     },
     {
-      "tarea": "Implementar línea de balance: pre-armar señalización y equipos en campamento, entregar a cuadrillas listos en zona (no que las cuadrillas carguen/descarguen)",
+      "tarea": "Evaluar y cotizar U Green NAS de 5+ discos duros vs soluciones cloud para infraestructura Siendo Apps",
       "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Diseñar sistema automático de asignación de direcciones a cuadrillas en Odu/sistema: evitar que dependa de conversaciones diarias y que se olvide",
-      "responsable": null,
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Parametrizar sistema: cuadrilla 1 siempre va a dirección A, cuadrilla 2 a B, cuadrilla 3 a C (sin excepciones para que arranquen en horario)",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Implementar programa de incentivos: rotación de cuadrillas por zona (lunes/miércoles, martes/jueves, viernes/sábado), 5k+5k por día a cada equipo, premio moto a 3-4 meses por mejor comportamiento",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Evaluar reducción logística: eliminar 1 camión por zona, reemplazar por 1 camioneta que haga pre-delivery de señalización y equipos (ahorro ~2M si se elimina camión + encargado)",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Responder correo urgente estructurado por Camilo con deadline 13 de junio (no urgencia de hoy)",
-      "responsable": "Camilo",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Reactivar tarjetas bloqueadas tras hackeo (cambio ahorita)",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Mejorar integración Liles-dashboard: hacer que capturas de chat auto-actualicen en Liles sin lag",
-      "responsable": "Sebastian",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Cancelar API ChatGPT en Liles (no usada, reduce costos)",
-      "responsable": "Sebastian",
       "prioridad": "baja"
     },
     {
-      "tarea": "Expandir Liles a 14 agentes integrados (actualmente 4): diseñar interfaz escalable para gestión de múltiples orígenes de datos",
+      "tarea": "Obtener consumo real de materiales de mantenimiento de operación para proyectar inventario",
       "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Hacer inventario exhaustivo de carpeta personal: listar todos HTMLs, .py, JSONs de PC + VPS + GitHub; validar qué está en Git antes de eliminar archivos",
-      "responsable": "Tiago",
+      "tarea": "Gestionar recuperación de cuenta de Apple ID hackeada y seguridad de tarjetas comprometidas",
+      "responsable": "Sebastian",
       "prioridad": "alta"
     },
     {
-      "tarea": "Eliminar PC archivados confirmando que están respaldados en Git",
-      "responsable": "Tiago",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Evaluar migración de VPS actual a solución más robusta: identificar lo que sobra (Open Cloud completo no exportado), lo que se borra (archivados), lo que se mantiene (root, credenciales)",
-      "responsable": "Tiago",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Integrar directamente (sin tocar código): todos los HTMLs con 3 APIs (root, PC, Cloud) en dashboard unificado",
-      "responsable": "Tiago",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Unificar cinco vistas de entrada (correo, reuniones, observaciones, etc) en un dashboard priorizador único",
-      "responsable": "Tiago",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Validar soporte de concurrencia: si 3+ personas escriben simultáneamente en mismo JSON, sistema colapsa; migrar a BDD (PostgreSQL vs JSON plano)",
-      "responsable": "Tiago",
+      "tarea": "Revisar y asegurar cuentas de Amazon que fue comprometida",
+      "responsable": "Sebastian",
       "prioridad": "alta"
     },
     {
-      "tarea": "Revisar documentos de cómo Contraloría negoció con EPM para evaluar si negociación de Condugas fue desfavorable (detrimento patrimonial)",
+      "tarea": "Validar respuesta enviada 27 de abril a FPM sobre reajustes, ítems ambientales y propuesta de administración",
+      "responsable": "Sebastian",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Documentar y dejar clara la posición: FPM viola contrato, les corresponde hacer propuesta formal, no aceptamos negocio sin 100% pago de ítems",
+      "responsable": "Sebastian",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Preparar informe/briefing para reunión de caja antes de junta",
+      "responsable": null,
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Preparar/revisar presentaciones antes de junta de las 2pm",
       "responsable": "Sebastian",
       "prioridad": "critica"
     },
     {
-      "tarea": "Camilo: estructurar respuesta escrita a Contraloría con pruebas de error aceptado (correo de Catalina, comunicados del ante-gerente) y enviarla en paralelo a visita presencial",
-      "responsable": "Camilo",
+      "tarea": "Preparar escenarios financieros claros (PIG) para presentar pérdida total del contrato y aportes realizados a don Gustavo mañana",
+      "responsable": null,
       "prioridad": "critica"
     },
     {
-      "tarea": "Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos; (b) llevar a mínima expresión rentable justificando incumplimiento ANS por falta de pago de EPM",
-      "responsable": "Sebastian",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Resolver riesgo técnico: credenciales expuestas en JSONs planos; migrar a vault o variables de entorno",
-      "responsable": "Tiago",
+      "tarea": "Calcular escenario PIG CON reajustes (salarios, transporte, ítems ajustados) vs escenario actual sin reajustes",
+      "responsable": null,
       "prioridad": "critica"
     }
   ],
   "decisiones": [
-    "Crear plugins agentes financieros en Odu para extraer información y evitar errores manuales en Excel",
-    "Juan será asignado a proyecto creativo pero con estructura de tarea clara (no solo responsabilidades de contrato)",
-    "Reducción de 60% de personal en 10 días fue decisión acertada para evitar colapso de caja",
-    "No hay puntos medios visibles: o se negocia/cambia interventor o se pierde la batalla",
-    "Crisis es de caja (no hay deuda ni hay capacidad de socios aportar), no de operación pura",
-    "El compresor es la ruta crítica: arranque 6am, desplazamiento ~60-75min antes de que cuadrillas puedan arrancar (8:10 mínimo)",
-    "Señalización debe hacerse preventivamente (no que cuadrillas la carguen cada día)",
-    "Necesidad de coordinación por proceso, no solo por conversación ad-hoc",
-    "Falta de seguimiento es el problema real (no personas): procesos deben funcionar sin depender de conversaciones",
-    "Llevar operación al mínimo: eliminar cuadrillas innecesarias, optimizar logística, justificar incumplimiento ANS por falta de recursos (no por negligencia)"
+    "Usar Stitch para refactorizar design system completo del dashboard",
+    "Dashboard principal como interfaz central para clientes high ticket y junta asesora",
+    "Conectar exportación de diseños con Claudio vía ZIP",
+    "Ofrecer servicios integrales (diseño + edición + 3D) como income pasivo escalable",
+    "Evaluar opción de NAS local vs almacenamiento en cloud (Google Drive, Outlook)",
+    "Agenda del día es insostenible: múltiples reuniones sin prep time",
+    "Necesidad urgente de descanso y autocuidado",
+    "Actividad programada para mañana (2026-05-15)",
+    "Cuenta hackeada no era de uso frecuente (solo tenía suscripciones)",
+    "Corte de tarjetas fue mínimo"
   ],
   "ideas": [
-    "Implementar dashboard automatizado que lance proyectos y gestione presupuestos sin intervención manual",
-    "Montar sistema donde costos de nómina previsibles (salarios, equipos) se precarguen automáticamente en presupuestos mensuales",
-    "Diferenciar conceptos de nómina: calamidades vs licencia remunerada afectan política de bienestar y comunicación",
-    "Ante bloqueo de Contraloría, llevar contrato a mínima rentabilidad justificando incumplimiento ANS por falta de pago EPM (no por inoperancia)",
-    "Incrementar productividad del 30% en días trabajados con restructuración de cuadrillas podría equilibrar la brecha",
-    "Cambio de interventor (Nazly/Guillermo vs Catalina) podría abrir nueva negociación o cambiar protocolo",
-    "Conocer zona día anterior permite optimizar ruta: si es asfalto arranca compresor, si no arranca corte primero",
-    "Rotación de cuadrillas por dirección (lunes-miércoles, martes-jueves, viernes-sábado) evita habituación y permite 'línea de balance'",
-    "Cortadora adicional podría optimizar, pero primero hay que validar si la logística actual (pre-armado, línea de balance) ya solventa el problema",
-    "Diseñar procesos que se 'auto-ejecuten' en sistema (ej: asignación automática) vs depender de personas llenadoras de Excel"
+    "Integrar diseño de interfaz con flujo de datos de clientes Being CoRe",
+    "Crear experiencia cohesiva entre dashboard técnico y presentación a junta asesora",
+    "Usar prompts de IA para acelerar prototipado de UI/UX",
+    "Crear oferta de servicio integral: consultoría + diseño + edición de contenido + recorridos virtuales 3D",
+    "Monetizar como SaaS para administración de unidades (reporte de problemas vía app en lugar de WhatsApp)",
+    "Modelo de negocio global: vender servicios de mentoría high-ticket + recorridos virtuales a mercados como USA",
+    "Simplificar trabajo administrativo de clientes vía plataforma digital vs WhatsApp",
+    "Generar ingresos pasivos: cursos + consultoría bajo demanda + servicios 3D",
+    "Considerar NAS para streaming y backup central vs cloud distribuido",
+    "Existe preocupación personal sobre aislamiento o soledad"
   ],
   "frases": [
-    "es que estoy creando unas tareas en proyectos automatizadas desde el dashboard que estoy creando",
-    "no es lo mismo que una persona tenga 10 calamidades a que una persona se le han dado una licencia remunerada",
-    "yo siento que si nosotros alegamos esto o lo dejamos aparte y quitemos el río negro y ya sigamos en la otra, nos la clavan toda",
-    "nos vamos a bloquear es por la caja, no hay plata, no hay deuda, no hay nada",
-    "llevaremos este contrato a la mínima expresión rentable, así perdamos en las ANS"
+    "Ofrecer todo como un servicio, no como un producto, para que sea un activo, un ingreso pasivo",
+    "Nada de un producto, sino como servicio para que sea un activo, un ingreso pasivo",
+    "No tengo ni un minuto",
+    "No tengo ni tiempo de explicarle qué ha pasado",
+    "Cogieron la clave en la..."
   ],
   "alertas_supervivencia": [
-    "CRITICA: Crisis de caja en Condugas. EPM no paga a tiempo, socios no pueden aportar, no hay deuda disponible. Reducción de 60% de personal fue inevitable pero no sostenible si no hay ingresos. Conversación con Contraloría es existencial.",
-    "CRITICA: Respuesta a Contraloría debe estructurarse inmediatamente (Camilo) con evidencia de errores aceptados. Demora o mala redacción cierra puerta a negociación.",
-    "ALTA: Hackeo y bloqueo de tarjetas agrava liquidez personal de Sebastian en momento de crisis; recuperación fraudulenta y reactualizacion urgente.",
-    "ALTA: Infraestructura técnica (Liles, Odu, dashboards) dispersa en PC + VPS + GitHub con credenciales expuestas en JSON plano. Riesgo de compromiso en momento de vulnerabilidad.",
-    "MEDIA: Operación Condugas depende de procesos frágiles (asignación manual de cuadrillas, Excel con formulas de personas). Automatización (Odu + línea de balance) es prerequisito para escalar sin colapso de caja."
+    "CRITICA: Contrato EPM es pérdida total sin reajustes. FPM no ha respondido respuesta de 27 abril. Negociación mañana es punto de quiebre. Necesita escenarios PIG claros hoy.",
+    "ALTA: Hackeo de cuenta de email (Amazon, Lightening, Apple ID). Requiere recuperación urgente y auditoría de otras cuentas digitales.",
+    "ALTA: Agenda insostenible está causando agotamiento ejecutivo y síntomas físicos de estrés. Sebastian necesita rebalanceo urgente (máx 5-6 reuniones/día).",
+    "MEDIA: Falta de briefings pre-reunión para decisiones críticas (junta caja, EPM). Sistema de prep debe automatizarse o delegarse.",
+    "MEDIA: Dinámicas de poder internas (Sebastian vs. colaboradores/capital) están bloqueando decisiones rápidas en crisis de caja."
   ],
-  "total_lifelogs": 9,
+  "total_lifelogs": 13,
   "procesado_con": "haiku_v3_structured"
 }

@@ -64,15 +64,15 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "sebastian",
-          "last_seen": "2026-05-13",
-          "mentions_total": 127,
+          "last_seen": "2026-05-14",
+          "mentions_total": 128,
           "mentions_7d": 0
         },
         "tareas_count": {
-          "abiertas": 131,
-          "criticas": 45,
+          "abiertas": 132,
+          "criticas": 46,
           "vencidas": 111,
-          "cerradas_30d": 59
+          "cerradas_30d": 50
         },
         "tareas_abiertas": [
           {
@@ -131,8 +131,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "cami",
-          "last_seen": "2026-05-13",
-          "mentions_total": 30,
+          "last_seen": "2026-05-14",
+          "mentions_total": 31,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -198,8 +198,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "juang",
-          "last_seen": "2026-05-13",
-          "mentions_total": 33,
+          "last_seen": "2026-05-14",
+          "mentions_total": 34,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -276,15 +276,15 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "andre",
-          "last_seen": "2026-05-13",
-          "mentions_total": 26,
+          "last_seen": "2026-05-14",
+          "mentions_total": 27,
           "mentions_7d": 0
         },
         "tareas_count": {
           "abiertas": 4,
           "criticas": 1,
           "vencidas": 4,
-          "cerradas_30d": 2
+          "cerradas_30d": 1
         },
         "tareas_abiertas": [
           {
@@ -486,8 +486,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "doctor",
-          "last_seen": "2026-05-13",
-          "mentions_total": 14,
+          "last_seen": "2026-05-14",
+          "mentions_total": 15,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -626,8 +626,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "clau",
-          "last_seen": "2026-05-13",
-          "mentions_total": 11,
+          "last_seen": "2026-05-14",
+          "mentions_total": 12,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -852,8 +852,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "ema",
-          "last_seen": "2026-05-13",
-          "mentions_total": 36,
+          "last_seen": "2026-05-14",
+          "mentions_total": 37,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1423,8 +1423,8 @@
       "_enriched": {
         "actividad_neural": {
           "neural_id": "cami",
-          "last_seen": "2026-05-13",
-          "mentions_total": 30,
+          "last_seen": "2026-05-14",
+          "mentions_total": 31,
           "mentions_7d": 0
         },
         "tareas_count": {
@@ -1499,10 +1499,10 @@
       }
     }
   ],
-  "_enriched_at": "2026-05-15T11:30:01+00:00",
+  "_enriched_at": "2026-05-17T11:30:02+00:00",
   "_enrichment_stats": {
     "personas_con_actividad_neural": 20,
     "personas_total": 50,
-    "tareas_abiertas_distribuidas": 185
+    "tareas_abiertas_distribuidas": 186
   }
 }
