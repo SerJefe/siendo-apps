@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-17T11:30:55",
+  "ultima_actualizacion": "2026-05-18T11:30:56",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -6635,6 +6635,48 @@
       "monto_cop": null,
       "personas": [
         "Andrés"
+      ],
+      "rol_sugerido": "rol-3-junta-asesora"
+    },
+    {
+      "id": "2026-05-17-c001",
+      "tarea": "Decidir sobre tema crítico: ¿Qué va a pasar con Carlos?",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-17",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-19",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Decisión sobre personal/cambios en equipo Condugas",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Carlos"
+      ],
+      "rol_sugerido": "rol-1-condugas"
+    },
+    {
+      "id": "2026-05-17-c002",
+      "tarea": "Revisar y reformular presentación sobre 'adaptabilidad digital' para junta directiva con análisis estratégico claro",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-17",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-19",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "Preparación junta directiva; tema actual: entorno digital como antes/después en empresa",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Eduardo"
       ],
       "rol_sugerido": "rol-3-junta-asesora"
     }

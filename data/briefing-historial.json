@@ -107,6 +107,24 @@
         "alertas": 20
       },
       "generado_at": "2026-05-16T11:00:13"
+    },
+    {
+      "semana": "W21",
+      "periodo": "2026-05-12 a 2026-05-18",
+      "metricas": {
+        "creadas_semana": 32,
+        "cerradas_semana": 1,
+        "evaluadas_semana": 0,
+        "abiertas_total": 245,
+        "ratio_cierre": 3
+      },
+      "totales": {
+        "tareas_detectadas": 71,
+        "decisiones": 38,
+        "ideas": 40,
+        "alertas": 19
+      },
+      "generado_at": "2026-05-18T11:00:11"
     }
   ]
 }

@@ -8325,7 +8325,303 @@
         "el coreano"
       ],
       "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-17-r2-001",
+      "tarea": "Hablar con Adolfo sobre tema pendiente",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "media",
+      "contexto": "Tema no especificado, asociado a rol Being CoRe",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "siendo-consulting",
+      "rol_sugerido": "rol-8-ser-siendo-dev",
+      "monto_cop": null,
+      "personas": [
+        "Adolfo"
+      ],
+      "segmento_idx": 2,
+      "segmento_titulo": "Gestión de tareas, reuniones y logística laboral",
+      "segmento_inicio": "2026-05-17T18:36:17Z",
+      "segmento_fin": "2026-05-17T18:38:25Z",
+      "segmento_personas": [
+        "Juan Guillermo",
+        "Adolfo"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-17-r2-002",
+      "tarea": "Revisar escenario de temas urgentes planteado por Juan Guillermo",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Preparación para junta/reuniones semana",
+      "tipo": "seguimiento",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": "2026-05-19",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Juan Guillermo"
+      ],
+      "segmento_idx": 2,
+      "segmento_titulo": "Gestión de tareas, reuniones y logística laboral",
+      "segmento_inicio": "2026-05-17T18:36:17Z",
+      "segmento_fin": "2026-05-17T18:38:25Z",
+      "segmento_personas": [
+        "Juan Guillermo",
+        "Adolfo"
+      ],
+      "segmento_impacto": "medio"
+    },
+    {
+      "id": "2026-05-17-r3-003",
+      "tarea": "Descargar actas de normalización (proceso pendiente)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Proceso de normalización Condugas",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Juan"
+      ],
+      "segmento_idx": 3,
+      "segmento_titulo": "Conversación con Sebastian Sanchez Acevedo",
+      "segmento_inicio": "2026-05-17T18:38:33Z",
+      "segmento_fin": "2026-05-17T18:44:14Z",
+      "segmento_personas": [
+        "Iván",
+        "Santiago",
+        "Daza",
+        "Sierra"
+      ],
+      "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-17-r3-004",
+      "tarea": "Compartir en Teams documentación de proceso de normalización para trabajarla colaborativamente",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Necesidad de espacio común para gestionar tema Hilda/normalización",
+      "tipo": "compromiso",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Juan",
+        "Hilda"
+      ],
+      "segmento_idx": 3,
+      "segmento_titulo": "Conversación con Sebastian Sanchez Acevedo",
+      "segmento_inicio": "2026-05-17T18:38:33Z",
+      "segmento_fin": "2026-05-17T18:44:14Z",
+      "segmento_personas": [
+        "Iván",
+        "Santiago",
+        "Daza",
+        "Sierra"
+      ],
+      "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-17-r4-005",
+      "tarea": "Enviar documentación a través de canal alternativo (no repositorio) para speaker con dificultades técnicas",
+      "responsable": null,
+      "prioridad": "media",
+      "contexto": "Problema técnico con repositorio",
+      "tipo": "seguimiento",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": null,
+      "monto_cop": null,
+      "personas": [
+        "Juan"
+      ],
+      "segmento_idx": 4,
+      "segmento_titulo": "Conversación sobre trabajo y otros temas",
+      "segmento_inicio": "2026-05-17T18:44:15Z",
+      "segmento_fin": "2026-05-17T18:51:28Z",
+      "segmento_personas": [
+        "Juan",
+        "Carlos",
+        "Andrea",
+        "López",
+        "Edward"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-17-r4-006",
+      "tarea": "Revisar nominación/nombramiento de Andrea en roles",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "media",
+      "contexto": "Gobierno corporativo y estructura de roles Condugas",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Andrea"
+      ],
+      "segmento_idx": 4,
+      "segmento_titulo": "Conversación sobre trabajo y otros temas",
+      "segmento_inicio": "2026-05-17T18:44:15Z",
+      "segmento_fin": "2026-05-17T18:51:28Z",
+      "segmento_personas": [
+        "Juan",
+        "Carlos",
+        "Andrea",
+        "López",
+        "Edward"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-17-r5-007",
+      "tarea": "Definir plan de trabajo para ejecución del entorno digital con impacto IA claro y medible",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Estrategia digital integral vs esfuerzos aislados",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 5,
+      "segmento_titulo": "Narrativas personales y reflexiones",
+      "segmento_inicio": "2026-05-17T18:51:57Z",
+      "segmento_fin": "2026-05-17T19:42:49Z",
+      "segmento_personas": [
+        "Eduardo",
+        "Emma",
+        "Juan Guillermo"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-17-r5-008",
+      "tarea": "Cambiar frecuencia de comité transversal de mensual a semestral",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "media",
+      "contexto": "Governance Condugas",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-3-junta-asesora",
+      "monto_cop": null,
+      "personas": [],
+      "segmento_idx": 5,
+      "segmento_titulo": "Narrativas personales y reflexiones",
+      "segmento_inicio": "2026-05-17T18:51:57Z",
+      "segmento_fin": "2026-05-17T19:42:49Z",
+      "segmento_personas": [
+        "Eduardo",
+        "Emma",
+        "Juan Guillermo"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-17-r6-009",
+      "tarea": "Definir matriz de entregables por cliente (EPM, Vanti, Ayura, Gases de Occidente) con requerimientos específicos",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Unificación de procesos operativos por entregables",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Emma",
+        "Juan Guillermo"
+      ],
+      "segmento_idx": 6,
+      "segmento_titulo": "Conversación sobre proyectos y procesos",
+      "segmento_inicio": "2026-05-17T19:47:32Z",
+      "segmento_fin": "2026-05-17T20:14:05Z",
+      "segmento_personas": [
+        "Emma",
+        "Juan Guillermo"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-17-r6-010",
+      "tarea": "Reunirse con Juan Guillermo para mapear estructura de etiquetas y centros de costo (cliente, región, negocio, tipo: administrativo/estratégico/operativo/indirecto)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta",
+      "contexto": "Parametrización de sistema para reportes integrados",
+      "tipo": "compromiso",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": "2026-05-20",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Juan Guillermo"
+      ],
+      "segmento_idx": 6,
+      "segmento_titulo": "Conversación sobre proyectos y procesos",
+      "segmento_inicio": "2026-05-17T19:47:32Z",
+      "segmento_fin": "2026-05-17T20:14:05Z",
+      "segmento_personas": [
+        "Emma",
+        "Juan Guillermo"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-17-r6-011",
+      "tarea": "Diseñar approach de documentación de procesos por entregables (backward-design desde lo que se debe entregar, no desde lo que hace)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "media",
+      "contexto": "Resolución de tensión entre documentación y operación",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-17",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "Emma"
+      ],
+      "segmento_idx": 6,
+      "segmento_titulo": "Conversación sobre proyectos y procesos",
+      "segmento_inicio": "2026-05-17T19:47:32Z",
+      "segmento_fin": "2026-05-17T20:14:05Z",
+      "segmento_personas": [
+        "Emma",
+        "Juan Guillermo"
+      ],
+      "segmento_impacto": "alto"
     }
   ],
-  "ultima_actualizacion": "2026-05-17T11:30:55.393198"
+  "ultima_actualizacion": "2026-05-18T11:30:56.742187"
 }

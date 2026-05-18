@@ -1,15 +1,22 @@
 {
-  "generado_at": "2026-05-16T11:00:13",
-  "semana": "W20",
-  "periodo": "2026-05-10 a 2026-05-16",
+  "generado_at": "2026-05-18T11:00:11",
+  "semana": "W21",
+  "periodo": "2026-05-12 a 2026-05-18",
   "metricas_tracker": {
-    "creadas_semana": 31,
+    "creadas_semana": 32,
     "cerradas_semana": 1,
     "evaluadas_semana": 0,
-    "abiertas_total": 244,
+    "abiertas_total": 245,
     "ratio_cierre": 3
   },
   "dias": [
+    {
+      "fecha": "2026-05-16",
+      "tareas": 6,
+      "decisiones": 8,
+      "ideas": 10,
+      "alertas": 4
+    },
     {
       "fecha": "2026-05-14",
       "tareas": 15,
@@ -30,19 +37,12 @@
       "decisiones": 10,
       "ideas": 10,
       "alertas": 5
-    },
-    {
-      "fecha": "2026-05-11",
-      "tareas": 24,
-      "decisiones": 10,
-      "ideas": 10,
-      "alertas": 5
     }
   ],
   "totales_semana": {
-    "tareas_detectadas": 89,
-    "decisiones": 40,
+    "tareas_detectadas": 71,
+    "decisiones": 38,
     "ideas": 40,
-    "alertas": 20
+    "alertas": 19
   }
 }

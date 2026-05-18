@@ -1,120 +1,72 @@
 {
-  "fecha": "2026-05-14",
+  "fecha": "2026-05-16",
   "tareas_extraidas": [
     {
-      "tarea": "Generar prompt para Stitch para refactorizar y crear nuevo design system del dashboard principal",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Borrar archivos temporales en PC y confirmar backends funcionales antes de ejecutar arquitectura de decisiones",
+      "tarea": "Evaluar oportunidad de inversión en turismo rural (modelo Jericó) — estructura experiencial para economía plateada",
       "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Definir dashboard.html como vista de entrada y resolver panorama vs roles en diseño",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Ensayar edición automática de clips para Instagram Reels: seleccionar 20 segundos de máxima acción, aplicar color y efectos",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Explorar renderizado 3D en SketchUp con IA para generar recorridos virtuales de propiedades",
+      "tarea": "Considerar inversión inmobiliaria rural en San Rafa — represa, río, turismo combinado",
       "responsable": null,
       "prioridad": "baja"
     },
     {
-      "tarea": "Evaluar y cotizar U Green NAS de 5+ discos duros vs soluciones cloud para infraestructura Siendo Apps",
-      "responsable": null,
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Obtener consumo real de materiales de mantenimiento de operación para proyectar inventario",
+      "tarea": "Montar negocio de fisioterapia con profesional especializado — evaluar socio y estructura operativa",
       "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Gestionar recuperación de cuenta de Apple ID hackeada y seguridad de tarjetas comprometidas",
-      "responsable": "Sebastian",
+      "tarea": "Confirmar disponibilidad de Andrés para apoyo logístico / agenda previa a junta",
+      "responsable": "Andrés",
       "prioridad": "alta"
     },
     {
-      "tarea": "Revisar y asegurar cuentas de Amazon que fue comprometida",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Validar respuesta enviada 27 de abril a FPM sobre reajustes, ítems ambientales y propuesta de administración",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Documentar y dejar clara la posición: FPM viola contrato, les corresponde hacer propuesta formal, no aceptamos negocio sin 100% pago de ítems",
-      "responsable": "Sebastian",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Preparar informe/briefing para reunión de caja antes de junta",
+      "tarea": "Comunicar con Paulina sobre situación relacional compleja — dificultad de conversación, falta de acción, tiempos demorados",
       "responsable": null,
-      "prioridad": "critica"
+      "prioridad": "media"
     },
     {
-      "tarea": "Preparar/revisar presentaciones antes de junta de las 2pm",
-      "responsable": "Sebastian",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Preparar escenarios financieros claros (PIG) para presentar pérdida total del contrato y aportes realizados a don Gustavo mañana",
-      "responsable": null,
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Calcular escenario PIG CON reajustes (salarios, transporte, ítems ajustados) vs escenario actual sin reajustes",
+      "tarea": "Preparar y estructurar agenda para junta directiva con nuevos miembros — lunes o martes próximo",
       "responsable": null,
       "prioridad": "critica"
     }
   ],
   "decisiones": [
-    "Usar Stitch para refactorizar design system completo del dashboard",
-    "Dashboard principal como interfaz central para clientes high ticket y junta asesora",
-    "Conectar exportación de diseños con Claudio vía ZIP",
-    "Ofrecer servicios integrales (diseño + edición + 3D) como income pasivo escalable",
-    "Evaluar opción de NAS local vs almacenamiento en cloud (Google Drive, Outlook)",
-    "Agenda del día es insostenible: múltiples reuniones sin prep time",
-    "Necesidad urgente de descanso y autocuidado",
-    "Actividad programada para mañana (2026-05-15)",
-    "Cuenta hackeada no era de uso frecuente (solo tenía suscripciones)",
-    "Corte de tarjetas fue mínimo"
+    "Prioridad de entender asimetría de mercado colombiano (renta fija vs acciones, modelo Feda) para decisiones de inversión personal",
+    "Reconocer que Colombia necesita tasas más bajas (8-9%) para que acciones sean atractivas vs renta fija (14%)",
+    "Validar que crisis económicas históricamente generan oportunidades de compra (lectura macro)",
+    "Interpretar que dividendos en Colombia están 50% por debajo de inflación — renta fija más viable actualmente",
+    "Necesidad urgente de comer / beber algo (bajo nivel de glucosa + alcohol = alteración)",
+    "Cambio de planes: ir a Lico Express primero, luego a Rituales (pre-ritual/social)",
+    "Rechazar ir a 'rituales' (evento social) porque ya no le gusta que lo miren / prefiere privacidad",
+    "Reconocer que la relación con Paulina está compleja: ella pone 'muro', él tiene mucho que perder, tiempos de comunicación demorados"
   ],
   "ideas": [
-    "Integrar diseño de interfaz con flujo de datos de clientes Being CoRe",
-    "Crear experiencia cohesiva entre dashboard técnico y presentación a junta asesora",
-    "Usar prompts de IA para acelerar prototipado de UI/UX",
-    "Crear oferta de servicio integral: consultoría + diseño + edición de contenido + recorridos virtuales 3D",
-    "Monetizar como SaaS para administración de unidades (reporte de problemas vía app en lugar de WhatsApp)",
-    "Modelo de negocio global: vender servicios de mentoría high-ticket + recorridos virtuales a mercados como USA",
-    "Simplificar trabajo administrativo de clientes vía plataforma digital vs WhatsApp",
-    "Generar ingresos pasivos: cursos + consultoría bajo demanda + servicios 3D",
-    "Considerar NAS para streaming y backup central vs cloud distribuido",
-    "Existe preocupación personal sobre aislamiento o soledad"
+    "Ser pionero en nuevas economías/mercados genera ventaja (primeros socios, confianza, acceso)",
+    "El fútbol como negocio no es sobre costos operativos sino sobre capacidad de generar afición (intangible)",
+    "Turismo rural experiencial (coger aguacate, café, cascadas) tiene alta demanda en extranjeros y adultos mayores (economía plateada)",
+    "Descentralización y automatización de confianza (blockchain) permite operación 24/7 sin intermediarios",
+    "Crisis políticas (segunda vuelta electoral) generan volatilidad pero también oportunidades para inversor informado",
+    "Abrazo vs beso: abrazo es más peligroso porque implica vulnerabilidad emocional, no solo tensión sexual",
+    "La mentalidad es clave: quien ve problemas vs quien ve oportunidades en la vida",
+    "Decisiones imperfectas (como llegar borracho tarde) queman la 'cuenta' de confianza en relaciones",
+    "El trabajo intenso + paternidad + relaciones complejas generan fatiga acumulada (TDAH, bajo sueño)",
+    "Necesidad de viaje solo — desacople del rol de padre/pareja para procesamiento emocional"
   ],
   "frases": [
-    "Ofrecer todo como un servicio, no como un producto, para que sea un activo, un ingreso pasivo",
-    "Nada de un producto, sino como servicio para que sea un activo, un ingreso pasivo",
-    "No tengo ni un minuto",
-    "No tengo ni tiempo de explicarle qué ha pasado",
-    "Cogieron la clave en la..."
+    "A los primeros siempre les va mejor porque confían en el proyecto y empezaron desde el principio",
+    "La gente anda muy víctima en la vida, pero usted ve oportunidades y las crea",
+    "Bruta pero decidida — caracterización de alguien resiliente en decisiones financieras",
+    "Un abrazo es más peligroso que un beso, un beso es tensión sexual pero un abrazo es vulnerabilidad",
+    "Decisión imperfecta es aquella que quema la cuenta — analogía de trading aplicada a matrimonio"
   ],
   "alertas_supervivencia": [
-    "CRITICA: Contrato EPM es pérdida total sin reajustes. FPM no ha respondido respuesta de 27 abril. Negociación mañana es punto de quiebre. Necesita escenarios PIG claros hoy.",
-    "ALTA: Hackeo de cuenta de email (Amazon, Lightening, Apple ID). Requiere recuperación urgente y auditoría de otras cuentas digitales.",
-    "ALTA: Agenda insostenible está causando agotamiento ejecutivo y síntomas físicos de estrés. Sebastian necesita rebalanceo urgente (máx 5-6 reuniones/día).",
-    "MEDIA: Falta de briefings pre-reunión para decisiones críticas (junta caja, EPM). Sistema de prep debe automatizarse o delegarse.",
-    "MEDIA: Dinámicas de poder internas (Sebastian vs. colaboradores/capital) están bloqueando decisiones rápidas en crisis de caja."
+    "JUNTA DIRECTIVA INMINENTE (lunes 2026-05-19 o martes 2026-05-20): Sebastian no tiene preparación visible, Andrés no está ubicable, nuevos miembros de junta esperan agenda — riesgo de credibilidad en rol-3-junta-asesora",
+    "RELACION PAULINA EN PUNTO CRITICO: 'muro', dificultad de comunicación, ausencia de contacto físico ('abrazo más peligroso'), tiempo de respuesta demorado (~3 años en sacar lo que siente) — riesgo emocional y de estabilidad familiar",
+    "FATIGA ACUMULADA (TDAH + múltiples roles): Sebastian pasa de conferencia de 101 min a consumo de alcohol sin comida, baja glucosa, reflexión sobre necesidad de viaje solo — señal de burnout incipiente",
+    "FLUJO OPERATIVO CONDUGAS INVISIBILIZADO: No aparece en conversation de día pero es rol-1 crítico — sugerencia de desatención a crisis de caja/contratos EPM/Vanti/equipo operativo"
   ],
-  "total_lifelogs": 13,
+  "total_lifelogs": 3,
   "procesado_con": "haiku_v3_structured"
 }

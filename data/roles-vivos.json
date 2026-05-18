@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T12:30:01.617701Z",
+  "generated_at": "2026-05-18T11:30:02.805735Z",
   "fuente_novedades": "dia-v2",
   "dia_v2_fecha": "2026-04-22",
   "total_abiertos": 245,
@@ -12,7 +12,7 @@
       "color": "#091f2e",
       "ancla_3_decisiones": "sobrevivir_y_recuperar",
       "abiertos_total": 207,
-      "abiertos_vencidos": 50,
+      "abiertos_vencidos": 52,
       "abiertos_criticos": 75,
       "abiertos": [
         {
@@ -21,7 +21,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Juan Camilo Berrio",
           "fecha_creacion": "2026-04-08",
           "categoria": "condugas"
@@ -32,7 +32,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 26,
+          "dias_vencida": 27,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -43,7 +43,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 23,
+          "dias_vencida": 24,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -54,7 +54,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -65,7 +65,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 26,
+          "dias_vencida": 27,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -76,7 +76,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -87,7 +87,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 26,
+          "dias_vencida": 27,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -98,7 +98,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 26,
+          "dias_vencida": 27,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -109,7 +109,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Andrea Bernal",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -120,7 +120,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 23,
+          "dias_vencida": 24,
           "responsable": "Camilo",
           "fecha_creacion": "2026-04-21",
           "categoria": "condugas"
@@ -131,7 +131,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 25,
           "responsable": "Unknown",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -142,7 +142,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 25,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -153,7 +153,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-27",
           "vencida": true,
-          "dias_vencida": 20,
+          "dias_vencida": 21,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -164,7 +164,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 25,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -175,7 +175,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-25",
           "vencida": true,
-          "dias_vencida": 22,
+          "dias_vencida": 23,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -194,7 +194,7 @@
       "proximo": {
         "dtstart": "2026-05-20T00:00:00Z",
         "summary": "[CRITICA] Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos\\; (b) llevar a mínima expresión rentable justificando incumplimiento ANS por falta de pago de EPM",
-        "dias_restantes": 2
+        "dias_restantes": 1
       },
       "pulso": {
         "cerradas_esta_semana": 1,
@@ -250,7 +250,7 @@
       "proximo": {
         "dtstart": "2026-05-24T00:00:00Z",
         "summary": "[ALTA] Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
-        "dias_restantes": 6
+        "dias_restantes": 5
       },
       "pulso": {
         "cerradas_esta_semana": 0,
@@ -295,7 +295,7 @@
       "proximo": {
         "dtstart": "2026-05-19T00:00:00Z",
         "summary": "[CRITICA] Preparar y estructurar agenda para junta directiva con nuevos miembros — lunes o martes próximo",
-        "dias_restantes": 1
+        "dias_restantes": 0
       },
       "pulso": {
         "cerradas_esta_semana": 0,
@@ -483,7 +483,7 @@
       "proximo": {
         "dtstart": "2026-05-30T00:00:00Z",
         "summary": "[ALTA] Cobrar pago pendiente de Hamilton según lo prometido",
-        "dias_restantes": 12
+        "dias_restantes": 11
       },
       "pulso": {
         "cerradas_esta_semana": 0,

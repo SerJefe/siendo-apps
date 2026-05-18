@@ -71,8 +71,8 @@
         "tareas_count": {
           "abiertas": 132,
           "criticas": 46,
-          "vencidas": 111,
-          "cerradas_30d": 50
+          "vencidas": 120,
+          "cerradas_30d": 48
         },
         "tareas_abiertas": [
           {
@@ -138,7 +138,7 @@
         "tareas_count": {
           "abiertas": 14,
           "criticas": 10,
-          "vencidas": 11,
+          "vencidas": 12,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -167,20 +167,20 @@
             "fecha_creacion": "2026-04-23"
           },
           {
+            "id": "2026-04-30-c004",
+            "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amar",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-30"
+          },
+          {
             "id": "2026-05-06-c003",
             "tarea": "Validar con Cami escenarios operativos viables: con plata, sin plata, con Rio Negro, sin Rio Negro; rendimiento actual y",
             "prioridad": "critica",
             "vencida": true,
             "fecha_limite": "2026-05-08",
             "fecha_creacion": "2026-05-06"
-          },
-          {
-            "id": "2026-05-11-c001",
-            "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
-            "prioridad": "critica",
-            "vencida": true,
-            "fecha_limite": "2026-05-14",
-            "fecha_creacion": "2026-05-11"
           }
         ]
       }
@@ -342,7 +342,7 @@
         "tareas_count": {
           "abiertas": 7,
           "criticas": 0,
-          "vencidas": 6,
+          "vencidas": 7,
           "cerradas_30d": 1
         },
         "tareas_abiertas": [
@@ -493,7 +493,7 @@
         "tareas_count": {
           "abiertas": 9,
           "criticas": 8,
-          "vencidas": 7,
+          "vencidas": 8,
           "cerradas_30d": 1
         },
         "tareas_abiertas": [
@@ -514,6 +514,14 @@
             "fecha_creacion": "2026-04-23"
           },
           {
+            "id": "2026-04-30-c004",
+            "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amar",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-30"
+          },
+          {
             "id": "2026-05-11-c001",
             "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
             "prioridad": "critica",
@@ -524,14 +532,6 @@
           {
             "id": "2026-05-11-c002",
             "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de tarifa interna",
-            "prioridad": "critica",
-            "vencida": true,
-            "fecha_limite": "2026-05-14",
-            "fecha_creacion": "2026-05-11"
-          },
-          {
-            "id": "2026-05-11-c004",
-            "tarea": "Explorar negociación alternativa a EPM (no la anterior que falló) para reajuste de contrato",
             "prioridad": "critica",
             "vencida": true,
             "fecha_limite": "2026-05-14",
@@ -808,7 +808,7 @@
         "tareas_count": {
           "abiertas": 3,
           "criticas": 0,
-          "vencidas": 2,
+          "vencidas": 3,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -832,7 +832,7 @@
             "id": "2026-04-16-c001",
             "tarea": "Cobrar pago pendiente de Hamilton según lo prometido",
             "prioridad": "alta",
-            "vencida": false,
+            "vencida": true,
             "fecha_limite": "2026-05-30",
             "fecha_creacion": "2026-04-16"
           }
@@ -1324,7 +1324,7 @@
         "tareas_count": {
           "abiertas": 8,
           "criticas": 8,
-          "vencidas": 6,
+          "vencidas": 7,
           "cerradas_30d": 0
         },
         "tareas_abiertas": [
@@ -1345,6 +1345,14 @@
             "fecha_creacion": "2026-04-23"
           },
           {
+            "id": "2026-04-30-c004",
+            "tarea": "Estructurar plan de Camilo: reducción de ciertos pagos, transmisión de recursos a operación, desbloqueo de 'marrano amar",
+            "prioridad": "critica",
+            "vencida": true,
+            "fecha_limite": null,
+            "fecha_creacion": "2026-04-30"
+          },
+          {
             "id": "2026-05-11-c001",
             "tarea": "Continuar negociación EPM sobre reajuste de contrato (fecha crítica: hasta 14 de mayo)",
             "prioridad": "critica",
@@ -1355,14 +1363,6 @@
           {
             "id": "2026-05-11-c002",
             "tarea": "Analizar propuesta alternativa: pasar personal a Condugas + compra de transporte para estructura de tarifa interna",
-            "prioridad": "critica",
-            "vencida": true,
-            "fecha_limite": "2026-05-14",
-            "fecha_creacion": "2026-05-11"
-          },
-          {
-            "id": "2026-05-11-c004",
-            "tarea": "Explorar negociación alternativa a EPM (no la anterior que falló) para reajuste de contrato",
             "prioridad": "critica",
             "vencida": true,
             "fecha_limite": "2026-05-14",
@@ -1499,7 +1499,7 @@
       }
     }
   ],
-  "_enriched_at": "2026-05-17T12:30:01+00:00",
+  "_enriched_at": "2026-05-18T11:30:03+00:00",
   "_enrichment_stats": {
     "personas_con_actividad_neural": 20,
     "personas_total": 50,

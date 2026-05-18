@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T12:30:01.693991Z",
+  "generated_at": "2026-05-18T11:30:03.303391Z",
   "total_controles_con_fuente": 13,
   "controles": {
     "comite-sv": {
@@ -12,7 +12,7 @@
     },
     "contratos-activos": {
       "last_done": "2026-05-07",
-      "source": "tracker (5 cerradas 30d)"
+      "source": "tracker (4 cerradas 30d)"
     },
     "equipo-evaluacion": {
       "last_done": "2026-05-07",

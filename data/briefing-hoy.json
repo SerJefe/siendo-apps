@@ -1,66 +1,61 @@
 {
-  "saludo": "Buenos días Sebastián — sábado 16 May",
+  "saludo": "Buenos días Sebastián — lunes 18 May, JUNTA DIRECTIVA INMINENTE",
   "supervivencia": [
-    "EPM Río Negro: ~180M en reajustes sin cobrar. FPM no responde desde 27 abr. Negociación es punto de quiebre.",
-    "Caja familiar: 10 días de runway. EBITDA -800k. Revisar inversiones y movimientos HOY.",
-    "No conformidad contrato 24: requiere respuesta formal urgente (crítica abierta desde 7 abr).",
-    "Hackeo email: Amazon, Lightning, Apple ID comprometidos. Auditoría de cuentas digitales."
+    "EPM Río Negro: ~180M vencidos sin cobrar — comunicado + gestión directa HOY",
+    "Caja familiar crítica: revisar saldo real, movimientos, estado inversiones (score 45)",
+    "Clientes base: consolidar en UN lugar con necesidades claras (score 47, crítica)"
   ],
   "top_3": [
     {
-      "tarea": "Llamar a FPM/EPM: enviar escenarios PIG para reajuste Río Negro + cobro directo de 180M",
+      "tarea": "Enviar comunicado cobro EPM Río Negro + agendar llamada financiera",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Sin esto caja colapsa en 10 días",
-      "tarea_id": "cobrar-reajustes-epm"
+      "porque": "180M pendientes, contrato en riesgo legal, cash urgente",
+      "tarea_id": "cobro-epm-rn"
     },
     {
-      "tarea": "Revisar caja a hoy: saldos, inversiones, estado real vs proyectado",
+      "tarea": "Revisar estado caja hoy: saldo, movimientos, inversiones — 15 min máximo",
       "categoria": "SUPERVIVENCIA",
-      "porque": "No sabes cuánto tiempo real tienes",
-      "tarea_id": "situacion-caja-familiar"
+      "porque": "Tienes TDAH + múltiples roles, bajo nivel de glucosa ayer, necesitas claridad financiera personal",
+      "tarea_id": "caja-personal"
     },
     {
-      "tarea": "Reunión 30min con abogado: respuesta formal a no conformidad contrato 24",
-      "categoria": "SUPERVIVENCIA",
-      "porque": "Riesgo legal acumulado desde abril",
-      "tarea_id": "no-conformidad-contrato-24"
+      "tarea": "Preparar agenda JUNTA DIRECTIVA (lunes 19 o martes 20): 3 puntos críticos + decisiones",
+      "categoria": "ESTRATEGIA",
+      "porque": "Andrés no ubicable, nuevos miembros esperan, credibilidad de rol-3-junta en riesgo",
+      "tarea_id": "junta-prep"
     }
   ],
-  "mega_dia": "Hablar CON FPM sobre Río Negro con 2 escenarios viables (renegociación o terminación). Todo lo demás es ruido.",
+  "mega_dia": "Si cobras EPM hoy (o agendan llamada directa), el día valió. Todo lo demás es secundario.",
   "contactar_hoy": [
     {
-      "persona": "FPM/Interventor EPM",
-      "motivo": "Escenarios PIG y cronograma cobro 180M"
+      "persona": "Andrea Bernal",
+      "motivo": "Deudas Condugas claras + ICA municipios (55M pendientes)"
     },
     {
-      "persona": "Abogado",
-      "motivo": "Redactar respuesta formal no conformidad contrato 24"
-    },
-    {
-      "persona": "Diana/Alejandro",
-      "motivo": "Recuperación urgente email + auditoría cuentas digitales"
+      "persona": "Lina Russi",
+      "motivo": "Reunión estructura Siendo: roles, tareas, presupuesto — 1 hora"
     }
   ],
   "ojo_con": [
     "121 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "Tu recovery Whoop: 14% (crítico). Síntomas físicos de estrés. Máx 5-6 reuniones/día.",
-    "169 tareas vencidas + 78 críticas = sistema colapsado. Necesitas corte de raíz.",
-    "Deadline Hamilton: 30 mayo (menos de 2 semanas)"
+    "FATIGA acumulada: ayer alcohol sin comida, 27% sleep, recovery 14 — necesitas descanso real",
+    "Paulina: 'muro' comunicacional, 3 años de silencio emocional — riesgo relacional grave",
+    "187 tareas vencidas + 79 críticas = riesgo de colapso operativo"
   ],
   "vencidas": [
-    "No conformidad contrato 24 (desde 7 abr)",
-    "Conversar POT Aguactala (deadline 5 mayo)",
-    "Revisar rendimiento contratos (deadline 20 abr)"
+    "EPM Río Negro cobro (indeterminada)",
+    "Contrato 24: no conformidad sin respuesta formal",
+    "Pilar/POT Aguactala: vencido 2026-05-05"
   ],
-  "frase_dia": "Hoy decides si Río Negro es ganancia o pérdida total. Todo lo demás espera.",
-  "generado_at": "2026-05-16T11:00:13",
-  "fecha": "2026-05-16",
+  "frase_dia": "Hoy: caja clara + EPM cobrado = respiras. Lo demás espera.",
+  "generado_at": "2026-05-18T11:00:11",
+  "fecha": "2026-05-18",
   "stats": {
-    "abiertas": 244,
-    "criticas": 78,
-    "vencidas": 169,
+    "abiertas": 245,
+    "criticas": 79,
+    "vencidas": 187,
     "estancadas": 196,
-    "sin_evaluar": 219
+    "sin_evaluar": 220
   },
   "criticas_sin_fecha": [
     {
@@ -156,28 +151,22 @@
   ],
   "vence_pronto": [
     {
-      "id": "2026-05-06-c005",
-      "tarea": "Negociar con EPM asignación mínima de 1.500 de obra mensual para Condugas en contrato Occidental (cr",
-      "dias": 0,
-      "fecha_limite": "2026-05-16"
-    },
-    {
-      "id": "2026-05-11-c005",
-      "tarea": "Implementar ajustes al contrato (1.400M + reajuste 7-8%) y validar viabilidad antes del viernes",
-      "dias": 0,
-      "fecha_limite": "2026-05-16"
-    },
-    {
-      "id": "2026-05-13-c001",
-      "tarea": "Revisar documentos de cómo Contraloría negoció con EPM para evaluar si negociación de Condugas fue d",
+      "id": "2026-05-16-c001",
+      "tarea": "Preparar y estructurar agenda para junta directiva con nuevos miembros — lunes o martes próximo",
       "dias": 1,
-      "fecha_limite": "2026-05-17"
+      "fecha_limite": "2026-05-19"
     },
     {
-      "id": "2026-05-13-c002",
-      "tarea": "Camilo: estructurar respuesta escrita a Contraloría con pruebas de error aceptado (correo de Catalin",
-      "dias": 1,
-      "fecha_limite": "2026-05-17"
+      "id": "2026-05-13-c003",
+      "tarea": "Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos; (b) llevar a mínima exp",
+      "dias": 2,
+      "fecha_limite": "2026-05-20"
+    },
+    {
+      "id": "2026-05-13-c004",
+      "tarea": "Resolver riesgo técnico: credenciales expuestas en JSONs planos; migrar a vault o variables de entor",
+      "dias": 2,
+      "fecha_limite": "2026-05-20"
     }
   ]
 }
