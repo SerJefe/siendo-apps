@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-18T11:30:02.805735Z",
+  "generated_at": "2026-05-19T11:30:02.444751Z",
   "fuente_novedades": "dia-v2",
   "dia_v2_fecha": "2026-04-22",
-  "total_abiertos": 245,
+  "total_abiertos": 275,
   "total_novedades": 2,
   "clasificador": "heuristico-keywords-v1",
   "roles": {
@@ -11,9 +11,9 @@
       "emoji": "🏭",
       "color": "#091f2e",
       "ancla_3_decisiones": "sobrevivir_y_recuperar",
-      "abiertos_total": 207,
+      "abiertos_total": 224,
       "abiertos_vencidos": 52,
-      "abiertos_criticos": 75,
+      "abiertos_criticos": 76,
       "abiertos": [
         {
           "id": "2026-04-08-005",
@@ -21,7 +21,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 28,
+          "dias_vencida": 29,
           "responsable": "Juan Camilo Berrio",
           "fecha_creacion": "2026-04-08",
           "categoria": "condugas"
@@ -32,7 +32,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -43,7 +43,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 25,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -54,7 +54,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 28,
+          "dias_vencida": 29,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -65,7 +65,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -76,7 +76,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 28,
+          "dias_vencida": 29,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -87,7 +87,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -98,7 +98,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -109,7 +109,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 28,
+          "dias_vencida": 29,
           "responsable": "Andrea Bernal",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -120,7 +120,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 24,
+          "dias_vencida": 25,
           "responsable": "Camilo",
           "fecha_creacion": "2026-04-21",
           "categoria": "condugas"
@@ -131,7 +131,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 26,
           "responsable": "Unknown",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -142,7 +142,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 26,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -153,7 +153,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-27",
           "vencida": true,
-          "dias_vencida": 21,
+          "dias_vencida": 22,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -164,7 +164,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 26,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -175,7 +175,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-25",
           "vencida": true,
-          "dias_vencida": 23,
+          "dias_vencida": 24,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -194,7 +194,7 @@
       "proximo": {
         "dtstart": "2026-05-20T00:00:00Z",
         "summary": "[CRITICA] Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos\\; (b) llevar a mínima expresión rentable justificando incumplimiento ANS por falta de pago de EPM",
-        "dias_restantes": 1
+        "dias_restantes": 0
       },
       "pulso": {
         "cerradas_esta_semana": 1,
@@ -208,7 +208,7 @@
       "emoji": "🏛️",
       "color": "#8a6f2e",
       "ancla_3_decisiones": "recuperar_control",
-      "abiertos_total": 3,
+      "abiertos_total": 4,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 1,
       "abiertos": [
@@ -235,6 +235,17 @@
           "categoria": "condugas"
         },
         {
+          "id": "2026-05-17-r2-002",
+          "texto": "Revisar escenario de temas urgentes planteado por Juan Guillermo",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian Sanchez Acevedo",
+          "fecha_creacion": "2026-05-17",
+          "categoria": "trabajo"
+        },
+        {
           "id": "2026-04-20-r9-006",
           "texto": "Diseñar estructura de gobierno corporativo para grupo Sánchez Acevedo",
           "prioridad": "media",
@@ -250,7 +261,7 @@
       "proximo": {
         "dtstart": "2026-05-24T00:00:00Z",
         "summary": "[ALTA] Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
-        "dias_restantes": 5
+        "dias_restantes": 4
       },
       "pulso": {
         "cerradas_esta_semana": 0,
@@ -264,9 +275,9 @@
       "emoji": "🎯",
       "color": "#0f2844",
       "ancla_3_decisiones": "recuperar_y_desarrollar",
-      "abiertos_total": 2,
+      "abiertos_total": 3,
       "abiertos_vencidos": 1,
-      "abiertos_criticos": 2,
+      "abiertos_criticos": 3,
       "abiertos": [
         {
           "id": "2026-05-14-c002",
@@ -289,14 +300,21 @@
           "responsable": null,
           "fecha_creacion": "2026-05-16",
           "categoria": "condugas"
+        },
+        {
+          "id": "2026-05-17-c002",
+          "texto": "Revisar y reformular presentación sobre 'adaptabilidad digital' para junta directiva con análisis estratégico claro",
+          "prioridad": "critica",
+          "deadline": "2026-05-19",
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian Sanchez Acevedo",
+          "fecha_creacion": "2026-05-17",
+          "categoria": "condugas"
         }
       ],
       "novedades": [],
-      "proximo": {
-        "dtstart": "2026-05-19T00:00:00Z",
-        "summary": "[CRITICA] Preparar y estructurar agenda para junta directiva con nuevos miembros — lunes o martes próximo",
-        "dias_restantes": 0
-      },
+      "proximo": null,
       "pulso": {
         "cerradas_esta_semana": 0,
         "cerradas_semana_anterior": 6,
@@ -309,7 +327,7 @@
       "emoji": "🧠",
       "color": "#b89949",
       "ancla_3_decisiones": "desarrollar",
-      "abiertos_total": 19,
+      "abiertos_total": 26,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
@@ -402,6 +420,61 @@
           "categoria": "siendo-consulting"
         },
         {
+          "id": "2026-05-12-r12-014",
+          "texto": "Parametrizar procesos operativos clave en Being CoRe (especialmente nómina y contabilidad) para poder cotizar implementaciones con precisión",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-12",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-12-r12-015",
+          "texto": "Definir con Lina y Emanuel el alcance exacto de intervenciones en clientes para evitar conflictos de interés y clarificar costos por expertos adicionales",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Lina",
+          "fecha_creacion": "2026-05-12",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-14-r0-001",
+          "texto": "Generar prompt para Stitch para refactorizar y crear nuevo design system del dashboard principal",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian",
+          "fecha_creacion": "2026-05-14",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-17-r3-004",
+          "texto": "Compartir en Teams documentación de proceso de normalización para trabajarla colaborativamente",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian Sanchez Acevedo",
+          "fecha_creacion": "2026-05-17",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-17-r6-010",
+          "texto": "Reunirse con Juan Guillermo para mapear estructura de etiquetas y centros de costo (cliente, región, negocio, tipo: administrativo/estratégico/operativo/indirecto)",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": "Sebastian Sanchez Acevedo",
+          "fecha_creacion": "2026-05-17",
+          "categoria": "trabajo"
+        },
+        {
           "id": "2026-04-14-010",
           "texto": "Crear información visual ERP con Emanuel y Lina para comprensión integral del proyecto",
           "prioridad": "media",
@@ -422,68 +495,13 @@
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-15",
           "categoria": "condugas"
-        },
-        {
-          "id": "2026-04-16-004",
-          "texto": "Recuperar información de estructuración de naming del proyecto",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian",
-          "fecha_creacion": "2026-04-16",
-          "categoria": "siendo-consulting"
-        },
-        {
-          "id": "2026-04-16-008",
-          "texto": "Finalizar prototipo de herramienta de automatización de procesos empresariales",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian",
-          "fecha_creacion": "2026-04-16",
-          "categoria": "siendo-consulting"
-        },
-        {
-          "id": "2026-04-16-r14-012",
-          "texto": "Diseñar segundo cuadernillo considerando impresión digital y física, sofisticación visual",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Diseñador gráfico",
-          "fecha_creacion": "2026-04-16",
-          "categoria": "siendo-consulting"
-        },
-        {
-          "id": "2026-04-16-r31-018",
-          "texto": "Carla: llenar librito de fechas y eventos",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Carla",
-          "fecha_creacion": "2026-04-16",
-          "categoria": "siendo-consulting"
-        },
-        {
-          "id": "2026-04-21-r8-004",
-          "texto": "Estructurar Being CoRe como metodología complementaria a Condugas",
-          "prioridad": "media",
-          "deadline": null,
-          "vencida": false,
-          "dias_vencida": null,
-          "responsable": "Sebastian Sanchez Acevedo",
-          "fecha_creacion": "2026-04-21",
-          "categoria": "siendo-consulting"
         }
       ],
       "novedades": [],
       "proximo": {
         "dtstart": "2026-05-30T00:00:00Z",
         "summary": "[ALTA] Cobrar pago pendiente de Hamilton según lo prometido",
-        "dias_restantes": 11
+        "dias_restantes": 10
       },
       "pulso": {
         "cerradas_esta_semana": 0,
@@ -497,7 +515,7 @@
       "emoji": "💰",
       "color": "#5a7a4a",
       "ancla_3_decisiones": "sobrevivir_y_desarrollar",
-      "abiertos_total": 3,
+      "abiertos_total": 4,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
@@ -522,6 +540,17 @@
           "responsable": "Lina Russi",
           "fecha_creacion": "2026-04-16",
           "categoria": "condugas"
+        },
+        {
+          "id": "2026-05-07-r33-017",
+          "texto": "Desarrollar dashboard de nómina que muestre en tiempo real: periodo, número de empleados, ICA, impuestos, declaración renta, facturación, costos",
+          "prioridad": "alta",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-07",
+          "categoria": "trabajo"
         },
         {
           "id": "2026-05-12-r8-005",
@@ -549,7 +578,7 @@
       "emoji": "💪",
       "color": "#123b58",
       "ancla_3_decisiones": "sobrevivir",
-      "abiertos_total": 3,
+      "abiertos_total": 4,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
       "abiertos": [
@@ -574,6 +603,17 @@
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-30",
           "categoria": "casa-ozzio"
+        },
+        {
+          "id": "2026-05-16-r1-003",
+          "texto": "Montar negocio de fisioterapia con profesional especializado — evaluar socio y estructura operativa",
+          "prioridad": "media",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-16",
+          "categoria": "trabajo"
         },
         {
           "id": "2026-04-27-r12-002",
@@ -610,10 +650,33 @@
       "emoji": "🎓",
       "color": "#d4a052",
       "ancla_3_decisiones": "desarrollar",
-      "abiertos_total": 0,
+      "abiertos_total": 2,
       "abiertos_vencidos": 0,
       "abiertos_criticos": 0,
-      "abiertos": [],
+      "abiertos": [
+        {
+          "id": "2026-05-07-r5-005",
+          "texto": "Diseñar flujo en Odu: perfiles de director → solicitud de recursos → validación nuevos negocios → financiero → aprobación",
+          "prioridad": "media",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-07",
+          "categoria": "trabajo"
+        },
+        {
+          "id": "2026-05-07-r5-006",
+          "texto": "Definir criterio: cuándo una solicitud de recurso requiere revisión/aprobación estratégica vs solo administrativa",
+          "prioridad": "media",
+          "deadline": null,
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-07",
+          "categoria": "trabajo"
+        }
+      ],
       "novedades": [],
       "proximo": null,
       "pulso": {

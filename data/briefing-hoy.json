@@ -1,61 +1,60 @@
 {
-  "saludo": "Buenos días Sebastián — lunes 18 May, JUNTA DIRECTIVA INMINENTE",
+  "saludo": "Buenos días Sebastián — martes 19 May",
   "supervivencia": [
-    "EPM Río Negro: ~180M vencidos sin cobrar — comunicado + gestión directa HOY",
-    "Caja familiar crítica: revisar saldo real, movimientos, estado inversiones (score 45)",
-    "Clientes base: consolidar en UN lugar con necesidades claras (score 47, crítica)"
+    "Caja en 10 días: revisar movimientos hoy (inversiones + deudas Condugas)",
+    "EPM Río Negro: ~180M vencidos sin cobrar — comunicado + gestión cobro directo",
+    "No conformidad contrato 24: respuesta formal pendiente (riesgo legal)"
   ],
   "top_3": [
     {
-      "tarea": "Enviar comunicado cobro EPM Río Negro + agendar llamada financiera",
+      "tarea": "Revisar caja familiar a hoy + estado inversiones + deudas pendientes",
       "categoria": "SUPERVIVENCIA",
-      "porque": "180M pendientes, contrato en riesgo legal, cash urgente",
-      "tarea_id": "cobro-epm-rn"
+      "porque": "10 días de caja = crisis inminente si no hay movimiento",
+      "tarea_id": "situacion-caja"
     },
     {
-      "tarea": "Revisar estado caja hoy: saldo, movimientos, inversiones — 15 min máximo",
+      "tarea": "Enviar comunicado cobranza EPM (~180M) + programar call con interventor",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Tienes TDAH + múltiples roles, bajo nivel de glucosa ayer, necesitas claridad financiera personal",
-      "tarea_id": "caja-personal"
+      "porque": "Vencido + crítico para flujo",
+      "tarea_id": "cobro-epm-rionegro"
     },
     {
-      "tarea": "Preparar agenda JUNTA DIRECTIVA (lunes 19 o martes 20): 3 puntos críticos + decisiones",
+      "tarea": "Base de datos clientes (1 solo lugar) + necesidades → priorizar propuestas claras",
       "categoria": "ESTRATEGIA",
-      "porque": "Andrés no ubicable, nuevos miembros esperan, credibilidad de rol-3-junta en riesgo",
-      "tarea_id": "junta-prep"
+      "porque": "Score 47: sin esto no hay pipeline definido",
+      "tarea_id": "clientes-base"
     }
   ],
-  "mega_dia": "Si cobras EPM hoy (o agendan llamada directa), el día valió. Todo lo demás es secundario.",
+  "mega_dia": "Si logra caja + cobro EPM + base clientes centralizada, el día valió",
   "contactar_hoy": [
     {
       "persona": "Andrea Bernal",
-      "motivo": "Deudas Condugas claras + ICA municipios (55M pendientes)"
+      "motivo": "Deudas Condugas + ICA municipios (55M pendientes)"
     },
     {
-      "persona": "Lina Russi",
-      "motivo": "Reunión estructura Siendo: roles, tareas, presupuesto — 1 hora"
+      "persona": "Emanuel",
+      "motivo": "Reunión ERP + automatizaciones (visual para comprender alcance)"
     }
   ],
   "ojo_con": [
-    "121 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "FATIGA acumulada: ayer alcohol sin comida, 27% sleep, recovery 14 — necesitas descanso real",
-    "Paulina: 'muro' comunicacional, 3 años de silencio emocional — riesgo relacional grave",
-    "187 tareas vencidas + 79 críticas = riesgo de colapso operativo"
+    "139 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
+    "⚠️ CRITICA: Decisión sobre Carlos aún abierta — impacta operación Condugas",
+    "⚠️ 187 tareas vencidas: avalancha operativa, necesita triage brutal",
+    "⚠️ Whoop: recovery 14% + sleep 27% = fatiga severa — decisiones con sesgo hoy"
   ],
   "vencidas": [
-    "EPM Río Negro cobro (indeterminada)",
-    "Contrato 24: no conformidad sin respuesta formal",
-    "Pilar/POT Aguactala: vencido 2026-05-05"
+    "Reunión POT Aguacatala (deadline 05-05 → vencido 14 días)",
+    "Revisar rendimiento contratos compartidos (deadline 04-20 → vencido 29 días)"
   ],
-  "frase_dia": "Hoy: caja clara + EPM cobrado = respiras. Lo demás espera.",
-  "generado_at": "2026-05-18T11:00:11",
-  "fecha": "2026-05-18",
+  "frase_dia": "10 días de caja no son tiempo, son urgencia. Hoy decides: caja + cobros. Lo demás espera.",
+  "generado_at": "2026-05-19T11:00:09",
+  "fecha": "2026-05-19",
   "stats": {
-    "abiertas": 245,
-    "criticas": 79,
+    "abiertas": 275,
+    "criticas": 81,
     "vencidas": 187,
     "estancadas": 196,
-    "sin_evaluar": 220
+    "sin_evaluar": 250
   },
   "criticas_sin_fecha": [
     {
@@ -153,19 +152,31 @@
     {
       "id": "2026-05-16-c001",
       "tarea": "Preparar y estructurar agenda para junta directiva con nuevos miembros — lunes o martes próximo",
-      "dias": 1,
+      "dias": 0,
+      "fecha_limite": "2026-05-19"
+    },
+    {
+      "id": "2026-05-17-c001",
+      "tarea": "Decidir sobre tema crítico: ¿Qué va a pasar con Carlos?",
+      "dias": 0,
+      "fecha_limite": "2026-05-19"
+    },
+    {
+      "id": "2026-05-17-c002",
+      "tarea": "Revisar y reformular presentación sobre 'adaptabilidad digital' para junta directiva con análisis es",
+      "dias": 0,
       "fecha_limite": "2026-05-19"
     },
     {
       "id": "2026-05-13-c003",
       "tarea": "Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos; (b) llevar a mínima exp",
-      "dias": 2,
+      "dias": 1,
       "fecha_limite": "2026-05-20"
     },
     {
       "id": "2026-05-13-c004",
       "tarea": "Resolver riesgo técnico: credenciales expuestas en JSONs planos; migrar a vault o variables de entor",
-      "dias": 2,
+      "dias": 1,
       "fecha_limite": "2026-05-20"
     }
   ]

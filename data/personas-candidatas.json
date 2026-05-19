@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.0",
-    "generated": "2026-05-17T12:00:01+00:00",
+    "generated": "2026-05-18T12:00:01+00:00",
     "agent": "agent-personas-detector.py",
     "source": [
       "personas.json",
@@ -10,9 +10,9 @@
     ]
   },
   "stats": {
-    "candidatos_total": 8,
+    "candidatos_total": 9,
     "con_tareas_abiertas": 5,
-    "con_neural": 1,
+    "con_neural": 2,
     "personas_canonicas": 50
   },
   "candidatos": [
@@ -28,7 +28,7 @@
           "id": "2026-04-30-c003",
           "tarea": "Implementar propuesta de Diana: operativo + estrategia táctica con Diana y William liderando estructura",
           "prioridad": "critica",
-          "vencida": false,
+          "vencida": true,
           "fecha_creacion": "2026-04-30",
           "fecha_limite": null,
           "proxima_accion": ""
@@ -37,7 +37,7 @@
       "tareas_count": {
         "abiertas": 1,
         "criticas": 1,
-        "vencidas": 0,
+        "vencidas": 1,
         "cerradas_30d": 0
       },
       "neural": null,
@@ -172,6 +172,28 @@
         "last_seen": "2026-05-14"
       },
       "razon": "10 menciones en lifelogs (último: 2026-05-14)"
+    },
+    {
+      "nombre_detectado": "hilda",
+      "slug_propuesto": "hilda",
+      "descriptivo": false,
+      "fuentes": [
+        "neural"
+      ],
+      "tareas_abiertas": [],
+      "tareas_count": {
+        "abiertas": 0,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": {
+        "neural_id": "hilda",
+        "mentions_total": 3,
+        "mentions_7d": 0,
+        "last_seen": "2026-05-17"
+      },
+      "razon": "3 menciones en lifelogs (último: 2026-05-17)"
     },
     {
       "nombre_detectado": "Alberto",

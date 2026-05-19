@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-05-18",
-  "generated_at": "2026-05-18T10:30:05.090078Z",
+  "fecha": "2026-05-19",
+  "generated_at": "2026-05-19T10:30:05.757072Z",
   "version": "v2-3decisiones",
   "facturacion_30d": {
     "total": 5291450400.5,
@@ -78,10 +78,10 @@
     },
     {
       "name": "Tareas y Proyectos Gerencia General",
-      "tareas": 7
+      "tareas": 8
     }
   ],
-  "tareas_proyectos_abiertas": 403,
+  "tareas_proyectos_abiertas": 404,
   "empleados_activos": 650,
   "sobrevivir": {
     "caja": {
@@ -252,70 +252,70 @@
           "total": 1622702812.56,
           "facturas_vencidas": 7,
           "mas_vieja": "2026-04-15",
-          "dias_vencida": 33
+          "dias_vencida": 34
         },
         {
           "partner": "GAS NATURAL CUNDIBOYACENSE S.A. E.S.P.",
           "total": 701370508.88,
           "facturas_vencidas": 11,
           "mas_vieja": "2026-04-19",
-          "dias_vencida": 29
+          "dias_vencida": 30
         },
         {
           "partner": "METROGAS DE COLOMBIA S.A E.S.P",
           "total": 220263630.83999997,
           "facturas_vencidas": 14,
           "mas_vieja": "2026-04-11",
-          "dias_vencida": 37
+          "dias_vencida": 38
         },
         {
           "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
           "total": 159188822.0,
           "facturas_vencidas": 4,
           "mas_vieja": "2026-02-23",
-          "dias_vencida": 84
+          "dias_vencida": 85
         },
         {
           "partner": "CONSORCIO SILAR CONDUGAS",
           "total": 86588132.44,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-30",
-          "dias_vencida": 18
+          "dias_vencida": 19
         },
         {
           "partner": "Jhon Christopher Angulo",
           "total": 59368482.98,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-03-24",
-          "dias_vencida": 55
+          "dias_vencida": 56
         },
         {
           "partner": "GASES DE OCCIDENTE SA ESP",
           "total": 55554076.62,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-05-01",
-          "dias_vencida": 17
+          "dias_vencida": 18
         },
         {
           "partner": "UNION TEMPORAL HABILITACION INFRAESTRUCTURA HOSPITALARIA",
           "total": 24521525.67,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 34
+          "dias_vencida": 35
         },
         {
           "partner": "CONINSA  S.A.S",
           "total": 18868581.69,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-20",
-          "dias_vencida": 28
+          "dias_vencida": 29
         },
         {
           "partner": "CONSTRUTEM S A S",
           "total": 15598151.76,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 34
+          "dias_vencida": 35
         }
       ],
       "total": 2989196700.88,
@@ -746,7 +746,7 @@
       },
       {
         "name": "Tareas y Proyectos Gerencia General",
-        "tareas": 7,
+        "tareas": 8,
         "responsable": "SANCHEZ ACEVEDO SEBASTIAN",
         "cliente": null,
         "inicio": false,

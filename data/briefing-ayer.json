@@ -1,72 +1,109 @@
 {
-  "fecha": "2026-05-16",
+  "fecha": "2026-05-17",
   "tareas_extraidas": [
     {
-      "tarea": "Evaluar oportunidad de inversión en turismo rural (modelo Jericó) — estructura experiencial para economía plateada",
-      "responsable": null,
+      "tarea": "Hablar con Adolfo sobre tema pendiente",
+      "responsable": "Sebastian Sanchez Acevedo",
       "prioridad": "media"
     },
     {
-      "tarea": "Considerar inversión inmobiliaria rural en San Rafa — represa, río, turismo combinado",
-      "responsable": null,
-      "prioridad": "baja"
-    },
-    {
-      "tarea": "Montar negocio de fisioterapia con profesional especializado — evaluar socio y estructura operativa",
-      "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Confirmar disponibilidad de Andrés para apoyo logístico / agenda previa a junta",
-      "responsable": "Andrés",
+      "tarea": "Revisar escenario de temas urgentes planteado por Juan Guillermo",
+      "responsable": "Sebastian Sanchez Acevedo",
       "prioridad": "alta"
     },
     {
-      "tarea": "Comunicar con Paulina sobre situación relacional compleja — dificultad de conversación, falta de acción, tiempos demorados",
+      "tarea": "Descargar actas de normalización (proceso pendiente)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Compartir en Teams documentación de proceso de normalización para trabajarla colaborativamente",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Enviar documentación a través de canal alternativo (no repositorio) para speaker con dificultades técnicas",
       "responsable": null,
       "prioridad": "media"
     },
     {
-      "tarea": "Preparar y estructurar agenda para junta directiva con nuevos miembros — lunes o martes próximo",
-      "responsable": null,
+      "tarea": "Revisar nominación/nombramiento de Andrea en roles",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Definir plan de trabajo para ejecución del entorno digital con impacto IA claro y medible",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Cambiar frecuencia de comité transversal de mensual a semestral",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Definir matriz de entregables por cliente (EPM, Vanti, Ayura, Gases de Occidente) con requerimientos específicos",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Reunirse con Juan Guillermo para mapear estructura de etiquetas y centros de costo (cliente, región, negocio, tipo: administrativo/estratégico/operativo/indirecto)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Diseñar approach de documentación de procesos por entregables (backward-design desde lo que se debe entregar, no desde lo que hace)",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "media"
+    },
+    {
+      "tarea": "Decidir sobre tema crítico: ¿Qué va a pasar con Carlos?",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "prioridad": "critica"
+    },
+    {
+      "tarea": "Revisar y reformular presentación sobre 'adaptabilidad digital' para junta directiva con análisis estratégico claro",
+      "responsable": "Sebastian Sanchez Acevedo",
       "prioridad": "critica"
     }
   ],
   "decisiones": [
-    "Prioridad de entender asimetría de mercado colombiano (renta fija vs acciones, modelo Feda) para decisiones de inversión personal",
-    "Reconocer que Colombia necesita tasas más bajas (8-9%) para que acciones sean atractivas vs renta fija (14%)",
-    "Validar que crisis económicas históricamente generan oportunidades de compra (lectura macro)",
-    "Interpretar que dividendos en Colombia están 50% por debajo de inflación — renta fija más viable actualmente",
-    "Necesidad urgente de comer / beber algo (bajo nivel de glucosa + alcohol = alteración)",
-    "Cambio de planes: ir a Lico Express primero, luego a Rituales (pre-ritual/social)",
-    "Rechazar ir a 'rituales' (evento social) porque ya no le gusta que lo miren / prefiere privacidad",
-    "Reconocer que la relación con Paulina está compleja: ella pone 'muro', él tiene mucho que perder, tiempos de comunicación demorados"
+    "Las reuniones deben tener objetivo claro y valor definido (si generan ingresos o no)",
+    "No trabajar lunes 18 de mayo (descanso)",
+    "Agenda: domingo 9-11 reunión transversal gerencias y direcciones",
+    "12:00 fisioterapia programada",
+    "Necesidad de revisar iniciativas de optimización con IA desde visión integral (no esfuerzos aislados)",
+    "Implementación de cambios debe basarse en información actual sobre estado y alcance",
+    "Hay diferencias entre procesos operativos que necesitan alineación",
+    "Tema de Carlos requiere resolución abierta (no cerrada)",
+    "Junta directiva revisa: números financieros, resultados, talento humano, entorno digital, cumplimiento objetivos",
+    "Entorno digital marca 'antes y después' en empresa actualmente"
   ],
   "ideas": [
-    "Ser pionero en nuevas economías/mercados genera ventaja (primeros socios, confianza, acceso)",
-    "El fútbol como negocio no es sobre costos operativos sino sobre capacidad de generar afición (intangible)",
-    "Turismo rural experiencial (coger aguacate, café, cascadas) tiene alta demanda en extranjeros y adultos mayores (economía plateada)",
-    "Descentralización y automatización de confianza (blockchain) permite operación 24/7 sin intermediarios",
-    "Crisis políticas (segunda vuelta electoral) generan volatilidad pero también oportunidades para inversor informado",
-    "Abrazo vs beso: abrazo es más peligroso porque implica vulnerabilidad emocional, no solo tensión sexual",
-    "La mentalidad es clave: quien ve problemas vs quien ve oportunidades en la vida",
-    "Decisiones imperfectas (como llegar borracho tarde) queman la 'cuenta' de confianza en relaciones",
-    "El trabajo intenso + paternidad + relaciones complejas generan fatiga acumulada (TDAH, bajo sueño)",
-    "Necesidad de viaje solo — desacople del rol de padre/pareja para procesamiento emocional"
+    "Necesidad de filtrar reuniones sin propósito definido",
+    "Establecer tarificación diferenciada de reuniones según su naturaleza (trabajo remunerado vs no)",
+    "Reflexión sobre el cuidado innecesario de reputación que 'no existe'",
+    "Concepto de 'menos es más' en la comunicación con personas cercanas",
+    "La consistencia en las relaciones es lo que genera confianza, no la perfección",
+    "Necesidad de 'recuperar el control' en la gestión de tareas",
+    "Exploración de microdosis como estrategia personal para manejo de angustia",
+    "Reconocimiento de saturación emocional por múltiples factores simultáneos",
+    "Proposición de revisar y discutir iniciativas de optimización IA con dirección estratégica integral",
+    "Identificación de problemas operativos: inventarios pendientes valle, demoras nómina, situación Bucaramanga, vehículo de consumo"
   ],
   "frases": [
-    "A los primeros siempre les va mejor porque confían en el proyecto y empezaron desde el principio",
-    "La gente anda muy víctima en la vida, pero usted ve oportunidades y las crea",
-    "Bruta pero decidida — caracterización de alguien resiliente en decisiones financieras",
-    "Un abrazo es más peligroso que un beso, un beso es tensión sexual pero un abrazo es vulnerabilidad",
-    "Decisión imperfecta es aquella que quema la cuenta — analogía de trading aplicada a matrimonio"
+    "que tengas un objetivo al reunirnos",
+    "usted quiere cuidar una reputación que no existe",
+    "menos es más",
+    "La consistencia yo la mido",
+    "Confía y duele siempre en todos los escenarios de la vida"
   ],
   "alertas_supervivencia": [
-    "JUNTA DIRECTIVA INMINENTE (lunes 2026-05-19 o martes 2026-05-20): Sebastian no tiene preparación visible, Andrés no está ubicable, nuevos miembros de junta esperan agenda — riesgo de credibilidad en rol-3-junta-asesora",
-    "RELACION PAULINA EN PUNTO CRITICO: 'muro', dificultad de comunicación, ausencia de contacto físico ('abrazo más peligroso'), tiempo de respuesta demorado (~3 años en sacar lo que siente) — riesgo emocional y de estabilidad familiar",
-    "FATIGA ACUMULADA (TDAH + múltiples roles): Sebastian pasa de conferencia de 101 min a consumo de alcohol sin comida, baja glucosa, reflexión sobre necesidad de viaje solo — señal de burnout incipiente",
-    "FLUJO OPERATIVO CONDUGAS INVISIBILIZADO: No aparece en conversation de día pero es rol-1 crítico — sugerencia de desatención a crisis de caja/contratos EPM/Vanti/equipo operativo"
+    "CRITICA: Decisión sobre Carlos ('¿Qué va a pasar con Carlos?') está abierta y podría afectar operación Condugas",
+    "CRITICA: Proceso de normalización (actas, Hilda) está pendiente de descarga/compartición; bloquea trabajo operativo",
+    "ALTA: Presentación a junta directiva sobre entorno digital requiere análisis profundo; Sebastian señala falta de preparación",
+    "ALTA: Crisis de caja mencionada implícitamente; estrategia de 'supervivencia' es uno de 3 estados simultáneos"
   ],
-  "total_lifelogs": 3,
+  "total_lifelogs": 8,
   "procesado_con": "haiku_v3_structured"
 }

@@ -119,7 +119,61 @@
       "contexto": "Remodelación/proyecto; costó 16-17M sin mobiliario pero con estructural",
       "responsable": "Sebastian",
       "fecha_rechazo": "2026-05-13"
+    },
+    {
+      "tarea": "Enviar documentación a través de canal alternativo (no repositorio) para speaker con dificultades técnicas",
+      "contexto": "Problema técnico con repositorio",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Revisar nominación/nombramiento de Andrea en roles",
+      "contexto": "Gobierno corporativo y estructura de roles Condugas",
+      "responsable": "Sebastian Sanchez Acevedo",
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Comunicar con Paulina sobre situación relacional compleja — dificultad de conversación, falta de acción, tiempos demorados",
+      "contexto": "rol-6-salud — Sebastian y Paulina tienen 'muro', ansiedades sobre momentos futuros, falta de abrazo/contacto físico, ella siente vulnerabilidad",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Confirmar disponibilidad de Andrés para apoyo logístico / agenda previa a junta",
+      "contexto": "rol-3-junta-asesora — Sebastian necesita saber dónde buscar a Andrés (está 'dizque trabajando')",
+      "responsable": "Andrés",
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Terminar de preparar ejercicio de bombitas/nodos/hilos para entregar a estudiantes (completar con papeles de roles/decisiones)",
+      "contexto": "Docencia - diseño de actividad experimental",
+      "responsable": "Sebastian",
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Generar prompt para Stitch para refactorizar y crear nuevo design system del dashboard principal",
+      "contexto": "Diseño Being CoRe / Siendo Consulting",
+      "responsable": "Sebastian",
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Definir con claridad si la participación de Sebastian en cliente es consultoría, procedimiento o implementación",
+      "contexto": "Being CoRe - modelo de facturación y roles",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Evaluar si es más económico que Sebastian vaya a obra/logística o que cliente viaje para consultoría remota",
+      "contexto": "Being CoRe - estructura de costos y ahorro para cliente",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-18"
+    },
+    {
+      "tarea": "Clarificar ante el cliente (empresa) cuál es la necesidad real: consultoría de procedimiento o algo más",
+      "contexto": "Being CoRe - alineación cliente-consultor",
+      "responsable": null,
+      "fecha_rechazo": "2026-05-18"
     }
   ],
-  "ultima_actualizacion": "2026-05-13T22:58:39"
+  "ultima_actualizacion": "2026-05-18T17:50:50"
 }
