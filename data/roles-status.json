@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-19T11:30:02.392784Z",
+  "generated_at": "2026-05-20T11:30:02.866633Z",
   "total_controles_con_fuente": 13,
   "controles": {
     "comite-sv": {
-      "last_done": "2026-05-18T11:45:04",
+      "last_done": "2026-05-19T11:45:01",
       "source": "kpis.json.ultima_actualizacion"
     },
     "reclamaciones-epm": {
@@ -43,7 +43,7 @@
       "source": "neural-activity (lina/emanuel)"
     },
     "whoop-recovery": {
-      "last_done": "2026-05-18T11:45:04",
+      "last_done": "2026-05-19T11:45:01",
       "source": "kpis.json.whoop"
     },
     "adolfo-quincenal": {
@@ -51,7 +51,7 @@
       "source": "neural+calendario"
     },
     "conceptos-vault": {
-      "last_done": "2026-05-17",
+      "last_done": "2026-05-18",
       "source": "neural-activity.last_updated"
     }
   }

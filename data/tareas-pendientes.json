@@ -8647,7 +8647,110 @@
         "Andrea"
       ],
       "segmento_impacto": "bajo"
+    },
+    {
+      "id": "2026-05-19-r12-001",
+      "tarea": "Documentar regla clara de política de préstamos intercompañías (condiciones, aprobaciones, racionalidad financiera)",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "gobierno corporativo Condugas",
+      "tipo": "decision",
+      "estado": "pendiente",
+      "fecha": "2026-05-19",
+      "fecha_limite": "2026-05-26",
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-3-junta-asesora",
+      "monto_cop": null,
+      "personas": [
+        "junta"
+      ],
+      "segmento_idx": 12,
+      "segmento_titulo": "Discusión sobre préstamos intercompanias y la situación de Condugas",
+      "segmento_inicio": "2026-05-19T22:41:04Z",
+      "segmento_fin": "2026-05-19T22:47:21Z",
+      "segmento_personas": [
+        "Sebastian",
+        "Junta asesora"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-19-r14-002",
+      "tarea": "Priorizar consolidación de sistemas: eliminar Excel/macros y software legacy (Perseo, Maldi) en Valle y otras regiones; mapear timeline de full migration a Odu",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "operaciones Condugas, control financiero",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-19",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "equipo operativo Condugas"
+      ],
+      "segmento_idx": 14,
+      "segmento_titulo": "Desafíos operativos y presupuestarios con EPM",
+      "segmento_inicio": "2026-05-19T22:58:21Z",
+      "segmento_fin": "2026-05-20T00:15:58Z",
+      "segmento_personas": [
+        "Sebastian"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-19-r14-003",
+      "tarea": "Revisar y racionalizar estructura de transporte: negociar términos de pago con proveedores de transporte (actualmente 8/15/30 días, inflexibles) para aliviar caja",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "crisis de caja, operaciones",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-19",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-1-condugas",
+      "monto_cop": null,
+      "personas": [
+        "proveedores transporte",
+        "equipo operativo"
+      ],
+      "segmento_idx": 14,
+      "segmento_titulo": "Desafíos operativos y presupuestarios con EPM",
+      "segmento_inicio": "2026-05-19T22:58:21Z",
+      "segmento_fin": "2026-05-20T00:15:58Z",
+      "segmento_personas": [
+        "Sebastian"
+      ],
+      "segmento_impacto": "alto"
+    },
+    {
+      "id": "2026-05-19-r14-004",
+      "tarea": "Evaluar viabilidad financiera de Construtem como prestamista de flota: ¿tiene capacidad de endeudamiento o está limitado a Condugas como fuente?",
+      "responsable": null,
+      "prioridad": "alta",
+      "contexto": "relación familia/patrimonio, inversiones",
+      "tipo": "pendiente",
+      "estado": "pendiente",
+      "fecha": "2026-05-19",
+      "fecha_limite": null,
+      "categoria_sugerida": "condugas",
+      "rol_sugerido": "rol-2-familia",
+      "monto_cop": null,
+      "personas": [
+        "padres",
+        "Construtem"
+      ],
+      "segmento_idx": 14,
+      "segmento_titulo": "Desafíos operativos y presupuestarios con EPM",
+      "segmento_inicio": "2026-05-19T22:58:21Z",
+      "segmento_fin": "2026-05-20T00:15:58Z",
+      "segmento_personas": [
+        "Sebastian"
+      ],
+      "segmento_impacto": "alto"
     }
   ],
-  "ultima_actualizacion": "2026-05-19T11:30:23.181240"
+  "ultima_actualizacion": "2026-05-20T11:33:28.764234"
 }

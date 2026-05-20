@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.0",
-    "generated": "2026-05-18T12:00:01+00:00",
+    "generated": "2026-05-19T12:00:01+00:00",
     "agent": "agent-personas-detector.py",
     "source": [
       "personas.json",
@@ -10,8 +10,8 @@
     ]
   },
   "stats": {
-    "candidatos_total": 9,
-    "con_tareas_abiertas": 5,
+    "candidatos_total": 10,
+    "con_tareas_abiertas": 6,
     "con_neural": 2,
     "personas_canonicas": 50
   },
@@ -138,6 +138,33 @@
           "prioridad": "baja",
           "vencida": false,
           "fecha_creacion": "2026-05-11",
+          "fecha_limite": null,
+          "proxima_accion": ""
+        }
+      ],
+      "tareas_count": {
+        "abiertas": 1,
+        "criticas": 0,
+        "vencidas": 0,
+        "cerradas_30d": 0
+      },
+      "neural": null,
+      "razon": "1 tarea(s) abierta(s) como responsable"
+    },
+    {
+      "nombre_detectado": "empleado de proyectos",
+      "slug_propuesto": "empleado-de-proyectos",
+      "descriptivo": false,
+      "fuentes": [
+        "tareas"
+      ],
+      "tareas_abiertas": [
+        {
+          "id": "2026-05-07-r33-016",
+          "tarea": "Implementar sistema de transcripción + extracción de decisiones en red neuronal de reuniones Condugas",
+          "prioridad": "alta",
+          "vencida": false,
+          "fecha_creacion": "2026-05-07",
           "fecha_limite": null,
           "proxima_accion": ""
         }

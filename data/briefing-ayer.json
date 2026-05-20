@@ -1,109 +1,23 @@
 {
-  "fecha": "2026-05-17",
+  "fecha": "2026-05-18",
   "tareas_extraidas": [
     {
-      "tarea": "Hablar con Adolfo sobre tema pendiente",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Revisar escenario de temas urgentes planteado por Juan Guillermo",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Descargar actas de normalización (proceso pendiente)",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Compartir en Teams documentación de proceso de normalización para trabajarla colaborativamente",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Enviar documentación a través de canal alternativo (no repositorio) para speaker con dificultades técnicas",
+      "tarea": "Limpiar la casa",
       "responsable": null,
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Revisar nominación/nombramiento de Andrea en roles",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Definir plan de trabajo para ejecución del entorno digital con impacto IA claro y medible",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Cambiar frecuencia de comité transversal de mensual a semestral",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Definir matriz de entregables por cliente (EPM, Vanti, Ayura, Gases de Occidente) con requerimientos específicos",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Reunirse con Juan Guillermo para mapear estructura de etiquetas y centros de costo (cliente, región, negocio, tipo: administrativo/estratégico/operativo/indirecto)",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "alta"
-    },
-    {
-      "tarea": "Diseñar approach de documentación de procesos por entregables (backward-design desde lo que se debe entregar, no desde lo que hace)",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "media"
-    },
-    {
-      "tarea": "Decidir sobre tema crítico: ¿Qué va a pasar con Carlos?",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "critica"
-    },
-    {
-      "tarea": "Revisar y reformular presentación sobre 'adaptabilidad digital' para junta directiva con análisis estratégico claro",
-      "responsable": "Sebastian Sanchez Acevedo",
-      "prioridad": "critica"
+      "prioridad": "baja"
     }
   ],
   "decisiones": [
-    "Las reuniones deben tener objetivo claro y valor definido (si generan ingresos o no)",
-    "No trabajar lunes 18 de mayo (descanso)",
-    "Agenda: domingo 9-11 reunión transversal gerencias y direcciones",
-    "12:00 fisioterapia programada",
-    "Necesidad de revisar iniciativas de optimización con IA desde visión integral (no esfuerzos aislados)",
-    "Implementación de cambios debe basarse en información actual sobre estado y alcance",
-    "Hay diferencias entre procesos operativos que necesitan alineación",
-    "Tema de Carlos requiere resolución abierta (no cerrada)",
-    "Junta directiva revisa: números financieros, resultados, talento humano, entorno digital, cumplimiento objetivos",
-    "Entorno digital marca 'antes y después' en empresa actualmente"
+    "Sebas se irá sin Andrea para el mundial"
   ],
-  "ideas": [
-    "Necesidad de filtrar reuniones sin propósito definido",
-    "Establecer tarificación diferenciada de reuniones según su naturaleza (trabajo remunerado vs no)",
-    "Reflexión sobre el cuidado innecesario de reputación que 'no existe'",
-    "Concepto de 'menos es más' en la comunicación con personas cercanas",
-    "La consistencia en las relaciones es lo que genera confianza, no la perfección",
-    "Necesidad de 'recuperar el control' en la gestión de tareas",
-    "Exploración de microdosis como estrategia personal para manejo de angustia",
-    "Reconocimiento de saturación emocional por múltiples factores simultáneos",
-    "Proposición de revisar y discutir iniciativas de optimización IA con dirección estratégica integral",
-    "Identificación de problemas operativos: inventarios pendientes valle, demoras nómina, situación Bucaramanga, vehículo de consumo"
-  ],
+  "ideas": [],
   "frases": [
-    "que tengas un objetivo al reunirnos",
-    "usted quiere cuidar una reputación que no existe",
-    "menos es más",
-    "La consistencia yo la mido",
-    "Confía y duele siempre en todos los escenarios de la vida"
+    "Cono red, 20000 lúmenes",
+    "Yo me voy a ir sin Andrea con el para el mundial"
   ],
   "alertas_supervivencia": [
-    "CRITICA: Decisión sobre Carlos ('¿Qué va a pasar con Carlos?') está abierta y podría afectar operación Condugas",
-    "CRITICA: Proceso de normalización (actas, Hilda) está pendiente de descarga/compartición; bloquea trabajo operativo",
-    "ALTA: Presentación a junta directiva sobre entorno digital requiere análisis profundo; Sebastian señala falta de preparación",
-    "ALTA: Crisis de caja mencionada implícitamente; estrategia de 'supervivencia' es uno de 3 estados simultáneos"
+    "CRÍTICO: El día 2026-05-18 NO contiene reuniones de negocio, EPM, Condugas, Being CoRe, junta asesora ni temas de supervivencia de caja. Solo conversaciones domésticas fragmentadas. Verificar si la captura de audio fue correcta o si Sebas estuvo offline en asuntos estratégicos."
   ],
-  "total_lifelogs": 8,
+  "total_lifelogs": 7,
   "procesado_con": "haiku_v3_structured"
 }

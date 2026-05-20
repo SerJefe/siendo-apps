@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-18T17:54:30",
+  "ultima_actualizacion": "2026-05-20T11:33:28",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -7103,6 +7103,29 @@
       "vencida": false,
       "evaluada": false,
       "categoria": "trabajo"
+    },
+    {
+      "id": "2026-05-19-c001",
+      "tarea": "Definir y socializar regla clara: ningún accionista/dueño puede tomar decisión de trasladar recursos entre compañías sin aprobación gerente → junta + racionalidad financiera documentada",
+      "responsable": null,
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-19",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-26",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "gobierno corporativo, separación administración-propiedad",
+      "tipo": "decision",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "junta",
+        "Claudia",
+        "Olga"
+      ],
+      "rol_sugerido": "rol-3-junta-asesora"
     }
   ]
 }
