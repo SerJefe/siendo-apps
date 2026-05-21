@@ -1,23 +1,66 @@
 {
-  "fecha": "2026-05-18",
+  "fecha": "2026-05-19",
   "tareas_extraidas": [
     {
-      "tarea": "Limpiar la casa",
+      "tarea": "Documentar regla clara de política de préstamos intercompañías (condiciones, aprobaciones, racionalidad financiera)",
       "responsable": null,
-      "prioridad": "baja"
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Priorizar consolidación de sistemas: eliminar Excel/macros y software legacy (Perseo, Maldi) en Valle y otras regiones; mapear timeline de full migration a Odu",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Revisar y racionalizar estructura de transporte: negociar términos de pago con proveedores de transporte (actualmente 8/15/30 días, inflexibles) para aliviar caja",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Evaluar viabilidad financiera de Construtem como prestamista de flota: ¿tiene capacidad de endeudamiento o está limitado a Condugas como fuente?",
+      "responsable": null,
+      "prioridad": "alta"
+    },
+    {
+      "tarea": "Definir y socializar regla clara: ningún accionista/dueño puede tomar decisión de trasladar recursos entre compañías sin aprobación gerente → junta + racionalidad financiera documentada",
+      "responsable": null,
+      "prioridad": "critica"
     }
   ],
   "decisiones": [
-    "Sebas se irá sin Andrea para el mundial"
+    "En principio no hay préstamos intercompañías, salvo que beneficios superen sustancialmente los perjuicios",
+    "Separar negocios mantiene estabilidad operativa y financiera de cada uno",
+    "Excedentes de caja (si existen) pueden ser destino de préstamos, pero requieren ratificación por gerente, junta y racionalidad financiera",
+    "Históricamente dueños (Sebastián padre/madre) confundieron rol de dueño con administrador en movimientos de tesorería",
+    "Regla: nadie puede tomar recursos de compañía A para beneficio de B sin: (1) aprobación gerente, (2) aprobación junta, (3) racionalidad financiera",
+    "Corte del 'cordón umbilical' entre negocios es necesario para gobernanza",
+    "Conducgas mantiene 3 valores paralelos en registros: factura, producción, ingreso (debido a aval de interventoría EPM que tarda ~30 días)",
+    "Proveedores estirados a 60+ días (antes 45/50); transportes inflexibles en 8/15/30 días",
+    "Crisis 2023 fue decisión extrema: venta de patrimonio familiar (casa) para resolver caja"
   ],
-  "ideas": [],
+  "ideas": [
+    "La tensión de caja de Condugas está concentrada en UN contrato (consorciado con 600M en riesgo), no es diversificada",
+    "Pedir préstamo es equivalente a pedir inversión: si Sebastián dice 'no pido a alguien que invierta', entonces no puede pedir préstamo",
+    "IC se mantiene viva por decisión estratégica de padres (visión de negocio en tercerización) + trabajo hercúleo de Natalia, no por solidez financiera intrínseca",
+    "La confusión administración-propiedad es crónica en familia Sanchez Acevedo, no solo incidente aislado",
+    "La complejidad de software legacy (Perseo→Odu, Maldi, Excel, FSE, Vanti paralelo) refleja historia de expansión regional sin integración: cada región llegó con su herramienta",
+    "Ciclo de caja de 79 días (pre-2023) se rompió por cambio en estructura de negocios, no por ineficiencia operativa pura",
+    "Transportes son el cuello de botella más rígido: únicos proveedores que NO han cedido en términos de pago"
+  ],
   "frases": [
-    "Cono red, 20000 lúmenes",
-    "Yo me voy a ir sin Andrea con el para el mundial"
+    "en principio no hay préstamos inter compañías, salvo que los beneficios del préstamo superen sustancialmente los perjuicios",
+    "separemos los negocios y separamos los negocios, mantenemos la estabilidad operativa y financiera de cada uno",
+    "en una compañía alguien no puede meter la mano en la tesorería de la compañía, por más dueño que sea",
+    "los dueños de la compañía confunden el rol de administración y dueño, en esta y en muchísimas compañías",
+    "eso es un cordón umbilical que hay que cortar"
   ],
   "alertas_supervivencia": [
-    "CRÍTICO: El día 2026-05-18 NO contiene reuniones de negocio, EPM, Condugas, Being CoRe, junta asesora ni temas de supervivencia de caja. Solo conversaciones domésticas fragmentadas. Verificar si la captura de audio fue correcta o si Sebas estuvo offline en asuntos estratégicos."
+    "Crisis de caja en Condugas por 600M en consorcio requiere decisión inmediata sobre reestructuración o inyección",
+    "Sistemas legacy fragmentados impiden tomar decisiones de flujo con certeza financiera",
+    "Ausencia de reglas claras sobre préstamos intercompañías crea riesgo de vaciamiento de IC",
+    "Confusión accionaria sobre roles operativos puede paralizar decisiones críticas en siguiente quiebre de caja",
+    "Transición a Odu en operación con caja negativa es riesgo operacional extremo sin plan de contingencia visible"
   ],
-  "total_lifelogs": 7,
+  "total_lifelogs": 15,
   "procesado_con": "haiku_v3_structured"
 }

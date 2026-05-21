@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-05-19",
-  "ultima_actualizacion": "2026-05-19T11:45:01",
+  "fecha": "2026-05-20",
+  "ultima_actualizacion": "2026-05-20T11:45:08",
   "comite_sv": {
     "caja_dias": 10,
     "facturacion_pct": 64,
@@ -8,67 +8,75 @@
     "ebitda": -800,
     "whoop_recovery": 14,
     "whoop_sleep": "27%",
-    "tareas_criticas": 81,
+    "tareas_criticas": 82,
     "proyectos_crisis": 2
   },
   "frescura": {
     "caja_dias": {
       "valor": 10,
       "fecha": "2026-05-07",
-      "dias_sin_actualizar": 12,
+      "dias_sin_actualizar": 13,
       "fuente": "limitless"
     },
     "facturacion_pct": {
       "valor": 64,
       "fecha": "2026-05-12",
-      "dias_sin_actualizar": 7,
+      "dias_sin_actualizar": 8,
       "fuente": "limitless"
     },
     "produccion_deficit_pct": {
       "valor": 14.9,
       "fecha": "2026-05-15",
-      "dias_sin_actualizar": 4,
+      "dias_sin_actualizar": 5,
       "fuente": "limitless"
     },
     "ebitda": {
       "valor": -800,
       "fecha": "2026-05-05",
-      "dias_sin_actualizar": 14,
+      "dias_sin_actualizar": 15,
       "fuente": "limitless"
     },
     "whoop_recovery": {
       "valor": 14,
       "fecha": "2026-05-03",
-      "dias_sin_actualizar": 16,
+      "dias_sin_actualizar": 17,
       "fuente": "whoop api"
     },
     "whoop_sleep": {
       "valor": "27%",
       "fecha": "2026-05-03",
-      "dias_sin_actualizar": 16,
+      "dias_sin_actualizar": 17,
       "fuente": "whoop api"
     },
     "tareas_criticas": {
-      "valor": 81,
-      "fecha": "2026-05-19",
+      "valor": 82,
+      "fecha": "2026-05-20",
       "dias_sin_actualizar": 0,
       "fuente": "auto"
     },
     "proyectos_crisis": {
       "valor": 2,
-      "fecha": "2026-05-19",
+      "fecha": "2026-05-20",
       "dias_sin_actualizar": 0,
       "fuente": "auto"
     }
   },
   "alertas": [
-    "Caja en 10 días: revisar movimientos hoy (inversiones + deudas Condugas)",
-    "No conformidad contrato 24: respuesta formal pendiente (riesgo legal)",
-    "EPM Río Negro: ~180M vencidos sin cobrar — comunicado + gestión cobro directo"
+    "Caja crítica: 10 días de runway (sin actualizar desde 7 mayo). EBITDA -800k. Necesitas visibilidad hoy.",
+    "Necesidad de endeudamiento de 1900 millones COP para fin de año",
+    "Pérdida mensual consistente de más o menos 60 millones COP en últimos 7 meses",
+    "Déficit proyectado de aproximadamente 800 millones COP al cierre del período",
+    "EPM Río Negro: ~180M COP en reajustes pendientes. Propuesta y comunicado de cobro URGENTE.",
+    "81 tareas críticas abiertas. 2 proyectos en crisis.",
+    "Flujo de caja negativo: no se genera flujo de caja libre mensualmente",
+    "Deuda acumulada de 500 millones COP mensuales con vencimiento a 2 años"
   ],
   "oportunidades": [
-    "Unificar procesos por entregables en lugar de por contrato",
-    "Implementar comité semestral transversal para revisar números"
+    "Recuperación de 190 millones COP en retenciones y reajustes pendientes de cobro a Condugas",
+    "Refinanciamiento o reconfiguración de deuda a 5 años para reducir presión de caja",
+    "Incorporación de nueva facturación o contratos adicionales para mejorar caja operativa",
+    "Implementación de agilidades operativas en contratos para aumentar márgenes",
+    "Negociación de anticipo de renta de 1200 millones COP que generaría 100 millones COP adicionales"
   ],
   "whoop": {
     "recovery": 14,
@@ -81,48 +89,48 @@
   "recordatorios_datos_faltantes": [
     {
       "campo": "whoop_recovery",
-      "dias_sin_dato": 16,
+      "dias_sin_dato": 17,
       "umbral": 1,
       "severidad": "alta",
       "ultimo_valor": 14,
       "ultima_fecha": "2026-05-03",
-      "mensaje": "'whoop_recovery' lleva 16 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'whoop_recovery' lleva 17 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     },
     {
       "campo": "whoop_sleep",
-      "dias_sin_dato": 16,
+      "dias_sin_dato": 17,
       "umbral": 1,
       "severidad": "alta",
       "ultimo_valor": "27%",
       "ultima_fecha": "2026-05-03",
-      "mensaje": "'whoop_sleep' lleva 16 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'whoop_sleep' lleva 17 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     },
     {
       "campo": "ebitda",
-      "dias_sin_dato": 14,
+      "dias_sin_dato": 15,
       "umbral": 14,
       "severidad": "media",
       "ultimo_valor": -800,
       "ultima_fecha": "2026-05-05",
-      "mensaje": "'ebitda' lleva 14 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'ebitda' lleva 15 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     },
     {
       "campo": "caja_dias",
-      "dias_sin_dato": 12,
+      "dias_sin_dato": 13,
       "umbral": 2,
       "severidad": "alta",
       "ultimo_valor": 10,
       "ultima_fecha": "2026-05-07",
-      "mensaje": "'caja_dias' lleva 12 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'caja_dias' lleva 13 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     },
     {
       "campo": "facturacion_pct",
-      "dias_sin_dato": 7,
+      "dias_sin_dato": 8,
       "umbral": 7,
       "severidad": "media",
       "ultimo_valor": 64,
       "ultima_fecha": "2026-05-12",
-      "mensaje": "'facturacion_pct' lleva 7 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
+      "mensaje": "'facturacion_pct' lleva 8 dias sin mencion en Limitless. Mencionalo en el proximo comite o registralo manualmente."
     }
   ]
 }

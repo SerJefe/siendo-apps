@@ -1,5 +1,5 @@
 {
-  "generado_at": "2026-05-20T11:30:07",
+  "generado_at": "2026-05-21T11:30:05",
   "resumen": {
     "grupos_fusion": 2,
     "tareas_en_grupos": 5,
@@ -7,8 +7,8 @@
     "sobrecarga": 4,
     "sin_categoria": 0,
     "estancadas": 196,
-    "sin_evaluar": 250,
-    "total_abiertas": 275
+    "sin_evaluar": 251,
+    "total_abiertas": 276
   },
   "grupos_fusion": [
     {
@@ -136,9 +136,9 @@
     },
     {
       "responsable": "Sin asignar",
-      "abiertas": 62,
-      "criticas": 17,
-      "sugerencia": "Sin asignar tiene 62 tareas abiertas (17 criticas). Delegar o repriorizar."
+      "abiertas": 63,
+      "criticas": 18,
+      "sugerencia": "Sin asignar tiene 63 tareas abiertas (18 criticas). Delegar o repriorizar."
     },
     {
       "responsable": "Sebastian",
@@ -159,140 +159,140 @@
       "id": "2026-04-06-002",
       "tarea": "Recopilar información del proceso centro de operaciones",
       "responsable": "William Lopez",
-      "dias": 44,
+      "dias": 45,
       "puntaje": 44
     },
     {
       "id": "2026-04-12-004",
       "tarea": "Publicar documentación de KPIs en repositorio público",
       "responsable": "William Lopez",
-      "dias": 38,
+      "dias": 39,
       "puntaje": 37
     },
     {
       "id": "2026-04-13-mc2abc0",
       "tarea": "Casa (Construcción)",
       "responsable": "Sebastian",
-      "dias": 37,
+      "dias": 38,
       "puntaje": null
     },
     {
       "id": "2026-04-14-001",
       "tarea": "Reunirse con Andrea para resolver deuda Condugas",
       "responsable": "Lina Russi",
-      "dias": 36,
+      "dias": 37,
       "puntaje": 40
     },
     {
       "id": "2026-04-14-006",
       "tarea": "Coordinar reunión con leads/clientes para definición estratégica",
       "responsable": "Sebastian",
-      "dias": 36,
+      "dias": 37,
       "puntaje": 39
     },
     {
       "id": "2026-04-14-010",
       "tarea": "Crear información visual ERP con Emanuel y Lina para comprensión integral del proyecto",
       "responsable": "Sebastian",
-      "dias": 36,
+      "dias": 37,
       "puntaje": 33
     },
     {
       "id": "2026-04-16-r6-002",
       "tarea": "Preparar documento con 3 pilares: Confiabilidad numérica, Relacionamiento, Adaptabilidad",
       "responsable": "Sebastian Sanchez",
-      "dias": 36,
+      "dias": 37,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r7-004",
       "tarea": "Documentar que 4 comunicaciones fueron coordinadas lunes-miércoles, enviadas jueves",
       "responsable": "Sebastian Sanchez",
-      "dias": 36,
+      "dias": 37,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r7-005",
       "tarea": "Reafirmar con PM y abogados compromiso con buenas relaciones pese a conflicto",
       "responsable": "Sebastian Sanchez",
-      "dias": 36,
+      "dias": 37,
       "puntaje": null
     },
     {
       "id": "2026-04-16-r10-012",
       "tarea": "Empoderar Diana para alcance similar a Carlos Acevedo",
       "responsable": "Sebastian Sanchez",
-      "dias": 36,
+      "dias": 37,
       "puntaje": null
     },
     {
       "id": "2026-04-15-c003",
       "tarea": "Preparar propuesta contundente de reajuste de contrato EPM Río Negro con alternativas viables",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-001",
       "tarea": "Revisar informe de gestión para Supersociedades",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-003",
       "tarea": "Obtener respuesta contable de Manuel sobre configuración nómina UGP-DIAN",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-004",
       "tarea": "Cobrar ICA pendiente a municipios (~55 millones Medellín)",
       "responsable": "Andrea Bernal",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-005",
       "tarea": "Responder requerimiento SENA pendiente",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-007",
       "tarea": "Firmar declaración de renta con ayuda de Diana y Alejandro",
       "responsable": "Andrea Bernal",
-      "dias": 35,
+      "dias": 36,
       "puntaje": 43
     },
     {
       "id": "2026-04-15-008",
       "tarea": "Integrar informes inversión extranjera en sistema Odoo",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-009",
       "tarea": "Definir auditoría de balances en Odoo con revisor fiscal",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-010",
       "tarea": "Enviar certificados retención mensual a consorciados (Óscar, Zilar)",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     },
     {
       "id": "2026-04-15-011",
       "tarea": "Ajustar débito deuda NC (retenciones no cobradas)",
       "responsable": "Sebastian",
-      "dias": 35,
+      "dias": 36,
       "puntaje": null
     }
   ],

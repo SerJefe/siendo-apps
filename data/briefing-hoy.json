@@ -1,60 +1,60 @@
 {
-  "saludo": "Buenos días Sebastián — miércoles 20 May 2026",
+  "saludo": "Buenos días Sebastián — jueves 21 May 2026",
   "supervivencia": [
-    "Caja crítica: 10 días de runway (sin actualizar desde 7 mayo). EBITDA -800k. Necesitas visibilidad hoy.",
-    "EPM Río Negro: ~180M COP en reajustes pendientes. Propuesta y comunicado de cobro URGENTE.",
-    "81 tareas críticas abiertas. 2 proyectos en crisis."
+    "Caja en 10 días: decisión sobre inyección a Condugas o restructuración del consorcio (600M en riesgo)",
+    "EPM Río Negro: ~180M pendientes — comunicado + cobro directo antes de fin mes",
+    "82 tareas críticas abiertas: sistema está colapsado"
   ],
   "top_3": [
     {
-      "tarea": "Llamar a Andrea Bernal + revisar caja a hoy (movimientos, inversiones, deudas Condugas)",
+      "tarea": "Revisar movimiento de caja HOY + inversiones (estado real vs proyección)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Sin caja clara no puedes decidir nada más. Deadline vencido.",
-      "tarea_id": "situacion-caja-familiar"
+      "porque": "10 días de caja, EBITDA -800K, decisiones de inyección requieren datos frescos",
+      "tarea_id": "situacion_caja_familiar"
     },
     {
-      "tarea": "Enviar comunicado a EPM + programar cobro directo reajuste Río Negro (~180M)",
+      "tarea": "Llamar a EPM: comunicado reajuste Río Negro + fecha de cobro (180M)",
       "categoria": "SUPERVIVENCIA",
-      "porque": "Ingresos críticos. Vencido hace semanas.",
-      "tarea_id": "cobrar-epm-rionegro"
+      "porque": "Vencimiento mayo 30, no conformidad sin resolver, relacionamiento crítico",
+      "tarea_id": "epm_rio_negro_reajuste"
     },
     {
-      "tarea": "Base de datos clientes Siendo (1 lugar, necesidades claras) + definir qué hacer con Odoo",
+      "tarea": "Base de datos clientes unificada: necesidades + etapa Odoo (1h máximo)",
       "categoria": "ESTRATEGIA",
-      "porque": "Sin clientes claros no hay propuestas. Score 47.",
-      "tarea_id": "clientes-base"
+      "porque": "Score 47, crítica, sin esto no escalas Siendo ni defines propuestas",
+      "tarea_id": "clientes_base_odoo"
     }
   ],
-  "mega_dia": "Caja + EPM = el día vale. Sin eso, todo es ruido.",
+  "mega_dia": "Si logras actualizar caja real + llamada EPM confirmada, el día valió.",
   "contactar_hoy": [
     {
       "persona": "Andrea Bernal",
-      "motivo": "Deudas Condugas + estado caja familia"
+      "motivo": "Deudas Condugas pendientes + ICA municipios (55M)"
     },
     {
-      "persona": "William Lopez",
-      "motivo": "Propuesta contundente reajuste EPM (alternativas viables)"
+      "persona": "Emanuel",
+      "motivo": "Reunión ERP visual 30min (calma la complejidad)"
     }
   ],
   "ojo_con": [
     "139 tareas criticas/alta sin fecha limite — asignales deadline en el calendario",
-    "27% sleep recovery (Whoop 16 días sin actualizar). Necesitas dormir para pensar claro.",
-    "187 tareas vencidas acumuladas. El triaje no funciona solo.",
-    "Alert P1 vigente: no conformidad contrato 24 sin respuesta formal."
+    "KPIs sin actualizar: caja (13 días), EBITDA (15 días) — decisiones sobre datos viejos",
+    "187 tareas vencidas acumuladas — no es gestión, es caos",
+    "Confusión administración-propiedad sigue: necesitas reglas escritas sobre movimientos entre empresas"
   ],
   "vencidas": [
-    "Revisar contratos críticos (Juan Camilo) — 2026-04-20",
-    "Conversar POT Aguactala con Pilar/Basa — 2026-05-05"
+    "Revisar rendimiento contratos críticos (vencía 2026-04-20)",
+    "Conversar POT casa Aguactala (vencía 2026-05-05)"
   ],
-  "frase_dia": "Caja es oxígeno, clientes son negocio, sueño es combustible. Hoy: oxígeno primero.",
-  "generado_at": "2026-05-20T11:00:10",
-  "fecha": "2026-05-20",
+  "frase_dia": "10 días de caja no es plazo para optimizar: es señal de actuar. Cobrar EPM es acción, no promesa.",
+  "generado_at": "2026-05-21T11:00:10",
+  "fecha": "2026-05-21",
   "stats": {
-    "abiertas": 275,
-    "criticas": 81,
+    "abiertas": 276,
+    "criticas": 82,
     "vencidas": 187,
     "estancadas": 196,
-    "sin_evaluar": 250
+    "sin_evaluar": 251
   },
   "criticas_sin_fecha": [
     {
@@ -150,16 +150,10 @@
   ],
   "vence_pronto": [
     {
-      "id": "2026-05-13-c003",
-      "tarea": "Evaluar escenarios de contrato: (a) negociar cambio de interventor/procesos; (b) llevar a mínima exp",
-      "dias": 0,
-      "fecha_limite": "2026-05-20"
-    },
-    {
-      "id": "2026-05-13-c004",
-      "tarea": "Resolver riesgo técnico: credenciales expuestas en JSONs planos; migrar a vault o variables de entor",
-      "dias": 0,
-      "fecha_limite": "2026-05-20"
+      "id": "2026-05-11-r2-005",
+      "tarea": "Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
+      "dias": 3,
+      "fecha_limite": "2026-05-24"
     }
   ]
 }

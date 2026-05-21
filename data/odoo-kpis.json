@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-05-20",
-  "generated_at": "2026-05-20T10:30:06.743401Z",
+  "fecha": "2026-05-21",
+  "generated_at": "2026-05-21T10:30:03.327385Z",
   "version": "v2-3decisiones",
   "facturacion_30d": {
-    "total": 5429189475.67,
-    "count": 69,
+    "total": 5382635530.36,
+    "count": 55,
     "moneda": "COP"
   },
   "cartera_pendiente": {
     "total": 8264601449.59,
     "count": 109,
-    "vencidas": 46,
+    "vencidas": 59,
     "moneda": "COP"
   },
   "top_cartera": [
@@ -78,14 +78,14 @@
     },
     {
       "name": "Tareas y Proyectos Gerencia General",
-      "tareas": 8
+      "tareas": 10
     }
   ],
-  "tareas_proyectos_abiertas": 404,
+  "tareas_proyectos_abiertas": 406,
   "empleados_activos": 650,
   "sobrevivir": {
     "caja": {
-      "bancos_total": -761648451.52,
+      "bancos_total": -800717627.15,
       "bancos_detalle": [
         {
           "cuenta": "11050505 CAJA GENERAL",
@@ -124,7 +124,7 @@
         },
         {
           "cuenta": "11100525 BANCOLOMBIA  1016 ADMON CENTRAL",
-          "saldo": 77974920.78,
+          "saldo": 76537801.78,
           "flags": []
         },
         {
@@ -136,7 +136,7 @@
         },
         {
           "cuenta": "11100535 BANCOLOMBIA 0235 VALLE",
-          "saldo": -5049982.18,
+          "saldo": -10063519.18,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -160,19 +160,19 @@
         },
         {
           "cuenta": "11100560 BANCO AV VILLAS 4070",
-          "saldo": -828614612.98,
+          "saldo": -837664472.61,
           "flags": [
             "saldo_negativo_revisar"
           ]
         },
         {
           "cuenta": "11100565 BANCO DE BOGOTA 4510 BOYACA",
-          "saldo": 235175499.19,
+          "saldo": 234411024.19,
           "flags": []
         },
         {
           "cuenta": "11100575 BANCOLOMBIA",
-          "saldo": 142998712.43,
+          "saldo": 140997175.43,
           "flags": []
         },
         {
@@ -209,7 +209,7 @@
         },
         {
           "cuenta": "False CTA CTE BOGOTA 7323",
-          "saldo": -440566949.76,
+          "saldo": -461369597.76,
           "flags": [
             "saldo_negativo_revisar"
           ]
@@ -247,7 +247,7 @@
         }
       ],
       "cartera_ejecutada": 8264601449.59,
-      "total_disponible": 7502952998.07,
+      "total_disponible": 7463883822.440001,
       "moneda": "COP",
       "nota_parametrizacion": "Plan de cuentas en proceso de parametrización · revisar warnings"
     },
@@ -258,79 +258,79 @@
           "total": 1622702812.56,
           "facturas_vencidas": 7,
           "mas_vieja": "2026-04-15",
-          "dias_vencida": 35
+          "dias_vencida": 36
         },
         {
           "partner": "GAS NATURAL CUNDIBOYACENSE S.A. E.S.P.",
-          "total": 701370508.88,
-          "facturas_vencidas": 11,
+          "total": 729055872.4999996,
+          "facturas_vencidas": 24,
           "mas_vieja": "2026-04-19",
-          "dias_vencida": 31
+          "dias_vencida": 32
         },
         {
           "partner": "METROGAS DE COLOMBIA S.A E.S.P",
           "total": 186847636.32999998,
           "facturas_vencidas": 10,
           "mas_vieja": "2026-04-11",
-          "dias_vencida": 39
+          "dias_vencida": 40
         },
         {
           "partner": "CONSORCIO CONDUGAS NC ACUEDUCTOS 2021",
           "total": 159188822.0,
           "facturas_vencidas": 4,
           "mas_vieja": "2026-02-23",
-          "dias_vencida": 86
+          "dias_vencida": 87
         },
         {
           "partner": "CONSORCIO SILAR CONDUGAS",
           "total": 86588132.44,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-30",
-          "dias_vencida": 20
+          "dias_vencida": 21
         },
         {
           "partner": "Jhon Christopher Angulo",
           "total": 59368482.98,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-03-24",
-          "dias_vencida": 57
+          "dias_vencida": 58
         },
         {
           "partner": "GASES DE OCCIDENTE SA ESP",
           "total": 55554076.62,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-05-01",
-          "dias_vencida": 19
+          "dias_vencida": 20
         },
         {
           "partner": "UNION TEMPORAL HABILITACION INFRAESTRUCTURA HOSPITALARIA",
           "total": 24521525.67,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 36
+          "dias_vencida": 37
         },
         {
           "partner": "CONINSA  S.A.S",
           "total": 18868581.69,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-20",
-          "dias_vencida": 30
+          "dias_vencida": 31
         },
         {
           "partner": "CONSTRUTEM S A S",
           "total": 15598151.76,
           "facturas_vencidas": 1,
           "mas_vieja": "2026-04-14",
-          "dias_vencida": 36
+          "dias_vencida": 37
         }
       ],
-      "total": 2955780706.37,
-      "facturas_count": 46
+      "total": 2983466069.99,
+      "facturas_count": 59
     },
     "deuda_proveedores": {
-      "total": 3324349565.6,
+      "total": 3306223614.2,
       "count": 1000,
-      "vencidas": 881,
+      "vencidas": 878,
       "top": [
         {
           "proveedor": "LOGISLAND S A S",
@@ -359,135 +359,135 @@
   "recuperar": {
     "facturas_recientes": [
       {
-        "name": "BILL/2026/05/0227",
+        "name": "DEC724",
         "tipo": "compra",
-        "partner": "INGRID YOHANNA ARIZA HOLGUIN",
-        "monto": 259900.0,
-        "fecha": "2026-05-05",
-        "registrada": "2026-05-19 21:23:41"
-      },
-      {
-        "name": "BILL/2026/05/0224",
-        "tipo": "compra",
-        "partner": "CONSTRUTEM S A S",
-        "monto": 1237500.0,
-        "fecha": "2026-05-06",
-        "registrada": "2026-05-19 21:23:14"
-      },
-      {
-        "name": "BILL/2026/05/0225",
-        "tipo": "compra",
-        "partner": "CONSTRUTEM S A S",
-        "monto": 1237500.0,
-        "fecha": "2026-05-05",
-        "registrada": "2026-05-19 21:22:53"
-      },
-      {
-        "name": "BILL/2026/05/0223",
-        "tipo": "compra",
-        "partner": "TORRES NEIRA FREDY ALEXANDER",
-        "monto": 64000.0,
-        "fecha": "2026-05-04",
-        "registrada": "2026-05-19 20:22:28"
-      },
-      {
-        "name": "DEC700",
-        "tipo": "compra",
-        "partner": "AGUILAR MALAVER BLANCA PATRICIA",
+        "partner": "JARAMILLO LUIS ADRIAN",
         "monto": 50000.0,
-        "fecha": "2026-05-15",
-        "registrada": "2026-05-19 20:17:49"
+        "fecha": "2026-05-20",
+        "registrada": "2026-05-20 22:00:22"
       },
       {
-        "name": "DEC699",
+        "name": "DEC723",
         "tipo": "compra",
-        "partner": "BOHORQUEZ OSPINA LUISA ALEJANDRA",
-        "monto": 100000.0,
-        "fecha": "2026-05-15",
-        "registrada": "2026-05-19 20:16:58"
+        "partner": "DIANA CRISTINA MENA MADRID",
+        "monto": 864640.0,
+        "fecha": "2026-05-20",
+        "registrada": "2026-05-20 19:57:07"
       },
       {
-        "name": "DEC698",
+        "name": "BILL/2026/05/0274",
         "tipo": "compra",
-        "partner": "AGUILAR MALAVER BLANCA PATRICIA",
+        "partner": "ZAPATA GONZALEZ MARIA ELIDA",
         "monto": 50000.0,
-        "fecha": "2026-05-15",
-        "registrada": "2026-05-19 20:15:58"
-      },
-      {
-        "name": "BILL/2026/05/0222",
-        "tipo": "compra",
-        "partner": "ALDEMAR BERMUDEZ FRANCO",
-        "monto": 12000.0,
-        "fecha": "2026-05-15",
-        "registrada": "2026-05-19 20:13:05"
-      },
-      {
-        "name": "BILL/2026/05/0221",
-        "tipo": "compra",
-        "partner": "BTS DERECHOS ECONÓMICOS S.A.S.",
-        "monto": 12400.0,
         "fecha": "2026-05-13",
-        "registrada": "2026-05-19 20:12:17"
+        "registrada": "2026-05-20 19:45:31"
       },
       {
-        "name": "BILL/2026/05/0220",
+        "name": "BILL/2026/05/0273",
         "tipo": "compra",
-        "partner": "BTS DERECHOS ECONÓMICOS S.A.S.",
-        "monto": 12400.0,
+        "partner": "PIEDRAHITA LOAIZA LINA YULIETH",
+        "monto": 39000.0,
         "fecha": "2026-05-13",
-        "registrada": "2026-05-19 20:12:00"
+        "registrada": "2026-05-20 19:45:25"
       },
       {
-        "name": "BILL/2026/05/0219",
+        "name": "DEC722",
         "tipo": "compra",
-        "partner": "BTS DERECHOS ECONÓMICOS S.A.S.",
-        "monto": 15200.0,
-        "fecha": "2026-05-13",
-        "registrada": "2026-05-19 20:11:42"
+        "partner": "PALACIOS MENA LODWIN",
+        "monto": 96000.0,
+        "fecha": "2026-05-20",
+        "registrada": "2026-05-20 19:45:02"
       },
       {
-        "name": "BILL/2026/05/0218",
+        "name": "DEC721",
         "tipo": "compra",
-        "partner": "BTS DERECHOS ECONÓMICOS S.A.S.",
-        "monto": 12400.0,
-        "fecha": "2026-05-13",
-        "registrada": "2026-05-19 20:11:18"
+        "partner": "HINESTROZA PEREA LUIS FERNANDO",
+        "monto": 42000.0,
+        "fecha": "2026-05-20",
+        "registrada": "2026-05-20 19:44:35"
       },
       {
-        "name": "BILL/2026/05/0217",
+        "name": "BILL/2026/05/0272",
         "tipo": "compra",
-        "partner": "BTS DERECHOS ECONÓMICOS S.A.S.",
-        "monto": 12400.0,
+        "partner": "BANCOLOMBIA",
+        "monto": 4581.0,
         "fecha": "2026-05-13",
-        "registrada": "2026-05-19 20:11:09"
+        "registrada": "2026-05-20 19:44:29"
       },
       {
-        "name": "BILL/2026/05/0216",
+        "name": "BILL/2026/05/0271",
         "tipo": "compra",
         "partner": "D1  S A S",
-        "monto": 14250.0,
+        "monto": 11250.0,
         "fecha": "2026-05-13",
-        "registrada": "2026-05-19 20:10:22"
+        "registrada": "2026-05-20 19:44:23"
       },
       {
-        "name": "BILL/2026/05/0215",
+        "name": "BILL/2026/05/0270",
         "tipo": "compra",
-        "partner": "BTS DERECHOS ECONÓMICOS S.A.S.",
-        "monto": 12400.0,
+        "partner": "DUQUE LOAIZA PEDRO LUIS",
+        "monto": 23002.0,
         "fecha": "2026-05-13",
-        "registrada": "2026-05-19 20:08:26"
+        "registrada": "2026-05-20 19:44:13"
+      },
+      {
+        "name": "BILL/2026/05/0269",
+        "tipo": "compra",
+        "partner": "PATRIMONIOS AUTONOMOS AVAL FIDUCIARIA S.A",
+        "monto": 13400.0,
+        "fecha": "2026-05-08",
+        "registrada": "2026-05-20 19:43:46"
+      },
+      {
+        "name": "BILL/2026/05/0268",
+        "tipo": "compra",
+        "partner": "CONCESIONARIA RUTAS DEL VALLE S.A.S.",
+        "monto": 13300.0,
+        "fecha": "2026-05-08",
+        "registrada": "2026-05-20 19:43:24"
+      },
+      {
+        "name": "BILL/2026/05/0267",
+        "tipo": "compra",
+        "partner": "CONCESIONARIA RUTAS DEL VALLE S.A.S.",
+        "monto": 13200.0,
+        "fecha": "2026-05-08",
+        "registrada": "2026-05-20 19:43:11"
+      },
+      {
+        "name": "BILL/2026/05/0266",
+        "tipo": "compra",
+        "partner": "CONCESIONARIA RUTAS DEL VALLE S.A.S.",
+        "monto": 13300.0,
+        "fecha": "2026-05-08",
+        "registrada": "2026-05-20 19:42:58"
+      },
+      {
+        "name": "BILL/2026/05/0265",
+        "tipo": "compra",
+        "partner": "PATRIMONIOS AUTONOMOS AVAL FIDUCIARIA S.A",
+        "monto": 13400.0,
+        "fecha": "2026-05-08",
+        "registrada": "2026-05-20 19:42:49"
+      },
+      {
+        "name": "BILL/2026/05/0264",
+        "tipo": "compra",
+        "partner": "CONCESIONARIA RUTAS DEL VALLE S.A.S.",
+        "monto": 13200.0,
+        "fecha": "2026-05-08",
+        "registrada": "2026-05-20 19:35:47"
       }
     ],
     "compras_mes": {
-      "total": 549474634.67,
-      "count": 438,
+      "total": 561805506.83,
+      "count": 515,
       "desde": "2026-05-01",
       "moneda": "COP"
     },
     "compras_acumulado_ano": {
-      "total": 6159899761.11,
-      "count": 2819,
+      "total": 6172230645.18,
+      "count": 2896,
       "por_mes": [
         {
           "mes": "2026-01",
@@ -503,11 +503,11 @@
         },
         {
           "mes": "2026-04",
-          "total": 1979904334.1600015
+          "total": 1979904346.0700014
         },
         {
           "mes": "2026-05",
-          "total": 549474634.6700002
+          "total": 561805506.8300002
         }
       ],
       "desde": "2026-01-01",
@@ -523,25 +523,25 @@
         },
         {
           "contrato": "R1",
-          "gasto_acumulado": 1363066893.42,
+          "gasto_acumulado": 1359327248.51,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "VALLE",
-          "gasto_acumulado": 1165803003.31,
+          "gasto_acumulado": 1162311556.31,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "BOYACÁ",
-          "gasto_acumulado": 376883691.77,
+          "gasto_acumulado": 376556691.77,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
         {
           "contrato": "FLORIDABLANCA",
-          "gasto_acumulado": 237665171.14,
+          "gasto_acumulado": 237582851.39,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -553,7 +553,7 @@
         },
         {
           "contrato": "JERICÓ",
-          "gasto_acumulado": 68003396.8,
+          "gasto_acumulado": 68259825.8,
           "presupuesto": null,
           "cumplimiento_pct": null
         },
@@ -573,7 +573,7 @@
       "nota_presupuesto": "Campos presupuesto/cumplimiento pendientes hasta carga de estructuración"
     },
     "inventario_transito": {
-      "count": 96,
+      "count": 98,
       "items": [
         {
           "name": "OM&Z2/IN/00076",
@@ -752,7 +752,7 @@
       },
       {
         "name": "Tareas y Proyectos Gerencia General",
-        "tareas": 8,
+        "tareas": 10,
         "responsable": "SANCHEZ ACEVEDO SEBASTIAN",
         "cliente": null,
         "inicio": false,

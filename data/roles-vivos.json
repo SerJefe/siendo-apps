@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-20T11:30:02.692862Z",
+  "generated_at": "2026-05-21T11:30:01.756954Z",
   "fuente_novedades": "dia-v2",
   "dia_v2_fecha": "2026-04-22",
-  "total_abiertos": 275,
+  "total_abiertos": 276,
   "total_novedades": 2,
   "clasificador": "heuristico-keywords-v1",
   "roles": {
@@ -12,7 +12,7 @@
       "color": "#091f2e",
       "ancla_3_decisiones": "sobrevivir_y_recuperar",
       "abiertos_total": 224,
-      "abiertos_vencidos": 53,
+      "abiertos_vencidos": 54,
       "abiertos_criticos": 76,
       "abiertos": [
         {
@@ -21,7 +21,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 30,
+          "dias_vencida": 31,
           "responsable": "Juan Camilo Berrio",
           "fecha_creacion": "2026-04-08",
           "categoria": "condugas"
@@ -32,7 +32,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 29,
+          "dias_vencida": 30,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -43,7 +43,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 26,
+          "dias_vencida": 27,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-17",
           "categoria": "condugas"
@@ -54,7 +54,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 30,
+          "dias_vencida": 31,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -65,7 +65,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 29,
+          "dias_vencida": 30,
           "responsable": "Sebastian Sanchez",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -76,7 +76,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 30,
+          "dias_vencida": 31,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -87,7 +87,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 29,
+          "dias_vencida": 30,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -98,7 +98,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-21",
           "vencida": true,
-          "dias_vencida": 29,
+          "dias_vencida": 30,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -109,7 +109,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-20",
           "vencida": true,
-          "dias_vencida": 30,
+          "dias_vencida": 31,
           "responsable": "Andrea Bernal",
           "fecha_creacion": "2026-04-20",
           "categoria": "condugas"
@@ -120,7 +120,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-24",
           "vencida": true,
-          "dias_vencida": 26,
+          "dias_vencida": 27,
           "responsable": "Camilo",
           "fecha_creacion": "2026-04-21",
           "categoria": "condugas"
@@ -131,7 +131,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Unknown",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -142,7 +142,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -153,7 +153,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-27",
           "vencida": true,
-          "dias_vencida": 23,
+          "dias_vencida": 24,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -164,7 +164,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-23",
           "vencida": true,
-          "dias_vencida": 27,
+          "dias_vencida": 28,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -175,7 +175,7 @@
           "prioridad": "critica",
           "deadline": "2026-04-25",
           "vencida": true,
-          "dias_vencida": 25,
+          "dias_vencida": 26,
           "responsable": "Sebastian",
           "fecha_creacion": "2026-04-22",
           "categoria": "condugas"
@@ -194,7 +194,7 @@
       "proximo": {
         "dtstart": "2026-07-21T00:00:00Z",
         "summary": "[CRITICA] Diseñar e implementar sistema de automatización en Condugas para alcanzar operación 60-70% autónoma en <3 meses",
-        "dias_restantes": 61
+        "dias_restantes": 60
       },
       "pulso": {
         "cerradas_esta_semana": 0,
@@ -298,7 +298,7 @@
       "proximo": {
         "dtstart": "2026-05-24T00:00:00Z",
         "summary": "[ALTA] Preparar presentación para reunión del jueves 14 con análisis de residuales y proyección de 3 años",
-        "dias_restantes": 3
+        "dias_restantes": 2
       },
       "pulso": {
         "cerradas_esta_semana": 0,
@@ -331,9 +331,9 @@
       "emoji": "🎯",
       "color": "#0f2844",
       "ancla_3_decisiones": "recuperar_y_desarrollar",
-      "abiertos_total": 3,
+      "abiertos_total": 4,
       "abiertos_vencidos": 3,
-      "abiertos_criticos": 3,
+      "abiertos_criticos": 4,
       "abiertos": [
         {
           "id": "2026-05-14-c002",
@@ -352,7 +352,7 @@
           "prioridad": "critica",
           "deadline": "2026-05-19",
           "vencida": true,
-          "dias_vencida": 1,
+          "dias_vencida": 2,
           "responsable": null,
           "fecha_creacion": "2026-05-16",
           "categoria": "condugas"
@@ -363,14 +363,29 @@
           "prioridad": "critica",
           "deadline": "2026-05-19",
           "vencida": true,
-          "dias_vencida": 1,
+          "dias_vencida": 2,
           "responsable": "Sebastian Sanchez Acevedo",
           "fecha_creacion": "2026-05-17",
+          "categoria": "condugas"
+        },
+        {
+          "id": "2026-05-19-c001",
+          "texto": "Definir y socializar regla clara: ningún accionista/dueño puede tomar decisión de trasladar recursos entre compañías sin aprobación gerente → junta + racionalidad financiera documentada",
+          "prioridad": "critica",
+          "deadline": "2026-05-26",
+          "vencida": false,
+          "dias_vencida": null,
+          "responsable": null,
+          "fecha_creacion": "2026-05-19",
           "categoria": "condugas"
         }
       ],
       "novedades": [],
-      "proximo": null,
+      "proximo": {
+        "dtstart": "2026-05-26T00:00:00Z",
+        "summary": "[CRITICA] Definir y socializar regla clara: ningún accionista/dueño puede tomar decisión de trasladar recursos entre compañías sin aprobación gerente → junta + racionalidad financiera documentada",
+        "dias_restantes": 4
+      },
       "pulso": {
         "cerradas_esta_semana": 0,
         "cerradas_semana_anterior": 6,
@@ -569,7 +584,7 @@
       "proximo": {
         "dtstart": "2026-05-30T00:00:00Z",
         "summary": "[ALTA] Cobrar pago pendiente de Hamilton según lo prometido",
-        "dias_restantes": 9
+        "dias_restantes": 8
       },
       "pulso": {
         "cerradas_esta_semana": 0,
@@ -836,7 +851,7 @@
       "color": "#003f5c",
       "ancla_3_decisiones": "desarrollar",
       "abiertos_total": 8,
-      "abiertos_vencidos": 0,
+      "abiertos_vencidos": 1,
       "abiertos_criticos": 1,
       "abiertos": [
         {
@@ -844,8 +859,8 @@
           "texto": "Resolver riesgo técnico: credenciales expuestas en JSONs planos; migrar a vault o variables de entorno",
           "prioridad": "critica",
           "deadline": "2026-05-20",
-          "vencida": false,
-          "dias_vencida": null,
+          "vencida": true,
+          "dias_vencida": 1,
           "responsable": "Tiago",
           "fecha_creacion": "2026-05-13",
           "categoria": "condugas"
@@ -969,7 +984,7 @@
         {
           "nombre_responsable": "Tiago",
           "abiertos_count": 1,
-          "vencidas_count": 0,
+          "vencidas_count": 1,
           "criticas_count": 1
         }
       ]

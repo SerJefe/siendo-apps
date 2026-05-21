@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-05-20T11:33:28",
+  "ultima_actualizacion": "2026-05-21T11:31:45",
   "tareas": [
     {
       "id": "2026-04-06-001",
@@ -7126,6 +7126,27 @@
         "Olga"
       ],
       "rol_sugerido": "rol-3-junta-asesora"
+    },
+    {
+      "id": "2026-05-20-c001",
+      "tarea": "Conversar con Germán (cliente EPM/interventor) sobre situación financiera real del contrato: financiamiento cruzado, materialización, tensión de caja en Condugas",
+      "responsable": "Sebastian",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-05-20",
+      "fecha_cierre": null,
+      "fecha_limite": "2026-05-24",
+      "estado": "abierta",
+      "origen": "limitless_auto",
+      "contexto": "EPM, relación cliente, flujo caja",
+      "tipo": "compromiso",
+      "vencida": false,
+      "evaluada": false,
+      "categoria": "condugas",
+      "monto_cop": null,
+      "personas": [
+        "Germán"
+      ],
+      "rol_sugerido": "rol-1-condugas"
     }
   ]
 }
